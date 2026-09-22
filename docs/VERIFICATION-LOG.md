@@ -377,3 +377,16 @@ etc." Actions taken, line by line:
 
 **Counts after this pass:** 101 offers (79 retained product entries + 22 new) · 15 rejections ·
 112 citations · 41 domains · 207 flags (12 critical, 142 warning, 53 info). Verified 2026-09-22.
+
+8. **Post-merge CI audit found two real defects in the citation gate, fixed the same day**
+   (PRs #4 and #5). The link re-check step carried `continue-on-error: true`, so the
+   workflow's `strict` dispatch input could never fail a run, and its exit code was also
+   swallowed by the un-`pipefail`ed `| tee` pipeline. Underneath both, `tee
+   reports/link-check.log` failed at pipeline start because `reports/` is gitignored and
+   absent from a fresh checkout — `verify_links.py` was SIGPIPE'd before checking a single
+   URL, on every CI run, while the job stayed green. After `set -o pipefail` +
+   `mkdir -p reports`, the post-merge run on main completed a full pass over the cited URLs
+   in 1m4s with exit 0 and uploaded a genuine report artifact (10.5 KB). Provenance: link
+   figures quoted earlier in this log came from local runs of the script, not CI artifacts,
+   because before 2026-09-22 CI produced none. The weekly scheduled job now files a
+   `link-rot` issue on genuine new failures as designed.
