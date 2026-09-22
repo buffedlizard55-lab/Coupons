@@ -388,6 +388,85 @@ class TestBayAreaUsability(unittest.TestCase):
                 )
 
 
+class TestRecheckSchedule(unittest.TestCase):
+    """ROADMAP priority 10 #2 — every dated record carries a re-verification date so the
+    weekly CI job can raise 'due for re-verification' issues before an offer goes stale.
+
+    recheck_due is a project scheduling field (data/meta.json → dataset.recheck_policy):
+    printed expiry minus a 3-day safety margin. It is never an issuer-published date, and
+    undated 'Ongoing' records deliberately do not carry one — inventing a deadline for an
+    offer the issuer never dated is the fabrication this project forbids.
+    """
+
+    BUFFER_DAYS = 3
+
+    def test_dated_entries_carry_the_policy_recheck_date(self):
+        for entry in ENTRIES:
+            exp = entry.get("expires")
+            rd = (entry.get("verification") or {}).get("recheck_due")
+            if exp:
+                self.assertTrue(rd, f"{entry['id']} has a published expiry but no verification.recheck_due")
+                self.assertRegex(rd, ISO_DATE, f"{entry['id']} recheck_due '{rd}' is not YYYY-MM-DD")
+                expected = (
+                    _dt.date.fromisoformat(exp) - _dt.timedelta(days=self.BUFFER_DAYS)
+                ).isoformat()
+                self.assertEqual(
+                    rd, expected,
+                    f"{entry['id']} recheck_due must be expiry minus {self.BUFFER_DAYS} days "
+                    f"(documented policy); got {rd}, expiry {exp}",
+                )
+            else:
+                self.assertIsNone(rd, f"{entry['id']} is undated but carries a recheck_due — no invented deadlines")
+
+    def test_meta_documents_the_recheck_policy(self):
+        self.assertIn("recheck_due", META["dataset"].get("recheck_policy", ""))
+        self.assertIn("3-day", META["dataset"].get("recheck_policy", ""))
+
+
+class TestIssuersCompletenessHeadline(unittest.TestCase):
+    """ROADMAP priority 10 #1 — Kellanova's coupon page publishes its own completeness
+    headline: \"We have 8 coupons today, up to $7.00 in savings\" (read verbatim on the
+    live page, pass 3 and again on the full pass-4 re-fetch of 2026-09-22).
+
+    The hand-check that caught nothing because it was done by hand is now a tripwire: the
+    shard must match the headline exactly. A future re-harvest that adds, drops or alters
+    a coupon MUST re-read the issuer's page and update both the shard and these constants —
+    if the headline has moved, that is the point; if the transcription is incomplete, this
+    test is the point.
+    """
+
+    HEADLINE = "We have 8 coupons today, up to $7.00 in savings"
+    COUPON_COUNT = 8
+    TOTAL_VALUE = 7.00
+
+    def test_kellanova_shard_equals_the_issuers_headline(self):
+        kv = [e for e in ENTRIES if e["id"].startswith("kv-")]
+        self.assertEqual(len(kv), self.COUPON_COUNT,
+                         "Kellanova shard no longer holds the issuer-published coupon count")
+        total = round(sum(e["value"]["amount"] for e in kv if e.get("value")), 2)
+        self.assertEqual(total, self.TOTAL_VALUE,
+                         "Kellanova transcribed values no longer sum to the issuer's own headline total")
+        for e in kv:
+            evidence = e["sources"][0].get("evidence", "")
+            self.assertIn(self.HEADLINE, evidence,
+                          f"{e['id']} no longer cites the issuer's completeness headline in its evidence")
+
+    def test_assembled_kellanova_quotes_keep_their_raw_lines(self):
+        """Kellanova prints each card as three separate lines; the dataset joins them with em
+        dashes, so those cards must be marked as assembled and keep the raw page order."""
+        for e in ENTRIES:
+            if not e["id"].startswith("kv-"):
+                continue
+            self.assertFalse(e["offer_text_is_verbatim"],
+                             f"{e['id']} is a joined quote and must say so (offer_text_is_verbatim=false)")
+            self.assertTrue(e.get("verbatim_source_text"),
+                            f"{e['id']} is marked assembled but has no verbatim_source_text")
+            raw = e["verbatim_source_text"].splitlines()
+            self.assertEqual(len(raw), 3, f"{e['id']} raw card should be three lines, as printed")
+            self.assertEqual(e["offer_text"], " — ".join(raw),
+                             f"{e['id']} offer_text is not the three raw lines joined in page order")
+
+
 class TestNoUnfinishedWork(unittest.TestCase):
     # Note: "XXXX" is deliberately NOT a marker — P&G publishes brand placeholders as
     # "(XXXX) Dawn Powerwash" and that text is reproduced verbatim on purpose.

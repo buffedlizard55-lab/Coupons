@@ -97,6 +97,76 @@ jobs:
             reports/link-check.log
           if-no-files-found: warn
 
+      - name: Summarise the re-verification schedule
+        # Every dated record carries verification.recheck_due (policy: printed expiry minus a
+        # 3-day margin, see data/meta.json). Surface what is due within a week so a reviewer
+        # re-reads the issuer page BEFORE the data goes stale, not after.
+        run: |
+          python3 - <<'PY'
+          import datetime as dt, json, os, pathlib
+          d = json.loads(pathlib.Path("data/coupons.json").read_text())
+          horizon = (dt.date.today() + dt.timedelta(days=7)).isoformat()
+          due = sorted(
+              (e["verification"]["recheck_due"], e["id"])
+              for e in d["entries"]
+              if (e.get("verification") or {}).get("recheck_due")
+              and e["verification"]["recheck_due"] <= horizon
+          )
+          lines = ["## Re-verification schedule", "",
+                   f"Today {dt.date.today().isoformat()} · **{len(due)}** record(s) due by {horizon} "
+                   "(policy: expiry − 3 days).", ""]
+          lines += [f"- `{eid}` — re-check by {rd}" for rd, eid in due[:80]]
+          summary = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary:
+              pathlib.Path(summary).write_text("\n".join(lines) + "\n")
+          print("\n".join(lines))
+          PY
+
+      - name: Report records due for re-verification as an issue
+        if: always() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import datetime as dt, json, pathlib, subprocess
+          d = json.loads(pathlib.Path("data/coupons.json").read_text())
+          horizon = (dt.date.today() + dt.timedelta(days=7)).isoformat()
+          due = sorted(
+              (e["verification"]["recheck_due"], e["id"])
+              for e in d["entries"]
+              if (e.get("verification") or {}).get("recheck_due")
+              and e["verification"]["recheck_due"] <= horizon
+          )
+          if not due:
+              print("no records due for re-verification; no issue needed")
+              raise SystemExit(0)
+          # Keep at most one open issue: weekly runs must not pile up duplicates while a
+          # re-harvest is being done.
+          listing = subprocess.run(
+              ["gh", "issue", "list", "--label", "recheck-due", "--state", "open", "--json", "number"],
+              capture_output=True, text=True, check=False)
+          if listing.stdout.strip() not in ("", "[]"):
+              print("an open recheck-due issue already exists; skipping duplicate")
+              raise SystemExit(0)
+          subprocess.run(["gh", "label", "create", "recheck-due",
+                          "--description", "Dataset records due for re-verification",
+                          "--color", "5319E7"], check=False)
+          body = [
+              f"As of {dt.date.today().isoformat()} the dataset carries **{len(due)}** record(s) whose "
+              f"project re-check date (`verification.recheck_due`, policy: expiry − 3 days) falls within "
+              f"7 days. Re-read each cited issuer page, regenerate the affected shard via "
+              f"`scripts/generate_bulk_entries.py` (or edit the curated shard), rebuild, and open a PR.",
+              "",
+              "| Re-check by | Record |", "| --- | --- |",
+          ]
+          body += [f"| {rd} | `{eid}` |" for rd, eid in due[:80]]
+          body += ["", "Full rule: `data/meta.json → dataset.recheck_policy`; workflow step "
+                   "'Summarise the re-verification schedule' in this run lists the same records."]
+          title = f"Re-verification due: {len(due)} record(s) by {horizon}"
+          subprocess.run(["gh", "issue", "create", "--title", title, "--body", "\n".join(body),
+                          "--label", "recheck-due"], check=False)
+          PY
+
       - name: Report new citation failures as an issue
         if: always() && github.event_name == 'schedule'
         env:

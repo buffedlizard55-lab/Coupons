@@ -14,10 +14,10 @@ aggregator, a cashback portal, a promo-code site, a listicle or a social-media p
 | | |
 | --- | --- |
 | Verified offers | **101** |
-| Rejected / scam-watch claims documented | **15** |
-| Citations | **112** across **41** domains |
+| Rejected / scam-watch claims documented | **17** |
+| Citations | **113** across **41** domains |
 | Verification levels | A: 85 · B: 14 · C: 2 |
-| Irregularities flagged | **207** (12 critical, 142 warning, 53 info) |
+| Irregularities flagged | **208** (12 critical, 142 warning, 54 info) |
 | All sources checked on | **2026-09-22** |
 
 ---
@@ -27,9 +27,10 @@ aggregator, a cashback portal, a promo-code site, a listicle or a social-media p
 Most coupon sites are affiliate businesses. They republish codes from anywhere, keep expired
 offers live because expired offers still earn clicks, and mix genuine manufacturer coupons with
 promo codes that were never issued by anybody. The result is that a shopper cannot tell a real
-$1.00-off Crest coupon from a fabricated "85% off Smart & Final" code page — among its 15
-documented rejections this repository records **four fabricated-code rings** (Round Table Pizza,
-99 Ranch Market, General Mills, Raley's/Smart & Final), a Trader Joe's phishing vector, and two
+$1.00-off Crest coupon from a fabricated "85% off Smart & Final" code page — among its 17
+documented rejections this repository records **five fabricated-code rings** (Round Table Pizza,
+99 Ranch Market, General Mills, Raley's/Smart & Final, Colgate), a family of stale Kellanova
+prize-game terms still served on the official domain, a Trader Joe's phishing vector, and two
 manufacturer domains (boxtops.com, realsavings.com) that have drifted to a rock band's tour site
 and a parked-ad shell.
 
@@ -45,7 +46,7 @@ This project takes the opposite position:
    pages (Colgate's two coupon pages disagree), closed purchase windows, expired offers,
    benefits the issuer says are not live yet, and sources that were only partially retrievable
    are all flagged on the card itself.
-5. **Rejections are published too.** Fifteen claims that circulate widely online are documented
+5. **Rejections are published too.** Seventeen claims that circulate widely online are documented
    with the reason they were rejected and the evidence that would change the verdict.
 6. **Every line is checkable by hand.** Each citation stores the URL, the publisher, the page
    title, the retrieval method, the date it was read, and the verbatim passage that was read.
@@ -85,8 +86,8 @@ redemption was itself grounds for rejection this pass (see `excl-rkt-squishmallo
 - **Browse offers** — filter by category, deal type, verification level and status; search
   across brands, offer text, addresses and source domains. Expired and not-yet-redeemable
   offers are hidden by default and can be switched back on.
-- **Irregularities** — all 207 flags grouped by severity, each linking back to the offer.
-- **Rejected & scam watch** — the fifteen claims that were refused, with the reasoning.
+- **Irregularities** — all 208 flags grouped by severity, each linking back to the offer.
+- **Rejected & scam watch** — the seventeen claims that were refused, with the reasoning.
 - **Sources** — every citation, with the evidence passage that was read from it.
 - **How this was verified** — verification levels, retrieval methods, flag severities, the
   nine-county Bay Area definition, and how to reproduce the build.
@@ -96,6 +97,11 @@ Statuses are computed in the browser against the visitor's current date, so an o
 "Active" on the verification date retires itself automatically: `Active` → `Expires soon`
 (≤ 7 days) → `Expired`, plus `Window closed` for rebates whose purchase period has passed and
 `Not redeemable yet` for benefits the issuer has announced but not launched.
+
+Every dated record also carries a project-side `recheck_due` date — the printed expiry minus a 3-day
+safety margin, documented in `data/meta.json` — which the weekly CI job uses to file
+"due for re-verification" issues *before* an offer goes stale. It is scheduling metadata, never
+an issuer deadline.
 
 ## Repository layout
 
@@ -126,7 +132,7 @@ docs/VERIFICATION-LOG.md       what was checked, when, and what failed
 
 ```bash
 python3 scripts/build_site.py            # validate shards, regenerate data + site payload + docs/SOURCES.md
-python3 -m unittest discover -s tests    # 46 tests: data integrity + site render
+python3 -m unittest discover -s tests    # 50 tests: data integrity + site render
 python3 scripts/verify_links.py          # re-check citations over HTTP (needs egress; runs weekly in CI)
 python3 -m http.server 8000              # view the site locally at http://localhost:8000
 ```
@@ -145,6 +151,8 @@ The rules for adding an entry are enforced by the tests, not by convention:
 - a `free_item` carrying a non-zero dollar figure must show the issuer's own cap verbatim in the
   offer text;
 - editing a shard without rebuilding the generated files fails the build;
+- a dated offer whose `verification.recheck_due` is missing or off-policy, or an undated one that carries one, fails the build;
+- a Kellanova-style issuer completeness headline that no longer equals the shard's count and sum fails the build;
 - README/docs totals that drift from the data (flag counts, level counts, category table,
   "every rejection is in the log") fail the build.
 
@@ -155,7 +163,7 @@ so the site publishes from the committed root files (`index.html`, `assets/`, `d
 `.nojekyll`) as soon as a change lands on `main`. `.nojekyll` is committed deliberately so GitHub
 serves the files as-is instead of running them through Jekyll.
 
-`.github/workflows/pages.yml` validates the dataset, runs all 46 tests, proves the P&G shard is
+`.github/workflows/pages.yml` validates the dataset, runs all 50 tests, proves the P&G shard is
 reproducible and builds the site on every push and pull request. It also detects the repository's
 Pages mode: if Pages is ever switched to **GitHub Actions**, the same workflow uploads `_site/` as
 the Pages artifact and deploys it, with no further changes needed. `.github/workflows/verify.yml`
@@ -166,8 +174,10 @@ re-checks every citation weekly and posts the result as a workflow log/issue-rea
 This is not every coupon that exists. It is every product offer that could be **verified against
 an official source during the research passes of 2026-09-22**, plus an explicit record of what was
 rejected and why. Two known freshness facts: the 36 P&G brandSAVER coupons carried printed
-expiries of 26–27 September 2026 (the site marks them expired from those dates automatically), and
-the Kellanova printables show no expiry on the page, so the printed coupon is the authority.
+expiries of 26–27 September 2026 (the site marks them expired from those dates automatically, and
+pass 4 re-read 22 of the 36 coupons — 25 offer lines — live with zero drift, while the rest of the
+page's advertised "112 Digital Coupons" still awaits a full-list harvest), and the Kellanova
+printables show no expiry on the page, so the printed coupon is the authority.
 Personalised offers (Safeway for U, Target Circle, Costco Instant Savings, restaurant apps) are
 verified at program level only, because their offers are per-account and cannot be read
 anonymously. Facebook and Instagram could not be searched at all: both require authentication, so
@@ -175,7 +185,9 @@ no social post was read or cited; social platforms were used only to generate le
 verified on an official domain or rejected.
 
 `docs/LIMITATIONS.md` states all of this in full; `docs/ROADMAP.md` lists the next steps,
-starting with the monthly manufacturer re-harvest and resolving the Colgate contradiction.
+starting with completing the monthly manufacturer re-harvest and watching for Colgate's promised
+"updated offers" (its main page was re-fetched twice on 2026-09-22 and still says coupons are
+unavailable).
 
 ## Licence and disclaimer
 

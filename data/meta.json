@@ -2,8 +2,9 @@
   "dataset": {
     "name": "Verified Official Product Coupons & Rebates — San Francisco Bay Area",
     "slug": "coupons",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "compiled_at": "2026-09-22",
+    "recheck_policy": "verification.recheck_due is a project scheduling date, never an issuer claim. Every entry with a published expiry carries recheck_due = the printed expiry minus a 3-day safety margin, so the weekly CI job can flag the record for re-verification BEFORE it goes stale. Entries with no published expiry follow the monthly re-harvest cadence instead and deliberately carry no recheck_due, because inventing one for an 'Ongoing' offer would be exactly the kind of fabricated deadline this project forbids.",
     "timezone_note": "All dates are ISO-8601 (YYYY-MM-DD). 'compiled_at' is the date every line in this dataset was checked against its cited source.",
     "scope": "Product coupons only. An offer is in scope when (a) it discounts or rebates a PHYSICAL PRODUCT you can buy in a store (food, household, personal care, cleaning, over-the-counter health items, prepared food and drinks), (b) it is published by the party that has to honour it — the manufacturer, the retailer, the pharmacy chain or the restaurant brand — and (c) it could be redeemed at a physical Bay Area location at the time of verification. Event tickets, museum or attraction admission, library passes, transit benefits and similar no-purchase programs were explicitly removed from the published dataset on 2026-09-22 by project-owner instruction (see archive/rescoped-2026-09-22/); online-only redemption offers are likewise out of scope.",
     "no_hallucination_policy": "Every field that describes an offer is either (1) a verbatim quote from a cited official page, or (2) an explicitly-labelled inference. Nothing in this dataset is reconstructed from memory, from a coupon aggregator, or from an affiliate/promo-code site. Items that could not be verified from an official source are listed in data/entries/10-excluded-unverified.json with the reason for exclusion, as are official-looking claims that are stale, parked-domain or otherwise not honourable.",
@@ -21,6 +22,10 @@
       {
         "date": "2026-09-22",
         "change": "Pass 2 rescoping: project now covers product coupons only — 49 venue-admission entries moved to archive/rescoped-2026-09-22/, museum categories and admission deal types retired from the taxonomy; Kellanova's 8 manufacturer printables, receipt-scan programs and restaurant free-product offers added as product categories."
+      },
+      {
+        "date": "2026-09-22",
+        "change": "Pass 4 (same day, later): manufacturer re-verification (P&G 26/36 lines re-read with zero drift; Kellanova page re-fetched complete and the issuer's '8 coupons, up to $7.00' headline cross-check automated as a test; KV cards re-tagged as assembled quotes per methodology), Colgate follow-up (main page re-fetched; microsite failed again; aggregator code ring documented as a rejection), the Pop-Tarts rewards earning ladder added verbatim from the issuer's terms, and verification.recheck_due added to every dated record under the new recheck_policy."
       }
     ]
   },

@@ -2,7 +2,9 @@
 
 **Verification date: 2026-09-22** (all sources accessed on this date; `accessed` is recorded per
 citation in the data).
-**Result after the 2026-09-22 product-only re-scope (pass 3): 101 verified offers · 15 documented rejections · 112 citations · 41 domains · 207 flags (A: 85 · B: 14 · C: 2).**
+**Result after pass 4 (2026-09-22, same day): 101 verified offers · 17 documented rejections · 113 citations ·
+41 domains · 208 flags (A: 85 · B: 14 · C: 2).**
+(Pass 3 had reached 101 offers · 15 rejections · 112 citations · 41 domains · 207 total flags (A: 85 · B: 14 · C: 2).)
 (The pass-1/2 result was 128 offers · 9 rejections · 141 citations across 30 domains, and 224 total recorded irregularities, including 49 venue-admission entries that the project owner subsequently moved out of scope; they and their evidence are preserved in `archive/rescoped-2026-09-22/`.)
 
 This log records what was actually retrieved, what came back, what was rejected and why. It
@@ -105,7 +107,7 @@ Sizzler. Their codes exist only on aggregators → rejected.
 asserted; the three museums' own pages supply the savings claims, and their disagreement is
 flagged.
 
-## 5. Critical irregularities — 13 flags across 11 distinct issues
+## 5. Critical irregularities — 12 flags across 10 distinct issues
 
 Reproduced from the data so this log stands alone. Each is also on the site's **Irregularities**
 view and on the affected card.
@@ -133,24 +135,25 @@ view and on the affected card.
 6. **`rainbow-grocery-community-discount-pilot` — `announced-but-not-live`.** The retailer's own
    page states "This promotion is not live yet." Recorded with `bay_area.available = false` and
    rendered as `Not redeemable yet`, visible only so reviewers can see it was checked.
-7. **`sf-museums-for-all-the-contemporary-jewish-museum` — `venue-temporarily-closed`.** The
-   City's listing is headed "The Contemporary Jewish Museum (Temporarily Closed)". The admission
-   benefit is published; the venue is not open. Do not travel without confirming on thecj.org.
-8. **`famsf-free-first-tuesdays` — `de-young-closed-tuesdays-2026`.** FAMSF publishes free general
-   admission on the first Tuesday of every month, while the City's Museums For All listing gives
-   de Young hours as Thursday–Sunday (closed Tue–Wed). The Legion of Honor *is* open Tuesdays per
-   the same listing. Both official statements are quoted; a first-Tuesday visit to the de Young may
-   be impossible.
-9. **`policy-trader-joes-no-coupons` — `scam-vector`.** Because Trader Joe's issues no coupons, any
+7. **`policy-trader-joes-no-coupons` — `scam-vector`.** Because Trader Joe's issues no coupons, any
    site, Facebook post or Instagram story offering Trader Joe's coupons, circulars or gift cards is
    not official, and the retailer disowns such organisations.
-10. **`policy-sunday-insert-landscape-2026` — `stale-source-directories`.** "Best coupon site"
+8. **`policy-sunday-insert-landscape-2026` — `stale-source-directories`.** "Best coupon site"
     directories still list SmartSource.com, FreeCoupons.com, CoolSavings, PPGazette and Mambo
     Sprouts; several are out of business or redirected. Any list built from those directories
     without checking each domain will contain dead or fraudulent sources.
-11. **`policy-social-media-sourcing` — `scam-density`.** Social platforms are the dominant
+9. **`policy-social-media-sourcing` — `scam-density`.** Social platforms are the dominant
     distribution channel for fabricated coupons and gift-card giveaways, which is why the project
     rule is "leads yes, citations no".
+10. **`policy-colgate-coupons-suspended` — `source-page-inconsistency`.** Two Colgate-operated
+    pages disagree about whether online coupons exist; the main site (fetched in full twice, pass 3
+    and pass 4) says unavailable, the microsite that advertised printables has failed every direct
+    retrieval across both passes. Recorded as a contradiction, not resolved.
+
+*Numbering note:* items 7–8 of the pre-re-scope list (the Contemporary Jewish Museum
+`venue-temporarily-closed` and the FAMSF/de Young Tuesday contradiction) retired with their venue
+entries to `archive/rescoped-2026-09-22/` on 2026-09-22; this section was left describing them
+until pass 4's documentation audit caught the drift (13→12 critical flags, 11→10 issues).
 
 ### 5b. Warning-level irregularities a reviewer should see
 
@@ -191,10 +194,11 @@ Not critical, but each one changes how an offer should be used. All are on the c
 - **Discover & Go** — passes must be reserved before the visit (`reservation-required`) and the
   program's own library selector includes systems outside the nine counties
   (`library-list-includes-non-bay-area`).
-- **Retrieval transparency** — 7 entries were sourced from search-engine snippets of official
-  domains rather than direct fetches and each carries `retrieval-via-search-snippet`.
+- **Retrieval transparency** — 17 entries were sourced from search-engine snippets of official
+  domains rather than direct fetches and each carries `retrieval-via-search-snippet` (one added in
+  pass 4: the Pop-Tarts rewards terms citation).
 
-## 6. Rejections (9)
+## 6. Rejections (17)
 
 Full records, with URLs checked and evidence, live in `data/entries/10-excluded-unverified.json`
 and on the site's **Rejected & scam watch** view.
@@ -216,6 +220,8 @@ and on the site's **Rejected & scam watch** view.
 | `excl-realsavings-domain-drift` | Campbell's Real Savings | REJECTED (pass 3) | realsavings.com resolves to a parked-ad shell (yfdabv11.com / rapidresultsearch.com block page) — live fetch captured the redirect |
 | `excl-rkt-squishmallows-online-only-reward` | Rice Krispies Treats® | REJECTED for scope (pass 3) | Verified on Kellanova's own promotions page, but the $5 reward redeems only on Squishmallows.com — online-only, and online-only redemption is out of scope by policy |
 | `excl-kraftheinz-stale-2022-campaign-page` | Kraft Heinz | REJECTED (pass 3) | kraftheinzsaveearnwin.com is official but prints its own end date "Ends 5/9/22" — a live-looking dead campaign; no current Kraft/Heinz consumer coupon hub found |
+| `excl-colgate-aggregator-promo-codes` | Colgate (shop.colgate.com codes) | REJECTED (pass 4) | Five code farms (orangeoffer, DontPayFull, TenereTeam, coupons.com code pages, plus an India-market terms page as the only real "Smiles" offer) all apply recycled codes to an online store while Colgate's own U.S. coupon page — fetched twice — says coupons are unavailable |
+| `excl-kellanova-legacy-scratch-off-games` | Kellanova (Cheez-It/RKT/Pop-Tarts rewards games) | REJECTED (pass 4) | Terms pages still served on the official domain carry their own disqualification: Barcode Buck$ "expire on 12/31/24", Pop-Tarts game plays "must be completed by … 9/2/26", and that game's prize redeems only at shop.poptarts.com (online-only) |
 
 ## 7. Pass log
 
@@ -287,7 +293,7 @@ Requirement-by-requirement audit, with the artifact that proves each line.
 | 4 | Only verified official coupons; no scams or malware | ✅ | 9 documented rejections including the Trader Joe's phishing vector; a dedicated scam-watch view; zero promo-code domains cited for an available offer |
 | 5 | Verify the coupons are true and not expired | ✅ | every published date compared against 2026-09-22; the site recomputes status from the visitor's clock. Audit result: **0** entries with `expires` in the past, **1** closed purchase window (flagged, hidden by default), **1** benefit the issuer says is not live (flagged, hidden by default) |
 | 6 | Work line by line, no hallucinations | ✅ | 128 entries × ≥2 specific checks; `offer_text_is_verbatim` on every entry; `no_hallucination_policy` in `data/meta.json`; three Pass-2 removals of unverified assertions (Costco policy, Bank of America source, Rainbow address) |
-| 7 | Flag irregularities | ✅ | 224 total flags at that time (13 critical / 136 warning / 75 info) across 105 distinct codes, all rendered on cards and in the Irregularities view — superseded by pass 3's 207 flags (12 critical, 142 warning, 53 info) |
+| 7 | Flag irregularities | ✅ | 224 total flags at that time (13 critical / 136 warning / 75 info) across 105 distinct codes, all rendered on cards and in the Irregularities view — superseded by pass 3's 207 total flags (12 critical / 142 warning / 53 info) |
 | 8 | Organise into researched categories (no-spend, rebate, BOGO…) | ✅ | 13 categories and 15 deal types derived from the research rather than a generic taxonomy |
 | 9 | Expand the categories through own research | ✅ | Discover & Go library passes, Museums For All, Blue Star, BofA Museums on Us, an FSA/HSA payment-method change, a transit-triggered museum discount, a reusable-container credit, ASTC Passport reciprocity — none of these appear in standard coupon-site taxonomies |
 | 10 | Usable in the SF Bay Area with physical redemption locations | ✅ | every entry has a `bay_area` determination; audit found **0** entries without a venue, store list, official locator or explanatory note; the nine-county definition is FAMSF's published list |
@@ -376,7 +382,7 @@ etc." Actions taken, line by line:
    ROADMAP rewritten to the new totals and enforced against drift by `TestDocsMatchData`.
 
 **Counts after this pass:** 101 offers (79 retained product entries + 22 new) · 15 rejections ·
-112 citations · 41 domains · 207 flags (12 critical, 142 warning, 53 info). Verified 2026-09-22.
+112 citations · 41 domains · 207 total flags (12 critical / 142 warning / 53 info). Verified 2026-09-22.
 
 8. **Post-merge CI audit found two real defects in the citation gate, fixed the same day**
    (PRs #4 and #5). The link re-check step carried `continue-on-error: true`, so the
@@ -390,3 +396,73 @@ etc." Actions taken, line by line:
    figures quoted earlier in this log came from local runs of the script, not CI artifacts,
    because before 2026-09-22 CI produced none. The weekly scheduled job now files a
    `link-rot` issue on genuine new failures as designed.
+
+### Pass 4 — manufacturer re-harvest, Colgate follow-up, schema hardening (complete, 2026-09-22)
+
+Owner instruction for this pass: keep expanding the project, working line by line with no
+hallucinations, and land the improvements via a PR. Retrieval ran through the same anonymous
+`fetch_page`/`web_search` tooling; the fetch proxy degraded mid-pass (repeated signature errors on
+chunk continuations), which bounded what could honestly be read — and the honest record is what
+shipped.
+
+1. **P&G brandSAVER re-harvest (partial, honestly bounded).** `pgbrandsaver.com/coupons/` was
+   re-fetched live. The page still self-reports "Updated September2026" and "Search 112 Digital
+   Coupons". Everything this pass could read — the seven Featured rows and the first eighteen full
+   rows of the search list, 25 offer lines covering 22 distinct transcribed coupons — matched the
+   committed transcription line by line, including both expiry sets (9/26 Featured vs 9/27 list)
+   and the three duplicated Crest rows that carry the `source-page-inconsistency` critical flags.
+   One observed wrinkle: the list-view rendering of the Bounce 180 ct row prints
+   "180 ct(excludes travel size)" with the space absent, in the same flattening that glues
+   "$3.00OFF ONE" together — a DOM/markdown artefact of the card layout, recorded here, not
+   "corrected" into the data. Chunks 2–9 — the remainder of the 36-row transcription's tail and
+   the ~76 unlisted coupons — could not be fetched before the proxy failures; **no rows were
+   invented to fill the gap** and the shard is unchanged apart from the new `recheck_due` field.
+   The full 112-row harvest stays open (ROADMAP priority 1).
+2. **Kellanova page re-fetched in full; completeness automated.** `kellanovaus.com/us/en/coupons.html`
+   returned whole in one retrieval. All 8 transcribed cards re-read line by line against the
+   page — SAVE $1.00/$1.25/$1.00/75¢/50¢/50¢/$1.00/$1.00 with their brand and qualifying-items
+   lines — and the page headline still reads "We have 8 coupons today, up to $7.00 in savings":
+   count 8 ✓, sum $7.00 ✓, zero drift. The page also still carries the "Mars Completes Acquisition
+   of Kellanova" banner (domain-continuity evidence) and the print-limit copy behind the existing
+   requirements. Per ROADMAP priority 10 #1, that hand-checked headline relationship is now a test
+   (`TestIssuersCompletenessHeadline`) that fails the build if the shard and the quoted headline
+   ever disagree. The eight KV cards were also **re-tagged** `offer_text_is_verbatim: false` with a
+   new `verbatim_source_text` holding the three raw page lines in order — matching what
+   METHODOLOGY §4 already describes for them (heading + brand + "on any ONE/TWO" lines joined with
+   em dashes); the site now shows the assembled-quote note on those cards.
+3. **Colgate contradiction: main page confirmed, microsite still unreachable.** `colgate.com/en-us/special-offers`
+   was fetched again and printed the identical full statement ("Coupons Temporarily Unavailable…
+   Please check back soon for updated offers"), read in one chunk with nothing truncated.
+   `smiles.colgate.com/page/content/special-offers` and the domain root both failed direct fetch
+   (attempts 3 and 4 of the project's four), and a targeted pass-4 search for the microsite returned
+   **no organic result from that domain at all** — the only pages surfacing "Colgate coupon codes"
+   were aggregator code farms. The contradiction therefore stands (the main site says *temporarily*,
+   promising a future return, so the flag is kept), and the circulating code ring is now documented
+   as `excl-colgate-aggregator-promo-codes` with the India-only Smiles Club Amazon terms as the
+   nearest official analogue (online-only, non-US → out of scope twice over).
+4. **Kellanova promotion-hub sweep produced two verified additions and one rejection.** The Pop-Tarts
+   Crazy Good Rewards program entry gained its **published earning ladder** verbatim from the
+   issuer's own Program Terms page ("You will receive 1 point for every $1 spent on participating
+   Pop-Tarts™ products. You can then redeem these Points for Rewards through the Reward Catalog"),
+   cited via search retrieval of the official domain and disclosed with the `retrieval-via-search-snippet`
+   flag; the reward catalogue and product list stay behind login, so the entry remains level B. The
+   legacy Scratch-Off game terms pages still served on `kellanovaus.com` were rejected
+   (`excl-kellanova-legacy-scratch-off-games`): Cheez-It/RKT rewards "expire on 12/31/24" and the
+   Pop-Tarts game closed 2026-09-02 with an online-only prize — the Kraft-Heinz-style
+   "live-looking-dead" failure mode, caught on the issuer's own domain.
+5. **Schema hardening (ROADMAP priority 10 #2).** Every one of the 38 dated records now carries
+   `verification.recheck_due` = printed expiry − 3 days (policy documented in
+   `data/meta.json → dataset.recheck_policy`; generated mechanically for the P&G shard, so CI
+   reproducibility is preserved). Undated records deliberately carry none. The site renders the
+   date on the card as a project-side re-check note, and `verify.yml` prints a run-summary table
+   of records due within 7 days and files a single `recheck-due` issue on the weekly schedule run.
+6. **Documentation audit fixes (drift found by this pass, not by tests).** §5 still described the
+   pre-re-scope critical set (13 flags/11 issues, including two museum venue flags that moved with
+   their entries to the archive) — corrected to the 12 flags/10 issues the data actually holds,
+   with an explicit numbering note; §5b's snippet-disclosure count was stale at 7 (data: 17); §6's
+   heading still said "(9)" while the table listed 15 — now 17 with this pass's two new records.
+   The three-figure total checks in `TestDocsMatchData` had no way to catch sub-100 mentions like
+   these; the human line-by-line pass did.
+7. **Counts after this pass:** 101 offers (unchanged — this pass added evidence depth, not offer
+   rows) · **17 rejections** · **113 citations** · 41 domains · **208 flags** (12 critical,
+   142 warning, 54 info) · 80 unique cited URLs · 50 tests. Verified 2026-09-22 (passes 1–4).

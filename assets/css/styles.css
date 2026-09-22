@@ -265,6 +265,7 @@ h2 { font-size: 1.4rem; letter-spacing: -.015em; margin: 6px 0 10px; }
   overflow-wrap: anywhere;
 }
 .quote .verbatim-note { display: block; font-size: .72rem; color: var(--ink-3); margin-top: 6px; }
+.card li.recheck-note { font-size: .78rem; color: var(--ink-3); font-style: italic; }
 
 .block { border-top: 1px solid var(--line); padding-top: 10px; }
 .block h4 {

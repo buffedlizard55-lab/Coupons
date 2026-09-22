@@ -2,8 +2,9 @@
 """Generate the bulk-verified entry shards for the coupon dataset.
 
 One shard is produced by this script because it is a bulk transcription of a single
-official page that was read line by line on 2026-09-22 (and re-checked against the live
-page in the 2026-09-22 pass 3):
+official page that was read line by line on 2026-09-22 (re-checked against the live
+page in the 2026-09-22 pass 3, and re-confirmed row by row in pass 4 for every
+offer line the retrieval chunks could deliver before the fetch proxy degraded):
 
   data/entries/01-pg-brandsaver.json
   Source: https://pgbrandsaver.com/coupons/  (Procter & Gamble, official)
@@ -11,6 +12,23 @@ page in the 2026-09-22 pass 3):
   Coupons".  Every offer below is a verbatim transcription of the offer text
   and the "Expires" line printed next to it on that page.  Offers that appear
   twice on the page with two different expiry dates are flagged.
+  Pass 4 re-read (chunks 0-1 of 10): "Updated September2026" and "Search 112
+  Digital Coupons" re-read on the page; the seven Featured rows and the first
+  eighteen full rows of the search list matched the transcription — including
+  the three Crest reprints at 9/27 inside the list against 9/26 in Featured,
+  which re-confirms the contradiction the source-page-inconsistency flags
+  record.  One list-view rendering of the Bounce 180 ct line prints "180
+  ct(excludes travel size)" with no space; the list cards also print the
+  amount glued to the copy ("$3.00OFF ONE"), so this is a DOM/markdown
+  flattening artefact of the card layout, noted here rather than "fixed".
+  The page has otherwise not changed; neither has this shard.  Chunks 2-9
+  (the remaining ~76 offers of the advertised 112) could not be retrieved in
+  pass 4 because the fetch proxy failed repeatedly — the full-list harvest
+  stays open in docs/ROADMAP.md priority 1.
+
+Each dated entry also carries verification.recheck_due, derived mechanically from
+the printed expiry (expiry minus a 3-day safety margin) per the policy documented
+in data/meta.json — a scheduling field for the weekly CI job, never an issuer date.
 
 A second bulk shard (26 SF Museums For All venue entries) was generated here until
 2026-09-22, when the project was rescoped to product coupons only; that generator
@@ -24,6 +42,7 @@ Run:  python3 scripts/generate_bulk_entries.py
 
 from __future__ import annotations
 
+import datetime as _dt
 import json
 import pathlib
 
@@ -31,6 +50,15 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 ENTRIES_DIR = ROOT / "data" / "entries"
 
 VERIFIED_AT = "2026-09-22"
+
+# Project re-verification cadence (see data/meta.json → dataset.recheck_policy):
+# dated records must be re-read at least this many days before their printed expiry.
+RECHECK_BUFFER_DAYS = 3
+
+
+def recheck_due(expires: str) -> str:
+    """The scheduling date for this record: printed expiry minus the safety margin."""
+    return (_dt.date.fromisoformat(expires) - _dt.timedelta(days=RECHECK_BUFFER_DAYS)).isoformat()
 
 # ---------------------------------------------------------------------------
 # 1. P&G brandSAVER digital coupons
@@ -192,6 +220,7 @@ def pg_entries() -> list[dict]:
                 "verification": {
                     "level": "A",
                     "verified_at": VERIFIED_AT,
+                    "recheck_due": recheck_due(expires),
                     "checks": [
                         "Offer text transcribed verbatim from the issuer's page",
                         "Expiry date transcribed verbatim from the issuer's page",

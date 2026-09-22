@@ -16,7 +16,8 @@
       "kind": "dollar_off"
     },
     "offer_text": "SAVE $1.00 — Special K® — on any ONE Special K® Protein Meal Bars or Special K® Pastry Crisps",
-    "offer_text_is_verbatim": true,
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "SAVE $1.00\nSpecial K®\non any ONE Special K® Protein Meal Bars or Special K® Pastry Crisps",
     "expires": null,
     "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
     "requirements": [
@@ -45,9 +46,10 @@
       "level": "A",
       "verified_at": "2026-09-22",
       "checks": [
-        "Offer line transcribed verbatim from the issuer's coupon page, retrieved live on the verification date",
+        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)"
+        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
       ]
     },
     "flags": [
@@ -90,7 +92,8 @@
       "kind": "dollar_off"
     },
     "offer_text": "SAVE $1.25 — KELLANOVA — on any TWO Town House®, Club® and/or Cheez-It® Baked Snack Crackers",
-    "offer_text_is_verbatim": true,
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "SAVE $1.25\nKELLANOVA\non any TWO Town House®, Club® and/or Cheez-It® Baked Snack Crackers",
     "expires": null,
     "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
     "requirements": [
@@ -119,9 +122,10 @@
       "level": "A",
       "verified_at": "2026-09-22",
       "checks": [
-        "Offer line transcribed verbatim from the issuer's coupon page, retrieved live on the verification date",
+        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)"
+        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
       ]
     },
     "flags": [
@@ -164,7 +168,8 @@
       "kind": "dollar_off"
     },
     "offer_text": "SAVE $1.00 — Eggo® — on any TWO Kellogg's® Eggo® Products",
-    "offer_text_is_verbatim": true,
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "SAVE $1.00\nEggo®\non any TWO Kellogg's® Eggo® Products",
     "expires": null,
     "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
     "requirements": [
@@ -193,9 +198,10 @@
       "level": "A",
       "verified_at": "2026-09-22",
       "checks": [
-        "Offer line transcribed verbatim from the issuer's coupon page, retrieved live on the verification date",
+        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)"
+        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
       ]
     },
     "flags": [
@@ -238,7 +244,8 @@
       "kind": "dollar_off"
     },
     "offer_text": "SAVE 75¢ — Pringles® Products — on any TWO Pringles® and/or Pringles® Mingles™",
-    "offer_text_is_verbatim": true,
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "SAVE 75¢\nPringles® Products\non any TWO Pringles® and/or Pringles® Mingles™",
     "expires": null,
     "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
     "requirements": [
@@ -267,9 +274,10 @@
       "level": "A",
       "verified_at": "2026-09-22",
       "checks": [
-        "Offer line transcribed verbatim from the issuer's coupon page, retrieved live on the verification date",
+        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)"
+        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
       ]
     },
     "flags": [
@@ -310,7 +318,8 @@
       "kind": "dollar_off"
     },
     "offer_text": "SAVE 50¢ — Rice Krispies Treats® — on any ONE Rice Krispies Treats® Crispy Marshmallow Squares",
-    "offer_text_is_verbatim": true,
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "SAVE 50¢\nRice Krispies Treats®\non any ONE Rice Krispies Treats® Crispy Marshmallow Squares",
     "expires": null,
     "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
     "requirements": [
@@ -339,9 +348,10 @@
       "level": "A",
       "verified_at": "2026-09-22",
       "checks": [
-        "Offer line transcribed verbatim from the issuer's coupon page, retrieved live on the verification date",
+        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)"
+        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
       ]
     },
     "flags": [
@@ -382,7 +392,8 @@
       "kind": "dollar_off"
     },
     "offer_text": "SAVE 50¢ — Nutri-Grain® — on any ONE Kellogg's® Nutri-Grain® Product",
-    "offer_text_is_verbatim": true,
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "SAVE 50¢\nNutri-Grain®\non any ONE Kellogg's® Nutri-Grain® Product",
     "expires": null,
     "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
     "requirements": [
@@ -411,9 +422,10 @@
       "level": "A",
       "verified_at": "2026-09-22",
       "checks": [
-        "Offer line transcribed verbatim from the issuer's coupon page, retrieved live on the verification date",
+        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)"
+        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
       ]
     },
     "flags": [
@@ -454,7 +466,8 @@
       "kind": "dollar_off"
     },
     "offer_text": "SAVE $1.00 — MorningStar Farms® — on any ONE MorningStar Farms® Plant-Based Product",
-    "offer_text_is_verbatim": true,
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "SAVE $1.00\nMorningStar Farms®\non any ONE MorningStar Farms® Plant-Based Product",
     "expires": null,
     "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
     "requirements": [
@@ -483,9 +496,10 @@
       "level": "A",
       "verified_at": "2026-09-22",
       "checks": [
-        "Offer line transcribed verbatim from the issuer's coupon page, retrieved live on the verification date",
+        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)"
+        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
       ]
     },
     "flags": [
@@ -528,7 +542,8 @@
       "kind": "dollar_off"
     },
     "offer_text": "SAVE $1.00 — Pop-Tarts® — on any TWO Pop-Tarts® Toaster Pastries and/or Bites",
-    "offer_text_is_verbatim": true,
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "SAVE $1.00\nPop-Tarts®\non any TWO Pop-Tarts® Toaster Pastries and/or Bites",
     "expires": null,
     "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
     "requirements": [
@@ -557,9 +572,10 @@
       "level": "A",
       "verified_at": "2026-09-22",
       "checks": [
-        "Offer line transcribed verbatim from the issuer's coupon page, retrieved live on the verification date",
+        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)"
+        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
       ]
     },
     "flags": [

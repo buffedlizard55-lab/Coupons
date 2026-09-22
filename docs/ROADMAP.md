@@ -4,9 +4,10 @@ Next work, in priority order. Each item states what to do, why it matters, and w
 looks like — including the evidence that must be captured, because an entry without a citation
 cannot be merged.
 
-Current state: **101 verified product offers, 15 documented rejections, 112 citations across 41
-domains, 207 flags**, all verified 2026-09-22. Scope: **product coupons only** — no events,
-museums or venue admission (see `archive/rescoped-2026-09-22/`).
+Current state after **pass 4 (2026-09-22)**: **101 verified product offers, 17 documented
+rejections, 113 citations across 41 domains, 208 flags**, every line re-checked this date. Scope:
+**product coupons only** — no events, museums or venue admission (see
+`archive/rescoped-2026-09-22/`).
 
 ---
 
@@ -17,14 +18,24 @@ museums or venue admission (see `archive/rescoped-2026-09-22/`).
 says **"Search 112 Digital Coupons"** — only 36 were transcribed, so 76+ live manufacturer
 coupons sit one careful pass away. This is the single biggest expansion *and* retention lever.
 
+**Status after pass 4 (2026-09-22):** step 2 done (Kellanova page re-fetched whole, zero drift,
+headline cross-check now a test), step 3 partially done (the generator additionally derives
+`recheck_due`; the KV sweep ran and the Colgate/aggregator follow-ups landed), and step 1 is
+**half done** — 25 offer lines (22 distinct coupons) re-read live with zero drift before the
+retrieval proxy failed on chunk continuations. The remaining ~90 rows of the page's advertised
+"112 Digital Coupons" are still one careful fetch-cycle away; nothing was invented to fill in.
+
 **Do:**
-1. Re-read `pgbrandsaver.com/coupons/` in full (10 content chunks), transcribe every coupon line
-   verbatim with its printed expiry, and record the "Updated <Month> <Year>" stamp.
-2. Re-read `kellanovaus.com/us/en/coupons.html`; update the `KV` transcription; re-verify the
-   page headline still equals the sum of the transcribed values (it read "8 coupons today, up to
-   $7.00 in savings" on 2026-09-22 — a built-in completeness check worth keeping as a test).
+1. Re-read `pgbrandsaver.com/coupons/` in full (10 content chunks; retry when the retriever is
+   healthy), transcribe every coupon line verbatim with its printed expiry, and record the
+   "Updated <Month> <Year>" stamp. Keep the list-view whitespace artefacts out of the data —
+   see the pass-4 log entry on the Bounce 180 ct rendering before "reformatting" anything.
+2. ~~Re-read `kellanovaus.com/us/en/coupons.html` and re-verify the headline-sum~~ — done in
+   pass 4: page fetched whole, 8/8 cards matched, "8 coupons today, up to $7.00 in savings" still
+   equals the shard, and the cross-check now lives in `TestIssuersCompletenessHeadline`.
 3. Put the harvest loop in `scripts/generate_bulk_entries.py` (P&G + Kellanova), re-run it, and
-   let CI prove the shards match.
+   let CI prove the shards match. (P&G side done — generator owns the shard and now also emits
+   `recheck_due`; a Kellanova generator remains the tidy way to do the next monthly swap.)
 4. Sweep the remaining manufacturer hubs on the same pattern: Unilever, Nestlé/Purina,
    Kimberly-Clark (its old `kccoupons` mail-order line), General Mills, Campbell's, Post,
    Hershey, Mars, Mondelez, Colgate (see Priority 2), Clorox (404'd hub — re-check).
@@ -39,10 +50,17 @@ online coupon experience"** while `smiles.colgate.com/page/content/special-offer
 "Print coupons for your favorite Colgate® oral care products". The microsite failed live fetch
 twice on 2026-09-22 and is today evidenced only by a search snippet.
 
-**Do:** fetch the microsite again (headless if needed). If printable coupons render, transcribe
-each as a level-A entry (brand, amount, wording, expiry) the same way Kellanova's were. If it
-404s or redirects away, update `policy-colgate-coupons-suspended` and file an aggregator note —
-every "Colgate promo code" page online is then confirmed fabricated.
+**Status after pass 4 (2026-09-22):** the main page was re-fetched in full (identical text);
+`smiles.colgate.com` failed two further direct fetches (offers path + domain root) and returned
+**no search result at all**, so the "temporarily unavailable" statement is now the only actively
+served official text. The policy note, its critical flag, and the aggregator note
+(`excl-colgate-aggregator-promo-codes`) were updated/added accordingly. The contradiction stays
+flagged (not deleted) because the issuer's own page promises updated offers "soon" — until the
+microsite itself disappears or republishes, both readings must remain visible.
+
+**Do:** keep re-fetching both URLs on every monthly pass (and via headless later); if printable
+coupons ever render, transcribe each as a level-A entry (brand, amount, wording, expiry) the same
+way Kellanova's were.
 
 **Done when:** the `source-page-inconsistency` critical flag on `policy-colgate-coupons-suspended`
 can be removed because both pages now say the same thing — or the dataset carries Colgate's real
@@ -86,6 +104,10 @@ across Kellanova promotions, Nestlé and General Mills (Box Tops for Education �
 
 **Do:** fetch each program's terms page; record earning ladders verbatim; flag every account wall;
 reject anything that pays out only on an online store (precedent: `excl-rkt-squishmallows-online-only-reward`).
+Pass 4 did the Kellanova leg: the Pop-Tarts entry now quotes its published 1-point-per-$1 ladder
+verbatim from the official terms page, and the brand's legacy Scratch-Off terms (self-dated dead:
+"expire on 12/31/24", play window closed 2026-09-02) were rejected as
+`excl-kellanova-legacy-scratch-off-games`. Nestlé and General Mills legs still open.
 
 **Done when:** each program entry quotes its own terms (not the app-store blurb) and the
 `receipt-scan-rewards` category carries ≥ 5 entries or a limitations note saying fewer exist.
@@ -112,10 +134,11 @@ rewards-terms page, or record why it stays out.
 
 ## Priority 8 — public verification report + auto-issues
 
-`.github/workflows/verify.yml` already re-checks every citation weekly and prints a summary; wire
-its `reports/link-check.json` into the site header ("N of 72 citation URLs resolving as of <date>")
-and auto-open an issue labelled `link-rot` when a citation leaves the documented-log status. The
-sandbox has no egress, so this is a CI-side change only.
+`.github/workflows/verify.yml` already re-checks every citation weekly, prints a summary and files
+a `link-rot` issue; pass 4 added the `recheck-due` report (dataset records due within 7 days,
+summary + one open issue). Remaining: wire its `reports/link-check.json` into the site header
+("N of 80 citation URLs resolving as of <date>") — a CI-side change, since the sandbox has no
+egress.
 
 ## Priority 9 — store-circular watch for BOGO
 
@@ -126,18 +149,18 @@ weekly cadence, and honest `source-outdated` flags when the PDF is stale.
 
 ## Priority 10 — schema hardening for what the passes keep teaching us
 
-- New test: a Kellanova-style page headline "N coupons today, up to $X" must equal the count and
-  sum of the shard's transcribed offers (this caught nothing today *because* it was checked by
-  hand — automate it).
-- `verification.recheck_due` (ISO date) on every dated offer, so the weekly workflow can open
-  "due for re-verification" issues before expiry, not after.
+- ✅ Done (pass 4): the Kellanova headline "8 coupons today, up to $7.00" is pinned by
+  `TestIssuersCompletenessHeadline` — shard count, sum and per-entry evidence must all equal it.
+- ✅ Done (pass 4): `verification.recheck_due` (expiry − 3 days) on all 38 dated records, policy
+  documented in `data/meta.json`, enforced by `TestRecheckSchedule`, reported (and issue-filed
+  weekly) by `.github/workflows/verify.yml`.
 - A `rescoped` note type so archived taxonomies stay documented without staying in the build.
 
 ## Maintenance cadence
 
 | What | When | Tool |
 | --- | --- | --- |
-| Citation link check | Weekly (CI) | `scripts/verify_links.py` via `verify.yml` |
+| Citation link check + recheck-due report | Weekly (CI) | `scripts/verify_links.py` via `verify.yml` |
 | P&G + Kellanova + Coupons.com re-harvest | Monthly (or when flags say `expires-imminently`) | generator + CI |
 | Restaurant/sign-up program terms | Quarterly | manual pass, same rules |
 | Taxonomy review | When a category changes (e.g. this re-scope) | `data/meta.json` + tests |

@@ -399,5 +399,97 @@
     ],
     "risk": "medium — sweepstakes pages that outlive their promotions are the top 'expired offer still ranking' vector on manufacturer sites; also, Kraft Heinz product coupons circulate on every major retailer's digital platform, so a nonexistent 'Kraft codes' hub invites fabrication.",
     "what_would_verify_it": "A currently dated Kraft Heinz offer page (kraftheinz.com or a brand microsite whose own end date is in the future). Per-store Kraft/Heinz manufacturer coupons issued through retailers (e.g. the Target Circle offers an aggregator mentioned) are store-catalogued and would be verified against the retailer's account, not this microsite."
+  },
+  {
+    "id": "excl-colgate-aggregator-promo-codes",
+    "merchant": "Colgate (shop.colgate.com promo codes)",
+    "claim": "Circulating \"Colgate promo code\" pages promising codes such as WELCOME15 / SMILES15 / SMILES10 / SMILE40 / ACCESS30 \"15%–65% off\", a \"Free Colgate ShopSmiles Travel Makeup Bag on Any Order\", and similar, applied at the Colgate online store.",
+    "status": "REJECTED — fabricated-code ring: the issuer's own U.S. page states coupons are unavailable, and no code has any official counterpart",
+    "why_rejected": "Fifth fabricated-code ring documented by this project, and the one Colgate's own pages make easiest to debunk. (1) colgate.com/en-us/special-offers — fetched in full on 2026-09-22, twice (pass 3 and pass 4), states \"Coupons Temporarily Unavailable… coupons are unavailable on our website.\" (2) The four aggregator pages checked on this pass all apply their codes to shop.colgate.com, the DTC online store — online-only redemption is out of this dataset's scope even if the codes existed. (3) The code alphabets recycle one template (SMILE15/SMILES15/SMILES10/SMILE40/WELCOME15/ACCESS30/20OFF…) across pages that contradict each other; one lists its best codes as \"ends 03/09/2026\", another's visible H1 says \"in July 2026\" while its own page title says \"August 2026\", and a third claims \"17 Working Codes\" with a tester quote about \"$4.41 off\". (4) The nearest real thing the search surfaced was Colgate-Palmolive India's Smiles Club terms, which describe an Amazon India discount code for registered members in India and state plainly that the program itself \"do[es] not sell any products or services and do not redeem any offers or discounts\" — a third-party-marketplace mechanism, not U.S. store coupons. (5) The microsite that pass 1 found advertising printables (smiles.colgate.com) has since failed four direct fetches and returned no search result at all on pass 4, so no official page publishes any such code today.",
+    "urls_checked": [
+      {
+        "url": "https://www.colgate.com/en-us/special-offers",
+        "publisher": "Colgate-Palmolive (colgate.com — official)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Fetched live in pass 4, full page in one retrieval: \"Special Offers — Coupons Temporarily Unavailable. We're updating our online coupon experience. During this time, coupons are unavailable on our website. … Please check back soon for updated offers.\""
+      },
+      {
+        "url": "https://colgate.orangeoffer.com/",
+        "publisher": "orangeoffer.com (promo-code aggregator — not Colgate)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Snippet: \"Colgate Coupons 2025: 50% OFF Coupon Codes… 15% Off Discount Code for Your Orders, ends 03/09/2026, WELCOME15… Up To 15% Off at shop.colgate.com with Coupon Code… SMILES15\" — a page whose title is dated 2025 surfaced in the pass-4 search of September 2026, codes scoped to the online store, and its own best code printed as \"ends 03/09/2026\"."
+      },
+      {
+        "url": "https://www.dontpayfull.com/at/colgate.com",
+        "publisher": "dontpayfull.com (promo-code aggregator — not Colgate)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Snippet: \"Colgate Discount Codes - 40% Off Coupon 2026… 40% Off Storewide. Just click this link to enjoy 'SMILE40' coupon code at the checkout phase on shop.colgate.com… Aug 28, 2025 New code available for Colgate: SMILES10 - 10% off\"."
+      },
+      {
+        "url": "https://colgate.tenereteam.com/coupons",
+        "publisher": "tenereteam.com (promo-code aggregator — not Colgate)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Snippet: \"65% OFF Colgate Coupon Codes - February 2026 Promo Codes… 17 Working Codes… The Working code SMILE15 was manually verified and tested at Colgate by TenereTeam 2 weeks ago\" — with a testimonial about $4.41 off a whitening-kit order at the online store."
+      },
+      {
+        "url": "https://www.coupons.com/coupon-codes/colgate",
+        "publisher": "coupons.com promo-code pages (affiliate code page, not the printable platform)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Snippet: title \"15% OFF Colgate Coupons & Promo Codes August 2026\", body heading \"Colgate Coupons + Promo Codes in July 2026\", \"Save using one of our 7 offers available today… FREE BAG — Free Colgate Shopsmiles Travel Makeup Bag on Any Order\". The self-contradictory dates are the page's own; this is the affiliate code side of the coupons.com property, which this dataset separately rejects for promo codes (excl-coupons-com-affiliate-promo-codes)."
+      },
+      {
+        "url": "https://www.colgate.com/en-in/smiles-club/special-offer/10",
+        "publisher": "Colgate-Palmolive India (official, India market)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "\"T&Cs – Colgate Smiles Club Amazon discount offer\": \"10% additional discount on MRP… Valid only for CPIL registered members on Smiles Club in India, above 18 years of age and Indian Nationals only\", applied on an amazon.in store page — the only \"Smiles Club special offer\" the official domain currently publishes, and it is neither a U.S. offer nor an in-store one."
+      }
+    ],
+    "risk": "high — the exact pattern this project exists to catch: an issuer page saying 'no coupons' living beside code farms promising 40–65% off. Shoppers keying recycled codes at shop.colgate.com waste time, and the 'free bag / code revealed' links are affiliate bait of the same shape as the Round Table Pizza, 99 Ranch, General Mills and Raley's/Smart & Final rings already documented here.",
+    "what_would_verify_it": "A code or printable coupon published by Colgate on an official U.S. domain — colgate.com/en-us/special-offers (whose 'check back soon' wording makes this record due for re-check at every monthly pass) or a retrievable smiles.colgate.com. If Colgate ever publishes store-usable manufacturer coupons there, each becomes a level-A entry like Kellanova's eight; codes redeemable only at shop.colgate.com would still be out of scope as online-only."
+  },
+  {
+    "id": "excl-kellanova-legacy-scratch-off-games",
+    "merchant": "Kellanova (Cheez-It® / Rice Krispies Treats® / Pop-Tarts® rewards games)",
+    "claim": "That the 'Rewards Scratch-Off Game' terms pages still live on kellanovaus.com — $500 gift cards, a free box of Cheez-It, a $4 Rice Krispies Treats coupon, Pop-Tarts socks — are currently winnable or redeemable offers.",
+    "status": "REJECTED — the games' own published terms date them out: reward codes expire on 2024-12-31, the 2026 game's play window closed 2026-09-02, and its prize redeems only at an online store",
+    "why_rejected": "Found while sweeping Kellanova's promotion machinery for the monthly manufacturer re-harvest (ROADMAP priority 1/5). The coupon hub on the same domain checked out cleanly (all 8 entries re-verified), but three promotion terms pages on the official domain publish their own disqualification. (1) The Cheez-It Rewards Scratch-Off Game pays its free-box prize and its $0.25-off 'Special Offer' as Barcode Buck$ that 'expire on 12/31/24' — printed twice — a 2024-cycle game still being served in 2026. (2) The Rice Krispies Treats game runs the same Barcode Buck$ mechanic (a '$4 off coupon… towards the purchase of one (1) free 8-ct. box', 'ARV up to $4.00 each') via a wecheer.io registration flow of the same vintage. (3) The Pop-Tarts game — listed inside the Pop-Tarts Rewards Program terms — states 'Game plays must be completed by 11:59:59 PM (ET) on 9/2/26', three weeks before this verification pass, and its Grand Prize is a one-time socks coupon 'with free shipping at https://shop.poptarts.com/…' (ARV $22.95), i.e. online-only redemption. On top of the staleness, a free-to-enter instant-win sweepstakes is not a coupon at all — this project's standing scope rule (see LIMITATIONS §5) — and the precedent excl-rkt-squishmallows-online-only-reward already rejects a currently-advertised Kellanova offer for precisely that online-only reason.",
+    "urls_checked": [
+      {
+        "url": "https://www.kellanovaus.com/us/en/cheez-it-rewards.html",
+        "publisher": "Kellanova (kellanovaus.com — official consumer domain)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Official terms page retrieved via search snippet of the issuer's domain: 'Prize to be awarded in the form of Barcode Buck$®. Barcode Buck$® expire on 12/31/24.' — repeated verbatim after the '$.25 off of the entrant's next purchase of Cheez-It® crackers (12.4 oz.)' Special Offer paragraph; entry flow points at landingpage.wecheer.io/cheez-it-24/."
+      },
+      {
+        "url": "https://www.kellanovaus.com/us/en/rice-krispies-rewards.html",
+        "publisher": "Kellanova (kellanovaus.com — official consumer domain)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Official terms page via the same retrieval: 'Each Secondary Prize consists one (1) $4 off coupon to used towards the purchase of one (1) free 8-ct. box of Rice Krispies Treats® (ARV up to $4.00 each). Prize to be awarded in the form of Barcode Buck$®' — with the registration flow at go.wecheer.io/Kellanova_US_24_RKT (a 2024-cycle microsite slug)."
+      },
+      {
+        "url": "https://www.kellanovaus.com/us/en/pop-tarts-rewards-program.html",
+        "publisher": "Kellanova (kellanovaus.com — official consumer domain)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Program Terms page (same retrieval) contains the Scratch-Off Game rules: 'Game plays must be completed by 11:59:59 PM (ET) on 9/2/26' and 'Each Grand Prize consists of one (1) coupon to be used a single time to redeem for one (1) Pop-Tarts® branded Flavor Variety Socks with free shipping at https://shop.poptarts.com/pop-tartsr-assorted-flavors-socks.html. ARV of prize $22.95 each'."
+      },
+      {
+        "url": "https://www.kellanovaus.com/us/en/promotions.html",
+        "publisher": "Kellanova (kellanovaus.com — official consumer domain)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "The CURRENT promotions page on the same day lists no scratch-off game among live offers: 'Current Promotions' shows Pop-Tarts receipt-scan rewards, a Cheez-It college-football vote sweepstakes, the Squishmallows receipt offer and EA SPORTS promotions — corroborating that the games above are legacy pages, not the live slate."
+      }
+    ],
+    "risk": "medium — stale terms pages on a live official domain are the 'official-looking expired offer' failure mode this project documents (cf. the 2022 Kraft Heinz campaign page); a reader of kellanovaus.com can see '$500' and 'ARV up to $3.99' and conclude Kellanova is currently paying them out, and Barcode-Buck$-style codes from the 2024 cycle circulate on code farms after expiry.",
+    "what_would_verify_it": "A Kellanova promotion page whose own printed window includes the verification date AND whose reward is redeemable in person at a physical retailer (a Barcode Buck$ or manufacturer coupon usable at a store checkout). The issuer's current receipt-scan mechanic meets the in-store half and is already covered — poptarts-crazy-good-rewards (in the dataset) and excl-rkt-squishmallows-online-only-reward (rejected for the online-only half) — so nothing here suggests Kellanova has stopped rewarding shoppers, only that these game pages are dead."
   }
 ]
