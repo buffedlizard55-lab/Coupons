@@ -133,6 +133,18 @@ The rules for adding an entry are enforced by the tests, not by convention:
   build;
 - editing a shard without rebuilding the generated files fails the build.
 
+## Publishing
+
+GitHub Pages for this repository is configured as **Deploy from a branch → `main` → `/ (root)`**,
+so the site publishes from the committed root files (`index.html`, `assets/`, `data/`,
+`.nojekyll`) as soon as a change lands on `main`. `.nojekyll` is committed deliberately so GitHub
+serves the files as-is instead of running them through Jekyll.
+
+`.github/workflows/pages.yml` validates the dataset, runs all 39 tests, proves the bulk shards are
+reproducible and builds the site on every push and pull request. It also detects the repository's
+Pages mode: if Pages is ever switched to **GitHub Actions**, the same workflow uploads `_site/` as
+the Pages artifact and deploys it, with no further changes needed.
+
 ## Honesty about coverage
 
 This is not every coupon that exists. It is every offer that could be **verified against an
