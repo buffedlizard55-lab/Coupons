@@ -1,0 +1,192 @@
+[
+  {
+    "id": "pg-buy-more-save-more-costco",
+    "title": "P&G Buy More Save More at Costco — up to $60 in Costco Shop Cards",
+    "merchant": "Procter & Gamble / Costco",
+    "publisher": "Procter & Gamble (getpgoffer.com, ©2026 P&G)",
+    "categories": [
+      "rebate-cashback"
+    ],
+    "deal_types": [
+      "rebate"
+    ],
+    "value": {
+      "amount": 60.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "rebate"
+    },
+    "offer_text": "P&G Buy More Save More. Spend $100 on P&G Products, Get $25. Spend $200 on P&G Products, Get $60. Limit 2 Costco Shop Cards per member number. — Promotion valid for purchases made 8/24/26–9/20/26 at Costco (in warehouse and/or online). For every $100 spent (after discounts, and before taxes and shipping costs; may submit multiple receipts) on select Procter & Gamble products, get a Costco Shop Card. Limit two (2) Costco Shop Cards per Membership Number, maximum of $60 in Costco Shop Cards per Membership Number. Redemption valid on final sales only. Void if participating products are purchased and returned. Costco Shop Cards are not redeemable for cash, except where required by law. Void where prohibited. All redemptions must be submitted online or postmarked by 10/31/26. Promotion valid for U.S. residents & U.S. purchases only (excludes U.S. territories).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-10-31",
+    "expiry_basis": "Issuer's own terms: 'All redemptions must be submitted online or postmarked by 10/31/26'. Note this is the SUBMISSION deadline; the qualifying PURCHASE window closed 9/20/26.",
+    "purchase_window": {
+      "start": "2026-08-24",
+      "end": "2026-09-20"
+    },
+    "participating_brands": [
+      "Align",
+      "Always",
+      "Bounce",
+      "Bounty",
+      "Cascade",
+      "Charmin",
+      "Crest",
+      "Dawn",
+      "Downy",
+      "Febreze",
+      "Gain",
+      "Gillette",
+      "Head & Shoulders",
+      "Mielle",
+      "Metamucil",
+      "Mr. Clean",
+      "Native",
+      "Olay",
+      "Old Spice",
+      "Oral-B",
+      "Pampers",
+      "Pantene",
+      "Pepto-Bismol",
+      "Prilosec",
+      "Secret",
+      "Spruce",
+      "Super Nature",
+      "Swiffer",
+      "Tampax",
+      "Tide",
+      "Venus",
+      "Vicks",
+      "Zevo"
+    ],
+    "exclusions": [
+      "Braun",
+      "SK-II",
+      "all P&G items over $80",
+      "U.S. territories"
+    ],
+    "requirements": [
+      "Costco membership (login is separate from Costco.com per the issuer's note)",
+      "Register at getpgoffer.com, then upload receipt(s) or use the mail-in form",
+      "Receipts must show qualifying purchases made between 8/24/26 and 9/20/26",
+      "Submit online or postmark by 10/31/26",
+      "Issuer's support line: (888) 254-4054; issuer's reference page: www.Costco.com/pg"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Qualifying purchases are made at Costco warehouses (in-warehouse and/or online), and Costco operates warehouses throughout the nine-county Bay Area. The rebate itself is a Costco Shop Card, which is redeemed physically at any Costco warehouse.",
+      "physical_locations": null,
+      "locator_url": "https://www.costco.com/"
+    },
+    "sources": [
+      {
+        "url": "https://www.getpgoffer.com/",
+        "title": "P&G",
+        "publisher": "Procter & Gamble — official promotion microsite for the Costco 'Buy More Save More' rebate",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Full terms paragraph read verbatim from the page footer, ending '©2026 P&G'. Page steps read verbatim: 'Step 1. Spend $100 on Select P&G Products. In-Warehouse and/or Online.' / 'Step 2: Upload a Copy of Your Receipt(s). Upload multiple receipts to reach $100. Proof of purchase from 8/24/26 - 9/20/26.' / 'Step 3. Get up to $60 in Costco Shop Cards. Maximum $60. Limit 2 per Costco Membership Number'. Participating-brand list read verbatim from the 'Participating Brands' image alt text."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer value, tiers, caps, dates and brand list all read verbatim from the issuer's own microsite",
+        "Domain is a P&G-controlled promotion site and the page carries '©2026 P&G'",
+        "Dates cross-checked against today's date (2026-09-22) — purchase window found to be CLOSED",
+        "Cross-referenced with Costco's own Instant Savings book cycle, which ran 8/24/26–9/20/26"
+      ]
+    },
+    "flags": [
+      {
+        "code": "purchase-window-closed",
+        "severity": "critical",
+        "detail": "As of the 2026-09-22 verification date the qualifying purchase window (8/24/26–9/20/26) has CLOSED. Only shoppers who already bought qualifying P&G products in that window can still benefit, by submitting receipts online or postmarked by 10/31/26. This entry must not be presented to a new shopper as an available rebate. The next cycle historically starts with the November/December Costco savings book."
+      },
+      {
+        "code": "two-different-deadlines",
+        "severity": "warning",
+        "detail": "The offer has two distinct dates that are easy to confuse: the purchase window ended 2026-09-20, while the redemption/submission deadline is 2026-10-31. Both are stated on the same official page."
+      },
+      {
+        "code": "membership-required",
+        "severity": "info",
+        "detail": "Requires a paid Costco membership; the issuer explicitly notes the promotion login 'is different from your Costco.com login'."
+      }
+    ],
+    "tags": [
+      "rebate",
+      "gift-card",
+      "costco",
+      "household",
+      "personal-care"
+    ]
+  },
+  {
+    "id": "ibotta-cashback-app",
+    "title": "Ibotta — receipt-based cash back at physical retailers (program)",
+    "merchant": "Ibotta",
+    "publisher": "Ibotta Inc. (ibotta.com)",
+    "categories": [
+      "rebate-cashback"
+    ],
+    "deal_types": [
+      "cashback"
+    ],
+    "value": null,
+    "offer_text": "Make Every Purchase Rewarding — 'We help consumers earn millions in cash back with our free app and the promotions we power via the Ibotta Performance Network.' / 'Get cash back every time you shop on the Ibotta app or in-store. We make it easy, fast, and safe to save big on everyday purchases.'",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing service, not a dated offer.",
+    "requirements": [
+      "Free Ibotta app account (consumer entry point linked from the corporate site: home.ibotta.com)",
+      "Activate the specific offer in the app BEFORE shopping",
+      "Upload the receipt or link a store loyalty account after an in-store purchase"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "medium",
+      "note": "Cash back is triggered by a physical in-store purchase at a participating retailer; Bay Area participation includes national grocery, drug and convenience chains. On 2026-08-03 Ibotta announced a convenience-retail partnership with 7-Eleven, which has a dense Bay Area store network.",
+      "physical_locations": null,
+      "locator_url": null
+    },
+    "sources": [
+      {
+        "url": "https://ibotta.com/",
+        "title": "Ibotta | Performance Marketing Leader",
+        "publisher": "Ibotta Inc. — official corporate site",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Headline and body copy read verbatim: 'Make Every Purchase Rewarding' / 'We help consumers earn millions in cash back with our free app and the promotions we power via the Ibotta Performance Network.' / 'Get cash back every time you shop on the Ibotta app or in-store.' Scale claim read verbatim: 'You probably know our app with 50 million registered users'. Press-release list on the same page includes: '8/3/26 7-Eleven and Ibotta Join Together to Bring Performance-Based Promotions to Convenience Retail'."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Company, product and consumer entry point confirmed on its own domain",
+        "7-Eleven convenience-retail partnership confirmed via a dated press-release listing on the official site",
+        "Individual offer amounts were NOT read: they are personalised by account, retailer and week and only appear inside the app"
+      ]
+    },
+    "flags": [
+      {
+        "code": "offers-personalised",
+        "severity": "warning",
+        "detail": "No specific dollar amount is asserted for Ibotta anywhere in this dataset. The offers are per-account and per-retailer and cannot be verified anonymously; only the existence and mechanics of the program are verified."
+      },
+      {
+        "code": "third-party-claims-excluded",
+        "severity": "info",
+        "detail": "Third-party guides found during research asserted specific mechanics (e.g. '7 days to upload a receipt', 'Checkout 51 resets Wednesday night', '25 points per receipt'). None of those numbers appear on Ibotta's own site, so none of them are reproduced here."
+      }
+    ],
+    "tags": [
+      "cashback",
+      "app",
+      "grocery"
+    ]
+  }
+]

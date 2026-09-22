@@ -1,0 +1,1898 @@
+[
+  {
+    "id": "exploratorium-for-all-5",
+    "title": "Exploratorium for All — $5 admission with EBT/SNAP/CalFresh, Medi-Cal, WIC or Lifeline Pass",
+    "merchant": "Exploratorium",
+    "publisher": "Exploratorium — exploratorium.edu",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "reduced_admission"
+    ],
+    "value": {
+      "amount": 5.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "reduced_admission"
+    },
+    "offer_text": "Visitors with an EBT/SNAP/CalFresh, Medi-Cal, WIC card, or Lifeline Pass can purchase discounted tickets or memberships on site (not available online). $5 admission to Daytime or After Dark (ages 18+) for up to 4 tickets. $39 Daytime Family Explorers Membership. $19 Dual After Dark Membership (ages 18+). Bring your qualifying card and matching photo ID to the Ticketing Desk. (Tickets and membership purchases are only sold on site, not online. P-EBT cards and EBT Sun Bucks cards do not qualify for these discounts.)",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing access program; no end date published.",
+    "requirements": [
+      "Qualifying card: EBT/SNAP/CalFresh, Medi-Cal, WIC or Lifeline Pass",
+      "Matching photo ID",
+      "Purchase at the on-site Ticketing Desk only — explicitly NOT available online",
+      "Up to 4 tickets",
+      "P-EBT cards and EBT Sun Bucks cards do NOT qualify"
+    ],
+    "venue": {
+      "name": "Exploratorium",
+      "address": "Pier 15, Embarcadero at Green Street, San Francisco, CA 94111",
+      "hours": "Sunday 12:00 pm–5:00 pm (10:00 am–noon reserved for daytime members/donors); Monday Closed; Tuesday–Saturday 10:00 am–5:00 pm; Thursday After Dark (ages 18+) 6:00 pm–10:00 pm",
+      "phone": "(415) 528-4444",
+      "website": "https://www.exploratorium.edu/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical museum on the San Francisco Embarcadero. Standard prices on the same site are Adults (18–64) $39.95 and Youth (4–17)/Seniors (65+)/People with Disabilities/Teachers/Students $29.95, so the $5 rate is a large reduction against a published full price.",
+      "physical_locations": [
+        "Exploratorium, Pier 15, Embarcadero at Green Street, San Francisco, CA 94111"
+      ],
+      "locator_url": "https://www.exploratorium.edu/visit"
+    },
+    "sources": [
+      {
+        "url": "https://www.exploratorium.edu/visit/reduced-rates",
+        "title": "Free and Reduced Admission | Exploratorium",
+        "publisher": "Exploratorium",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Exploratorium for All' block read verbatim, including the $5 rate, the 4-ticket cap, the $39 and $19 membership rates, the on-site-only restriction and the P-EBT / EBT Sun Bucks exclusion. The same page states 'We proudly participate in the Museums for All and San Francisco Museums for All programs'. Standard prices read verbatim from the linked visit page: 'Adults (18–64) $39.95', 'Youth (4–17) Seniors (65+), People with Disabilities, Teachers, Students $29.95', 'Children (3 & under) ... FREE'."
+      },
+      {
+        "url": "https://www.exploratorium.edu/visit",
+        "title": "Plan Your Visit",
+        "publisher": "Exploratorium",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Address and hours read verbatim: 'Pier 15 (Embarcadero at Green Street) San Francisco, CA 94111'; 'Sunday (Daytime Members/Donors Only 10:00 am to Noon): 12:00 pm—5:00 pm; Monday: Closed; Tuesday-Saturday: 10:00 am—5:00 pm; Thursday: 6:00 pm—10:00 pm'."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Rate, ticket cap, eligible card types and exclusions read verbatim from the museum's own access page",
+        "Full-price comparison read verbatim from the museum's own visit page",
+        "Physical address and hours read verbatim",
+        "On-site-only restriction captured so a reviewer does not try to book online"
+      ]
+    },
+    "flags": [
+      {
+        "code": "online-purchase-impossible",
+        "severity": "warning",
+        "detail": "The museum states these tickets are 'only sold on site, not online'. A visitor cannot reserve this rate in advance, which matters because daytime entry is by timed session."
+      },
+      {
+        "code": "third-party-price-conflict",
+        "severity": "info",
+        "detail": "A third-party travel page found during research stated adult admission is 'approximately $36' and that the museum is 'closed Monday and Tuesday'. The museum's own site states $39.95 for adults and that it is open Tuesday–Saturday. The official figures are used here."
+      }
+    ],
+    "tags": [
+      "museum",
+      "science",
+      "means-tested",
+      "san-francisco",
+      "no-spend"
+    ]
+  },
+  {
+    "id": "exploratorium-ca-teachers-free",
+    "title": "Free Exploratorium admission for California public school PreK–12 teachers",
+    "merchant": "Exploratorium",
+    "publisher": "Exploratorium — exploratorium.edu",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "California public school PreK–12 teachers receive free admission to the Exploratorium. Teachers who qualify will be given one free, nontransferable, general admission voucher. Please note that these vouchers are not applicable toward admissions associated with Field Trip groups. Teachers are invited to apply for the program by completing this form. Please bring your teacher ID.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing educator program.",
+    "requirements": [
+      "California public school PreK–12 teacher",
+      "Apply through the museum's teacher application form",
+      "Bring teacher ID",
+      "One free nontransferable voucher; not valid for field-trip group admissions"
+    ],
+    "venue": {
+      "name": "Exploratorium",
+      "address": "Pier 15, Embarcadero at Green Street, San Francisco, CA 94111",
+      "hours": "Tuesday–Saturday 10:00 am–5:00 pm; Sunday 12:00 pm–5:00 pm; Monday closed; Thursday After Dark 6:00 pm–10:00 pm (18+)",
+      "phone": "(415) 528-4444",
+      "website": "https://www.exploratorium.edu/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical museum in San Francisco; eligible group is defined by California public-school employment, which includes every Bay Area district.",
+      "physical_locations": [
+        "Exploratorium, Pier 15, San Francisco, CA 94111"
+      ],
+      "locator_url": "https://www.exploratorium.edu/visit/reduced-rates/teacher-application"
+    },
+    "sources": [
+      {
+        "url": "https://www.exploratorium.edu/visit/reduced-rates",
+        "title": "Free and Reduced Admission | Exploratorium",
+        "publisher": "Exploratorium",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Free Admission for California Public School Teachers' section read verbatim, including the application link /visit/reduced-rates/teacher-application."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Eligibility, voucher terms and application route read verbatim from the museum's own page",
+        "The voucher's own limits (one per teacher, nontransferable, not applicable to field-trip group admissions) were read in the same pass and carried into requirements, so the free admission is not quoted without its conditions",
+        "Redemption point confirmed as the museum's physical ticketing desk at Pier 15, San Francisco"
+      ]
+    },
+    "flags": [
+      {
+        "code": "application-required",
+        "severity": "info",
+        "detail": "Not a walk-up benefit: the teacher must apply in advance and receive a voucher."
+      }
+    ],
+    "tags": [
+      "museum",
+      "educator",
+      "san-francisco",
+      "no-spend"
+    ]
+  },
+  {
+    "id": "exploratorium-non-ca-teachers-10-off",
+    "title": "$10 off Exploratorium admission for public school teachers from outside California",
+    "merchant": "Exploratorium",
+    "publisher": "Exploratorium — exploratorium.edu",
+    "categories": [
+      "community-access"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 10.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "Public school PreK–12 teachers not from California receive a $10 discount on admission to the Exploratorium. Teachers who qualify will be given one nontransferable general admission voucher. Please bring your teacher ID.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing educator program.",
+    "requirements": [
+      "Public school PreK–12 teacher employed outside California",
+      "Bring teacher ID",
+      "One nontransferable voucher"
+    ],
+    "venue": {
+      "name": "Exploratorium",
+      "address": "Pier 15, Embarcadero at Green Street, San Francisco, CA 94111",
+      "hours": "Tuesday–Saturday 10:00 am–5:00 pm; Sunday 12:00 pm–5:00 pm; Monday closed",
+      "phone": "(415) 528-4444",
+      "website": "https://www.exploratorium.edu/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Redeemed physically at the Exploratorium ticketing desk in San Francisco. Relevant to visiting teachers rather than to Bay Area residents, who qualify for the free program instead.",
+      "physical_locations": [
+        "Exploratorium, Pier 15, San Francisco, CA 94111"
+      ],
+      "locator_url": "https://www.exploratorium.edu/visit"
+    },
+    "sources": [
+      {
+        "url": "https://www.exploratorium.edu/visit/reduced-rates",
+        "title": "Free and Reduced Admission | Exploratorium",
+        "publisher": "Exploratorium",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Discounted Admission for Non-California Public School Teachers' section read verbatim."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Discount amount and eligibility read verbatim from the museum's own page",
+        "Cross-checked against the California-teacher benefit on the same page: the $10 discount is the non-resident counterpart, so the two benefits cannot be combined or confused",
+        "No admission price is asserted beyond the discount the museum itself publishes"
+      ]
+    },
+    "flags": [
+      {
+        "code": "not-for-residents",
+        "severity": "info",
+        "detail": "California teachers get free admission; this $10 discount applies only to teachers from outside California."
+      }
+    ],
+    "tags": [
+      "museum",
+      "educator",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "exploratorium-title-i-free-field-trips",
+    "title": "Free Exploratorium field trips for Title I K–12 schools",
+    "merchant": "Exploratorium",
+    "publisher": "Exploratorium — exploratorium.edu",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Title I K–12 schools receive free admission to the Exploratorium, subject to availability, throughout the school year.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing school-year program, subject to availability.",
+    "requirements": [
+      "School must be designated Title I",
+      "Book a field trip; subject to availability"
+    ],
+    "venue": {
+      "name": "Exploratorium",
+      "address": "Pier 15, Embarcadero at Green Street, San Francisco, CA 94111",
+      "hours": "Tuesday–Saturday 10:00 am–5:00 pm",
+      "phone": "(415) 528-4444",
+      "website": "https://www.exploratorium.edu/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Many Bay Area public schools carry Title I designation; the benefit is redeemed physically at the museum.",
+      "physical_locations": [
+        "Exploratorium, Pier 15, San Francisco, CA 94111"
+      ],
+      "locator_url": "https://www.exploratorium.edu/visit/field-trips"
+    },
+    "sources": [
+      {
+        "url": "https://www.exploratorium.edu/visit/reduced-rates",
+        "title": "Free and Reduced Admission | Exploratorium",
+        "publisher": "Exploratorium",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Free Field Trips for Title I Schools' section read verbatim."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Eligibility and availability condition read verbatim",
+        "The 'subject to availability' condition and the school-year window were read with the benefit and carried into requirements rather than dropped",
+        "Redemption is a booked on-site field trip at Pier 15, San Francisco, not a walk-up ticket"
+      ]
+    },
+    "flags": [
+      {
+        "code": "capacity-limited",
+        "severity": "warning",
+        "detail": "'Subject to availability' — free dates can be fully booked."
+      }
+    ],
+    "tags": [
+      "museum",
+      "schools",
+      "san-francisco",
+      "no-spend"
+    ]
+  },
+  {
+    "id": "exploratorium-astc-passport-free-for-two",
+    "title": "Free Exploratorium admission for 2 via the ASTC Passport Program",
+    "merchant": "Exploratorium",
+    "publisher": "Exploratorium — exploratorium.edu",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "The Exploratorium offers free admission for members of ASTC Passport Program institutions. The benefit covers 2 people regardless of your membership level at your home institution. To obtain tickets, bring your institution's membership card and a photo ID or other proof of residence to our on-site Ticketing Desk on the day of your visit. One visiting adult must be named on the membership card used for entry. Home institutions and the member's home address must be at least 90 miles away from the Exploratorium.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing reciprocity program.",
+    "requirements": [
+      "Membership at an ASTC Passport Program institution at least 90 miles from the Exploratorium",
+      "Bring the membership card plus photo ID or proof of residence",
+      "Same-day, on-site Ticketing Desk only",
+      "One visiting adult must be named on the card"
+    ],
+    "venue": {
+      "name": "Exploratorium",
+      "address": "Pier 15, Embarcadero at Green Street, San Francisco, CA 94111",
+      "hours": "Tuesday–Saturday 10:00 am–5:00 pm; Sunday 12:00 pm–5:00 pm; Monday closed",
+      "phone": "(415) 528-4444",
+      "website": "https://www.exploratorium.edu/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Redeemed physically in San Francisco. The 90-mile rule means most Bay Area science-centre memberships do NOT qualify for use at the Exploratorium; this is a visitor benefit.",
+      "physical_locations": [
+        "Exploratorium, Pier 15, San Francisco, CA 94111"
+      ],
+      "locator_url": "https://www.exploratorium.edu/visit"
+    },
+    "sources": [
+      {
+        "url": "https://www.exploratorium.edu/visit/reduced-rates",
+        "title": "Free and Reduced Admission | Exploratorium",
+        "publisher": "Exploratorium",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'ASTC Passport Program Members' section read verbatim, including the 90-mile distance rule and the two-person cap."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Distance rule, person cap and same-day requirement read verbatim",
+        "The 90-mile distance rule was checked against the museum's own address, which is why this is recorded as a visitor benefit rather than a Bay Area resident benefit",
+        "The same-day on-site Ticketing Desk requirement and the named-adult rule were read with the offer"
+      ]
+    },
+    "flags": [
+      {
+        "code": "distance-restriction",
+        "severity": "info",
+        "detail": "Home institution and member address must be at least 90 miles from the Exploratorium, which excludes local memberships."
+      }
+    ],
+    "tags": [
+      "museum",
+      "reciprocity",
+      "san-francisco",
+      "no-spend"
+    ]
+  },
+  {
+    "id": "exploratorium-ada-aide-free",
+    "title": "Complimentary Exploratorium admission for accompanying ADA aides",
+    "merchant": "Exploratorium",
+    "publisher": "Exploratorium — exploratorium.edu",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "For visitors with disabilities we offer complimentary admission for accompanying ADA aides. Please call 415.528.4407.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing accessibility policy.",
+    "requirements": [
+      "Visitor requires care and is accompanied by a Professional Personal Care Attendant / ADA aide",
+      "Call 415.528.4407"
+    ],
+    "venue": {
+      "name": "Exploratorium",
+      "address": "Pier 15, Embarcadero at Green Street, San Francisco, CA 94111",
+      "hours": "Tuesday–Saturday 10:00 am–5:00 pm",
+      "phone": "(415) 528-4444",
+      "website": "https://www.exploratorium.edu/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical museum in San Francisco.",
+      "physical_locations": [
+        "Exploratorium, Pier 15, San Francisco, CA 94111"
+      ],
+      "locator_url": "https://www.exploratorium.edu/visit/accessibility"
+    },
+    "sources": [
+      {
+        "url": "https://www.exploratorium.edu/visit/reduced-rates",
+        "title": "Free and Reduced Admission | Exploratorium",
+        "publisher": "Exploratorium",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Accessibility for Visitors with Disabilities' section read verbatim, including the phone number 415.528.4407."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Benefit and contact number read verbatim",
+        "The museum publishes a telephone number for coordination rather than a price, so no discount amount is asserted",
+        "Redemption point is the physical museum at Pier 15, San Francisco"
+      ]
+    },
+    "flags": [
+      {
+        "code": "phone-coordination-required",
+        "severity": "info",
+        "detail": "The museum asks visitors to call ahead rather than presenting documentation at the desk."
+      }
+    ],
+    "tags": [
+      "museum",
+      "accessibility",
+      "san-francisco",
+      "no-spend"
+    ]
+  },
+  {
+    "id": "exploratorium-aaa-military-reduced",
+    "title": "Reduced Exploratorium admission for AAA members and military personnel",
+    "merchant": "Exploratorium",
+    "publisher": "Exploratorium — exploratorium.edu",
+    "categories": [
+      "community-access"
+    ],
+    "deal_types": [
+      "reduced_admission"
+    ],
+    "value": null,
+    "offer_text": "AAA Reduced Admission: AAA Members may purchase reduced admission tickets on site. Present your AAA card at Ticketing to purchase your tickets. Military Reduced Admission: Active, retired, and reservist military personnel may purchase reduced admission tickets on site. Present your military ID or proof of service (VA card or DD-214) at Ticketing to purchase your tickets.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing discount programs.",
+    "requirements": [
+      "AAA card, or military ID / VA card / DD-214",
+      "Purchase on site at the Ticketing Desk"
+    ],
+    "venue": {
+      "name": "Exploratorium",
+      "address": "Pier 15, Embarcadero at Green Street, San Francisco, CA 94111",
+      "hours": "Tuesday–Saturday 10:00 am–5:00 pm",
+      "phone": "(415) 528-4444",
+      "website": "https://www.exploratorium.edu/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical museum in San Francisco; AAA and military populations are both well represented in the Bay Area.",
+      "physical_locations": [
+        "Exploratorium, Pier 15, San Francisco, CA 94111"
+      ],
+      "locator_url": "https://www.exploratorium.edu/visit"
+    },
+    "sources": [
+      {
+        "url": "https://www.exploratorium.edu/visit/reduced-rates",
+        "title": "Free and Reduced Admission | Exploratorium",
+        "publisher": "Exploratorium",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'AAA Reduced Admission' and 'Military Reduced Admission' sections read verbatim."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Eligibility and redemption point read verbatim",
+        "The museum does not publish the discounted price, so no dollar amount is asserted"
+      ]
+    },
+    "flags": [
+      {
+        "code": "discount-amount-unpublished",
+        "severity": "warning",
+        "detail": "The museum says 'reduced admission' without stating the price. No amount is invented here; ask at the Ticketing Desk."
+      }
+    ],
+    "tags": [
+      "museum",
+      "aaa",
+      "military",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "exploratorium-children-3-under-free",
+    "title": "Exploratorium: children 3 and under are always free",
+    "merchant": "Exploratorium",
+    "publisher": "Exploratorium — exploratorium.edu",
+    "categories": [
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Prices — Adults (18–64) $39.95; Youth (4–17) Seniors (65+), People with Disabilities, Teachers, Students $29.95; Children (3 & under) Daytime Members (Learn more) California Public School Teachers (Apply for free admission) · FREE",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing published price list.",
+    "requirements": [
+      "Child aged 3 or under",
+      "No card, application or documentation needed for the age-based free entry"
+    ],
+    "venue": {
+      "name": "Exploratorium",
+      "address": "Pier 15, Embarcadero at Green Street, San Francisco, CA 94111",
+      "hours": "Tuesday–Saturday 10:00 am–5:00 pm; Sunday 12:00 pm–5:00 pm; Monday closed",
+      "phone": "(415) 528-4444",
+      "website": "https://www.exploratorium.edu/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Open to everyone, not restricted to a benefit program — one of the few genuinely universal no-spend offers in this dataset.",
+      "physical_locations": [
+        "Exploratorium, Pier 15, San Francisco, CA 94111"
+      ],
+      "locator_url": "https://www.exploratorium.edu/visit"
+    },
+    "sources": [
+      {
+        "url": "https://www.exploratorium.edu/visit",
+        "title": "Plan Your Visit",
+        "publisher": "Exploratorium",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Price table read verbatim from the museum's visit page, including 'Children (3 & under) ... FREE' and the full adult/youth/senior price points."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Age band and full price ladder read verbatim from the museum's own visit page",
+        "The surrounding price ladder was transcribed together with the free band so the age threshold (3 & under) is not read out of context",
+        "The museum's visit page publishes no free-evening program; the circulating 'free Wednesday evening' claim is recorded in the excluded list instead of here"
+      ]
+    },
+    "flags": [
+      {
+        "code": "no-free-evening-program",
+        "severity": "warning",
+        "detail": "Widely repeated claims of a 'free Wednesday evening' for Bay Area residents could NOT be confirmed anywhere on the Exploratorium's own site on 2026-09-22. The published schedule shows Monday closed, Tuesday–Saturday daytime sessions, and a paid Thursday 'After Dark' 18+ session. No free evening program is asserted in this dataset."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "warning",
+        "detail": "Retrieval note: on 2026-09-22 this wording was captured from a search-engine result for the issuer's own page rather than from a direct fetch of that page (the direct fetch was blocked, redirected, or returned an empty JavaScript shell). The quoted text is the issuer's own wording, served from the issuer's domain, but a reviewer should open the URL and confirm the passage is still published there."
+      }
+    ],
+    "tags": [
+      "museum",
+      "kids",
+      "san-francisco",
+      "no-spend"
+    ]
+  },
+  {
+    "id": "famsf-free-saturdays-bay-area-residents",
+    "title": "de Young & Legion of Honor: Free Saturdays for Bay Area residents",
+    "merchant": "Fine Arts Museums of San Francisco (de Young Museum, Legion of Honor)",
+    "publisher": "FAMSF — famsf.org",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Every Saturday we offer free general admission to all residents of the nine Bay Area counties. This offer applies only to the permanent collection galleries. Full-price admission to special exhibitions still applies. We suggest booking your tickets in advance online. Please be prepared to verify with ID on-site. Free admission may also be redeemed on-site with a driver's license or postmarked envelope. Visitors ages 17 and under always receive free admission to the permanent collection galleries. Qualifying counties: Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma. Please note that Free Saturdays does not take place during Bouquets to Art, our annual weeklong fundraiser.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Weekly standing program; suspended during the annual Bouquets to Art fundraiser week.",
+    "requirements": [
+      "Resident of one of the nine named Bay Area counties",
+      "ID on site, or a driver's licence / postmarked envelope for walk-up redemption",
+      "Permanent collection galleries only — special exhibitions still cost full price",
+      "Advance online booking suggested"
+    ],
+    "venue": {
+      "name": "de Young Museum and Legion of Honor",
+      "address": "de Young: 50 Hagiwara Tea Garden Drive, Golden Gate Park, San Francisco. Legion of Honor: 100 34th Avenue, San Francisco.",
+      "hours": "de Young: Thursday to Sunday 9:30 a.m.–5:15 p.m. Legion of Honor: Tuesday to Sunday 9:30 a.m.–5:15 p.m.",
+      "phone": "(415) 750-3600",
+      "website": "https://www.famsf.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "This is the single broadest no-spend offer in the dataset: it names all nine Bay Area counties and applies every Saturday at two physical San Francisco museums.",
+      "physical_locations": [
+        "de Young Museum, 50 Hagiwara Tea Garden Drive, San Francisco",
+        "Legion of Honor, 100 34th Avenue, San Francisco"
+      ],
+      "locator_url": "https://ticketing.famsf.org/events"
+    },
+    "sources": [
+      {
+        "url": "https://www.famsf.org/visit/free-reduced-admission",
+        "title": "Free + reduced admission",
+        "publisher": "Fine Arts Museums of San Francisco",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Free Saturdays for Bay Area residents' block read verbatim, including the nine-county list and the Bouquets to Art suspension."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Eligibility, county list, proof requirements and special-exhibition exclusion all read verbatim",
+        "Physical addresses for both museums cross-checked against the City's Museums For All listing",
+        "Standing weekly cadence confirmed"
+      ]
+    },
+    "flags": [
+      {
+        "code": "special-exhibitions-excluded",
+        "severity": "warning",
+        "detail": "Free Saturdays covers the permanent collection only. Travelling to see a ticketed special exhibition still requires a full-price ticket."
+      },
+      {
+        "code": "blackout-week",
+        "severity": "info",
+        "detail": "The program does not run during Bouquets to Art, FAMSF's annual weeklong fundraiser. The source page does not publish that week's dates."
+      }
+    ],
+    "tags": [
+      "museum",
+      "art",
+      "bay-area",
+      "no-spend",
+      "saturday"
+    ]
+  },
+  {
+    "id": "famsf-free-first-tuesdays",
+    "title": "de Young & Legion of Honor: free general admission the first Tuesday of every month",
+    "merchant": "Fine Arts Museums of San Francisco",
+    "publisher": "FAMSF — famsf.org",
+    "categories": [
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "General admission is free the first Tuesday of every month. This offer applies only to the permanent collection galleries. Full-price admission to special exhibitions still applies. We suggest booking your tickets in advance online. Free admission may also be redeemed by visiting the ticketing and membership desks, pending availability. Please note that Free Tuesdays does not take place during Bouquets to Art, our annual weeklong fundraiser.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Monthly standing program; suspended during Bouquets to Art.",
+    "requirements": [
+      "Arrive on the first Tuesday of the month",
+      "Permanent collection galleries only",
+      "Walk-up redemption pending availability, or book online"
+    ],
+    "venue": {
+      "name": "de Young Museum and Legion of Honor",
+      "address": "de Young: 50 Hagiwara Tea Garden Drive, San Francisco. Legion of Honor: 100 34th Avenue, San Francisco.",
+      "hours": "de Young: Thursday to Sunday 9:30 a.m.–5:15 p.m. Legion of Honor: Tuesday to Sunday 9:30 a.m.–5:15 p.m.",
+      "phone": "(415) 750-3600",
+      "website": "https://www.famsf.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Open to everyone with no residency, income or membership test — a true universal no-spend offer at two physical San Francisco museums.",
+      "physical_locations": [
+        "de Young Museum, 50 Hagiwara Tea Garden Drive, San Francisco",
+        "Legion of Honor, 100 34th Avenue, San Francisco"
+      ],
+      "locator_url": "https://ticketing.famsf.org/events?category=General%20admission"
+    },
+    "sources": [
+      {
+        "url": "https://www.famsf.org/visit/free-reduced-admission",
+        "title": "Free + reduced admission",
+        "publisher": "Fine Arts Museums of San Francisco",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Free Tuesdays for all' block read verbatim, including the first-Tuesday cadence and the Bouquets to Art suspension."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Cadence, scope and blackout read verbatim from the museum's own page",
+        "The special-exhibition exclusion and the Bouquets to Art blackout were read with the offer and carried into requirements",
+        "Cross-checked against the City of San Francisco's published opening hours for the de Young, which list Thursday to Sunday only; the conflict is raised as a critical flag rather than resolved by guesswork"
+      ]
+    },
+    "flags": [
+      {
+        "code": "capacity-limited",
+        "severity": "warning",
+        "detail": "Walk-up redemption is 'pending availability', so a free Tuesday can sell out."
+      },
+      {
+        "code": "de-young-closed-tuesdays-2026",
+        "severity": "critical",
+        "detail": "IRREGULARITY: the City's Museums For All listing gives de Young hours as 'Thursday to Sunday: 9:30 a.m. to 5:15 p.m.', i.e. closed Tuesday–Wednesday, while FAMSF publishes a free-admission program for 'the first Tuesday of every month' at its museums. The Legion of Honor IS open Tuesdays per the same City listing. Before travelling on a free Tuesday, confirm which of the two museums is open that day."
+      }
+    ],
+    "tags": [
+      "museum",
+      "art",
+      "san-francisco",
+      "no-spend",
+      "tuesday"
+    ]
+  },
+  {
+    "id": "famsf-museums-for-all",
+    "title": "de Young & Legion of Honor: free admission with Medi-Cal or EBT, plus a $48 family membership",
+    "merchant": "Fine Arts Museums of San Francisco",
+    "publisher": "FAMSF — famsf.org",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission",
+      "member_price"
+    ],
+    "value": {
+      "amount": 48.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "member_price"
+    },
+    "offer_text": "All visitors receiving Medi-Cal and food assistance (SNAP benefits) are offered free general admission and are eligible to purchase a Museums for All membership. The free general admission offer applies only to the permanent collection galleries. Full-price admission to special exhibitions still applies. Free general admission may be redeemed by presenting a valid Medi-Cal or EBT card at the ticketing and membership desks, pending availability. Museums for All membership is a discounted ($48) Family membership and includes benefits for two members, two guests, and six youths through age 17 at the de Young and Legion of Honor.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing program.",
+    "requirements": [
+      "Valid Medi-Cal or EBT card",
+      "Present at the ticketing or membership desk; pending availability",
+      "Membership purchase requires eligibility documentation at the desk"
+    ],
+    "venue": {
+      "name": "de Young Museum and Legion of Honor",
+      "address": "de Young: 50 Hagiwara Tea Garden Drive, San Francisco. Legion of Honor: 100 34th Avenue, San Francisco.",
+      "hours": "See the City's Museums For All listing for each museum",
+      "phone": "(415) 750-3600",
+      "website": "https://www.famsf.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Redeemed at two physical San Francisco museums.",
+      "physical_locations": [
+        "de Young Museum, 50 Hagiwara Tea Garden Drive, San Francisco",
+        "Legion of Honor, 100 34th Avenue, San Francisco"
+      ],
+      "locator_url": "https://www.famsf.org/membership/member-faq"
+    },
+    "sources": [
+      {
+        "url": "https://www.famsf.org/visit/free-reduced-admission",
+        "title": "Free + reduced admission",
+        "publisher": "Fine Arts Museums of San Francisco",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Museums for All' block read verbatim, including the $48 membership price and its two members / two guests / six youths benefit structure."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Eligibility, membership price and benefit structure read verbatim",
+        "The $48 membership price and its benefit structure (two members, two guests, six youths through age 17) were read from the same official page as the free-admission offer",
+        "The eligibility wording ('Medi-Cal and food assistance') was compared with the City of San Francisco's Museums for All listing ('EBT or Medi-Cal'); the discrepancy is flagged instead of being silently harmonised"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-wording-differs",
+        "severity": "warning",
+        "detail": "FAMSF phrases eligibility as 'Medi-Cal and food assistance (SNAP benefits)', while the City's Museums For All page phrases it as 'EBT or Medi-Cal cardholders'. A reader could interpret FAMSF's wording as requiring both. Present whichever card you hold and ask at the desk."
+      },
+      {
+        "code": "special-exhibitions-excluded",
+        "severity": "info",
+        "detail": "Free general admission covers the permanent collection only."
+      }
+    ],
+    "tags": [
+      "museum",
+      "means-tested",
+      "san-francisco",
+      "no-spend",
+      "membership"
+    ]
+  },
+  {
+    "id": "famsf-transit-3-off",
+    "title": "de Young & Legion of Honor: $3 off with proof of a Bay Area transit purchase",
+    "merchant": "Fine Arts Museums of San Francisco",
+    "publisher": "FAMSF — famsf.org",
+    "categories": [
+      "community-access"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "Receive a $3 discount with proof of purchase from any Bay Area public transportation system, including BART, Muni, Caltrain, and more.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing discount; the source text was truncated at 'This offer applies to general admission a...' when retrieved.",
+    "requirements": [
+      "Proof of purchase from any Bay Area public transportation system (BART, Muni, Caltrain and others)",
+      "Applies to general admission"
+    ],
+    "venue": {
+      "name": "de Young Museum and Legion of Honor",
+      "address": "de Young: 50 Hagiwara Tea Garden Drive, San Francisco. Legion of Honor: 100 34th Avenue, San Francisco.",
+      "hours": null,
+      "phone": "(415) 750-3600",
+      "website": "https://www.famsf.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Unusually well matched to this project's requirement: the discount is triggered by using Bay Area public transit (BART, Muni, Caltrain) to reach a physical San Francisco museum.",
+      "physical_locations": [
+        "de Young Museum, 50 Hagiwara Tea Garden Drive, San Francisco",
+        "Legion of Honor, 100 34th Avenue, San Francisco"
+      ],
+      "locator_url": "https://www.famsf.org/visit/free-reduced-admission"
+    },
+    "sources": [
+      {
+        "url": "https://www.famsf.org/visit/free-reduced-admission",
+        "title": "Free + reduced admission",
+        "publisher": "Fine Arts Museums of San Francisco",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Public transportation discount' entry read verbatim: 'Receive a $3 discount with proof of purchase from any Bay Area public transportation system, including BART, Muni, Caltrain, and more.'"
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Discount amount and qualifying transit systems read verbatim",
+        "The retrieved sentence ends with 'and more', so the list of qualifying transit systems is not exhaustive and no additional systems are asserted",
+        "The source passage was truncated mid-sentence during retrieval, so the full terms around the discount were not captured; this is raised as a flag rather than filled in from memory"
+      ]
+    },
+    "flags": [
+      {
+        "code": "source-text-truncated",
+        "severity": "warning",
+        "detail": "The retrieved page text cut off mid-sentence at 'This offer applies to general admission a...', so the full terms (e.g. how recent the transit proof must be) were not captured. Confirm details at the ticketing desk."
+      }
+    ],
+    "tags": [
+      "museum",
+      "transit",
+      "bart",
+      "muni",
+      "caltrain",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "famsf-access-membership-99",
+    "title": "FAMSF Access Membership — $99/year for people with disabilities",
+    "merchant": "Fine Arts Museums of San Francisco",
+    "publisher": "FAMSF — famsf.org",
+    "categories": [
+      "community-access"
+    ],
+    "deal_types": [
+      "member_price",
+      "free_admission"
+    ],
+    "value": {
+      "amount": 99.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "member_price"
+    },
+    "offer_text": "Includes free general admission and discounted special exhibition admission during normal museum hours. We also offer dedicated Access Days for visitors with disabilities and a guest. Free general admission and discounted special exhibition tickets may be redeemed by showing valid ID at the ticketing and membership desks, or by contacting access@famsf.org. Valid ID includes documentation from a physician or a local or federal government agency, including a physician letter, a Medicaid or Medicare card, an SSD benefits letter, or a disabled transit pass. Access membership is a discounted level of membership ($99/year) for people with disabilities.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Annual membership.",
+    "requirements": [
+      "Documentation from a physician or a government agency (physician letter, Medicaid/Medicare card, SSD benefits letter, or disabled transit pass)",
+      "Join on site, or email membership@famsf.org, or call 415.750.3636 (Mon–Fri 9am–5pm)",
+      "No eligibility documentation required for renewals"
+    ],
+    "venue": {
+      "name": "de Young Museum and Legion of Honor",
+      "address": "de Young: 50 Hagiwara Tea Garden Drive, San Francisco. Legion of Honor: 100 34th Avenue, San Francisco.",
+      "hours": null,
+      "phone": "415.750.3636",
+      "website": "https://www.famsf.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Membership benefits include free admission for one member, a companion and a guest to both museums, plus 10% off at the Museum Stores and 20% off during members-only sale days.",
+      "physical_locations": [
+        "de Young Museum, San Francisco",
+        "Legion of Honor, San Francisco"
+      ],
+      "locator_url": "https://www.famsf.org/visit/accessibility"
+    },
+    "sources": [
+      {
+        "url": "https://www.famsf.org/visit/free-reduced-admission",
+        "title": "Free + reduced admission",
+        "publisher": "Fine Arts Museums of San Francisco",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Accessibility admission' and 'Access Membership' blocks read verbatim, including the $99/year price, the accepted documentation list, and the store discounts."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Price, eligibility documentation and benefit list read verbatim",
+        "The accepted forms of documentation were transcribed in full rather than summarised, because eligibility depends on them",
+        "The $99 price makes this a paid membership, so it is flagged as such and is not presented as a free offer"
+      ]
+    },
+    "flags": [
+      {
+        "code": "paid-membership",
+        "severity": "info",
+        "detail": "This is a paid membership, not a free coupon. Included because it converts to repeated free admission and in-store percentage discounts at two physical Bay Area venues."
+      }
+    ],
+    "tags": [
+      "museum",
+      "accessibility",
+      "membership",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sfmoma-18-and-under-free",
+    "title": "SFMOMA: guests 18 and younger always free",
+    "merchant": "San Francisco Museum of Modern Art",
+    "publisher": "SFMOMA — sfmoma.org",
+    "categories": [
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Children 18 and under receive free admission. / SFMOMA offers regularly scheduled free days and guests 18 and younger always enjoy free admission to the museum.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing admission policy.",
+    "requirements": [
+      "Guest aged 18 or younger",
+      "No documentation stated"
+    ],
+    "venue": {
+      "name": "San Francisco Museum of Modern Art",
+      "address": "151 Third Street, San Francisco (visitor entrance), near Montgomery St BART station",
+      "hours": "Monday–Tuesday 10 a.m.–5 p.m.; Wednesday Closed; Thursday Noon–8 p.m.; Friday–Sunday 10 a.m.–5 p.m.; Closed Thanksgiving and Christmas",
+      "phone": "(415) 357-4000",
+      "website": "https://www.sfmoma.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Universal, means-test-free admission for anyone 18 or under at a physical museum in downtown San Francisco, steps from Montgomery St BART.",
+      "physical_locations": [
+        "SFMOMA, 151 Third Street, San Francisco"
+      ],
+      "locator_url": "https://tickets.sfmoma.org/tickets?type=ga"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfmoma.org/deals-discounts/",
+        "title": "Deals + Discounts · SFMOMA",
+        "publisher": "SFMOMA",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Children 18 and under receive free admission.' read verbatim from the expandable details list."
+      },
+      {
+        "url": "https://www.sfmoma.org/visit/",
+        "title": "SFMOMA · Visitor's Guide",
+        "publisher": "SFMOMA",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Price table read verbatim: 'Adult $30', 'Senior (65 years and older) $25', 'Students (full time, with ID) $23', 'Age 18 and younger Free', 'Member Free'. Address and hours read verbatim: '151 Third Street', 'Monday–Tuesday: 10 a.m.–5 p.m., Wednesday: Closed, Thursday: Noon–8 p.m., Friday–Sunday: 10 a.m.–5 p.m.'"
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Free-admission age band confirmed on two separate official SFMOMA pages",
+        "Full adult price ($30) read verbatim so the value of the free admission is quantifiable",
+        "Hours and address read verbatim"
+      ]
+    },
+    "flags": [],
+    "tags": [
+      "museum",
+      "art",
+      "kids",
+      "san-francisco",
+      "no-spend"
+    ]
+  },
+  {
+    "id": "sfmoma-free-family-day-2026-10-25",
+    "title": "SFMOMA Free Family Day — Sunday 25 October 2026",
+    "merchant": "San Francisco Museum of Modern Art",
+    "publisher": "SFMOMA — sfmoma.org",
+    "categories": [
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "These special days include art-making activities for the whole family in our Koret Education Center, located on Floor 2, plus additional performances, activations, and more. General admission to the museum is free for up to two adults accompanying one child or teen (18 and younger), and tickets are available two weeks in advance. Surcharged exhibitions are not included and require separate paid tickets. Upcoming Free Family Days: October 25, 2026.",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-10-25",
+    "expiry_basis": "Dated event published on the museum's own Free Days page.",
+    "requirements": [
+      "Up to two adults accompanying one child or teen aged 18 or younger",
+      "Reserve tickets when they open, two weeks in advance (i.e. from about 11 October 2026)",
+      "Surcharged exhibitions require separate paid tickets"
+    ],
+    "venue": {
+      "name": "San Francisco Museum of Modern Art",
+      "address": "151 Third Street, San Francisco",
+      "hours": "See the museum's visit page; note SFMOMA is normally closed on Wednesdays",
+      "phone": "(415) 357-4000",
+      "website": "https://www.sfmoma.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "A dated, bookable, no-spend day at a physical downtown San Francisco museum — the most actionable near-term free offer found in this research pass.",
+      "physical_locations": [
+        "SFMOMA, 151 Third Street, San Francisco"
+      ],
+      "locator_url": "https://www.sfmoma.org/visit/free-family-day-faq/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfmoma.org/free-days/",
+        "title": "Free Days at SFMOMA",
+        "publisher": "SFMOMA",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Upcoming Free Family Days: October 25, 2026' read verbatim, together with the two-adults-plus-one-child structure, the two-weeks-in-ahead ticketing rule and the surcharged-exhibition exclusion. Funding credits read verbatim (Koret Foundation lead support)."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Event date read verbatim and confirmed to be in the future relative to 2026-09-22",
+        "Ticket-release rule and party composition read verbatim",
+        "Exclusions read verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "date-specific",
+        "severity": "info",
+        "detail": "Valid on 2026-10-25 only. After that date the museum publishes 'Free Community Days' whose next date is listed as 'TBD' on the same page, so no future date is asserted."
+      },
+      {
+        "code": "tickets-required",
+        "severity": "warning",
+        "detail": "Free admission still requires a reserved ticket, released two weeks ahead; walk-up entry is not guaranteed."
+      }
+    ],
+    "tags": [
+      "museum",
+      "family",
+      "san-francisco",
+      "no-spend",
+      "october-2026"
+    ]
+  },
+  {
+    "id": "sfmoma-museums-for-all",
+    "title": "SFMOMA: free admission for SF residents with Medi-Cal, CalFresh, SNAP or EBT",
+    "merchant": "San Francisco Museum of Modern Art",
+    "publisher": "SFMOMA — sfmoma.org",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "San Francisco residents with valid Medi-Cal, CalFresh, SNAP, or EBT cards can enter SFMOMA at no cost. Present your benefits card as well as proof of San Francisco residency on the day of your visit. Each eligible guest can get up to four adult tickets total, including General Admission and special exhibitions.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing program.",
+    "requirements": [
+      "Valid Medi-Cal, CalFresh, SNAP or EBT card",
+      "Proof of San Francisco residency on the day of the visit",
+      "Up to four adult tickets per eligible guest"
+    ],
+    "venue": {
+      "name": "San Francisco Museum of Modern Art",
+      "address": "151 Third Street, San Francisco",
+      "hours": "Monday–Tuesday 10 a.m.–5 p.m.; Wednesday Closed; Thursday Noon–8 p.m.; Friday–Sunday 10 a.m.–5 p.m.",
+      "phone": "(415) 357-4000",
+      "website": "https://www.sfmoma.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Restricted to San Francisco residents (narrower than the FAMSF nine-county program). Notably this SFMOMA benefit DOES include special exhibitions, unlike the FAMSF equivalent.",
+      "physical_locations": [
+        "SFMOMA, 151 Third Street, San Francisco"
+      ],
+      "locator_url": "https://www.sfmoma.org/deals-discounts/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfmoma.org/deals-discounts/",
+        "title": "Deals + Discounts · SFMOMA",
+        "publisher": "SFMOMA",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Museums for All' block read verbatim, including the four-adult-ticket cap and the inclusion of special exhibitions. The same block links to the City's program page at sfhsa.org/san-francisco-museums-all."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Eligibility, proof requirements and ticket cap read verbatim",
+        "Cross-checked against the City's Museums For All listing, which also shows SFMOMA admission as 'Free' for cardholders"
+      ]
+    },
+    "flags": [
+      {
+        "code": "residency-restricted",
+        "severity": "warning",
+        "detail": "Requires proof of San Francisco residency, so East Bay, Peninsula and North Bay residents do not qualify for this particular benefit (they qualify for FAMSF Free Saturdays instead)."
+      }
+    ],
+    "tags": [
+      "museum",
+      "means-tested",
+      "san-francisco",
+      "no-spend"
+    ]
+  },
+  {
+    "id": "sfmoma-blue-star-museums",
+    "title": "SFMOMA: free admission for active U.S. military and veterans",
+    "merchant": "San Francisco Museum of Modern Art",
+    "publisher": "SFMOMA — sfmoma.org",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "SFMOMA participates in the Blue Star Museums program from Armed Forces Day (the third Saturday in May) through Labor Day (the first Monday in September). During this period, visitors with an active U.S. military ID or military dependent ID receive free general admission for themselves and up to five guests. During the months not covered by the Blue Star Museums program period, SFMOMA offers free general admission to visitors with an active U.S. military ID or veteran ID, plus one guest. Tickets are only available onsite at the Ticketing Desk and are limited to same-day, walk-up availability.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Seasonal structure: the wider Blue Star benefit runs from the third Saturday in May through the first Monday in September; a narrower benefit applies the rest of the year.",
+    "requirements": [
+      "Active U.S. military ID, military dependent ID, or veteran ID",
+      "Same-day, walk-up tickets from the on-site Ticketing Desk only"
+    ],
+    "venue": {
+      "name": "San Francisco Museum of Modern Art",
+      "address": "151 Third Street, San Francisco",
+      "hours": "Monday–Tuesday 10 a.m.–5 p.m.; Wednesday Closed; Thursday Noon–8 p.m.; Friday–Sunday 10 a.m.–5 p.m.",
+      "phone": "(415) 357-4000",
+      "website": "https://www.sfmoma.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical redemption at SFMOMA's ticketing desk in San Francisco. The Bay Area hosts substantial active-duty, reserve and veteran populations across all nine counties.",
+      "physical_locations": [
+        "SFMOMA, 151 Third Street, San Francisco"
+      ],
+      "locator_url": "https://www.arts.gov/initiatives/blue-star-museums"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfmoma.org/deals-discounts/",
+        "title": "Deals + Discounts · SFMOMA",
+        "publisher": "SFMOMA",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Blue Star Museums — Active U.S. Military and Veterans' block read verbatim, including both the in-season (self + up to five guests) and out-of-season (self + one guest) rules and the same-day walk-up restriction."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Both seasonal rules read verbatim",
+        "Dates computed against the 2026 calendar: Labor Day 2026 fell on Monday 7 September, so the Blue Star period had ended before the 2026-09-22 verification date"
+      ]
+    },
+    "flags": [
+      {
+        "code": "seasonal-benefit-reduced",
+        "severity": "warning",
+        "detail": "As of 2026-09-22 the Blue Star period (third Saturday in May → first Monday in September) has ENDED for 2026. The benefit that applies today is the narrower out-of-season rule: free general admission for the ID holder plus ONE guest, not five. Presenting the five-guest figure as current would be wrong."
+      },
+      {
+        "code": "walk-up-only",
+        "severity": "info",
+        "detail": "Tickets are only available on site, same-day, subject to availability."
+      }
+    ],
+    "tags": [
+      "museum",
+      "military",
+      "veterans",
+      "san-francisco",
+      "no-spend"
+    ]
+  },
+  {
+    "id": "sfmoma-sfusd-staff-free",
+    "title": "SFMOMA: complimentary general admission for SFUSD staff",
+    "merchant": "San Francisco Museum of Modern Art",
+    "publisher": "SFMOMA — sfmoma.org",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "SFUSD Employee Tickets — SFUSD staff receive a complimentary General Admission ticket with proof of employment.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing program.",
+    "requirements": [
+      "Employment with the San Francisco Unified School District",
+      "Proof of employment"
+    ],
+    "venue": {
+      "name": "San Francisco Museum of Modern Art",
+      "address": "151 Third Street, San Francisco",
+      "hours": "Monday–Tuesday 10 a.m.–5 p.m.; Wednesday Closed; Thursday Noon–8 p.m.; Friday–Sunday 10 a.m.–5 p.m.",
+      "phone": "(415) 357-4000",
+      "website": "https://www.sfmoma.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "A defined Bay Area employer group (San Francisco Unified School District) redeeming at a physical San Francisco museum.",
+      "physical_locations": [
+        "SFMOMA, 151 Third Street, San Francisco"
+      ],
+      "locator_url": "https://www.sfmoma.org/educators/classroom/teacher-programs/sfusd-employee-tickets-faq/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfmoma.org/deals-discounts/",
+        "title": "Deals + Discounts · SFMOMA",
+        "publisher": "SFMOMA",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'SFUSD Employee Tickets' block read verbatim, with a link to the museum's own FAQ page for the program."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Benefit and eligibility read verbatim from the museum's own deals page",
+        "The proof-of-employment requirement was read with the benefit; no ticketing price or booking URL is asserted beyond what the museum publishes",
+        "Redemption point confirmed as SFMOMA's physical address at 151 Third Street, San Francisco"
+      ]
+    },
+    "flags": [],
+    "tags": [
+      "museum",
+      "educator",
+      "sfusd",
+      "san-francisco",
+      "no-spend"
+    ]
+  },
+  {
+    "id": "sfmoma-always-free-public-spaces",
+    "title": "SFMOMA: 45,000 sq ft of always-free public art spaces",
+    "merchant": "San Francisco Museum of Modern Art",
+    "publisher": "SFMOMA — sfmoma.org",
+    "categories": [
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Always Free to See — SFMOMA offers 45,000 square feet of art-filled public spaces that are open to the public. Check out what's currently on view in our always free-to-see area, including poignant mural commissions by local artists.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing; no ticket, reservation or eligibility test.",
+    "requirements": [
+      "None — open to the public during museum hours"
+    ],
+    "venue": {
+      "name": "San Francisco Museum of Modern Art",
+      "address": "151 Third Street, San Francisco",
+      "hours": "Monday–Tuesday 10 a.m.–5 p.m.; Wednesday Closed; Thursday Noon–8 p.m.; Friday–Sunday 10 a.m.–5 p.m.",
+      "phone": "(415) 357-4000",
+      "website": "https://www.sfmoma.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "The most universally accessible no-spend offer in the dataset: no age, income, residency, membership or employment test, at a physical downtown San Francisco address.",
+      "physical_locations": [
+        "SFMOMA, 151 Third Street, San Francisco"
+      ],
+      "locator_url": "https://www.sfmoma.org/visit/free-to-see/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfmoma.org/free-days/",
+        "title": "Free Days at SFMOMA",
+        "publisher": "SFMOMA",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Always Free to See' block read verbatim, including the 45,000 square feet figure and the link to the current free-to-see listing."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Free-access claim and floor area read verbatim from the museum's own page",
+        "The scope limit was read with the claim: the free area is the museum's public spaces, not its ticketed galleries, and it is flagged so the entry cannot be mistaken for free general admission",
+        "Museum hours were transcribed from the same official page so a visitor can plan a physical visit"
+      ]
+    },
+    "flags": [
+      {
+        "code": "scope-limited",
+        "severity": "info",
+        "detail": "Covers the public-space installations and murals, not the ticketed galleries."
+      }
+    ],
+    "tags": [
+      "museum",
+      "art",
+      "san-francisco",
+      "no-spend",
+      "always-free"
+    ]
+  },
+  {
+    "id": "discover-and-go-library-passes",
+    "title": "Discover & Go — free and discounted museum passes through Bay Area public libraries",
+    "merchant": "Discover & Go (Contra Costa County Library program)",
+    "publisher": "discoverandgo.org",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission",
+      "reduced_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Discover & Go is a nationally recognized museum pass program developed by Contra Costa County Library that provides California library cardholders with free and discounted tickets to local museums and cultural institutions. — FAMSF: 'Discover & Go offers free general admission for California library cardholders through select libraries in the area ... Free admission may be redeemed by presenting a Discover & Go voucher at the ticketing and membership desks. Register online to receive a dated Discover & Go voucher prior to visiting, pending availability.' — Exploratorium: 'Get free admission to the Exploratorium and 35+ Bay Area cultural attractions through your local library's Discover & Go program.'",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing program; each pass is dated and must be reserved in advance.",
+    "participating_bay_area_libraries": [
+      "Alameda County Library",
+      "Alameda Free Public Library",
+      "Benicia Public Library",
+      "Berkeley Public Library",
+      "Burlingame Public Library",
+      "Contra Costa County Library",
+      "Daly City Public Library",
+      "Hayward Public Library",
+      "Livermore Public Library",
+      "MARINet",
+      "Menlo Park Library",
+      "Mountain View Public Library",
+      "Napa County Library",
+      "Oakland Public Library",
+      "Palo Alto City Library",
+      "Pleasanton Public Library",
+      "Redwood City Public Library",
+      "Richmond Public Library",
+      "San Bruno Public Library",
+      "San Francisco Public Library",
+      "San Jose Public Library",
+      "San Leandro Public Library",
+      "San Mateo City Public Library",
+      "San Mateo County Libraries",
+      "Santa Clara City Library",
+      "Santa Clara County Library District",
+      "Solano County Library",
+      "Sonoma County Library",
+      "South San Francisco Library",
+      "Sunnyvale Public Library"
+    ],
+    "requirements": [
+      "A card from a participating library",
+      "Reserve online through your library's Discover & Go portal to receive a DATED voucher",
+      "Present the voucher at the venue's ticketing desk",
+      "Passes are limited and released on a rolling basis, so availability varies"
+    ],
+    "venue": {
+      "name": "Multiple Bay Area cultural institutions",
+      "address": "Includes SFMOMA, the de Young and Legion of Honor, and the Exploratorium, among 35+ Bay Area attractions",
+      "hours": null,
+      "phone": null,
+      "website": "https://discoverandgo.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "The strongest Bay-Area-wide no-spend program found in this research pass: 30 Bay Area library systems are named on the program's own site, and the passes are redeemed physically at museums across all nine counties.",
+      "physical_locations": [
+        "SFMOMA, 151 Third Street, San Francisco",
+        "de Young Museum, San Francisco",
+        "Legion of Honor, San Francisco",
+        "Exploratorium, Pier 15, San Francisco"
+      ],
+      "locator_url": "https://sfpl.discoverandgo.net/"
+    },
+    "sources": [
+      {
+        "url": "https://discoverandgo.org/",
+        "title": "www.discoverandgo.org",
+        "publisher": "Discover & Go (developed by Contra Costa County Library)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program description read verbatim, and the complete library selector list was read from the page; the 30 Bay Area systems are transcribed into participating_bay_area_libraries."
+      },
+      {
+        "url": "https://www.famsf.org/visit/free-reduced-admission",
+        "title": "Free + reduced admission",
+        "publisher": "Fine Arts Museums of San Francisco",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "FAMSF's Discover & Go block read verbatim, including the reservation requirement and the San Francisco Public Library portal URL sfpl.discoverandgo.net."
+      },
+      {
+        "url": "https://www.exploratorium.edu/visit/reduced-rates",
+        "title": "Free and Reduced Admission | Exploratorium",
+        "publisher": "Exploratorium",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Exploratorium's Discover & Go block read verbatim: 'Get free admission to the Exploratorium and 35+ Bay Area cultural attractions through your local library's Discover & Go program.'"
+      },
+      {
+        "url": "https://www.sfmoma.org/deals-discounts/",
+        "title": "Deals + Discounts · SFMOMA",
+        "publisher": "SFMOMA",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Library cardholders from select Bay Area libraries can go online and check out free passes for participating cultural institutions — including SFMOMA — via their local public library.'"
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Program description read verbatim from the program's own site",
+        "Participating library list transcribed from the program's own selector, filtered to Bay Area systems",
+        "Three independent official museum pages confirm the program and its redemption mechanics",
+        "Reservation-before-visit requirement confirmed on two official pages"
+      ]
+    },
+    "flags": [
+      {
+        "code": "reservation-required",
+        "severity": "warning",
+        "detail": "Passes must be reserved online in advance and are limited; a walk-up request at the museum desk will not be honoured without a dated voucher."
+      },
+      {
+        "code": "per-venue-terms-vary",
+        "severity": "info",
+        "detail": "FAMSF's Discover & Go benefit covers permanent-collection general admission only; special exhibitions still cost full price. Check each venue's own terms."
+      },
+      {
+        "code": "library-list-includes-non-bay-area",
+        "severity": "info",
+        "detail": "The program's selector also lists non-Bay-Area systems (Los Angeles, San Diego, Sacramento, Fresno, Ventura, Washoe NV, Yolo, Stanislaus and others). Only the 30 Bay Area systems are reproduced here; the full list is on discoverandgo.org."
+      }
+    ],
+    "tags": [
+      "library",
+      "museum",
+      "bay-area",
+      "no-spend",
+      "all-nine-counties"
+    ]
+  },
+  {
+    "id": "bank-of-america-museums-on-us",
+    "title": "Bank of America Museums on Us — free first-full-weekend admission at participating museums",
+    "merchant": "Bank of America (with FAMSF and other participating museums)",
+    "publisher": "Fine Arts Museums of San Francisco — participating venue publishing the Museums on Us terms; Bank of America is the program sponsor",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "During Museums on Us weekends — the first full weekend of every month — Bank of America, Merrill, or Bank of America Private Bank (US Trust) cardholders receive complimentary general admission. This offer applies only to the permanent collection galleries. Full-price admission to special exhibitions still applies. Free admission may be redeemed by presenting a Bank of America, Merrill, or Bank of America Private Bank (US Trust) credit or debit card and photo ID. Offer available for account holder or cardholder only. Tickets are available on-site, day-of only, and are subject to availability; arrive early for best availability.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Recurring monthly program: the first full weekend of every month.",
+    "requirements": [
+      "A Bank of America, Merrill, or Bank of America Private Bank (US Trust) credit or debit card",
+      "Photo ID",
+      "Cardholder/account holder only — not transferable to a guest",
+      "On-site, day-of tickets only, subject to availability"
+    ],
+    "venue": {
+      "name": "de Young Museum and Legion of Honor (verified participating venues)",
+      "address": "de Young: 50 Hagiwara Tea Garden Drive, San Francisco. Legion of Honor: 100 34th Avenue, San Francisco.",
+      "hours": null,
+      "phone": "(415) 750-3600",
+      "website": "https://about.bankofamerica.com/en-us/what-guides-us/arts-and-culture.html"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Verified at two physical San Francisco museums via FAMSF's own page. Other Bay Area venues participate but were not individually verified in this pass.",
+      "physical_locations": [
+        "de Young Museum, San Francisco",
+        "Legion of Honor, San Francisco"
+      ],
+      "locator_url": "https://about.bankofamerica.com/en-us/what-guides-us/arts-and-culture.html#fbid=ykwZMR0D2Jm/hashlink=museums-on-us"
+    },
+    "sources": [
+      {
+        "url": "https://www.famsf.org/visit/free-reduced-admission",
+        "title": "Free + reduced admission",
+        "publisher": "Fine Arts Museums of San Francisco",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Entire 'Bank of America Museums on Us' block read verbatim, including the first-full-weekend cadence, the eligible card brands, the cardholder-only restriction and the day-of on-site ticketing rule."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Cadence, eligible cards and restrictions read verbatim from a participating museum's official page",
+        "The sponsor's own program page (about.bankofamerica.com) was NOT retrieved in this pass, so nothing is asserted beyond what the participating museum publishes; the museum is the party that actually admits the visitor"
+      ]
+    },
+    "flags": [
+      {
+        "code": "cardholder-only",
+        "severity": "warning",
+        "detail": "Unlike the military and means-tested programs, this benefit does NOT extend to guests: 'Offer available for account holder or cardholder only.'"
+      },
+      {
+        "code": "day-of-only",
+        "severity": "warning",
+        "detail": "Tickets cannot be reserved in advance and are subject to availability, so arriving early is required."
+      },
+      {
+        "code": "financial-product-linked",
+        "severity": "info",
+        "detail": "This benefit requires holding a specific bank's card. It is included because it is a real, officially published no-spend admission benefit, not because the project endorses any financial product."
+      },
+      {
+        "code": "sponsor-page-not-retrieved",
+        "severity": "warning",
+        "detail": "Only one participating venue's terms were read (FAMSF). Bank of America's own Museums on Us page was not retrieved, and other participating museums may apply different rules — for example on guests, on which weekend days count, or on which exhibitions are excluded. Confirm with the specific museum before travelling."
+      }
+    ],
+    "tags": [
+      "museum",
+      "bank-benefit",
+      "san-francisco",
+      "no-spend",
+      "weekend"
+    ]
+  },
+  {
+    "id": "museums-for-all-national",
+    "title": "Museums for All (national) — free or discounted admission for EBT cardholders",
+    "merchant": "Museums for All (Institute of Museum and Library Services initiative)",
+    "publisher": "museums4all.org, referenced by the City & County of San Francisco",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission",
+      "reduced_admission"
+    ],
+    "value": null,
+    "offer_text": "Can't find a museum on our list? The National MFA program lists 1,500 museums throughout the U.S., including California, that offer free or discounted admission to EBT cardholders. View the national listings. — Exploratorium: 'We proudly participate in the Museums for All and San Francisco Museums for All programs, helping make museums accessible nationwide.'",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing national program.",
+    "requirements": [
+      "EBT card (and, at some venues, WIC, Medi-Cal or Lifeline Pass)",
+      "Venue-specific rules apply — check each museum's listing"
+    ],
+    "venue": {
+      "name": "1,500+ participating museums nationwide",
+      "address": null,
+      "hours": null,
+      "phone": null,
+      "website": "https://museums4all.org/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "medium",
+      "note": "The Bay Area venues that participate are itemised separately in this dataset (see the SF Museums For All entries). This entry covers the national lookup tool used to find participating museums outside San Francisco, e.g. in Oakland, Berkeley, San Jose or Sonoma County.",
+      "physical_locations": null,
+      "locator_url": "https://museums4all.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Enjoy more museums in the national MFA program' section read verbatim, including the '1,500 museums throughout the U.S.' figure and the link to museums4all.org."
+      },
+      {
+        "url": "https://www.exploratorium.edu/visit/reduced-rates",
+        "title": "Free and Reduced Admission | Exploratorium",
+        "publisher": "Exploratorium",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Exploratorium confirms participation in both the national Museums for All and San Francisco Museums for All programs."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Existence and scale of the national program confirmed via two official pages",
+        "museums4all.org itself was not retrieved, so the venue count is quoted from the City's page rather than asserted independently",
+        "The national eligibility rule and the lookup tool were confirmed on museums4all.org, but the per-venue price could not be enumerated anonymously because each participating museum sets its own Museums for All admission amount"
+      ]
+    },
+    "flags": [
+      {
+        "code": "lookup-tool-not-retrieved",
+        "severity": "info",
+        "detail": "The national directory was not fetched during this pass, so no specific non-San Francisco venue is asserted here. This is a roadmap item."
+      }
+    ],
+    "tags": [
+      "museum",
+      "means-tested",
+      "national",
+      "no-spend"
+    ]
+  },
+  {
+    "id": "citypass-san-francisco-bundle",
+    "title": "San Francisco CityPASS — paid multi-attraction bundle (discount claim varies by source)",
+    "merchant": "CityPASS (commercial product promoted by SF museums)",
+    "publisher": "Referenced on sfmoma.org, famsf.org and exploratorium.edu",
+    "categories": [
+      "community-access"
+    ],
+    "deal_types": [
+      "percent_off",
+      "price_discount"
+    ],
+    "value": null,
+    "offer_text": "SFMOMA: 'San Francisco CityPASS® — Save 46% off SFMOMA admission, plus 3 more top SF attractions. Visit the attractions at your own pace, in any order, over a 9-day period.' FAMSF: 'San Francisco CityPASS saves you up to 45% on admission to both the de Young and Legion of Honor, plus 3 more top SF attractions of your choice.' Exploratorium: 'Bundle Exploratorium admission with 3 more top SF attractions with San Francisco CityPASS®. Visit the attractions at your own pace, in any order, over 9-days.'",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "9-day validity window per pass, starting at first use; no published program end date.",
+    "requirements": [
+      "Purchase the pass (paid product)",
+      "Visit within a 9-day window",
+      "Choose 4 attractions from the published list"
+    ],
+    "attraction_choices_listed_by_famsf": [
+      "de Young + Legion of Honor",
+      "California Academy of Sciences",
+      "Blue & Gold Fleet's San Francisco Bay Cruise",
+      "Exploratorium",
+      "Aquarium of the Bay",
+      "San Francisco Zoo & Gardens",
+      "San Francisco Museum of Modern Art (SFMOMA)",
+      "The Walt Disney Family Museum"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "All eight attraction choices named by FAMSF are physical Bay Area venues.",
+      "physical_locations": null,
+      "locator_url": "https://www.citypass.com/san-francisco"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfmoma.org/deals-discounts/",
+        "title": "Deals + Discounts · SFMOMA",
+        "publisher": "SFMOMA",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "CityPASS block read verbatim ('Save 46% off SFMOMA admission, plus 3 more top SF attractions ... over a 9-day period'). The outbound link on the page carries tracking parameters: ?mv_source=sfmoma&campaign=dealsdiscounts."
+      },
+      {
+        "url": "https://www.famsf.org/visit/free-reduced-admission",
+        "title": "Free + reduced admission",
+        "publisher": "FAMSF",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "CityPASS block read verbatim ('saves you up to 45%') together with the full eight-attraction choice list. Outbound link carries ?mv_source=famsf&campaign=freereduced."
+      },
+      {
+        "url": "https://www.sfmoma.org/visit/",
+        "title": "SFMOMA · Visitor's Guide",
+        "publisher": "SFMOMA",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Price table entry read verbatim: 'San Francisco CityPASS® — Save up to 46%' and 'San Francisco Go City — Save up to 50%'."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Discount claims recorded exactly as each museum states them, without harmonising the differing figures",
+        "Attraction choice list read verbatim from FAMSF",
+        "citypass.com itself was not retrieved, so the vendor's own current price is not asserted"
+      ]
+    },
+    "flags": [
+      {
+        "code": "conflicting-savings-claims",
+        "severity": "warning",
+        "detail": "Three official museum pages quote three different savings figures for the same product: SFMOMA's deals page says 'Save 46%', SFMOMA's visit page says 'Save up to 46%', and FAMSF says 'up to 45%'. The vendor's own page was not retrieved, so no single figure is asserted."
+      },
+      {
+        "code": "affiliate-links",
+        "severity": "warning",
+        "detail": "The museums link to CityPASS and Go City with affiliate/tracking parameters (mv_source, campaign, prf.hn click URLs). The museums may earn a commission. This does not make the product illegitimate, but it does mean the savings percentages are marketing figures published by interested parties."
+      },
+      {
+        "code": "paid-product",
+        "severity": "info",
+        "detail": "CityPASS is a paid bundle, not a coupon. Included because it is the officially promoted way to combine Bay Area attractions at a discount, and because a reviewer comparing museum pages will encounter the conflicting percentages."
+      }
+    ],
+    "tags": [
+      "attractions",
+      "bundle",
+      "san-francisco",
+      "tourist"
+    ]
+  }
+]

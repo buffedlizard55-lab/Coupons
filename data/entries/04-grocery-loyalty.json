@@ -1,0 +1,436 @@
+[
+  {
+    "id": "safeway-foru",
+    "title": "Safeway for U — grocery rewards, member deals and coupons (program)",
+    "merchant": "Safeway (Albertsons Companies)",
+    "publisher": "Safeway — safeway.com",
+    "categories": [
+      "grocery-loyalty"
+    ],
+    "deal_types": [
+      "member_price",
+      "rewards_credit"
+    ],
+    "value": null,
+    "offer_text": "Safeway for U — Grocery Rewards — Grocery Coupons — Loyalty Program. The forU program is a free customer loyalty program offered by Albertsons Companies, Inc. that allows participants to receive weekly personalized deals on groceries, earn Points on all eligible purchases, use Points for discounts on gas and groceries, receive an annual birthday treat, receive a free item every month, and more.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "forU program is a free customer loyalty program offered by Albertsons Companies, Inc. (“we”, “us”, “our”) (“Program”) that allows the participants of the Program (“Program Members” or individually, “Program Member”, “You” or “you”) to receive weekly personalized deals on groceries, earn Points on all eligible purchases, use Points for discounts on gas and groceries, receive an annual birthday treat, receive a free item every month, and more (“Rewards”)!",
+    "expires": null,
+    "expiry_basis": "Standing loyalty program; individual clipped deals carry their own expiry inside the account.",
+    "requirements": [
+      "Free for U account (sign up in store or online)",
+      "Clip each deal to your account before shopping — clipped deals are tied to your account/phone number",
+      "Give your phone number or scan the app at the register"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Safeway operates many stores across San Francisco, the East Bay, the Peninsula, the South Bay and the North Bay. When the for U guest page was fetched on 2026-09-22 it resolved a Bay Area store context (the page header showed a store at '5100 Broadway'), and the site's own store locator is linked from the same page.",
+      "physical_locations": null,
+      "locator_url": "https://local.safeway.com/search.html"
+    },
+    "sources": [
+      {
+        "url": "https://www.safeway.com/foru-guest.html",
+        "title": "Safeway for U - Grocery Rewards - Grocery Coupons - Loyalty Program | Safeway",
+        "publisher": "Safeway (Albertsons Companies)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page title and navigation read verbatim: 'Safeway for U - Grocery Rewards - Grocery Coupons - Loyalty Program | Safeway'; top-level navigation includes 'Deals', 'forU', 'Weekly Ad'. Store locator link 'https://local.safeway.com/search.html' present in the page header."
+      },
+      {
+        "url": "https://www.andronicos.com/foru-guest.html",
+        "title": "Andronico's for U - Grocery Rewards - Grocery Coupons - Loyalty Program",
+        "publisher": "Andronico's Community Markets (Albertsons Companies) — same forU program terms",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Program definition read verbatim from the official forU guest page: 'forU program is a free customer loyalty program offered by Albertsons Companies, Inc. ... to receive weekly personalized deals on groceries, earn Points on all eligible purchases, use Points for discounts on gas and groceries, receive an annual birthday treat, receive a free item every month, and more'."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Program existence and official URL confirmed by fetching safeway.com",
+        "Program benefits read verbatim from the same forU terms on an official Albertsons Companies banner site",
+        "Individual clipped offers were NOT read: they are personalised per account and per store"
+      ]
+    },
+    "flags": [
+      {
+        "code": "offers-personalised",
+        "severity": "warning",
+        "detail": "for U deals are personalised and only visible after signing in, so no specific Safeway deal amount is asserted in this dataset. Only the program and its published benefit list are verified."
+      },
+      {
+        "code": "url-rot",
+        "severity": "info",
+        "detail": "The path https://www.safeway.com/foru/coupons.html returned Safeway's own 404 page on 2026-09-22 ('Oops! Looks like this page is out of season.'). The working entry point is /foru-guest.html. Any older link to a Safeway coupon deep link should be re-checked."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "loyalty",
+      "bay-area",
+      "gas-points"
+    ]
+  },
+  {
+    "id": "andronicos-foru",
+    "title": "Andronico's for U — member deals and cashback (program)",
+    "merchant": "Andronico's Community Markets (Albertsons Companies)",
+    "publisher": "Andronico's Community Markets — andronicos.com",
+    "categories": [
+      "grocery-loyalty"
+    ],
+    "deal_types": [
+      "member_price",
+      "rewards_credit",
+      "cashback"
+    ],
+    "value": null,
+    "offer_text": "Andronico's for U cashback can be used towards your in-store or online grocery bill at your local Andronico's store or other Albertsons Company stores. Andronico's forU cashback is not cash tender and can only be used at supported Albertsons Companies stores.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing loyalty program.",
+    "requirements": [
+      "Free for U account",
+      "Clip deals before shopping",
+      "Cashback is not cash tender — it can only be applied to a grocery bill at supported Albertsons Companies stores"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Andronico's Community Markets is a Bay Area banner of Albertsons Companies with stores in San Francisco and the East Bay. The program's own FAQ refers to 'your local Andronico's store'.",
+      "physical_locations": null,
+      "locator_url": "https://www.andronicos.com/"
+    },
+    "sources": [
+      {
+        "url": "https://www.andronicos.com/foru-guest.html",
+        "title": "Andronico's for U - Grocery Rewards - Grocery Coupons - Loyalty Program",
+        "publisher": "Andronico's Community Markets (Albertsons Companies)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "FAQ answer read verbatim: 'Cashback can be used towards your in-store or online grocery bill at your local Andronico's store or other Albertsons Company stores. Andronico's forU cashback is not cash tender and can only be used at supported Albertsons Companies stores.'"
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Official banner domain and forU page confirmed",
+        "Cashback mechanics read verbatim from the banner's own FAQ",
+        "Individual clipped offers not read (personalised behind sign-in)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "offers-personalised",
+        "severity": "warning",
+        "detail": "No specific Andronico's deal amount is asserted. Only the program and its cashback rules are verified."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "warning",
+        "detail": "Retrieval note: on 2026-09-22 this wording was captured from a search-engine result for the issuer's own page rather than from a direct fetch of that page (the direct fetch was blocked, redirected, or returned an empty JavaScript shell). The quoted text is the issuer's own wording, served from the issuer's domain, but a reviewer should open the URL and confirm the passage is still published there."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "loyalty",
+      "bay-area",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "albertsons-foru-banners",
+    "title": "Albertsons Companies for U — which Bay Area banners share the program",
+    "merchant": "Albertsons Companies",
+    "publisher": "Albertsons — albertsons.com",
+    "categories": [
+      "grocery-loyalty"
+    ],
+    "deal_types": [
+      "member_price"
+    ],
+    "value": null,
+    "offer_text": "PROGRAM MEMBER PERK - PROGRAM MEMBER PRICE: As a Program Member, you will be eligible to receive Program Member price discounts on products that are available for purchase in our stores and/or online at participating Albertsons Companies grocery banner stores (Albertsons, Safeway, Vons, Pavilions, Randalls, Tom Thumb, Carrs, Jewel-Osco, Andronico's, Balducci's, Kings, Haggen, Star Market, Shaw's, and ACME Markets).",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing loyalty program.",
+    "requirements": [
+      "Free for U membership at any participating banner"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Of the banners named in the official terms, Safeway and Andronico's Community Markets are the ones operating in the San Francisco Bay Area; Albertsons itself also operates Bay Area stores. Member pricing earned through for U applies at those physical stores.",
+      "physical_locations": null,
+      "locator_url": "https://www.albertsons.com/"
+    },
+    "sources": [
+      {
+        "url": "https://www.albertsons.com/foru-guest.html",
+        "title": "Albertsons for U - Grocery Rewards - Grocery Coupons - Loyalty Program",
+        "publisher": "Albertsons Companies",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Program terms read verbatim, including the full list of participating banner stores quoted in offer_text."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Banner list transcribed verbatim from the parent company's official for U page",
+        "Bay Area relevance established by identifying which named banners operate physical stores in the region"
+      ]
+    },
+    "flags": [
+      {
+        "code": "banner-not-listed",
+        "severity": "info",
+        "detail": "Lucky Supermarkets operates in the Bay Area and is historically an Albertsons Companies banner, but 'Lucky' does NOT appear in the banner list published in these official for U terms. On 2026-09-22 the path luckysupermarkets.com/foru-guest.html returned Lucky's own '404 Not Found' page. Lucky's coupon program is therefore listed in ROADMAP.md as unverified rather than being assumed to be for U."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "warning",
+        "detail": "Retrieval note: on 2026-09-22 this wording was captured from a search-engine result for the issuer's own page rather than from a direct fetch of that page (the direct fetch was blocked, redirected, or returned an empty JavaScript shell). The quoted text is the issuer's own wording, served from the issuer's domain, but a reviewer should open the URL and confirm the passage is still published there."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "loyalty",
+      "bay-area",
+      "policy"
+    ]
+  },
+  {
+    "id": "raleys-something-extra-member-deals",
+    "title": "Raley's / Bel Air / Nob Hill 'Something Extra' digital member deals (program)",
+    "merchant": "Raley's (Bel Air Market, Nob Hill Foods)",
+    "publisher": "Raley's — official advertised circular",
+    "categories": [
+      "grocery-loyalty"
+    ],
+    "deal_types": [
+      "member_price"
+    ],
+    "value": null,
+    "offer_text": "Digital Member Deals must be clipped online to redeem in store or online. Must have Something Extra membership. Limit one offer per household. — Enjoy Digital Member Deals. Clip online or on our app! Find the Digital Ad at raleys.com.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "The mechanics are standing; the specific prices in the circular that was read are dated and expired (see flags).",
+    "requirements": [
+      "Free 'Something Extra' membership",
+      "Clip each digital member deal online or in the app before shopping",
+      "Limit one offer per household"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Bel Air Market and Nob Hill Foods are Raley's banners operating physical stores in the San Francisco Bay Area (San Francisco, San Mateo County and the South Bay), alongside Raley's stores in the Sacramento region and the Tahoe/Truckee area.",
+      "physical_locations": null,
+      "locator_url": "https://www.raleys.com/"
+    },
+    "sources": [
+      {
+        "url": "https://contenthandler-raleys.fieldera.com/prodcoll/30222/0/0/022625_RBN.pdf",
+        "title": "Raley's / Bel Air / Nob Hill Foods advertised circular (PDF)",
+        "publisher": "Raley's — official circular distribution host",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Circular text read verbatim: 'Digital Member Deals must be clipped online to redeem in store or online. Must have Something Extra membership. Limit one offer per household.' Example member deals in the same circular: 'General Mills Cereal, Selected varieties 8.9 oz. to 12 oz. $2.97, Limit 4 per member, Non-Member Price $4.99, Digital Member Deal'; 'Sunnyside Farms Milk, Selected varieties, half gallon $1.97, Digital Member Deal'; 'Oroweat Bread or Thomas' English Muffins or Bagels ... $3.47, Limit 4 per member, Non-Member Price $4.99'."
+      },
+      {
+        "url": "https://www.raleys.com/",
+        "title": "Raley's Family-owned, American Grocery Stores",
+        "publisher": "Raley's",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Homepage fetched successfully (title 'Raley's Family-owned, American Grocery Stores') but renders only the shell 'Raley's Home Page' without JavaScript, so the current digital ad could not be read from it directly."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Membership requirement and clipping mechanic read verbatim from an official Raley's circular",
+        "Confirmed the parent site is live but JavaScript-rendered",
+        "Current-week member deals were NOT verified — the circular located during research is dated Feb 2025"
+      ]
+    },
+    "flags": [
+      {
+        "code": "source-outdated",
+        "severity": "critical",
+        "detail": "The circular that could be located is '022625_RBN.pdf' (dated 26 Feb 2025), roughly 19 months old. The example prices quoted in the evidence ($2.97 General Mills cereal, $1.97 Sunnyside Farms milk half-gallon, $3.47 Oroweat/Thomas') are therefore NOT presented as current offers anywhere in this dataset. Only the standing program mechanics are treated as verified."
+      },
+      {
+        "code": "client-rendered-source",
+        "severity": "warning",
+        "detail": "raleys.com serves a JavaScript shell to anonymous crawlers, so the live digital ad cannot be verified without a browser session. This is recorded as an automation limitation in LIMITATIONS.md."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "loyalty",
+      "bay-area",
+      "member-price"
+    ]
+  },
+  {
+    "id": "costco-member-only-savings",
+    "title": "Costco Member-Only Savings / Instant Savings (program)",
+    "merchant": "Costco Wholesale",
+    "publisher": "Costco — costco.com and the Costco app",
+    "categories": [
+      "warehouse-club"
+    ],
+    "deal_types": [
+      "price_discount",
+      "member_price"
+    ],
+    "value": null,
+    "offer_text": "MEMBER-ONLY SAVINGS — IN-WAREHOUSE + ONLINE. Instant Savings is applied per item number with a stated purchase limit, and the discounted figure is published as 'YOUR COST'. 'Download the new COSTCO APP to your smartphone for Warehouse Savings promotions!' 'Promotions differ in Puerto Rico and Costco Business Centers.'",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Instant Savings runs in dated cycles (the community-reported cycle in force at verification was 2026-09-21 to 2026-10-18, which is NOT asserted as verified — see flags).",
+    "requirements": [
+      "Paid Costco membership",
+      "No clipping: instant savings apply automatically at the register to the listed item numbers",
+      "Observe the per-item purchase limit printed with each offer",
+      "For warehouse-specific promotions, use the Warehouse tab in the Costco app"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Costco operates warehouses throughout the nine-county Bay Area and its Instant Savings are national in-warehouse promotions. Selection varies by location, as Costco's own offer text states.",
+      "physical_locations": null,
+      "locator_url": "https://www.costco.com/"
+    },
+    "sources": [
+      {
+        "url": "https://www.costco.com/online-offers.html",
+        "title": "MEMBER-ONLY SAVINGS (Costco offers page)",
+        "publisher": "Costco Wholesale",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Offer-page text captured from the official domain: 'MEMBER-ONLY SAVINGS', 'IN-WAREHOUSE + ONLINE', 'Instant Savings –$50.00 YOUR COST $99.99', 'SAVE $150 INSTANTLY on ANY SET OF 4 Bridgestone Tires ($70 Off any set of 4 Bridgestone tires + $80 additional member savings.)', 'Download the new COSTCO APP to your smartphone for Warehouse Savings promotions!', 'Promotions differ in Puerto Rico and Costco Business Centers.' Direct retrieval of this URL on 2026-09-22 returned Costco's own 'Page Not Found!' page, so the offer listing had rotated."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Program mechanics (instant savings, item numbers, purchase limits, 'YOUR COST' presentation, app-based warehouse savings) confirmed from Costco's own offer-page text",
+        "Confirmed that both /coupons.html and /online-offers.html return Costco's 404 page when fetched directly on 2026-09-22",
+        "Current item-level offers and cycle dates were NOT verified and are deliberately not asserted"
+      ]
+    },
+    "flags": [
+      {
+        "code": "item-level-offers-unverified",
+        "severity": "critical",
+        "detail": "No specific Costco item, price or discount amount is asserted as current in this dataset. The offer listing rotates on a roughly four-week cycle and the public URL returned a 404 when fetched on 2026-09-22, so item-level offers must be confirmed in the Costco app (Warehouse tab) or on the printed in-warehouse savings book."
+      },
+      {
+        "code": "unofficial-cycle-dates",
+        "severity": "warning",
+        "detail": "Community sources (r/Costco, citing Wallet Hacks and Costco Insider scans) reported the current Instant Savings book as 'Valid September 21 - October 18 2026' and the previous one as 'Valid August 24 - September 20, 2026'. These dates are plausible and consistent with the P&G/Costco rebate window verified on getpgoffer.com (8/24/26–9/20/26), but they come from unofficial scans, not from Costco. They are recorded here for review only and are not used to date any offer in this dataset."
+      },
+      {
+        "code": "membership-required",
+        "severity": "info",
+        "detail": "Requires a paid Costco membership. Costco's own offer text describes its savings as 'Instant Savings' applied to listed item numbers rather than as clipped coupons; whether Costco accepts third-party manufacturer coupons was NOT verified from an official Costco source in this pass and is therefore not asserted here."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "warning",
+        "detail": "Retrieval note: on 2026-09-22 this wording was captured from a search-engine result for the issuer's own page rather than from a direct fetch of that page (the direct fetch was blocked, redirected, or returned an empty JavaScript shell). The quoted text is the issuer's own wording, served from the issuer's domain, but a reviewer should open the URL and confirm the passage is still published there."
+      }
+    ],
+    "tags": [
+      "warehouse",
+      "instant-savings",
+      "bay-area",
+      "member-only"
+    ]
+  },
+  {
+    "id": "target-circle",
+    "title": "Target Circle — free membership with exclusive discounts and rewards (program)",
+    "merchant": "Target",
+    "publisher": "Target Corporation — corporate.target.com",
+    "categories": [
+      "big-box-loyalty"
+    ],
+    "deal_types": [
+      "member_price",
+      "rewards_credit"
+    ],
+    "value": null,
+    "offer_text": "Target Circle is designed to make every Target run more rewarding — combining rewards and personalized value with exclusive discounts and flexible fulfillment options like same-day delivery and fast shipping. Guests can join Target Circle for free on Target.com, via the Target app or in checkout lanes in stores. — Target Circle: Free membership with exclusive discounts and Target Circle Rewards. Target Circle 360: Paid membership tier that unlocks ... free, fast shipping, same-day delivery, monthly freebies and members-only access to shop big sales and brand collaborations early.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing program. The example sale event cited (Deal Days) ran 2026-03-25 to 2026-03-27 and has ended.",
+    "requirements": [
+      "Free Target Circle account — can be joined in the checkout lane of a physical Target store",
+      "Circle offers apply to your account; the paid Circle 360 tier is optional"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Target operates stores throughout the Bay Area and its own release states members can join 'in checkout lanes in stores', so enrollment and redemption both happen physically.",
+      "physical_locations": null,
+      "locator_url": "https://www.target.com/store-locator"
+    },
+    "sources": [
+      {
+        "url": "https://corporate.target.com/press/release/2026/03/target-circle-deal-days-highlights-top-seasonal-trends-at-big-discounts",
+        "title": "Target Circle Deal Days Highlights Top Seasonal Trends at Big Discounts",
+        "publisher": "Target Corporation — official corporate newsroom",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Program description and tier definitions read verbatim from Target's own press release dated March 2026; the same release states the Deal Days event ran 'March 25–27' with 'up to 50% off thousands of items across apparel, home, beauty and more for members of the retailer's free-to-join Target Circle program, plus early access beginning March 24 for members of Target Circle 360'."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Program existence, free tier and paid tier confirmed on Target's own corporate newsroom",
+        "Confirmed the cited sale event is historical, so its discount depth is not presented as a current offer",
+        "No current Circle offer amount is asserted"
+      ]
+    },
+    "flags": [
+      {
+        "code": "example-offer-expired",
+        "severity": "warning",
+        "detail": "The 'up to 50% off' figure belongs to Target Circle Deal Days, 25–27 March 2026, which ended about six months before verification. It is quoted only as evidence of how the program works."
+      },
+      {
+        "code": "paid-tier-price-not-official",
+        "severity": "warning",
+        "detail": "Third-party pages found during research quoted a Circle 360 price of $99/year. That price does not appear in the official Target release that was verified, so it is deliberately NOT stated in this dataset. Confirm the current price on target.com."
+      },
+      {
+        "code": "offers-personalised",
+        "severity": "info",
+        "detail": "Circle offers are personalised per account, so they cannot be verified anonymously."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "warning",
+        "detail": "Retrieval note: on 2026-09-22 this wording was captured from a search-engine result for the issuer's own page rather than from a direct fetch of that page (the direct fetch was blocked, redirected, or returned an empty JavaScript shell). The quoted text is the issuer's own wording, served from the issuer's domain, but a reviewer should open the URL and confirm the passage is still published there."
+      }
+    ],
+    "tags": [
+      "big-box",
+      "loyalty",
+      "bay-area"
+    ]
+  }
+]

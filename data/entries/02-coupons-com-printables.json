@@ -1,0 +1,340 @@
+[
+  {
+    "id": "coupons-com-tena-3",
+    "title": "SAVE $3.00 on any ONE (1) TENA product",
+    "merchant": "TENA (Essity)",
+    "publisher": "Coupons.com (authorised print-at-home coupon platform)",
+    "categories": [
+      "manufacturer-printable"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "SAVE $3.00 TENA® on any ONE (1) TENA® product",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "No expiry date is printed on the listing the offer was read from. The expiry is only shown on the individual coupon's own page, which requires the print/clip flow.",
+    "requirements": [
+      "Print the coupon from Coupons.com (the listing page states no login is necessary)",
+      "Present the printed coupon at a retailer that accepts manufacturer coupons",
+      "One coupon per item purchased"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "medium",
+      "note": "Manufacturer coupon: physical redemption happens at the retailer's register, not on Coupons.com. Bay Area retailers that publish acceptance of manufacturer coupons include Safeway, Andronico's, Raley's/Bel Air, CVS and Walgreens. Product availability varies by store.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://www.coupons.com/",
+        "title": "Coupons, Promo Codes and Cashback for September 2026",
+        "publisher": "Coupons.com",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Printable-coupon tile read verbatim: \"SAVE $3.00 TENA® on any ONE (1) TENA® product\". Section heading on the same page: \"Free printable coupons to redeem in-store\" and \"Enjoy these grocery coupons that are available for you. Easy to use and no login is necessary: Just clip the coupons you want & print them!\""
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the platform's own homepage",
+        "Platform is a recognised manufacturer-coupon distributor (operating since 1998 per its own page)",
+        "No expiry date could be read, so none is asserted"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expiry-not-published",
+        "severity": "warning",
+        "detail": "The offer was readable on the platform homepage, but its expiry date is only shown inside the clip/print flow. Confirm the printed expiry date before travelling to a store."
+      },
+      {
+        "code": "affiliate-disclosure",
+        "severity": "info",
+        "detail": "Coupons.com displays \"We might earn commissions on purchases\" at the top of the page. This applies to its promo-code and cashback business; print-at-home manufacturer coupons are funded by the product's manufacturer and are unaffected."
+      }
+    ],
+    "tags": [
+      "personal-care",
+      "printable"
+    ]
+  },
+  {
+    "id": "coupons-com-pataday-3",
+    "title": "Save $3.00 on any ONE (1) PATADAY Extra Strength",
+    "merchant": "Pataday (Alcon)",
+    "publisher": "Coupons.com (authorised print-at-home coupon platform)",
+    "categories": [
+      "manufacturer-printable"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "Save $3.00 PATADAY® Extra Strength On Any ONE (1) PATADAY® Extra Strength Eye Allergy Itch Relief Drops",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "No expiry date is printed on the listing the offer was read from.",
+    "requirements": [
+      "Print the coupon from Coupons.com",
+      "Buy PATADAY Extra Strength Eye Allergy Itch Relief Drops",
+      "Redeem at a retailer that accepts manufacturer coupons (pharmacy counters included)"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "medium",
+      "note": "Over-the-counter eye-allergy product stocked at Bay Area CVS, Walgreens, Safeway pharmacy aisles and Costco. Physical redemption is at the retailer.",
+      "physical_locations": null,
+      "locator_url": "https://www.walgreens.com/storelocator/find.jsp?tab=store+locator&requestType=locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.coupons.com/",
+        "title": "Coupons, Promo Codes and Cashback for September 2026",
+        "publisher": "Coupons.com",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Printable-coupon tile read verbatim: \"Save $3.00 PATADAY® Extra Strength On Any ONE (1) PATADAY® Extra Strength Eye Allergy Itch Relief Drops\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the platform's own homepage",
+        "No expiry date could be read, so none is asserted"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expiry-not-published",
+        "severity": "warning",
+        "detail": "Expiry is shown only inside the clip/print flow, not on the listing that was verified."
+      }
+    ],
+    "tags": [
+      "health",
+      "pharmacy",
+      "printable"
+    ]
+  },
+  {
+    "id": "coupons-com-clairol-6",
+    "title": "$6.00 OFF any TWO (2) boxes of Clairol hair color",
+    "merchant": "Clairol (Coty / Wella)",
+    "publisher": "Coupons.com (authorised print-at-home coupon platform)",
+    "categories": [
+      "manufacturer-printable",
+      "bogo-multi-buy"
+    ],
+    "deal_types": [
+      "dollar_off",
+      "bogo"
+    ],
+    "value": {
+      "amount": 6.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$6.00 OFF Clairol® ANY TWO (2) boxes of CLAIROL® Hair Color Product (Excludes Professional)",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "No expiry date is printed on the listing the offer was read from.",
+    "requirements": [
+      "Must buy TWO qualifying boxes in one transaction (multi-buy coupon)",
+      "Excludes Clairol Professional products",
+      "Print the coupon from Coupons.com and redeem at a retailer that accepts manufacturer coupons"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "medium",
+      "note": "Clairol hair colour is stocked in the health-and-beauty aisles of Bay Area Safeway, CVS, Walgreens and Target stores. Physical redemption is at the retailer.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://www.coupons.com/",
+        "title": "Coupons, Promo Codes and Cashback for September 2026",
+        "publisher": "Coupons.com",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Printable-coupon tile read verbatim: \"$6.00 OFF Clairol® ANY TWO (2) boxes of CLAIROL® Hair Color Product (Excludes Professional)\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the platform's own homepage",
+        "Multi-buy requirement read from the offer text itself",
+        "No expiry date could be read, so none is asserted"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expiry-not-published",
+        "severity": "warning",
+        "detail": "Expiry is shown only inside the clip/print flow, not on the listing that was verified."
+      },
+      {
+        "code": "multi-item-required",
+        "severity": "info",
+        "detail": "This is a two-item coupon. It only delivers value if you actually need two boxes."
+      }
+    ],
+    "tags": [
+      "beauty",
+      "printable",
+      "multi-buy"
+    ]
+  },
+  {
+    "id": "coupons-com-aveeno-3",
+    "title": "SAVE $3.00 on any ONE (1) AVEENO Facial Cleansing product",
+    "merchant": "Aveeno (Kenvue)",
+    "publisher": "Coupons.com (authorised print-at-home coupon platform)",
+    "categories": [
+      "manufacturer-printable"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "SAVE $3.00 AVEENO® on any ONE (1) AVEENO® Facial Cleansing product (excludes travel/trial sizes, refills, multipacks & wipes)",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "No expiry date is printed on the listing the offer was read from.",
+    "requirements": [
+      "Excludes travel/trial sizes, refills, multipacks and wipes",
+      "Print the coupon from Coupons.com and redeem at a retailer that accepts manufacturer coupons"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "medium",
+      "note": "Aveeno facial cleansing products are stocked at Bay Area CVS, Walgreens, Safeway and Target stores. Physical redemption is at the retailer.",
+      "physical_locations": null,
+      "locator_url": "https://www.cvs.com/store-locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.coupons.com/",
+        "title": "Coupons, Promo Codes and Cashback for September 2026",
+        "publisher": "Coupons.com",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Printable-coupon tile read verbatim: \"SAVE $3.00 AVEENO® on any ONE (1) AVEENO® Facial Cleansing product (excludes travel/trial sizes, refills, multipacks & wipes)\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the platform's own homepage",
+        "Exclusions transcribed verbatim",
+        "No expiry date could be read, so none is asserted"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expiry-not-published",
+        "severity": "warning",
+        "detail": "Expiry is shown only inside the clip/print flow, not on the listing that was verified."
+      },
+      {
+        "code": "url-rot",
+        "severity": "info",
+        "detail": "On 2026-09-22 the paths /printable-grocery-coupons and /printables on coupons.com both returned the site's own 404 page. The printable index is reached from the homepage link 'View all Printable Coupons'; deep links to the index should not be hard-coded."
+      }
+    ],
+    "tags": [
+      "beauty",
+      "personal-care",
+      "printable"
+    ]
+  },
+  {
+    "id": "coupons-com-program-printables",
+    "title": "Coupons.com free print-at-home manufacturer coupons (program)",
+    "merchant": "Coupons.com",
+    "publisher": "Coupons.com",
+    "categories": [
+      "manufacturer-printable"
+    ],
+    "deal_types": [
+      "policy"
+    ],
+    "value": null,
+    "offer_text": "Free printable coupons to redeem in-store — 'Enjoy these grocery coupons that are available for you. Easy to use and no login is necessary: Just clip the coupons you want & print them!'",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing platform, not a dated offer.",
+    "requirements": [
+      "No login needed to view and print the grocery coupon tiles",
+      "A printer, or a retailer that accepts a clipped digital version"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "medium",
+      "note": "Platform-level entry. Redemption is physical at whichever Bay Area retailer stocks the product and accepts manufacturer coupons.",
+      "physical_locations": null,
+      "locator_url": null
+    },
+    "sources": [
+      {
+        "url": "https://www.coupons.com/",
+        "title": "Coupons, Promo Codes and Cashback for September 2026",
+        "publisher": "Coupons.com",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Homepage self-description read verbatim: \"Trusted by millions for 28 years\", \"We've been helping people save since 1998\", \"250,000+ coupons\", \"Save big at over 1500 stores\", and the printable section heading \"Free printable coupons to redeem in-store\"."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Platform existence and no-login printable flow confirmed on its own homepage",
+        "Four individual printable offers were read verbatim from the same page and are listed separately in this dataset",
+        "The full printable inventory could not be enumerated anonymously"
+      ]
+    },
+    "flags": [
+      {
+        "code": "inventory-not-enumerable",
+        "severity": "warning",
+        "detail": "Only the coupons displayed on the publicly rendered homepage could be verified. The complete printable inventory sits behind the clip/print flow and changes daily, so this dataset does not claim to reproduce it."
+      },
+      {
+        "code": "mixed-business-model",
+        "severity": "info",
+        "detail": "Coupons.com mixes three different products on one domain: (1) manufacturer print-at-home coupons, (2) affiliate promo codes, and (3) cashback. Only category (1) is treated as a verified manufacturer coupon in this dataset. Categories (2) and (3) are listed under 'Excluded / unverified' because their codes are published by an affiliate, not by the merchant."
+      }
+    ],
+    "tags": [
+      "platform",
+      "printable",
+      "grocery"
+    ]
+  }
+]

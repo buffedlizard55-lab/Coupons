@@ -1,0 +1,2118 @@
+[
+  {
+    "id": "sf-museums-for-all-asian-art-museum",
+    "title": "Museums For All admission at Asian Art Museum",
+    "merchant": "Asian Art Museum",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Asian Art Museum",
+      "address": "200 Larkin Street, San Francisco",
+      "hours": "Thursday: 1:00 p.m. to 8:00 p.m. | Friday to Monday: 10:00 a.m. to 5:00 p.m. | Tuesday to Wednesday: Closed",
+      "phone": "(415) 581-3500",
+      "website": "https://www.asianart.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "200 Larkin Street, San Francisco"
+      ],
+      "locator_url": "https://www.asianart.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Asian Art Museum: 200 Larkin Street, San Francisco\" with \"Hours: Thursday: 1:00 p.m. to 8:00 p.m. | Friday to Monday: 10:00 a.m. to 5:00 p.m. | Tuesday to Wednesday: Closed\", \"Contact: (415) 581-3500\", \"Website: https://www.asianart.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-de-young-museum",
+    "title": "Museums For All admission at de Young Museum",
+    "merchant": "de Young Museum",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "de Young Museum",
+      "address": "50 Hagiwara Tea Garden Drive, San Francisco",
+      "hours": "Thursday to Sunday: 9:30 a.m. to 5:15 p.m.",
+      "phone": "(415) 750-3600",
+      "website": "https://famsf.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "50 Hagiwara Tea Garden Drive, San Francisco"
+      ],
+      "locator_url": "https://famsf.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"de Young Museum: 50 Hagiwara Tea Garden Drive, San Francisco\" with \"Hours: Thursday to Sunday: 9:30 a.m. to 5:15 p.m.\", \"Contact: (415) 750-3600\", \"Website: https://famsf.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-legion-of-honor-museum",
+    "title": "Museums For All admission at Legion of Honor Museum",
+    "merchant": "Legion of Honor Museum",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Legion of Honor Museum",
+      "address": "100 34th Avenue, San Francisco",
+      "hours": "Tuesday to Sunday: 9:30 a.m. to 5:15 p.m.",
+      "phone": "(415) 750-3600",
+      "website": "https://famsf.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "100 34th Avenue, San Francisco"
+      ],
+      "locator_url": "https://famsf.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Legion of Honor Museum: 100 34th Avenue, San Francisco\" with \"Hours: Tuesday to Sunday: 9:30 a.m. to 5:15 p.m.\", \"Contact: (415) 750-3600\", \"Website: https://famsf.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-museum-of-the-african-diaspora-moad",
+    "title": "Museums For All admission at Museum of the African Diaspora (MoAD)",
+    "merchant": "Museum of the African Diaspora (MoAD)",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Museum of the African Diaspora (MoAD)",
+      "address": "685 Mission Street, San Francisco",
+      "hours": "Wednesday to Saturday: 11:00 a.m. to 6:00 p.m. | Monday to Tuesday: Closed",
+      "phone": "(415) 358-7200",
+      "website": "https://www.moadsf.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "685 Mission Street, San Francisco"
+      ],
+      "locator_url": "https://www.moadsf.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Museum of the African Diaspora (MoAD): 685 Mission Street, San Francisco\" with \"Hours: Wednesday to Saturday: 11:00 a.m. to 6:00 p.m. | Monday to Tuesday: Closed\", \"Contact: (415) 358-7200\", \"Website: https://www.moadsf.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-museum-of-craft-and-design",
+    "title": "Museums For All admission at Museum of Craft and Design",
+    "merchant": "Museum of Craft and Design",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: Members only",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Museum of Craft and Design",
+      "address": "2569 Third Street, San Francisco",
+      "hours": "Thursday to Sunday: 12:00 p.m. to 5:00 p.m. | Monday to Wednesday: Closed",
+      "phone": "(415) 773-0303",
+      "website": "https://sfmcd.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "Members only"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "2569 Third Street, San Francisco"
+      ],
+      "locator_url": "https://sfmcd.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Museum of Craft and Design: 2569 Third Street, San Francisco\" with \"Hours: Thursday to Sunday: 12:00 p.m. to 5:00 p.m. | Monday to Wednesday: Closed\", \"Contact: (415) 773-0303\", \"Website: https://sfmcd.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: Members only\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-san-francisco-museum-of-modern-art-sfmoma",
+    "title": "Museums For All admission at San Francisco Museum of Modern Art (SFMOMA)",
+    "merchant": "San Francisco Museum of Modern Art (SFMOMA)",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "San Francisco Museum of Modern Art (SFMOMA)",
+      "address": "151 Third Street, San Francisco",
+      "hours": "Monday: 10:00 a.m. to 5:00 p.m. | Tuesday to Wednesday: Closed | Thursday: 1:00 p.m. to 8:00 p.m. | Friday to Sunday: 10:00 a.m. to 5:00 p.m.",
+      "phone": "(415) 357-4000",
+      "website": "https://www.sfmoma.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "151 Third Street, San Francisco"
+      ],
+      "locator_url": "https://www.sfmoma.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"San Francisco Museum of Modern Art (SFMOMA): 151 Third Street, San Francisco\" with \"Hours: Monday: 10:00 a.m. to 5:00 p.m. | Tuesday to Wednesday: Closed | Thursday: 1:00 p.m. to 8:00 p.m. | Friday to Sunday: 10:00 a.m. to 5:00 p.m.\", \"Contact: (415) 357-4000\", \"Website: https://www.sfmoma.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      },
+      {
+        "code": "official-sources-conflict",
+        "severity": "warning",
+        "detail": "The City's Museums For All page lists SFMOMA hours as 'Monday: 10:00 a.m. to 5:00 p.m. | Tuesday to Wednesday: Closed | Thursday: 1:00 p.m. to 8:00 p.m. | Friday to Sunday: 10:00 a.m. to 5:00 p.m.' SFMOMA's own visit page (fetched 2026-09-22) states 'Monday–Tuesday: 10 a.m.–5 p.m., Wednesday: Closed, Thursday: Noon–8 p.m., Friday–Sunday: 10 a.m.–5 p.m.' Two official sources disagree; confirm hours with the museum before travelling."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-walt-disney-family-museum",
+    "title": "Museums For All admission at Walt Disney Family Museum",
+    "merchant": "Walt Disney Family Museum",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free, main museum only admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free, main museum only | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Walt Disney Family Museum",
+      "address": "104 Montgomery Street, Presidio, San Francisco",
+      "hours": "Thursday to Sunday: 10:00 a.m. to 5:30 p.m. | Monday to Wednesday: Closed",
+      "phone": "(415) 345-6843",
+      "website": "https://www.waltdisney.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "104 Montgomery Street, Presidio, San Francisco"
+      ],
+      "locator_url": "https://www.waltdisney.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Walt Disney Family Museum: 104 Montgomery Street, Presidio, San Francisco\" with \"Hours: Thursday to Sunday: 10:00 a.m. to 5:30 p.m. | Monday to Wednesday: Closed\", \"Contact: (415) 345-6843\", \"Website: https://www.waltdisney.org/\" and \"Admission: Free, main museum only | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-yerba-buena-center-for-the-arts",
+    "title": "Museums For All admission at Yerba Buena Center for the Arts",
+    "merchant": "Yerba Buena Center for the Arts",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Yerba Buena Center for the Arts",
+      "address": "701 Mission Street, San Francisco",
+      "hours": "Thursday, Saturday to Sunday: 12:00 p.m. to 6:00 p.m. | Friday: 2:00 p.m. to 8:00 p.m. | Monday to Wednesday: Closed",
+      "phone": "(415) 978-2700",
+      "website": "https://ybca.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "701 Mission Street, San Francisco"
+      ],
+      "locator_url": "https://ybca.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Yerba Buena Center for the Arts: 701 Mission Street, San Francisco\" with \"Hours: Thursday, Saturday to Sunday: 12:00 p.m. to 6:00 p.m. | Friday: 2:00 p.m. to 8:00 p.m. | Monday to Wednesday: Closed\", \"Contact: (415) 978-2700\", \"Website: https://ybca.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-childrens-creativity-museum",
+    "title": "Museums For All admission at Children's Creativity Museum",
+    "merchant": "Children's Creativity Museum",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: Members only",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Children's Creativity Museum",
+      "address": "221 4th Street, San Francisco",
+      "hours": "Thursday to Sunday: 10:00 a.m. to 4:00 p.m. | Monday to Wednesday: Closed",
+      "phone": "(415) 820-3320",
+      "website": "https://creativity.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "Members only"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "221 4th Street, San Francisco"
+      ],
+      "locator_url": "https://creativity.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Children's Creativity Museum: 221 4th Street, San Francisco\" with \"Hours: Thursday to Sunday: 10:00 a.m. to 4:00 p.m. | Monday to Wednesday: Closed\", \"Contact: (415) 820-3320\", \"Website: https://creativity.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: Members only\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-american-bookbinders-museum",
+    "title": "Museums For All admission at American Bookbinders Museum",
+    "merchant": "American Bookbinders Museum",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "American Bookbinders Museum",
+      "address": "355 Clementina Street, San Francisco",
+      "hours": "Tuesday to Saturday: 10:00 a.m. to 4:00 p.m. | Sunday to Monday: Closed",
+      "phone": "(415) 824-9754",
+      "website": "https://bookbindersmuseum.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "355 Clementina Street, San Francisco"
+      ],
+      "locator_url": "https://bookbindersmuseum.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"American Bookbinders Museum: 355 Clementina Street, San Francisco\" with \"Hours: Tuesday to Saturday: 10:00 a.m. to 4:00 p.m. | Sunday to Monday: Closed\", \"Contact: (415) 824-9754\", \"Website: https://bookbindersmuseum.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-cable-car-museum",
+    "title": "Museums For All admission at Cable Car Museum",
+    "merchant": "Cable Car Museum",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Cable Car Museum",
+      "address": "1201 Mason Street, San Francisco",
+      "hours": "Tuesday to Thursday: 10:00 a.m. to 4:00 p.m. | Friday to Sunday: 10:00 a.m. to 5:00 p.m.",
+      "phone": "(415) 474-1887",
+      "website": "http://www.cablecarmuseum.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "1201 Mason Street, San Francisco"
+      ],
+      "locator_url": "http://www.cablecarmuseum.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Cable Car Museum: 1201 Mason Street, San Francisco\" with \"Hours: Tuesday to Thursday: 10:00 a.m. to 4:00 p.m. | Friday to Sunday: 10:00 a.m. to 5:00 p.m.\", \"Contact: (415) 474-1887\", \"Website: http://www.cablecarmuseum.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-chinese-culture-center-of-san-francisco",
+    "title": "Museums For All admission at Chinese Culture Center of San Francisco",
+    "merchant": "Chinese Culture Center of San Francisco",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Chinese Culture Center of San Francisco",
+      "address": "750 Kearny Street, 3rd Floor, San Francisco",
+      "hours": "Tuesday to Saturday: 10:00 a.m. to 4:00 p.m.",
+      "phone": "(415) 986-1882 ext. 025",
+      "website": "https://www.cccsf.us/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "Yes"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "750 Kearny Street, 3rd Floor, San Francisco"
+      ],
+      "locator_url": "https://www.cccsf.us/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Chinese Culture Center of San Francisco: 750 Kearny Street, 3rd Floor, San Francisco\" with \"Hours: Tuesday to Saturday: 10:00 a.m. to 4:00 p.m.\", \"Contact: (415) 986-1882 ext. 025\", \"Website: https://www.cccsf.us/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-chinese-historical-society-of-america",
+    "title": "Museums For All admission at Chinese Historical Society of America",
+    "merchant": "Chinese Historical Society of America",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Chinese Historical Society of America",
+      "address": "965 Clay Street, San Francisco",
+      "hours": "Wednesday to Sunday: 11:00 a.m. to 4:00 p.m.",
+      "phone": "(415) 391-1188",
+      "website": "https://chsa.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "Yes"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "965 Clay Street, San Francisco"
+      ],
+      "locator_url": "https://chsa.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Chinese Historical Society of America: 965 Clay Street, San Francisco\" with \"Hours: Wednesday to Sunday: 11:00 a.m. to 4:00 p.m.\", \"Contact: (415) 391-1188\", \"Website: https://chsa.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-glbt-historical-society-of-america",
+    "title": "Museums For All admission at GLBT Historical Society of America",
+    "merchant": "GLBT Historical Society of America",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "GLBT Historical Society of America",
+      "address": "4127 18th Street, San Francisco",
+      "hours": "Wednesday to Sunday: 11:00 a.m. to 5:00 p.m. | Monday to Tuesday: Closed",
+      "phone": "(415) 777-5455",
+      "website": "https://www.glbthistory.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "Yes"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "4127 18th Street, San Francisco"
+      ],
+      "locator_url": "https://www.glbthistory.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"GLBT Historical Society of America: 4127 18th Street, San Francisco\" with \"Hours: Wednesday to Sunday: 11:00 a.m. to 5:00 p.m. | Monday to Tuesday: Closed\", \"Contact: (415) 777-5455\", \"Website: https://www.glbthistory.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-guardians-of-the-city-museum-formerly-sffd-museum",
+    "title": "Museums For All admission at Guardians of the City Museum (formerly SFFD Museum)",
+    "merchant": "Guardians of the City Museum (formerly SFFD Museum)",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Guardians of the City Museum (formerly SFFD Museum)",
+      "address": "655 Presidio Avenue, San Francisco",
+      "hours": "Thursday to Sunday, 1:00 pm to 4:00 p.m. Please check the website to confirm before you visit.",
+      "phone": "(415) 558-3546",
+      "website": "https://guardiansofthecity.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "655 Presidio Avenue, San Francisco"
+      ],
+      "locator_url": "https://guardiansofthecity.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Guardians of the City Museum (formerly SFFD Museum): 655 Presidio Avenue, San Francisco\" with \"Hours: Thursday to Sunday, 1:00 pm to 4:00 p.m. Please check the website to confirm before you visit.\", \"Contact: (415) 558-3546\", \"Website: https://guardiansofthecity.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-san-francisco-railway-museum",
+    "title": "Museums For All admission at San Francisco Railway Museum",
+    "merchant": "San Francisco Railway Museum",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: No | Advanced ticket: Yes",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "San Francisco Railway Museum",
+      "address": "77 Steuart Street, San Francisco",
+      "hours": "Tuesday to Saturday: 12:00 p.m. to 5:00 p.m.",
+      "phone": "(415) 956-0472",
+      "website": "https://www.streetcar.org/",
+      "walk_up_admission": "No",
+      "advanced_ticket_required": "Yes"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "77 Steuart Street, San Francisco"
+      ],
+      "locator_url": "https://www.streetcar.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"San Francisco Railway Museum: 77 Steuart Street, San Francisco\" with \"Hours: Tuesday to Saturday: 12:00 p.m. to 5:00 p.m.\", \"Contact: (415) 956-0472\", \"Website: https://www.streetcar.org/\" and \"Admission: Free | Walk-up admission: No | Advanced ticket: Yes\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-tenderloin-museum",
+    "title": "Museums For All admission at Tenderloin Museum",
+    "merchant": "Tenderloin Museum",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Tenderloin Museum",
+      "address": "398 Eddy Street, San Francisco",
+      "hours": "Tuesday to Saturday: 10:00 a.m. to 5:00 p.m. | Sunday to Monday: Closed",
+      "phone": "(415) 351-1912",
+      "website": "https://www.tenderloinmuseum.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "398 Eddy Street, San Francisco"
+      ],
+      "locator_url": "https://www.tenderloinmuseum.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Tenderloin Museum: 398 Eddy Street, San Francisco\" with \"Hours: Tuesday to Saturday: 10:00 a.m. to 5:00 p.m. | Sunday to Monday: Closed\", \"Contact: (415) 351-1912\", \"Website: https://www.tenderloinmuseum.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-the-contemporary-jewish-museum",
+    "title": "Museums For All admission at The Contemporary Jewish Museum",
+    "merchant": "The Contemporary Jewish Museum",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: No | Advanced ticket: Yes",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "The Contemporary Jewish Museum",
+      "address": "736 Mission Street, San Francisco",
+      "hours": "Thursday to Sunday: 11:00 a.m. to 5:00 p.m.",
+      "phone": "(415) 655-7800",
+      "website": "https://www.thecjm.org/",
+      "walk_up_admission": "No",
+      "advanced_ticket_required": "Yes"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "736 Mission Street, San Francisco"
+      ],
+      "locator_url": "https://www.thecjm.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"The Contemporary Jewish Museum: 736 Mission Street, San Francisco\" with \"Hours: Thursday to Sunday: 11:00 a.m. to 5:00 p.m.\", \"Contact: (415) 655-7800\", \"Website: https://www.thecjm.org/\" and \"Admission: Free | Walk-up admission: No | Advanced ticket: Yes\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      },
+      {
+        "code": "venue-temporarily-closed",
+        "severity": "critical",
+        "detail": "The City's listing is headed 'The Contemporary Jewish Museum (Temporarily Closed)'. The admission benefit is published but the venue itself is flagged as temporarily closed by the same official source, so do not travel without confirming on thecj.org."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-aquarium-of-the-bay",
+    "title": "Museums For All admission at Aquarium of the Bay",
+    "merchant": "Aquarium of the Bay",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "reduced_admission"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "reduced_admission"
+    },
+    "offer_text": "$3 admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: $3 | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Aquarium of the Bay",
+      "address": "Pier 39, Embarcadero & Beach Street, San Francisco",
+      "hours": "Daily: 10:00 a.m. to 5:00 p.m. (last entry 4:30 p.m.)",
+      "phone": "(415) 623-5300",
+      "website": "https://www.aquariumofthebay.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "Pier 39, Embarcadero & Beach Street, San Francisco"
+      ],
+      "locator_url": "https://www.aquariumofthebay.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Aquarium of the Bay: Pier 39, Embarcadero & Beach Street, San Francisco\" with \"Hours: Daily: 10:00 a.m. to 5:00 p.m. (last entry 4:30 p.m.)\", \"Contact: (415) 623-5300\", \"Website: https://www.aquariumofthebay.org/\" and \"Admission: $3 | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-conservatory-of-flowers",
+    "title": "Museums For All admission at Conservatory of Flowers",
+    "merchant": "Conservatory of Flowers",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Conservatory of Flowers",
+      "address": "100 John F Kennedy Drive, Golden Gate Park, San Francisco",
+      "hours": "Tuesday to Sunday: 10:00 a.m. to 4:30 p.m. | Last entry at 4:00 p.m.",
+      "phone": "(415) 831-2090",
+      "website": "https://gggp.org/conservatory-of-flowers/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "Yes"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "100 John F Kennedy Drive, Golden Gate Park, San Francisco"
+      ],
+      "locator_url": "https://gggp.org/conservatory-of-flowers/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Conservatory of Flowers: 100 John F Kennedy Drive, Golden Gate Park, San Francisco\" with \"Hours: Tuesday to Sunday: 10:00 a.m. to 4:30 p.m. | Last entry at 4:00 p.m.\", \"Contact: (415) 831-2090\", \"Website: https://gggp.org/conservatory-of-flowers/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-exploratorium",
+    "title": "Museums For All admission at Exploratorium",
+    "merchant": "Exploratorium",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "reduced_admission"
+    ],
+    "value": {
+      "amount": 5.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "reduced_admission"
+    },
+    "offer_text": "$5 (daytime admission and Thursday After Dark, 18+) admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: $5 (daytime admission and Thursday After Dark, 18+) | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Exploratorium",
+      "address": "Pier 15, Embarcadero at Green Street, San Francisco",
+      "hours": "Tuesday to Saturday: 10:00 a.m. to 5:00 p.m. | Thursday After Dark (Ages 18+): 6:00 p.m. to 10:00 p.m. | Sunday 12:00 to 5:00 p.m. | Monday: Closed (except select holidays)",
+      "phone": "(415) 528-4444",
+      "website": "https://www.exploratorium.edu/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "Pier 15, Embarcadero at Green Street, San Francisco"
+      ],
+      "locator_url": "https://www.exploratorium.edu/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Exploratorium: Pier 15, Embarcadero at Green Street, San Francisco\" with \"Hours: Tuesday to Saturday: 10:00 a.m. to 5:00 p.m. | Thursday After Dark (Ages 18+): 6:00 p.m. to 10:00 p.m. | Sunday 12:00 to 5:00 p.m. | Monday: Closed (except select holidays)\", \"Contact: (415) 528-4444\", \"Website: https://www.exploratorium.edu/\" and \"Admission: $5 (daytime admission and Thursday After Dark, 18+) | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-japanese-tea-garden",
+    "title": "Museums For All admission at Japanese Tea Garden",
+    "merchant": "Japanese Tea Garden",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Japanese Tea Garden",
+      "address": "75 Hagiwara Tea Garden Drive, Golden Gate Park, San Francisco",
+      "hours": "Summer Hours: 9:00 a.m. to 5:45 p.m. | Winter Hours: 9:00 a.m. to 4:45 p.m. | Last entry 30 minutes before closing",
+      "phone": "(415) 752-1171",
+      "website": "https://www.japaneseteagardensf.com/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "Yes"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "75 Hagiwara Tea Garden Drive, Golden Gate Park, San Francisco"
+      ],
+      "locator_url": "https://www.japaneseteagardensf.com/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Japanese Tea Garden: 75 Hagiwara Tea Garden Drive, Golden Gate Park, San Francisco\" with \"Hours: Summer Hours: 9:00 a.m. to 5:45 p.m. | Winter Hours: 9:00 a.m. to 4:45 p.m. | Last entry 30 minutes before closing\", \"Contact: (415) 752-1171\", \"Website: https://www.japaneseteagardensf.com/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-museum-of-the-eye",
+    "title": "Museums For All admission at Museum of the Eye",
+    "merchant": "Museum of the Eye",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Museum of the Eye",
+      "address": "645 Beach Street, San Francisco",
+      "hours": "Wednesday to Sunday: 11:00 a.m. to 5:00 p.m. | Monday to Tuesday: Closed",
+      "phone": "(415) 447-0208",
+      "website": "https://www.aao.org/museum-of-the-eye",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "645 Beach Street, San Francisco"
+      ],
+      "locator_url": "https://www.aao.org/museum-of-the-eye"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Museum of the Eye: 645 Beach Street, San Francisco\" with \"Hours: Wednesday to Sunday: 11:00 a.m. to 5:00 p.m. | Monday to Tuesday: Closed\", \"Contact: (415) 447-0208\", \"Website: https://www.aao.org/museum-of-the-eye\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-randall-museum",
+    "title": "Museums For All admission at Randall Museum",
+    "merchant": "Randall Museum",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "Randall Museum",
+      "address": "199 Museum Way, San Francisco",
+      "hours": "Tuesday to Saturday: 10:00 a.m. to 5:00 p.m. | Sunday to Monday: Closed",
+      "phone": "(415) 554-9600",
+      "website": "https://randallmuseum.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "199 Museum Way, San Francisco"
+      ],
+      "locator_url": "https://randallmuseum.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"Randall Museum: 199 Museum Way, San Francisco\" with \"Hours: Tuesday to Saturday: 10:00 a.m. to 5:00 p.m. | Sunday to Monday: Closed\", \"Contact: (415) 554-9600\", \"Website: https://randallmuseum.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-san-francisco-botanical-garden",
+    "title": "Museums For All admission at San Francisco Botanical Garden",
+    "merchant": "San Francisco Botanical Garden",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_admission"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_admission"
+    },
+    "offer_text": "Free admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "San Francisco Botanical Garden",
+      "address": "1199 9th Avenue, San Francisco",
+      "hours": "Open Daily 7:30 a.m. | Last entry at 6:00 p.m.",
+      "phone": "(415) 661-1316",
+      "website": "https://www.sfbg.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "Yes"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "1199 9th Avenue, San Francisco"
+      ],
+      "locator_url": "https://www.sfbg.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"San Francisco Botanical Garden: 1199 9th Avenue, San Francisco\" with \"Hours: Open Daily 7:30 a.m. | Last entry at 6:00 p.m.\", \"Contact: (415) 661-1316\", \"Website: https://www.sfbg.org/\" and \"Admission: Free | Walk-up admission: Yes | Advanced ticket: Yes\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "sf-museums-for-all-san-francisco-zoo-and-gardens",
+    "title": "Museums For All admission at San Francisco Zoo and Gardens",
+    "merchant": "San Francisco Zoo and Gardens",
+    "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
+    "categories": [
+      "community-access",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "reduced_admission"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "reduced_admission"
+    },
+    "offer_text": "$3 admission with an EBT or Medi-Cal card plus proof of San Francisco residence. On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get 4 free or highly discounted admission tickets for every visit. Check each listing below for visiting hours and ticketing information. Make online reservations when available. Note: Special exhibits are not discounted and may require separate reservations.",
+    "offer_text_is_verbatim": false,
+    "verbatim_source_text": "Admission: $3 | Walk-up admission: Yes | Advanced ticket: No",
+    "expires": null,
+    "expiry_basis": "Standing municipal program; the source page publishes no end date.",
+    "requirements": [
+      "Valid EBT or Medi-Cal card",
+      "Proof of San Francisco residence",
+      "Up to 4 free or discounted tickets per visit",
+      "Special exhibitions are not discounted and may need separate reservations"
+    ],
+    "venue": {
+      "name": "San Francisco Zoo and Gardens",
+      "address": "Sloat Boulevard at The Great Highway, San Francisco",
+      "hours": "Open Daily: 10:00 a.m. to 5:00 p.m. | Last entry at 4:00 p.m.",
+      "phone": "(415) 753-7080",
+      "website": "https://www.sfzoo.org/",
+      "walk_up_admission": "Yes",
+      "advanced_ticket_required": "No"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical venue inside San Francisco with a published street address on the official City page.",
+      "physical_locations": [
+        "Sloat Boulevard at The Great Highway, San Francisco"
+      ],
+      "locator_url": "https://www.sfzoo.org/"
+    },
+    "sources": [
+      {
+        "url": "https://www.sfhsa.org/san-francisco-museums-all",
+        "title": "San Francisco Museums For All | sfhsa.org",
+        "publisher": "sfhsa.org — City & County of San Francisco Human Services Agency",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program line read verbatim: \"EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local museums and cultural centers.\". Venue listing read verbatim: \"San Francisco Zoo and Gardens: Sloat Boulevard at The Great Highway, San Francisco\" with \"Hours: Open Daily: 10:00 a.m. to 5:00 p.m. | Last entry at 4:00 p.m.\", \"Contact: (415) 753-7080\", \"Website: https://www.sfzoo.org/\" and \"Admission: $3 | Walk-up admission: Yes | Advanced ticket: No\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
+        "Venue name and street address transcribed verbatim",
+        "Admission amount transcribed verbatim",
+        "Program eligibility conditions transcribed verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-restricted",
+        "severity": "info",
+        "detail": "Not open to the general public: requires an EBT or Medi-Cal card plus proof of San Francisco residence. Listed here because it is a genuine no-spend offer with a physical Bay Area redemption point."
+      }
+    ],
+    "tags": [
+      "museum",
+      "culture",
+      "no-spend",
+      "san-francisco"
+    ]
+  }
+]

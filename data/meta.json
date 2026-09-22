@@ -1,0 +1,242 @@
+{
+  "dataset": {
+    "name": "Verified Official Coupons & Offers — San Francisco Bay Area",
+    "slug": "coupons",
+    "version": "1.0.0",
+    "compiled_at": "2026-09-22",
+    "timezone_note": "All dates are ISO-8601 (YYYY-MM-DD). 'compiled_at' is the date every line in this dataset was checked against its cited source.",
+    "scope": "Offers that (a) are published by the retailer, manufacturer, brand owner, government agency or institution that issues them, (b) can be redeemed at a physical location reachable from the San Francisco Bay Area, and (c) were still within their published validity window at the time of verification.",
+    "no_hallucination_policy": "Every field that describes an offer is either (1) a verbatim quote from a cited official page, or (2) an explicitly-labelled inference. Nothing in this dataset is reconstructed from memory, from a coupon aggregator, or from an affiliate/promo-code site. Items that could not be verified from an official source are listed in data/entries/10-excluded-unverified.json with the reason for exclusion.",
+    "official_only": true,
+    "source_policy": "Every offer must cite the party that has to honour it: the manufacturer, the retailer, the museum, the restaurant or the public agency. Aggregators, cashback portals, promo-code sites, listicles, coupon blogs and social-media posts are never accepted as the source of an available offer. They may appear only as evidence inside a rejection record or a policy note.",
+    "physical_location_policy": "An offer is included only if it can be redeemed at a physical location reachable from the nine-county San Francisco Bay Area, or if the issuer publishes an official locator that resolves to such a location. Where the issuer publishes an address, opening hours or a phone number, those are transcribed verbatim. Online-only or mail-order-only offers are out of scope.",
+    "expires_policy": "Expiries are stored as ISO-8601 dates exactly as published, with the basis for the date recorded in expiry_basis. Offers with no published end date are stored as null and labelled 'Ongoing'; the site never invents a deadline. Dated one-off events keep their event date so the listing retires itself.",
+    "not_affiliated_disclaimer": "This is an independent research project. It is not affiliated with, endorsed by or sponsored by any retailer, manufacturer, restaurant, museum, library or government agency named in it. All trademarks and service marks belong to their respective owners. Offer text is quoted for identification, review and consumer-protection purposes.",
+    "data_license": "CC BY 4.0 (attribution required; see LICENSE)"
+  },
+  "verification": {
+    "levels": {
+      "A": "Offer text, value and expiry were read verbatim from the issuer's own official page on the verification date.",
+      "B": "The program or policy was confirmed on the issuer's official page, but the specific rotating offers behind it require an app, an account or an in-store visit and could not be read anonymously.",
+      "C": "Only third-party evidence was found. Kept in the dataset ONLY inside data/entries/10-excluded-unverified.json and data/entries/11-policy-notes.json, never presented as a usable coupon."
+    },
+    "methods": {
+      "fetch_page": "Live HTTP retrieval of the official page; the page title and quoted text were captured.",
+      "web_search": "Search-engine retrieval of the official page; the quoted text is the snippet returned from the official domain.",
+      "official_document": "A document published by the issuer (terms of use, program rules, advertised circular)."
+    }
+  },
+  "categories": [
+    {
+      "id": "manufacturer-digital",
+      "name": "Manufacturer digital coupons",
+      "short": "Brand digital coupons",
+      "description": "Coupons published and clipped on a brand owner's own site (e.g. P&G brandSAVER). Redeemed at participating retailers, including Bay Area grocery and drug stores.",
+      "sort": 10
+    },
+    {
+      "id": "manufacturer-printable",
+      "name": "Printable manufacturer coupons",
+      "short": "Printables",
+      "description": "Print-at-home manufacturer coupons issued through an authorised coupon platform. Accepted at physical retailers that accept manufacturer coupons.",
+      "sort": 20
+    },
+    {
+      "id": "grocery-loyalty",
+      "name": "Grocery store coupon programs",
+      "short": "Grocery loyalty",
+      "description": "Store-issued digital coupons and member prices from chains with physical Bay Area stores. Offers are personalised, so the program is verified and the rotating offers are not.",
+      "sort": 30
+    },
+    {
+      "id": "drugstore-pharmacy",
+      "name": "Drugstore & pharmacy",
+      "short": "Drugstore",
+      "description": "Drugstore loyalty rewards, published promo codes and prescription-price discount programs redeemable at physical pharmacy counters.",
+      "sort": 40
+    },
+    {
+      "id": "warehouse-club",
+      "name": "Warehouse club instant savings",
+      "short": "Warehouse club",
+      "description": "Member-only instant savings applied at the register in a warehouse. No coupon clipping is required; the discount is tied to membership and item number.",
+      "sort": 50
+    },
+    {
+      "id": "big-box-loyalty",
+      "name": "Big-box & mass retail loyalty",
+      "short": "Big box",
+      "description": "Free and paid loyalty tiers at mass retailers with Bay Area stores.",
+      "sort": 60
+    },
+    {
+      "id": "restaurant-loyalty",
+      "name": "Restaurant & quick-service loyalty",
+      "short": "Restaurants",
+      "description": "Points programs and standing member benefits at chains with physical Bay Area locations. Verified from the issuer's own rewards pages or terms of use.",
+      "sort": 70
+    },
+    {
+      "id": "rebate-cashback",
+      "name": "Rebates & cash back",
+      "short": "Rebates",
+      "description": "Post-purchase rebates (mail-in or receipt-upload) and cash-back platforms that pay out after an in-store purchase.",
+      "sort": 80
+    },
+    {
+      "id": "bogo-multi-buy",
+      "name": "BOGO & multi-buy",
+      "short": "BOGO",
+      "description": "Buy-one-get-one, buy-N-get-N and 'OFF TWO/THREE' style multi-item offers. Multi-buy manufacturer coupons are grouped here as well as under their issuer category.",
+      "sort": 90
+    },
+    {
+      "id": "no-spend-free",
+      "name": "No-spend & free admission",
+      "short": "No spend",
+      "description": "Offers that cost nothing to obtain and require no qualifying purchase: free admission days, free entry for a defined group, free items on a calendar date, and free reusable-container credits.",
+      "sort": 100
+    },
+    {
+      "id": "local-independent",
+      "name": "Bay Area independent grocers & co-ops",
+      "short": "Local independents",
+      "description": "Standing discounts published by Bay Area independent markets and cooperatives. These are the most stable offers in the dataset because they do not rotate weekly.",
+      "sort": 110
+    },
+    {
+      "id": "community-access",
+      "name": "Community access programs",
+      "short": "Community access",
+      "description": "Means-tested, library-card, transit, military, educator and disability access programs run by public agencies and institutions in the Bay Area.",
+      "sort": 120
+    },
+    {
+      "id": "policy-debunk",
+      "name": "Policy notes & scam watch",
+      "short": "Scam watch",
+      "description": "Not coupons. Documented retailer coupon policies, discontinued coupon channels, and circulating 'coupons' that the issuer itself disowns. Kept in the dataset so reviewers can see what was checked and rejected.",
+      "sort": 900
+    }
+  ],
+  "deal_types": [
+    {
+      "id": "dollar_off",
+      "name": "$ off",
+      "description": "Fixed dollar amount off one or more qualifying items."
+    },
+    {
+      "id": "percent_off",
+      "name": "% off",
+      "description": "Percentage discount, sometimes with a spend threshold."
+    },
+    {
+      "id": "bogo",
+      "name": "BOGO / multi-buy",
+      "description": "Buy one get one, or a discount that requires two or more items."
+    },
+    {
+      "id": "free_item",
+      "name": "Free item",
+      "description": "A specific item at no charge, with or without a purchase trigger."
+    },
+    {
+      "id": "free_admission",
+      "name": "Free admission",
+      "description": "No-cost entry to a venue for a defined group or on a defined date."
+    },
+    {
+      "id": "reduced_admission",
+      "name": "Reduced admission",
+      "description": "Discounted entry to a venue for a defined group."
+    },
+    {
+      "id": "cashback",
+      "name": "Cash back",
+      "description": "Money returned after purchase, usually via an app or portal."
+    },
+    {
+      "id": "rebate",
+      "name": "Rebate / gift card",
+      "description": "Post-purchase rebate paid as a cheque, store credit or branded gift card."
+    },
+    {
+      "id": "points",
+      "name": "Points reward",
+      "description": "Loyalty points earned per dollar that convert into free items."
+    },
+    {
+      "id": "member_price",
+      "name": "Member price",
+      "description": "A lower price available only to loyalty-program members."
+    },
+    {
+      "id": "price_discount",
+      "name": "Discounted price",
+      "description": "A negotiated lower price for a specific product or service that the issuer presents as a coupon, card or instant savings."
+    },
+    {
+      "id": "rewards_credit",
+      "name": "Rewards credit",
+      "description": "Store credit or rewards dollars issued after a qualifying purchase and redeemable on a later visit."
+    },
+    {
+      "id": "volume_discount",
+      "name": "Volume / case discount",
+      "description": "Discount triggered by quantity or spend within a department."
+    },
+    {
+      "id": "promo_code",
+      "name": "Promo code",
+      "description": "An alphanumeric code published by the issuer."
+    },
+    {
+      "id": "policy",
+      "name": "Policy note",
+      "description": "Informational; not a redeemable offer."
+    }
+  ],
+  "flag_severities": {
+    "critical": "Do not rely on this without resolving the problem first. Examples: the offer's purchase window has closed, the issuer disowns the offer, or two official pages contradict each other on price.",
+    "warning": "Material caveat. Examples: expiry not published, offer requires an account or app, the source page carries a stale date, or availability varies by store.",
+    "info": "Context that helps a reviewer but does not undermine the offer."
+  },
+  "bay_area_counties": [
+    "Alameda",
+    "Contra Costa",
+    "Marin",
+    "Napa",
+    "San Francisco",
+    "San Mateo",
+    "Santa Clara",
+    "Solano",
+    "Sonoma"
+  ],
+  "license": "Data, documentation and curated text: CC BY 4.0. Site code (HTML, CSS, JS, Python): MIT.",
+  "bay_area_county_notes": {
+    "San Francisco": "Deepest coverage in this dataset: Museums For All venues, FAMSF, SFMOMA, the Exploratorium, Discover & Go, Rainbow Grocery, Mollie Stone's and Andronico's.",
+    "Alameda": "Covered by chain-level programs and the Museums For All / Discover & Go lookups. Oakland and Berkeley institutions are not yet independently verified.",
+    "Contra Costa": "Covered by chain-level programs only.",
+    "San Mateo": "Covered by chain-level programs, including Raley's-family banners that operate in the county.",
+    "Santa Clara": "Covered by chain-level programs. San Jose institutions are not yet independently verified.",
+    "Marin": "Covered by chain-level programs, including Raley's-family banners.",
+    "Sonoma": "Covered by chain-level programs. Sonoma County museums and their free-day calendars are not yet verified.",
+    "Solano": "Covered by chain-level programs only.",
+    "Napa": "Covered by chain-level programs only."
+  },
+  "value_schema": {
+    "description": "Canonical shape of the 'value' object on every entry. It is deliberately small and uniform so that the site can sort and label offers without guessing what a number means.",
+    "fields": {
+      "amount": "Numeric size of the benefit, or null when the issuer publishes no figure (e.g. 'reduced admission' with no price).",
+      "unit": "One of: currency | percent | points. Determines how 'amount' is read.",
+      "currency": "ISO currency code when unit is 'currency' (always USD in this dataset); null otherwise.",
+      "kind": "What the number is: dollar_off | percent_off | rebate | reduced_admission | free_admission | free_item | member_price | rewards_credit | points."
+    },
+    "rules": [
+      "A value is only recorded when the issuer publishes one. 'Reduced admission' with no stated price is stored with amount null rather than estimated.",
+      "free_admission and free_item always carry amount 0 so that no-spend offers sort and label consistently.",
+      "Points are never converted to dollars in the data. The site may display an approximate dollar equivalent for sorting, and says so when it does.",
+      "A free_item may carry a non-zero amount only when the issuer publishes that figure as a maximum value cap (for example Starbucks' 'single free customization, up to a $2 maximum value'), and the cap must appear verbatim in offer_text so it cannot be mistaken for an estimated worth."
+    ]
+  }
+}

@@ -1,0 +1,2581 @@
+[
+  {
+    "id": "pg-crest-5",
+    "title": "$5.00 OFF ONE Crest 3DWhitestrips",
+    "merchant": "Crest",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 5.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$5.00 OFF ONE Crest 3DWhitestrips (excludes Noticeably White, Classic White and any Crest 3DWhitestrips product with 5 or less treatments).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-26",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/26' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$5.00 OFF ONE Crest 3DWhitestrips (excludes Noticeably White, Classic White and any Crest 3DWhitestrips product with 5 or less treatments).\" followed by \"Expires 2026/09/26\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-26, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      },
+      {
+        "code": "source-page-inconsistency",
+        "severity": "critical",
+        "detail": "The same offer appears twice on the official page with two different expiry dates: '2026-09-26' in the 'Featured Digital Coupons' block and '2026-09-27' in the full 'Search 112 Digital Coupons' list. Treat the earlier date (2026-09-26) as the safe assumption and confirm in the account basket before use."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-crest-4",
+    "title": "$4.00 OFF ONE Crest 3DWhite Brilliance, 3DWhite Whitening Therapy Charcoal, Crest Gum Detoxify, Crest Clean Breath, Gum & Whitening, Gum & Enamel Restore, Gum & Sensitive, Gum Recession 3.0 oz or larger",
+    "merchant": "Crest",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 4.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$4.00 OFF ONE Crest 3DWhite Brilliance, 3DWhite Whitening Therapy Charcoal, Crest Gum Detoxify, Crest Clean Breath, Gum & Whitening, Gum & Enamel Restore, Gum & Sensitive, Gum Recession 3.0 oz or larger (excludes all other variants, kids, and trial/travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-26",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/26' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$4.00 OFF ONE Crest 3DWhite Brilliance, 3DWhite Whitening Therapy Charcoal, Crest Gum Detoxify, Crest Clean Breath, Gum & Whitening, Gum & Enamel Restore, Gum & Sensitive, Gum Recession 3.0 oz or larger (excludes all other variants, kids, and trial/travel size).\" followed by \"Expires 2026/09/26\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-26, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      },
+      {
+        "code": "source-page-inconsistency",
+        "severity": "critical",
+        "detail": "The same offer appears twice on the official page with two different expiry dates: '2026-09-26' in the 'Featured Digital Coupons' block and '2026-09-27' in the full 'Search 112 Digital Coupons' list. Treat the earlier date (2026-09-26) as the safe assumption and confirm in the account basket before use."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-crest-2",
+    "title": "$2.00 OFF ONE Crest Toothpaste 2.4 oz or more",
+    "merchant": "Crest",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$2.00 OFF ONE Crest Toothpaste 2.4 oz or more (excludes Crest Cavity, Baking Soda, Tartar Control/Protection, Brilliance, Gum, Densify, Aligner Care, Kids, More Free packs, and trial/travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-26",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/26' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$2.00 OFF ONE Crest Toothpaste 2.4 oz or more (excludes Crest Cavity, Baking Soda, Tartar Control/Protection, Brilliance, Gum, Densify, Aligner Care, Kids, More Free packs, and trial/travel size).\" followed by \"Expires 2026/09/26\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-26, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      },
+      {
+        "code": "source-page-inconsistency",
+        "severity": "critical",
+        "detail": "The same offer appears twice on the official page with two different expiry dates: '2026-09-26' in the 'Featured Digital Coupons' block and '2026-09-27' in the full 'Search 112 Digital Coupons' list. Treat the earlier date (2026-09-26) as the safe assumption and confirm in the account basket before use."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-tampax-always-this-is-l-1",
+    "title": "$1.00 OFF ONE Tampax Tampon",
+    "merchant": "Tampax / Always / This is L.",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 1.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$1.00 OFF ONE Tampax Tampon (12ct or higher), Always Pad (10ct or higher), Always liner (30ct or higher), Always ZZZ (7ct), This is L. Liner (60ct or higher), This is L. Pad (20ct or higher), or This is L. Tampon (18ct or higher) (excludes trial/travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-26",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/26' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$1.00 OFF ONE Tampax Tampon (12ct or higher), Always Pad (10ct or higher), Always liner (30ct or higher), Always ZZZ (7ct), This is L. Liner (60ct or higher), This is L. Pad (20ct or higher), or This is L. Tampon (18ct or higher) (excludes trial/travel size).\" followed by \"Expires 2026/09/26\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-26, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-olay-5",
+    "title": "$5.00 OFF TWO Olay Super Serum Body Wash 20oz",
+    "merchant": "Olay",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital",
+      "bogo-multi-buy"
+    ],
+    "deal_types": [
+      "dollar_off",
+      "bogo"
+    ],
+    "value": {
+      "amount": 5.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$5.00 OFF TWO Olay Super Serum Body Wash 20oz (excludes other Olay 20oz body wash and trial/travel)",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$5.00 OFF TWO Olay Super Serum Body Wash 20oz (excludes other Olay 20oz body wash and trial/travel)\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-olay-4",
+    "title": "$4.00 OFF TWO Olay Body Wash 20oz and Body Wash 35oz",
+    "merchant": "Olay",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital",
+      "bogo-multi-buy"
+    ],
+    "deal_types": [
+      "dollar_off",
+      "bogo"
+    ],
+    "value": {
+      "amount": 4.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$4.00 OFF TWO Olay Body Wash 20oz and Body Wash 35oz (excludes Super Serum 20oz and trial/travel)",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$4.00 OFF TWO Olay Body Wash 20oz and Body Wash 35oz (excludes Super Serum 20oz and trial/travel)\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-olay-2",
+    "title": "$2.00 OFF TWO Olay Body Wash 18oz, Body Wash 22oz and Bar 6 count",
+    "merchant": "Olay",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital",
+      "bogo-multi-buy"
+    ],
+    "deal_types": [
+      "dollar_off",
+      "bogo"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$2.00 OFF TWO Olay Body Wash 18oz, Body Wash 22oz and Bar 6 count (excludes trial/travel)",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$2.00 OFF TWO Olay Body Wash 18oz, Body Wash 22oz and Bar 6 count (excludes trial/travel)\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-bounce-3",
+    "title": "$3.00 OFF ONE Bounce WrinkleGuard Mega Sheets 180 ct OR Paradise Blossom Mega Sheets 180 ct OR Pet Hair & Lint Guard Mega Sheets 180 ct OR Fresh Breeze Mega Sheets 180 ct",
+    "merchant": "Bounce",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$3.00 OFF ONE Bounce WrinkleGuard Mega Sheets 180 ct OR Paradise Blossom Mega Sheets 180 ct OR Pet Hair & Lint Guard Mega Sheets 180 ct OR Fresh Breeze Mega Sheets 180 ct (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$3.00 OFF ONE Bounce WrinkleGuard Mega Sheets 180 ct OR Paradise Blossom Mega Sheets 180 ct OR Pet Hair & Lint Guard Mega Sheets 180 ct OR Fresh Breeze Mega Sheets 180 ct (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-bounce-3-2",
+    "title": "$3.00 OFF ONE Bounce Sheets 330 ct",
+    "merchant": "Bounce",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$3.00 OFF ONE Bounce Sheets 330 ct (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$3.00 OFF ONE Bounce Sheets 330 ct (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-bounce-2",
+    "title": "$2.00 OFF ONE Bounce WrinkleGuard Mega Sheets 80-130 ct OR Paradise Blossom Mega Sheets 80-130 ct OR Pet Hair & Lint Guard Mega Sheets 80-130 ct OR Fresh Breeze Mega Sheets 80-130 ct OR Lasting Fresh Mega Sheets 80-130 ct",
+    "merchant": "Bounce",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$2.00 OFF ONE Bounce WrinkleGuard Mega Sheets 80-130 ct OR Paradise Blossom Mega Sheets 80-130 ct OR Pet Hair & Lint Guard Mega Sheets 80-130 ct OR Fresh Breeze Mega Sheets 80-130 ct OR Lasting Fresh Mega Sheets 80-130 ct (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$2.00 OFF ONE Bounce WrinkleGuard Mega Sheets 80-130 ct OR Paradise Blossom Mega Sheets 80-130 ct OR Pet Hair & Lint Guard Mega Sheets 80-130 ct OR Fresh Breeze Mega Sheets 80-130 ct OR Lasting Fresh Mega Sheets 80-130 ct (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-bounce-2-2",
+    "title": "$2.00 OFF ONE Bounce Sheets 160-250 ct",
+    "merchant": "Bounce",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$2.00 OFF ONE Bounce Sheets 160-250 ct (excludes Mega Sheets and travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$2.00 OFF ONE Bounce Sheets 160-250 ct (excludes Mega Sheets and travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-bounce-1",
+    "title": "$1.00 OFF ONE Bounce Sheets 80-120 ct",
+    "merchant": "Bounce",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 1.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$1.00 OFF ONE Bounce Sheets 80-120 ct (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$1.00 OFF ONE Bounce Sheets 80-120 ct (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-cascade-5",
+    "title": "$5.00 OFF TWO Cascade Platinum Plus 47ct or greater, Platinum 59ct or greater, OR Complete 78ct or greater Dishwasher Detergent OR ONE Cascade Rinse Aid Clean & Dry Booster 8.45oz",
+    "merchant": "Cascade",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital",
+      "bogo-multi-buy"
+    ],
+    "deal_types": [
+      "dollar_off",
+      "bogo"
+    ],
+    "value": {
+      "amount": 5.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$5.00 OFF TWO Cascade Platinum Plus 47ct or greater, Platinum 59ct or greater, OR Complete 78ct or greater Dishwasher Detergent OR ONE Cascade Rinse Aid Clean & Dry Booster 8.45oz (exclude travel/trial size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$5.00 OFF TWO Cascade Platinum Plus 47ct or greater, Platinum 59ct or greater, OR Complete 78ct or greater Dishwasher Detergent OR ONE Cascade Rinse Aid Clean & Dry Booster 8.45oz (exclude travel/trial size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-cascade-4",
+    "title": "$4.00 OFF ONE Cascade Platinum Plus 47ct or greater, Platinum 59ct or greater, OR Complete 78ct or greater Dishwasher Detergent",
+    "merchant": "Cascade",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 4.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$4.00 OFF ONE Cascade Platinum Plus 47ct or greater, Platinum 59ct or greater, OR Complete 78ct or greater Dishwasher Detergent (exclude travel/trial size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$4.00 OFF ONE Cascade Platinum Plus 47ct or greater, Platinum 59ct or greater, OR Complete 78ct or greater Dishwasher Detergent (exclude travel/trial size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-clearblue-2",
+    "title": "$2.00 OFF ONE Clearblue Combo or Digital Pregnancy Test",
+    "merchant": "Clearblue",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$2.00 OFF ONE Clearblue Combo or Digital Pregnancy Test.",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$2.00 OFF ONE Clearblue Combo or Digital Pregnancy Test.\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-crest-1",
+    "title": "$1.00 OFF ONE Crest Mouthwash 473mL",
+    "merchant": "Crest",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 1.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$1.00 OFF ONE Crest Mouthwash 473mL (16 oz) or larger (excludes Scope, 3DWhite, Pro-Health Extra Whitening, Gum Detoxify, Gum Restore, Clinical Deep Clean, All Day Clean Breath or Nightly Bacteria Shield or larger or trial/travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$1.00 OFF ONE Crest Mouthwash 473mL (16 oz) or larger (excludes Scope, 3DWhite, Pro-Health Extra Whitening, Gum Detoxify, Gum Restore, Clinical Deep Clean, All Day Clean Breath or Nightly Bacteria Shield or larger or trial/travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-dawn-2",
+    "title": "$2.00 OFF ONE Dawn Powerwash Starter Kit",
+    "merchant": "Dawn",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$2.00 OFF ONE Dawn Powerwash Starter Kit (excludes travel/trial size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$2.00 OFF ONE Dawn Powerwash Starter Kit (excludes travel/trial size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-5",
+    "title": "$5.00 OFF ONE Downy In-Wash Scent Boosters Boutique Botanicals 10.7 oz OR Downy In-Wash Scent Boosters Unlimited 10.7 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 5.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$5.00 OFF ONE Downy In-Wash Scent Boosters Boutique Botanicals 10.7 oz OR Downy In-Wash Scent Boosters Unlimited 10.7 oz (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$5.00 OFF ONE Downy In-Wash Scent Boosters Boutique Botanicals 10.7 oz OR Downy In-Wash Scent Boosters Unlimited 10.7 oz (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-4",
+    "title": "$4.00 OFF ONE Downy In-Wash Scent Boosters Boutique Botanicals 4.8 oz OR Downy In-Wash Scent Boosters Unlimited 4.8 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 4.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$4.00 OFF ONE Downy In-Wash Scent Boosters Boutique Botanicals 4.8 oz OR Downy In-Wash Scent Boosters Unlimited 4.8 oz (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$4.00 OFF ONE Downy In-Wash Scent Boosters Boutique Botanicals 4.8 oz OR Downy In-Wash Scent Boosters Unlimited 4.8 oz (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-3.5",
+    "title": "$3.50 OFF ONE Downy In-Wash Scent Boosters 7.8 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.5,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$3.50 OFF ONE Downy In-Wash Scent Boosters 7.8 oz (includes Downy Light, Unstopables, April Fresh, Cool Cotton and Infusions) OR Downy In-Wash Scent Boosters Comfy Cozy OR Blends 8.3 oz OR Cozy Collection Beads 7.8 oz (includes Pistachio Cream, Cherry Jubilee, Chai Latte, Love in Paris, Date in Kyoto, Honeymoon in Hawaii), Fusions 6.9-8.0 oz (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$3.50 OFF ONE Downy In-Wash Scent Boosters 7.8 oz (includes Downy Light, Unstopables, April Fresh, Cool Cotton and Infusions) OR Downy In-Wash Scent Boosters Comfy Cozy OR Blends 8.3 oz OR Cozy Collection Beads 7.8 oz (includes Pistachio Cream, Cherry Jubilee, Chai Latte, Love in Paris, Date in Kyoto, Honeymoon in Hawaii), Fusions 6.9-8.0 oz (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-3",
+    "title": "$3.00 OFF ONE Downy Mega Sheets 180 ct",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$3.00 OFF ONE Downy Mega Sheets 180 ct (includes Infusions and Downy Light Sheets), (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$3.00 OFF ONE Downy Mega Sheets 180 ct (includes Infusions and Downy Light Sheets), (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-3-2",
+    "title": "$3.00 OFF ONE Downy In-Wash Scent Boosters 18.2 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$3.00 OFF ONE Downy In-Wash Scent Boosters 18.2 oz (includes Unstopables, April Fresh, Cool Cotton, Infusions and Light) OR Downy In-Wash Scent Boosters Comfy Cozy OR Blends 19.4 oz OR Fusions 16 oz (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$3.00 OFF ONE Downy In-Wash Scent Boosters 18.2 oz (includes Unstopables, April Fresh, Cool Cotton, Infusions and Light) OR Downy In-Wash Scent Boosters Comfy Cozy OR Blends 19.4 oz OR Fusions 16 oz (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-3-3",
+    "title": "$3.00 OFF ONE Downy Wrinkleguard 120 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$3.00 OFF ONE Downy Wrinkleguard 120 oz (excludes Downy Fresh 50 oz and 125 oz and travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$3.00 OFF ONE Downy Wrinkleguard 120 oz (excludes Downy Fresh 50 oz and 125 oz and travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-3-4",
+    "title": "$3.00 OFF ONE Downy In-Wash Scent Boosters Boutique Botanicals 21.1 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$3.00 OFF ONE Downy In-Wash Scent Boosters Boutique Botanicals 21.1 oz (excludes unlimited and travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$3.00 OFF ONE Downy In-Wash Scent Boosters Boutique Botanicals 21.1 oz (excludes unlimited and travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-3-5",
+    "title": "$3.00 OFF ONE Downy Liquid Fabric Conditioner 140 oz OR Downy Ultra Soft 93 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$3.00 OFF ONE Downy Liquid Fabric Conditioner 140 oz OR Downy Ultra Soft 93 oz (includes Downy Gentle Soft + Fresh 93 oz) OR Nature Inspired 111 oz (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$3.00 OFF ONE Downy Liquid Fabric Conditioner 140 oz OR Downy Ultra Soft 93 oz (includes Downy Gentle Soft + Fresh 93 oz) OR Nature Inspired 111 oz (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-3-6",
+    "title": "$3.00 OFF ONE Downy In-Wash Scent Boosters 24-30.1 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$3.00 OFF ONE Downy In-Wash Scent Boosters 24-30.1 oz (includes Downy Light, Unstopables, April Fresh, Cool Cotton and Infusions) OR Downy In-Wash Scent Boosters Comfy Cozy OR Blends 24.5-32.2 oz OR Fusions 21.1-26.5 oz OR Downy In-Wash Scent Boosters Unlimited 21.1 oz (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$3.00 OFF ONE Downy In-Wash Scent Boosters 24-30.1 oz (includes Downy Light, Unstopables, April Fresh, Cool Cotton and Infusions) OR Downy In-Wash Scent Boosters Comfy Cozy OR Blends 24.5-32.2 oz OR Fusions 21.1-26.5 oz OR Downy In-Wash Scent Boosters Unlimited 21.1 oz (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-2",
+    "title": "$2.00 OFF ONE Downy April Fresh Sheets 160 ct",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$2.00 OFF ONE Downy April Fresh Sheets 160 ct (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$2.00 OFF ONE Downy April Fresh Sheets 160 ct (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-2-2",
+    "title": "$2.00 OFF ONE Downy Mega Sheets 80 ct OR 130 ct",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$2.00 OFF ONE Downy Mega Sheets 80 ct OR 130 ct (includes Downy Light and Infusions Sheets), (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$2.00 OFF ONE Downy Mega Sheets 80 ct OR 130 ct (includes Downy Light and Infusions Sheets), (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-2-3",
+    "title": "$2.00 OFF ONE Downy Liquid Fabric Conditioner 66-88 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$2.00 OFF ONE Downy Liquid Fabric Conditioner 66-88 oz (includes Downy Intense 77 oz) OR Downy 100-111 oz OR Downy Ultra Soft LFE 38-44 oz OR Downy Ultra Soft 56-64 oz (includes Downy Gentle Soft + Fresh) OR Wrinkleguard 48-81oz (excludes Downy Fresh 50 oz and 125 oz and travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$2.00 OFF ONE Downy Liquid Fabric Conditioner 66-88 oz (includes Downy Intense 77 oz) OR Downy 100-111 oz OR Downy Ultra Soft LFE 38-44 oz OR Downy Ultra Soft 56-64 oz (includes Downy Gentle Soft + Fresh) OR Wrinkleguard 48-81oz (excludes Downy Fresh 50 oz and 125 oz and travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-2-4",
+    "title": "$2.00 OFF ONE Downy In-Wash Scent Boosters 9.1 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$2.00 OFF ONE Downy In-Wash Scent Boosters 9.1 oz (includes Downy Light, Unstopables, April Fresh, Cool Cotton and Infusions) (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$2.00 OFF ONE Downy In-Wash Scent Boosters 9.1 oz (includes Downy Light, Unstopables, April Fresh, Cool Cotton and Infusions) (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-2-5",
+    "title": "$2.00 OFF ONE Downy April Fresh Sheets 240 ct OR Downy Cool Cotton Sheets 240 ct",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$2.00 OFF ONE Downy April Fresh Sheets 240 ct OR Downy Cool Cotton Sheets 240 ct (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$2.00 OFF ONE Downy April Fresh Sheets 240 ct OR Downy Cool Cotton Sheets 240 ct (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-1",
+    "title": "$1.00 OFF ONE Downy Mega Sheets 50-60 ct",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 1.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$1.00 OFF ONE Downy Mega Sheets 50-60 ct (includes Infusions and Downy Light Sheets) (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$1.00 OFF ONE Downy Mega Sheets 50-60 ct (includes Infusions and Downy Light Sheets) (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-1-2",
+    "title": "$1.00 OFF ONE Downy April Fresh Sheets 105-120 ct",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 1.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$1.00 OFF ONE Downy April Fresh Sheets 105-120 ct (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$1.00 OFF ONE Downy April Fresh Sheets 105-120 ct (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-1-3",
+    "title": "$1.00 OFF ONE Downy Liquid Fabric Conditioner 44 oz OR Downy Ultra Soft 26 oz OR Downy Gentle Soft + Fresh 26 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 1.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$1.00 OFF ONE Downy Liquid Fabric Conditioner 44 oz OR Downy Ultra Soft 26 oz OR Downy Gentle Soft + Fresh 26 oz (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$1.00 OFF ONE Downy Liquid Fabric Conditioner 44 oz OR Downy Ultra Soft 26 oz OR Downy Gentle Soft + Fresh 26 oz (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-0.75",
+    "title": "$0.75 OFF ONE Downy Sheets 60 ct",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 0.75,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$0.75 OFF ONE Downy Sheets 60 ct (includes April Fresh, Cool cotton) OR Downy Mega Sheets 30 ct (includes Calm Lavender & Vanilla bean and White Tea & Bergamot), (excludes travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$0.75 OFF ONE Downy Sheets 60 ct (includes April Fresh, Cool cotton) OR Downy Mega Sheets 30 ct (includes Calm Lavender & Vanilla bean and White Tea & Bergamot), (excludes travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  },
+  {
+    "id": "pg-downy-0.75-2",
+    "title": "$0.75 OFF ONE Downy Liquid Fabric Softener April Fresh 24 oz OR 32 oz",
+    "merchant": "Downy",
+    "publisher": "Procter & Gamble — P&G brandSAVER",
+    "categories": [
+      "manufacturer-digital"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 0.75,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "$0.75 OFF ONE Downy Liquid Fabric Softener April Fresh 24 oz OR 32 oz (includes Downy Intense 24-32 oz OR Downy Soft 24-32 oz) OR Downy Fresh 50oz OR Downy Sheets 34 ct OR Downy Unstopables In-Wash Scent Boosters 3.3 oz (excludes Downy Rinse, Downy WrinkleGuard Sheets, Downy Libre Enjuague and trial/travel size).",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-27",
+    "expiry_basis": "Printed on the issuer's page next to the offer as 'Expires 2026/09/27' (M/D/YYYY on the source page).",
+    "requirements": [
+      "Free P&G brandSAVER account",
+      "Clip the coupon to your basket on the issuer's site before shopping",
+      "Buy the exact product size/variant named in the offer text"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Manufacturer coupon issued by P&G. Redeemable in person at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores. Whether a given clipped offer scans at a given register is controlled by that retailer's coupon policy.",
+      "physical_locations": null,
+      "locator_url": "https://www.safeway.com/local.html"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page states 'Updated September 2026' and 'Search 112 Digital Coupons'. Offer line read verbatim: \"$0.75 OFF ONE Downy Liquid Fabric Softener April Fresh 24 oz OR 32 oz (includes Downy Intense 24-32 oz OR Downy Soft 24-32 oz) OR Downy Fresh 50oz OR Downy Sheets 34 ct OR Downy Unstopables In-Wash Scent Boosters 3.3 oz (excludes Downy Rinse, Downy WrinkleGuard Sheets, Downy Libre Enjuague and trial/travel size).\" followed by \"Expires 2026/09/27\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text transcribed verbatim from the issuer's page",
+        "Expiry date transcribed verbatim from the issuer's page",
+        "Expiry is in the future relative to the verification date",
+        "Source domain is owned by the coupon issuer (pg.com brand property)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expires-imminently",
+        "severity": "warning",
+        "detail": "The issuer printed an expiry of 2026-09-27, which is within 5 days of the 2026-09-22 verification date. Re-check https://pgbrandsaver.com/coupons/ before travelling to a store; the page is refreshed monthly and self-reported as \"Updated September 2026\"."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "P&G brandSAVER coupons are clipped to a digital basket on the issuer's site and require a free P&G brandSAVER account. The specific retailer acceptance list is behind the account flow and could not be read anonymously."
+      }
+    ],
+    "tags": [
+      "household",
+      "personal-care",
+      "grocery"
+    ]
+  }
+]
