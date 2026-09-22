@@ -77,6 +77,10 @@ jobs:
         # unaffected because verify_links.py exits 0 unless --strict is passed.
         run: |
           set -o pipefail
+          # reports/ is gitignored, so the directory does not exist in a fresh
+          # checkout; without this, `tee` dies at pipeline start and the checker
+          # gets SIGPIPE before it has checked anything.
+          mkdir -p reports
           python3 scripts/verify_links.py \
             --workers 4 \
             --timeout 30 \
