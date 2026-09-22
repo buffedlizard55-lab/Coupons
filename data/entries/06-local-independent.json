@@ -821,6 +821,14 @@
         "accessed": "2026-09-22",
         "method": "fetch_page",
         "evidence": "Tier structure, voucher schedule, redemption rules, $10 minimum, single-transaction rule, '9 Mollie Stone's Markets', signup channels, customer-service phone (415-942-7959) and rewards@molliestones.com all read verbatim from the official terms page. Also read verbatim: 'Mollie Stone's Team Members are excluded from this program. Team members qualify for a 20% Team Member Discount.' and '$20 signup bonus, that may be offered from time to time, must be used on a purchase over $20 on the next shop after signing up.'"
+      },
+      {
+        "url": "https://molliestones.com/rewards/",
+        "title": "Rewards - Mollie Stone's Markets – Meat & Seafood Reservations",
+        "publisher": "Mollie Stone's Markets (molliestones.com — official retailer site)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Program landing page fetched live in pass 5. Read verbatim: \"MOLLIE'S REWARDS — Shop & earn up to 3% back in rewards dollars! The more you shop, the more you'll earn.\" / \"Create an Account — It's free to join!\" / \"Shop With Us — Buy more and save more on groceries. Just enter your phone number at check out.\" / \"Top Tier - Earn up to 3% — Rewards dollars are mailed 2X per year for anyone who has qualified for the minimum amount in monthly awards.\" / \"*Rewards are mailed two times per year for anyone who has earned a minimum of $10 in monthly awards from January to June and/or July to December.\" / \"*Rewards are calculated on all purchases except for the purchase of Mollie Stone's gift cards and other exclusions listed herein. Using a Mollie Stone's gift card is eligible for rewards.\" A banner image on the same page carries the alt text \"Mollie's Rewards $20 Instant Signup Bonus! Free to join! Buy more, Sign More! Shop and earn up to 3% back in rewards dollars\". Enrolment and login both point at the retailer's LoyaltyLane-powered pages (molliestones.customers.loyaltylane.com). Contact printed on the page: 415-942-7959, rewards@molliestones.com."
       }
     ],
     "verification": {
@@ -830,7 +838,8 @@
         "All three rebate tiers and their spend bands read verbatim",
         "Voucher issuance months, minimum threshold and single-transaction rule read verbatim",
         "Store count read verbatim from the terms",
-        "Stale date found inside the official terms (see flags)"
+        "Stale date found inside the official terms (see flags)",
+        "Pass-5 re-check: the program landing page corroborates the terms (free to join, up to 3%, rewards mailed twice a year, $10 minimum) and adds a live-looking $20 signup-bonus banner that the terms describe as intermittent"
       ]
     },
     "flags": [
@@ -846,8 +855,8 @@
       },
       {
         "code": "signup-bonus-conditional",
-        "severity": "info",
-        "detail": "The $20 signup bonus is described as something that 'may be offered from time to time', i.e. it is not always running. It is not asserted as currently available."
+        "severity": "warning",
+        "detail": "The program terms describe the $20 signup bonus as something that \"may be offered from time to time\", i.e. not guaranteed to be running. In pass 5 (2026-09-22) the retailer's own rewards landing page was advertising it as live, in a banner image whose alt text reads \"Mollie's Rewards $20 Instant Signup Bonus!\". The two official pages therefore disagree in emphasis: the terms make it intermittent, the marketing page presents it as current. The terms' condition still governs — per those terms the bonus \"must be used on a purchase over $20 on the next shop after signing up\", so it is not a no-spend freebie — and no separate entry asserts the bonus as unconditionally available. Note also that the pass-5 evidence for the live advertisement is an image's alt text, not body copy."
       }
     ],
     "tags": [

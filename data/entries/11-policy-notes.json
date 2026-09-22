@@ -245,7 +245,7 @@
       "policy"
     ],
     "value": null,
-    "offer_text": "Official-source URLs that returned an error page, a parked-domain shell, or an unrelated site when retrieved during the two verification passes of 2026-09-22, recorded so that no future contributor treats them as working citations.",
+    "offer_text": "Official-source URLs that returned an error page, a parked-domain shell, or an unrelated site when retrieved during the two verification passes of 2026-09-22, recorded so that no future contributor treats them as working citations. Pass 5 (2026-09-22, later): re-checked three of the logged items. clorox.com/coupons/ still returns Clorox's own \"Well, this is embarrassing. We can't find the page you're looking for.\" (third consecutive pass); colgate.com/en-us/special-offers still says \"Coupons Temporarily Unavailable\" (third consecutive full fetch, identical text); and kellanovaus.com/us/en/coupons.html now returns its coupon grid unpopulated to a plain fetch, with the completeness headline's two dynamic tokens unresolved and the print control reading \"PRINT COUPONS0\" — a client-rendered page that intermittently serves no offer text, which is a NEW failure mode for this dataset (previously logged only for raleys.com and pizzahut.com/deals). Two further retrieval attempts in this pass failed inside the fetch proxy itself (signed-URL signature errors on smiles.colgate.com and on chunk continuations of pgbrandsaver.com), which are recorded as retrieval failures rather than as statements about those sites.",
     "offer_text_is_verbatim": false,
     "expires": null,
     "expiry_basis": "Point-in-time observation.",
@@ -365,7 +365,8 @@
       "checks": [
         "Every URL listed here was actually retrieved on the verification date and the failure mode observed directly",
         "Each failure is paired with either a working replacement or an explicit 'unknown'",
-        "No URL is listed as broken unless it was fetched"
+        "No URL is listed as broken unless it was fetched",
+        "Pass-5 re-check: Clorox coupons URL still 404, Colgate suspension text unchanged, Kellanova coupon grid newly observed serving unpopulated (client-rendered) content; each re-check appended to this log rather than replacing the earlier observation"
       ]
     },
     "flags": [
@@ -458,7 +459,7 @@
       "policy"
     ],
     "value": null,
-    "offer_text": "\"Special Offers — Coupons Temporarily Unavailable. We're updating our online coupon experience. During this time, coupons are unavailable on our website. Thank you for your patience as we work behind the scenes. Please check back soon for updated offers.\" — fetched live 2026-09-22 (full page, single chunk, nothing truncated). The same day, a search index showed smiles.colgate.com/page/content/special-offers titled \"Colgate® Coupons, Printable Coupons\" promising \"Print coupons for your favorite Colgate® oral care products\"; a direct fetch of that microsite failed twice on the verification date, so the contradiction is recorded rather than resolved. Pass 4 (2026-09-22, later): the main page was re-fetched and printed the identical text; the microsite failed again on both the offers path and the domain root, and a pass-4 search for the microsite returned no result from smiles.colgate.com at all — its coupon advertisement now stands on the pass-1 snippet only.",
+    "offer_text": "\"Special Offers — Coupons Temporarily Unavailable. We're updating our online coupon experience. During this time, coupons are unavailable on our website. Thank you for your patience as we work behind the scenes. Please check back soon for updated offers.\" — fetched live 2026-09-22 (full page, single chunk, nothing truncated). The same day, a search index showed smiles.colgate.com/page/content/special-offers titled \"Colgate® Coupons, Printable Coupons\" promising \"Print coupons for your favorite Colgate® oral care products\"; a direct fetch of that microsite failed twice on the verification date, so the contradiction is recorded rather than resolved. Pass 4 (2026-09-22, later): the main page was re-fetched and printed the identical text; the microsite failed again on both the offers path and the domain root, and a pass-4 search for the microsite returned no result from smiles.colgate.com at all — its coupon advertisement now stands on the pass-1 snippet only. Pass 5 (2026-09-22, later still): the main page was fetched a third time and printed the identical text again — \"Coupons Temporarily Unavailable / We're updating our online coupon experience. / During this time, coupons are unavailable on our website. / Thank you for your patience as we work behind the scenes. / Please check back soon for updated offers.\" A fifth retrieval attempt on smiles.colgate.com failed in this pass too (the retrieval proxy returned a signature error rather than page content, which is a retrieval failure, not evidence about the site), and a targeted search for the microsite returned only colgate.com's \"Coupons Temporarily Unavailable\" page. The contradiction is therefore still unresolved after five attempts across three passes, and the main site's suspension notice remains the only actively served official Colgate coupon text.",
     "offer_text_is_verbatim": true,
     "expires": null,
     "expiry_basis": "Point-in-time state of the issuer's page.",
@@ -477,7 +478,7 @@
         "publisher": "Colgate-Palmolive (colgate.com — official)",
         "accessed": "2026-09-22",
         "method": "fetch_page",
-        "evidence": "Full page retrieved live on 2026-09-22 and again in pass 4 the same day — identical body text both times, quoted verbatim in offer_text, including 'Coupons Temporarily Unavailable' and 'Please check back soon for updated offers'."
+        "evidence": "Full page retrieved live on 2026-09-22 and again in pass 4 the same day — identical body text both times, quoted verbatim in offer_text, including 'Coupons Temporarily Unavailable' and 'Please check back soon for updated offers'. Pass 5 (2026-09-22): third full live fetch of this URL; body text byte-identical to passes 1 and 4, including the heading \"Coupons Temporarily Unavailable\" and the closing \"Please check back soon for updated offers\"."
       },
       {
         "url": "https://smiles.colgate.com/page/content/special-offers",
@@ -485,7 +486,7 @@
         "publisher": "Colgate-Palmolive microsite (smiles.colgate.com)",
         "accessed": "2026-09-22",
         "method": "web_search",
-        "evidence": "Search snippet only: \"Print coupons for your favorite Colgate® oral care products. Find coupons for toothpastes, teeth whitening products, and much more.\" Live fetch failed on 2026-09-22 (proxy error), and an older colgate.com result (Step2.vsp form) references a 2009 'spend $15 / free travel bag' mail-in — a relic, not a current offer. Pass 4 (same date): two further direct fetches failed (the offers path and the domain root), and a targeted search for \"smiles.colgate.com special offers\" returned no organic result from that domain — only aggregator 'Colgate promo code' pages and an India-market Smiles Club terms page."
+        "evidence": "Search snippet only: \"Print coupons for your favorite Colgate® oral care products. Find coupons for toothpastes, teeth whitening products, and much more.\" Live fetch failed on 2026-09-22 (proxy error), and an older colgate.com result (Step2.vsp form) references a 2009 'spend $15 / free travel bag' mail-in — a relic, not a current offer. Pass 4 (same date): two further direct fetches failed (the offers path and the domain root), and a targeted search for \"smiles.colgate.com special offers\" returned no organic result from that domain — only aggregator 'Colgate promo code' pages and an India-market Smiles Club terms page. Pass 5 (same date): a fifth retrieval attempt on this microsite failed (proxy signature error, i.e. no page content obtained), and a pass-5 search for Colgate coupons returned only the main-site suspension page — no organic result from smiles.colgate.com. The microsite's printable-coupon claim still rests on the pass-1 snippet alone."
       }
     ],
     "verification": {
@@ -495,7 +496,8 @@
         "Main-site statement retrieved live and quoted verbatim",
         "Contradicting microsite snippet recorded with its failed-retrieval note rather than silently dropped",
         "Old 2009-form search result recognised as link-rot, not an offer",
-        "Pass 4 re-verification (2026-09-22): main page re-fetched — byte-identical statement; microsite unreachable via two further fetch attempts and absent from that day's search results, so the 'temporarily unavailable' statement remains the only actively served official text"
+        "Pass 4 re-verification (2026-09-22): main page re-fetched — byte-identical statement; microsite unreachable via two further fetch attempts and absent from that day's search results, so the 'temporarily unavailable' statement remains the only actively served official text",
+        "Pass-5 re-fetch of the main page confirmed identical text; fifth microsite retrieval attempt failed and is recorded as a retrieval failure, not as evidence that the microsite is gone"
       ]
     },
     "flags": [
@@ -514,6 +516,89 @@
       "colgate",
       "policy",
       "contradiction"
+    ]
+  },
+  {
+    "id": "policy-pg-brandsaver-retailer-acceptance",
+    "title": "P&G brandSAVER publishes its own retailer acceptance list — eight retailers, of which only CVS was confirmed in the Bay Area",
+    "merchant": "Procter & Gamble",
+    "publisher": "Procter & Gamble (pgbrandsaver.com) — official",
+    "categories": [
+      "policy-debunk"
+    ],
+    "deal_types": [
+      "policy"
+    ],
+    "value": null,
+    "offer_text": "The issuer's coupon page answers the question directly: \"Which retailers accept brandSAVER™ coupons? brandSAVER™ coupons are accepted at the following retailers–and we're working on adding more! CVS / Discount Drug Mart / Dorothy Lane Market / Food Depot / Hartig Drug Stores / Lagree's Food Stores / Other Avenues Coop / Western Drug Store\". The same page publishes the redemption flow: \"1 Create a P&G brandSAVER™ Account / 2 Download Coupon24 and set up a Coupon24 account. / 3 Link your Coupon24 account to your brandSAVER™ account. / 4 Send your brandSAVER™ coupons to the Coupon24 app. / 5 Use your app to scan your digital coupons at checkout. Voilà!\", and states \"brandSAVER™ digital coupons are accessible to all P&G brandSAVER™ members and once selected, are sent to the Coupons24 app to be used at participating retailers. Just scan the QR code when you're checking out to start saving in-store!\" On the phone requirement: \"For security reasons, brandSAVER™ coupons can only be accessed through one verified phone number per account.\"",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Point-in-time state of the issuer's page, read on 2026-09-22.",
+    "requirements": [],
+    "bay_area": {
+      "available": true,
+      "confidence": "medium",
+      "note": "Applies to every P&G brandSAVER digital coupon in this dataset (112 entries as of pass 5). Of the eight retailers the issuer names, CVS is the one whose Bay Area store presence this project has already verified elsewhere in the dataset; the other seven could not be confirmed as operating inside the nine-county Bay Area during this pass and no Bay Area presence is asserted for them. A Bay Area shopper without a CVS nearby may have no in-range redemption point for these coupons at all.",
+      "physical_locations": null,
+      "locator_url": "https://www.cvs.com/store-locator"
+    },
+    "sources": [
+      {
+        "url": "https://pgbrandsaver.com/coupons/",
+        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "The \"Frequently asked questions\" and \"How to use\" sections were retrieved live in pass 5 (the same fetch cycle that harvested all 112 coupon rows). Quoted verbatim in offer_text: the eight-retailer acceptance list, the five-step Coupon24 flow including \"Use your app to scan your digital coupons at checkout. Voilà!\", the \"Just scan the QR code when you're checking out to start saving in-store!\" sentence, and the one-verified-phone-number-per-account rule. The page also states \"What are brandSAVER™ coupons? brandSAVER™ digital coupons are accessible to all P&G brandSAVER™ members and once selected, are sent to the Coupons24 app to be used at participating retailers.\""
+      },
+      {
+        "url": "https://pg-lex.my.salesforce-sites.com/CarehubStandalone/articles/en_US/FAQ/How-can-I-get-coupons",
+        "title": "How can I get coupons?",
+        "publisher": "Procter & Gamble consumer care hub (pg-lex.my.salesforce-sites.com — P&G-operated help site)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Retrieved as a search result from P&G's own care hub: \"For the digital brandSAVER coupons, follow these steps: Browse the available coupons on the P&G brandSAVER site. Download Coupon24 and set up a Coupon24 account. Enjoy savings with digital brandSAVER coupons! Send your brandSAVER coupons to the Coupon24 app. *Note: there is a 20 coupon limit. Once a coupon is chosen to 'put in the basket' a pop up appears and states: 'Add up to 20 coupons to your basket, go to your basket and send to your Coupon24 app!'\" The 20-coupon basket cap is therefore the issuer's own stated limit, not an assumption."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Retailer acceptance list read verbatim from the issuer's own FAQ, in the same fetch cycle as the 112 coupon rows",
+        "Five-step redemption flow read verbatim from the same page (the 'How to use' section)",
+        "Basket cap corroborated on a second P&G-operated property (its consumer care hub)",
+        "The earlier, broader retailer claim in this dataset was located, compared against the issuer's list and corrected rather than left in place",
+        "No retailer was added to the list from memory, from a store's own site, or from a coupon aggregator"
+      ]
+    },
+    "flags": [
+      {
+        "code": "retailer-acceptance-narrower-than-assumed",
+        "severity": "critical",
+        "detail": "Correction made in pass 5 (2026-09-22). Passes 1-4 recorded on all 36 then-existing P&G entries that these coupons are redeemable \"at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores\". The issuer's own published acceptance list contains none of Safeway, Lucky, Andronico's, Walgreens, Target or Walmart — only CVS overlaps. The unsupported claim was removed, confidence on every P&G entry was lowered from high to medium, the locator on every P&G entry was repointed from a Safeway locator to a CVS locator, and each entry now carries a retailer-list-published warning naming all eight retailers. The 112 coupons themselves are unaffected: their text, values and printed expiries were all read from the same official page and re-confirmed in pass 5."
+      },
+      {
+        "code": "platform-required",
+        "severity": "warning",
+        "detail": "Redemption runs through a third-party app: the issuer's steps require downloading Coupon24, creating a Coupon24 account, linking it to the brandSAVER account and scanning a QR code at checkout. A shopper without a smartphone, or whose store's lanes do not support the scan, cannot use these coupons even where the retailer participates."
+      },
+      {
+        "code": "basket-limit-20",
+        "severity": "info",
+        "detail": "P&G's care hub states there is a 20-coupon limit per basket (\"Add up to 20 coupons to your basket, go to your basket and send to your Coupon24 app!\"). With 112 coupons published on the page at the verification date, a single trip cannot carry the whole slate."
+      },
+      {
+        "code": "phone-number-required",
+        "severity": "info",
+        "detail": "\"For security reasons, brandSAVER™ coupons can only be accessed through one verified phone number per account.\" The issuer also discloses that using the service consents to collection of consumer health data under the P&G Consumer Health Data Privacy Policy, with withdrawal available through P&G's Consumer Health Data Preference Center."
+      }
+    ],
+    "tags": [
+      "policy",
+      "manufacturer",
+      "p-and-g",
+      "correction",
+      "bay-area"
     ]
   }
 ]

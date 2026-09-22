@@ -49,7 +49,8 @@
         "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
         "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
       ]
     },
     "flags": [
@@ -62,6 +63,11 @@
         "code": "platform-powered",
         "severity": "info",
         "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+      },
+      {
+        "code": "coupon-grid-not-re-readable",
+        "severity": "warning",
+        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
       }
     ],
     "tags": [
@@ -125,7 +131,8 @@
         "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
         "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
       ]
     },
     "flags": [
@@ -138,6 +145,11 @@
         "code": "platform-powered",
         "severity": "info",
         "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+      },
+      {
+        "code": "coupon-grid-not-re-readable",
+        "severity": "warning",
+        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
       }
     ],
     "tags": [
@@ -201,7 +213,8 @@
         "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
         "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
       ]
     },
     "flags": [
@@ -214,6 +227,11 @@
         "code": "platform-powered",
         "severity": "info",
         "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+      },
+      {
+        "code": "coupon-grid-not-re-readable",
+        "severity": "warning",
+        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
       }
     ],
     "tags": [
@@ -277,7 +295,8 @@
         "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
         "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
       ]
     },
     "flags": [
@@ -290,6 +309,11 @@
         "code": "platform-powered",
         "severity": "info",
         "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+      },
+      {
+        "code": "coupon-grid-not-re-readable",
+        "severity": "warning",
+        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
       }
     ],
     "tags": [
@@ -351,7 +375,8 @@
         "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
         "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
       ]
     },
     "flags": [
@@ -364,6 +389,11 @@
         "code": "platform-powered",
         "severity": "info",
         "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+      },
+      {
+        "code": "coupon-grid-not-re-readable",
+        "severity": "warning",
+        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
       }
     ],
     "tags": [
@@ -425,7 +455,8 @@
         "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
         "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
       ]
     },
     "flags": [
@@ -438,6 +469,11 @@
         "code": "platform-powered",
         "severity": "info",
         "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+      },
+      {
+        "code": "coupon-grid-not-re-readable",
+        "severity": "warning",
+        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
       }
     ],
     "tags": [
@@ -499,7 +535,8 @@
         "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
         "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
       ]
     },
     "flags": [
@@ -512,6 +549,11 @@
         "code": "platform-powered",
         "severity": "info",
         "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+      },
+      {
+        "code": "coupon-grid-not-re-readable",
+        "severity": "warning",
+        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
       }
     ],
     "tags": [
@@ -575,7 +617,8 @@
         "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
         "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
         "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift"
+        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
       ]
     },
     "flags": [
@@ -588,6 +631,11 @@
         "code": "platform-powered",
         "severity": "info",
         "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+      },
+      {
+        "code": "coupon-grid-not-re-readable",
+        "severity": "warning",
+        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
       }
     ],
     "tags": [
