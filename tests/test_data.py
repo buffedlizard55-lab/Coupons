@@ -462,6 +462,92 @@ class TestSiteRenders(unittest.TestCase):
             self.assertTrue((ROOT / ref).exists(), f"index.html references a missing file: {ref}")
 
 
+DOCS = (
+    "README.md",
+    "docs/METHODOLOGY.md",
+    "docs/LIMITATIONS.md",
+    "docs/ROADMAP.md",
+    "docs/VERIFICATION-LOG.md",
+)
+
+
+class TestDocsMatchData(unittest.TestCase):
+    """Documentation must not drift from the dataset it describes."""
+
+    def setUp(self):
+        self.stats = json.loads((DATA / "coupons.json").read_text(encoding="utf-8"))["stats"]
+        self.flag_total = sum(self.stats["flags_by_severity"].values())
+
+    def test_flag_totals_in_docs_match_the_data(self):
+        for doc in DOCS:
+            text = (ROOT / doc).read_text(encoding="utf-8")
+            # Sub-counts such as "13 flags across 11 distinct issues" are legitimate; only
+            # three-figure mentions can be a claim about the total.
+            for m in re.finditer(r"(\d+)\s+flags", text):
+                if int(m.group(1)) >= 100:
+                    self.assertEqual(int(m.group(1)), self.flag_total,
+                                     f"{doc} says '{m.group(1)} flags'; the data has {self.flag_total}")
+            for crit, warn, info in re.findall(r"(\d+) critical, (\d+) warning, (\d+) info", text):
+                self.assertEqual(
+                    (int(crit), int(warn), int(info)),
+                    (self.stats["flags_by_severity"]["critical"],
+                     self.stats["flags_by_severity"]["warning"],
+                     self.stats["flags_by_severity"]["info"]),
+                    f"{doc} quotes stale flag severities",
+                )
+
+    def test_summary_docs_state_the_current_flag_total(self):
+        for doc in ("README.md", "docs/METHODOLOGY.md", "docs/VERIFICATION-LOG.md"):
+            text = (ROOT / doc).read_text(encoding="utf-8")
+            self.assertIn(f"{self.flag_total} flags", text,
+                          f"{doc} never states the current flag total ({self.flag_total})")
+
+    def test_readme_headline_counts_match(self):
+        text = (ROOT / "README.md").read_text(encoding="utf-8")
+        expectations = {
+            f"| Verified offers | **{self.stats['entry_count']}** |": "verified offer count",
+            f"| Rejected / scam-watch claims documented | **{self.stats['excluded_count']}** |": "rejection count",
+            f"**{self.stats['source_count']}** across **{len(self.stats['source_domains'])}** domains": "citation and domain counts",
+            f"A: {self.stats['entries_by_verification_level']['A']} \u00b7 B: {self.stats['entries_by_verification_level']['B']} \u00b7 C: {self.stats['entries_by_verification_level']['C']}": "verification level counts",
+        }
+        for needle, what in expectations.items():
+            self.assertIn(needle, text, f"README {what} no longer matches the data (expected '{needle}')")
+
+    def test_readme_category_table_matches(self):
+        text = (ROOT / "README.md").read_text(encoding="utf-8")
+        names = {c["id"]: c["name"] for c in META["categories"]}
+        for cat_id, count in self.stats["entries_by_category"].items():
+            row = f"| {names[cat_id]} | {count} |"
+            self.assertIn(row, text, f"README category row for '{names[cat_id]}' should read '{row}'")
+
+    def test_methodology_level_table_matches(self):
+        text = (ROOT / "docs/METHODOLOGY.md").read_text(encoding="utf-8")
+        rows = dict(re.findall(r"^\| \*\*([ABC])\*\* \|.*\| (\d+) \|$", text, re.M))
+        self.assertEqual(rows, {k: str(v) for k, v in self.stats["entries_by_verification_level"].items() if k in "ABC"},
+                         "METHODOLOGY verification-level counts do not match the data")
+
+    def test_docs_only_reference_paths_that_exist(self):
+        """ROADMAP.md is excluded on purpose: it names files that do not exist yet."""
+        pattern = re.compile(r"`([A-Za-z0-9_.\-/]+)`")
+        # reports/ is gitignored build output, so it is not required to exist in a fresh checkout.
+        prefixes = ("data/", "scripts/", "tests/", "docs/", "assets/", ".github/")
+        for doc in [d for d in DOCS if not d.endswith("ROADMAP.md")]:
+            text = (ROOT / doc).read_text(encoding="utf-8")
+            for token in set(pattern.findall(text)):
+                if not token.startswith(prefixes) or "*" in token:
+                    continue
+                candidate = token.rstrip(".")
+                self.assertTrue(
+                    (ROOT / candidate).exists(),
+                    f"{doc} references `{candidate}`, which does not exist in the repository",
+                )
+
+    def test_verification_log_records_every_rejection(self):
+        text = (ROOT / "docs/VERIFICATION-LOG.md").read_text(encoding="utf-8")
+        for item in EXCLUDED:
+            self.assertIn(item["id"], text, f"VERIFICATION-LOG does not mention rejection `{item['id']}`")
+
+
 class TestMetaPolicy(unittest.TestCase):
     def test_meta_declares_its_guarantees(self):
         for key in ("scope", "no_hallucination_policy", "physical_location_policy", "source_policy",

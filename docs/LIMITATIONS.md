@@ -13,7 +13,7 @@ stated so that a reader can decide how much weight to give a particular entry.
 
 The largest single block is 36 P&G brandSAVER coupons whose printed expiries were
 **26–27 September 2026** — four to five days after the verification date. Every one of them
-carries the flag `expires-imminently` (36 of the 135 warning flags). The site computes status
+carries the flag `expires-imminently` (36 of the 136 warning flags). The site computes status
 from the visitor's clock, so they display as `Expired` from those dates without a redeploy, but
 the underlying data is only useful for a few days at a time.
 
