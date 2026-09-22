@@ -2,7 +2,8 @@
 
 **Verification date: 2026-09-22** (all sources accessed on this date; `accessed` is recorded per
 citation in the data).
-**Result: 128 verified offers · 9 documented rejections · 141 citations · 30 domains · 224 flags.**
+**Result after the 2026-09-22 product-only re-scope (pass 3): 101 verified offers · 15 documented rejections · 112 citations · 41 domains · 207 flags (A: 85 · B: 14 · C: 2).**
+(The pass-1/2 result was 128 offers · 9 rejections · 141 citations across 30 domains, and 224 total recorded irregularities, including 49 venue-admission entries that the project owner subsequently moved out of scope; they and their evidence are preserved in `archive/rescoped-2026-09-22/`.)
 
 This log records what was actually retrieved, what came back, what was rejected and why. It
 exists so a reviewer can audit the work without repeating it, and so that a future pass can tell
@@ -205,10 +206,16 @@ and on the site's **Rejected & scam watch** view.
 | `excl-coupons-com-affiliate-promo-codes` | 23 merchants (VistaPrint, Uber Eats, Samsung, FedEx, Macy's, Walmart, …) | REJECTED for this dataset | Affiliate-published promo codes, not merchant-published; the page itself states "We might earn commissions on purchases." Also outside the physical-Bay-Area-redemption scope |
 | `excl-mcdonalds-third-party-reward-tiers` | McDonald's | REJECTED | Contradicted by the issuer's own rewards page, fetched the same day |
 | `excl-dennys-free-birthday-grand-slam` | Denny's | REJECTED | Absent from `dennys.com/rewards`; the program is now BoothBucks. Belongs to the retired eClub era |
-| `excl-california-academy-of-sciences-free-days` | California Academy of Sciences | UNVERIFIED | Official program page 404s; the press fact sheet is stale; third parties conflict. Highest-priority verification gap |
+| `excl-california-academy-of-sciences-free-days` | California Academy of Sciences | UNVERIFIED → out of scope | Official program page 404s; the press fact sheet is stale; third parties conflict. Superseded the same day by the product-only re-scope — venue admission is no longer tracked at all |
 | `excl-costco-instant-savings-book-dates` | Costco | PLAUSIBLE BUT UNOFFICIAL | Cycle dates come from community scans, not Costco. One window independently matches P&G's official rebate window, but the dates are unauditable |
 | `excl-trader-joes-online-coupons` | Trader Joe's | REJECTED | Disowned by the retailer; known phishing vector. Risk rated HIGH |
-| `excl-exploratorium-free-wednesday-evenings` | Exploratorium | REJECTED | Neither the visit page nor the free/reduced admission page mentions any free evening program; the museum is closed Mondays and Thursday evenings are a paid "After Dark" session |
+| `excl-exploratorium-free-wednesday-evenings` | Exploratorium | REJECTED | Neither the visit page nor the free/reduced admission page mentions any free evening program; the museum is closed Mondays and Thursday evenings are a paid "After Dark" session. Also out of scope after the re-scope |
+| `excl-generalmills-aggregator-promo-codes` | General Mills | REJECTED (pass 3) | SimplyCodes/DealDrop/Knoji "20–40% codes" with no issuer-side counterpart; official-domain search finds no coupon hub, only a Box Tops rebate that ended 2025-11-30 |
+| `excl-raleys-smartandfinal-aggregator-codes` | Raley's, Smart & Final | REJECTED (pass 3) | Knoji/ValueCom/DontPayFull "store-wide 15–85% codes"; both chains' official pages document card/app-based programs with no checkout codes |
+| `excl-boxtops-domain-drift` | Box Tops for Education | REJECTED (pass 3) | boxtops.com now serves the band "The Box Tops" 2026/2027 tour site — fetched live 2026-09-22; citing it as the GM program's authority is citing a squatted domain |
+| `excl-realsavings-domain-drift` | Campbell's Real Savings | REJECTED (pass 3) | realsavings.com resolves to a parked-ad shell (yfdabv11.com / rapidresultsearch.com block page) — live fetch captured the redirect |
+| `excl-rkt-squishmallows-online-only-reward` | Rice Krispies Treats® | REJECTED for scope (pass 3) | Verified on Kellanova's own promotions page, but the $5 reward redeems only on Squishmallows.com — online-only, and online-only redemption is out of scope by policy |
+| `excl-kraftheinz-stale-2022-campaign-page` | Kraft Heinz | REJECTED (pass 3) | kraftheinzsaveearnwin.com is official but prints its own end date "Ends 5/9/22" — a live-looking dead campaign; no current Kraft/Heinz consumer coupon hub found |
 
 ## 7. Pass log
 
@@ -280,7 +287,7 @@ Requirement-by-requirement audit, with the artifact that proves each line.
 | 4 | Only verified official coupons; no scams or malware | ✅ | 9 documented rejections including the Trader Joe's phishing vector; a dedicated scam-watch view; zero promo-code domains cited for an available offer |
 | 5 | Verify the coupons are true and not expired | ✅ | every published date compared against 2026-09-22; the site recomputes status from the visitor's clock. Audit result: **0** entries with `expires` in the past, **1** closed purchase window (flagged, hidden by default), **1** benefit the issuer says is not live (flagged, hidden by default) |
 | 6 | Work line by line, no hallucinations | ✅ | 128 entries × ≥2 specific checks; `offer_text_is_verbatim` on every entry; `no_hallucination_policy` in `data/meta.json`; three Pass-2 removals of unverified assertions (Costco policy, Bank of America source, Rainbow address) |
-| 7 | Flag irregularities | ✅ | 224 flags (13 critical, 136 warning, 75 info) across 105 distinct codes, all rendered on cards and in the Irregularities view |
+| 7 | Flag irregularities | ✅ | 224 total flags at that time (13 critical / 136 warning / 75 info) across 105 distinct codes, all rendered on cards and in the Irregularities view — superseded by pass 3's 207 flags (12 critical, 142 warning, 53 info) |
 | 8 | Organise into researched categories (no-spend, rebate, BOGO…) | ✅ | 13 categories and 15 deal types derived from the research rather than a generic taxonomy |
 | 9 | Expand the categories through own research | ✅ | Discover & Go library passes, Museums For All, Blue Star, BofA Museums on Us, an FSA/HSA payment-method change, a transit-triggered museum discount, a reusable-container credit, ASTC Passport reciprocity — none of these appear in standard coupon-site taxonomies |
 | 10 | Usable in the SF Bay Area with physical redemption locations | ✅ | every entry has a `bay_area` determination; audit found **0** entries without a venue, store list, official locator or explanatory note; the nine-county definition is FAMSF's published list |
@@ -296,7 +303,7 @@ Requirement-by-requirement audit, with the artifact that proves each line.
 
 - **Documentation drift.** README, METHODOLOGY, LIMITATIONS, ROADMAP and this log all still said
   the pre-Pass-2 totals (223 overall, 135 at warning severity) after Pass 2 added flags.
-  Corrected to **224 flags (13 critical, 136 warning, 75 info)** in all five
+  Corrected to **224 total flags (13 critical / 136 warning / 75 info)** in all five
   documents, and a new `TestDocsMatchData` class now fails the build if any document's flag
   totals, README headline counts, README category table, METHODOLOGY level table disagree with
   the data — or if a document references a repository path that does not exist, or omits one of
@@ -311,3 +318,62 @@ Requirement-by-requirement audit, with the artifact that proves each line.
 California Academy of Sciences free-day question, Lucky and the ethnic grocers, the six merchants
 whose pages are unreadable without a headless browser, social-only offers, and re-harvesting the
 P&G block whose coupons expired on 26–27 September 2026.
+
+### Pass 3 — product-only re-scope + expansion (complete, 2026-09-22)
+
+**Owner instruction:** "When I say coupons I mean products to purchase, not events and museums,
+etc." Actions taken, line by line:
+
+1. **Re-scope.** The two museum/admission shards (26 SF Museums For All venues; 23 Bay Area
+   access programs) were moved out of the build into `archive/rescoped-2026-09-22/` with a
+   README; the `community-access` category, the two admission deal types and the admission value
+   kinds were retired from `data/meta.json`; the museum half of
+   `scripts/generate_bulk_entries.py` was removed and the P&G half re-verified as byte-identical.
+   The `no-spend-free` category was redefined as "No-spend & standing perks" (product freebies
+   and free-to-obtain perks), and a `receipt-scan-rewards` category was added.
+2. **P&G block spot re-verification.** `pgbrandsaver.com/coupons/` was re-fetched live on the
+   verification afternoon: still "Updated September 2026", still "Search 112 Digital Coupons";
+   26 offer lines across the first two rendered chunks (featured: Crest $5/$4/$2, Tampax/Always
+   $1, Olay $5/$4/$2 TWO, five Bounce; list: Cascade $5 TWO/$4, Clearblue $2, the duplicate Crest
+   prints at $5/$4/$2, Crest Mouthwash $1, Dawn Powerwash $2, five Downy cards, Bounce 330 $3)
+   match the transcription verbatim, including the 9/26 and 9/27 expiry sets and the
+   duplicated-Crest expiry contradiction (9/26 featured vs 9/27 in the search list — exactly the
+   contradiction the `source-page-inconsistency` flags record). Programmatic check: shard expiry
+   field equals the page line on all 26 compared offers. No drift found; the pre-existing flags
+   remain accurate. The remaining 10 shard lines come from the same same-day full transcription
+   (page self-reports a monthly refresh); a full 36/36 re-diff is scheduled in ROADMAP item 1.
+3. **New verified offers (22):** 8 Kellanova printables read directly from
+   `kellanovaus.com/us/en/coupons.html` (values sum to the page's own "up to $7.00 in savings"
+   headline — completeness cross-check recorded per entry); Pop-Tarts Crazy Good Rewards;
+   Checkout 51; Dunkin' $6 Meal Deal + Mobile Mondays (both fetched from the live homepage —
+   the Mobile Mondays end date is a labelled inference, flagged); Chipotle Rewards "on Repeat"
+   (2026-04-13 official press release); Jimmy John's Rewards enrolment + birthday terms (official
+   terms page); Baskin-Robbins free-scoop sign-up; Subway MyWay→MVP transition (level B — the
+   only bonus-points claim found sat on a `swuat.test.subway.com` TEST subdomain and was NOT used);
+   Raley's Something Extra Dollars (official page read via search retrieval); Save Mart Rewards
+   (official FAQ copy on savemart.com); Smart & Final Smart Advantage digital coupons (official
+   FAQ, CA/AZ/NV restriction quoted); CVS ExtraCare Plus 20%-off-CVS-Health-brands (overview page,
+   cross-checked against the coupon-policy page); 7-Eleven 7REWARDS (official join page + FAQ);
+   plus the 2 Dunkin' entries counted above. Every one stores its URL, title, publisher, method,
+   date and verbatim passage; every search-snippet-only entry carries
+   `retrieval-via-search-snippet`.
+4. **New negative findings (6 rejections, table above)** — the General Mills and Raley's/Smart &
+   Final fabricated-code rings, two domain-drift hazards (boxtops.com, realsavings.com), one
+   verified-but-online-only Kellanova offer, and the still-live-but-dead-in-2022 Kraft Heinz
+   campaign page.
+5. **Policy notes added (1):** `policy-colgate-coupons-suspended` — Colgate's own two pages
+   disagree about whether online coupons exist; the live page was fetched (statement quoted), the
+   contradicting microsite failed fetch twice, so the record flags `source-page-inconsistency`
+   critical rather than picking a side. Clorox's 404'd Coupons page (contradicting its own
+   product FAQs) went into the link-rot log, now 18 entries.
+6. **Retrieval failures recorded, not hidden.** During this pass the fetcher intermittently
+   failed (including two attempts on `smiles.colgate.com`); affected entries disclose it via the
+   snippet flag; the roadmap (Priority 2/3) carries re-verification. No offer was dated
+   `verified` without a successful read of official content.
+7. **Tests and docs moved with the data:** render-test clock assertions updated (Kellanova =
+   Ongoing at pinned date; Dunkin' Mobile Mondays = Expired; flagged-only asserted as exact
+   count now that every visible card carries a flag); README / METHODOLOGY / LIMITATIONS /
+   ROADMAP rewritten to the new totals and enforced against drift by `TestDocsMatchData`.
+
+**Counts after this pass:** 101 offers (79 retained product entries + 22 new) · 15 rejections ·
+112 citations · 41 domains · 207 flags (12 critical, 142 warning, 53 info). Verified 2026-09-22.

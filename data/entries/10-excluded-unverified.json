@@ -3,12 +3,30 @@
     "id": "excl-round-table-pizza-aggregator-codes",
     "merchant": "Round Table Pizza",
     "claim": "Numerous Round Table Pizza promo codes (e.g. '15OFF', '16OFF', '4OFF', 'P22', 'CA2', '520A45', 'ART4ALL5OFF', a 'CLUB5' code advertised as 'Up to 65% Off', '$7 Off Large or X-Large Pizza Orders', 'Two Medium 2-topping Pizzas and 6 Garlic Parmesan Twists For $49.99').",
-    "status": "REJECTED \u2014 not verified from an official source",
+    "status": "REJECTED — not verified from an official source",
     "why_rejected": "None of these codes was published by roundtablepizza.com. They appear only on third-party promo-code aggregators, and the aggregators contradict each other and themselves: one site lists 'Up to 65% Off' ending 08 Sep 2026 alongside '15% Off' and '10% Off'; another lists 15%, 16%, 20%, 25% and 50% codes with no expiry; a third shows a code labelled '20%OFF' whose description says 'Enjoy 15% Discount'. A fourth states 'there are no active promo codes ... right now' while simultaneously listing codes. Round Table Pizza is a Bay Area chain (founded in Menlo Park), so fake codes for it circulate heavily in the region.",
     "urls_checked": [
-      { "url": "https://www.dontpayfull.com/at/roundtablepizza.com", "publisher": "dontpayfull.com (aggregator)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Lists 'Round Table Pizza Coupon - Up to 65% Off ... Ends Sep 8, 2026', '10% Off ... Code ###', 'Save 16% ... Ends tomorrow', and a table mixing '15% Off Regular Menu Items in Reno & Sparks, NV' with '40% Off Pizza'." },
-      { "url": "https://capitaloneshopping.com/s/ordering.roundtablepizza.com/coupon", "publisher": "capitaloneshopping.com (aggregator)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Lists codes 15OFF, 15PIZZA23, 16OFF and 4OFF with 'Coupon' placeholders where descriptions should be." },
-      { "url": "https://couponfollow.com/site/roundtablepizza.com", "publisher": "couponfollow.com (aggregator)", "accessed": "2026-09-22", "method": "web_search", "evidence": "A tile labelled '20%OFF' carries the description 'Enjoy 15% Discount Using Promotional Code'; other tiles claim 30% off, $5 off a medium pizza and a $49.99 bundle." }
+      {
+        "url": "https://www.dontpayfull.com/at/roundtablepizza.com",
+        "publisher": "dontpayfull.com (aggregator)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Lists 'Round Table Pizza Coupon - Up to 65% Off ... Ends Sep 8, 2026', '10% Off ... Code ###', 'Save 16% ... Ends tomorrow', and a table mixing '15% Off Regular Menu Items in Reno & Sparks, NV' with '40% Off Pizza'."
+      },
+      {
+        "url": "https://capitaloneshopping.com/s/ordering.roundtablepizza.com/coupon",
+        "publisher": "capitaloneshopping.com (aggregator)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Lists codes 15OFF, 15PIZZA23, 16OFF and 4OFF with 'Coupon' placeholders where descriptions should be."
+      },
+      {
+        "url": "https://couponfollow.com/site/roundtablepizza.com",
+        "publisher": "couponfollow.com (aggregator)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "A tile labelled '20%OFF' carries the description 'Enjoy 15% Discount Using Promotional Code'; other tiles claim 30% off, $5 off a medium pizza and a $49.99 bundle."
+      }
     ],
     "risk": "Wasted trip or a failed checkout; some code sites monetise the click and harvest email addresses. Codes scoped to 'Reno & Sparks, NV' would not work in the Bay Area even if genuine.",
     "what_would_verify_it": "Retrieve the offers section of roundtablepizza.com or the Round Table Pizza app in an authenticated browser session and read the published codes directly."
@@ -17,11 +35,23 @@
     "id": "excl-99-ranch-simplycodes",
     "merchant": "99 Ranch Market",
     "claim": "'$19 Off Storewide (minimum Order $109)', '$15 Off Select Items (minimum Order $88)', '$25 Off Select Items (Minimum Order: $99) Members Only', '$5 Off Select Items', plus a claim of '$2 off $40 purchase and free delivery' online.",
-    "status": "REJECTED \u2014 not verified from an official source",
-    "why_rejected": "All of these came from promo-code aggregators, not from 99ranch.com. The primary aggregator page contradicts itself on the same screen: it lists four 'community' codes and then states 'While there are no active promo codes for 99 Ranch Market right now'. It also contains an unfinished data field ('undefined provides a standing discount to verified students'), which indicates the page is auto-generated. A separate aggregator reproduces weekly-ad date ranges that overlap and disagree (one page shows 'August 28 \u2013 September 3, 2026' while another shows 'May 29 \u2013 June 4, 2026' as 'the latest').",
+    "status": "REJECTED — not verified from an official source",
+    "why_rejected": "All of these came from promo-code aggregators, not from 99ranch.com. The primary aggregator page contradicts itself on the same screen: it lists four 'community' codes and then states 'While there are no active promo codes for 99 Ranch Market right now'. It also contains an unfinished data field ('undefined provides a standing discount to verified students'), which indicates the page is auto-generated. A separate aggregator reproduces weekly-ad date ranges that overlap and disagree (one page shows 'August 28 – September 3, 2026' while another shows 'May 29 – June 4, 2026' as 'the latest').",
     "urls_checked": [
-      { "url": "https://simplycodes.com/store/99ranch.com", "publisher": "simplycodes.com (aggregator)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Lists $19/$15/$25/$5 codes with 'Last Verified: 1d ago' badges, then states 'there are no active promo codes for 99 Ranch Market right now', and includes the literal string 'undefined provides a standing discount to verified students'." },
-      { "url": "https://www.weeklyadsale.com/99-ranch-market/", "publisher": "weeklyadsale.com (aggregator)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Claims '99 Ranch Market operates over 42 locations in Washington, Nevada, Texas and California' and '$2 off $40 purchase and free delivery as part of online shop promotions' with no source." }
+      {
+        "url": "https://simplycodes.com/store/99ranch.com",
+        "publisher": "simplycodes.com (aggregator)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Lists $19/$15/$25/$5 codes with 'Last Verified: 1d ago' badges, then states 'there are no active promo codes for 99 Ranch Market right now', and includes the literal string 'undefined provides a standing discount to verified students'."
+      },
+      {
+        "url": "https://www.weeklyadsale.com/99-ranch-market/",
+        "publisher": "weeklyadsale.com (aggregator)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Claims '99 Ranch Market operates over 42 locations in Washington, Nevada, Texas and California' and '$2 off $40 purchase and free delivery as part of online shop promotions' with no source."
+      }
     ],
     "risk": "99 Ranch has many Bay Area stores (Daly City, San Francisco, Millbrae, Cupertino, San Jose and elsewhere), so shoppers are likely to attempt these codes in person and be refused.",
     "what_would_verify_it": "Retrieve 99ranch.com's own promotions page and the in-store weekly circular PDF published by the chain."
@@ -30,10 +60,17 @@
     "id": "excl-coupons-com-affiliate-promo-codes",
     "merchant": "VistaPrint, Gymshark, Uber Eats, Samsung, FedEx, Princess Polly, Expedia, Klook, IHG, eBay, Macy's, Home Depot, Walmart, Target, Lowe's, Dell, Kohl's, Chewy, adidas, Alo Yoga, Crocs, Marriott, Booking.com",
     "claim": "'VistaPrint Exclusive $55 Off $250+ Orders', 'Uber Eats Exclusive $15 Discount on First $20+ Order', 'FedEx 10% Off Print Orders of $50 or More', 'Samsung Up to $800 Off New Z Fold8 with Trade-in', 'Princess Polly Exclusive 15% Off Full-Price Items', 'Expedia Anniversary Sale: 30% Off Select Hotels & Vacation Rentals for Members', 'Klook ... Save 12% on $200+ Bookings', plus cashback percentages for dozens of merchants.",
-    "status": "REJECTED for this dataset \u2014 affiliate-published, not merchant-published",
+    "status": "REJECTED for this dataset — affiliate-published, not merchant-published",
     "why_rejected": "These offers were read on coupons.com, which is a legitimate publisher of manufacturer print-at-home coupons, but this particular block is its affiliate promo-code and cashback business. The page itself states 'We might earn commissions on purchases.' The merchants named did not publish these offers; several are labelled 'Exclusive' with no code shown and no expiry. This project's rule is that an offer is only listed when the party that must honour it published it, so these are excluded even though the source page is genuine.",
     "urls_checked": [
-      { "url": "https://www.coupons.com/", "title": "Coupons, Promo Codes and Cashback for September 2026", "publisher": "Coupons.com", "accessed": "2026-09-22", "method": "fetch_page", "evidence": "'Today's best promo codes' block read verbatim from the homepage, together with the affiliate disclaimer 'We might earn commissions on purchases' and the cashback merchant grid." }
+      {
+        "url": "https://www.coupons.com/",
+        "title": "Coupons, Promo Codes and Cashback for September 2026",
+        "publisher": "Coupons.com",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Today's best promo codes' block read verbatim from the homepage, together with the affiliate disclaimer 'We might earn commissions on purchases' and the cashback merchant grid."
+      }
     ],
     "risk": "Low scam risk (the publisher is established) but high staleness risk: affiliate codes are frequently expired, and 'exclusive' codes that are never displayed cannot be checked at all.",
     "what_would_verify_it": "Retrieve each merchant's own promotions page (vistaprint.com, uber.com/eats, fedex.com, samsung.com, expedia.com, klook.com) and confirm the same offer and code are published there."
@@ -41,27 +78,65 @@
   {
     "id": "excl-mcdonalds-third-party-reward-tiers",
     "merchant": "McDonald's",
-    "claim": "Third-party sites describe MyMcDonald's Rewards tiers as 2,000 / 4,000 / 6,000 / 10,000 / 14,000 points, or as 1,500 (free large fries or hash browns) / 3,000 (free Egg McMuffin or McCaf\u00e9 Iced Coffee) / 6,000 (free Big Mac or 20-piece McNuggets), and describe a '1,500 welcome bonus just for signing up'.",
-    "status": "REJECTED \u2014 contradicted by the issuer's own page",
-    "why_rejected": "McDonald's official U.S. rewards page, fetched 2026-09-22, publishes tiers of 1500, 2000, 3500, 4000, 5000 and 7000 points with specific item lists. The third-party tier ladders do not match. The official 1,500-point tier is 'Hash Browns, Apple Pie, small Premium Roast Coffee or Vanilla Cone' \u2014 not 'free large fries'. The official 1,500 bonus is awarded on the FIRST PAYMENT WITH A LINKED CARD, not for signing up. '20-piece Chicken McNuggets' at 6,000 points does not appear anywhere in the official tiers.",
+    "claim": "Third-party sites describe MyMcDonald's Rewards tiers as 2,000 / 4,000 / 6,000 / 10,000 / 14,000 points, or as 1,500 (free large fries or hash browns) / 3,000 (free Egg McMuffin or McCafé Iced Coffee) / 6,000 (free Big Mac or 20-piece McNuggets), and describe a '1,500 welcome bonus just for signing up'.",
+    "status": "REJECTED — contradicted by the issuer's own page",
+    "why_rejected": "McDonald's official U.S. rewards page, fetched 2026-09-22, publishes tiers of 1500, 2000, 3500, 4000, 5000 and 7000 points with specific item lists. The third-party tier ladders do not match. The official 1,500-point tier is 'Hash Browns, Apple Pie, small Premium Roast Coffee or Vanilla Cone' — not 'free large fries'. The official 1,500 bonus is awarded on the FIRST PAYMENT WITH A LINKED CARD, not for signing up. '20-piece Chicken McNuggets' at 6,000 points does not appear anywhere in the official tiers.",
     "urls_checked": [
-      { "url": "https://milesopedia.com/en/reward-program/mymcdonalds-rewards/", "publisher": "Milesopedia (third party)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Describes '5 redemption tiers: 2,000 points ... 4,000 points ... 6,000 points ... 10,000 points ... and 14,000 points' and gives a worked example pricing a medium fry at $4.39 = 439 points." },
-      { "url": "https://www.mcds-menu.restaurant/rewards-points/", "publisher": "mcds-menu.restaurant (unofficial fan site, NOT a McDonald's domain)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Claims a '1,500 / 3,000 / 6,000' ladder, a 'welcome bonus of 1,500 points just for signing up', and '6,000 Free Big Mac\u00ae or 20-piece Chicken McNuggets'." },
-      { "url": "https://www.mcdonalds.com/us/en-us/mymcdonalds.html", "title": "MyMcDonald's Rewards: Earn McDonald's Points for Free Food", "publisher": "McDonald's Corporation (official)", "accessed": "2026-09-22", "method": "fetch_page", "evidence": "Authoritative tier list used in this dataset instead: 1500 / 2000 / 3500 / 4000 / 5000 / 7000." }
+      {
+        "url": "https://milesopedia.com/en/reward-program/mymcdonalds-rewards/",
+        "publisher": "Milesopedia (third party)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Describes '5 redemption tiers: 2,000 points ... 4,000 points ... 6,000 points ... 10,000 points ... and 14,000 points' and gives a worked example pricing a medium fry at $4.39 = 439 points."
+      },
+      {
+        "url": "https://www.mcds-menu.restaurant/rewards-points/",
+        "publisher": "mcds-menu.restaurant (unofficial fan site, NOT a McDonald's domain)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Claims a '1,500 / 3,000 / 6,000' ladder, a 'welcome bonus of 1,500 points just for signing up', and '6,000 Free Big Mac® or 20-piece Chicken McNuggets'."
+      },
+      {
+        "url": "https://www.mcdonalds.com/us/en-us/mymcdonalds.html",
+        "title": "MyMcDonald's Rewards: Earn McDonald's Points for Free Food",
+        "publisher": "McDonald's Corporation (official)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Authoritative tier list used in this dataset instead: 1500 / 2000 / 3500 / 4000 / 5000 / 7000."
+      }
     ],
     "risk": "A domain styled like an official menu site (mcds-menu.restaurant) presenting a different rewards ladder is exactly how incorrect coupon information spreads. Anyone building on those numbers would publish false offers.",
-    "what_would_verify_it": "Nothing further needed \u2014 the official page was retrieved directly and is the source used in this dataset."
+    "what_would_verify_it": "Nothing further needed — the official page was retrieved directly and is the source used in this dataset."
   },
   {
     "id": "excl-dennys-free-birthday-grand-slam",
     "merchant": "Denny's",
     "claim": "'Denny's Rewards members get a free Everyday Value Slam, also called a Free Birthday Slam' and, separately, 'a FREE Build Your Own Grand Slam ... 2 pancakes, 2 strips of bacon, 2 eggs, and 2 sausage links ... valid only on the day of your birthday ... No purchase required.'",
-    "status": "REJECTED \u2014 not present on the issuer's current official page",
+    "status": "REJECTED — not present on the issuer's current official page",
     "why_rejected": "Denny's current official rewards page (dennys.com/rewards, fetched 2026-09-22) describes only the BoothBucks program: earn 10 BoothBucks per $1, automatically redeem 600 BoothBucks for a Booth Reward chosen from 40+ menu items. It contains no birthday meal, no 'Free Birthday Slam', no 'Build Your Own Grand Slam' and no 'no purchase required' language. The two third-party pages also disagree with each other about which meal is free. Until Denny's own terms are read and confirm a birthday benefit, no Denny's birthday freebie is published in this dataset.",
     "urls_checked": [
-      { "url": "https://birthdayhunter.com/blog/best-birthday-freebies-at-denny-s-how-to-get-your-free-grand-slam-in-2026", "publisher": "birthdayhunter.com (third party)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Claims a 'free Everyday Value Slam, also called a Free Birthday Slam' and self-reports 'Last verified: 18 days ago' without linking to a Denny's source." },
-      { "url": "https://specialsalesdeals.com/dennys/free-birthday-grand-slam-dennys/", "publisher": "specialsalesdeals.com (third party)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Claims a 'FREE Build Your Own Grand Slam ... 2 pancakes, 2 strips of bacon, 2 eggs, and 2 sausage links', emailed 'About 1 week before your birthday' via a 'Denny's Rewards eClub', 'No purchase required'." },
-      { "url": "https://dennys.com/rewards", "title": "Denny's Rewards Program \u2013 Join Today | Denny's", "publisher": "Denny's (official)", "accessed": "2026-09-22", "method": "fetch_page", "evidence": "Official page describes BoothBucks only; no birthday offer appears in the retrieved content." }
+      {
+        "url": "https://birthdayhunter.com/blog/best-birthday-freebies-at-denny-s-how-to-get-your-free-grand-slam-in-2026",
+        "publisher": "birthdayhunter.com (third party)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Claims a 'free Everyday Value Slam, also called a Free Birthday Slam' and self-reports 'Last verified: 18 days ago' without linking to a Denny's source."
+      },
+      {
+        "url": "https://specialsalesdeals.com/dennys/free-birthday-grand-slam-dennys/",
+        "publisher": "specialsalesdeals.com (third party)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Claims a 'FREE Build Your Own Grand Slam ... 2 pancakes, 2 strips of bacon, 2 eggs, and 2 sausage links', emailed 'About 1 week before your birthday' via a 'Denny's Rewards eClub', 'No purchase required'."
+      },
+      {
+        "url": "https://dennys.com/rewards",
+        "title": "Denny's Rewards Program – Join Today | Denny's",
+        "publisher": "Denny's (official)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Official page describes BoothBucks only; no birthday offer appears in the retrieved content."
+      }
     ],
     "risk": "Birthday freebies are the most-shared category of coupon content and the most frequently stale. 'eClub' was Denny's previous program name, which suggests these pages describe a superseded offer.",
     "what_would_verify_it": "Read https://dennys.com/rewards-terms in full (the official terms page linked from dennys.com/rewards) and look for a birthday benefit."
@@ -70,13 +145,37 @@
     "id": "excl-california-academy-of-sciences-free-days",
     "merchant": "California Academy of Sciences",
     "claim": "Conflicting claims: (a) 'Quarterly Free Sundays, Neighborhood Free Weekends (select weekends for San Francisco residents), and San Francisco school groups with advance registration'; (b) 'As of the summer of 2024, they no longer offer free days'; (c) 'San Francisco residents can get free admission ... for one weekend every year' by neighbourhood; (d) '$3 per person' for EBT/CalFresh/WIC/Lifeline/Medi-Cal cardholders under Museums for All; (e) '$3 off daytime admission' with a military ID; (f) '$3 per person' discount for arriving by public transportation.",
-    "status": "UNVERIFIED \u2014 official page not reachable; sources conflict",
+    "status": "UNVERIFIED — official page not reachable; sources conflict · also OUT OF SCOPE since the 2026-09-22 product-only re-scope (museum admission is no longer tracked at all)",
     "why_rejected": "The URL that would confirm the neighbourhood free-Sunday program (calacademy.org/neighborhood-free-sundays) returned the Academy's own 404 page ('Someone pulled the plug on this page!') on 2026-09-22. The Academy's own press 'fact sheet' does describe free-admission programs, but that page also lists adult admission at $34.95, which is inconsistent with current pricing, so it is stale. Third-party pages then disagree about whether any free days still exist. Because the Academy is a major Golden Gate Park attraction, this is a high-priority gap rather than a rejection of the institution.",
     "urls_checked": [
-      { "url": "https://www.calacademy.org/neighborhood-free-sundays", "publisher": "California Academy of Sciences (official)", "accessed": "2026-09-22", "method": "fetch_page", "evidence": "Returned the Academy's 404 page: 'Someone pulled the plug on this page!'" },
-      { "url": "https://www.calacademy.org/press/releases/new-academy-fact-sheet", "publisher": "California Academy of Sciences (official press release)", "accessed": "2026-09-22", "method": "web_search", "evidence": "States 'Free Admission Programs: Many opportunities exist to visit the California Academy of Sciences during free days, including Quarterly Free Sundays, Neighborhood Free Weekends (select weekends for San Francisco residents), and San Francisco school groups with advance registration' \u2014 but the same page lists 'Adults: $34.95' and a '$3 per person' public-transport discount, indicating it predates current pricing." },
-      { "url": "https://www.sftourismtips.com/free-museum-admission-days.html", "publisher": "sftourismtips.com (third party)", "accessed": "2026-09-22", "method": "web_search", "evidence": "'California Academy of Sciences: As of the summer of 2024, they no longer offer free days.'" },
-      { "url": "https://freetoursbyfoot.com/california-academy-sciences-tickets/", "publisher": "freetoursbyfoot.com (third party)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Claims '$3 per person' Museums for All tickets for EBT/CalFresh/WIC/Lifeline/Medi-Cal cardholders, a '$3 off' military discount, and an annual neighbourhood free weekend for SF residents." }
+      {
+        "url": "https://www.calacademy.org/neighborhood-free-sundays",
+        "publisher": "California Academy of Sciences (official)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Returned the Academy's 404 page: 'Someone pulled the plug on this page!'"
+      },
+      {
+        "url": "https://www.calacademy.org/press/releases/new-academy-fact-sheet",
+        "publisher": "California Academy of Sciences (official press release)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "States 'Free Admission Programs: Many opportunities exist to visit the California Academy of Sciences during free days, including Quarterly Free Sundays, Neighborhood Free Weekends (select weekends for San Francisco residents), and San Francisco school groups with advance registration' — but the same page lists 'Adults: $34.95' and a '$3 per person' public-transport discount, indicating it predates current pricing."
+      },
+      {
+        "url": "https://www.sftourismtips.com/free-museum-admission-days.html",
+        "publisher": "sftourismtips.com (third party)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "'California Academy of Sciences: As of the summer of 2024, they no longer offer free days.'"
+      },
+      {
+        "url": "https://freetoursbyfoot.com/california-academy-sciences-tickets/",
+        "publisher": "freetoursbyfoot.com (third party)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Claims '$3 per person' Museums for All tickets for EBT/CalFresh/WIC/Lifeline/Medi-Cal cardholders, a '$3 off' military discount, and an annual neighbourhood free weekend for SF residents."
+      }
     ],
     "risk": "Publishing a free-admission day that no longer exists sends families to Golden Gate Park for nothing. This is the highest-priority verification gap in the Bay Area no-spend category.",
     "what_would_verify_it": "Retrieve calacademy.org/plan-your-visit and the Academy's current tickets page, and confirm whether Museums for All, neighbourhood free weekends and the transit discount are still published."
@@ -84,12 +183,24 @@
   {
     "id": "excl-costco-instant-savings-book-dates",
     "merchant": "Costco Wholesale",
-    "claim": "'Instant Savings \u201cCoupon\u201d Book Member-Only In-Warehouse & Online Savings Valid September 21 - October 18 2026', preceded by 'Valid August 24 - September 20, 2026', 'Valid July 27 - August 23, 2026', 'Valid June 15 - July 19, 2026', 'Valid May 11 - June 7, 2026', 'Valid April 6 - May 3, 2026', 'Valid March 2 - March 29, 2026' and 'Valid January 26, 2026 - February 22, 2026'.",
-    "status": "PLAUSIBLE BUT UNOFFICIAL \u2014 recorded for review only",
-    "why_rejected": "These cycle dates come from community scans (r/Costco threads citing Wallet Hacks, Costco Insider and Facebook leaks), not from Costco. They are mutually consistent across roughly 4-week intervals and the 8/24/26\u20139/20/26 window independently matches the purchase window P&G publishes on getpgoffer.com, which is strong circumstantial corroboration. Costco's own public offer URLs (/coupons.html and /online-offers.html) returned 404 on 2026-09-22, so no official cycle date could be read. The dates are therefore NOT used to date any offer in this dataset.",
+    "claim": "'Instant Savings “Coupon” Book Member-Only In-Warehouse & Online Savings Valid September 21 - October 18 2026', preceded by 'Valid August 24 - September 20, 2026', 'Valid July 27 - August 23, 2026', 'Valid June 15 - July 19, 2026', 'Valid May 11 - June 7, 2026', 'Valid April 6 - May 3, 2026', 'Valid March 2 - March 29, 2026' and 'Valid January 26, 2026 - February 22, 2026'.",
+    "status": "PLAUSIBLE BUT UNOFFICIAL — recorded for review only",
+    "why_rejected": "These cycle dates come from community scans (r/Costco threads citing Wallet Hacks, Costco Insider and Facebook leaks), not from Costco. They are mutually consistent across roughly 4-week intervals and the 8/24/26–9/20/26 window independently matches the purchase window P&G publishes on getpgoffer.com, which is strong circumstantial corroboration. Costco's own public offer URLs (/coupons.html and /online-offers.html) returned 404 on 2026-09-22, so no official cycle date could be read. The dates are therefore NOT used to date any offer in this dataset.",
     "urls_checked": [
-      { "url": "https://www.reddit.com/r/Costco/comments/1vsb8s8/costco_us_end_of_august_september_2026_savings/", "publisher": "r/Costco (community)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Thread title gives the 8/24\u20139/20/26 book; a comment in the same thread gives 'Instant Savings \u201cCoupon\u201d Book Member-Only In-Warehouse & Online Savings Valid September 21 - October 18 2026'. Another comment recommends 'checking the Warehouse tab on the Costco app' for location-specific savings." },
-      { "url": "https://www.costco.com/online-offers.html", "publisher": "Costco (official)", "accessed": "2026-09-22", "method": "fetch_page", "evidence": "Direct retrieval returned Costco's 'Page Not Found!' page on 2026-09-22, both with and without the EXTID=memberOnlySavings_header query parameter." }
+      {
+        "url": "https://www.reddit.com/r/Costco/comments/1vsb8s8/costco_us_end_of_august_september_2026_savings/",
+        "publisher": "r/Costco (community)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Thread title gives the 8/24–9/20/26 book; a comment in the same thread gives 'Instant Savings “Coupon” Book Member-Only In-Warehouse & Online Savings Valid September 21 - October 18 2026'. Another comment recommends 'checking the Warehouse tab on the Costco app' for location-specific savings."
+      },
+      {
+        "url": "https://www.costco.com/online-offers.html",
+        "publisher": "Costco (official)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Direct retrieval returned Costco's 'Page Not Found!' page on 2026-09-22, both with and without the EXTID=memberOnlySavings_header query parameter."
+      }
     ],
     "risk": "Low scam risk (the community scans are generally faithful) but the dates are unauditable and the item lists are not reproducible from them.",
     "what_would_verify_it": "A logged-in Costco session, or the in-warehouse savings book, or the Warehouse tab of the Costco app for a specific Bay Area warehouse."
@@ -98,11 +209,23 @@
     "id": "excl-trader-joes-online-coupons",
     "merchant": "Trader Joe's",
     "claim": "Online 'Trader Joe's coupons', printable Trader Joe's circulars, and Trader Joe's gift-card giveaways circulating on coupon sites and social media.",
-    "status": "REJECTED \u2014 disowned by the retailer",
+    "status": "REJECTED — disowned by the retailer",
     "why_rejected": "Trader Joe's states on its own website that it offers no coupons and, per a customer update quoted by third-party reporting, that 'Trader Joe's has NO association with these organizations. We do not offer any Trader Joe's coupons, discounts, or gift cards online.' Any site or social post offering Trader Joe's coupons or gift cards is therefore treated as not official and potentially fraudulent. Trader Joe's has many Bay Area stores, so this is a frequently encountered fake.",
     "urls_checked": [
-      { "url": "https://www.yahoo.com/lifestyle/does-trader-joes-ever-accept-121511132.html", "publisher": "Yahoo Lifestyle republishing Mashed (third party quoting traderjoes.com)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Quotes the retailer's website: 'We have low prices, every day. NO coupons. NO membership cards. NO discounts. NO glitzy promotions or couponing wars at our stores.' and the customer update: 'Trader Joe's has NO association with these organizations. We do not offer any Trader Joe's coupons, discounts, or gift cards online.'" },
-      { "url": "https://www.chowhound.com/1681978/trader-joes-secrets-list/", "publisher": "Chowhound (third party)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Repeats the same official statement and quotes a Trader Joe's public relations manager, Nakia Rohde: 'We do not offer Trader Joe's coupons ... However, we do accept manufacturer's coupons for other brand's products we carry.'" }
+      {
+        "url": "https://www.yahoo.com/lifestyle/does-trader-joes-ever-accept-121511132.html",
+        "publisher": "Yahoo Lifestyle republishing Mashed (third party quoting traderjoes.com)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Quotes the retailer's website: 'We have low prices, every day. NO coupons. NO membership cards. NO discounts. NO glitzy promotions or couponing wars at our stores.' and the customer update: 'Trader Joe's has NO association with these organizations. We do not offer any Trader Joe's coupons, discounts, or gift cards online.'"
+      },
+      {
+        "url": "https://www.chowhound.com/1681978/trader-joes-secrets-list/",
+        "publisher": "Chowhound (third party)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Repeats the same official statement and quotes a Trader Joe's public relations manager, Nakia Rohde: 'We do not offer Trader Joe's coupons ... However, we do accept manufacturer's coupons for other brand's products we carry.'"
+      }
     ],
     "risk": "HIGH. Fake Trader Joe's coupon and gift-card pages are a known phishing vector; some request email signups or app installs. Do not enter credentials on any site claiming to distribute Trader Joe's coupons.",
     "what_would_verify_it": "Retrieve traderjoes.com directly and capture the current wording of its coupon statement and any manufacturer-coupon acceptance policy."
@@ -111,13 +234,170 @@
     "id": "excl-exploratorium-free-wednesday-evenings",
     "merchant": "Exploratorium",
     "claim": "That the Exploratorium offers free Wednesday evening admission to Bay Area residents.",
-    "status": "REJECTED \u2014 not supported by the museum's current official pages",
-    "why_rejected": "Neither the museum's visit page nor its dedicated 'Free and Reduced Admission' page (both retrieved 2026-09-22) mentions any free evening program. The published schedule shows Monday closed, Tuesday\u2013Saturday daytime timed sessions, Sunday 12:00\u20135:00 pm, and a paid Thursday 'After Dark' session for ages 18+. The museum's own access page lists its real reduced-price routes instead: Exploratorium for All ($5 with EBT/SNAP/CalFresh, Medi-Cal, WIC or Lifeline), free admission for California public school teachers, free Title I field trips, ASTC Passport reciprocity, complimentary ADA aide admission, Discover & Go library passes, and reduced AAA/military rates.",
+    "status": "REJECTED — not supported by the museum's current official pages · also OUT OF SCOPE since the 2026-09-22 product-only re-scope (museum admission is no longer tracked at all)",
+    "why_rejected": "Neither the museum's visit page nor its dedicated 'Free and Reduced Admission' page (both retrieved 2026-09-22) mentions any free evening program. The published schedule shows Monday closed, Tuesday–Saturday daytime timed sessions, Sunday 12:00–5:00 pm, and a paid Thursday 'After Dark' session for ages 18+. The museum's own access page lists its real reduced-price routes instead: Exploratorium for All ($5 with EBT/SNAP/CalFresh, Medi-Cal, WIC or Lifeline), free admission for California public school teachers, free Title I field trips, ASTC Passport reciprocity, complimentary ADA aide admission, Discover & Go library passes, and reduced AAA/military rates.",
     "urls_checked": [
-      { "url": "https://www.exploratorium.edu/visit/reduced-rates", "title": "Free and Reduced Admission | Exploratorium", "publisher": "Exploratorium (official)", "accessed": "2026-09-22", "method": "fetch_page", "evidence": "Full access page retrieved; no free-evening program appears anywhere in it." },
-      { "url": "https://www.exploratorium.edu/visit", "title": "Plan Your Visit", "publisher": "Exploratorium (official)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Hours table shows Thursday as '10:00 am\u20135:00 pm' plus '6:00 pm\u201310:00 pm (Ages 18+)' and prices 'Adults (18\u201364) $39.95'; no free evening entry is listed." }
+      {
+        "url": "https://www.exploratorium.edu/visit/reduced-rates",
+        "title": "Free and Reduced Admission | Exploratorium",
+        "publisher": "Exploratorium (official)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Full access page retrieved; no free-evening program appears anywhere in it."
+      },
+      {
+        "url": "https://www.exploratorium.edu/visit",
+        "title": "Plan Your Visit",
+        "publisher": "Exploratorium (official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Hours table shows Thursday as '10:00 am–5:00 pm' plus '6:00 pm–10:00 pm (Ages 18+)' and prices 'Adults (18–64) $39.95'; no free evening entry is listed."
+      }
     ],
-    "risk": "Moderate: a family could travel to Pier 15 on a Wednesday evening expecting free entry and find the museum closed (it is closed Mondays and open Tue\u2013Sat daytime, with paid Thursday evenings).",
-    "what_would_verify_it": "Nothing further needed \u2014 both official pages were retrieved and neither supports the claim."
+    "risk": "Moderate: a family could travel to Pier 15 on a Wednesday evening expecting free entry and find the museum closed (it is closed Mondays and open Tue–Sat daytime, with paid Thursday evenings).",
+    "what_would_verify_it": "Nothing further needed — both official pages were retrieved and neither supports the claim."
+  },
+  {
+    "id": "excl-generalmills-aggregator-promo-codes",
+    "merchant": "General Mills",
+    "claim": "Aggregator promo-code pages advertising \"20% Off on All Orders\", \"30% Off Any Order\", \"40% Off When You Use This Coupon Code\", \"1,240 uses\", \"17 total coupons\" and BOGO codes for generalmills.com (simplycodes.com, dealdrop.com, knoji promo pages, June–May 2026 editions).",
+    "status": "REJECTED — codes not published by the issuer anywhere checked",
+    "why_rejected": "A site:generalmills.com coupons sweep returned only corporate news items (a 2021 Big G box-coupon promotion and a Box-Tops rebate that ended 2025-11-30) — no live consumer coupon hub and no alphanumeric checkout codes. General Mills sells D2C only for select brands, and the 'codes' described (site-wide percentage off with user counts) follow the fabricated-code pattern also documented for Round Table Pizza in this list. The aggregator pages themselves admit \"no active promo codes for General Mills Cereals right now\" in the same breath as listing them.",
+    "urls_checked": [
+      {
+        "url": "https://www.generalmills.com/news/press-releases/general-mills-and-box-tops-help-families-cross-one-thing-off-their-back-to-school-to-do-list",
+        "publisher": "General Mills corporate newsroom (official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Press release states the Box Tops 'Free Snacks' rebate ran \"Now through November 30, 2025\" and is not active in 2026; no generalmills.com coupon-code page appears in the official-domain search."
+      },
+      {
+        "url": "https://simplycodes.com/store/generalmills.com",
+        "publisher": "SimplyCodes (promo-code aggregator)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Snippet self-contradicts: \"there are no active promo codes for General Mills Cereals right now\" while advertising codes and a newsletter \"discount codes\" — affiliate page, never citable as proof of an offer."
+      },
+      {
+        "url": "https://www.dealdrop.com/general-mills",
+        "publisher": "Dealdrop (promo-code aggregator)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Lists '20% OFF / 30% OFF / 40% OFF' codes with fabricated success counts; page age May 2026; no issuer confirmation whatsoever."
+      }
+    ],
+    "risk": "high — shoppers type fake codes into checkout flows, hand these sites email addresses, and treat '1,240 used' counters as social proof of a discount that does not exist.",
+    "what_would_verify_it": "A live coupon or offer page on generalmills.com (or a brand microsite it links) publishing a code, its terms and an expiry. If General Mills revives manufacturer coupons, capture the offer lines the same way P&G brandSAVER and Kellanova are captured here."
+  },
+  {
+    "id": "excl-raleys-smartandfinal-aggregator-codes",
+    "merchant": "Raley's and Smart & Final",
+    "claim": "\"20% Off Raley's Promo Code\", \"Free Delivery Store-Wide\", \"$5 Off + Free Shipping + Site Wide\", \"85% OFF Smart & Final\", \"15% off first purchase with code\" (knoji.com, valuecom.com, dontpayfull.com editions dated 2024–2026).",
+    "status": "REJECTED — issuer programs are card/app-based; no site-wide checkout codes exist",
+    "why_rejected": "Raley's official site documents Something Extra as points plus personalised offers with no promo-code field; Smart & Final's official Digital-Coupons FAQ describes coupons \"loaded directly onto your Smart Advantage account\" and redeemed by scanning an in-app barcode — and the aggregators' advice to paste codes into a 'Promo Code box during checkout' refers to online grocery checkout, a different (delivery) channel from in-store couponing. No issuer page published any of the quoted percentage codes.",
+    "urls_checked": [
+      {
+        "url": "https://www.raleys.com/something-extra/something-extra-dollars",
+        "publisher": "Raley's (official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Official program page lists points, quarterly Something Extra Dollars and personalised offers — no promo codes; verified in the same search pass that produced the Raley's dataset entry."
+      },
+      {
+        "url": "https://www.smartandfinal.com/digital-coupons-FAQ",
+        "publisher": "Smart & Final (official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Official FAQ: digital coupons are exclusive to Smart Advantage members, loaded to the account, redeemed by barcode scan; states coupons are only redeemable at Smart & Final locations in California, Arizona and Nevada. No checkout promo code exists in this program."
+      },
+      {
+        "url": "https://raleys.knoji.com/promo-codes/",
+        "publisher": "Knoji (user-generated codes)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Promotes 'email discount codes' pasted into a checkout box; no issuer source."
+      },
+      {
+        "url": "https://www.dontpayfull.com/at/raleys.com",
+        "publisher": "DontPayFull (affiliate codes)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Instructs users to 'enter a valid code from DontPayFull' at checkout; references Raley's digital coupons separately, confirming the code and the real coupon program are unrelated."
+      }
+    ],
+    "risk": "medium — the sites are recycling the template described above for every Bay Area grocer, and their FAQ-style text is machine-generated.",
+    "what_would_verify_it": "Raley's or Smart & Final publishing an actual alphanumeric checkout or register code on their own domains."
+  },
+  {
+    "id": "excl-boxtops-domain-drift",
+    "merchant": "Box Tops for Education (General Mills)",
+    "claim": "Citations that route to boxtops.com as the authority for the Box Tops for Education receipt program.",
+    "status": "REJECTED — domain drift: boxtops.com is now the website of a 1960s rock band",
+    "why_rejected": "Retrieved live on 2026-09-22: boxtops.com renders 'The Box Tops 2026/2027 Tour Schedule', YouTube embeds of \"The Letter\", and a Facebook fan-page link — i.e., the band The Box Tops, not the General Mills program. Any coupon blog or 'official links' list still pointing readers to boxtops.com is citing a squatted/repurposed domain.",
+    "urls_checked": [
+      {
+        "url": "https://boxtops.com/",
+        "publisher": "boxtops.com (band site — NOT General Mills)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Fetched live: content is a tour schedule for the band 'The Box Tops' with 2026/2027 dates; zero mention of General Mills, schools or receipt scanning."
+      }
+    ],
+    "risk": "medium — an 'official-sounding' URL that misdirects parents; also a reminder to re-validate every cited domain each pass, which this project does in CI.",
+    "what_would_verify_it": "Locate the current General Mills-owned Box Tops URL (program microsite or generalmills.com section) and re-verify the app's earning mechanics there; until then this dataset publishes no Box Tops entry (the 2025 rebate cited in the GM newsroom has ended)."
+  },
+  {
+    "id": "excl-realsavings-domain-drift",
+    "merchant": "Campbell's Real Savings",
+    "claim": "Any offer or login page served from realsavings.com as 'Campbell's Real Savings'.",
+    "status": "REJECTED — domain drift: realsavings.com now resolves to a parked-domain ad shell",
+    "why_rejected": "Attempted fetch of https://www.realsavings.com/ on 2026-09-22 returned an ad-parking redirect chain (yfdabv11.com, 'rapidresultsearch.com is blocked', tracking beacons) — the classic parked-domain monetisation page, not Campbell's. Campbell's coupon program was retired in earlier years; the abandoned brand domain was picked up by a domain-parking service. A parked page can later serve malware or scam forms, so even the redirect target must never be trusted.",
+    "urls_checked": [
+      {
+        "url": "https://www.realsavings.com/",
+        "publisher": "realsavings.com (parked — formerly Campbell's)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Live fetch captured the parking shell verbatim, including an 'ERR_BLOCKED_BY_CLIENT' interstitial from rapidresultsearch.com and fileserver tracking pixels; no Campbell's branding or terms anywhere."
+      }
+    ],
+    "risk": "high — former-official domains that still 'look' citable are the perfect vector for fake-login phishing against coupon shoppers.",
+    "what_would_verify_it": "A live 'Real Savings' program served from campbells.com or a Campbell's-linked microsite with terms of use. None was found in the official-domain sweep; recorded here so future passes re-check rather than re-link."
+  },
+  {
+    "id": "excl-rkt-squishmallows-online-only-reward",
+    "merchant": "Rice Krispies Treats® (Kellanova)",
+    "claim": "\"Upload your receipt for $5 off a $20 purchase at Squishmallows.com\" (promoted on Kellanova's official Special Offers page, fetched live 2026-09-22).",
+    "status": "REJECTED — verified but out of scope: online-only redemption",
+    "why_rejected": "The offer is genuine and issuer-published (quoted verbatim from kellanovaus.com/us/en/promotions.html), but the $5 value is redeemable only on Squishmallows.com — an online store. This dataset lists only offers redeemable at a physical Bay Area location, so the record stays here rather than in the offers.",
+    "urls_checked": [
+      {
+        "url": "https://www.kellanovaus.com/us/en/promotions.html",
+        "publisher": "Kellanova (official)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Promotions card: \"Upload your receipt for $5 off a $20 purchase at Squishmallows.com\" linking to plushyphase2.ricekrispiestreats.com; the redemption merchant is a web store."
+      }
+    ],
+    "risk": "none — legitimate but not usable in person; included so the sweep of the Kellanova promotions page is fully accounted for.",
+    "what_would_verify_it": "Squishmallows merchandise sold at a named Bay Area retailer accepting the receipt-upload code; none is published, so the offer stays excluded."
+  },
+  {
+    "id": "excl-kraftheinz-stale-2022-campaign-page",
+    "merchant": "Kraft Heinz (Kraft/Heinz/Oscar Mayer)",
+    "claim": "\"Scan your KRAFT® Mac & Cheese, HEINZ®, or OSCAR MAYER® products for the chance to win family fun prizes! No Purchase Necessary.\" — kraftheinzsaveearnwin.com.",
+    "status": "REJECTED — official but expired: campaign states its own end date of 2022-05-09",
+    "why_rejected": "The microsite is genuine Kraft Heint inventory but the page prints \"Ends 5/9/22\" twice, and the prize ladder refers to an EA Sports game promo from that season. It has simply never been taken down. An official domain with a stale offer is still a stale offer — exactly the failure mode this project exists to catch. A 2026 sweep found no live Kraft Heinz consumer coupon hub (no myKraft/Kraft Save properties surfaced from the brand's own domains).",
+    "urls_checked": [
+      {
+        "url": "https://www.kraftheinzsaveearnwin.com/",
+        "publisher": "Kraft Heinz (official campaign microsite, stale)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Page reads \"Ends 5/9/22. ... No Purchase Necessary\" — retrieval observed in the aggregator results for 'Kraft Heinz coupons official site', September 2026."
+      }
+    ],
+    "risk": "medium — sweepstakes pages that outlive their promotions are the top 'expired offer still ranking' vector on manufacturer sites; also, Kraft Heinz product coupons circulate on every major retailer's digital platform, so a nonexistent 'Kraft codes' hub invites fabrication.",
+    "what_would_verify_it": "A currently dated Kraft Heinz offer page (kraftheinz.com or a brand microsite whose own end date is in the future). Per-store Kraft/Heinz manufacturer coupons issued through retailers (e.g. the Target Circle offers an aggregator mentioned) are store-catalogued and would be verified against the retailer's account, not this microsite."
   }
 ]

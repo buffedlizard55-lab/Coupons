@@ -271,6 +271,11 @@
         "code": "client-rendered-source",
         "severity": "warning",
         "detail": "raleys.com serves a JavaScript shell to anonymous crawlers, so the live digital ad cannot be verified without a browser session. This is recorded as an automation limitation in LIMITATIONS.md."
+      },
+      {
+        "code": "superseded-partially",
+        "severity": "info",
+        "detail": "Pass 3 (2026-09-22) added 'raleys-something-extra-dollars' with the issuer's own 2026 program-terms page; this entry remains the record of the Feb-2025 circular and its example deals, which are why it keeps the critical stale-source flag."
       }
     ],
     "tags": [

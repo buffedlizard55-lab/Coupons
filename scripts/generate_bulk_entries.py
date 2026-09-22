@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
 """Generate the bulk-verified entry shards for the coupon dataset.
 
-Two shards are produced by this script because both come from a single official
-page that was read line by line on 2026-09-22:
+One shard is produced by this script because it is a bulk transcription of a single
+official page that was read line by line on 2026-09-22 (and re-checked against the live
+page in the 2026-09-22 pass 3):
 
-  1. data/entries/01-pg-brandsaver.json
-     Source: https://pgbrandsaver.com/coupons/  (Procter & Gamble, official)
-     The page self-reports "Updated September 2026" and "Search 112 Digital
-     Coupons".  Every offer below is a verbatim transcription of the offer text
-     and the "Expires" line printed next to it on that page.  Offers that appear
-     twice on the page with two different expiry dates are flagged.
+  data/entries/01-pg-brandsaver.json
+  Source: https://pgbrandsaver.com/coupons/  (Procter & Gamble, official)
+  The page self-reports "Updated September 2026" and "Search 112 Digital
+  Coupons".  Every offer below is a verbatim transcription of the offer text
+  and the "Expires" line printed next to it on that page.  Offers that appear
+  twice on the page with two different expiry dates are flagged.
 
-  2. data/entries/07-museums-for-all-sf.json
-     Source: https://www.sfhsa.org/san-francisco-museums-all
-     (City & County of San Francisco Human Services Agency, official)
-     Venue names, street addresses, admission amounts and hours are transcribed
-     verbatim from that page.
+A second bulk shard (26 SF Museums For All venue entries) was generated here until
+2026-09-22, when the project was rescoped to product coupons only; that generator
+and its transcription now live in archive/rescoped-2026-09-22/.
 
 Nothing here is inferred, remembered or copied from an aggregator.  If a field
 could not be read from the source page it is left null and a flag explains it.
@@ -207,169 +206,6 @@ def pg_entries() -> list[dict]:
     return out
 
 
-# ---------------------------------------------------------------------------
-# 2. San Francisco "Museums For All" venues
-# ---------------------------------------------------------------------------
-
-SFHSA_URL = "https://www.sfhsa.org/san-francisco-museums-all"
-SFHSA_TITLE = "San Francisco Museums For All | sfhsa.org"
-
-MFA_PROGRAM_TEXT = (
-    "EBT or Medi-Cal cardholders get free or highly discounted admission to more than 25 local "
-    "museums and cultural centers."
-)
-MFA_HOW_TO = (
-    "On your visit, show your EBT or Medi-Cal card and proof of SF residence. It's easy to get "
-    "4 free or highly discounted admission tickets for every visit. Check each listing below for "
-    "visiting hours and ticketing information. Make online reservations when available. Note: "
-    "Special exhibits are not discounted and may require separate reservations."
-)
-
-# name, address, admission_text, walk_up, advanced_ticket, hours, phone, website, extra_flags
-MFA_VENUES = [
-    ("Asian Art Museum", "200 Larkin Street, San Francisco", "Free", "Yes", "No", "Thursday: 1:00 p.m. to 8:00 p.m. | Friday to Monday: 10:00 a.m. to 5:00 p.m. | Tuesday to Wednesday: Closed", "(415) 581-3500", "https://www.asianart.org/", []),
-    ("de Young Museum", "50 Hagiwara Tea Garden Drive, San Francisco", "Free", "Yes", "No", "Thursday to Sunday: 9:30 a.m. to 5:15 p.m.", "(415) 750-3600", "https://famsf.org/", []),
-    ("Legion of Honor Museum", "100 34th Avenue, San Francisco", "Free", "Yes", "No", "Tuesday to Sunday: 9:30 a.m. to 5:15 p.m.", "(415) 750-3600", "https://famsf.org/", []),
-    ("Museum of the African Diaspora (MoAD)", "685 Mission Street, San Francisco", "Free", "Yes", "No", "Wednesday to Saturday: 11:00 a.m. to 6:00 p.m. | Monday to Tuesday: Closed", "(415) 358-7200", "https://www.moadsf.org/", []),
-    ("Museum of Craft and Design", "2569 Third Street, San Francisco", "Free", "Yes", "Members only", "Thursday to Sunday: 12:00 p.m. to 5:00 p.m. | Monday to Wednesday: Closed", "(415) 773-0303", "https://sfmcd.org/", []),
-    ("San Francisco Museum of Modern Art (SFMOMA)", "151 Third Street, San Francisco", "Free", "Yes", "No", "Monday: 10:00 a.m. to 5:00 p.m. | Tuesday to Wednesday: Closed | Thursday: 1:00 p.m. to 8:00 p.m. | Friday to Sunday: 10:00 a.m. to 5:00 p.m.", "(415) 357-4000", "https://www.sfmoma.org/", [
-        {
-            "code": "official-sources-conflict",
-            "severity": "warning",
-            "detail": (
-                "The City's Museums For All page lists SFMOMA hours as 'Monday: 10:00 a.m. to 5:00 p.m. | "
-                "Tuesday to Wednesday: Closed | Thursday: 1:00 p.m. to 8:00 p.m. | Friday to Sunday: 10:00 a.m. "
-                "to 5:00 p.m.' SFMOMA's own visit page (fetched 2026-09-22) states 'Monday\u2013Tuesday: 10 a.m.\u20135 p.m., "
-                "Wednesday: Closed, Thursday: Noon\u20138 p.m., Friday\u2013Sunday: 10 a.m.\u20135 p.m.' Two official sources "
-                "disagree; confirm hours with the museum before travelling."
-            ),
-        }
-    ]),
-    ("Walt Disney Family Museum", "104 Montgomery Street, Presidio, San Francisco", "Free, main museum only", "Yes", "No", "Thursday to Sunday: 10:00 a.m. to 5:30 p.m. | Monday to Wednesday: Closed", "(415) 345-6843", "https://www.waltdisney.org/", []),
-    ("Yerba Buena Center for the Arts", "701 Mission Street, San Francisco", "Free", "Yes", "No", "Thursday, Saturday to Sunday: 12:00 p.m. to 6:00 p.m. | Friday: 2:00 p.m. to 8:00 p.m. | Monday to Wednesday: Closed", "(415) 978-2700", "https://ybca.org/", []),
-    ("Children's Creativity Museum", "221 4th Street, San Francisco", "Free", "Yes", "Members only", "Thursday to Sunday: 10:00 a.m. to 4:00 p.m. | Monday to Wednesday: Closed", "(415) 820-3320", "https://creativity.org/", []),
-    ("American Bookbinders Museum", "355 Clementina Street, San Francisco", "Free", "Yes", "No", "Tuesday to Saturday: 10:00 a.m. to 4:00 p.m. | Sunday to Monday: Closed", "(415) 824-9754", "https://bookbindersmuseum.org/", []),
-    ("Cable Car Museum", "1201 Mason Street, San Francisco", "Free", "Yes", "No", "Tuesday to Thursday: 10:00 a.m. to 4:00 p.m. | Friday to Sunday: 10:00 a.m. to 5:00 p.m.", "(415) 474-1887", "http://www.cablecarmuseum.org/", []),
-    ("Chinese Culture Center of San Francisco", "750 Kearny Street, 3rd Floor, San Francisco", "Free", "Yes", "Yes", "Tuesday to Saturday: 10:00 a.m. to 4:00 p.m.", "(415) 986-1882 ext. 025", "https://www.cccsf.us/", []),
-    ("Chinese Historical Society of America", "965 Clay Street, San Francisco", "Free", "Yes", "Yes", "Wednesday to Sunday: 11:00 a.m. to 4:00 p.m.", "(415) 391-1188", "https://chsa.org/", []),
-    ("GLBT Historical Society of America", "4127 18th Street, San Francisco", "Free", "Yes", "Yes", "Wednesday to Sunday: 11:00 a.m. to 5:00 p.m. | Monday to Tuesday: Closed", "(415) 777-5455", "https://www.glbthistory.org/", []),
-    ("Guardians of the City Museum (formerly SFFD Museum)", "655 Presidio Avenue, San Francisco", "Free", "Yes", "No", "Thursday to Sunday, 1:00 pm to 4:00 p.m. Please check the website to confirm before you visit.", "(415) 558-3546", "https://guardiansofthecity.org/", []),
-    ("San Francisco Railway Museum", "77 Steuart Street, San Francisco", "Free", "No", "Yes", "Tuesday to Saturday: 12:00 p.m. to 5:00 p.m.", "(415) 956-0472", "https://www.streetcar.org/", []),
-    ("Tenderloin Museum", "398 Eddy Street, San Francisco", "Free", "Yes", "No", "Tuesday to Saturday: 10:00 a.m. to 5:00 p.m. | Sunday to Monday: Closed", "(415) 351-1912", "https://www.tenderloinmuseum.org/", []),
-    ("The Contemporary Jewish Museum", "736 Mission Street, San Francisco", "Free", "No", "Yes", "Thursday to Sunday: 11:00 a.m. to 5:00 p.m.", "(415) 655-7800", "https://www.thecjm.org/", [
-        {
-            "code": "venue-temporarily-closed",
-            "severity": "critical",
-            "detail": (
-                "The City's listing is headed 'The Contemporary Jewish Museum (Temporarily Closed)'. "
-                "The admission benefit is published but the venue itself is flagged as temporarily closed "
-                "by the same official source, so do not travel without confirming on thecj.org."
-            ),
-        }
-    ]),
-    ("Aquarium of the Bay", "Pier 39, Embarcadero & Beach Street, San Francisco", "$3", "Yes", "No", "Daily: 10:00 a.m. to 5:00 p.m. (last entry 4:30 p.m.)", "(415) 623-5300", "https://www.aquariumofthebay.org/", []),
-    ("Conservatory of Flowers", "100 John F Kennedy Drive, Golden Gate Park, San Francisco", "Free", "Yes", "Yes", "Tuesday to Sunday: 10:00 a.m. to 4:30 p.m. | Last entry at 4:00 p.m.", "(415) 831-2090", "https://gggp.org/conservatory-of-flowers/", []),
-    ("Exploratorium", "Pier 15, Embarcadero at Green Street, San Francisco", "$5 (daytime admission and Thursday After Dark, 18+)", "Yes", "No", "Tuesday to Saturday: 10:00 a.m. to 5:00 p.m. | Thursday After Dark (Ages 18+): 6:00 p.m. to 10:00 p.m. | Sunday 12:00 to 5:00 p.m. | Monday: Closed (except select holidays)", "(415) 528-4444", "https://www.exploratorium.edu/", []),
-    ("Japanese Tea Garden", "75 Hagiwara Tea Garden Drive, Golden Gate Park, San Francisco", "Free", "Yes", "Yes", "Summer Hours: 9:00 a.m. to 5:45 p.m. | Winter Hours: 9:00 a.m. to 4:45 p.m. | Last entry 30 minutes before closing", "(415) 752-1171", "https://www.japaneseteagardensf.com/", []),
-    ("Museum of the Eye", "645 Beach Street, San Francisco", "Free", "Yes", "No", "Wednesday to Sunday: 11:00 a.m. to 5:00 p.m. | Monday to Tuesday: Closed", "(415) 447-0208", "https://www.aao.org/museum-of-the-eye", []),
-    ("Randall Museum", "199 Museum Way, San Francisco", "Free", "Yes", "No", "Tuesday to Saturday: 10:00 a.m. to 5:00 p.m. | Sunday to Monday: Closed", "(415) 554-9600", "https://randallmuseum.org/", []),
-    ("San Francisco Botanical Garden", "1199 9th Avenue, San Francisco", "Free", "Yes", "Yes", "Open Daily 7:30 a.m. | Last entry at 6:00 p.m.", "(415) 661-1316", "https://www.sfbg.org/", []),
-    ("San Francisco Zoo and Gardens", "Sloat Boulevard at The Great Highway, San Francisco", "$3", "Yes", "No", "Open Daily: 10:00 a.m. to 5:00 p.m. | Last entry at 4:00 p.m.", "(415) 753-7080", "https://www.sfzoo.org/", []),
-]
-
-
-def mfa_entries() -> list[dict]:
-    out = []
-    for (name, address, admission, walk_up, adv, hours, phone, website, extra) in MFA_VENUES:
-        free = admission.lower().startswith("free")
-        out.append(
-            {
-                "id": "sf-museums-for-all-" + slug(name),
-                "title": "Museums For All admission at " + name,
-                "merchant": name,
-                "publisher": "San Francisco Human Services Agency (City & County of San Francisco)",
-                "categories": ["community-access", "no-spend-free"],
-                "deal_types": ["free_admission" if free else "reduced_admission"],
-                "value": (
-                    {"amount": 0.0, "unit": "currency", "currency": "USD", "kind": "free_admission"}
-                    if free
-                    else {
-                        "amount": float(admission.replace("$", "").split()[0]),
-                        "unit": "currency",
-                        "currency": "USD",
-                        "kind": "reduced_admission",
-                    }
-                ),
-                "offer_text": admission + " admission with an EBT or Medi-Cal card plus proof of San Francisco residence. " + MFA_HOW_TO,
-                "offer_text_is_verbatim": False,
-                "verbatim_source_text": "Admission: " + admission + " | Walk-up admission: " + walk_up + " | Advanced ticket: " + adv,
-                "expires": None,
-                "expiry_basis": "Standing municipal program; the source page publishes no end date.",
-                "requirements": [
-                    "Valid EBT or Medi-Cal card",
-                    "Proof of San Francisco residence",
-                    "Up to 4 free or discounted tickets per visit",
-                    "Special exhibitions are not discounted and may need separate reservations",
-                ],
-                "venue": {
-                    "name": name,
-                    "address": address,
-                    "hours": hours,
-                    "phone": phone,
-                    "website": website,
-                    "walk_up_admission": walk_up,
-                    "advanced_ticket_required": adv,
-                },
-                "bay_area": {
-                    "available": True,
-                    "confidence": "high",
-                    "note": "Physical venue inside San Francisco with a published street address on the official City page.",
-                    "physical_locations": [address],
-                    "locator_url": website,
-                },
-                "sources": [
-                    {
-                        "url": SFHSA_URL,
-                        "title": SFHSA_TITLE,
-                        "publisher": "sfhsa.org \u2014 City & County of San Francisco Human Services Agency",
-                        "accessed": VERIFIED_AT,
-                        "method": "fetch_page",
-                        "evidence": (
-                            "Program line read verbatim: \"" + MFA_PROGRAM_TEXT + "\". Venue listing read "
-                            "verbatim: \"" + name + ": " + address + "\" with \"Hours: " + hours + "\", "
-                            "\"Contact: " + phone + "\", \"Website: " + website + "\" and \"Admission: "
-                            + admission + " | Walk-up admission: " + walk_up + " | Advanced ticket: " + adv + "\"."
-                        ),
-                    }
-                ],
-                "verification": {
-                    "level": "A",
-                    "verified_at": VERIFIED_AT,
-                    "checks": [
-                        "Source is a City & County of San Francisco agency domain (sfhsa.org)",
-                        "Venue name and street address transcribed verbatim",
-                        "Admission amount transcribed verbatim",
-                        "Program eligibility conditions transcribed verbatim",
-                    ],
-                },
-                "flags": [
-                    {
-                        "code": "eligibility-restricted",
-                        "severity": "info",
-                        "detail": (
-                            "Not open to the general public: requires an EBT or Medi-Cal card plus proof of "
-                            "San Francisco residence. Listed here because it is a genuine no-spend offer with "
-                            "a physical Bay Area redemption point."
-                        ),
-                    }
-                ]
-                + extra,
-                "tags": ["museum", "culture", "no-spend", "san-francisco"],
-            }
-        )
-    return out
-
-
 def write_shard(filename: str, entries: list[dict]) -> None:
     ENTRIES_DIR.mkdir(parents=True, exist_ok=True)
     path = ENTRIES_DIR / filename
@@ -379,7 +215,6 @@ def write_shard(filename: str, entries: list[dict]) -> None:
 
 def main() -> None:
     write_shard("01-pg-brandsaver.json", pg_entries())
-    write_shard("07-museums-for-all-sf.json", mfa_entries())
 
 
 if __name__ == "__main__":

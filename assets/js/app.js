@@ -136,13 +136,10 @@
     var v = entry.value;
     if (!v || typeof v.amount !== "number") return null;
     switch (v.kind) {
-      case "free_admission":
       case "free_item":
         return "FREE";
       case "member_price":
         return money(v.amount) + " membership";
-      case "reduced_admission":
-        return money(v.amount) + " admission";
       case "rebate":
         return v.unit === "percent" ? v.amount + "% back" : money(v.amount) + " rebate";
       case "rewards_credit":
@@ -163,7 +160,7 @@
   function valueNumber(entry) {
     var v = entry.value;
     if (!v || typeof v.amount !== "number") return -1;
-    if (v.kind === "free_admission" || v.kind === "free_item") return 1e6; /* no-spend wins */
+    if (v.kind === "free_item") return 1e6; /* no-spend wins */
     if (v.unit === "percent") return v.amount;
     if (v.unit === "points") return v.amount / 100;
     return v.amount;
@@ -348,9 +345,7 @@
 
     var extraLists = [
       ["participating_brands", "Participating brands (as published by the issuer)"],
-      ["exclusions", "Excluded"],
-      ["participating_bay_area_libraries", "Participating Bay Area library systems"],
-      ["attraction_choices_listed_by_famsf", "Attraction choices listed by the museum"]
+      ["exclusions", "Excluded"]
     ];
     extraLists.forEach(function (pair) {
       var arr = entry[pair[0]];
@@ -678,7 +673,7 @@
       "<h3>Verification methods</h3><table><thead><tr><th>Method</th><th>Meaning</th></tr></thead><tbody>" + methodRows + "</tbody></table>" +
       "<h3>How each line was checked</h3>" +
       "<ol>" +
-      "<li><strong>Find the issuer.</strong> For every candidate offer, the publisher that must honour it is identified (the brand, the retailer, the museum, the city agency). Aggregators, cashback portals, promo-code sites, listicles and social posts are never treated as the issuer.</li>" +
+      "<li><strong>Find the issuer.</strong> For every candidate offer, the publisher that must honour it is identified (the brand, the retailer, the pharmacy chain or the restaurant group). Aggregators, cashback portals, promo-code sites, listicles and social posts are never treated as the issuer.</li>" +
       "<li><strong>Retrieve the issuer's own page.</strong> The official URL is fetched and the offer text, value, expiry and conditions are transcribed verbatim. The retrieved page title is recorded so a human reviewer can confirm the same page was seen.</li>" +
       "<li><strong>Record the evidence.</strong> Each citation stores the exact passage read, the retrieval method and the date. That passage is what the &ldquo;Show the evidence&rdquo; link reveals on every card and in the Sources view.</li>" +
       "<li><strong>Check the dates.</strong> Every published expiry is compared against the current date. Offers whose purchase window has closed, whose event date has passed, or which the issuer says are not live yet are flagged rather than shown as available.</li>" +
@@ -690,12 +685,12 @@
       "<h3>Categories used</h3><table><thead><tr><th>Category</th><th>What belongs in it</th></tr></thead><tbody>" + catRows + "</tbody></table>" +
       "<h3>Deal types used</h3><table><thead><tr><th>Type</th><th>Meaning</th></tr></thead><tbody>" + dealRows + "</tbody></table>" +
       "<h3>Bay Area definition</h3>" +
-      "<p>The nine counties used throughout this project are the ones the Fine Arts Museums of San Francisco publishes for its Free Saturdays program: <strong>" + counties + "</strong>. Using an official county list avoids inventing a definition of &ldquo;the Bay Area&rdquo;.</p>" +
+      "<p>The nine counties used throughout this project are the standard nine-county Bay Area region (the definition used by the region&rsquo;s transit and metro agencies): <strong>" + counties + "</strong>. Using a fixed, published county list avoids inventing a definition of &ldquo;the Bay Area&rdquo;.</p>" +
       "<h3>Reproducing the work</h3>" +
       "<ul>" +
       "<li><code>data/entries/*.json</code> &mdash; the curated shards, one per research area. Every offer string lives here.</li>" +
       "<li><code>data/meta.json</code> &mdash; taxonomy, verification policy and flag severities.</li>" +
-      "<li><code>scripts/generate_bulk_entries.py</code> &mdash; regenerates the two largest shards from the transcriptions taken on the verification date.</li>" +
+      "<li><code>scripts/generate_bulk_entries.py</code> &mdash; regenerates the bulk P&amp;G shard from the transcription taken on the verification date.</li>" +
       "<li><code>scripts/build_site.py</code> &mdash; validates the shards and emits <code>data/coupons.json</code>, <code>assets/data/coupons.js</code> and <code>_site/</code>.</li>" +
       "<li><code>scripts/verify_links.py</code> &mdash; re-checks every citation over HTTP; runs weekly in GitHub Actions.</li>" +
       "<li><code>tests/test_data.py</code> &mdash; integrity tests: schema, unique ids, citations present, expiries parseable, no aggregator domains used as sources, generated files in sync.</li>" +
@@ -716,23 +711,23 @@
       "<li><strong>JavaScript-only pages are opaque.</strong> On the verification date, <code>raleys.com</code>, <code>cvs.com/extracare</code>, <code>pizzahut.com/deals</code>, <code>kfc.com</code>, <code>papajohns.com</code> and <code>dominos.com</code> returned shells, 404s or anti-bot interstitials to an anonymous crawler. The failing URLs are logged in the dataset (<code>policy-link-rot-observed-2026-09-22</code>).</li>" +
       "<li><strong>Facebook and Instagram could not be searched.</strong> Both require authentication, so no social post could be read or cited. Social platforms were used only as lead generators, and every lead was then verified on an official domain or rejected. See <code>policy-social-media-sourcing</code>.</li>" +
       "<li><strong>Store-level acceptance is not verified.</strong> A manufacturer coupon that is genuinely published can still be refused at a specific register, or the product may not be stocked. This dataset verifies the offer, not each store&rsquo;s behaviour.</li>" +
-      "<li><strong>Geographic coverage is uneven.</strong> San Francisco is covered in depth (museums, independents, co-ops). Oakland, Berkeley, San Jose, the Peninsula, the North Bay and the Tri-Valley are covered only by chain-level programs. No offer was invented to fill the gap.</li>" +
-      "<li><strong>Some official sources contradict each other.</strong> CVS publishes two different ExtraCare pharmacy reward thresholds; FAMSF and the City of San Francisco publish different SFMOMA hours; three museum pages quote three different CityPASS savings figures. All are flagged rather than resolved by guesswork.</li>" +
-      "<li><strong>No price is guaranteed.</strong> GoodRx &ldquo;as low as&rdquo; figures, Costco instant savings and museum surcharges all vary by location, dosage, date and exhibition.</li>" +
+      "<li><strong>Geographic coverage is uneven.</strong> San Francisco independents and co-ops are verified in depth; Oakland, Berkeley, San Jose, the Peninsula, the North Bay and the Tri-Valley are covered by chain-level programs only, and the site links official store locators rather than inventing address lists. No offer was created to fill a gap.</li>" +
+      "<li><strong>Some official sources contradict each other.</strong> CVS publishes two different ExtraCare pharmacy reward thresholds; Colgate&rsquo;s main site says coupons are temporarily unavailable while a Colgate microsite advertises printable coupons; Clorox product FAQs point at a Coupons page that returns 404. All are flagged rather than resolved by guesswork.</li>" +
+      "<li><strong>No price is guaranteed.</strong> GoodRx &ldquo;as low as&rdquo; figures and Costco instant savings vary by location, dosage and date; the register honors the shelf price of the day, not the number on a card.</li>" +
       "</ol>" +
 
       "<h3>Next session \u2014 in priority order</h3>" +
       "<ol>" +
-      "<li><strong>Close the California Academy of Sciences gap.</strong> A major Golden Gate Park attraction currently has <em>no</em> verified free-admission entry because its official program page 404s and third-party sources contradict each other. Retrieve <code>calacademy.org/plan-your-visit</code> and the tickets page; confirm Museums for All pricing, neighbourhood free weekends and the transit discount.</li>" +
-      "<li><strong>Re-harvest the manufacturer coupon block.</strong> Re-read <code>pgbrandsaver.com/coupons</code> and the Coupons.com printable index, then regenerate <code>data/entries/01-pg-brandsaver.json</code>. Add General Mills (Betty Crocker / Pillsbury), Kellanova, Unilever, Nestl\u00e9/Purina, Huggies, Colgate and Clorox brand hubs on the same pattern.</li>" +
+      "<li><strong>Re-harvest the manufacturer coupon blocks monthly.</strong> All 36 P&amp;G brandSAVER coupons expire 26\u201327 September 2026 and the Kellanova printables carry no published expiry. Re-read <code>pgbrandsaver.com/coupons/</code> (\u201cSearch 112 Digital Coupons\u201d \u2014 only 36 were transcribed; harvesting the rest of the list is the single biggest expansion available), <code>kellanovaus.com/us/en/coupons.html</code> and the Coupons.com printable index, then regenerate via <code>scripts/generate_bulk_entries.py</code>. Remaining hubs to sweep on the same pattern: Unilever, Nestl\u00e9/Purina, Kimberly-Clark, General Mills, Campbell\u00b7s, Post, Hershey, Mars, Mondelez.</li>" +
+      "<li><strong>Resolve the Colgate contradiction.</strong> <code>colgate.com/en-us/special-offers</code> states \u201cCoupons Temporarily Unavailable\u201d while search results show a Colgate microsite (<code>smiles.colgate.com</code>) advertising printable coupons. Fetch it directly: if live coupons are published there, they are level-A entries; if not, the policy note stands and aggregator \u201cColgate code\u201d listings are confirmed fabricated.</li>" +
       "<li><strong>Add a headless-browser verification path.</strong> <code>scripts/verify_links.py</code> currently does plain HTTP. A Playwright-based mode would unlock Raley&rsquo;s, CVS, Pizza Hut, KFC, Papa Johns and Domino&rsquo;s offers pages, converting several level-B program entries into level-A offer entries.</li>" +
-      "<li><strong>Verify Lucky Supermarkets and the ethnic grocers.</strong> Lucky, 99 Ranch, H Mart, Mitsuwa and Nijiya all have dense Bay Area store networks and none is verified yet. Lucky&rsquo;s <code>foru-guest.html</code> path 404s, so its real coupon program needs to be found from <code>luckysupermarkets.com</code> itself.</li>" +
+      "<li><strong>Verify Lucky Supermarkets, Save Mart, Smart &amp; Final, Food 4 Less and the ethnic grocers.</strong> Lucky, 99 Ranch, H Mart, Mitsuwa and Nijiya all have dense Bay Area store networks and none is verified yet. Lucky&rsquo;s <code>foru-guest.html</code> path 404s, so its real coupon program needs to be found from <code>luckysupermarkets.com</code> itself; Save Mart&rsquo;s and Smart &amp; Final&rsquo;s store-circular programs need the same anonymous fetch attempt and honest level-B treatment.</li>" +
       "<li><strong>Enumerate Bay Area store addresses.</strong> Chain entries currently link to official store locators instead of listing addresses, because locator pages are JavaScript-driven. A per-chain address list would let the site show a map and a &ldquo;near me&rdquo; filter.</li>" +
-      "<li><strong>Add East Bay, South Bay and North Bay institutions.</strong> Oakland Museum of California, Bay Area Discovery Museum, San Jose museums, Sonoma County museums and their free-day calendars are not yet verified.</li>" +
-      "<li><strong>Birthday freebies, done properly.</strong> Every birthday claim found in this pass was third-party (Starbucks is verified from official terms; Denny&rsquo;s and McDonald&rsquo;s birthday/first-order claims were not). Verify Krispy Kreme, Jamba, Baskin-Robbins, Panera, Chick-fil-A and Yogurtland from their own rewards terms pages, or leave them out.</li>" +
+      "<li><strong>Expand the receipt-scan category.</strong> Pop-Tarts Crazy Good Rewards is verified; the same pattern (official brand microsite, receipt upload, points redeemable on groceries) applies to other Kellanova brands, General Mills (Box Tops for Education \u2014 note that the historic <code>boxtops.com</code> domain now serves a rock band\u2019s site, itself recorded as a link-rot hazard in the excluded list) and Nestl\u00e9. Each needs its own fetch and terms transcription.</li>" +
+      "<li><strong>Birthday and sign-up freebies, done properly.</strong> Every birthday claim found in this pass was third-party (Starbucks is verified from official terms; Denny&rsquo;s and McDonald&rsquo;s birthday/first-order claims were not). Verify Krispy Kreme, Jamba, Baskin-Robbins, Panera, Chick-fil-A and Yogurtland from their own rewards terms pages, or leave them out.</li>" +
       "<li><strong>Authenticated social review workflow.</strong> To honour the original brief on Facebook and Instagram without importing scams: a human reviewer records the post URL, the brand&rsquo;s official confirmation page, and a screenshot; only then does the offer enter the dataset. The schema already supports multiple sources per entry.</li>" +
       "<li><strong>Weekly CI verification with a public report.</strong> The scheduled workflow already produces a JSON report; wire its output into the site header (&ldquo;N of M citations still resolving&rdquo;) and open an issue automatically when a citation starts failing.</li>" +
-      "<li><strong>Gas, transit and pharmacy adjacent categories.</strong> Clipper/BART/Muni fare programs, Costco and Chevron fuel pricing, and UPSIDE-style fuel cash back are natural extensions with physical Bay Area redemption points; none is verified yet.</li>" +
+      "<li><strong>Adjacent product categories to research next.</strong> Pet-supplier coupons (Petco, PetSmart), baby-product manufacturer hubs (Huggies, Gerber, Earth&rsquo;s Best) and fuel cash-back apps with in-station redemption are natural extensions whose issuers publish verifiable terms; none is verified yet.</li>" +
       "</ol>" +
 
       "<h3>How to contribute without breaking the guarantee</h3>" +

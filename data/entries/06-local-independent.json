@@ -624,8 +624,7 @@
     "merchant": "Rainbow Grocery Cooperative",
     "publisher": "Rainbow Grocery Cooperative — rainbow.coop",
     "categories": [
-      "local-independent",
-      "community-access"
+      "local-independent"
     ],
     "deal_types": [
       "percent_off"

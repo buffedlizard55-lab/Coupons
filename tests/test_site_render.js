@@ -9,7 +9,8 @@
    verification date of 2026-09-22 \u2014 so the expiry logic is exercised on real
    entries: the P&G coupons (expiring 26\u201327 September) must render as Expired,
    the P&G/Costco rebate (purchase window closed 20 September) as Window closed,
-   and SFMOMA's Free Family Day (25 October) as Active.
+   the Kellanova printables (no published expiry) as Ongoing, and the Dunkin'
+   Mobile Mondays offer (inferred end 30 September) as Expired on this date.
 
        node tests/test_site_render.js
 */
@@ -168,7 +169,8 @@ eq(byId.get("q").value, "", "reset filters clears the search box");
 
 byId.get("only-flagged").checked = true;
 byId.get("only-flagged").dispatch("change");
-ok(cards().length > 0 && cards().length < before, `flagged-only filter works (${cards().length} cards)`);
+const expectedFlagged = usable.filter((e) => (e.flags || []).length > 0);
+eq(cards().length, expectedFlagged.length, `flagged-only filter works (${cards().length} cards)`);
 ok(cards().every((c) => countClass(c, "flag") > 0), "flagged-only filter returns only cards carrying a flag");
 byId.get("reset-filters").dispatch("click");
 

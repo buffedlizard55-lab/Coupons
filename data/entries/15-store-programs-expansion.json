@@ -1,0 +1,430 @@
+[
+  {
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Ongoing program — no end date published by the issuer.",
+    "requirements": [
+      "Free Something Extra number at checkout or in the app",
+      "Points from eligible purchases only",
+      "Quarterly conversion; rewards delivered by mail or email per account settings"
+    ],
+    "tags": [
+      "grocery",
+      "loyalty",
+      "east-bay",
+      "north-bay"
+    ],
+    "flags": [
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "info",
+        "detail": "The live page fetch of raleys.com returns a JavaScript shell to anonymous crawlers (already documented in the link-rot note); the quoted text was captured from the official domain via search retrieval on the verification date."
+      },
+      {
+        "code": "personalized-offers",
+        "severity": "warning",
+        "detail": "Program terms are standing; the 'personalized offers' the issuer mentions are clipped inside an account and cannot be verified anonymously."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.raleys.com/something-extra/something-extra-dollars",
+        "title": "Something Extra Dollars | Raley's",
+        "publisher": "Raley's (raleys.com — official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Search retrieval of the official program page (which lists a \"2026 Something Extra Dollars Schedule\"): every quoted passage in offer_text, including the 500-point/$5 ladder, the one-cent-per-extra-point rate, rollover rule, quarterly payout and 'personalized offers on the products you buy most'."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Earning ladder and payout schedule transcribed verbatim from the issuer's official page",
+        "The page carries a 2026 schedule block, showing the program is live in the current year",
+        "Individual personalized offers are per-account and are not asserted"
+      ]
+    },
+    "id": "raleys-something-extra-dollars",
+    "title": "Raley's Something Extra Dollars — $5 back per 500 points, paid quarterly, redeemable in store",
+    "merchant": "Raley's / Bel Air / Nob Hill Foods",
+    "publisher": "Raley's (raleys.com — official program page)",
+    "categories": [
+      "grocery-loyalty"
+    ],
+    "deal_types": [
+      "rewards_credit",
+      "points"
+    ],
+    "value": {
+      "amount": 5.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "rewards_credit"
+    },
+    "offer_text": "\"Every dollar you spend in our stores equals one point. You must earn at least 500 points at the end of a Something Extra points earning period to receive five Something Extra Dollars, and you'll earn an additional penny for every point over 500... if you don't earn 500 points in the earning period, your points will roll over into the next earning period.\" \"Pays you back four times per year just for shopping at Raley's!\" \"Spend your Something Extra Dollars in-store or online.\" \"We'll send you personalized offers on the products you buy most.\"",
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Something Extra runs at Raley's, Bel Air Market and Nob Hill Foods stores, which operate across Contra Costa, Sacramento-adjacent East Bay, Marin, Sonoma and San Mateo counties. Use raleys.com's store locator for the nearest physical address.",
+      "physical_locations": null,
+      "locator_url": "https://www.raleys.com/store-locator"
+    }
+  },
+  {
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Ongoing program — no end date published by the issuer.",
+    "requirements": [
+      "Free Save Mart Rewards account (phone number is the card)",
+      "Clip offers before shopping",
+      "Enter phone number at checkout to redeem in store"
+    ],
+    "tags": [
+      "grocery",
+      "loyalty"
+    ],
+    "flags": [
+      {
+        "code": "personalized-offers",
+        "severity": "warning",
+        "detail": "Which specific Cash Back offers and digital coupons appear is account- and store-dependent; this entry documents the published program, not a particular week's offers."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "info",
+        "detail": "Text was captured from the official savemart.com page via search retrieval; the same FAQ renders under /login."
+      },
+      {
+        "code": "points-expire",
+        "severity": "warning",
+        "detail": "The issuer warns 'Points and rewards do expire if unused'; the exact expiry schedule is inside the account and not published anonymously."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://savemart.com/login",
+        "title": "Save Mart Rewards | Member Prices, Fuel Savings + Cash Back",
+        "publisher": "Save Mart Supermarkets (official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Search retrieval of the issuer's Rewards FAQ block on savemart.com (login page carries the full program FAQ); quoted passages are verbatim, including the $1/$5 Cash Back ladder, phone-number redemption and expiry warning."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Program mechanics transcribed verbatim from the issuer's official site",
+        "Offer catalogue (which items have $1/$5 offers) is per-account and not asserted",
+        "No aggregator cited"
+      ]
+    },
+    "id": "save-mart-rewards",
+    "title": "Save Mart Rewards — clip digital coupons, redeem at checkout with your phone number; quarterly cash back rewards",
+    "merchant": "Save Mart / Food 4 Less (Save Mart Supermarkets)",
+    "publisher": "Save Mart Supermarkets (savemart.com — official)",
+    "categories": [
+      "grocery-loyalty"
+    ],
+    "deal_types": [
+      "dollar_off",
+      "cashback",
+      "points"
+    ],
+    "value": null,
+    "offer_text": "\"Member Prices, Fuel Savings + Cash Back — all in one place.\" \"You'll find Cash Back offers like $1 off, $5 off, and more – based on your point balance... applied automatically at checkout when you enter your Save Mart Rewards phone number.\" \"To use an offer, log in to your account on the website or mobile app and visit the Coupons section. Add the offers you want before you shop and then enter your Rewards phone number at checkout to redeem in-store.\" \"Points and rewards do expire if unused, so check your account regularly and use them while they last!\"",
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Save Mart operates dozens of stores across the East Bay, Sonoma, Marin, Sacramento valley rim and around the Bay; the program is redeemed at the physical register. Food 4 Less, owned by the same family, is a separate banner not covered by this entry.",
+      "physical_locations": null,
+      "locator_url": "https://savemart.com/store-locator"
+    }
+  },
+  {
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Ongoing program — no end date published by the issuer.",
+    "requirements": [
+      "Free Smart Advantage account/app",
+      "Coupons live on the account — no printing",
+      "Scan the in-app barcode at checkout"
+    ],
+    "tags": [
+      "grocery",
+      "bulk",
+      "digital coupons"
+    ],
+    "flags": [
+      {
+        "code": "personalized-offers",
+        "severity": "warning",
+        "detail": "The specific coupon gallery is account-gated; this entry verifies the program and its physical-restriction, not this week's offers."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "info",
+        "detail": "The FAQ text was captured from the official domain via search retrieval on the verification date."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.smartandfinal.com/digital-coupons-FAQ",
+        "title": "Digital Coupons FAQ | Smart & Final",
+        "publisher": "Smart & Final (official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Search retrieval of the issuer's official FAQ page; all quoted passages verbatim, including the redemption mechanic and the 'only redeemable at Smart & Final locations in California, Arizona and Nevada' restriction."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Program mechanics and the CA/AZ/NV redemption restriction transcribed verbatim from the issuer's own FAQ",
+        "Automatic-removal behaviour for expired coupons also quoted ('Once a coupon expires or has reached its redemption limit, the offer will be automatically removed...')"
+      ]
+    },
+    "id": "smart-final-digital-coupons",
+    "title": "Smart & Final Smart Advantage — digital coupons loaded to your account, redeemed by scanning the app barcode (CA/AZ/NV)",
+    "merchant": "Smart & Final",
+    "publisher": "Smart & Final (smartandfinal.com — official FAQ)",
+    "categories": [
+      "grocery-loyalty"
+    ],
+    "deal_types": [
+      "price_discount"
+    ],
+    "value": null,
+    "offer_text": "\"Get extra savings at Smart & Final using our new Digital Coupons, provided exclusively to all Smart Advantage members. They're loaded directly onto your Smart Advantage account and can be redeemed automatically when purchasing qualifying items. Simply have the associate at checkout scan your Smart Advantage barcode in your Smart & Final app!\" \"You must display your Smart Advantage barcode via the Smart & Final app at checkout to redeem Digital Coupons and get your extra savings.\" \"Customers can register on SmartandFinal.com or download the app for iOS and Android and create an account for free.\"",
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "The issuer states: \"Currently, Digital Coupons are only redeemable at Smart & Final locations in California, Arizona and Nevada.\" Smart & Final stores operate in San Francisco, Oakland, Hayward, Richmond, San Jose and other Bay Area cities — confirmed via the issuer's locator.",
+      "physical_locations": null,
+      "locator_url": "https://www.smartandfinal.com/store-locator"
+    }
+  },
+  {
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Ongoing program — no end date published by the issuer.",
+    "requirements": [
+      "CVS ExtraCare membership plus the ExtraCare Plus tier",
+      "Buy CVS Health brand products at a physical CVS pharmacy (or CVS.com)",
+      "Discount applies automatically at the register — no clipping"
+    ],
+    "tags": [
+      "drugstore",
+      "pharmacy",
+      "standing discount"
+    ],
+    "flags": [
+      {
+        "code": "membership-fee-tier",
+        "severity": "warning",
+        "detail": "ExtraCare Plus is a paid membership tier; the fee is not quoted in the retrieved text, so it is deliberately not asserted here. Confirm the current price on cvs.com before joining."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "warning",
+        "detail": "cvs.com serves an anti-bot interstitial to anonymous fetchers (documented in the link-rot note); quotes come from search retrievals of the official pages, which a reviewer can open to confirm."
+      },
+      {
+        "code": "brand-scope-limited",
+        "severity": "info",
+        "detail": "20% applies to CVS Health brand products only, per the issuer's own wording — not to national brands sold in the store."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.cvs.com/extracare/overview",
+        "title": "CVS Savings & Rewards - ExtraCare",
+        "publisher": "CVS Health (cvs.com — official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Search retrieval of the official ExtraCare overview; both verbatim sentences on the 20% CVS Health-brand benefit and monthly bonus reward appear on the page as indexed."
+      },
+      {
+        "url": "https://www.cvs.com/extracare-cvs/couponpolicy",
+        "title": "Coupon Policy | CVS Pharmacy",
+        "publisher": "CVS Health (cvs.com — official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Official coupon-policy page confirms ExtraCare mechanics (\"ExtraBucks Rewards may be earned via 2% back on qualifying purchases, items advertised in print and online weekly ads, and ExtraCare Rewards earned at the pharmacy\"), used to cross-check how store-issued value applies at the register."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "The 20%-off benefit is transcribed verbatim from the issuer's ExtraCare overview page",
+        "Cross-checked against the issuer's separate coupon-policy page for how ExtraCare value applies at checkout"
+      ]
+    },
+    "id": "cvs-extracare-plus-20-off-cvs-health",
+    "title": "CVS ExtraCare Plus® — 20% off CVS Health brand products, automatically applied",
+    "merchant": "CVS Pharmacy",
+    "publisher": "CVS Health (cvs.com — official ExtraCare overview)",
+    "categories": [
+      "drugstore-pharmacy"
+    ],
+    "deal_types": [
+      "percent_off"
+    ],
+    "value": {
+      "amount": 20.0,
+      "unit": "percent",
+      "currency": null,
+      "kind": "percent_off"
+    },
+    "offer_text": "\"If you're an ExtraCare Plus® member, you'll automatically get 20% off CVS Health brand products\". \"If you're an ExtraCare Plus member, your 20% off CVS Health brand products and monthly bonus reward will automatically apply. You can also take advantage of your FREE delivery and shipping benefits.\"",
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "CVS operates neighborhood pharmacies across all nine Bay Area counties; store-level exclusions are governed by the in-store coupon policy. Use the official locator for the nearest 24-hour pharmacy.",
+      "physical_locations": null,
+      "locator_url": "https://www.cvs.com/store-locator"
+    }
+  },
+  {
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Ongoing program — no end date published by the issuer.",
+    "requirements": [
+      "Free 7REWARDS account / 7-Eleven app",
+      "In-store scan or registered phone number at checkout",
+      "Fuel, age-restricted items and services earn no points (issuer's own exclusions)"
+    ],
+    "tags": [
+      "convenience",
+      "snacks",
+      "points"
+    ],
+    "flags": [
+      {
+        "code": "personalized-offers",
+        "severity": "warning",
+        "detail": "Exclusive deals and bonus-point items rotate per account; this entry documents the standing earn/redeem program only."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "info",
+        "detail": "7-eleven.com pages are JavaScript-heavy; quotes were captured from official-domain search retrievals of the verification date."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.7-eleven.com/lp/join-7rewards",
+        "title": "7Rewards: Earn Points & Get Rewarded with 7REWARDS from 7-Eleven",
+        "publisher": "7-Eleven, Inc. (official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Official join page: \"Join. Earn. Get 7REWARDS.\" / \"As a 7REWARDS member, you'll get exclusive deals, earn points on every purchase and use those points for FREE snacks and drinks.\""
+      },
+      {
+        "url": "https://7-eleven.com/7rewards?cp_5=",
+        "title": "7REWARDS — FAQ",
+        "publisher": "7-Eleven, Inc. (official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Official FAQ text: in-store earning via \"scan your 7REWARDS barcode or enter the phone number\"; \"earn 10 points for every dollar you spend on qualifying purchases; points exclude age-restricted items, fuel, and services\"."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Earn rate, redemption mode and exclusions read from the issuer's own pages",
+        "The redemption catalogue (which snacks/drinks cost which point levels) is account/app-specific and not asserted"
+      ]
+    },
+    "id": "7-eleven-7rewards",
+    "title": "7-Eleven 7REWARDS — 10 points per $1 in store, redeemable for free snacks and drinks",
+    "merchant": "7-Eleven",
+    "publisher": "7-Eleven, Inc. (7-eleven.com — official)",
+    "categories": [
+      "big-box-loyalty"
+    ],
+    "deal_types": [
+      "points",
+      "free_item"
+    ],
+    "value": null,
+    "offer_text": "\"With 7REWARDS you earn points on every purchase* and redeem points on snacks and FREE drinks\". \"You immediately earn 10 points for every dollar you spend on qualifying purchases; points exclude age-restricted items, fuel, and services\". \"When you check out in-store, scan your 7REWARDS barcode or enter the phone number registered to your 7REWARDS account to earn points and member rewards.\"",
+    "bay_area": {
+      "available": true,
+      "confidence": "medium",
+      "note": "7-Eleven stores are dense across the Bay Area (particularly Alameda, Contra Costa, Santa Clara and San Mateo counties); rewards redeem at the register. Store counts and franchise participation were not independently counted — confidence medium until a locator pass.",
+      "physical_locations": null,
+      "locator_url": "https://www.7-eleven.com/locator"
+    }
+  },
+  {
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Ongoing program — no end date published by the issuer.",
+    "requirements": [
+      "Free Checkout 51 account (app or desktop signup)",
+      "Add each offer before shopping",
+      "Physical in-store purchase and a legible receipt photo"
+    ],
+    "tags": [
+      "receipt-scan",
+      "gas",
+      "cashback",
+      "platform"
+    ],
+    "flags": [
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "Offers, payout rates and weekly limits are personalized per account; only the platform's published mechanics are verified here. Cash back pays to a bank/PayPal-type balance per the app's terms, which were not re-read this pass."
+      },
+      {
+        "code": "not-a-manufacturer-coupon",
+        "severity": "info",
+        "detail": "Checkout 51 is a receipt-scan cash-back platform, not a coupon issuer: the register never sees a coupon; savings arrive after the purchase."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.checkout51.com/",
+        "title": "Checkout 51 - Save on the brands you love.",
+        "publisher": "Checkout 51 (official)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Live fetch of the issuer's homepage on the verification date; every sentence in offer_text is verbatim from that page, including the three-step Add/Shop/Scan+Earn block and the gas offer ('over 5,000 participating gas stations')."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Platform existence and mechanics read verbatim from the issuer's own homepage on the verification date",
+        "Individual offers live behind per-user accounts and are deliberately not enumerated",
+        "The issuer, not an aggregator, operates the site and pays the cash back"
+      ]
+    },
+    "id": "checkout51-cashback-app",
+    "title": "Checkout 51 — cash back on gas and groceries: add offers, shop in store, photograph the receipt",
+    "merchant": "Checkout 51",
+    "publisher": "Checkout 51 (checkout51.com — official site)",
+    "categories": [
+      "rebate-cashback"
+    ],
+    "deal_types": [
+      "cashback"
+    ],
+    "value": null,
+    "offer_text": "\"Earn Cash Back on Your Gas and Groceries. Start saving on the brands you love!\" \"Add — Add new offers every week for gas, groceries, and everyday items. Shop — Head to the store or gas station and buy what's on offer. Scan + Earn — Simply take a photo of your receipt and earn Cash back!\" \"Now offering Cash Back on gas! Save at the pump every time at over 5,000 participating gas stations.\"",
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Grocery offers apply at the chains shoppers actually use in the Bay Area (Safeway, Raley's, Save Mart, CVS, Walgreens); gas cash back applies at 5,000+ participating U.S. stations per the issuer. Offer availability is per-user, so no specific offer is claimed.",
+      "physical_locations": null,
+      "locator_url": null
+    }
+  }
+]

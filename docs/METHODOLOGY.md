@@ -15,8 +15,8 @@ an offer.
 
 | Tier | Source type | Examples | May establish an offer? |
 | --- | --- | --- | --- |
-| 1 | The issuer's own website, app store listing, published terms of use, or an official microsite | `pgbrandsaver.com`, `safeway.com/foru-guest.html`, `starbucks.com/terms/rewards`, `famsf.org/visit/free-reduced-admission`, `sfhsa.org`, `getpgoffer.com` | **Yes** |
-| 2 | A government or public agency publishing a program on behalf of venues | `sfhsa.org` Museums For All listing, `sf.gov` | **Yes**, for the program it administers |
+| 1 | The issuer's own website, app store listing, published terms of use, or an official microsite | `pgbrandsaver.com`, `kellanovaus.com/us/en/coupons.html`, `safeway.com/foru-guest.html`, `starbucks.com/terms/rewards`, `jimmyjohns.com/terms-and-conditions`, `getpgoffer.com` | **Yes** |
+| 2 | The issuer's corporate newsroom or investor-relations pages publishing program terms | `ir.chipotle.com`, `news.baskinrobbins.com`, `generalmills.com/news` | **Yes**, for the program it announces (dated press releases are re-checked like any page) |
 | 3 | Coupon media and deal journalists | The Krazy Coupon Lady, MoneyPantry | No — only to establish *which channels exist*, recorded as level-C policy notes |
 | 4 | Aggregators, cashback portals, promo-code sites | Coupons.com promo-code pages, simplycodes, couponcabin, valuecom, dealigg | **Never.** Used only as evidence inside a rejection record |
 | 5 | Social media and forums | Facebook, Instagram, Reddit, TikTok | **Never.** Leads only; every lead was then verified on a tier-1/2 domain or rejected |
@@ -43,8 +43,8 @@ Recorded on every entry as `verification.level`.
 
 | Level | Meaning | Count |
 | --- | --- | --- |
-| **A** | Offer text, value and expiry were read verbatim from the issuer's own official page on the verification date. | 115 |
-| **B** | The program or policy was confirmed on the issuer's official page, but the specific rotating offers behind it require an app, an account or an in-store visit and could not be read anonymously. No individual offer is asserted. | 11 |
+| **A** | Offer text, value and expiry were read verbatim from the issuer's own official page on the verification date. | 85 |
+| **B** | The program or policy was confirmed on the issuer's official page, but the specific rotating offers behind it require an app, an account or an in-store visit and could not be read anonymously. No individual offer is asserted. | 14 |
 | **C** | Only third-party evidence was found. Kept **only** in `10-excluded-unverified.json` and `11-policy-notes.json`, never presented as a usable coupon. | 2 |
 
 Level B exists because pretending otherwise would be a hallucination of a different kind:
@@ -58,7 +58,7 @@ The test suite additionally requires that:
 - a level-B entry states in its own checks or flags *why* the offers could not be enumerated;
 - an entry whose only retrieval method was a search-engine snippet of the issuer's page carries
   the flag `retrieval-via-search-snippet`, so it never implies a direct fetch it did not do
-  (7 entries disclose this).
+  (16 entries disclose this).
 
 ## 3. Retrieval methods
 
@@ -82,12 +82,12 @@ For each candidate offer:
 1. **Identify the issuer.** Who has to honour this? If the answer is "a coupon site", stop —
    the claim goes to the excluded shard.
 2. **Find the issuer's own page.** Prefer the offer's canonical location (a brand coupon hub, a
-   program-rules page, a visit/admission page, a published circular).
-3. **Retrieve and transcribe.** Offer text, value, expiry, conditions, exclusions, venue
-   address and hours are transcribed verbatim. `offer_text_is_verbatim` is set `false` when the
-   text had to be assembled from more than one part of the page, and the raw passage is kept in
-   `verbatim_source_text` (the 26 Museums For All venue entries do this, keeping the City's
-   published admission lines intact).
+   program-rules page, a rewards terms page, a published circular).
+3. **Retrieve and transcribe.** Offer text, value, expiry, conditions, exclusions and, where
+   published, address and hours are transcribed verbatim. `offer_text_is_verbatim` is set `false`
+   when the text had to be assembled from more than one part of the page, and the raw passage is
+   kept in `verbatim_source_text` (the Kellanova coupon cards do this: each is a heading, a brand
+   line and an 'on any ONE/TWO' line joined in page order).
 4. **Check the dates.** Compare every published expiry, purchase window and event date against
    the verification date. Expired, closed and not-yet-live states are recorded, never hidden.
 5. **Check physical redemption.** Confirm the offer can be redeemed in person within the
@@ -104,28 +104,29 @@ For each candidate offer:
 
 ## 5. Flag taxonomy
 
-224 flags across the dataset: **13 critical, 136 warning, 75 info**.
+207 flags across the dataset: **12 critical, 142 warning, 53 info**.
 
 | Severity | Meaning | Examples in this dataset |
 | --- | --- | --- |
-| `critical` | Do not rely on this without resolving the problem first. | P&G/Costco rebate purchase window closed before verification; two official CVS pages state different reward thresholds; FAMSF's free first Tuesday versus the City's published de Young hours (Thu–Sun only); a venue listed as temporarily closed; a retailer announcing a discount that is "not live yet"; Costco item-level offers not verifiable anonymously; a 19-month-old circular used as an example |
+| `critical` | Do not rely on this without resolving the problem first. | P&G/Costco rebate purchase window closed before verification; two official CVS pages state different reward thresholds; three Crest coupons printed twice on one official P&G page with two different expiries; a retailer announcing a discount that is "not live yet"; Costco item-level offers not verifiable anonymously; a 19-month-old Raley's circular used as the only source; Colgate's own pages disagree about whether coupons exist; documented scam vectors (Trader Joe's impersonators, insert-site staleness, social 'coupon' density) |
 | `warning` | Material caveat. | Expiry not published; account or app required; source retrieved only via search snippet; source page carries a stale date; partial capture of a terms page; availability varies by store; paid membership required; affiliate parameters on outbound links |
 | `info` | Context for a reviewer that does not undermine the offer. | Age-restricted purchase; small fixed value; program replaced an older birthday offer; benefit is a payment-method change rather than a discount |
 
-The 13 critical flags are listed in full on the site's **Irregularities** view and in
+The 12 critical flags are listed in full on the site's **Irregularities** view and in
 `docs/VERIFICATION-LOG.md §5`.
 
 ## 6. Bay Area definition
 
-The nine counties used throughout are the ones the Fine Arts Museums of San Francisco publishes
-for its Free Saturdays program — an official list rather than an invented one:
+The nine counties used throughout are the standard nine-county Bay Area definition (the list used
+by the region's transit and metro agencies) — a fixed official list rather than an invented one:
 
 **Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, Sonoma.**
 
 `data/meta.json → bay_area_county_notes` records how deeply each county is actually covered,
-which is uneven: San Francisco is covered in depth; Alameda, Contra Costa, San Mateo, Santa
-Clara, Marin, Sonoma, Solano and Napa are covered mainly through chain-level programs and the
-Museums For All / Discover & Go lookups. No offer was invented to balance the map.
+which is uneven: San Francisco is covered in depth (independents, co-ops, and every chain
+locator that resolves there); Alameda, Contra Costa, San Mateo, Santa Clara, Marin, Sonoma,
+Solano and Napa are covered mainly through chain-level programs. No offer was invented to
+balance the map.
 
 ## 7. Value schema
 
@@ -136,10 +137,9 @@ Every `value` object has exactly four keys, so the site can label and sort witho
 ```
 
 - `unit` ∈ `currency | percent | points`
-- `kind` ∈ `dollar_off | percent_off | rebate | reduced_admission | free_admission | free_item |
-  member_price | rewards_credit | points`
-- `amount` is `null` when the issuer publishes no figure — "reduced admission" with no stated
-  price is stored as `null`, never estimated.
+- `kind` ∈ `dollar_off | percent_off | rebate | free_item | member_price | rewards_credit | points`
+- `amount` is `null` when the issuer publishes no figure — a "cash back ladder" with no single
+  stated amount is stored as `null`, never estimated.
 - `free_item` may carry a non-zero amount **only** when the issuer publishes it as a maximum
   value cap and that figure appears verbatim in `offer_text` (Starbucks' "single free
   customization, up to a $2 maximum value"). The test suite enforces this.
@@ -148,7 +148,7 @@ Every `value` object has exactly four keys, so the site can label and sort witho
 
 `expires` is an ISO date exactly as published, or `null`. `expiry_basis` records *why* that date
 was chosen ("Printed expiry on the coupon as published on 2026-09-22", "Standing loyalty
-program", "Event date published by the museum"). Rebates carry a separate `purchase_window`
+program", "Rolling 7-day expiry printed in the offer's own footnote"). Rebates carry a separate `purchase_window`
 because the qualifying-purchase deadline and the submission deadline are different things — the
 P&G × Costco rebate is the case in point: purchases 2026-08-24 → 2026-09-20 (closed),
 submissions until 2026-10-31 (open).
@@ -159,11 +159,12 @@ retire: `Active` → `Expires soon` (≤ 7 days) → `Expired`, plus `Window clo
 
 ## 9. Bulk shards and reproducibility
 
-Two shards are large enough to be generated rather than hand-written: 36 P&G brandSAVER coupons
-and 26 San Francisco Museums For All venues. `scripts/generate_bulk_entries.py` builds them from
-transcriptions taken on the verification date (the brand, value, printed expiry and the City's
-published admission line for each venue), with provenance stored on every entry and
-collision-safe IDs. The generator is deterministic: CI re-runs it and fails if the committed
+One shard is large enough to be generated rather than hand-written: 36 P&G brandSAVER coupons.
+`scripts/generate_bulk_entries.py` builds it from the transcription taken on the verification date
+(the brand, value, offer text and printed expiry read from pgbrandsaver.com), with provenance
+stored on every entry and collision-safe IDs. A second bulk generator (26 SF Museums For All
+venues) was removed from this script when the project was rescoped to products on 2026-09-22;
+its code and data are preserved in `archive/rescoped-2026-09-22/`. The generator is deterministic: CI re-runs it and fails if the committed
 shards no longer match, so the bulk data cannot silently drift from its transcription.
 
 ## 10. Build and enforcement
@@ -171,8 +172,8 @@ shards no longer match, so the bulk data cannot silently drift from its transcri
 ```bash
 python3 scripts/build_site.py            # validate → data/coupons.json, assets/data/coupons.js, docs/SOURCES.md, _site/
 python3 scripts/build_site.py --check    # fail if generated files are stale
-python3 -m unittest discover -s tests    # 39 tests
-python3 scripts/verify_links.py          # re-fetch all 167 cited URLs → reports/link-check.json
+python3 -m unittest discover -s tests    # 46 tests
+python3 scripts/verify_links.py          # re-fetch every citation (72 unique URLs) → reports/link-check.json
 ```
 
 `build_site.py` refuses to emit a site if any entry is missing a citation, an evidence passage,
@@ -196,5 +197,5 @@ documented link-rot log stops resolving.
   locator is linked instead.
 - No attempt was made to reconcile two official pages that disagree; both are quoted and the
   conflict is flagged.
-- No rejected claim was quietly deleted. All nine remain published with their reasoning, because
+- No rejected claim was quietly deleted. All fifteen remain published with their reasoning, because
   a shopper who has seen the claim needs to find the rebuttal.

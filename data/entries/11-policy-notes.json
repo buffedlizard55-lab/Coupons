@@ -4,8 +4,12 @@
     "title": "Trader Joe's coupon policy: the chain issues no coupons of its own",
     "merchant": "Trader Joe's",
     "publisher": "Trader Joe's (quoted via third-party reporting; the retailer's own page was not retrieved in this pass)",
-    "categories": ["policy-debunk"],
-    "deal_types": ["policy"],
+    "categories": [
+      "policy-debunk"
+    ],
+    "deal_types": [
+      "policy"
+    ],
     "value": null,
     "offer_text": "\"We have low prices, every day. NO coupons. NO membership cards. NO discounts. NO glitzy promotions or couponing wars at our stores. We offer the best everyday values, every day.\" Separately, a Trader Joe's public relations manager (Nakia Rohde) is quoted as saying: \"We do not offer Trader Joe's coupons. We stay focused on providing the best everyday values, every day. However, we do accept manufacturer's coupons for other brand's products we carry.\"",
     "offer_text_is_verbatim": true,
@@ -20,8 +24,22 @@
       "locator_url": "https://www.traderjoes.com/home/stores"
     },
     "sources": [
-      { "url": "https://www.chowhound.com/1681978/trader-joes-secrets-list/", "title": "Trader Joe's Secrets You Wish You Knew Sooner", "publisher": "Chowhound (third party, quoting traderjoes.com)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Quotes the retailer's website statement and the PR manager's email about accepting manufacturer coupons." },
-      { "url": "https://www.mashed.com/1424595/does-trader-joes-accept-coupons/", "title": "Does Trader Joe's Ever Accept Coupons?", "publisher": "Mashed (third party)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Independently quotes the same PR email: 'We do not offer Trader Joe's coupons ... However, we do accept manufacturer's coupons for other brand's products we carry.'" }
+      {
+        "url": "https://www.chowhound.com/1681978/trader-joes-secrets-list/",
+        "title": "Trader Joe's Secrets You Wish You Knew Sooner",
+        "publisher": "Chowhound (third party, quoting traderjoes.com)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Quotes the retailer's website statement and the PR manager's email about accepting manufacturer coupons."
+      },
+      {
+        "url": "https://www.mashed.com/1424595/does-trader-joes-accept-coupons/",
+        "title": "Does Trader Joe's Ever Accept Coupons?",
+        "publisher": "Mashed (third party)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Independently quotes the same PR email: 'We do not offer Trader Joe's coupons ... However, we do accept manufacturer's coupons for other brand's products we carry.'"
+      }
     ],
     "verification": {
       "level": "C",
@@ -33,46 +51,129 @@
       ]
     },
     "flags": [
-      { "code": "official-page-not-retrieved", "severity": "warning", "detail": "traderjoes.com was not fetched in this pass. The policy is quoted from third-party reporting of the retailer's own statement. Verify on traderjoes.com before relying on the manufacturer-coupon acceptance detail, since store-level practice can vary." },
-      { "code": "scam-vector", "severity": "critical", "detail": "Because Trader Joe's issues no coupons, ANY site, Facebook post or Instagram story offering Trader Joe's coupons, circulars or gift cards is not official. See the excluded list for the retailer's disowning statement." }
+      {
+        "code": "official-page-not-retrieved",
+        "severity": "warning",
+        "detail": "traderjoes.com was not fetched in this pass. The policy is quoted from third-party reporting of the retailer's own statement. Verify on traderjoes.com before relying on the manufacturer-coupon acceptance detail, since store-level practice can vary."
+      },
+      {
+        "code": "scam-vector",
+        "severity": "critical",
+        "detail": "Because Trader Joe's issues no coupons, ANY site, Facebook post or Instagram story offering Trader Joe's coupons, circulars or gift cards is not official. See the excluded list for the retailer's disowning statement."
+      }
     ],
-    "tags": ["policy", "grocery", "bay-area", "scam-watch"]
+    "tags": [
+      "policy",
+      "grocery",
+      "bay-area",
+      "scam-watch"
+    ]
   },
   {
     "id": "policy-sunday-insert-landscape-2026",
     "title": "2026 Sunday newspaper coupon insert landscape (what still exists)",
     "merchant": "Save (formerly RedPlum / RetailMeNot Everyday), Unilever Super Saver, P&G, SmartSource (discontinued)",
     "publisher": "The Krazy Coupon Lady (coupon media, not an issuer)",
-    "categories": ["policy-debunk"],
-    "deal_types": ["policy"],
+    "categories": [
+      "policy-debunk"
+    ],
+    "deal_types": [
+      "policy"
+    ],
     "value": null,
-    "offer_text": "\"Save (formerly RetailMeNot Everyday and Red Plum) and less often, Unilever Super Saver are the different inserts that come out on a regular basis, although the number of inserts issued each week varies.\" \u2014 \"The P&G coupon insert was officially gone, but it came back in 2025.\" In 2023 the popular P&G coupon insert ended its distribution. Their last coupon booklet was on Jan. 1, 2023. But then it came back in 2025! \u2014 \"The SmartSource insert was officially gone in June 2025.\" We last saw a SmartSource coupon insert in March 2025, and as of June 2025, those coupons were gone for good. \u2014 \"For years, we could get a full-year preview of upcoming coupon inserts, but in 2026, we no longer have a complete list.\"",
+    "offer_text": "\"Save (formerly RetailMeNot Everyday and Red Plum) and less often, Unilever Super Saver are the different inserts that come out on a regular basis, although the number of inserts issued each week varies.\" — \"The P&G coupon insert was officially gone, but it came back in 2025.\" In 2023 the popular P&G coupon insert ended its distribution. Their last coupon booklet was on Jan. 1, 2023. But then it came back in 2025! — \"The SmartSource insert was officially gone in June 2025.\" We last saw a SmartSource coupon insert in March 2025, and as of June 2025, those coupons were gone for good. — \"For years, we could get a full-year preview of upcoming coupon inserts, but in 2026, we no longer have a complete list.\"",
     "offer_text_is_verbatim": true,
     "expires": null,
     "expiry_basis": "Reporting as published; KCL states it updates the post weekly as new information arrives.",
     "published_2026_insert_dates": [
-      { "date": "2026-01-04", "insert": "Save" },
-      { "date": "2026-03-01", "insert": "Save" },
-      { "date": "2026-01-11", "insert": "No Inserts" },
-      { "date": "2026-01-18", "insert": "No Inserts" },
-      { "date": "2026-01-25", "insert": "No Inserts" },
-      { "date": "2026-02-01", "insert": "No Inserts" },
-      { "date": "2026-02-08", "insert": "No Inserts" },
-      { "date": "2026-02-15", "insert": "No Inserts" },
-      { "date": "2026-02-22", "insert": "No Inserts" },
-      { "date": "2026-03-08", "insert": "No Inserts" },
-      { "date": "2026-03-15", "insert": "No Inserts" },
-      { "date": "2026-03-22", "insert": "No Inserts" },
-      { "date": "2026-03-29", "insert": "No Inserts" },
-      { "date": "2026-04-05", "insert": "No Inserts" },
-      { "date": "2026-04-12", "insert": "No Inserts" },
-      { "date": "2026-04-19", "insert": "No Inserts" },
-      { "date": "2026-04-26", "insert": "No Inserts" },
-      { "date": "2026-05-03", "insert": "No Inserts" },
-      { "date": "2026-05-10", "insert": "No Inserts" },
-      { "date": "2026-05-17", "insert": "No Inserts" },
-      { "date": "2026-05-24", "insert": "No Inserts" },
-      { "date": "2026-05-31", "insert": "No Inserts" }
+      {
+        "date": "2026-01-04",
+        "insert": "Save"
+      },
+      {
+        "date": "2026-03-01",
+        "insert": "Save"
+      },
+      {
+        "date": "2026-01-11",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-01-18",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-01-25",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-02-01",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-02-08",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-02-15",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-02-22",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-03-08",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-03-15",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-03-22",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-03-29",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-04-05",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-04-12",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-04-19",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-04-26",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-05-03",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-05-10",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-05-17",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-05-24",
+        "insert": "No Inserts"
+      },
+      {
+        "date": "2026-05-31",
+        "insert": "No Inserts"
+      }
     ],
     "requirements": [],
     "bay_area": {
@@ -83,8 +184,22 @@
       "locator_url": "https://thekrazycouponlady.com/tips/money/coupon-insert-schedule"
     },
     "sources": [
-      { "url": "https://thekrazycouponlady.com/tips/money/coupon-insert-schedule", "title": "Sunday Coupon Insert Schedule 2026 - The Krazy Coupon Lady", "publisher": "The Krazy Coupon Lady", "accessed": "2026-09-22", "method": "fetch_page", "evidence": "Insert-landscape paragraphs and the month-by-month 2026 schedule read verbatim from the page, including the SmartSource discontinuation and the statement that a complete 2026 list no longer exists." },
-      { "url": "https://moneypantry.com/grocery-coupon-sites/", "title": "Free Printable Grocery Coupons: 49 Best Sites to Print Manufacturer & Store Coupons", "publisher": "MoneyPantry (third party)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Corroborates the SmartSource shutdown and adds: 'Update: Unfortunately SmartSource has pulled the plug on printable coupons and the site itself is now a part of Checkout51.' Also documents that FreeCoupons.com, CoolSavings, PPGazette and Mambo Sprouts are no longer in business or changed direction." }
+      {
+        "url": "https://thekrazycouponlady.com/tips/money/coupon-insert-schedule",
+        "title": "Sunday Coupon Insert Schedule 2026 - The Krazy Coupon Lady",
+        "publisher": "The Krazy Coupon Lady",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Insert-landscape paragraphs and the month-by-month 2026 schedule read verbatim from the page, including the SmartSource discontinuation and the statement that a complete 2026 list no longer exists."
+      },
+      {
+        "url": "https://moneypantry.com/grocery-coupon-sites/",
+        "title": "Free Printable Grocery Coupons: 49 Best Sites to Print Manufacturer & Store Coupons",
+        "publisher": "MoneyPantry (third party)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Corroborates the SmartSource shutdown and adds: 'Update: Unfortunately SmartSource has pulled the plug on printable coupons and the site itself is now a part of Checkout51.' Also documents that FreeCoupons.com, CoolSavings, PPGazette and Mambo Sprouts are no longer in business or changed direction."
+      }
     ],
     "verification": {
       "level": "C",
@@ -96,44 +211,153 @@
       ]
     },
     "flags": [
-      { "code": "source-not-an-issuer", "severity": "warning", "detail": "The Krazy Coupon Lady is coupon media with affiliate and sponsored content (it discloses this on the page). It is used here only to establish which coupon channels still exist, never as the source of an offer." },
-      { "code": "schedule-incomplete", "severity": "warning", "detail": "The publisher itself states that for 2026 'we no longer have a complete list' and that all dates are subject to change. The list above stops at May 2026 because that is where the retrieved content ended; June\u2013December 2026 dates were not read." },
-      { "code": "stale-source-directories", "severity": "critical", "detail": "Directories of 'best coupon sites' still list SmartSource.com, FreeCoupons.com, CoolSavings, PPGazette and Mambo Sprouts as sources. Several are out of business or redirected. Any list built from those directories without checking each domain will contain dead or fraudulent sources." }
+      {
+        "code": "source-not-an-issuer",
+        "severity": "warning",
+        "detail": "The Krazy Coupon Lady is coupon media with affiliate and sponsored content (it discloses this on the page). It is used here only to establish which coupon channels still exist, never as the source of an offer."
+      },
+      {
+        "code": "schedule-incomplete",
+        "severity": "warning",
+        "detail": "The publisher itself states that for 2026 'we no longer have a complete list' and that all dates are subject to change. The list above stops at May 2026 because that is where the retrieved content ended; June–December 2026 dates were not read."
+      },
+      {
+        "code": "stale-source-directories",
+        "severity": "critical",
+        "detail": "Directories of 'best coupon sites' still list SmartSource.com, FreeCoupons.com, CoolSavings, PPGazette and Mambo Sprouts as sources. Several are out of business or redirected. Any list built from those directories without checking each domain will contain dead or fraudulent sources."
+      }
     ],
-    "tags": ["policy", "newspaper-inserts", "source-landscape"]
+    "tags": [
+      "policy",
+      "newspaper-inserts",
+      "source-landscape"
+    ]
   },
   {
     "id": "policy-link-rot-observed-2026-09-22",
     "title": "Official URLs that failed during this verification pass (link-rot log)",
     "merchant": "Multiple",
     "publisher": "This project",
-    "categories": ["policy-debunk"],
-    "deal_types": ["policy"],
+    "categories": [
+      "policy-debunk"
+    ],
+    "deal_types": [
+      "policy"
+    ],
     "value": null,
-    "offer_text": "Official-source URLs that returned an error page or an empty shell when retrieved on 2026-09-22, recorded so that no future contributor treats them as working citations.",
+    "offer_text": "Official-source URLs that returned an error page, a parked-domain shell, or an unrelated site when retrieved during the two verification passes of 2026-09-22, recorded so that no future contributor treats them as working citations.",
     "offer_text_is_verbatim": false,
     "expires": null,
     "expiry_basis": "Point-in-time observation.",
     "broken_urls": [
-      { "url": "https://www.safeway.com/foru/coupons.html", "result": "Safeway 404 page: 'Oops! Looks like this page is out of season.'", "working_replacement": "https://www.safeway.com/foru-guest.html" },
-      { "url": "https://www.coupons.com/printable-grocery-coupons", "result": "Coupons.com 404 page: 'Oops! Something went wrong. We can't find the page you're looking for.'", "working_replacement": "https://www.coupons.com/ (use the 'View all Printable Coupons' link)" },
-      { "url": "https://www.coupons.com/printables", "result": "Coupons.com 404 page", "working_replacement": "https://www.coupons.com/" },
-      { "url": "https://www.costco.com/coupons.html", "result": "Costco 'Page Not Found!'", "working_replacement": "Costco app \u2192 Warehouse tab, or the in-warehouse Instant Savings book" },
-      { "url": "https://www.costco.com/online-offers.html", "result": "Costco 'Page Not Found!' (also fails with ?EXTID=memberOnlySavings_header)", "working_replacement": "Costco app \u2192 Warehouse tab" },
-      { "url": "https://www.calacademy.org/neighborhood-free-sundays", "result": "California Academy of Sciences 404: 'Someone pulled the plug on this page!'", "working_replacement": "https://www.calacademy.org/plan-your-visit (to be verified)" },
-      { "url": "https://molliestones.com/stores/", "result": "Mollie Stone's 'Page not found'", "working_replacement": "https://www.molliestones.com/ (store list not located)" },
-      { "url": "https://luckysupermarkets.com/foru-guest.html", "result": "Lucky's own '404 Not Found' shell", "working_replacement": "unknown \u2014 Lucky's coupon program remains unverified" },
-      { "url": "https://www.pizzahut.com/deals", "result": "HTTP OK but client-side rendered: only the empty-cart and cookie-consent markup is returned, no offers", "working_replacement": "Pizza Hut app or Hut Rewards account" },
-      { "url": "https://www.dominos.com/en/pages/order/coupons/", "result": "Redirected to a Domino's 404 ('Not found')", "working_replacement": "https://www.dominos.com/ \u2192 Deals" },
-      { "url": "https://www.papajohns.com/order/coupons", "result": "Papa Johns 404: 'LOOKS LIKE SOMEONE TOOK THE LAST SLICE'", "working_replacement": "https://www.papajohns.com/ \u2192 Deals" },
-      { "url": "https://www.kfc.com/deals", "result": "KFC 404: 'There's no fried chicken on this page\u2026'", "working_replacement": "https://www.kfc.com/ \u2192 Deals (requires a store selection)" },
-      { "url": "https://www.raleys.com/", "result": "HTTP OK but JavaScript shell only; retrieved content is just 'Raley's Home Page'", "working_replacement": "Raley's app or the weekly digital ad PDF on the Fieldera content host" },
-      { "url": "https://www.cvs.com/extracare", "result": "Redirected to /extracare/home and returned only an anti-bot interstitial ('One moment to bring them')", "working_replacement": "https://www.cvs.com/extracare-cvs/rxrewards/program-rules/ and https://www.cvs.com/retail/help/help-subtopic-extracare-rewards" }
+      {
+        "url": "https://www.safeway.com/foru/coupons.html",
+        "result": "Safeway 404 page: 'Oops! Looks like this page is out of season.'",
+        "working_replacement": "https://www.safeway.com/foru-guest.html"
+      },
+      {
+        "url": "https://www.coupons.com/printable-grocery-coupons",
+        "result": "Coupons.com 404 page: 'Oops! Something went wrong. We can't find the page you're looking for.'",
+        "working_replacement": "https://www.coupons.com/ (use the 'View all Printable Coupons' link)"
+      },
+      {
+        "url": "https://www.coupons.com/printables",
+        "result": "Coupons.com 404 page",
+        "working_replacement": "https://www.coupons.com/"
+      },
+      {
+        "url": "https://www.costco.com/coupons.html",
+        "result": "Costco 'Page Not Found!'",
+        "working_replacement": "Costco app → Warehouse tab, or the in-warehouse Instant Savings book"
+      },
+      {
+        "url": "https://www.costco.com/online-offers.html",
+        "result": "Costco 'Page Not Found!' (also fails with ?EXTID=memberOnlySavings_header)",
+        "working_replacement": "Costco app → Warehouse tab"
+      },
+      {
+        "url": "https://www.calacademy.org/neighborhood-free-sundays",
+        "result": "California Academy of Sciences 404: 'Someone pulled the plug on this page!'",
+        "working_replacement": "https://www.calacademy.org/plan-your-visit (to be verified)"
+      },
+      {
+        "url": "https://molliestones.com/stores/",
+        "result": "Mollie Stone's 'Page not found'",
+        "working_replacement": "https://www.molliestones.com/ (store list not located)"
+      },
+      {
+        "url": "https://luckysupermarkets.com/foru-guest.html",
+        "result": "Lucky's own '404 Not Found' shell",
+        "working_replacement": "unknown — Lucky's coupon program remains unverified"
+      },
+      {
+        "url": "https://www.pizzahut.com/deals",
+        "result": "HTTP OK but client-side rendered: only the empty-cart and cookie-consent markup is returned, no offers",
+        "working_replacement": "Pizza Hut app or Hut Rewards account"
+      },
+      {
+        "url": "https://www.dominos.com/en/pages/order/coupons/",
+        "result": "Redirected to a Domino's 404 ('Not found')",
+        "working_replacement": "https://www.dominos.com/ → Deals"
+      },
+      {
+        "url": "https://www.papajohns.com/order/coupons",
+        "result": "Papa Johns 404: 'LOOKS LIKE SOMEONE TOOK THE LAST SLICE'",
+        "working_replacement": "https://www.papajohns.com/ → Deals"
+      },
+      {
+        "url": "https://www.kfc.com/deals",
+        "result": "KFC 404: 'There's no fried chicken on this page…'",
+        "working_replacement": "https://www.kfc.com/ → Deals (requires a store selection)"
+      },
+      {
+        "url": "https://www.raleys.com/",
+        "result": "HTTP OK but JavaScript shell only; retrieved content is just 'Raley's Home Page'",
+        "working_replacement": "Raley's app or the weekly digital ad PDF on the Fieldera content host"
+      },
+      {
+        "url": "https://www.cvs.com/extracare",
+        "result": "Redirected to /extracare/home and returned only an anti-bot interstitial ('One moment to bring them')",
+        "working_replacement": "https://www.cvs.com/extracare-cvs/rxrewards/program-rules/ and https://www.cvs.com/retail/help/help-subtopic-extracare-rewards"
+      },
+      {
+        "url": "https://www.clorox.com/coupons/",
+        "result": "Clorox 404 page: 'Well, this is embarrassing. We can't find the page you're looking for.'",
+        "working_replacement": "None found — product-page FAQs still tell shoppers to 'Check the Coupons page'; treat Clorox manufacturer coupons as not currently published (the site's own home page shows no coupons entry point on 2026-09-22)."
+      },
+      {
+        "url": "https://www.kelloggsfamilyrewards.com/en_US/home.html",
+        "result": "Redirects to the new corporate consumer site rather than 404",
+        "working_replacement": "https://www.kellanovaus.com/us/en/coupons.html (and /us/en/promotions.html) — the same program content now lives under Kellanova's official domain; old bookmarks still work."
+      },
+      {
+        "url": "https://www.realsavings.com/",
+        "result": "Parked-domain ad shell (yfdabv11.com / rapidresultsearch.com)",
+        "working_replacement": "None — Campbell's coupon hub no longer exists on that domain; see excl-realsavings-domain-drift."
+      },
+      {
+        "url": "https://boxtops.com/",
+        "result": "Now the website of the band 'The Box Tops'",
+        "working_replacement": "See excl-boxtops-domain-drift — do not cite this domain for General Mills' Box Tops for Education."
+      }
     ],
     "requirements": [],
-    "bay_area": { "available": true, "confidence": "high", "note": "Maintenance record; not a consumer offer.", "physical_locations": null, "locator_url": null },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Maintenance record; not a consumer offer.",
+      "physical_locations": null,
+      "locator_url": null
+    },
     "sources": [
-      { "url": "https://github.com/buffedlizard55-lab/Coupons/blob/main/docs/VERIFICATION-LOG.md", "title": "Verification log for this project", "publisher": "This repository", "accessed": "2026-09-22", "method": "official_document", "evidence": "Each URL above was retrieved during the 2026-09-22 research pass and the observed result is quoted from the returned page." }
+      {
+        "url": "https://github.com/buffedlizard55-lab/Coupons/blob/main/docs/VERIFICATION-LOG.md",
+        "title": "Verification log for this project",
+        "publisher": "This repository",
+        "accessed": "2026-09-22",
+        "method": "official_document",
+        "evidence": "Each URL above was retrieved during the 2026-09-22 research pass and the observed result is quoted from the returned page."
+      }
     ],
     "verification": {
       "level": "A",
@@ -145,17 +369,29 @@
       ]
     },
     "flags": [
-      { "code": "maintenance-input", "severity": "info", "detail": "scripts/verify_links.py re-checks these URLs plus every citation in the dataset on a schedule in GitHub Actions, so this list should shrink as replacements are found." }
+      {
+        "code": "point-in-time-log",
+        "severity": "info",
+        "detail": "This is an observation log, not an offer. Pass 2 (morning) and pass 3 (afternoon, product-only re-scope) appended to it; the 'result' wording quotes what each site actually served."
+      }
     ],
-    "tags": ["maintenance", "link-rot", "quality-control"]
+    "tags": [
+      "maintenance",
+      "link-rot",
+      "quality-control"
+    ]
   },
   {
     "id": "policy-social-media-sourcing",
     "title": "How social media was used in this research pass (and why no offer is sourced from it)",
     "merchant": "Facebook, Instagram, Reddit",
     "publisher": "This project",
-    "categories": ["policy-debunk"],
-    "deal_types": ["policy"],
+    "categories": [
+      "policy-debunk"
+    ],
+    "deal_types": [
+      "policy"
+    ],
     "value": null,
     "offer_text": "Method note: social platforms were searched for leads only. No offer in this dataset cites Facebook, Instagram, Reddit, TikTok or any other social platform as its source of truth.",
     "offer_text_is_verbatim": false,
@@ -167,9 +403,22 @@
       "reddit": "Reddit was used strictly as a lead generator. The only substantive lead taken from it was the Costco Instant Savings book cycle dates, which are recorded in the excluded list as plausible-but-unofficial and are NOT used to date any offer. Reddit threads also surfaced the getpgoffer.com P&G/Costco rebate, which was then verified directly on the official P&G microsite and IS included.",
       "tiktok": "A TikTok embed appeared in retrieved content from a coupon-media page. No TikTok content was read or cited."
     },
-    "bay_area": { "available": true, "confidence": "high", "note": "Method note.", "physical_locations": null, "locator_url": null },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Method note.",
+      "physical_locations": null,
+      "locator_url": null
+    },
     "sources": [
-      { "url": "https://www.reddit.com/r/Costco/", "title": "r/Costco", "publisher": "Reddit (community)", "accessed": "2026-09-22", "method": "web_search", "evidence": "Used to locate the getpgoffer.com rebate lead and the Instant Savings cycle dates. Both leads were then checked: getpgoffer.com was verified as official P&G and included; the cycle dates could not be verified against Costco and were excluded." }
+      {
+        "url": "https://www.reddit.com/r/Costco/",
+        "title": "r/Costco",
+        "publisher": "Reddit (community)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Used to locate the getpgoffer.com rebate lead and the Instant Savings cycle dates. Both leads were then checked: getpgoffer.com was verified as official P&G and included; the cycle dates could not be verified against Costco and were excluded."
+      }
     ],
     "verification": {
       "level": "A",
@@ -180,9 +429,90 @@
       ]
     },
     "flags": [
-      { "code": "coverage-gap", "severity": "warning", "detail": "Because Facebook and Instagram cannot be crawled anonymously, genuinely social-only offers (e.g. a Bay Area restaurant's Instagram-only happy-hour code) are invisible to this dataset. Closing this gap needs either an authenticated session or a manual review workflow \u2014 both are listed in ROADMAP.md." },
-      { "code": "scam-density", "severity": "critical", "detail": "Social platforms are the dominant distribution channel for fake coupons and gift-card giveaways (Trader Joe's, Costco, Kroger and similar). Treating a social post as a source would import that risk directly, which is why the rule is: leads yes, citations no." }
+      {
+        "code": "coverage-gap",
+        "severity": "warning",
+        "detail": "Because Facebook and Instagram cannot be crawled anonymously, genuinely social-only offers (e.g. a Bay Area restaurant's Instagram-only happy-hour code) are invisible to this dataset. Closing this gap needs either an authenticated session or a manual review workflow — both are listed in ROADMAP.md."
+      },
+      {
+        "code": "scam-density",
+        "severity": "critical",
+        "detail": "Social platforms are the dominant distribution channel for fake coupons and gift-card giveaways (Trader Joe's, Costco, Kroger and similar). Treating a social post as a source would import that risk directly, which is why the rule is: leads yes, citations no."
+      }
     ],
-    "tags": ["methodology", "social-media", "scam-watch"]
+    "tags": [
+      "methodology",
+      "social-media",
+      "scam-watch"
+    ]
+  },
+  {
+    "id": "policy-colgate-coupons-suspended",
+    "title": "Colgate: official site states coupons are temporarily unavailable (while a Colgate microsite advertises printables)",
+    "merchant": "Colgate-Palmolive",
+    "publisher": "Colgate (colgate.com) — official",
+    "categories": [
+      "policy-debunk"
+    ],
+    "deal_types": [
+      "policy"
+    ],
+    "value": null,
+    "offer_text": "\"Special Offers — Coupons Temporarily Unavailable. We're updating our online coupon experience. During this time, coupons are unavailable on our website. Thank you for your patience as we work behind the scenes. Please check back soon for updated offers.\" — fetched live 2026-09-22. The same day, a search index showed smiles.colgate.com/page/content/special-offers titled \"Colgate® Coupons, Printable Coupons\" promising \"Print coupons for your favorite Colgate® oral care products\"; a direct fetch of that microsite failed twice on the verification date, so the contradiction is recorded rather than resolved.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Point-in-time state of the issuer's page.",
+    "requirements": [],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Applies nationally, including all Bay Area retailers that would honour Colgate manufacturer coupons.",
+      "physical_locations": null,
+      "locator_url": null
+    },
+    "sources": [
+      {
+        "url": "https://www.colgate.com/en-us/special-offers",
+        "title": "Special Offers | Colgate®",
+        "publisher": "Colgate-Palmolive (colgate.com — official)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Full page retrieved live; body text quoted verbatim in offer_text, including 'Coupons Temporarily Unavailable'."
+      },
+      {
+        "url": "https://smiles.colgate.com/page/content/special-offers",
+        "title": "Colgate® Coupons, Printable Coupons",
+        "publisher": "Colgate-Palmolive microsite (smiles.colgate.com)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Search snippet only: \"Print coupons for your favorite Colgate® oral care products. Find coupons for toothpastes, teeth whitening products, and much more.\" Live fetch failed on 2026-09-22 (proxy error), and an older colgate.com result (Step2.vsp form) references a 2009 'spend $15 / free travel bag' mail-in — a relic, not a current offer."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Main-site statement retrieved live and quoted verbatim",
+        "Contradicting microsite snippet recorded with its failed-retrieval note rather than silently dropped",
+        "Old 2009-form search result recognised as link-rot, not an offer"
+      ]
+    },
+    "flags": [
+      {
+        "code": "source-page-inconsistency",
+        "severity": "critical",
+        "detail": "Two Colgate-operated pages disagree on whether online coupons exist. Until smiles.colgate.com can be retrieved and its coupons printed, treat 'Colgate coupons' as NOT AVAILABLE and distrust any third-party 'Colgate promo code' page."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "info",
+        "detail": "The contradicting page is evidenced only by a search snippet because two live fetches failed on the verification date."
+      }
+    ],
+    "tags": [
+      "colgate",
+      "policy",
+      "contradiction"
+    ]
   }
 ]

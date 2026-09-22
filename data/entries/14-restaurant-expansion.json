@@ -1,0 +1,419 @@
+[
+  {
+    "id": "dunkin-six-dollar-meal-deal",
+    "title": "Dunkin': $6 Meal Deal — medium coffee, bacon, egg & cheese sandwich and hash browns",
+    "merchant": "Dunkin'",
+    "publisher": "Dunkin' Brands (dunkindonuts.com — official site)",
+    "categories": [
+      "restaurant-loyalty"
+    ],
+    "deal_types": [
+      "price_discount"
+    ],
+    "value": null,
+    "offer_text": "\"$6 MEAL DEAL — Enjoy a medium Coffee; a Bacon, Egg, and Cheese Breakfast Sandwich; and Hash Browns for $6! Terms & excl. apply.\"",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Ongoing — no end date published by the issuer as of the verification date.",
+    "requirements": [
+      "Order via the app/online or in participating stores; 'Terms & excl. apply' as printed on the issuer's page"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Dunkin' operates physical stores across the nine-county Bay Area; the offer is redeemed in restaurant/counter service or via the brand app at the local store. The issuer's store locator is JavaScript-driven; use it for the nearest address rather than trusting an address list here.",
+      "physical_locations": null,
+      "locator_url": null
+    },
+    "sources": [
+      {
+        "url": "https://www.dunkindonuts.com/",
+        "title": "Dunkin'® | America's Favorite Coffee, Espresso and Donuts",
+        "publisher": "Dunkin' Brands (dunkindonuts.com)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Live fetch of the issuer's homepage on the verification date; the menu-card block reads verbatim: \"$6 MEAL DEAL — Enjoy a medium Coffee; a Bacon, Egg, and Cheese Breakfast Sandwich; and Hash Browns for $6! Terms & excl. apply.\" The same page carries \"Join Dunkin' Rewards\"."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer copy transcribed verbatim from the issuer's live homepage on the verification date",
+        "No third-party deal site was consulted; the only evidence is the issuer's own page"
+      ]
+    },
+    "flags": [
+      {
+        "code": "terms-not-published-inline",
+        "severity": "warning",
+        "detail": "The card says \"Terms & excl. apply\" and the linked terms are behind the ordering flow; store-level participation and duration are not stated on the page. A seasonal fall-menu block appears alongside it, so expect the deal to rotate with the menu."
+      }
+    ],
+    "tags": [
+      "dunkin",
+      "combo",
+      "coffee",
+      "breakfast"
+    ]
+  },
+  {
+    "id": "dunkin-mobile-mondays-100-points",
+    "title": "Dunkin': Mobile Mondays — 100 bonus points each Monday in September",
+    "merchant": "Dunkin'",
+    "publisher": "Dunkin' Brands (dunkindonuts.com — official site)",
+    "categories": [
+      "restaurant-loyalty"
+    ],
+    "deal_types": [
+      "points"
+    ],
+    "value": {
+      "amount": 100,
+      "unit": "points",
+      "currency": null,
+      "kind": "points"
+    },
+    "offer_text": "\"Rewards Exclusive Offer — MOBILE MONDAYS. Get more for your Mondays. Earn 100 bonus points when you activate and order ahead every Monday in September. Terms apply.\"",
+    "offer_text_is_verbatim": true,
+    "expires": "2026-09-30",
+    "expiry_basis": "Inferred end: last Monday of September 2026 per the offer copy 'every Monday in September' as shown on 2026-09-22. The issuer publishes no explicit date.",
+    "requirements": [
+      "Dunkin' Rewards account required",
+      "Activate the offer in the app",
+      "Order ahead each Monday in September 2026"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Dunkin' operates physical stores across the nine-county Bay Area; the offer is redeemed in restaurant/counter service or via the brand app at the local store. The offer is a points credit usable against menu items at the local store.",
+      "physical_locations": null,
+      "locator_url": null
+    },
+    "sources": [
+      {
+        "url": "https://www.dunkindonuts.com/",
+        "title": "Dunkin'® | America's Favorite Coffee, Espresso and Donuts",
+        "publisher": "Dunkin' Brands (dunkindonuts.com)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Live fetch of the issuer's homepage on 2026-09-22; block reads verbatim: \"MOBILE MONDAYS — Get more for your Mondays. Earn 100 bonus points when you activate and order ahead every Monday in September. Terms apply.\" with an \"Activate Offer\" button."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer copy transcribed verbatim from the issuer's live homepage on the verification date",
+        "Offer window is bounded by the issuer's own wording ('every Monday in September')"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expiry-inferred-from-copy",
+        "severity": "warning",
+        "detail": "The issuer prints 'every Monday in September' with no explicit end date. 2026-09-30 is recorded as the last possible Monday under the offer copy observed on 2026-09-22 — a labelled inference, not a published deadline."
+      },
+      {
+        "code": "terms-not-published-inline",
+        "severity": "info",
+        "detail": "'Terms apply' is printed on the card; full terms sit behind the app flow, so point expiry and exclusions are not asserted."
+      }
+    ],
+    "tags": [
+      "dunkin",
+      "points",
+      "seasonal"
+    ]
+  },
+  {
+    "id": "chipotle-rewards-on-repeat",
+    "title": "Chipotle Rewards 2026 relaunch — free chips & guac sign-up perk, birthday reward choice, 50% off entrée redemptions",
+    "merchant": "Chipotle",
+    "publisher": "Chipotle Mexican Grill (ir.chipotle.com — official company newsroom)",
+    "categories": [
+      "restaurant-loyalty",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_item",
+      "percent_off",
+      "points"
+    ],
+    "value": null,
+    "offer_text": "\"CHIPOTLE RELAUNCHES REWARDS WITH 'REWARDS ON REPEAT,' DELIVERING MORE VALUE WITHOUT TRADE-OFFS\" (Apr 13, 2026). \"Beginning April 13, new members will receive free Chips and Guac with a purchase after joining\"; footnote: \"New members receive one free order of chips and guacamole with a purchase of $5.00 or more, excluding tax and tip. One-time use only. Expires if not used within 7 days after it has been added to a participant's account. Valid for orders placed and fulfilled in-restaurant at participating Chipotle restaurants in the United States and Canada\". \"Members can now select their preferred birthday reward with a 30-day redemption window... Options include guac, queso, chips or a fountain drink.\" \"The refreshed Rewards Exchange introduces lower point thresholds and new offers, including 50% off an entrée...\"",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Ongoing — no end date published by the issuer as of the verification date.",
+    "requirements": [
+      "Free Chipotle Rewards account (app or chipotle.com/rewards)",
+      "$5.00+ purchase to unlock the sign-up chips & guac",
+      "Use the app for the birthday-reward choice and the 30-day window"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Chipotle operates physical stores across the nine-county Bay Area; the offer is redeemed in restaurant/counter service or via the brand app at the local store. Sign-up and birthday rewards are redeemed in-restaurant (or on the app) at participating locations, of which the Bay Area has dozens.",
+      "physical_locations": null,
+      "locator_url": null
+    },
+    "sources": [
+      {
+        "url": "https://ir.chipotle.com/2026-04-13-CHIPOTLE-RELAUNCHES-REWARDS-WITH-REWARDS-ON-REPEAT,-DELIVERING-MORE-VALUE-WITHOUT-TRADE-OFFS",
+        "title": "CHIPOTLE RELAUNCHES REWARDS WITH \"REWARDS ON REPEAT,\" DELIVERING MORE VALUE WITHOUT TRADE-OFFS - Apr 13, 2026",
+        "publisher": "Chipotle Mexican Grill investor newsroom (official)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Search retrieval of the issuer's own press release, dated 2026-04-13; all quoted passages above are verbatim from the release, including the footnote terms for the chips & guac offer."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "All terms quoted verbatim from the company's own newsroom release on its official investor domain",
+        "Program change (April 2026 relaunch) postdates most aggregator write-ups, which is why no third-party citation was used",
+        "Redemption window and purchase threshold taken from the release's own footnotes rather than the headline marketing copy"
+      ]
+    },
+    "flags": [
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "warning",
+        "detail": "Evidence was captured from the issuer's official press release as indexed on the verification date; the live fetcher intermittently failed, so the snippet is quoted rather than a re-rendered page. A reviewer can open the URL to confirm the same text."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "Every component requires a free Chipotle Rewards account; individual Freepotle drops and birthday reward availability are per-account and not enumerated here."
+      }
+    ],
+    "tags": [
+      "chipotle",
+      "burrito",
+      "birthday",
+      "sign-up-freebie"
+    ]
+  },
+  {
+    "id": "jimmyjohns-free-sandwich-signup",
+    "title": "Jimmy John's Rewards — free sandwich after your first $5+ order, plus a free birthday sandwich",
+    "merchant": "Jimmy John's",
+    "publisher": "Jimmy John's (jimmyjohns.com — official terms page)",
+    "categories": [
+      "restaurant-loyalty",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_item",
+      "points"
+    ],
+    "value": {
+      "amount": 0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_item"
+    },
+    "offer_text": "\"Enroll in Jimmy John's Rewards™ program and receive a free sandwich after making your first qualifying purchase... new Jimmy John's Rewards(TM) members who enroll in the program and make a qualifying purchase of $5.00 or more (excluding taxes, fees, and discounts) at participating Jimmy John's locations... the free sandwich reward will be automatically added to the member's Jimmy John's Rewards(TM) account within 24 hours. The free sandwich reward must be redeemed within 30 days of issuance. The reward is redeemable for one Regular size a la carte Favorite, Original or Plain Slim® sandwich.\" Birthday: \"Active Jimmy John's Rewards(TM) members who meet the eligibility criteria will receive a free birthday sandwich reward... redeemed within 30 days... valid for one regular-sized, Original sandwich.\"",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Ongoing — no end date published by the issuer as of the verification date.",
+    "requirements": [
+      "Free Jimmy John's Rewards account",
+      "First qualifying purchase of $5.00+ (taxes, fees, discounts and gift-card purchases excluded)",
+      "Redeem the sandwich within 30 days of issuance"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Jimmy John's operates physical stores across the nine-county Bay Area; the offer is redeemed in restaurant/counter service or via the brand app at the local store. Rewards are redeemed at participating stores in the app or at the counter.",
+      "physical_locations": null,
+      "locator_url": null
+    },
+    "sources": [
+      {
+        "url": "https://www.jimmyjohns.com/terms-and-conditions",
+        "title": "TERMS & CONDITIONS — Jimmy John's Rewards Terms & Conditions",
+        "publisher": "Jimmy John's LLC (jimmyjohns.com)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Search retrieval of the issuer's official terms page; the enrolment-offer and birthday-offer sections quoted verbatim in offer_text, including the $5.00 threshold, 24-hour issuance, 30-day redemption window and sandwich size terms."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Enrolment and birthday offer terms read verbatim from the issuer's own terms page",
+        "Redemption defined in-store/app; no online-only component"
+      ]
+    },
+    "flags": [
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "warning",
+        "detail": "Captured via search snippet of the official terms page on the verification date because the live fetcher failed intermittently; open the URL to verify the identical text."
+      },
+      {
+        "code": "account-required",
+        "severity": "info",
+        "detail": "Both free-sandwich offers are automatically issued to the member's account; there is no code to clip. 'Eligibility criteria' for the birthday reward are defined in the full terms."
+      }
+    ],
+    "tags": [
+      "jimmy johns",
+      "sub",
+      "birthday",
+      "sign-up-freebie"
+    ]
+  },
+  {
+    "id": "baskin-robbins-free-scoop-signup",
+    "title": "Baskin-Robbins Rewards — free single scoop after your first qualified purchase",
+    "merchant": "Baskin-Robbins",
+    "publisher": "Baskin-Robbins (baskinrobbins.com — official site)",
+    "categories": [
+      "restaurant-loyalty",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_item"
+    ],
+    "value": {
+      "amount": 0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_item"
+    },
+    "offer_text": "\"Join Baskin-Robbins Rewards® Today! Receive a FREE Single Scoop after your first qualified purchase.\" \"Sign up today in the BR App & receive a Free Scoop after your first qualified purchase.\"",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Ongoing — no end date published by the issuer as of the verification date.",
+    "requirements": [
+      "BR App (iOS or Android) account required",
+      "First qualified purchase in store or via the app"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Baskin-Robbins operates physical stores across the nine-county Bay Area; the offer is redeemed in restaurant/counter service or via the brand app at the local store. The issuer's store locator is JavaScript-driven; use it for the nearest address rather than trusting an address list here.",
+      "physical_locations": null,
+      "locator_url": null
+    },
+    "sources": [
+      {
+        "url": "https://www.baskinrobbins.com/en",
+        "title": "Baskin-Robbins",
+        "publisher": "Baskin-Robbins USA (official brand site)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Search snippet of the issuer's official page (indexed 2026-08-01): \"Join Baskin-Robbins Rewards® Today! Receive a FREE Single Scoop after your first qualified purchase\" and app banner \"Fast Checkout, Easy Pickup with Baskin-Robbins Rewards® in the BR App\"."
+      },
+      {
+        "url": "https://baskinrobbins.com/content/baskinrobbins/en/thescoop.html",
+        "title": "Baskin-Robbins Rewards",
+        "publisher": "Baskin-Robbins USA (official brand site)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Official 'theScoop' rewards page snippet: \"Sign up today in the BR App & receive a Free Scoop after your first qualified purchase.\""
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Signup-perk copy read verbatim from two official Baskin-Robbins pages",
+        "Offer is a standing program benefit, not a dated promo, matching the August-2026 index date"
+      ]
+    },
+    "flags": [
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "warning",
+        "detail": "Both citations are search snippets of the issuer's pages (live fetcher failed intermittently on the verification date); the identical copy should be visible at the URLs."
+      },
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "Redemption runs through the BR App; what counts as a 'qualified purchase' is defined in the app's terms, which sit behind the download. Franchise-run store participation can vary."
+      }
+    ],
+    "tags": [
+      "ice cream",
+      "birthday-adjacent",
+      "sign-up-freebie"
+    ]
+  },
+  {
+    "id": "subway-mvp-rewards-program",
+    "title": "Subway MVP Rewards (successor to MyWay) — points program with Subway Cash redemption (program)",
+    "merchant": "Subway",
+    "publisher": "Doctor's Associates / Subway (subway.com official sign-in + app FAQ)",
+    "categories": [
+      "restaurant-loyalty"
+    ],
+    "deal_types": [
+      "points"
+    ],
+    "value": null,
+    "offer_text": "Sign-in notice: \"Subway MyWay Rewards is now Subway MVP Rewards. By signing back into your Subway account, you confirm that you have read and agree to the new Subway MVP Rewards Terms\". Former MyWay mechanics (issuer FAQ): \"Earn 4 tokens for every dollar* you spend on food and beverage purchases\" toward \"$2.00 Rewards\", \"the Subway MyWay™ Rewards program is always free\".",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Ongoing — no end date published by the issuer as of the verification date.",
+    "requirements": [
+      "Free Subway account; agree to MVP terms at first sign-in",
+      "Earn and redeem through the Subway app or in-store scan"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Subway operates physical stores across the nine-county Bay Area; the offer is redeemed in restaurant/counter service or via the brand app at the local store. Points and Subway Cash redeem in-restaurant.",
+      "physical_locations": null,
+      "locator_url": null
+    },
+    "sources": [
+      {
+        "url": "https://id-content.subway.com/content/global3.0/signup_signin-r2/en-US/signin_global.html",
+        "title": "SUBWAY — Sign In",
+        "publisher": "Subway (official subway.com content domain)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Search retrieval of the official sign-in page: \"Subway MyWay Rewards is now Subway MVP Rewards. By signing back into your Subway account, you confirm that you have read and agree to the new Subway MVP Rewards Terms\"."
+      },
+      {
+        "url": "https://media.subway.com/sites/en-us/app/faqs/appfaqs.html",
+        "title": "Subway App FAQs — Subway MyWay™ Rewards",
+        "publisher": "Subway (media.subway.com official microsite)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "FAQ text: 'You can collect tokens to earn $2.00 Rewards, personalized offers, Surprise Rewards'; 'Earn 4 tokens for every dollar* you spend on food and beverage purchases'; 'The Subway MyWay™ Rewards program is always free'."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Program transition confirmed on the issuer's own sign-in page",
+        "Legacy token mechanics quoted from the issuer's official FAQ microsite",
+        "New MVP earn/redeem ladder could not be read anonymously and is therefore not asserted"
+      ]
+    },
+    "flags": [
+      {
+        "code": "program-in-transition",
+        "severity": "warning",
+        "detail": "MyWay was renamed/replaced by MVP Rewards; the issuer's public FAQ still describes the old token system, and the MVP terms text was not retrievable anonymously. Numbers quoted here are the old program's published mechanics and may not carry over unchanged."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "info",
+        "detail": "Both citations are search retrievals of official subway.com domains on the verification date."
+      }
+    ],
+    "tags": [
+      "subway",
+      "loyalty",
+      "rebrand"
+    ]
+  }
+]
