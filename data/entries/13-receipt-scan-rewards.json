@@ -1,0 +1,77 @@
+[
+  {
+    "id": "poptarts-crazy-good-rewards",
+    "title": "Pop-Tarts® Crazy Good Rewards — scan your grocery receipt, earn points, redeem for rewards",
+    "merchant": "Pop-Tarts® (Kellanova)",
+    "publisher": "Kellanova (poptarts.com — official brand site)",
+    "categories": [
+      "receipt-scan-rewards"
+    ],
+    "deal_types": [
+      "points",
+      "rebate"
+    ],
+    "value": null,
+    "offer_text": "Pop-Tarts® Crazy Good Rewards — Earn Points, Get Rewards. \"Scan your grocery receipt after buying participating Pop-Tarts® products to earn and redeem points for rewards — the more you scan, the more you save!\" \"Sign up to be the first to know about new flavors, drops, swag and get personalized content and exclusive coupons!\"",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing program; the issuer publishes no end date.",
+    "requirements": [
+      "Free account at poptarts.com (email and date of birth requested at sign-up)",
+      "Buy participating Pop-Tarts® products in a physical store",
+      "Upload the grocery receipt through the program to earn points; rewards are redeemed through the account"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Shopping happens at any Bay Area grocery store that stocks Pop-Tarts; the receipt scan and redemption are done on Kellanova's official site. No store list is required by the program.",
+      "physical_locations": null,
+      "locator_url": null
+    },
+    "sources": [
+      {
+        "url": "https://www.poptarts.com/en_US/poptartsrewards.html",
+        "title": "Pop-Tarts® Crazy Good Rewards | Snack, Earn, & Redeem Points",
+        "publisher": "Kellanova (poptarts.com)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Retrieved live: heading \"Pop-Tarts® Crazy Good Rewards\", \"Earn Points, Get Rewards\", \"Whether you're team Frosted Strawberry or a Frosted S'mores fan for life, every bite now brings you closer to awesome Pop-Tarts® rewards!\", buttons \"I'm New\" / \"I already joined\", and the newsletter block quoted in offer_text."
+      },
+      {
+        "url": "https://www.kellanovaus.com/us/en/promotions.html",
+        "title": "Kellanova US | Special Offers",
+        "publisher": "Kellanova (kellanovaus.com)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Current promotions card on the issuer's official promotions page, verbatim: \"Scan your grocery receipt after buying participating Pop-Tarts® products to earn and redeem points for rewards — the more you scan, the more you save!\" (link leads to poptarts.com/en_US/poptartsrewards.html)"
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Program existence and mechanics read verbatim from the issuer's own pages on the verification date",
+        "Point-earning ladder and reward catalogue sit behind the sign-in flow and could not be read anonymously",
+        "Cross-checked two official pages (brand site + corporate promotions page) that reference each other"
+      ]
+    },
+    "flags": [
+      {
+        "code": "account-required",
+        "severity": "warning",
+        "detail": "Earning and redemption require a free Kellanova account; the point values, participating product list and redemption catalogue are behind login and are therefore not enumerated here."
+      },
+      {
+        "code": "program-page-has-signup-wall",
+        "severity": "info",
+        "detail": "The rewards landing page offers only 'I'm New' / 'I already joined' entry points to an anonymous visitor; no public terms PDF was linked from the page."
+      }
+    ],
+    "tags": [
+      "receipt-scan",
+      "kellanova",
+      "points",
+      "sweepstakes-adjacent"
+    ]
+  }
+]

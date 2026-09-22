@@ -1,18 +1,28 @@
 {
   "dataset": {
-    "name": "Verified Official Coupons & Offers — San Francisco Bay Area",
+    "name": "Verified Official Product Coupons & Rebates — San Francisco Bay Area",
     "slug": "coupons",
     "version": "1.0.0",
     "compiled_at": "2026-09-22",
     "timezone_note": "All dates are ISO-8601 (YYYY-MM-DD). 'compiled_at' is the date every line in this dataset was checked against its cited source.",
-    "scope": "Offers that (a) are published by the retailer, manufacturer, brand owner, government agency or institution that issues them, (b) can be redeemed at a physical location reachable from the San Francisco Bay Area, and (c) were still within their published validity window at the time of verification.",
-    "no_hallucination_policy": "Every field that describes an offer is either (1) a verbatim quote from a cited official page, or (2) an explicitly-labelled inference. Nothing in this dataset is reconstructed from memory, from a coupon aggregator, or from an affiliate/promo-code site. Items that could not be verified from an official source are listed in data/entries/10-excluded-unverified.json with the reason for exclusion.",
+    "scope": "Product coupons only. An offer is in scope when (a) it discounts or rebates a PHYSICAL PRODUCT you can buy in a store (food, household, personal care, cleaning, over-the-counter health items, prepared food and drinks), (b) it is published by the party that has to honour it — the manufacturer, the retailer, the pharmacy chain or the restaurant brand — and (c) it could be redeemed at a physical Bay Area location at the time of verification. Event tickets, museum or attraction admission, library passes, transit benefits and similar no-purchase programs were explicitly removed from the published dataset on 2026-09-22 by project-owner instruction (see archive/rescoped-2026-09-22/); online-only redemption offers are likewise out of scope.",
+    "no_hallucination_policy": "Every field that describes an offer is either (1) a verbatim quote from a cited official page, or (2) an explicitly-labelled inference. Nothing in this dataset is reconstructed from memory, from a coupon aggregator, or from an affiliate/promo-code site. Items that could not be verified from an official source are listed in data/entries/10-excluded-unverified.json with the reason for exclusion, as are official-looking claims that are stale, parked-domain or otherwise not honourable.",
     "official_only": true,
     "source_policy": "Every offer must cite the party that has to honour it: the manufacturer, the retailer, the museum, the restaurant or the public agency. Aggregators, cashback portals, promo-code sites, listicles, coupon blogs and social-media posts are never accepted as the source of an available offer. They may appear only as evidence inside a rejection record or a policy note.",
     "physical_location_policy": "An offer is included only if it can be redeemed at a physical location reachable from the nine-county San Francisco Bay Area, or if the issuer publishes an official locator that resolves to such a location. Where the issuer publishes an address, opening hours or a phone number, those are transcribed verbatim. Online-only or mail-order-only offers are out of scope.",
     "expires_policy": "Expiries are stored as ISO-8601 dates exactly as published, with the basis for the date recorded in expiry_basis. Offers with no published end date are stored as null and labelled 'Ongoing'; the site never invents a deadline. Dated one-off events keep their event date so the listing retires itself.",
     "not_affiliated_disclaimer": "This is an independent research project. It is not affiliated with, endorsed by or sponsored by any retailer, manufacturer, restaurant, museum, library or government agency named in it. All trademarks and service marks belong to their respective owners. Offer text is quoted for identification, review and consumer-protection purposes.",
-    "data_license": "CC BY 4.0 (attribution required; see LICENSE)"
+    "data_license": "CC BY 4.0 (attribution required; see LICENSE)",
+    "scope_history": [
+      {
+        "date": "2026-09-22",
+        "change": "First full verification pass: manufacturers, retailers, plus museum/attraction access programs."
+      },
+      {
+        "date": "2026-09-22",
+        "change": "Pass 2 rescoping: project now covers product coupons only — 49 venue-admission entries moved to archive/rescoped-2026-09-22/, museum categories and admission deal types retired from the taxonomy; Kellanova's 8 manufacturer printables, receipt-scan programs and restaurant free-product offers added as product categories."
+      }
+    ]
   },
   "verification": {
     "levels": {
@@ -38,7 +48,7 @@
       "id": "manufacturer-printable",
       "name": "Printable manufacturer coupons",
       "short": "Printables",
-      "description": "Print-at-home manufacturer coupons issued through an authorised coupon platform. Accepted at physical retailers that accept manufacturer coupons.",
+      "description": "Print-at-home manufacturer coupons issued through an authorised coupon platform (e.g. Coupons.com) or clipped directly on a manufacturer's own site (e.g. Kellanova). Accepted at physical retailers that take manufacturer coupons.",
       "sort": 20
     },
     {
@@ -92,24 +102,17 @@
     },
     {
       "id": "no-spend-free",
-      "name": "No-spend & free admission",
-      "short": "No spend",
-      "description": "Offers that cost nothing to obtain and require no qualifying purchase: free admission days, free entry for a defined group, free items on a calendar date, and free reusable-container credits.",
+      "name": "No-spend & standing perks",
+      "short": "No-spend",
+      "description": "Product freebies and standing perks that are free to obtain — no clip, no code, no paid membership: app sign-up free items, birthday rewards and everyday standing discounts at stores and restaurants. A qualifying purchase at the register may still be required.",
       "sort": 100
     },
     {
       "id": "local-independent",
       "name": "Bay Area independent grocers & co-ops",
       "short": "Local independents",
-      "description": "Standing discounts published by Bay Area independent markets and cooperatives. These are the most stable offers in the dataset because they do not rotate weekly.",
+      "description": "Standing product discounts published by Bay Area independent markets and cooperatives. These are the most stable offers in the dataset because they do not rotate weekly.",
       "sort": 110
-    },
-    {
-      "id": "community-access",
-      "name": "Community access programs",
-      "short": "Community access",
-      "description": "Means-tested, library-card, transit, military, educator and disability access programs run by public agencies and institutions in the Bay Area.",
-      "sort": 120
     },
     {
       "id": "policy-debunk",
@@ -117,6 +120,13 @@
       "short": "Scam watch",
       "description": "Not coupons. Documented retailer coupon policies, discontinued coupon channels, and circulating 'coupons' that the issuer itself disowns. Kept in the dataset so reviewers can see what was checked and rejected.",
       "sort": 900
+    },
+    {
+      "id": "receipt-scan-rewards",
+      "name": "Receipt-scan rewards",
+      "short": "Scan & earn",
+      "description": "Manufacturer programs where you buy in a store, upload the receipt, and the issuer pays out points, cash or a gift card afterwards. Redeemed via the issuer's own app or site; shopping happens at a physical store.",
+      "sort": 85
     }
   ],
   "deal_types": [
@@ -139,16 +149,6 @@
       "id": "free_item",
       "name": "Free item",
       "description": "A specific item at no charge, with or without a purchase trigger."
-    },
-    {
-      "id": "free_admission",
-      "name": "Free admission",
-      "description": "No-cost entry to a venue for a defined group or on a defined date."
-    },
-    {
-      "id": "reduced_admission",
-      "name": "Reduced admission",
-      "description": "Discounted entry to a venue for a defined group."
     },
     {
       "id": "cashback",
@@ -214,13 +214,13 @@
   ],
   "license": "Data, documentation and curated text: CC BY 4.0. Site code (HTML, CSS, JS, Python): MIT.",
   "bay_area_county_notes": {
-    "San Francisco": "Deepest coverage in this dataset: Museums For All venues, FAMSF, SFMOMA, the Exploratorium, Discover & Go, Rainbow Grocery, Mollie Stone's and Andronico's.",
-    "Alameda": "Covered by chain-level programs and the Museums For All / Discover & Go lookups. Oakland and Berkeley institutions are not yet independently verified.",
+    "San Francisco": "Deepest coverage in this dataset: Rainbow Grocery, Mollie Stone's, Andronico's, plus every chain program verified in pass 2. Safeway, CVS, Walgreens, Target and McDonald's store locators all resolve here.",
+    "Alameda": "Covered by chain-level programs (Safeway, Raley's-family, CVS, Walgreens, Target, McDonald's, Starbucks); Oakland and Berkeley independents are not yet individually verified.",
     "Contra Costa": "Covered by chain-level programs only.",
     "San Mateo": "Covered by chain-level programs, including Raley's-family banners that operate in the county.",
-    "Santa Clara": "Covered by chain-level programs. San Jose institutions are not yet independently verified.",
+    "Santa Clara": "Covered by chain-level programs; San Jose store-level verification is still open.",
     "Marin": "Covered by chain-level programs, including Raley's-family banners.",
-    "Sonoma": "Covered by chain-level programs. Sonoma County museums and their free-day calendars are not yet verified.",
+    "Sonoma": "Covered by chain-level programs; Sonoma County independents are not yet verified.",
     "Solano": "Covered by chain-level programs only.",
     "Napa": "Covered by chain-level programs only."
   },
@@ -230,11 +230,11 @@
       "amount": "Numeric size of the benefit, or null when the issuer publishes no figure (e.g. 'reduced admission' with no price).",
       "unit": "One of: currency | percent | points. Determines how 'amount' is read.",
       "currency": "ISO currency code when unit is 'currency' (always USD in this dataset); null otherwise.",
-      "kind": "What the number is: dollar_off | percent_off | rebate | reduced_admission | free_admission | free_item | member_price | rewards_credit | points."
+      "kind": "What the number is: dollar_off | percent_off | rebate | free_item | member_price | rewards_credit | points."
     },
     "rules": [
-      "A value is only recorded when the issuer publishes one. 'Reduced admission' with no stated price is stored with amount null rather than estimated.",
-      "free_admission and free_item always carry amount 0 so that no-spend offers sort and label consistently.",
+      "A value is only recorded when the issuer publishes one. A benefit described without a figure (e.g. 'earn points') is stored with value null, never estimated.",
+      "free_item always carries amount 0 so that no-spend offers sort and label consistently.",
       "Points are never converted to dollars in the data. The site may display an approximate dollar equivalent for sorting, and says so when it does.",
       "A free_item may carry a non-zero amount only when the issuer publishes that figure as a maximum value cap (for example Starbucks' 'single free customization, up to a $2 maximum value'), and the cap must appear verbatim in offer_text so it cannot be mistaken for an estimated worth."
     ]
