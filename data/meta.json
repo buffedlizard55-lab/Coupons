@@ -2,7 +2,7 @@
   "dataset": {
     "name": "Verified Official Product Coupons & Rebates — San Francisco Bay Area",
     "slug": "coupons",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "compiled_at": "2026-09-22",
     "recheck_policy": "verification.recheck_due is a project scheduling date, never an issuer claim. Every entry with a published expiry carries recheck_due = the printed expiry minus a 3-day safety margin, so the weekly CI job can flag the record for re-verification BEFORE it goes stale. Entries with no published expiry follow the monthly re-harvest cadence instead and deliberately carry no recheck_due, because inventing one for an 'Ongoing' offer would be exactly the kind of fabricated deadline this project forbids.",
     "timezone_note": "All dates are ISO-8601 (YYYY-MM-DD). 'compiled_at' is the date every line in this dataset was checked against its cited source.",
@@ -26,6 +26,10 @@
       {
         "date": "2026-09-22",
         "change": "Pass 4 (same day, later): manufacturer re-verification (P&G 25 offer lines covering 22 of the 36 transcribed coupons re-read with zero drift, the pass-3 count of 26 lines having been corrected as an overcount; Kellanova page re-fetched complete and the issuer's '8 coupons, up to $7.00' headline cross-check automated as a test; KV cards re-tagged as assembled quotes per methodology), Colgate follow-up (main page re-fetched; microsite failed again; aggregator code ring documented as a rejection), the Pop-Tarts rewards earning ladder added verbatim from the issuer's terms, and verification.recheck_due added to every dated record under the new recheck_policy."
+      },
+      {
+        "date": "2026-09-22",
+        "change": "Pass 5 (same day, later): full P&G harvest completed — all 10 chunks of pgbrandsaver.com/coupons/ retrieved live, 112 rows transcribed (exactly the page's advertised 'Search 112 Digital Coupons' headline, pinned by TestPgHarvestCompleteness), seven expiry contradictions documented (Crest x3, Tampax/Always x1, Olay x3 at 9/26 vs 9/27 and 9/27 vs 9/28), retailer acceptance list corrected from the issuer's own FAQ (eight retailers: CVS, Discount Drug Mart, Dorothy Lane Market, Food Depot, Hartig Drug Stores, Lagree's Food Stores, Other Avenues Coop, Western Drug Store — only CVS Bay Area-confirmed, so confidence lowered to medium and policy-pg-brandsaver-retailer-acceptance records the correction), front-end daysUntil bug fixed (T23:59:59+Math.round made yesterday round to 0), P&G Back to School rebates verified (three tiers $25/$15/$5, purchase window Jul 1–Sep 30 2026, submission due Oct 14 2026, tier-1 wording contradiction $50 vs $75 flagged), Kellanova $1-off-two Barcode Buck$ verified (expires 9/30/26, participating-retailer list behind emailed link), Kellanova coupon grid regression observed (client-rendered via Quotient.com, headline tokens unresolved, flagged coupon-grid-not-re-readable), Mollie Stone's 4-Items-on-the-4th verified (40% off, in-store one day only, next instance Sunday Oct 4 2026) plus Sandwich/Salad/Soup clubs and weekly free item, and Clorox Gift of Clean rejected as sold-out SERVICE with clorox.com/coupons/ still 404 (third pass)."
       }
     ]
   },

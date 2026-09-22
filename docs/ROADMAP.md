@@ -4,8 +4,8 @@ Next work, in priority order. Each item states what to do, why it matters, and w
 looks like — including the evidence that must be captured, because an entry without a citation
 cannot be merged.
 
-Current state after **pass 4 (2026-09-22)**: **101 verified product offers, 17 documented
-rejections, 113 citations across 41 domains, 208 flags**, every line re-checked this date. Scope:
+Current state after **pass 5 (2026-09-22)**: **185 verified product offers, 18 documented
+rejections, 204 citations across 44 domains, 517 flags (20 critical, 432 warning, 65 info)**, every line re-checked this date. Scope:
 **product coupons only** — no events, museums or venue admission (see
 `archive/rescoped-2026-09-22/`).
 
@@ -18,27 +18,21 @@ rejections, 113 citations across 41 domains, 208 flags**, every line re-checked 
 says **"Search 112 Digital Coupons"** — only 36 were transcribed, so 76+ live manufacturer
 coupons sit one careful pass away. This is the single biggest expansion *and* retention lever.
 
-**Status after pass 4 (2026-09-22):** step 2 done (Kellanova page re-fetched whole, zero drift,
-headline cross-check now a test), step 3 partially done (the generator additionally derives
-`recheck_due`; the KV sweep ran and the Colgate/aggregator follow-ups landed), and step 1 is
-**half done** — 25 offer lines (22 distinct coupons) re-read live with zero drift before the
-retrieval proxy failed on chunk continuations. The remaining ~90 rows of the page's advertised
-"112 Digital Coupons" are still one careful fetch-cycle away; nothing was invented to fill in.
+**Status after pass 5 (2026-09-22):** DONE for P&G. All 10 content chunks of `pgbrandsaver.com/coupons/` were retrieved live and every row transcribed — 112 rows, exactly the page's advertised "Search 112 Digital Coupons" headline, with zero drift on the 36 previously transcribed. Seven expiry contradictions newly documented (Crest ×3, Tampax/Always ×1, Olay ×3: 9/26 vs 9/27 and 9/27 vs 9/28). The issuer's own FAQ was also read and revealed an explicit eight-retailer acceptance list (CVS, Discount Drug Mart, Dorothy Lane Market, Food Depot, Hartig Drug Stores, Lagree's Food Stores, Other Avenues Coop, Western Drug Store) — only CVS overlaps with the Safeway/Lucky/Andronico's/Walgreens/Target/Walmart claim from passes 1–4 — so every P&G entry was corrected (confidence medium, locator repointed to CVS, retailer-list-published warning added, policy note `policy-pg-brandsaver-retailer-acceptance` records the correction). The 112-row equality is now pinned by `TestPgHarvestCompleteness`. The front-end expiry bug (`daysUntil` using T23:59:59 + Math.round making yesterday round to 0) was found because the new Mollie Stone's 4-Items-on-the-4th entry (expires 2026-10-04) rendered as "Expires today" on pinned date 2026-10-05 and was fixed to UTC-midnight floor.
+
+Kellanova: page re-fetched whole in pass 4 (8/8 cards matched, headline still 8/$7.00) but in pass 5 the same URL intermittently served the grid unpopulated (headline tokens unresolved, print control "PRINT COUPONS0") — client-rendered via Quotient.com. Flagged `coupon-grid-not-re-readable` rather than treated as retracted. A new live Kellanova offer was also verified: $1 off two products via Barcode Buck$ (expires 9/30/26) at promotions.kellanovaus.com, with its own terms page — added as `kellanova-barcode-bucks-1-off-two`.
+
+P&G Back to School rebates: three tiers ($25/$15/$5) verified from pgbrandsaver.com/rebates/ and r192963.pg.promosvcs.com/en-US/terms — purchase window Jul 1–Sep 30, 2026, submission due Oct 14, 2026. Tier 1 carries an internal contradiction ($50 in body vs $75 in heading/bold requirement) and the terms say "two (2) ways" then list three tiers. Added as `pg-back-to-school-rebate-*` with critical one-reward-per-household flag.
+
+Mollie Stone's: homepage and dedicated pages verified two new program mechanics — "4 Items on the 4th" (40% off, in-store one day only, next instance Sunday Oct 4 2026, confirmed weekday) and the existing Rewards page listing Sandwich/Salad/Soup clubs (buy 9 get 10th free) and weekly free item — added as three entries.
+
+Clorox: Gift of Clean page says sold out, reward is a cleaning SERVICE (out of scope), and clorox.com/coupons/ still 404s — rejected as `excl-clorox-gift-of-clean-sold-out`.
 
 **Do:**
-1. Re-read `pgbrandsaver.com/coupons/` in full (10 content chunks; retry when the retriever is
-   healthy), transcribe every coupon line verbatim with its printed expiry, and record the
-   "Updated <Month> <Year>" stamp. Keep the list-view whitespace artefacts out of the data —
-   see the pass-4 log entry on the Bounce 180 ct rendering before "reformatting" anything.
-2. ~~Re-read `kellanovaus.com/us/en/coupons.html` and re-verify the headline-sum~~ — done in
-   pass 4: page fetched whole, 8/8 cards matched, "8 coupons today, up to $7.00 in savings" still
-   equals the shard, and the cross-check now lives in `TestIssuersCompletenessHeadline`.
-3. Put the harvest loop in `scripts/generate_bulk_entries.py` (P&G + Kellanova), re-run it, and
-   let CI prove the shards match. (P&G side done — generator owns the shard and now also emits
-   `recheck_due`; a Kellanova generator remains the tidy way to do the next monthly swap.)
-4. Sweep the remaining manufacturer hubs on the same pattern: Unilever, Nestlé/Purina,
-   Kimberly-Clark (its old `kccoupons` mail-order line), General Mills, Campbell's, Post,
-   Hershey, Mars, Mondelez, Colgate (see Priority 2), Clorox (404'd hub — re-check).
+1. ~~Re-read `pgbrandsaver.com/coupons/` in full~~ — DONE in pass 5: 112 rows, headline pinned, contradictions flagged, retailer list corrected.
+2. ~~Re-read `kellanovaus.com/us/en/coupons.html`~~ — done in pass 4, regression observed in pass 5 and flagged. Add a headless re-check for the Quotient-powered grid.
+3. Monthly re-harvest loop in `scripts/generate_bulk_entries.py` (P&G + Kellanova) is now the retention lever; let CI prove shards match. P&G side complete, Kellanova generator remains tidy.
+4. Sweep the remaining manufacturer hubs: Unilever, Nestlé/Purina, Kimberly-Clark, General Mills, Campbell's, Post, Hershey, Mars, Mondelez, Colgate (see Priority 2). Clorox is now rejected (sold-out service + 404 coupons hub).
 
 **Done when:** every dated manufacturer block's printed expiries are ≥ 30 days out, each entry
 keeps verbatim evidence, and any publisher-side expiry contradiction is flagged rather than averaged.
@@ -50,13 +44,7 @@ online coupon experience"** while `smiles.colgate.com/page/content/special-offer
 "Print coupons for your favorite Colgate® oral care products". The microsite failed live fetch
 twice on 2026-09-22 and is today evidenced only by a search snippet.
 
-**Status after pass 4 (2026-09-22):** the main page was re-fetched in full (identical text);
-`smiles.colgate.com` failed two further direct fetches (offers path + domain root) and returned
-**no search result at all**, so the "temporarily unavailable" statement is now the only actively
-served official text. The policy note, its critical flag, and the aggregator note
-(`excl-colgate-aggregator-promo-codes`) were updated/added accordingly. The contradiction stays
-flagged (not deleted) because the issuer's own page promises updated offers "soon" — until the
-microsite itself disappears or republishes, both readings must remain visible.
+**Status after pass 5 (2026-09-22):** main page fetched a THIRD time in full — identical text ("Coupons Temporarily Unavailable — We're updating our online coupon experience"); smiles.colgate.com failed a fifth retrieval attempt (proxy signature error — recorded as retrieval failure, not as evidence the site is gone) and a targeted search returned only the main-site suspension page, no organic result from smiles.colgate.com. The contradiction stays flagged (not deleted) because the issuer's own page promises updated offers "soon" — until the microsite disappears or republishes, both readings must remain visible. The policy note now documents three full fetches of the main page and five failed microsite attempts.
 
 **Do:** keep re-fetching both URLs on every monthly pass (and via headless later); if printable
 coupons ever render, transcribe each as a level-A entry (brand, amount, wording, expiry) the same
@@ -97,14 +85,13 @@ issuer or links a locator the site documents as tried-and-404.
 
 ## Priority 5 — expand the receipt-scan & rebate categories
 
-Verified today: Checkout 51 (platform + gas), Ibotta, P&G×Costco mail-in, Pop-Tarts Crazy Good
-Rewards. The pattern (official brand microsite, receipt upload, points on groceries) also exists
+Verified today: Checkout 51, Ibotta, P&G×Costco mail-in, Pop-Tarts Crazy Good Rewards, P&G Back to School rebates (3 tiers), Kellanova Barcode Buck$ $1-off-two. The pattern (official brand microsite, receipt upload, points on groceries) also exists
 across Kellanova promotions, Nestlé and General Mills (Box Tops for Education — whose historic
 `boxtops.com` domain now serves a rock band, recorded as `excl-boxtops-domain-drift`).
 
 **Do:** fetch each program's terms page; record earning ladders verbatim; flag every account wall;
 reject anything that pays out only on an online store (precedent: `excl-rkt-squishmallows-online-only-reward`).
-Pass 4 did the Kellanova leg: the Pop-Tarts entry now quotes its published 1-point-per-$1 ladder
+Pass 4 did the Kellanova receipt-scan leg; pass 5 added the Kellanova Barcode Buck$ digital coupon and the P&G Back to School rebate trio: the Pop-Tarts entry now quotes its published 1-point-per-$1 ladder
 verbatim from the official terms page, and the brand's legacy Scratch-Off terms (self-dated dead:
 "expire on 12/31/24", play window closed 2026-09-02) were rejected as
 `excl-kellanova-legacy-scratch-off-games`. Nestlé and General Mills legs still open.
@@ -137,12 +124,12 @@ rewards-terms page, or record why it stays out.
 `.github/workflows/verify.yml` already re-checks every citation weekly, prints a summary and files
 a `link-rot` issue; pass 4 added the `recheck-due` report (dataset records due within 7 days,
 summary + one open issue). Remaining: wire its `reports/link-check.json` into the site header
-("N of 80 citation URLs resolving as of <date>") — a CI-side change, since the sandbox has no
+("N of 56 citation URLs resolving as of <date>") — a CI-side change, since the sandbox has no
 egress.
 
 ## Priority 9 — store-circular watch for BOGO
 
-BOGO inventory is thin (10 multi-buy manufacturer offers) because store weekly ads are app-gated.
+BOGO inventory is now 13 multi-buy manufacturer offers (Olay, Cascade, Kellanova $1-off-two, Mollie Stone's sandwich clubs) because store weekly ads are app-gated.
 Raley's family (Bel Air, Nob Hill), Save Mart, Food 4 Less ("Dynamic Deals"), Costco (Instant
 Savings) and Lucky publish BOGO-style in-store deals that cycle weekly. Same headless tooling,
 weekly cadence, and honest `source-outdated` flags when the PDF is stale.
@@ -154,6 +141,9 @@ weekly cadence, and honest `source-outdated` flags when the PDF is stale.
 - ✅ Done (pass 4): `verification.recheck_due` (expiry − 3 days) on all 38 dated records, policy
   documented in `data/meta.json`, enforced by `TestRecheckSchedule`, reported (and issue-filed
   weekly) by `.github/workflows/verify.yml`.
+- ✅ Done (pass 5): P&G full harvest — 112 rows = "Search 112 Digital Coupons" headline pinned by `TestPgHarvestCompleteness`; seven expiry contradictions flagged; retailer acceptance list corrected from issuer's own FAQ (eight retailers, only CVS Bay Area-confirmed); front-end `daysUntil` bug fixed (yesterday was rounding to 0).
+- ✅ Done (pass 5): new flag codes introduced for what passes 5 taught us: `retailer-list-published`, `retailer-acceptance-narrower-than-assumed`, `coupon-grid-not-re-readable`, `one-reward-per-household`, `terms-internal-count-mismatch`, `retailer-participation-unverified`, `recurring-one-day-sale`, `item-level-offers-in-images`, etc.
+- ✅ Done (pass 5): Clorox hub re-checked a third time (still 404) and its Gift of Clean verified as sold-out SERVICE — rejected, not silently dropped.
 - A `rescoped` note type so archived taxonomies stay documented without staying in the build.
 
 ## Maintenance cadence

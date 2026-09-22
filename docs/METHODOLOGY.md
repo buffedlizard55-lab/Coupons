@@ -43,7 +43,7 @@ Recorded on every entry as `verification.level`.
 
 | Level | Meaning | Count |
 | --- | --- | --- |
-| **A** | Offer text, value and expiry were read verbatim from the issuer's own official page on the verification date. | 85 |
+| **A** | Offer text, value and expiry were read verbatim from the issuer's own official page on the verification date. | 169 |
 | **B** | The program or policy was confirmed on the issuer's official page, but the specific rotating offers behind it require an app, an account or an in-store visit and could not be read anonymously. No individual offer is asserted. | 14 |
 | **C** | Only third-party evidence was found. Kept **only** in `10-excluded-unverified.json` and `11-policy-notes.json`, never presented as a usable coupon. | 2 |
 
@@ -104,15 +104,15 @@ For each candidate offer:
 
 ## 5. Flag taxonomy
 
-208 flags across the dataset: **12 critical, 142 warning, 54 info**.
+517 flags across the dataset: **20 critical, 432 warning, 65 info**.
 
 | Severity | Meaning | Examples in this dataset |
 | --- | --- | --- |
-| `critical` | Do not rely on this without resolving the problem first. | P&G/Costco rebate purchase window closed before verification; two official CVS pages state different reward thresholds; three Crest coupons printed twice on one official P&G page with two different expiries; a retailer announcing a discount that is "not live yet"; Costco item-level offers not verifiable anonymously; a 19-month-old Raley's circular used as the only source; Colgate's own pages disagree about whether coupons exist; documented scam vectors (Trader Joe's impersonators, insert-site staleness, social 'coupon' density) |
+| `critical` | Do not rely on this without resolving the problem first. | P&G/Costco rebate purchase window closed before verification; two official CVS pages state different reward thresholds; seven P&G coupons printed twice on one official P&G page with two different expiries (Crest ×3, Tampax/Always ×1, Olay ×3); a retailer announcing a discount that is "not live yet"; Costco item-level offers not verifiable anonymously; a 19-month-old Raley's circular used as the only source; Colgate's own pages disagree about whether coupons exist; P&G's retailer acceptance list is narrower than the pre-pass-5 claim (Safeway/Lucky/Andronico's/Walgreens/Target/Walmart not on the issuer's list); P&G Back to School rebate's tier-1 wording says $50 in body but $75 in heading/bold requirement; one-reward-per-household rule makes the three rebate tiers mutually exclusive; documented scam vectors (Trader Joe's impersonators, insert-site staleness, social 'coupon' density) |
 | `warning` | Material caveat. | Expiry not published; account or app required; source retrieved only via search snippet; source page carries a stale date; partial capture of a terms page; availability varies by store; paid membership required; affiliate parameters on outbound links |
 | `info` | Context for a reviewer that does not undermine the offer. | Age-restricted purchase; small fixed value; program replaced an older birthday offer; benefit is a payment-method change rather than a discount |
 
-The 12 critical flags are listed in full on the site's **Irregularities** view and in
+The 20 critical flags are listed in full on the site's **Irregularities** view and in
 `docs/VERIFICATION-LOG.md §5`.
 
 ## 6. Bay Area definition
@@ -163,11 +163,10 @@ retire: `Active` → `Expires soon` (≤ 7 days) → `Expired`, plus `Window clo
 
 ## 9. Bulk shards and reproducibility
 
-One shard is large enough to be generated rather than hand-written: 36 P&G brandSAVER coupons.
+One shard is large enough to be generated rather than hand-written: 112 P&G brandSAVER coupons.
 `scripts/generate_bulk_entries.py` builds it from the transcription taken on the verification date
-(the brand, value, offer text and printed expiry read from pgbrandsaver.com; pass 4 re-read 22 of
-the 36 coupons against a fresh fetch with zero drift), derives the `recheck_due` scheduling date
-from the printed expiry, and stores provenance on every entry with collision-safe IDs. A second bulk generator (26 SF Museums For All
+(the brand, value, offer text and printed expiry read from pgbrandsaver.com; pass 5 re-read all 10 chunks live — 112 rows, exactly the page's advertised "Search 112 Digital Coupons" headline — with zero drift on the 36 previously transcribed and seven newly documented expiry contradictions), derives the `recheck_due` scheduling date
+from the printed expiry, and stores provenance on every entry with collision-safe IDs. The harvest completeness (112 rows = headline) is pinned by TestPgHarvestCompleteness so a future re-harvest that drops or invents a row fails the build. A second bulk generator (26 SF Museums For All
 venues) was removed from this script when the project was rescoped to products on 2026-09-22;
 its code and data are preserved in `archive/rescoped-2026-09-22/`. The generator is deterministic: CI re-runs it and fails if the committed
 shards no longer match, so the bulk data cannot silently drift from its transcription.
@@ -202,5 +201,5 @@ documented link-rot log stops resolving.
   locator is linked instead.
 - No attempt was made to reconcile two official pages that disagree; both are quoted and the
   conflict is flagged.
-- No rejected claim was quietly deleted. All seventeen remain published with their reasoning, because
+- No rejected claim was quietly deleted. All eighteen remain published with their reasoning, because
   a shopper who has seen the claim needs to find the rebuttal.

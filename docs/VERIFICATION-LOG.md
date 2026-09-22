@@ -2,6 +2,8 @@
 
 **Verification date: 2026-09-22** (all sources accessed on this date; `accessed` is recorded per
 citation in the data).
+**Result after pass 5 (2026-09-22, same day): 185 verified offers · 18 documented rejections · 204 citations ·
+44 domains · 517 flags (A: 169 · B: 14 · C: 2).**
 **Result after pass 4 (2026-09-22, same day): 101 verified offers · 17 documented rejections · 113 citations ·
 41 domains · 208 flags (A: 85 · B: 14 · C: 2).**
 (Pass 3 had reached 101 offers · 15 rejections · 112 citations · 41 domains · 207 total flags (A: 85 · B: 14 · C: 2).)
@@ -37,7 +39,7 @@ insufficient, the entry says so — see §4 and the `retrieval-via-search-snippe
 
 | Domain | Retrievals | Method | Outcome |
 | --- | --- | --- | --- |
-| `pgbrandsaver.com` | 36 | fetch_page | Full coupon list read ("Search 112 Digital Coupons"); 36 offers transcribed with printed expiries of 26–27 Sep 2026. Three Crest coupons appear twice on the same page with two different expiries → `critical` |
+| `pgbrandsaver.com` | 112 | fetch_page | Full coupon list read in 10 content chunks on 2026-09-22 pass 5: 112 offers transcribed, exactly the page's advertised "Search 112 Digital Coupons" headline. Printed expiries 26–28 Sep 2026. Seven coupons appear twice with two different expiries (Crest ×3, Tampax/Always ×1, Olay ×3) → `critical`. FAQ section read: eight-retailer acceptance list (CVS, Discount Drug Mart, Dorothy Lane Market, Food Depot, Hartig Drug Stores, Lagree's Food Stores, Other Avenues Coop, Western Drug Store) and five-step Coupon24 flow — corrected the pre-pass-5 Safeway/Lucky/Andronico's/Walgreens/Target/Walmart claim; policy note `policy-pg-brandsaver-retailer-acceptance` records correction. |
 | `www.sfhsa.org` | 27 | fetch_page | City & County of San Francisco Museums For All listing read in full; 26 venues transcribed with published admission lines and walk-up/advance-ticket wording |
 | `rainbow.coop` | 10 | fetch_page | `/contact/` read: Every Day Discounts, Honored Every Day programs, Volume Discounts, cheese bands, reusable-container credit, FSA/HSA change (effective 2/23/26), hours and phone |
 | `www.sfmoma.org` | 10 | fetch_page | `/deals-discounts/`, `/free-days/`, `/visit/` read: 18 & under free, Free Family Day 2026-10-25, Museums For All, Blue Star, SFUSD staff, 45,000 sq ft always-free spaces |
@@ -63,6 +65,10 @@ insufficient, the entry says so — see §4 and the `retrieval-via-search-snippe
 | `corporate.target.com` | 1 | web_search | Official newsroom: Target Circle Deal Days 25–27 Mar 2026 (historical) → flagged as an example, not a live offer |
 | `about.bankofamerica.com` | 0 | — | **Not retrieved.** The Museums on Us mechanics are cited from FAMSF's own participating-venue page instead; the entry carries `sponsor-page-not-retrieved` so the gap is visible on the card |
 | `github.com` | 1 | official_document | Self-citation used by the link-rot maintenance entry only |
+| `pgbrandsaver.com` rebates hub + `r192963.pg.promosvcs.com` | 3 | fetch_page | Back to School Rebate hub and terms: three tiers $75→$25, $50→$15, $20→$5; purchase window Jul 1–Sep 30 2026, submission due Oct 14 2026; retailer dropdown names Bay Area chains (SAFEWAY, CVS, WALGREENS, TARGET, WALMART, COSTCO, ALBERTSON'S, RITE AID); tier-1 wording contradiction $50 vs $75 flagged critical; one-reward-per-household rule flagged critical |
+| `www.kellanovaus.com` coupons regression + `promotions.kellanovaus.com` | 3 | fetch_page | Coupon hub re-fetched in pass 5: grid served unpopulated (client-rendered via Quotient.com, headline tokens unresolved, print control "PRINT COUPONS0") — flagged `coupon-grid-not-re-readable` on all 8 existing KV entries rather than treated as retracted. New live offer verified: $1 off two products via Barcode Buck$ (expires 9/30/26) at promotions.kellanovaus.com with governing terms at kellanovaus.com/us/en/kellanova-digital-coupon-offer.html — added as `kellanova-barcode-bucks-1-off-two` |
+| `molliestones.com` 4-Items-on-the-4th + rewards | 3 | fetch_page | Homepage + /4-items-on-the-4th/ + /rewards/ fetched live: 40th anniversary "4 ITEMS ON THE 4TH — 4 items at 40% off! in-store & one day only!" with LIMIT 2 PER ITEM, while supplies last, next instance Sunday Oct 4 2026 (weekday confirmed). Rewards page lists Sandwich/Salad/Soup clubs "BUY 9 GET 1" and weekly free item — added as three entries. Stale September "TODAY ONLY" copy flagged. |
+| `www.clorox.com` gift-of-clean + coupons 404 | 2 | fetch_page | /gift-of-clean/ says "The Clorox Gift of Clean is sold out" and reward is a 2-hour cleaning SERVICE (out of scope for product-only dataset); /coupons/ still 404s third consecutive pass — rejected as `excl-clorox-gift-of-clean-sold-out` |
 
 ## 3. Retrieval inventory — third-party domains (rejection evidence and policy notes only)
 
@@ -107,48 +113,26 @@ Sizzler. Their codes exist only on aggregators → rejected.
 asserted; the three museums' own pages supply the savings claims, and their disagreement is
 flagged.
 
-## 5. Critical irregularities — 12 flags across 10 distinct issues
+## 5. Critical irregularities — 20 flags across 15 distinct issues
 
 Reproduced from the data so this log stands alone. Each is also on the site's **Irregularities**
 view and on the affected card.
 
-1. **`pg-crest-5`, `pg-crest-4`, `pg-crest-2` — `source-page-inconsistency` (3 flags).** The same
-   offer appears twice on the official P&G page with two different expiry dates: 2026-09-26 in the
-   "Featured Digital Coupons" block and 2026-09-27 in the full "Search 112 Digital Coupons" list.
-   The earlier date is treated as the safe assumption; the contradiction is reported, not averaged.
-2. **`pg-buy-more-save-more-costco` — `purchase-window-closed`.** The qualifying purchase window
-   (2026-08-24 → 2026-09-20) closed *before* the verification date. Only shoppers who already
-   bought qualifying products can still submit (receipts online or postmarked by 2026-10-31). The
-   site's `Window closed` status keeps it out of the default list so it cannot be mistaken for an
-   available rebate.
-3. **`raleys-something-extra-member-deals` — `source-outdated`.** The only locatable official
-   circular is dated 26 Feb 2025 (~19 months old). Its example prices are recorded as evidence of
-   program mechanics and are explicitly *not* presented as current offers.
-4. **`costco-member-only-savings` — `item-level-offers-unverified`.** No Costco item, price or
-   discount is asserted as current. Offers rotate on a ~4-week cycle and both public offer URLs
-   404'd on 2026-09-22; only the member channels (app → Warehouse tab, in-warehouse book) expose
-   them.
-5. **`cvs-extracare-pharmacy-health-rewards` — `official-sources-conflict`.** Two official CVS
-   pages state different thresholds for the same program: Program Rules says 10 credits → $5; the
-   retail help page says 4 credits → $2. Both agree on the $50 annual cap and the 31 December
-   reset. Both are quoted verbatim; neither is chosen.
-6. **`rainbow-grocery-community-discount-pilot` — `announced-but-not-live`.** The retailer's own
-   page states "This promotion is not live yet." Recorded with `bay_area.available = false` and
-   rendered as `Not redeemable yet`, visible only so reviewers can see it was checked.
-7. **`policy-trader-joes-no-coupons` — `scam-vector`.** Because Trader Joe's issues no coupons, any
-   site, Facebook post or Instagram story offering Trader Joe's coupons, circulars or gift cards is
-   not official, and the retailer disowns such organisations.
-8. **`policy-sunday-insert-landscape-2026` — `stale-source-directories`.** "Best coupon site"
-    directories still list SmartSource.com, FreeCoupons.com, CoolSavings, PPGazette and Mambo
-    Sprouts; several are out of business or redirected. Any list built from those directories
-    without checking each domain will contain dead or fraudulent sources.
-9. **`policy-social-media-sourcing` — `scam-density`.** Social platforms are the dominant
-    distribution channel for fabricated coupons and gift-card giveaways, which is why the project
-    rule is "leads yes, citations no".
-10. **`policy-colgate-coupons-suspended` — `source-page-inconsistency`.** Two Colgate-operated
-    pages disagree about whether online coupons exist; the main site (fetched in full twice, pass 3
-    and pass 4) says unavailable, the microsite that advertised printables has failed every direct
-    retrieval across both passes. Recorded as a contradiction, not resolved.
+1. **`pg-crest-5`, `pg-crest-4`, `pg-crest-2`, `pg-tampax-always-this-is-l-1`, `pg-olay-5`, `pg-olay-4`, `pg-olay-2` — `source-page-inconsistency` (7 flags).** The same offer appears twice on the official P&G page with two different expiry dates: e.g. 2026-09-26 in Featured vs 2026-09-27 in list (Crest ×3, Tampax/Always ×1) and 2026-09-27 vs 2026-09-28 (Olay ×3). The earlier date is treated as the safe assumption; the contradiction is reported, not averaged.
+2. **`pg-buy-more-save-more-costco` — `purchase-window-closed`.** The qualifying purchase window (2026-08-24 → 2026-09-20) closed *before* the verification date. Only shoppers who already bought qualifying products can still submit (receipts online or postmarked by 2026-10-31). The site's `Window closed` status keeps it out of the default list so it cannot be mistaken for an available rebate.
+3. **`raleys-something-extra-member-deals` — `source-outdated`.** The only locatable official circular is dated 26 Feb 2025 (~19 months old). Its example prices are recorded as evidence of program mechanics and are explicitly *not* presented as current offers.
+4. **`costco-member-only-savings` — `item-level-offers-unverified`.** No Costco item, price or discount is asserted as current. Offers rotate on a ~4-week cycle and both public offer URLs 404'd on 2026-09-22; only the member channels (app → Warehouse tab, in-warehouse book) expose them.
+5. **`cvs-extracare-pharmacy-health-rewards` — `official-sources-conflict`.** Two official CVS pages state different thresholds for the same program: Program Rules says 10 credits → $5; the retail help page says 4 credits → $2. Both agree on the $50 annual cap and the 31 December reset. Both are quoted verbatim; neither is chosen.
+6. **`rainbow-grocery-community-discount-pilot` — `announced-but-not-live`.** The retailer's own page states "This promotion is not live yet." Recorded with `bay_area.available = false` and rendered as `Not redeemable yet`, visible only so reviewers can see it was checked.
+7. **`policy-trader-joes-no-coupons` — `scam-vector`.** Because Trader Joe's issues no coupons, any site, Facebook post or Instagram story offering Trader Joe's coupons, circulars or gift cards is not official, and the retailer disowns such organisations.
+8. **`policy-sunday-insert-landscape-2026` — `stale-source-directories`.** "Best coupon site" directories still list SmartSource.com, FreeCoupons.com, CoolSavings, PPGazette and Mambo Sprouts; several are out of business or redirected. Any list built from those directories without checking each domain will contain dead or fraudulent sources.
+9. **`policy-social-media-sourcing` — `scam-density`.** Social platforms are the dominant distribution channel for fabricated coupons and gift-card giveaways, which is why the project rule is "leads yes, citations no".
+10. **`policy-colgate-coupons-suspended` — `source-page-inconsistency`.** Two Colgate-operated pages disagree about whether online coupons exist; the main site (fetched in full three times, passes 3, 4 and 5) says unavailable, the microsite that advertised printables has failed five direct retrievals across three passes. Recorded as a contradiction, not resolved.
+11. **`policy-pg-brandsaver-retailer-acceptance` — `retailer-acceptance-narrower-than-assumed`.** Passes 1–4 asserted Bay Area Safeway, Lucky, Andronico's, CVS, Walgreens, Target and Walmart accept brandSAVER coupons; the issuer's own FAQ publishes an explicit eight-retailer list (CVS, Discount Drug Mart, Dorothy Lane Market, Food Depot, Hartig Drug Stores, Lagree's Food Stores, Other Avenues Coop, Western Drug Store) — only CVS overlaps. Corrected in pass 5, confidence lowered to medium, every P&G entry now carries `retailer-list-published` warning.
+12. **`pg-back-to-school-rebate-75-25` — `source-page-inconsistency`.** The issuer's own tier-1 terms say $50 in body but $75 in heading and bolded requirement. Recorded as printed, earlier/higher figure treated as safe assumption.
+13. **`pg-back-to-school-rebate-50-15` and `pg-back-to-school-rebate-20-5` — `one-reward-per-household` (2 flags).** The three tiers are mutually exclusive: "Limit one (1) Reward per person/email address/household" and "Only one submission per household" — a household cannot stack $5+$15+$25.
+14. **`pg-back-to-school-rebate-*` — `terms-internal-count-mismatch` (3 flags, info but critical-adjacent).** Terms say "There are two (2) ways to redeem an Offer" then enumerate three tiers — unrepaired artefact of earlier version.
+15. **`mollie-stones-4-items-on-the-4th` — `source-page-stale-date` (also appears as warning).** Page still presents September 4 as "IN-STORE TODAY ONLY" on 2026-09-22 with countdown at 00:00:00:00, while also naming next instance Oct 4 2026 — stale copy recorded rather than silently corrected.
 
 *Numbering note:* items 7–8 of the pre-re-scope list (the Contemporary Jewish Museum
 `venue-temporarily-closed` and the FAMSF/de Young Tuesday contradiction) retired with their venue
@@ -198,7 +182,7 @@ Not critical, but each one changes how an offer should be used. All are on the c
   domains rather than direct fetches and each carries `retrieval-via-search-snippet` (one added in
   pass 4: the Pop-Tarts rewards terms citation).
 
-## 6. Rejections (17)
+## 6. Rejections (18)
 
 Full records, with URLs checked and evidence, live in `data/entries/10-excluded-unverified.json`
 and on the site's **Rejected & scam watch** view.
@@ -222,6 +206,7 @@ and on the site's **Rejected & scam watch** view.
 | `excl-kraftheinz-stale-2022-campaign-page` | Kraft Heinz | REJECTED (pass 3) | kraftheinzsaveearnwin.com is official but prints its own end date "Ends 5/9/22" — a live-looking dead campaign; no current Kraft/Heinz consumer coupon hub found |
 | `excl-colgate-aggregator-promo-codes` | Colgate (shop.colgate.com codes) | REJECTED (pass 4) | Five code farms (orangeoffer, DontPayFull, TenereTeam, coupons.com code pages, plus an India-market terms page as the only real "Smiles" offer) all apply recycled codes to an online store while Colgate's own U.S. coupon page — fetched twice — says coupons are unavailable |
 | `excl-kellanova-legacy-scratch-off-games` | Kellanova (Cheez-It/RKT/Pop-Tarts rewards games) | REJECTED (pass 4) | Terms pages still served on the official domain carry their own disqualification: Barcode Buck$ "expire on 12/31/24", Pop-Tarts game plays "must be completed by … 9/2/26", and that game's prize redeems only at shop.poptarts.com (online-only) |
+| `excl-clorox-gift-of-clean-sold-out` | Clorox | REJECTED (pass 5) | Gift of Clean page says sold out, reward is a 2-hour cleaning SERVICE (out of scope for product-only dataset), and clorox.com/coupons/ still 404s — third consecutive pass |
 
 ## 7. Pass log
 
@@ -466,3 +451,28 @@ shipped.
 7. **Counts after this pass:** 101 offers (unchanged — this pass added evidence depth, not offer
    rows) · **17 rejections** · **113 citations** · 41 domains · **208 flags** (12 critical,
    142 warning, 54 info) · 80 unique cited URLs · 50 tests. Verified 2026-09-22 (passes 1–4).
+
+### Pass 5 — full P&G harvest, retailer-acceptance correction, rebates, Kellanova, Mollie Stone's, Clorox (complete, 2026-09-22)
+
+Owner instruction for this pass: same as pass 4 — keep expanding line by line, no hallucinations, PR + merge, multiple passes.
+
+**Retrieval health:** 10 content chunks of pgbrandsaver.com/coupons/ retrieved live sequentially (chunks 0–9) with zero drift on the 36 previously transcribed rows; chunks 3–8 yielded 76 new rows, giving 112 rows = the page's own "Search 112 Digital Coupons" headline. The fetch proxy degraded twice in this pass with signed-URL signature errors on smiles.colgate.com and on chunk continuations — recorded as retrieval failures, not as statements about those sites. Other high-value pages fetched live: pgbrandsaver.com/rebates/ (2 chunks, resolves to ?rebate_name=backtoschool) + r192963.pg.promosvcs.com/en-US/terms (2 chunks, three rebate tiers), promotions.kellanovaus.com/us/en/welcome.html (hero alt text: "Save $1 on two participating products"), kellanovaus.com/us/en/kellanova-digital-coupon-offer.html (Barcode Buck$ terms, expiry 9/30/26), kellanovaus.com/us/en/coupons.html (regression: grid unpopulated, headline tokens unresolved), molliestones.com/ (homepage) + /4-items-on-the-4th/ + /rewards/ (all live), colgate.com/en-us/special-offers (third full fetch, identical), clorox.com/coupons/ (third 404) + /gift-of-clean/ (sold out).
+
+**P&G full harvest (Priority 1 complete):** 112 unique offer texts, values $0.75–$10.00, expiries 9/26, 9/27 and 9/28. Seven expiry contradictions newly documented beyond the three Crest ones: Tampax/Always/This is L. $1.00 at 9/26 Featured vs 9/27 list, and three Olay "OFF TWO" body-wash coupons at 9/27 Featured vs 9/28 list. Each kept once with both dates and critical flag. Generator updated: 112 rows, retailer list verbatim from FAQ, five-step Coupon24 flow (brandSAVER account → Coupon24 app → link → send to app → scan QR at checkout), 20-coupon basket cap from P&G care hub, confidence medium, locator repointed to CVS, retailer-list-published warning on every entry, days-to-expiry detail now computed. Provenance docstring updated and completeness pinned by new test TestPgHarvestCompleteness.
+
+**Retailer-acceptance correction (bug fix):** passes 1–4 claimed Bay Area Safeway, Lucky, Andronico's, CVS, Walgreens, Target and Walmart accept brandSAVER coupons — no source for that claim. Pass 5 read the issuer's own FAQ answer "Which retailers accept brandSAVER coupons?" — eight retailers: CVS, Discount Drug Mart, Dorothy Lane Market, Food Depot, Hartig Drug Stores, Lagree's Food Stores, Other Avenues Coop, Western Drug Store. Only CVS confirmed Bay Area presence. Correction: every P&G entry's bay_area.note replaced, confidence high→medium, locator safeway.com/local.html → cvs.com/store-locator, new warning flag retailer-list-published, new policy note policy-pg-brandsaver-retailer-acceptance with critical retailer-acceptance-narrower-than-assumed flag records the correction.
+
+**P&G Back to School rebates (new, Priority 5):** three tiers verified from two official URLs: $75→$25, $50→$15, $20→$5. Purchase window Jul 1–Sep 30 2026 (OPEN at verification date, 8 days left), submission due Oct 14 2026. Retailer dropdown includes SAFEWAY, CVS, WALGREENS, TARGET, WALMART, COSTCO, ALBERTSON'S, RITE AID — Bay Area physical purchase path evidenced, not assumed. Tier-1 internal contradiction ($50 body vs $75 heading/bold) flagged critical; terms count mismatch ("two (2) ways" then three tiers) flagged info; one-reward-per-household mutual exclusivity flagged critical on $15 and $5 tiers. Added as three entries in new shard 16-pass5-expansion.json.
+
+**Kellanova Barcode Buck$ (new):** $1 off two participating products, Barcode Buck$ expire 9/30/26, first-come-first-served, limit one per email, redemption limited to participating retailers only visible after emailed Reward link — retailer participation unverified, confidence low, flagged retailer-participation-unverified + personal-data-required + limited-quantity + fulfilment-third-party.
+
+**Mollie Stone's expansion (new, Priority 4):** 40th anniversary "4 Items on the 4th" — 4 items at 40% off, in-store one day only, LIMIT 2 PER ITEM, while supplies last, next instance Sunday Oct 4 2026 (weekday independently confirmed). Items published only as images, so no product names invented — flagged item-level-offers-in-images + source-page-stale-date (September instance still "TODAY ONLY" on 2026-09-22). Plus Sandwich/Salad/Soup clubs buy-9-get-10th-free and weekly free item — both free-to-join loyalty benefits, tracked via phone number, no value invented.
+
+**Clorox (rejection, Priority 1 step 4):** Gift of Clean page says sold out, reward is a cleaning SERVICE (out of scope for product-only dataset by LIMITATIONS §5), and clorox.com/coupons/ 404s third time — rejected as excl-clorox-gift-of-clean-sold-out.
+
+**Kellanova grid regression (new failure mode):** kellanovaus.com/us/en/coupons.html served unpopulated grid to plain fetch in pass 5 — headline tokens unresolved, print control "PRINT COUPONS0" — because grid is client-rendered via Quotient.com. Previously logged only for raleys.com and pizzahut.com/deals. All 8 existing KV entries flagged coupon-grid-not-re-readable rather than treated as retracted.
+
+**Front-end bug found and fixed:** assets/js/app.js daysUntil used T23:59:59 + Math.round, making yesterday round to 0 ("Expires today") instead of -1 ("Expired") and making a 7-day expiry round to 8, missing the documented "Expires soon ≤7 days" rule. Found because mollie-stones-4-items-on-the-4th (expires 2026-10-04) rendered as active on pinned test date 2026-10-05. Fixed to UTC-midnight floor; test_site_render.js expectedStatus updated to same logic.
+
+**Counts after this pass:** 185 offers (112 P&G + 1 Kellanova Barcode Buck$ + 3 P&G rebates + 3 Mollie Stone's + 66 retained) · 18 rejections · 204 citations · 44 domains · 517 flags (20 critical, 432 warning, 65 info) · 56 unique cited URLs · 51 tests (new TestPgHarvestCompleteness added). Verified 2026-09-22 (passes 1–5).
+

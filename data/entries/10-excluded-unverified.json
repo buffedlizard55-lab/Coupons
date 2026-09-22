@@ -491,5 +491,30 @@
     ],
     "risk": "medium — stale terms pages on a live official domain are the 'official-looking expired offer' failure mode this project documents (cf. the 2022 Kraft Heinz campaign page); a reader of kellanovaus.com can see '$500' and 'ARV up to $3.99' and conclude Kellanova is currently paying them out, and Barcode-Buck$-style codes from the 2024 cycle circulate on code farms after expiry.",
     "what_would_verify_it": "A Kellanova promotion page whose own printed window includes the verification date AND whose reward is redeemable in person at a physical retailer (a Barcode Buck$ or manufacturer coupon usable at a store checkout). The issuer's current receipt-scan mechanic meets the in-store half and is already covered — poptarts-crazy-good-rewards (in the dataset) and excl-rkt-squishmallows-online-only-reward (rejected for the online-only half) — so nothing here suggests Kellanova has stopped rewarding shoppers, only that these game pages are dead."
+  },
+  {
+    "id": "excl-clorox-gift-of-clean-sold-out",
+    "merchant": "Clorox",
+    "claim": "That Clorox's \"Gift of Clean\" is a coupon or free offer a shopper can currently obtain, and that Clorox runs a coupons page at clorox.com/coupons/.",
+    "status": "REJECTED — the issuer's own page states the promotion is sold out; the reward is a two-hour cleaning SERVICE rather than a product; and the coupons URL the issuer's product FAQs still point at returns Clorox's own 404 page",
+    "why_rejected": "Checked during the pass-5 manufacturer-hub sweep (ROADMAP priority 1, step 4). Three independent grounds, all from Clorox's own domain on 2026-09-22. (1) Sold out: the Gift of Clean page says \"The Clorox Gift of Clean is sold out\" and \"The Gift of Clean is officially sold out for the season\", so there is nothing for a new shopper to obtain — only people who already received a kit can act, by redeeming a promo code they were already issued. (2) Out of scope: the reward is \"a free 2-hour cleaning session\", i.e. a service delivered at home, not a product bought at a register. This project was rescoped on 2026-09-22 to product coupons only (data/meta.json → dataset.scope), so even a live Gift of Clean would not qualify; the same reasoning that rejects a museum admission rejects a cleaning visit. (3) The issuer's coupon channel is still broken: clorox.com/coupons/ returned Clorox's own \"Well, this is embarrassing. We can't find the page you're looking for.\" on a third consecutive pass, while Clorox product FAQs continue to instruct shoppers to \"check the Coupons page\" (already recorded in policy-link-rot-observed-2026-09-22). No Clorox product coupon is published anywhere on the official domain that could be retrieved, so no Clorox offer entry exists in this dataset.",
+    "urls_checked": [
+      {
+        "url": "https://www.clorox.com/gift-of-clean/",
+        "publisher": "Clorox (clorox.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Fetched live. Read verbatim: \"The Clorox Gift of Clean is sold out, but you can still redeem your promo code for a free 2‑hour cleaning session and sign up for future offers and tips.\" / \"And thatʌs a wrap! You want it, so did everyone else! The Gift of Clean is officially sold out for the season, but you can sign up for the Clorox newsletter for upcoming promotions, cleaning tips, offers and product info straight to your inbox\" / \"Already received a Clorox Gift of Clean kit? Redeem your promo code here to schedule a two-hour cleaning session that will for sure make you feel good after a busy holiday season. Redeem by 12/31/2026.\""
+      },
+      {
+        "url": "https://www.clorox.com/coupons/",
+        "publisher": "Clorox (clorox.com — official brand domain)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Fetched live a third time on 2026-09-22 (passes 2, 4 and 5). The URL still serves the site's own error page: \"Well, this is embarrassing. We can't find the page you're looking for.\" with links only to \"Go to Clorox home\" and \"Go to all products\". No coupon text of any kind is published at this address."
+      }
+    ],
+    "risk": "medium — the failure mode here is the 'official-looking but unobtainable offer'. A shopper searching for a Clorox coupon finds a Clorox-branded page advertising a free cleaning session, cannot tell from the headline that it is sold out and was never a product coupon, and the issuer's own FAQs still send them to a 404 coupons page. Promo codes from the finished Gift of Clean kits circulate on code farms after the fact, and 'Redeem by 12/31/2026' on a sold-out campaign reads like a live deadline to anyone who did not receive a kit.",
+    "what_would_verify_it": "A Clorox-published offer that (a) discounts a Clorox PRODUCT you buy in a store, (b) is currently obtainable by any shopper rather than issued to a closed list of kit recipients, and (c) lives at a clorox.com URL that resolves to offer text. If clorox.com/coupons/ ever returns coupon content instead of \"Well, this is embarrassing\", each coupon would be transcribed as a level-A entry the way Kellanova's printables and P&G's 112 brandSAVER coupons were."
   }
 ]

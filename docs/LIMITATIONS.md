@@ -13,11 +13,10 @@ stated so a reader can decide how much weight to give a particular entry.
 
 ## 1. The dataset ages in days, not months
 
-The largest single block is 36 P&G brandSAVER coupons whose printed expiries were
-**26–27 September 2026** — four to five days after verification. Every one of them
-carries the flag `expires-imminently`. The Kellanova printables (8 coupons, worth a combined
-$7.00 as the issuer's own page headline confirms — a headline now pinned by a test, and a page
-re-fetched end to end in pass 4) publish **no expiry at all**, so the printed page is the only
+The largest single block is 112 P&G brandSAVER coupons whose printed expiries are
+**26–28 September 2026** — four to six days after verification. Every one of them
+carries the flag `expires-imminently` and, after pass 5, also `retailer-list-published` — the issuer's own FAQ publishes an explicit eight-retailer acceptance list (CVS, Discount Drug Mart, Dorothy Lane Market, Food Depot, Hartig Drug Stores, Lagree's Food Stores, Other Avenues Coop, Western Drug Store), of which only CVS was confirmed to operate Bay Area stores. The Kellanova printables (8 coupons, worth a combined
+$7.00 as the issuer's own page headline confirms when the grid renders — a headline now pinned by a test, but the page in pass 5 intermittently served the grid unpopulated with placeholder tokens for count and savings) publish **no expiry at all**, so the printed page is the only
 authority and re-verification is the only defence. The site computes status
 from the visitor's clock, so dated offers retire themselves without a redeploy, but the
 underlying data is only useful for a few days at a time.
@@ -140,8 +139,11 @@ Cases found and flagged rather than resolved:
 3. **Clorox** — product-page FAQs instruct shoppers to "check the Coupons page", but
    `clorox.com/coupons/` returns a 404 ("Well, this is embarrassing"). Recorded in the link-rot
    note; no Clorox coupon entries are published.
-4. **P&G** — three Crest coupons appear twice on the same brandSAVER page with **two different
-   printed expiries**; both are kept, flagged `source-page-inconsistency` (critical).
+4. **P&G** — seven coupons appear twice on the same brandSAVER page with **two different
+   printed expiries** (Crest $5.00 3DWhitestrips 9/26 vs 9/27, Crest $4.00 Brilliance 9/26 vs 9/27, Crest $2.00 Toothpaste 9/26 vs 9/27, Tampax/Always/This is L. $1.00 9/26 vs 9/27, and three Olay "OFF TWO" body-wash coupons 9/27 vs 9/28); each is kept once with both dates recorded and flagged `source-page-inconsistency` (critical). In pass 5 the issuer's own FAQ also answered "Which retailers accept brandSAVER coupons?" with an eight-retailer list that does NOT include Safeway, Lucky, Andronico's, Walgreens, Target or Walmart — the chains asserted in passes 1–4 — so every P&G entry was corrected, its confidence lowered to medium, and a new policy note `policy-pg-brandsaver-retailer-acceptance` records the correction.
+5. **P&G Back to School Rebate** — the tier-1 terms contradict themselves: heading "Spend $75 and get $25" and bolded requirement say $75, but the body sentence says "purchase $50 worth" (copied from tier 2). Flagged critical and recorded as printed. The terms also say "There are two (2) ways to redeem an Offer" and then enumerate three tiers.
+6. **Kellanova coupon grid** — pass 5 observed the official coupon page serving its grid unpopulated to plain fetch (headline tokens unresolved, print control "PRINT COUPONS0"), because the grid is client-rendered via Quotient.com. The 8 coupons were read earlier the same day when the grid did render and are kept, but the current count could not be re-confirmed in that fetch cycle — flagged `coupon-grid-not-re-readable`.
+7. **Clorox Gift of Clean** — the official Gift of Clean page says "The Clorox Gift of Clean is sold out" — the reward is a two-hour cleaning SERVICE (out of scope for this product-only dataset) and the issuer's coupon hub at clorox.com/coupons/ still 404s. Rejected as `excl-clorox-gift-of-clean-sold-out`.
 
 ## 9. Prices and figures are not guarantees
 
@@ -198,6 +200,6 @@ A flag marks something irregular about the **record**. It cannot mark:
 - an offer that is real but not worth the trip.
 
 The only defence against these is re-verification, which is why
-`.github/workflows/verify.yml` re-checks all 80 unique cited URLs every Monday, files a
+`.github/workflows/verify.yml` re-checks every cited URL every Monday, files a
 `link-rot` issue when one outside the documented log stops resolving, and reports records whose
 `verification.recheck_due` date is inside 7 days (filing a `recheck-due` issue on the weekly run).

@@ -63,15 +63,25 @@ const cards = () => byId.get("cards").children;
 const cardIds = () => cards().map((c) => c.id.replace(/^offer-/, ""));
 const entryById = new Map(entries.map((e) => [e.id, e]));
 
-/* Recompute the app's own status rules here so the assertions are independent. */
+/* Recompute the app's own status rules here so the assertions are independent.
+   Uses the corrected calendar-day logic (UTC midnight floor), matching the
+   fixed assets/js/app.js daysUntil — yesterday is expired, not "today". */
+function daysUntilFixed(iso) {
+  if (!iso) return null;
+  const p = iso.split("-").map(Number);
+  const q = TODAY_ISO.split("-").map(Number);
+  const a = Date.UTC(p[0], p[1] - 1, p[2]);
+  const b = Date.UTC(q[0], q[1] - 1, q[2]);
+  return Math.floor((a - b) / 86400000);
+}
 function expectedStatus(e) {
   if ((e.flags || []).some((f) => f.code === "announced-but-not-live")) return "notlive";
   if (e.bay_area && e.bay_area.available === false) return "notlive";
   if (e.purchase_window && e.purchase_window.end && e.purchase_window.end < TODAY_ISO) return "closed";
   if (e.expires) {
-    if (e.expires < TODAY_ISO) return "expired";
-    const days = Math.round((new RealDate(e.expires + "T23:59:59") - new RealDate(TODAY_ISO + "T00:00:00")) / 86400000);
-    return days <= 7 ? "soon" : "active";
+    const d = daysUntilFixed(e.expires);
+    if (d < 0) return "expired";
+    return d <= 7 ? "soon" : "active";
   }
   return "ongoing";
 }

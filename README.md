@@ -13,11 +13,11 @@ aggregator, a cashback portal, a promo-code site, a listicle or a social-media p
 
 | | |
 | --- | --- |
-| Verified offers | **101** |
-| Rejected / scam-watch claims documented | **17** |
-| Citations | **113** across **41** domains |
-| Verification levels | A: 85 · B: 14 · C: 2 |
-| Irregularities flagged | **208** (12 critical, 142 warning, 54 info) |
+| Verified offers | **185** |
+| Rejected / scam-watch claims documented | **18** |
+| Citations | **204** across **44** domains |
+| Verification levels | A: 169 · B: 14 · C: 2 |
+| Irregularities flagged | **517** (20 critical, 432 warning, 65 info) |
 | All sources checked on | **2026-09-22** |
 
 ---
@@ -27,7 +27,7 @@ aggregator, a cashback portal, a promo-code site, a listicle or a social-media p
 Most coupon sites are affiliate businesses. They republish codes from anywhere, keep expired
 offers live because expired offers still earn clicks, and mix genuine manufacturer coupons with
 promo codes that were never issued by anybody. The result is that a shopper cannot tell a real
-$1.00-off Crest coupon from a fabricated "85% off Smart & Final" code page — among its 17
+$1.00-off Crest coupon from a fabricated "85% off Smart & Final" code page — among its 18
 documented rejections this repository records **five fabricated-code rings** (Round Table Pizza,
 99 Ranch Market, General Mills, Raley's/Smart & Final, Colgate), a family of stale Kellanova
 prize-game terms still served on the official domain, a Trader Joe's phishing vector, and two
@@ -46,7 +46,7 @@ This project takes the opposite position:
    pages (Colgate's two coupon pages disagree), closed purchase windows, expired offers,
    benefits the issuer says are not live yet, and sources that were only partially retrievable
    are all flagged on the card itself.
-5. **Rejections are published too.** Seventeen claims that circulate widely online are documented
+5. **Rejections are published too.** Eighteen claims that circulate widely online are documented
    with the reason they were rejected and the evidence that would change the verdict.
 6. **Every line is checkable by hand.** Each citation stores the URL, the publisher, the page
    title, the retrieval method, the date it was read, and the verbatim passage that was read.
@@ -57,16 +57,16 @@ Categories are the ones the research actually produced, not a generic coupon-sit
 
 | Category | Offers | Notes |
 | --- | --- | --- |
-| Manufacturer digital coupons | 36 | P&G brandSAVER ($0.50–$5.00 off Crest, Tide, Olay, Always, Bounce, Cascade…), clipped to a store loyalty card |
+| Manufacturer digital coupons | 113 | P&G brandSAVER 112 coupons (full harvest: Crest, Tide, Olay, Always, Bounce, Cascade, Downy, Gain, Gillette, Old Spice, Oral-B, Swiffer… $0.75–$10.00, via Coupon24 at CVS) + Kellanova $1-off-two Barcode Buck$ |
 | Restaurant & quick-service loyalty | 16 | McDonald's, Starbucks, Dunkin', Chipotle, Jimmy John's, Baskin-Robbins, Subway — official rewards terms |
+| Bay Area independent grocers & co-ops | 14 | Rainbow Grocery (10% seniors, volume, case, cheese), Mollie Stone's Rewards (1–3% rebate), 4 Items on the 4th (40% off), Sandwich/Salad/Soup clubs, weekly free item |
 | Printable manufacturer coupons | 13 | Coupons.com printables + 8 Kellanova printables read directly from Kellanova's own coupon page |
-| Bay Area independent grocers & co-ops | 11 | Rainbow Grocery, Mollie Stone's — standing product discounts, seniors, volume deals |
-| BOGO & multi-buy | 10 | "OFF TWO"/"any TWO" volume offers from P&G, Kellanova and printables |
-| No-spend & standing perks | 10 | App sign-up freebies and free-to-obtain product perks (free McNuggets, free scoop, senior discount) |
+| BOGO & multi-buy | 13 | "OFF TWO"/"any TWO" volume offers from P&G (Olay, Cascade), Kellanova and the new Kellanova $1-off-two |
+| No-spend & standing perks | 12 | App sign-up freebies and free-to-obtain product perks (free McNuggets, free scoop, senior discount, Mollie's weekly free item, sandwich clubs) |
+| Rebates & cash back | 7 | P&G Back to School rebates ($25/$15/$5 — 3 tiers), P&G × Costco mail-in rebate, Ibotta, Checkout 51 |
+| Policy notes & scam watch | 7 | Trader Joe's no-coupon policy, 2026 insert landscape, link-rot log, social-media sourcing, Colgate suspension, P&G retailer-acceptance correction |
 | Grocery store coupon programs | 7 | Safeway / Andronico's for U, Raley's Something Extra Dollars, Save Mart Rewards, Smart & Final digital coupons, Albertsons banners |
 | Drugstore & pharmacy | 7 | Walgreens, CVS ExtraCare & ExtraCare Plus 20%-off, GoodRx prescription pricing |
-| Policy notes & scam watch | 6 | Trader Joe's no-coupon policy, 2026 insert landscape, link-rot log, social-media sourcing, Colgate suspension |
-| Rebates & cash back | 4 | P&G × Costco mail-in rebate, Ibotta, Checkout 51 |
 | Big-box & mass retail loyalty | 2 | Target Circle, 7-Eleven 7REWARDS |
 | Warehouse club instant savings | 1 | Costco (program mechanics only) |
 | Receipt-scan rewards | 1 | Pop-Tarts Crazy Good Rewards (Kellanova) |
@@ -86,8 +86,8 @@ redemption was itself grounds for rejection this pass (see `excl-rkt-squishmallo
 - **Browse offers** — filter by category, deal type, verification level and status; search
   across brands, offer text, addresses and source domains. Expired and not-yet-redeemable
   offers are hidden by default and can be switched back on.
-- **Irregularities** — all 208 flags grouped by severity, each linking back to the offer.
-- **Rejected & scam watch** — the seventeen claims that were refused, with the reasoning.
+- **Irregularities** — all 517 flags grouped by severity, each linking back to the offer.
+- **Rejected & scam watch** — the eighteen claims that were refused, with the reasoning.
 - **Sources** — every citation, with the evidence passage that was read from it.
 - **How this was verified** — verification levels, retrieval methods, flag severities, the
   nine-county Bay Area definition, and how to reproduce the build.
@@ -173,11 +173,7 @@ re-checks every citation weekly and posts the result as a workflow log/issue-rea
 
 This is not every coupon that exists. It is every product offer that could be **verified against
 an official source during the research passes of 2026-09-22**, plus an explicit record of what was
-rejected and why. Two known freshness facts: the 36 P&G brandSAVER coupons carried printed
-expiries of 26–27 September 2026 (the site marks them expired from those dates automatically, and
-pass 4 re-read 22 of the 36 coupons — 25 offer lines — live with zero drift, while the rest of the
-page's advertised "112 Digital Coupons" still awaits a full-list harvest), and the Kellanova
-printables show no expiry on the page, so the printed coupon is the authority.
+rejected and why. Two known freshness facts: the 112 P&G brandSAVER coupons carried printed expiries of 26–28 September 2026 (the site marks them expired from those dates automatically, and pass 5 re-read all 10 chunks of https://pgbrandsaver.com/coupons/ live — 112 rows, exactly the page's advertised "Search 112 Digital Coupons" headline, with zero drift on the 36 previously transcribed and seven newly documented expiry contradictions), and the Kellanova printables show no expiry on the page, so the printed coupon is the authority. A pass-5 regression was also recorded: kellanovaus.com/us/en/coupons.html now intermittently serves its coupon grid unpopulated to plain fetch (tokens for count and savings left unresolved, print control reading "PRINT COUPONS0"), so its 8 coupons could not be re-confirmed in that fetch cycle — flagged rather than treated as retracted.
 Personalised offers (Safeway for U, Target Circle, Costco Instant Savings, restaurant apps) are
 verified at program level only, because their offers are per-account and cannot be read
 anonymously. Facebook and Instagram could not be searched at all: both require authentication, so
@@ -185,9 +181,7 @@ no social post was read or cited; social platforms were used only to generate le
 verified on an official domain or rejected.
 
 `docs/LIMITATIONS.md` states all of this in full; `docs/ROADMAP.md` lists the next steps,
-starting with completing the monthly manufacturer re-harvest and watching for Colgate's promised
-"updated offers" (its main page was re-fetched twice on 2026-09-22 and still says coupons are
-unavailable).
+starting with the monthly manufacturer re-harvest (now that the P&G 112-row harvest is complete, the headline is pinned by a test) and watching for Colgate's promised "updated offers" (its main page was re-fetched three times on 2026-09-22 and still says coupons are unavailable), plus a new Clorox rejection: the Gift of Clean is sold out and is a service, not a product, while clorox.com/coupons/ still 404s.
 
 ## Licence and disclaimer
 
