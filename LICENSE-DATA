@@ -1,0 +1,34 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Applies to the curated data and documentation in this repository:
+  data/meta.json
+  data/entries/*.json
+  data/coupons.json          (generated)
+  assets/data/coupons.js     (generated)
+  docs/*.md
+  README.md
+
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+Full legal code:         https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt this data for any purpose, including
+commercially, provided you give appropriate credit:
+
+  Attribution: "Bay Area Verified Coupons dataset, buffedlizard55-lab/Coupons,
+  verified <compiled_at date from data/meta.json>, CC BY 4.0"
+  plus a link to https://github.com/buffedlizard55-lab/Coupons
+
+Important conditions on reuse, which are part of the attribution requirement
+rather than additional licence terms:
+
+1. Offer text in this dataset is quoted from third-party issuers. Reusing a
+   quote does not transfer any right in it, and each offer remains subject to
+   the issuer's own terms, availability and expiry.
+2. The verification date travels with the data. An offer verified on one date
+   is not verified on another; always carry `verification.verified_at` and the
+   per-source `accessed` dates forward into any reuse.
+3. Entries in `data/entries/10-excluded-unverified.json` and the policy notes
+   in `data/entries/11-policy-notes.json` document claims that were REJECTED.
+   Reusing them as if they were available offers misrepresents the dataset.
+4. Flags are part of the record. Removing `flags` while keeping `offer_text`
+   strips the caveats the verification produced.
