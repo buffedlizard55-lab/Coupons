@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bay Area Verified Coupons — official-source coupons, rebates and free-admission offers</title>
+<meta name="description" content="A line-by-line verified list of coupons, rebates, BOGO offers, no-spend freebies and free-admission programs redeemable at physical locations in the San Francisco Bay Area. Every offer cites the official source it was read from, with the date it was checked.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">&#10003;</span>
+      <div class="brand-text">
+        <h1>Bay Area Verified Coupons</h1>
+        <p class="tagline">
+          Coupons, rebates, BOGO offers and no-spend freebies redeemable <strong>in person</strong> in the
+          San Francisco Bay Area &mdash; each one read from the issuer&rsquo;s own website, never from an
+          aggregator or a promo-code site.
+        </p>
+      </div>
+    </div>
+    <dl class="stat-strip" id="stat-strip" aria-label="Dataset summary"></dl>
+  </div>
+
+  <nav class="tabs wrap" aria-label="Sections">
+    <button class="tab is-active" data-view="browse" aria-current="page">Browse offers</button>
+    <button class="tab" data-view="flags">Irregularities <span class="tab-count" id="tab-count-flags"></span></button>
+    <button class="tab" data-view="excluded">Rejected &amp; scam watch <span class="tab-count" id="tab-count-excluded"></span></button>
+    <button class="tab" data-view="sources">Sources</button>
+    <button class="tab" data-view="method">How this was verified</button>
+    <button class="tab" data-view="next">Limits &amp; next work</button>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+
+  <!-- ============================ BROWSE ============================ -->
+  <section id="view-browse" class="view is-active" aria-labelledby="browse-h">
+    <h2 id="browse-h" class="sr-only">Browse verified offers</h2>
+
+    <div class="toolbar">
+      <div class="search">
+        <label class="sr-only" for="q">Search offers, brands, merchants and source domains</label>
+        <input id="q" type="search" placeholder="Search brand, item, address or source&hellip;" autocomplete="off">
+        <button type="button" class="clear-search" id="clear-q" hidden>Clear</button>
+      </div>
+
+      <div class="toolbar-controls">
+        <label class="sr-only" for="sort">Sort offers</label>
+        <select id="sort">
+          <option value="status">Sort: usable first</option>
+          <option value="expiry">Sort: expiry date</option>
+          <option value="value" title="Rough ordering: free offers first, then dollar values, then percentages, then points converted at 100 points = $1">Sort: largest stated value</option>
+          <option value="category">Sort: category</option>
+          <option value="merchant">Sort: merchant A&ndash;Z</option>
+        </select>
+
+        <label class="switch"><input type="checkbox" id="hide-expired" checked> Hide expired</label>
+        <label class="switch"><input type="checkbox" id="hide-unavailable" checked> Hide not redeemable</label>
+        <label class="switch"><input type="checkbox" id="only-flagged"> Flagged only</label>
+        <label class="switch"><input type="checkbox" id="only-no-spend"> No-spend only</label>
+      </div>
+    </div>
+
+    <div class="layout">
+      <aside class="filters" aria-label="Filters">
+        <details open>
+          <summary>Category <span class="hint" id="cat-hint"></span></summary>
+          <div class="chip-group" id="cat-filters"></div>
+        </details>
+        <details>
+          <summary>Deal type</summary>
+          <div class="chip-group" id="deal-filters"></div>
+        </details>
+        <details>
+          <summary>Verification level</summary>
+          <div class="chip-group" id="level-filters"></div>
+          <p class="filter-note" id="level-note"></p>
+        </details>
+        <details>
+          <summary>Status</summary>
+          <div class="chip-group" id="status-filters"></div>
+        </details>
+        <div class="filter-actions">
+          <button type="button" class="btn-ghost" id="reset-filters">Reset all filters</button>
+        </div>
+      </aside>
+
+      <div class="results">
+        <p class="results-meta" id="results-meta" role="status" aria-live="polite"></p>
+        <div class="cards" id="cards"></div>
+        <p class="empty" id="empty-state" hidden>No offers match those filters. Try clearing the search box or resetting filters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FLAGS ============================ -->
+  <section id="view-flags" class="view" aria-labelledby="flags-h" hidden>
+    <h2 id="flags-h">Irregularities flagged for review</h2>
+    <p class="lede">
+      Anything that looked wrong, contradictory, stale or time-critical during verification is listed here rather
+      than being quietly dropped. Severity meanings are defined in
+      <code>data/meta.json</code> and reproduced below each flag.
+    </p>
+    <div id="flag-summary" class="summary-grid"></div>
+    <div id="flag-list"></div>
+  </section>
+
+  <!-- ============================ EXCLUDED ============================ -->
+  <section id="view-excluded" class="view" aria-labelledby="excluded-h" hidden>
+    <h2 id="excluded-h">Rejected &amp; scam watch</h2>
+    <p class="lede">
+      These offers <strong>circulate online but are not published by the party that would have to honour them</strong>,
+      or they contradict the issuer&rsquo;s own page. Each record shows what was claimed, where it was found,
+      why it was rejected and exactly what evidence would change the verdict. Nothing here is recommended.
+    </p>
+    <div id="excluded-list"></div>
+  </section>
+
+  <!-- ============================ SOURCES ============================ -->
+  <section id="view-sources" class="view" aria-labelledby="sources-h" hidden>
+    <h2 id="sources-h">Sources used for manual review</h2>
+    <p class="lede">
+      Every citation in the dataset, grouped by publisher. Open any link to check the offer yourself; the
+      <em>evidence</em> text recorded next to each one is the passage that was read on the verification date.
+    </p>
+    <div id="source-groups"></div>
+  </section>
+
+  <!-- ============================ METHOD ============================ -->
+  <section id="view-method" class="view" aria-labelledby="method-h" hidden>
+    <h2 id="method-h">How this was verified</h2>
+    <div class="prose" id="method-prose"></div>
+  </section>
+
+  <!-- ============================ NEXT ============================ -->
+  <section id="view-next" class="view" aria-labelledby="next-h" hidden>
+    <h2 id="next-h">Limitations &amp; what to do next</h2>
+    <div class="prose" id="next-prose"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>
+      Independent research project. Not affiliated with, endorsed by or sponsored by any retailer, manufacturer,
+      restaurant, museum or agency named here. All trademarks belong to their owners. Offer text is quoted for
+      identification and review.
+    </p>
+    <p class="footer-meta" id="footer-meta"></p>
+    <p>
+      Dataset: <a href="data/coupons.json">data/coupons.json</a> &middot;
+      Repository: <a href="https://github.com/buffedlizard55-lab/Coupons">buffedlizard55-lab/Coupons</a> &middot;
+      Method: <a href="https://github.com/buffedlizard55-lab/Coupons/blob/main/docs/METHODOLOGY.md">METHODOLOGY.md</a>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/data/coupons.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

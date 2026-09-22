@@ -1,0 +1,862 @@
+[
+  {
+    "id": "rainbow-grocery-seniors-10",
+    "title": "Rainbow Grocery: Seniors (60+ with ID) 10% off everything",
+    "merchant": "Rainbow Grocery Cooperative",
+    "publisher": "Rainbow Grocery Cooperative — rainbow.coop",
+    "categories": [
+      "local-independent",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "percent_off"
+    ],
+    "value": {
+      "amount": 10.0,
+      "unit": "percent",
+      "currency": null,
+      "kind": "percent_off"
+    },
+    "offer_text": "Seniors (60+ with ID): 10% off everything* — *These discounts override any case discount applied to individual items. Please let the cashier know at the beginning of your transaction that you are planning to use any of the following discounts. All discounts are added before tax is applied. These discounts are in-store only and cannot be applied to third party services including delivery.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Published under the heading 'Honored Every Day' — a standing, undated discount.",
+    "requirements": [
+      "Age 60 or over with ID",
+      "Tell the cashier at the START of the transaction",
+      "In-store only; not valid for delivery or third-party services"
+    ],
+    "venue": {
+      "name": "Rainbow Grocery Cooperative, Inc.",
+      "address": "San Francisco, CA 94103 (13th Street entrance; additional parking lot at the corner of 14th and Trainor Street)",
+      "hours": "9am to 9pm every day other than holidays",
+      "phone": "(415) 863-0620",
+      "website": "https://rainbow.coop/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Single physical store in San Francisco (94103), reachable on Muni lines 9/9R, 12, 14/14R, 22, 27, 33, 49 and 55 per the store's own page. Free 2-hour parking in the garage in front of the 13th Street entrance.",
+      "physical_locations": [
+        "Rainbow Grocery Cooperative, San Francisco, CA 94103"
+      ],
+      "locator_url": "https://rainbow.coop/contact/"
+    },
+    "sources": [
+      {
+        "url": "https://rainbow.coop/contact/",
+        "title": "Contact – Rainbow Grocery Cooperative",
+        "publisher": "Rainbow Grocery Cooperative, Inc.",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Every Day Discounts' section read verbatim, including the 'Honored Every Day' list ('Seniors (60+ with ID): 10% off everything*'), the transaction instruction, the pre-tax note, the in-store-only restriction, the address block ('Rainbow Grocery Cooperative, Inc. San Francisco CA, 94103'), hours ('9am to 9pm every day other than holidays'), phone ('(415) 863-0620') and the Muni lines list."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Discount depth, eligibility and redemption procedure read verbatim from the grocer's own site",
+        "Physical address, hours and phone confirmed on the same page",
+        "Standing 'every day' discount, so no expiry applies"
+      ]
+    },
+    "flags": [
+      {
+        "code": "interaction-overrides",
+        "severity": "info",
+        "detail": "The store states these discounts 'override any case discount applied to individual items', so the 10% senior discount cannot be stacked with the case/volume discounts listed separately in this dataset."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "senior",
+      "san-francisco",
+      "in-store-only"
+    ]
+  },
+  {
+    "id": "rainbow-grocery-nobawc-10",
+    "title": "Rainbow Grocery: NOBAWC members 10% off everything",
+    "merchant": "Rainbow Grocery Cooperative",
+    "publisher": "Rainbow Grocery Cooperative — rainbow.coop",
+    "categories": [
+      "local-independent"
+    ],
+    "deal_types": [
+      "percent_off"
+    ],
+    "value": {
+      "amount": 10.0,
+      "unit": "percent",
+      "currency": null,
+      "kind": "percent_off"
+    },
+    "offer_text": "NOBAWC members: 10% off everything* — *These discounts override any case discount applied to individual items.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Published under 'Honored Every Day'.",
+    "requirements": [
+      "NOBAWC membership",
+      "Tell the cashier at the start of the transaction",
+      "In-store only"
+    ],
+    "venue": {
+      "name": "Rainbow Grocery Cooperative, Inc.",
+      "address": "San Francisco, CA 94103",
+      "hours": "9am to 9pm every day other than holidays",
+      "phone": "(415) 863-0620",
+      "website": "https://rainbow.coop/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Single physical store in San Francisco.",
+      "physical_locations": [
+        "Rainbow Grocery Cooperative, San Francisco, CA 94103"
+      ],
+      "locator_url": "https://rainbow.coop/contact/"
+    },
+    "sources": [
+      {
+        "url": "https://rainbow.coop/contact/",
+        "title": "Contact – Rainbow Grocery Cooperative",
+        "publisher": "Rainbow Grocery Cooperative, Inc.",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Honored Every Day' list read verbatim: 'NOBAWC members: 10% off everything*'."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Discount and eligibility label read verbatim from the grocer's own site",
+        "Eligibility acronym could not be expanded from the source page (see flags)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-term-undefined",
+        "severity": "warning",
+        "detail": "The source page uses the acronym 'NOBAWC' without defining it and without explaining how a shopper becomes a member. No expansion is guessed here. Ask at the store's service desk who qualifies before relying on this discount."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "san-francisco",
+      "member-discount"
+    ]
+  },
+  {
+    "id": "rainbow-grocery-helping-hands",
+    "title": "Rainbow Grocery: Helping Hands 10% off groceries / 20% off vitamins",
+    "merchant": "Rainbow Grocery Cooperative",
+    "publisher": "Rainbow Grocery Cooperative — rainbow.coop",
+    "categories": [
+      "local-independent"
+    ],
+    "deal_types": [
+      "percent_off"
+    ],
+    "value": {
+      "amount": 10.0,
+      "unit": "percent",
+      "currency": null,
+      "kind": "percent_off"
+    },
+    "offer_text": "Helping Hands: 10% off groceries/20% off vitamins* — *These discounts override any case discount applied to individual items.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Published under 'Honored Every Day'.",
+    "requirements": [
+      "Qualify for the store's 'Helping Hands' program",
+      "Tell the cashier at the start of the transaction",
+      "In-store only"
+    ],
+    "venue": {
+      "name": "Rainbow Grocery Cooperative, Inc.",
+      "address": "San Francisco, CA 94103",
+      "hours": "9am to 9pm every day other than holidays",
+      "phone": "(415) 863-0620",
+      "website": "https://rainbow.coop/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Single physical store in San Francisco.",
+      "physical_locations": [
+        "Rainbow Grocery Cooperative, San Francisco, CA 94103"
+      ],
+      "locator_url": "https://rainbow.coop/contact/"
+    },
+    "sources": [
+      {
+        "url": "https://rainbow.coop/contact/",
+        "title": "Contact – Rainbow Grocery Cooperative",
+        "publisher": "Rainbow Grocery Cooperative, Inc.",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Honored Every Day' list read verbatim: 'Helping Hands: 10% off groceries/20% off vitamins*'."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Both discount depths read verbatim from the grocer's own site",
+        "Eligibility criteria for 'Helping Hands' are not described on the page (see flags)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "eligibility-criteria-unpublished",
+        "severity": "warning",
+        "detail": "The page names the 'Helping Hands' discount but does not publish who qualifies or how to enroll. No eligibility rule is invented here; confirm with the store."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "vitamins",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "rainbow-grocery-volume-bath-body-vitamins",
+    "title": "Rainbow Grocery: spend $100/$200/$400 in Bath & Body or Vitamins, save 10%/15%/20%",
+    "merchant": "Rainbow Grocery Cooperative",
+    "publisher": "Rainbow Grocery Cooperative — rainbow.coop",
+    "categories": [
+      "local-independent"
+    ],
+    "deal_types": [
+      "percent_off",
+      "volume_discount"
+    ],
+    "value": {
+      "amount": 20.0,
+      "unit": "percent",
+      "currency": null,
+      "kind": "percent_off"
+    },
+    "offer_text": "Bath & Body / Vitamins & Supplements Volume Discounts — Spend $100 before tax: Save 10%**. Spend $200 before tax: Save 15%**. Spend $400 before tax: Save 20%**. **Discount applied to each department separately.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing volume discount published on the store's own page.",
+    "requirements": [
+      "Spend threshold measured BEFORE tax, within a single department",
+      "Applies to Bath & Body and Vitamins & Supplements only",
+      "In-store only"
+    ],
+    "venue": {
+      "name": "Rainbow Grocery Cooperative, Inc.",
+      "address": "San Francisco, CA 94103",
+      "hours": "9am to 9pm every day other than holidays",
+      "phone": "(415) 863-0620",
+      "website": "https://rainbow.coop/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Single physical store in San Francisco.",
+      "physical_locations": [
+        "Rainbow Grocery Cooperative, San Francisco, CA 94103"
+      ],
+      "locator_url": "https://rainbow.coop/contact/"
+    },
+    "sources": [
+      {
+        "url": "https://rainbow.coop/contact/",
+        "title": "Contact – Rainbow Grocery Cooperative",
+        "publisher": "Rainbow Grocery Cooperative, Inc.",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Volume-discount table read verbatim, including the footnote '**Discount applied to each department separately'."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "All three thresholds and percentages read verbatim",
+        "Pre-tax measurement basis read verbatim",
+        "Per-department limitation read verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "spend-threshold",
+        "severity": "info",
+        "detail": "This is NOT a no-spend offer: it requires a $100+ pre-tax purchase inside one department. It is included because it is a genuine, stable, published discount with a physical redemption point."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "vitamins",
+      "volume-discount",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "rainbow-grocery-cheese-discounts",
+    "title": "Rainbow Grocery: cheese volume discounts (10% and 15%)",
+    "merchant": "Rainbow Grocery Cooperative",
+    "publisher": "Rainbow Grocery Cooperative — rainbow.coop",
+    "categories": [
+      "local-independent"
+    ],
+    "deal_types": [
+      "percent_off",
+      "volume_discount"
+    ],
+    "value": {
+      "amount": 15.0,
+      "unit": "percent",
+      "currency": null,
+      "kind": "percent_off"
+    },
+    "offer_text": "Cheese — Cut pieces of over 2 lbs.: 10% off. Whole wheel between 1 lb. and 5 lbs.: 10% off. Whole wheel 5 lbs. or more: 15% off.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing discount published on the store's own page.",
+    "requirements": [
+      "Weight thresholds as printed",
+      "In-store only"
+    ],
+    "venue": {
+      "name": "Rainbow Grocery Cooperative, Inc.",
+      "address": "San Francisco, CA 94103",
+      "hours": "9am to 9pm every day other than holidays",
+      "phone": "(415) 863-0620",
+      "website": "https://rainbow.coop/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Single physical store in San Francisco; the cheese department is cut to order in store.",
+      "physical_locations": [
+        "Rainbow Grocery Cooperative, San Francisco, CA 94103"
+      ],
+      "locator_url": "https://rainbow.coop/contact/"
+    },
+    "sources": [
+      {
+        "url": "https://rainbow.coop/contact/",
+        "title": "Contact – Rainbow Grocery Cooperative",
+        "publisher": "Rainbow Grocery Cooperative, Inc.",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Cheese discount table read verbatim: 'Cut pieces of over 2 lbs.: 10% off', 'Whole wheel between 1 lb. and 5 lbs.: 10% off', 'Whole wheel 5 lbs. or more: 15% off'."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "All three weight bands and percentages read verbatim from the grocer's own site",
+        "Store hours and telephone number read verbatim from the co-op's own contact page",
+        "No end date is published for the cheese bands, so the offer is stored as ongoing standing policy rather than given an invented deadline"
+      ]
+    },
+    "flags": [
+      {
+        "code": "address-incomplete",
+        "severity": "warning",
+        "detail": "The retrieved contact page yielded city, ZIP and telephone number but the street address was not captured into this record. Confirm the street address on rainbow.coop/contact before travelling; the discount is applied at the in-store cheese counter, which is cut to order."
+      },
+      {
+        "code": "no-published-expiry",
+        "severity": "warning",
+        "detail": "Rainbow Grocery publishes no end date for the cheese weight-band discounts, so a change or withdrawal would not be visible from the offer text alone. Re-check the contact/discount page before relying on it."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "cheese",
+      "volume-discount",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "rainbow-grocery-wine-6-bottles",
+    "title": "Rainbow Grocery: buy 6 or more bottles of wine, save 10%",
+    "merchant": "Rainbow Grocery Cooperative",
+    "publisher": "Rainbow Grocery Cooperative — rainbow.coop",
+    "categories": [
+      "local-independent",
+      "bogo-multi-buy"
+    ],
+    "deal_types": [
+      "percent_off",
+      "volume_discount"
+    ],
+    "value": {
+      "amount": 10.0,
+      "unit": "percent",
+      "currency": null,
+      "kind": "percent_off"
+    },
+    "offer_text": "Volume Discounts — Wine: Buy 6 or more bottles: 10% off. Packaged Food: WHOLE Cases (cases vary in quantity): 10% off.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing discount published on the store's own page.",
+    "requirements": [
+      "Six or more bottles of wine in one transaction",
+      "In-store only"
+    ],
+    "venue": {
+      "name": "Rainbow Grocery Cooperative, Inc.",
+      "address": "San Francisco, CA 94103",
+      "hours": "9am to 9pm every day other than holidays",
+      "phone": "(415) 863-0620",
+      "website": "https://rainbow.coop/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Single physical store in San Francisco.",
+      "physical_locations": [
+        "Rainbow Grocery Cooperative, San Francisco, CA 94103"
+      ],
+      "locator_url": "https://rainbow.coop/contact/"
+    },
+    "sources": [
+      {
+        "url": "https://rainbow.coop/contact/",
+        "title": "Contact – Rainbow Grocery Cooperative",
+        "publisher": "Rainbow Grocery Cooperative, Inc.",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Volume Discounts' block read verbatim: 'Wine: Buy 6 or more bottles: 10% off'."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Quantity threshold and percentage read verbatim from the co-op's own 'Volume Discounts' block",
+        "The packaged-food whole-case discount published in the same block is transcribed with it, so the wine offer is not quoted out of context",
+        "No end date is published for the volume discounts, so the offer is stored as ongoing standing policy rather than given an invented deadline"
+      ]
+    },
+    "flags": [
+      {
+        "code": "age-restricted",
+        "severity": "info",
+        "detail": "Alcohol purchase; standard California age verification applies at the register."
+      },
+      {
+        "code": "no-published-expiry",
+        "severity": "warning",
+        "detail": "Rainbow Grocery publishes no end date for the wine volume discount, so a change or withdrawal would not be visible from the offer text alone. Re-check rainbow.coop/contact before relying on it."
+      }
+    ],
+    "tags": [
+      "wine",
+      "volume-discount",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "rainbow-grocery-whole-cases-10",
+    "title": "Rainbow Grocery: 10% off whole cases of packaged food",
+    "merchant": "Rainbow Grocery Cooperative",
+    "publisher": "Rainbow Grocery Cooperative — rainbow.coop",
+    "categories": [
+      "local-independent"
+    ],
+    "deal_types": [
+      "percent_off",
+      "volume_discount"
+    ],
+    "value": {
+      "amount": 10.0,
+      "unit": "percent",
+      "currency": null,
+      "kind": "percent_off"
+    },
+    "offer_text": "Volume Discounts — Packaged Food: WHOLE Cases (cases vary in quantity): 10% off.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing discount published on the store's own page.",
+    "requirements": [
+      "Purchase a WHOLE case (case quantities vary by product)",
+      "In-store only"
+    ],
+    "venue": {
+      "name": "Rainbow Grocery Cooperative, Inc.",
+      "address": "San Francisco, CA 94103",
+      "hours": "9am to 9pm every day other than holidays",
+      "phone": "(415) 863-0620",
+      "website": "https://rainbow.coop/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Single physical store in San Francisco.",
+      "physical_locations": [
+        "Rainbow Grocery Cooperative, San Francisco, CA 94103"
+      ],
+      "locator_url": "https://rainbow.coop/contact/"
+    },
+    "sources": [
+      {
+        "url": "https://rainbow.coop/contact/",
+        "title": "Contact – Rainbow Grocery Cooperative",
+        "publisher": "Rainbow Grocery Cooperative, Inc.",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Volume Discounts' block read verbatim: 'Packaged Food: WHOLE Cases (cases vary in quantity): 10% off'."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Whole-case requirement and percentage read verbatim from the co-op's own 'Volume Discounts' block",
+        "The store's published interaction rule was checked: 'Honored Every Day' discounts override any case discount, so this offer cannot be stacked with them (recorded as a flag rather than left implicit)",
+        "No end date is published for the volume discounts, so the offer is stored as ongoing standing policy rather than given an invented deadline"
+      ]
+    },
+    "flags": [
+      {
+        "code": "overridden-by-everyday-discounts",
+        "severity": "info",
+        "detail": "The store's 'Honored Every Day' discounts (seniors 60+, NOBAWC, Helping Hands) explicitly 'override any case discount applied to individual items', so this 10% cannot be combined with them."
+      },
+      {
+        "code": "no-published-expiry",
+        "severity": "warning",
+        "detail": "Rainbow Grocery publishes no end date for the whole-case packaged food discount, so a change or withdrawal would not be visible from the offer text alone. Re-check rainbow.coop/contact before relying on it."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "bulk",
+      "volume-discount",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "rainbow-grocery-reusable-container-5c",
+    "title": "Rainbow Grocery: 5 cents off for each container you reuse",
+    "merchant": "Rainbow Grocery Cooperative",
+    "publisher": "Rainbow Grocery Cooperative — rainbow.coop",
+    "categories": [
+      "local-independent",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "dollar_off"
+    ],
+    "value": {
+      "amount": 0.05,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "dollar_off"
+    },
+    "offer_text": "We also give 5 cents off for each container you reuse for Bulk, Bakery, or Produce items.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing discount published on the store's own page.",
+    "requirements": [
+      "Bring your own clean container",
+      "Use it for Bulk, Bakery or Produce items",
+      "Tell the cashier at the beginning of the transaction",
+      "In-store only"
+    ],
+    "venue": {
+      "name": "Rainbow Grocery Cooperative, Inc.",
+      "address": "San Francisco, CA 94103",
+      "hours": "9am to 9pm every day other than holidays",
+      "phone": "(415) 863-0620",
+      "website": "https://rainbow.coop/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Single physical store in San Francisco.",
+      "physical_locations": [
+        "Rainbow Grocery Cooperative, San Francisco, CA 94103"
+      ],
+      "locator_url": "https://rainbow.coop/contact/"
+    },
+    "sources": [
+      {
+        "url": "https://rainbow.coop/contact/",
+        "title": "Contact – Rainbow Grocery Cooperative",
+        "publisher": "Rainbow Grocery Cooperative, Inc.",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Read verbatim from the 'Every Day Discounts' section: 'We also give 5 cents off for each container you reuse for Bulk, Bakery, or Produce items.'"
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Credit amount and qualifying departments read verbatim from the 'Every Day Discounts' section",
+        "Confirmed the credit is a per-container reduction applied at the register, not a loyalty-account credit, so no membership or app is required",
+        "No end date is published, so the offer is stored as ongoing standing policy rather than given an invented deadline"
+      ]
+    },
+    "flags": [
+      {
+        "code": "small-value",
+        "severity": "info",
+        "detail": "5 cents per container. Included because it is a genuine no-spend credit that requires nothing but a reusable container, and because it is one of the few Bay Area offers with a fixed published value that never expires."
+      },
+      {
+        "code": "no-published-expiry",
+        "severity": "warning",
+        "detail": "Rainbow Grocery publishes no end date for the 5-cent reusable-container credit, so a change or withdrawal would not be visible from the offer text alone. Re-check rainbow.coop/contact before relying on it."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "zero-waste",
+      "san-francisco"
+    ]
+  },
+  {
+    "id": "rainbow-grocery-community-discount-pilot",
+    "title": "Rainbow Grocery: 10% Community Discount pilot for benefit recipients (NOT LIVE YET)",
+    "merchant": "Rainbow Grocery Cooperative",
+    "publisher": "Rainbow Grocery Cooperative — rainbow.coop",
+    "categories": [
+      "local-independent",
+      "community-access"
+    ],
+    "deal_types": [
+      "percent_off"
+    ],
+    "value": {
+      "amount": 10.0,
+      "unit": "percent",
+      "currency": null,
+      "kind": "percent_off"
+    },
+    "offer_text": "Community Discount Pilot Program* — *This promotion is not live yet. We will announce when we launch this 6-month pilot program. Customers who qualify for one of the following reasons will receive a 10% discount on their entire purchase. There are no double discounts. 10% Community Discount Eligibility List: CALFRESH/SNAP, EBT; WIC; Medi-Cal/Medicaid; California State Disability Insurance (SDI) and other Disability Assistance Programs; Experiencing Houselessness (will not require proof); Experiencing financial hardship due to ICE related issues (will not require proof); California Work Opportunity and Responsibility to Kids (CalWORKs); Cash Assistance Program for Immigrants (CAPI); Low-income Home Energy Assistance Program (HEAP); Supplemental Security Income Program (SSI); Temporary Assistance for Needy Families (TANF). Please let your cashier know if you qualify for the Community Discount. We do not require proof of eligibility.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Announced as a six-month pilot that had not launched as of the verification date.",
+    "requirements": [
+      "Qualify under one of the published eligibility categories",
+      "Tell the cashier; the store states it does not require proof of eligibility",
+      "No double discounts"
+    ],
+    "venue": {
+      "name": "Rainbow Grocery Cooperative, Inc.",
+      "address": "San Francisco, CA 94103",
+      "hours": "9am to 9pm every day other than holidays",
+      "phone": "(415) 863-0620",
+      "website": "https://rainbow.coop/"
+    },
+    "bay_area": {
+      "available": false,
+      "confidence": "high",
+      "note": "Single physical store in San Francisco, but the discount is explicitly not live yet as of 2026-09-22, so it cannot be redeemed today.",
+      "physical_locations": [
+        "Rainbow Grocery Cooperative, San Francisco, CA 94103"
+      ],
+      "locator_url": "https://rainbow.coop/contact/"
+    },
+    "sources": [
+      {
+        "url": "https://rainbow.coop/contact/",
+        "title": "Contact – Rainbow Grocery Cooperative",
+        "publisher": "Rainbow Grocery Cooperative, Inc.",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Entire 'Community Discount Pilot Program' block read verbatim, including the notice '*This promotion is not live yet. We will announce when we launch this 6-month pilot program.' and the full 11-item eligibility list."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Eligibility list and discount depth read verbatim",
+        "Launch status read verbatim and found to be NOT LIVE",
+        "bay_area.available deliberately set to false because the offer cannot be redeemed yet"
+      ]
+    },
+    "flags": [
+      {
+        "code": "announced-but-not-live",
+        "severity": "critical",
+        "detail": "The retailer's own page states 'This promotion is not live yet.' Publishing it as an available discount would be a false claim, so it is recorded with available=false and kept visible only so reviewers can see it was checked. Re-check rainbow.coop for the launch announcement."
+      },
+      {
+        "code": "no-proof-required",
+        "severity": "info",
+        "detail": "Unusually, the store states it 'does not require proof of eligibility' and asks customers to request the discount only if they are eligible. Two of the listed categories (houselessness and ICE-related financial hardship) explicitly require no proof."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "means-tested",
+      "san-francisco",
+      "not-live"
+    ]
+  },
+  {
+    "id": "rainbow-grocery-fsa-hsa-accepted",
+    "title": "Rainbow Grocery now accepts FSA/HSA cards for eligible items",
+    "merchant": "Rainbow Grocery Cooperative",
+    "publisher": "Rainbow Grocery Cooperative — rainbow.coop",
+    "categories": [
+      "local-independent",
+      "drugstore-pharmacy"
+    ],
+    "deal_types": [
+      "policy"
+    ],
+    "value": null,
+    "offer_text": "As of 2/23/26, we now accept FSA/HSA Cards for eligible items! Come shop at Rainbow Grocery and use your pre-tax dollars on your health care products! At checkout, use your HSA/FSA card as your first payment method. If you have any questions about what products are eligible, please contact your card administrator.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Payment-method change effective 2026-02-23; no end date published.",
+    "requirements": [
+      "Eligible items only",
+      "Use the FSA/HSA card as the FIRST payment method at checkout"
+    ],
+    "venue": {
+      "name": "Rainbow Grocery Cooperative, Inc.",
+      "address": "San Francisco, CA 94103",
+      "hours": "9am to 9pm every day other than holidays",
+      "phone": "(415) 863-0620",
+      "website": "https://rainbow.coop/"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Single physical store in San Francisco.",
+      "physical_locations": [
+        "Rainbow Grocery Cooperative, San Francisco, CA 94103"
+      ],
+      "locator_url": "https://rainbow.coop/contact/"
+    },
+    "sources": [
+      {
+        "url": "https://rainbow.coop/contact/",
+        "title": "Contact – Rainbow Grocery Cooperative",
+        "publisher": "Rainbow Grocery Cooperative, Inc.",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'FSA/HSA Payment Cards' section read verbatim, including the effective date 'As of 2/23/26'."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Effective date and payment-order instruction read verbatim",
+        "The published effective date (2/23/26) precedes the verification date, so the change is already in force rather than merely announced",
+        "Product-level eligibility is delegated by the store to the card administrator, so no list of eligible products is asserted here"
+      ]
+    },
+    "flags": [
+      {
+        "code": "not-a-discount",
+        "severity": "info",
+        "detail": "This is a payment-method change, not a coupon. It is listed because it converts pre-tax dollars into real savings on eligible health products at a physical Bay Area store, and because the store publishes an explicit effective date."
+      }
+    ],
+    "tags": [
+      "health",
+      "fsa-hsa",
+      "san-francisco",
+      "policy"
+    ]
+  },
+  {
+    "id": "mollie-stones-rewards-rebate",
+    "title": "Mollie Stone's Rewards — 1% / 2% / 3% rebate on monthly spending",
+    "merchant": "Mollie Stone's Market",
+    "publisher": "Mollie Stone's Markets — molliestones.com",
+    "categories": [
+      "local-independent",
+      "rebate-cashback"
+    ],
+    "deal_types": [
+      "rebate",
+      "rewards_credit"
+    ],
+    "value": {
+      "amount": 3.0,
+      "unit": "percent",
+      "currency": null,
+      "kind": "rebate"
+    },
+    "offer_text": "Mollie's Rewards is a loyalty program operated by Mollie Stone's Markets. The Program allows members to earn rebates on qualifying purchases and redeem rewards in-store. Members earn rebates based on monthly spending levels with three tiers: Gold Tier: 1% rebate on purchases totaling $0 – $299.99; Platinum Tier: 2% rebate on purchases totaling $300 – $499.99; Diamond Tier: 3% rebate on purchases totaling $500 and above. Once the Diamond Tier ($500+) has been reached, all purchases for that month, going back to the first dollar ($1) will be rewarded at the 3% rate. Twice a year (During the months of January and July) members will receive a store credit voucher, sent in the mail, to the address on file ... Rewards can only be redeemed in the form of store credit voucher for use on in-store purchases. ... Voucher valid at all 9 Mollie Stone's Markets. Members must have a minimum of $10 worth of Mollie's Rewards Dollars in their rewards account to qualify for a Mollie's Rewards credit voucher.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing program; vouchers are issued twice a year (January and July) and each voucher carries its own printed expiry.",
+    "requirements": [
+      "Enroll online BEFORE checkout (free, age 18+)",
+      "Enter your phone number at the register for every purchase",
+      "Purchases must be made in-store to qualify",
+      "Minimum $10 in Rewards Dollars to receive a voucher",
+      "The full voucher amount must be used in a single in-store transaction",
+      "Any unused amount resets to zero the day before the next voucher is mailed"
+    ],
+    "venue": {
+      "name": "Mollie Stone's Market (9 locations)",
+      "address": "Nine Mollie Stone's Markets in the San Francisco Bay Area (the store count '9' is stated in the program terms; a store list page was not reachable — see flags)",
+      "hours": null,
+      "phone": "415-942-7959",
+      "website": "https://www.molliestones.com/rewards"
+    },
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "The program terms state the voucher is 'valid at all 9 Mollie Stone's Markets', a Bay Area specialty grocer with stores in San Francisco and the Peninsula. Rebates are earned on in-store purchases only.",
+      "physical_locations": null,
+      "locator_url": "https://www.molliestones.com/"
+    },
+    "sources": [
+      {
+        "url": "https://molliestones.com/rewards/terms-and-conditions/",
+        "title": "Rewards Terms and Conditions - Mollie Stone's Markets",
+        "publisher": "Mollie Stone's Markets — official program terms",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Tier structure, voucher schedule, redemption rules, $10 minimum, single-transaction rule, '9 Mollie Stone's Markets', signup channels, customer-service phone (415-942-7959) and rewards@molliestones.com all read verbatim from the official terms page. Also read verbatim: 'Mollie Stone's Team Members are excluded from this program. Team members qualify for a 20% Team Member Discount.' and '$20 signup bonus, that may be offered from time to time, must be used on a purchase over $20 on the next shop after signing up.'"
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "All three rebate tiers and their spend bands read verbatim",
+        "Voucher issuance months, minimum threshold and single-transaction rule read verbatim",
+        "Store count read verbatim from the terms",
+        "Stale date found inside the official terms (see flags)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "source-page-stale-date",
+        "severity": "warning",
+        "detail": "The official terms page states 'The Rewards Vouchers issued this July have an expiration date, of September 15, 2025' — a 2025 date inside a page that otherwise describes ongoing operation. The page has not been fully refreshed, so the current voucher expiry must be read off the physical voucher. No expiry is asserted in this dataset."
+      },
+      {
+        "code": "store-list-url-broken",
+        "severity": "warning",
+        "detail": "molliestones.com/stores/ returned the site's own 'Page not found' on 2026-09-22, so the nine individual store addresses could not be enumerated from the official site. Only the count of 9 stores, which appears in the program terms, is asserted."
+      },
+      {
+        "code": "signup-bonus-conditional",
+        "severity": "info",
+        "detail": "The $20 signup bonus is described as something that 'may be offered from time to time', i.e. it is not always running. It is not asserted as currently available."
+      }
+    ],
+    "tags": [
+      "grocery",
+      "rebate",
+      "bay-area",
+      "san-francisco",
+      "peninsula"
+    ]
+  }
+]

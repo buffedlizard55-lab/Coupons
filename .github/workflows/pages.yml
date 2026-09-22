@@ -1,0 +1,128 @@
+name: Build and publish site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: read
+  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+# Publishing works with either GitHub Pages configuration:
+#
+#   * "Deploy from a branch" (main, root)  -> GitHub serves the committed root files
+#     (index.html, assets/, data/, .nojekyll) as soon as this branch merges. Nothing
+#     needs uploading, so the deploy job is skipped.
+#   * "GitHub Actions"                     -> _site is uploaded as the Pages artifact
+#     and published by the deploy job below.
+#
+# The build job detects which one the repository uses and behaves accordingly, so this
+# workflow never fails merely because of a Pages setting.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      build_type: ${{ steps.pages-config.outputs.build_type }}
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generated dataset must match the shards
+        run: python3 scripts/build_site.py --check
+
+      - name: Bulk shards must be reproducible
+        run: |
+          python3 scripts/generate_bulk_entries.py
+          python3 scripts/build_site.py --check
+
+      - name: Integrity tests and site render smoke test
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Build dataset and site
+        run: python3 scripts/build_site.py
+
+      - name: Summarise what was built
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib
+          d = json.loads(pathlib.Path("data/coupons.json").read_text())
+          s = d["stats"]
+          lines = [
+              "## Build summary",
+              "",
+              f"- Verified offers: **{s['entry_count']}**",
+              f"- Rejected / unverified claims documented: **{s['excluded_count']}**",
+              f"- Citations: **{s['source_count']}** across **{len(s['source_domains'])}** domains",
+              f"- Verification levels: {s['entries_by_verification_level']}",
+              f"- Flags by severity: {s['flags_by_severity']}",
+              f"- Dataset verified: **{d['meta']['dataset']['compiled_at']}**",
+              "",
+              "Every offer in this build cites the issuer's own page, with the date it was read.",
+          ]
+          summary = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary:
+              pathlib.Path(summary).write_text("\n".join(lines) + "\n")
+          print("\n".join(lines))
+          PY
+
+      - name: Detect the GitHub Pages publishing mode
+        id: pages-config
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          build_type=$(gh api "repos/${{ github.repository }}/pages" --jq .build_type 2>/dev/null || echo "none")
+          echo "build_type=${build_type}" >> "$GITHUB_OUTPUT"
+          echo "GitHub Pages build_type: ${build_type}"
+
+      - name: Upload Pages artifact (Actions publishing mode)
+        if: steps.pages-config.outputs.build_type == 'workflow' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Explain branch publishing mode
+        if: steps.pages-config.outputs.build_type != 'workflow' && github.event_name != 'pull_request'
+        run: |
+          echo "::notice::Pages is set to '${{ steps.pages-config.outputs.build_type }}'. GitHub serves the committed root files (index.html, assets/, data/, .nojekyll) from the default branch, so no artifact upload is needed."
+
+      - name: Upload the built site as a workflow artifact
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview
+          path: _site
+          if-no-files-found: error
+
+  deploy:
+    if: github.event_name != 'pull_request' && needs.build.outputs.build_type == 'workflow'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

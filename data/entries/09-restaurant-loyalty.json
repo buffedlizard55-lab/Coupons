@@ -1,0 +1,733 @@
+[
+  {
+    "id": "mcdonalds-free-10pc-mcnuggets-first-app-purchase",
+    "title": "McDonald's: free 10 piece McNuggets with your first app purchase of $1+",
+    "merchant": "McDonald's",
+    "publisher": "McDonald's USA — mcdonalds.com",
+    "categories": [
+      "restaurant-loyalty",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_item"
+    ],
+    "value": {
+      "amount": 0.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_item"
+    },
+    "offer_text": "Download the app and get a free 10 piece McNuggets with your first purchase of $1+.* *Offer valid 1x thru the last day of the month for first time app users at participating McDonald's. May take up to 48 hours to appear in your deals. Must opt in to Rewards. Excludes tax.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Rolling new-user offer: valid once, through the last day of the month in which the app is first used.",
+    "requirements": [
+      "First-time McDonald's app user",
+      "Must opt in to MyMcDonald's Rewards",
+      "A qualifying first purchase of $1 or more (tax excluded)",
+      "Participating McDonald's only",
+      "The offer may take up to 48 hours to appear in your deals"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "McDonald's operates restaurants throughout all nine Bay Area counties. Redemption is physical: the reward is collected at a participating restaurant via the Drive Thru code or the in-store/kiosk code.",
+      "physical_locations": null,
+      "locator_url": "https://www.mcdonalds.com/us/en-us/download-app.html"
+    },
+    "sources": [
+      {
+        "url": "https://www.mcdonalds.com/us/en-us/mymcdonalds.html",
+        "title": "MyMcDonald's Rewards: Earn McDonald's Points for Free Food",
+        "publisher": "McDonald's Corporation (USA)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Free McNuggets®? You're welcome' block read verbatim, including the $1+ trigger, the once-per-month new-user restriction, the 48-hour appearance caveat, the Rewards opt-in requirement and the tax exclusion."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Offer text and every restriction read verbatim from McDonald's own U.S. rewards page",
+        "Confirmed the offer is a first-purchase trigger, not a true zero-spend freebie",
+        "Cross-checked against third-party descriptions, which do not match (see the excluded list)"
+      ]
+    },
+    "flags": [
+      {
+        "code": "not-truly-no-spend",
+        "severity": "info",
+        "detail": "A $1+ first purchase is required, so this is a near-no-spend offer rather than a genuinely free one. Classified under both restaurant-loyalty and no-spend-free for discoverability, with this caveat attached."
+      },
+      {
+        "code": "participating-locations-only",
+        "severity": "warning",
+        "detail": "McDonald's states 'At participating McDonald's' and 'Must opt in to Rewards'. A specific Bay Area restaurant's participation cannot be confirmed without the app."
+      }
+    ],
+    "tags": [
+      "restaurant",
+      "fast-food",
+      "new-user",
+      "bay-area"
+    ]
+  },
+  {
+    "id": "mcdonalds-1500-bonus-points-linked-card",
+    "title": "McDonald's: extra 1,500 bonus points on your first payment with a linked card",
+    "merchant": "McDonald's",
+    "publisher": "McDonald's USA — mcdonalds.com",
+    "categories": [
+      "restaurant-loyalty"
+    ],
+    "deal_types": [
+      "points"
+    ],
+    "value": {
+      "amount": 1500,
+      "unit": "points",
+      "currency": null,
+      "kind": "points"
+    },
+    "offer_text": "Link your card details to the app so you can conveniently pay and earn points at the same time—including an extra 1500 Bonus Points on your first payment using your linked card. *Bonus points may take up to 10 days to appear in your account. Rewards program available only at participating McDonald's. McDonald's app download and registration required.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing onboarding incentive; bonus appears up to 10 days after the first linked-card payment.",
+    "requirements": [
+      "McDonald's app download and registration",
+      "Link a payment card and use it for your first in-app payment",
+      "Participating McDonald's only",
+      "1,500 points is exactly the first redemption tier, so the bonus alone unlocks a free item"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Points are earned and redeemed at physical McDonald's restaurants across the Bay Area (Drive Thru code, counter or kiosk).",
+      "physical_locations": null,
+      "locator_url": "https://www.mcdonalds.com/us/en-us/download-app.html"
+    },
+    "sources": [
+      {
+        "url": "https://www.mcdonalds.com/us/en-us/mymcdonalds.html",
+        "title": "MyMcDonald's Rewards: Earn McDonald's Points for Free Food",
+        "publisher": "McDonald's Corporation (USA)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Pay & earn all in one step' block read verbatim, including the 1,500 bonus-point figure and the 10-day appearance caveat."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Bonus amount and delay caveat read verbatim",
+        "Confirmed 1,500 points equals the lowest published redemption tier on the same page"
+      ]
+    },
+    "flags": [
+      {
+        "code": "requires-spend",
+        "severity": "info",
+        "detail": "The bonus is attached to a real payment, so it is an earning incentive rather than a coupon."
+      }
+    ],
+    "tags": [
+      "restaurant",
+      "fast-food",
+      "points",
+      "bay-area"
+    ]
+  },
+  {
+    "id": "mcdonalds-rewards-tiers",
+    "title": "MyMcDonald's Rewards — official U.S. redemption tiers (1,500 / 2,000 / 3,500 / 4,000 / 5,000 / 7,000 points)",
+    "merchant": "McDonald's",
+    "publisher": "McDonald's USA — mcdonalds.com",
+    "categories": [
+      "restaurant-loyalty"
+    ],
+    "deal_types": [
+      "points",
+      "free_item"
+    ],
+    "value": null,
+    "offer_text": "For every dollar you spend on eligible products, you will receive 100 points. You can start redeeming your MyMcDonald's Rewards when you have 1500 points. — 1500 points: Choose from a Hash Browns, Apple Pie, small Premium Roast Coffee or Vanilla Cone. 2000 points: pick from a McChicken®, Cheeseburger or Sausage Biscuit. 3500 points: choose from a medium Fries, Sausage Burrito, 6 pc. Chicken McNuggets®, large Iced Coffee or Sausage McGriddles®. 4000 points: Get $3 off your order of $3 or more. 5000 points: large Fries, Sausage McMuffin® with Egg, Filet-O-Fish®, large Frappé or Hotcakes. 7000 points: Big Mac®, Quarter Pounder® with Cheese, Happy Meal®, Bacon, Egg & Cheese Biscuit, McFlurry®, 10pc. Chicken McNuggets® or Sausage, Egg & Cheese McGriddles®.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing program. Points themselves expire: 'Your points will expire on the first day of the month after the sixth month from the day your points were earned.'",
+    "redemption_tiers": [
+      {
+        "points": 1500,
+        "items": [
+          "Hash Browns",
+          "Apple Pie",
+          "small Premium Roast Coffee",
+          "Vanilla Cone"
+        ]
+      },
+      {
+        "points": 2000,
+        "items": [
+          "McChicken",
+          "Cheeseburger",
+          "Sausage Biscuit"
+        ]
+      },
+      {
+        "points": 3500,
+        "items": [
+          "medium Fries",
+          "Sausage Burrito",
+          "6 pc. Chicken McNuggets",
+          "large Iced Coffee",
+          "Sausage McGriddles"
+        ]
+      },
+      {
+        "points": 4000,
+        "items": [
+          "$3 off your order of $3 or more"
+        ]
+      },
+      {
+        "points": 5000,
+        "items": [
+          "large Fries",
+          "Sausage McMuffin with Egg",
+          "Filet-O-Fish",
+          "large Frappé",
+          "Hotcakes"
+        ]
+      },
+      {
+        "points": 7000,
+        "items": [
+          "Big Mac",
+          "Quarter Pounder with Cheese",
+          "Happy Meal",
+          "Bacon, Egg & Cheese Biscuit",
+          "McFlurry",
+          "10 pc. Chicken McNuggets",
+          "Sausage, Egg & Cheese McGriddles"
+        ]
+      }
+    ],
+    "requirements": [
+      "Earn 100 points per $1 spent on eligible products",
+      "Present the 4-digit Drive Thru code, or scan the code at the counter/kiosk, or order in-app",
+      "One reward per order",
+      "Rewards cannot be redeemed for delivery orders placed with a third-party operator such as DoorDash or Uber Eats",
+      "Points expire on the first day of the month after the sixth month from the day they were earned"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Redeemed physically at participating Bay Area McDonald's restaurants. The third-party-delivery exclusion matters in the Bay Area, where DoorDash and Uber Eats are heavily used.",
+      "physical_locations": null,
+      "locator_url": "https://www.mcdonalds.com/us/en-us/terms-and-conditions.html#rewards-anchor"
+    },
+    "sources": [
+      {
+        "url": "https://www.mcdonalds.com/us/en-us/mymcdonalds.html",
+        "title": "MyMcDonald's Rewards: Earn McDonald's Points for Free Food",
+        "publisher": "McDonald's Corporation (USA)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "All six tier headings and their item lists read verbatim from the 'More points unlock more rewards' section, plus the FAQ answers on earn rate ('For every dollar you spend on eligible products, you will receive 100 points'), first redemption point ('You can start redeeming ... when you have 1500 points'), expiry ('the first day of the month after the sixth month'), one-reward-per-order limit and the DoorDash/Uber Eats exclusion. Program terms link on the same page: mcdonalds.com/us/en-us/terms-and-conditions.html#rewards-anchor."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "All six tiers and every item name transcribed verbatim from McDonald's own U.S. page",
+        "Earn rate, expiry rule and per-order limit read verbatim from the same page's FAQ",
+        "Compared against third-party tier lists, which disagree with the official page — the disagreement is recorded in the excluded list"
+      ]
+    },
+    "flags": [
+      {
+        "code": "points-expire",
+        "severity": "warning",
+        "detail": "Points expire roughly six months after they are earned, on the first day of the following month. A saver targeting the 7,000-point tier must spend within a single earn window."
+      },
+      {
+        "code": "third-party-delivery-excluded",
+        "severity": "info",
+        "detail": "Rewards cannot be redeemed on DoorDash or Uber Eats orders; only on McDonald's own app delivery, in-restaurant or Drive Thru."
+      }
+    ],
+    "tags": [
+      "restaurant",
+      "fast-food",
+      "points",
+      "free-food",
+      "bay-area"
+    ]
+  },
+  {
+    "id": "starbucks-free-mod-mondays",
+    "title": "Starbucks Rewards: Free Mod Mondays — one free customization per month (up to $2 value)",
+    "merchant": "Starbucks",
+    "publisher": "Starbucks Coffee Company — official Starbucks Rewards Terms of Use",
+    "categories": [
+      "restaurant-loyalty",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_item"
+    ],
+    "value": {
+      "amount": 2.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "free_item"
+    },
+    "offer_text": "Free Mod Mondays. Members are eligible for a single free customization, up to a $2 maximum value (pre-tax) once per month on a Monday determined at Starbucks' discretion. This benefit cannot be redeemed with any other Rewards. Member must select the coupon at checkout or tell their barista about the coupon.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Monthly recurring benefit; the specific Monday is chosen by Starbucks.",
+    "requirements": [
+      "Free Starbucks Rewards membership",
+      "The designated Monday is selected by Starbucks, not the member",
+      "Select the coupon at checkout or tell the barista",
+      "Cannot be combined with any other Rewards",
+      "$2 maximum value, pre-tax"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Redeemed at participating Starbucks stores; Starbucks has a very dense physical presence across San Francisco, the East Bay, the Peninsula and the South Bay. The official terms note that not all stores participate and point to the store locator.",
+      "physical_locations": null,
+      "locator_url": "https://www.starbucks.com/store-locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.starbucks.com/terms/rewards/",
+        "title": "Starbucks® Rewards Terms of Use: Starbucks Coffee Company",
+        "publisher": "Starbucks Corporation — official program terms (Effective Date: March 10, 2026)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Free Mod Mondays' bullet read verbatim from the 'Additional Benefits of Starbucks Rewards' section of the Terms of Use whose stated Effective Date is March 10, 2026."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Benefit, dollar cap, cadence and redemption instruction read verbatim from the issuer's formal terms",
+        "Terms effective date recorded (March 10, 2026) so the currency of the text is auditable",
+        "Non-combinability captured"
+      ]
+    },
+    "flags": [
+      {
+        "code": "date-chosen-by-issuer",
+        "severity": "warning",
+        "detail": "The qualifying Monday is 'determined at Starbucks' discretion', so a member cannot plan for a specific date. The benefit is delivered as a coupon in the app or by email."
+      },
+      {
+        "code": "requires-drink-purchase",
+        "severity": "info",
+        "detail": "A free customization only has value when attached to a purchased beverage, so this is not a zero-spend freebie."
+      }
+    ],
+    "tags": [
+      "coffee",
+      "restaurant",
+      "free-mod",
+      "bay-area"
+    ]
+  },
+  {
+    "id": "starbucks-birthday-reward",
+    "title": "Starbucks Rewards Birthday Reward — free drink or food item (window depends on member level)",
+    "merchant": "Starbucks",
+    "publisher": "Starbucks Coffee Company — official Starbucks Rewards Terms of Use",
+    "categories": [
+      "restaurant-loyalty",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "free_item"
+    ],
+    "value": null,
+    "offer_text": "Birthday (month, day) is optional to receive birthday offers. If you do not provide birthday information you will not receive your Birthday Reward. — Gold Level Members: The same benefit as described above for Green Level members applies for Gold Level members, with the exception that Gold Level Members have seven (7) days beginning on the date of their birthday, to redeem their Birthday Reward. — Reserve Level Members: ... Reserve Level members have thirty (30) days beginning on the date of their birthday, to redeem their Birthday Reward.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Annual, tied to the birthday recorded in the member's account. Redemption window: 7 days for Gold Level, 30 days for Reserve Level (per the official terms).",
+    "requirements": [
+      "Free Starbucks Rewards membership",
+      "Birthday (month, day) saved in the account — without it no Birthday Reward is issued",
+      "Redeem at a participating Starbucks store",
+      "Partner (employee) accounts: Green and Gold Level Partners get 7 days, Reserve Level Partners get 30 days"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Redeemed physically at participating Bay Area Starbucks stores; scan the member barcode in the app or present a registered Starbucks Card.",
+      "physical_locations": null,
+      "locator_url": "https://www.starbucks.com/store-locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.starbucks.com/terms/rewards/",
+        "title": "Starbucks® Rewards Terms of Use: Starbucks Coffee Company",
+        "publisher": "Starbucks Corporation — official program terms (Effective Date: March 10, 2026)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Birthday requirement read verbatim from the 'Joining Starbucks Rewards' section; the Gold Level seven-day and Reserve Level thirty-day redemption windows read verbatim from the benefits section; the expanded Partner birthday windows read verbatim from the 'Starbucks Partners' section."
+      }
+    ],
+    "verification": {
+      "level": "B",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Gold (7 days) and Reserve (30 days) redemption windows confirmed verbatim in the official terms",
+        "Requirement to store a birthday confirmed verbatim",
+        "The Green Level baseline sentence and the exact list of what the reward covers were NOT captured in the retrieved portion of the terms — see flags"
+      ]
+    },
+    "flags": [
+      {
+        "code": "partial-capture",
+        "severity": "warning",
+        "detail": "The retrieved portion of the official terms begins mid-sentence in the birthday section, so the Green Level baseline window and the item exclusions (multi-serve items, alcoholic beverages, merchandise, packaged coffee, Roastery/Reserve locations) were not read directly from starbucks.com in this pass. Those exclusions are widely quoted from the same terms, but they are NOT asserted here. Re-read the 'Additional Benefits' section in full before publishing a Green Level window."
+      },
+      {
+        "code": "third-party-conflict",
+        "severity": "info",
+        "detail": "One third-party guide states the reward is 'valid only on the actual birthday' for all members, while another describes tier-based windows. The official terms confirm the tiered structure (Gold 7 days, Reserve 30 days), so the blanket 'birthday only' claim is at best incomplete."
+      }
+    ],
+    "tags": [
+      "coffee",
+      "birthday",
+      "free-item",
+      "bay-area"
+    ]
+  },
+  {
+    "id": "starbucks-reusable-cup-double-stars",
+    "title": "Starbucks Reusable Cup Benefit — double Stars for bringing a clean reusable cup",
+    "merchant": "Starbucks",
+    "publisher": "Starbucks Coffee Company — official Starbucks Rewards Terms of Use",
+    "categories": [
+      "restaurant-loyalty",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "points"
+    ],
+    "value": null,
+    "offer_text": "Starbucks may offer the opportunity to earn double Stars on a qualifying transaction when you bring a clean, reusable cup to participating stores and use it instead of a paper to-go cup ('Reusable Cup Benefit'). For example, if you bring in two reusable cups and order two handcrafted beverages in a single order, you will receive double Stars on the entire transaction. The Reusable Cup Benefit is not available for beverages served in Starbucks-provided 'for here' mugs and glassware. To qualify for the Reusable Cup Benefit, members must remain 'active' by making at least one (1) Star earning transaction within the prior two (2) years.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing benefit; Starbucks reserves the right to change or suspend it.",
+    "requirements": [
+      "Bring a CLEAN reusable cup to a participating store",
+      "Use it instead of a paper to-go cup",
+      "Not valid for 'for here' mugs and glassware",
+      "Member must have made at least one Star-earning transaction in the prior two years"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Physical, in-store benefit at participating Bay Area Starbucks locations.",
+      "physical_locations": null,
+      "locator_url": "https://www.starbucks.com/store-locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.starbucks.com/terms/rewards/",
+        "title": "Starbucks® Rewards Terms of Use: Starbucks Coffee Company",
+        "publisher": "Starbucks Corporation (Effective Date: March 10, 2026)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Reusable Cup Benefit' bullet read verbatim from the benefits section, including the two-cup example, the 'for here' exclusion and the two-year activity condition."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Mechanic, exclusions and activity condition read verbatim from the issuer's formal terms",
+        "The exclusions ('for here' mugs and glassware) and the two-year member-activity condition were read with the benefit and carried into requirements",
+        "The issuer's own permissive wording ('Starbucks may offer') is preserved verbatim instead of being rewritten as a guaranteed benefit"
+      ]
+    },
+    "flags": [
+      {
+        "code": "issuer-may-suspend",
+        "severity": "info",
+        "detail": "The terms state Starbucks 'reserves the right to change or suspend the Reusable Cup Benefit in its sole discretion'."
+      }
+    ],
+    "tags": [
+      "coffee",
+      "sustainability",
+      "points",
+      "bay-area"
+    ]
+  },
+  {
+    "id": "starbucks-digital-reload-bonus-stars",
+    "title": "Starbucks: 10 Bonus Stars for a $30 digital reload, 25 for $50",
+    "merchant": "Starbucks",
+    "publisher": "Starbucks Coffee Company — official Starbucks Rewards Terms of Use",
+    "categories": [
+      "restaurant-loyalty"
+    ],
+    "deal_types": [
+      "points"
+    ],
+    "value": null,
+    "offer_text": "Digital Reload Bonus Stars. Starbucks may offer opportunities for all Levels to receive Bonus Stars for specific amounts reloaded onto their digital Starbucks Card via the App. Members who digitally reload $30 will receive ten (10) Bonus Stars and members who digitally reload $50 will receive 25 Bonus Stars. No additional Bonus Stars will be given for reload amounts higher than $50. Max 25 Bonus Stars per transaction.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing benefit; does not apply to the purchase of Starbucks Cards.",
+    "requirements": [
+      "Reload the digital Starbucks Card in the app",
+      "$30 → 10 Bonus Stars; $50 → 25 Bonus Stars",
+      "Maximum 25 Bonus Stars per transaction; no extra stars above $50"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Stars are redeemed at physical participating Bay Area Starbucks stores.",
+      "physical_locations": null,
+      "locator_url": "https://www.starbucks.com/store-locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.starbucks.com/terms/rewards/",
+        "title": "Starbucks® Rewards Terms of Use: Starbucks Coffee Company",
+        "publisher": "Starbucks Corporation (Effective Date: March 10, 2026)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Digital Reload Bonus Stars' bullet read verbatim, including the per-transaction cap and the note that the benefit does not apply to the purchase of Starbucks Cards."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Both thresholds and both star amounts read verbatim",
+        "Cap read verbatim"
+      ]
+    },
+    "flags": [
+      {
+        "code": "requires-prepayment",
+        "severity": "info",
+        "detail": "This is a prepayment incentive ($30 or $50 loaded onto a stored-value card), not a discount. Listed for completeness because it is an officially published member benefit."
+      }
+    ],
+    "tags": [
+      "coffee",
+      "points",
+      "prepaid",
+      "bay-area"
+    ]
+  },
+  {
+    "id": "starbucks-double-triple-star-days",
+    "title": "Starbucks Double/Triple Star Days — Gold gets 4 extra per year, Reserve gets 6",
+    "merchant": "Starbucks",
+    "publisher": "Starbucks Coffee Company — official Starbucks Rewards Terms of Use",
+    "categories": [
+      "restaurant-loyalty"
+    ],
+    "deal_types": [
+      "points"
+    ],
+    "value": null,
+    "offer_text": "Double or Triple Star Day. Starbucks may offer Double or Triple Star Days, where you can earn twice or triple the number of Stars for your qualifying purchase. Gold and Reserve Level members exclusively receive four (4) and six (6) more yearly opportunities, respectively, for Double Star Days. For Green Level members, Starbucks will notify you of a designated Double or Triple Star Day, which will be personalized and selected by Starbucks for you. All members must sign into the Starbucks App OR opt-in to receive promotional and marketing emails from Starbucks in order to receive notice of a designated Double or Triple Star Day. You also may be required to 'activate' your Double or Triple Star Day by clicking within the notification email or the notification within the App.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Recurring, personalised promotions; each has its own short redemption window.",
+    "requirements": [
+      "Sign in to the Starbucks app OR opt in to promotional emails",
+      "May need to activate the offer from the notification",
+      "Starbucks may exclude certain products and merchandise"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Earned on purchases at participating Bay Area Starbucks stores.",
+      "physical_locations": null,
+      "locator_url": "https://www.starbucks.com/store-locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.starbucks.com/terms/rewards/",
+        "title": "Starbucks® Rewards Terms of Use: Starbucks Coffee Company",
+        "publisher": "Starbucks Corporation (Effective Date: March 10, 2026)",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "'Double or Triple Star Day' bullet read verbatim, including the four/six extra yearly opportunities for Gold/Reserve and the activation requirement."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Level-specific allowances and activation mechanics read verbatim from the issuer's formal terms",
+        "Level-specific allowances (four for Gold, six for Reserve, personalised for Green) were read from the issuer's formal terms rather than from any third-party summary",
+        "The activation requirement (sign in to the app or opt in to email, and possibly click to activate) is carried into requirements because the benefit is not automatic"
+      ]
+    },
+    "flags": [
+      {
+        "code": "personalised-and-short-window",
+        "severity": "warning",
+        "detail": "Dates are selected by Starbucks per member and 'may include expiration dates and short, time-limited redemption periods', so no calendar date can be published."
+      }
+    ],
+    "tags": [
+      "coffee",
+      "points",
+      "bay-area"
+    ]
+  },
+  {
+    "id": "starbucks-rewards-program-terms",
+    "title": "Starbucks Rewards — program facts that affect any offer you rely on",
+    "merchant": "Starbucks",
+    "publisher": "Starbucks Coffee Company — official Starbucks Rewards Terms of Use",
+    "categories": [
+      "restaurant-loyalty",
+      "policy-debunk"
+    ],
+    "deal_types": [
+      "policy"
+    ],
+    "value": null,
+    "offer_text": "There are no participation or membership fees associated with Starbucks Rewards. Stars accrued in connection with Starbucks Rewards are promotional, have no cash value and cannot be redeemed for cash. ... Unfortunately, not all Starbucks stores have the ability to award Stars or redeem Stars for Rewards at this time. To find the location nearest you that participates in Starbucks Rewards, visit the Starbucks Store Locator. ... Starbucks also reserves the right to 'unregister' and make ineligible for Starbucks Rewards any Starbucks Card or account that has been inactive for two (2) consecutive years.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Terms of Use with an Effective Date of March 10, 2026.",
+    "requirements": [
+      "Free to join",
+      "Must use a participating store",
+      "Account becomes eligible for unregistration after two consecutive years of inactivity"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Not all stores participate, so the official store locator is the authoritative check for any given Bay Area address.",
+      "physical_locations": null,
+      "locator_url": "https://www.starbucks.com/store-locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.starbucks.com/terms/rewards/",
+        "title": "Starbucks® Rewards Terms of Use: Starbucks Coffee Company",
+        "publisher": "Starbucks Corporation",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "No-fee clause, no-cash-value clause, participating-store caveat with store-locator URL, two-year inactivity clause and the arbitration/class-action-waiver notice all read verbatim. Page states 'Effective Date: March 10, 2026'."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Program-level facts read verbatim",
+        "Effective date captured so reviewers know which revision was checked"
+      ]
+    },
+    "flags": [
+      {
+        "code": "arbitration-clause",
+        "severity": "info",
+        "detail": "The terms include an arbitration agreement with a class-action waiver and jury-trial waiver. Noted because it is a material consumer right that a coupon site should not hide."
+      },
+      {
+        "code": "stars-no-cash-value",
+        "severity": "info",
+        "detail": "Stars are promotional and cannot be redeemed for cash, so they are not equivalent to a cash-back rebate."
+      },
+      {
+        "code": "participation-varies-by-store",
+        "severity": "warning",
+        "detail": "Because not every store participates, any Starbucks offer should be checked against the store locator before travelling."
+      }
+    ],
+    "tags": [
+      "coffee",
+      "policy",
+      "terms",
+      "bay-area"
+    ]
+  },
+  {
+    "id": "dennys-boothbucks",
+    "title": "Denny's Rewards — 10 BoothBucks per $1; 600 BoothBucks unlocks a free menu item",
+    "merchant": "Denny's",
+    "publisher": "Denny's — dennys.com/rewards",
+    "categories": [
+      "restaurant-loyalty"
+    ],
+    "deal_types": [
+      "points",
+      "free_item"
+    ],
+    "value": null,
+    "offer_text": "Become a Denny's Rewards Member and get exclusive deals, discounts, and more! Collect BoothBucks to earn, redeem, and enjoy! — Earn 10 BoothBucks™ for every $1 spent (dine-in or online). — Automatically redeem 600 BoothBucks™ for a reward. — When you reach 600 BoothBucks™ you will unlock a Booth Reward. With your Booth Reward you can choose from over 40+ menu faves ranging from starters to desserts! — Important: Rewards must be applied before the check is closed — we can't apply them afterward.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing loyalty program; the terms are published at dennys.com/rewards-terms.",
+    "requirements": [
+      "Free membership — join in-restaurant by scanning the QR code, in the app, or at dennys.com/rewards",
+      "Dine in and give your phone number or scan the QR code at checkout, or order online while logged in",
+      "Order the reward item BEFORE the check is closed",
+      "600 BoothBucks (i.e. $60 of spend at 10 per $1) unlocks one Booth Reward"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Denny's operates many 24-hour restaurants across the Bay Area; the program explicitly supports in-restaurant dine-in earning and redemption via phone number or QR code at the table.",
+      "physical_locations": null,
+      "locator_url": "https://dennys.com/rewards"
+    },
+    "sources": [
+      {
+        "url": "https://dennys.com/rewards",
+        "title": "Denny's Rewards Program – Join Today | Denny's",
+        "publisher": "Denny's",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Earn rate, redemption threshold, reward breadth and the before-the-check-is-closed rule all read verbatim, together with the FAQ answers on joining in-restaurant by QR code, earning on dine-in and online orders, and the link to Denny's Rewards Terms & Conditions at dennys.com/rewards-terms."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Earn rate and redemption threshold read verbatim from the merchant's own rewards page",
+        "Confirmed the current official page describes BoothBucks and contains NO birthday-meal offer (see the excluded list)",
+        "Terms URL captured for manual review"
+      ]
+    },
+    "flags": [
+      {
+        "code": "program-replaced-birthday-offer",
+        "severity": "warning",
+        "detail": "The widely circulated 'free birthday Grand Slam' is not described anywhere on the current official Denny's Rewards page, which now presents only the BoothBucks earn/redeem structure. Treat any Denny's birthday-meal claim as unverified until dennys.com/rewards-terms is read in full."
+      },
+      {
+        "code": "reward-timing-critical",
+        "severity": "warning",
+        "detail": "Denny's states rewards cannot be applied after the check is closed, so the reward must be ordered before paying."
+      }
+    ],
+    "tags": [
+      "restaurant",
+      "diner",
+      "points",
+      "bay-area"
+    ]
+  }
+]

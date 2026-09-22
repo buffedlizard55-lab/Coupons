@@ -1,0 +1,389 @@
+[
+  {
+    "id": "walgreens-well20-20-off",
+    "title": "20% OFF $40+ select wellness & beauty with code WELL20",
+    "merchant": "Walgreens",
+    "publisher": "Walgreens — walgreens.com",
+    "categories": [
+      "drugstore-pharmacy"
+    ],
+    "deal_types": [
+      "percent_off",
+      "promo_code"
+    ],
+    "value": {
+      "amount": 20.0,
+      "unit": "percent",
+      "currency": null,
+      "kind": "percent_off"
+    },
+    "offer_text": "20% OFF $40+ select wellness & beauty with WELL20",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "The banner published on walgreens.com carries no printed end date; the code's validity is confirmed at checkout.",
+    "requirements": [
+      "Minimum qualifying spend of $40",
+      "Applies to select wellness and beauty items only",
+      "Enter code WELL20"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "medium",
+      "note": "Published on Walgreens' own myWalgreens program page, which also carries the official store locator. Walgreens has a dense physical store network across San Francisco, the East Bay, the Peninsula and the South Bay. Whether the code is honoured in store or online-only is not stated on the banner, so confirm at the register.",
+      "physical_locations": null,
+      "locator_url": "https://www.walgreens.com/storelocator/find.jsp?tab=store+locator&requestType=locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.walgreens.com/topic/mywalgreens/mywalgreens.jsp",
+        "title": "myWalgreens program page (Walgreens)",
+        "publisher": "Walgreens Boots Alliance",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Promotional banner read verbatim from the top of the page: '20% OFF $40+ select wellness & beauty with WELL20'. The same page carries 'Find a Walgreens location' with a link to the official store locator."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Code, discount depth and spend threshold read verbatim from the merchant's own domain",
+        "Confirmed the same page hosts the official store locator for physical redemption",
+        "No end date is published, so none is asserted"
+      ]
+    },
+    "flags": [
+      {
+        "code": "expiry-not-published",
+        "severity": "warning",
+        "detail": "No end date is printed on the banner. Promo codes of this kind are typically withdrawn without notice, so re-check the same page on the day of shopping."
+      },
+      {
+        "code": "channel-not-stated",
+        "severity": "warning",
+        "detail": "The banner does not say whether WELL20 works at a physical register or only in the app/online. Because this dataset requires physical redemption, treat the in-store behaviour as unconfirmed until checked with the store."
+      }
+    ],
+    "tags": [
+      "drugstore",
+      "beauty",
+      "wellness",
+      "promo-code"
+    ]
+  },
+  {
+    "id": "walgreens-beauty-10-rewards",
+    "title": "Earn $10 rewards on $30+ mix & match select beauty",
+    "merchant": "Walgreens",
+    "publisher": "Walgreens — walgreens.com",
+    "categories": [
+      "drugstore-pharmacy"
+    ],
+    "deal_types": [
+      "rewards_credit"
+    ],
+    "value": {
+      "amount": 10.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "rewards_credit"
+    },
+    "offer_text": "Earn $10 rewards* on $30+ on mix & match select beauty",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "No end date printed on the banner; rewards credit carries its own expiry once issued.",
+    "requirements": [
+      "Spend $30 or more on select beauty items in a mix-and-match promotion",
+      "myWalgreens membership (the banner is published on the myWalgreens program page)",
+      "Asterisk in the source text indicates terms apply"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "medium",
+      "note": "myWalgreens rewards are earned and redeemed at physical Walgreens stores; Walgreens operates many Bay Area locations.",
+      "physical_locations": null,
+      "locator_url": "https://www.walgreens.com/storelocator/find.jsp?tab=store+locator&requestType=locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.walgreens.com/topic/mywalgreens/mywalgreens.jsp",
+        "title": "myWalgreens program page (Walgreens)",
+        "publisher": "Walgreens Boots Alliance",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Promotional banner read verbatim: 'Earn $10 rewards* on $30+ on mix & match select beauty'. Adjacent banner on the same page: 'Schedule vaccinations'."
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Reward amount, spend threshold and category read verbatim from the merchant's own domain",
+        "Recorded that the source text itself carries an asterisk denoting unstated terms"
+      ]
+    },
+    "flags": [
+      {
+        "code": "terms-not-readable",
+        "severity": "warning",
+        "detail": "The asterisk on the banner points to terms that were not exposed in the retrieved page content. The reward is not an instant discount — it is credit issued for a later purchase."
+      },
+      {
+        "code": "expiry-not-published",
+        "severity": "warning",
+        "detail": "No promotion end date and no reward expiry are printed on the banner."
+      }
+    ],
+    "tags": [
+      "drugstore",
+      "beauty",
+      "rewards"
+    ]
+  },
+  {
+    "id": "cvs-extracare-rewards",
+    "title": "CVS ExtraCare Rewards — quarterly ExtraBucks Rewards (program)",
+    "merchant": "CVS Pharmacy",
+    "publisher": "CVS — cvs.com",
+    "categories": [
+      "drugstore-pharmacy"
+    ],
+    "deal_types": [
+      "rewards_credit"
+    ],
+    "value": null,
+    "offer_text": "Every time you make a purchase, either online or in-store, you'll earn ExtraCare program rewards, or ExtraBucks Rewards. Every 3 months your ExtraBucks Rewards will print on your store register receipt, or you can view, print and redeem your ExtraBucks Rewards online. — ExtraBucks Rewards are issued quarterly — on January 1st, April 1st, July 1st and October 1st. You can use your quarterly ExtraBucks Rewards for in-store or online purchases.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing program. Rewards are issued on a fixed quarterly calendar (Jan 1, Apr 1, Jul 1, Oct 1) and carry their own printed expiry.",
+    "requirements": [
+      "Free ExtraCare card/account",
+      "Rewards print on the register receipt at a physical CVS store, or are viewed and printed online",
+      "Check the expiration date printed on each reward before use"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "CVS Pharmacy operates many stores across San Francisco, Oakland, Berkeley, San Jose and the surrounding counties; ExtraBucks Rewards are explicitly usable in store and print at the register or at the in-store ExtraCare Coupon Center.",
+      "physical_locations": null,
+      "locator_url": "https://www.cvs.com/store-locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.cvs.com/retail/help/help-subtopic-extracare-rewards",
+        "title": "ExtraCare Rewards",
+        "publisher": "CVS Health — official help documentation",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Program mechanics and issuance calendar read verbatim from CVS's own help topic, including 'ExtraBucks Rewards® are issued quarterly — on January 1st, April 1st, July 1st and October 1st.'"
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Program mechanics and issuance dates read verbatim from the issuer's own documentation",
+        "Confirmed rewards are physically printed at the register / ExtraCare Coupon Center",
+        "No specific reward dollar amount is asserted, because the amount depends on the shopper's own spend"
+      ]
+    },
+    "flags": [
+      {
+        "code": "reward-amount-personalised",
+        "severity": "info",
+        "detail": "The quarterly ExtraBucks amount is a percentage of the shopper's own qualifying spend, so no fixed dollar value can be published. This entry verifies the mechanics only."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "warning",
+        "detail": "Retrieval note: on 2026-09-22 this wording was captured from a search-engine result for the issuer's own page rather than from a direct fetch of that page (the direct fetch was blocked, redirected, or returned an empty JavaScript shell). The quoted text is the issuer's own wording, served from the issuer's domain, but a reviewer should open the URL and confirm the passage is still published there."
+      }
+    ],
+    "tags": [
+      "drugstore",
+      "pharmacy",
+      "rewards",
+      "bay-area"
+    ]
+  },
+  {
+    "id": "cvs-extracare-pharmacy-health-rewards",
+    "title": "CVS ExtraCare Pharmacy & Health Rewards — $5 ExtraBucks per 10 credits, up to $50/year",
+    "merchant": "CVS Pharmacy",
+    "publisher": "CVS — cvs.com (official program rules)",
+    "categories": [
+      "drugstore-pharmacy",
+      "no-spend-free"
+    ],
+    "deal_types": [
+      "rewards_credit"
+    ],
+    "value": {
+      "amount": 5.0,
+      "unit": "currency",
+      "currency": "USD",
+      "kind": "rewards_credit"
+    },
+    "offer_text": "When you enroll in the ExtraCare Pharmacy & Health Rewards program and accumulate ten credits by purchasing eligible prescriptions or engaging in an eligible activity at a CVS Pharmacy in the U.S., you will receive $5 Pharmacy & Health ExtraBucks Rewards at CVS Pharmacy stores in the U.S. or on CVS.com. Ways to earn credits: purchasing a 30-day supply of an eligible prescription (1 credit); purchasing a 90-day supply of an eligible prescription (3 credits); receiving a flu shot or other vaccination from a CVS pharmacist (3 credits); enrolling in prescription management services on CVS.com (3 credits); enrolling a member on your ExtraCare card in the Program (1 credit per enrollment, limited to 5 per ExtraCare card). An individual can earn up to $50 Pharmacy & Health ExtraBucks Rewards in a calendar year. Rewards balances will be reset on December 31 each year.",
+    "offer_text_is_verbatim": true,
+    "expires": null,
+    "expiry_basis": "Standing program; annual reward cap resets and balances are reset every December 31.",
+    "requirements": [
+      "Enroll in ExtraCare Pharmacy & Health Rewards (separate opt-in from ExtraCare)",
+      "Accumulate 10 credits from prescriptions, vaccinations or eligible activities",
+      "Reward prints on the receipt or at the in-store ExtraCare Coupon Center, roughly one week after it is earned",
+      "Up to $50 per individual per calendar year"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "Redeemed at any CVS Pharmacy store, including the many Bay Area locations with in-store pharmacies. A flu shot at a Bay Area CVS pharmacy earns 3 of the 10 credits needed.",
+      "physical_locations": null,
+      "locator_url": "https://www.cvs.com/store-locator"
+    },
+    "sources": [
+      {
+        "url": "https://www.cvs.com/extracare-cvs/rxrewards/program-rules/",
+        "title": "ExtraCare Pharmacy & Health Rewards® Program Rules",
+        "publisher": "CVS Health — official program rules",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Credit values, reward amount, annual cap and reset date read verbatim from the official program rules, including 'you will receive $5 Pharmacy & Health ExtraBucks Rewards' after accumulating 'ten credits', 'An individual can earn up to $50 Pharmacy & Health ExtraBucks Rewards in a calendar year', and 'Rewards balances will be reset on December 31 each year.'"
+      },
+      {
+        "url": "https://www.cvs.com/retail/help/help-subtopic-extracare-pharmacy-and-health-rewards",
+        "title": "ExtraCare® rewards at the pharmacy",
+        "publisher": "CVS Health — official help documentation",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Conflicting text on CVS's own help page: 'Each person sharing an ExtraCare card doesn't have to earn 4 credits before receiving $2 ExtraBucks Rewards ... Your $2 ExtraBucks Rewards will be issued approximately 1 week after every 4 credits have been earned ... Each person can earn $50 ExtraBucks Rewards per year through the rewards at the pharmacy benefit.'"
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Reward mechanics read verbatim from the issuer's formal program rules",
+        "Cross-checked against a second official CVS page and a contradiction was found (see flags)",
+        "Annual cap ($50) is consistent across both official pages"
+      ]
+    },
+    "flags": [
+      {
+        "code": "official-sources-conflict",
+        "severity": "critical",
+        "detail": "Two official CVS pages state different reward thresholds for the same program. The formal Program Rules page says 10 credits earn a $5 reward. The CVS help page says every 4 credits earn $2. Both agree the annual cap is $50 and that balances reset on December 31. Because the issuer contradicts itself, the practical earn rate must be confirmed with the pharmacist before relying on a specific figure. This dataset quotes both pages verbatim rather than choosing one silently."
+      },
+      {
+        "code": "separate-opt-in",
+        "severity": "info",
+        "detail": "Requires a separate authorization per person; individuals 16 and older must sign separately, and parents or guardians sign for children under 16."
+      },
+      {
+        "code": "health-data-consent",
+        "severity": "info",
+        "detail": "Pharmacy rewards programs involve health data. Review CVS's privacy terms before opting in."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "warning",
+        "detail": "Retrieval note: on 2026-09-22 this wording was captured from a search-engine result for the issuer's own page rather than from a direct fetch of that page (the direct fetch was blocked, redirected, or returned an empty JavaScript shell). The quoted text is the issuer's own wording, served from the issuer's domain, but a reviewer should open the URL and confirm the passage is still published there."
+      }
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "rewards",
+      "flu-shot",
+      "bay-area"
+    ]
+  },
+  {
+    "id": "goodrx-prescription-price-coupons",
+    "title": "GoodRx prescription price coupons (program)",
+    "merchant": "GoodRx",
+    "publisher": "GoodRx — goodrx.com",
+    "categories": [
+      "drugstore-pharmacy"
+    ],
+    "deal_types": [
+      "price_discount"
+    ],
+    "value": null,
+    "offer_text": "Prescription Prices, Coupons & Pharmacy Information — GoodRx. GoodRx is NOT insurance.",
+    "offer_text_is_verbatim": true,
+    "verified_price_examples": [
+      {
+        "drug": "Foundayo™",
+        "text": "As low as $149",
+        "url": "https://www.goodrx.com/foundayo"
+      },
+      {
+        "drug": "Zepbound® KwikPen and others",
+        "text": "As low as $299",
+        "url": "https://www.goodrx.com/zepbound"
+      },
+      {
+        "drug": "Wegovy® tablet, pen, and HD pen",
+        "text": "As low as $149",
+        "url": "https://www.goodrx.com/wegovy"
+      }
+    ],
+    "expires": null,
+    "expiry_basis": "Prices are quoted 'as low as' and change with pharmacy and dosage; no fixed expiry is published.",
+    "requirements": [
+      "A valid prescription",
+      "Present the GoodRx coupon (print or app) at a participating pharmacy",
+      "GoodRx is not insurance and cannot be combined with insurance on the same fill"
+    ],
+    "bay_area": {
+      "available": true,
+      "confidence": "high",
+      "note": "GoodRx coupons are redeemed at the physical pharmacy counter. Participating chains with Bay Area pharmacy counters include CVS, Walgreens, Safeway and Costco Pharmacy, as well as independent Bay Area pharmacies.",
+      "physical_locations": null,
+      "locator_url": "https://www.goodrx.com/"
+    },
+    "sources": [
+      {
+        "url": "https://www.goodrx.com/",
+        "title": "Prescription Prices, Coupons & Pharmacy Information - GoodRx",
+        "publisher": "GoodRx Holdings",
+        "accessed": "2026-09-22",
+        "method": "fetch_page",
+        "evidence": "Page title and disclaimer read verbatim: 'Prescription Prices, Coupons & Pharmacy Information - GoodRx' and 'GoodRx is NOT insurance'. Price examples read verbatim from the homepage cards: 'Foundayo™ As low as $149', 'Zepbound® KwikPen and others As low as $299', 'Wegovy® Tablet, pen, and HD pen As low as $149'. Paid plan text read verbatim: 'GoodRx Companion New 250+ free medications Plus hundreds more medications under $10. All for $9.99/month (when paid yearly).' and 'Plans from $9.99/mo for you, or $16.99/mo for up to 5 people and pets, when paid yearly.'"
+      }
+    ],
+    "verification": {
+      "level": "A",
+      "verified_at": "2026-09-22",
+      "checks": [
+        "Service, disclaimer and current homepage price examples read verbatim from the provider's own site",
+        "Paid-tier pricing ($9.99/mo individual, $16.99/mo family, when paid yearly) read verbatim from the same page",
+        "Prices recorded as 'as low as' figures exactly as the provider states them, not as guaranteed prices"
+      ]
+    },
+    "flags": [
+      {
+        "code": "price-varies-by-pharmacy",
+        "severity": "warning",
+        "detail": "The dollar figures are the provider's own 'as low as' marketing prices for specific drugs, dosage forms and quantities. The actual price at a specific Bay Area pharmacy depends on the drug, dose, quantity and pharmacy. No figure here should be treated as a guaranteed price."
+      },
+      {
+        "code": "not-insurance",
+        "severity": "info",
+        "detail": "GoodRx states prominently on its own homepage: 'GoodRx is NOT insurance'. Using a GoodRx coupon means paying cash prices instead of running insurance."
+      },
+      {
+        "code": "paid-tier-exists",
+        "severity": "info",
+        "detail": "The free coupon service is separate from the paid 'GoodRx Companion' plan ($9.99/month when paid yearly, or $16.99/month for up to 5 people and pets). The '250+ free medications' claim belongs to the PAID plan, not to the free coupon service — an easy detail to misreport."
+      }
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "prescriptions",
+      "bay-area"
+    ]
+  }
+]

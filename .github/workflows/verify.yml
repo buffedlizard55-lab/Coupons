@@ -1,0 +1,136 @@
+name: Verify data and citations
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # 09:00 UTC every Monday — coupon data rots fast, so citations are re-checked weekly.
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: "Fail the run if a citation outside the documented link-rot log stops resolving"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: verify-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  integrity:
+    name: Dataset integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generated dataset must match the shards
+        run: python3 scripts/build_site.py --check
+
+      - name: Bulk shards must be reproducible
+        run: |
+          python3 scripts/generate_bulk_entries.py
+          python3 scripts/build_site.py --check
+
+      - name: Integrity tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Site payload sanity
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          js = pathlib.Path("assets/data/coupons.js").read_text()
+          payload = json.loads(js.split("window.COUPON_DATA = ", 1)[1].rstrip().rstrip(";"))
+          assert payload["entries"], "no entries in the published payload"
+          assert payload["meta"]["dataset"]["official_only"] is True, "official-only guarantee was switched off"
+          missing = [e["id"] for e in payload["entries"] if not e.get("sources")]
+          assert not missing, f"entries without a citation: {missing}"
+          print(f"payload ok: {len(payload['entries'])} entries, {payload['stats']['source_count']} citations")
+          PY
+
+  citations:
+    name: Citation link check
+    runs-on: ubuntu-latest
+    # Only worth spending the requests on the default branch, on a schedule, or on demand.
+    if: github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build the merged dataset
+        run: python3 scripts/build_site.py --no-site
+
+      - name: Re-check every cited URL
+        id: links
+        continue-on-error: true
+        run: |
+          python3 scripts/verify_links.py \
+            --workers 4 \
+            --timeout 30 \
+            ${{ github.event.inputs.strict == 'true' && '--strict' || '' }} \
+            | tee reports/link-check.log
+
+      - name: Upload the link-check report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-report
+          path: |
+            reports/link-check.json
+            reports/link-check.log
+          if-no-files-found: warn
+
+      - name: Report new citation failures as an issue
+        if: always() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create link-rot --description "A cited URL stopped resolving" --color B60205 2>/dev/null || true
+          python3 - <<'PY'
+          import json, os, pathlib, subprocess
+          report_path = pathlib.Path("reports/link-check.json")
+          if not report_path.exists():
+              raise SystemExit("no report produced; nothing to file")
+          report = json.loads(report_path.read_text())
+          if not report.get("failed_new"):
+              print(f"all citations resolve ({report['ok']}/{report['checked']} ok); no issue needed")
+              raise SystemExit(0)
+
+          expected = {r["url"] for r in report["results"] if r["kind"] == "known_broken"}
+          new = [r for r in report["results"]
+                 if r["verdict"] not in ("ok", "not_checked") and r["url"] not in expected]
+          body = [
+              f"Weekly citation check on {report['generated_at']} found **{len(new)}** URL(s) that no longer "
+              f"resolve and are **not** in the documented link-rot log.",
+              "",
+              f"Checked {report['checked']} URLs; {report['ok']} ok.",
+              "",
+              "| Verdict | URL | Cited by | Note |",
+              "| --- | --- | --- | --- |",
+          ]
+          for r in new[:60]:
+              body.append(f"| {r['verdict']} | {r['url']} | `{r['entry']}` | {r.get('note') or r.get('status') or ''} |")
+          body += [
+              "",
+              "Fix by either updating the citation in `data/entries/` or, if the page is genuinely gone, "
+              "recording it in the `policy-link-rot-observed-*` entry with its working replacement, then "
+              "rebuilding with `python3 scripts/build_site.py`.",
+              "",
+              "Full report: the `link-check-report` artifact on this workflow run.",
+          ]
+          title = f"Link check: {len(new)} citation(s) failing ({report['generated_at'][:10]})"
+          subprocess.run(
+              ["gh", "issue", "create", "--title", title, "--body", "\n".join(body), "--label", "link-rot"],
+              check=False,
+          )
+          PY
