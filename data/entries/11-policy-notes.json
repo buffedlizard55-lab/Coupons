@@ -458,7 +458,7 @@
       "policy"
     ],
     "value": null,
-    "offer_text": "\"Special Offers — Coupons Temporarily Unavailable. We're updating our online coupon experience. During this time, coupons are unavailable on our website. Thank you for your patience as we work behind the scenes. Please check back soon for updated offers.\" — fetched live 2026-09-22. The same day, a search index showed smiles.colgate.com/page/content/special-offers titled \"Colgate® Coupons, Printable Coupons\" promising \"Print coupons for your favorite Colgate® oral care products\"; a direct fetch of that microsite failed twice on the verification date, so the contradiction is recorded rather than resolved.",
+    "offer_text": "\"Special Offers — Coupons Temporarily Unavailable. We're updating our online coupon experience. During this time, coupons are unavailable on our website. Thank you for your patience as we work behind the scenes. Please check back soon for updated offers.\" — fetched live 2026-09-22 (full page, single chunk, nothing truncated). The same day, a search index showed smiles.colgate.com/page/content/special-offers titled \"Colgate® Coupons, Printable Coupons\" promising \"Print coupons for your favorite Colgate® oral care products\"; a direct fetch of that microsite failed twice on the verification date, so the contradiction is recorded rather than resolved. Pass 4 (2026-09-22, later): the main page was re-fetched and printed the identical text; the microsite failed again on both the offers path and the domain root, and a pass-4 search for the microsite returned no result from smiles.colgate.com at all — its coupon advertisement now stands on the pass-1 snippet only.",
     "offer_text_is_verbatim": true,
     "expires": null,
     "expiry_basis": "Point-in-time state of the issuer's page.",
@@ -477,7 +477,7 @@
         "publisher": "Colgate-Palmolive (colgate.com — official)",
         "accessed": "2026-09-22",
         "method": "fetch_page",
-        "evidence": "Full page retrieved live; body text quoted verbatim in offer_text, including 'Coupons Temporarily Unavailable'."
+        "evidence": "Full page retrieved live on 2026-09-22 and again in pass 4 the same day — identical body text both times, quoted verbatim in offer_text, including 'Coupons Temporarily Unavailable' and 'Please check back soon for updated offers'."
       },
       {
         "url": "https://smiles.colgate.com/page/content/special-offers",
@@ -485,7 +485,7 @@
         "publisher": "Colgate-Palmolive microsite (smiles.colgate.com)",
         "accessed": "2026-09-22",
         "method": "web_search",
-        "evidence": "Search snippet only: \"Print coupons for your favorite Colgate® oral care products. Find coupons for toothpastes, teeth whitening products, and much more.\" Live fetch failed on 2026-09-22 (proxy error), and an older colgate.com result (Step2.vsp form) references a 2009 'spend $15 / free travel bag' mail-in — a relic, not a current offer."
+        "evidence": "Search snippet only: \"Print coupons for your favorite Colgate® oral care products. Find coupons for toothpastes, teeth whitening products, and much more.\" Live fetch failed on 2026-09-22 (proxy error), and an older colgate.com result (Step2.vsp form) references a 2009 'spend $15 / free travel bag' mail-in — a relic, not a current offer. Pass 4 (same date): two further direct fetches failed (the offers path and the domain root), and a targeted search for \"smiles.colgate.com special offers\" returned no organic result from that domain — only aggregator 'Colgate promo code' pages and an India-market Smiles Club terms page."
       }
     ],
     "verification": {
@@ -494,14 +494,15 @@
       "checks": [
         "Main-site statement retrieved live and quoted verbatim",
         "Contradicting microsite snippet recorded with its failed-retrieval note rather than silently dropped",
-        "Old 2009-form search result recognised as link-rot, not an offer"
+        "Old 2009-form search result recognised as link-rot, not an offer",
+        "Pass 4 re-verification (2026-09-22): main page re-fetched — byte-identical statement; microsite unreachable via two further fetch attempts and absent from that day's search results, so the 'temporarily unavailable' statement remains the only actively served official text"
       ]
     },
     "flags": [
       {
         "code": "source-page-inconsistency",
         "severity": "critical",
-        "detail": "Two Colgate-operated pages disagree on whether online coupons exist. Until smiles.colgate.com can be retrieved and its coupons printed, treat 'Colgate coupons' as NOT AVAILABLE and distrust any third-party 'Colgate promo code' page."
+        "detail": "Two Colgate-operated pages disagree on whether online coupons exist. The main site's 'temporarily unavailable' statement has now been read in full twice on 2026-09-22 (passes 3 and 4); the contradicting microsite has failed four direct fetches across those passes and produced no search result in pass 4. Until smiles.colgate.com is retrievable and its coupons printed, treat 'Colgate coupons' as NOT AVAILABLE — and see the documented third-party 'Colgate promo code' ring (excl-colgate-aggregator-promo-codes), which stands on neither page."
       },
       {
         "code": "retrieval-via-search-snippet",

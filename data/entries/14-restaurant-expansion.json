@@ -106,7 +106,8 @@
       "checks": [
         "Offer copy transcribed verbatim from the issuer's live homepage on the verification date",
         "Offer window is bounded by the issuer's own wording ('every Monday in September')"
-      ]
+      ],
+      "recheck_due": "2026-09-27"
     },
     "flags": [
       {

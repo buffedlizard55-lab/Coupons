@@ -58,7 +58,7 @@ The test suite additionally requires that:
 - a level-B entry states in its own checks or flags *why* the offers could not be enumerated;
 - an entry whose only retrieval method was a search-engine snippet of the issuer's page carries
   the flag `retrieval-via-search-snippet`, so it never implies a direct fetch it did not do
-  (16 entries disclose this).
+  (17 entries disclose this).
 
 ## 3. Retrieval methods
 
@@ -104,7 +104,7 @@ For each candidate offer:
 
 ## 5. Flag taxonomy
 
-207 flags across the dataset: **12 critical, 142 warning, 53 info**.
+208 flags across the dataset: **12 critical, 142 warning, 54 info**.
 
 | Severity | Meaning | Examples in this dataset |
 | --- | --- | --- |
@@ -146,7 +146,11 @@ Every `value` object has exactly four keys, so the site can label and sort witho
 
 ## 8. Expiry handling
 
-`expires` is an ISO date exactly as published, or `null`. `expiry_basis` records *why* that date
+`expires` is an ISO date exactly as published, or `null`. Every dated record additionally carries
+`verification.recheck_due` — a project scheduling date (the printed expiry minus a 3-day safety
+margin) used by the weekly CI job to file "due for re-verification" reports before an offer goes
+stale. It is documented in `data/meta.json → dataset.recheck_policy`, rendered on the card as a
+re-check note, and is never an issuer-published deadline; undated records deliberately carry none. `expiry_basis` records *why* that date
 was chosen ("Printed expiry on the coupon as published on 2026-09-22", "Standing loyalty
 program", "Rolling 7-day expiry printed in the offer's own footnote"). Rebates carry a separate `purchase_window`
 because the qualifying-purchase deadline and the submission deadline are different things — the
@@ -161,8 +165,9 @@ retire: `Active` → `Expires soon` (≤ 7 days) → `Expired`, plus `Window clo
 
 One shard is large enough to be generated rather than hand-written: 36 P&G brandSAVER coupons.
 `scripts/generate_bulk_entries.py` builds it from the transcription taken on the verification date
-(the brand, value, offer text and printed expiry read from pgbrandsaver.com), with provenance
-stored on every entry and collision-safe IDs. A second bulk generator (26 SF Museums For All
+(the brand, value, offer text and printed expiry read from pgbrandsaver.com; pass 4 re-read 22 of
+the 36 coupons against a fresh fetch with zero drift), derives the `recheck_due` scheduling date
+from the printed expiry, and stores provenance on every entry with collision-safe IDs. A second bulk generator (26 SF Museums For All
 venues) was removed from this script when the project was rescoped to products on 2026-09-22;
 its code and data are preserved in `archive/rescoped-2026-09-22/`. The generator is deterministic: CI re-runs it and fails if the committed
 shards no longer match, so the bulk data cannot silently drift from its transcription.
@@ -172,8 +177,8 @@ shards no longer match, so the bulk data cannot silently drift from its transcri
 ```bash
 python3 scripts/build_site.py            # validate → data/coupons.json, assets/data/coupons.js, docs/SOURCES.md, _site/
 python3 scripts/build_site.py --check    # fail if generated files are stale
-python3 -m unittest discover -s tests    # 46 tests
-python3 scripts/verify_links.py          # re-fetch every citation (72 unique URLs) → reports/link-check.json
+python3 -m unittest discover -s tests    # 50 tests
+python3 scripts/verify_links.py          # re-fetch every citation (80 unique URLs) → reports/link-check.json
 ```
 
 `build_site.py` refuses to emit a site if any entry is missing a citation, an evidence passage,
@@ -197,5 +202,5 @@ documented link-rot log stops resolving.
   locator is linked instead.
 - No attempt was made to reconcile two official pages that disagree; both are quoted and the
   conflict is flagged.
-- No rejected claim was quietly deleted. All fifteen remain published with their reasoning, because
+- No rejected claim was quietly deleted. All seventeen remain published with their reasoning, because
   a shopper who has seen the claim needs to find the rebuttal.

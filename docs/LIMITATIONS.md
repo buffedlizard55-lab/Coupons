@@ -16,8 +16,9 @@ stated so a reader can decide how much weight to give a particular entry.
 The largest single block is 36 P&G brandSAVER coupons whose printed expiries were
 **26–27 September 2026** — four to five days after verification. Every one of them
 carries the flag `expires-imminently`. The Kellanova printables (8 coupons, worth a combined
-$7.00 as the issuer's own page headline confirms) publish **no expiry at all**, so the printed
-page is the only authority and re-verification is the only defence. The site computes status
+$7.00 as the issuer's own page headline confirms — a headline now pinned by a test, and a page
+re-fetched end to end in pass 4) publish **no expiry at all**, so the printed page is the only
+authority and re-verification is the only defence. The site computes status
 from the visitor's clock, so dated offers retire themselves without a redeploy, but the
 underlying data is only useful for a few days at a time.
 
@@ -56,7 +57,10 @@ site renders in full):
   product FAQs still tell shoppers to "check the Coupons page")
 - **JavaScript shell only (no offer text in the HTML):** `raleys.com`, `pizzahut.com/deals`
 - **Anti-bot interstitial:** `cvs.com/extracare`
-- **Live fetch failures during pass 3 (recorded, re-check next pass):** `smiles.colgate.com/page/content/special-offers`
+- **Live fetch failures in passes 3 and 4 (four attempts, all failed):** `smiles.colgate.com/page/content/special-offers`
+  and its domain root — pass 4's targeted search also returned no organic result from that domain, so the microsite's
+  printable-coupon claim now rests on pass 1's snippet alone. Colgate's main-site "temporarily unavailable"
+  statement, by contrast, was re-fetched in full in pass 4 and unchanged
 - **Domain drift — former official URLs now serve other people:** `boxtops.com` (a rock band's
   tour site), `realsavings.com` (a parked-ad shell)
 
@@ -93,7 +97,9 @@ From 2026-09-22 the dataset tracks **products you can buy in a store** and nothi
   because it cannot be redeemed in person.
 - Sweepstakes and points-for-prizes contests that do not discount a product (Cheez-It's
   "vote for a chance to win Free Cheez-It for a year") — noted during the Kellanova sweep, not
-  listed, since a sweepstakes entry is not a coupon.
+  listed, since a sweepstakes entry is not a coupon. Their expired scratch-off siblings, whose
+  terms the official domain still serves with reward codes dated "expire on 12/31/24", are
+  documented in `excl-kellanova-legacy-scratch-off-games`.
 - Event tickets, classes, dining-out "experiences" and gift cards to venues.
 
 ## 6. Store-level acceptance is not verified
@@ -192,5 +198,6 @@ A flag marks something irregular about the **record**. It cannot mark:
 - an offer that is real but not worth the trip.
 
 The only defence against these is re-verification, which is why
-`.github/workflows/verify.yml` re-checks all 72 unique cited URLs every Monday and files a
-`link-rot` issue when one outside the documented log stops resolving.
+`.github/workflows/verify.yml` re-checks all 80 unique cited URLs every Monday, files a
+`link-rot` issue when one outside the documented log stops resolving, and reports records whose
+`verification.recheck_due` date is inside 7 days (filing a `recheck-due` issue on the weekly run).

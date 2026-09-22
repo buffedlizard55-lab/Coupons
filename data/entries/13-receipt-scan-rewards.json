@@ -12,7 +12,7 @@
       "rebate"
     ],
     "value": null,
-    "offer_text": "Pop-Tarts® Crazy Good Rewards — Earn Points, Get Rewards. \"Scan your grocery receipt after buying participating Pop-Tarts® products to earn and redeem points for rewards — the more you scan, the more you save!\" \"Sign up to be the first to know about new flavors, drops, swag and get personalized content and exclusive coupons!\"",
+    "offer_text": "Pop-Tarts® Crazy Good Rewards — Earn Points, Get Rewards. \"Scan your grocery receipt after buying participating Pop-Tarts® products to earn and redeem points for rewards — the more you scan, the more you save!\" \"You will receive 1 point for every $1 spent on participating Pop-Tarts™ products. You can then redeem these Points for Rewards through the Reward Catalog\" (Program Terms). \"Sign up to be the first to know about new flavors, drops, swag and get personalized content and exclusive coupons!\"",
     "offer_text_is_verbatim": true,
     "expires": null,
     "expiry_basis": "Standing program; the issuer publishes no end date.",
@@ -44,6 +44,14 @@
         "accessed": "2026-09-22",
         "method": "fetch_page",
         "evidence": "Current promotions card on the issuer's official promotions page, verbatim: \"Scan your grocery receipt after buying participating Pop-Tarts® products to earn and redeem points for rewards — the more you scan, the more you save!\" (link leads to poptarts.com/en_US/poptartsrewards.html)"
+      },
+      {
+        "url": "https://www.kellanovaus.com/us/en/pop-tarts-rewards-program.html",
+        "title": "Kellanova US",
+        "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain)",
+        "accessed": "2026-09-22",
+        "method": "web_search",
+        "evidence": "Pass 4 retrieval of the official Program Terms page. Snippet read from the issuer's domain: \"The Program allows members to earn points (“Points”) by purchasing eligible Pop-Tarts™ products (“Pop-Tarts”) and redeeming those Points for a variety of items, including but not limited to, merchandise, tickets and gift cards (“Rewards”)… You will receive 1 point for every $1 spent on participating Pop-Tarts™ products. You can then redeem these Points for Rewards through the Reward Catalog… Sponsor reserves the right to offer special limited time promotions where Point values for some or all products may be increased.\""
       }
     ],
     "verification": {
@@ -51,7 +59,7 @@
       "verified_at": "2026-09-22",
       "checks": [
         "Program existence and mechanics read verbatim from the issuer's own pages on the verification date",
-        "Point-earning ladder and reward catalogue sit behind the sign-in flow and could not be read anonymously",
+        "Reward catalogue, participating-product list and promotional point multipliers sit behind the sign-in flow and could not be read anonymously; the base earning rate (1 point per $1 on participating products) is published in the Program Terms and was added from that text in pass 4",
         "Cross-checked two official pages (brand site + corporate promotions page) that reference each other"
       ]
     },
@@ -59,12 +67,17 @@
       {
         "code": "account-required",
         "severity": "warning",
-        "detail": "Earning and redemption require a free Kellanova account; the point values, participating product list and redemption catalogue are behind login and are therefore not enumerated here."
+        "detail": "Earning and redemption require a free Kellanova account; the participating-product list, reward catalogue and promotional point multipliers are behind login and are therefore not enumerated here. The base earning rate itself is published in the Program Terms."
       },
       {
         "code": "program-page-has-signup-wall",
         "severity": "info",
         "detail": "The rewards landing page offers only 'I'm New' / 'I already joined' entry points to an anonymous visitor; no public terms PDF was linked from the page."
+      },
+      {
+        "code": "retrieval-via-search-snippet",
+        "severity": "info",
+        "detail": "The Program Terms citation (the 1-point-per-$1 earning ladder) came from a search-engine snippet of the issuer's official terms page on 2026-09-22; the full terms document was not machine-read. The quoted rate is the issuer's own wording, but a reviewer opening the URL should expect the same text rendered inside the full legal page."
       }
     ],
     "tags": [

@@ -333,6 +333,13 @@
         timing.push(el("li", { text: "Deadline / expiry: " + fmtDate(entry.expires) }));
       }
       if (entry.expiry_basis) timing.push(el("li", { text: "Basis: " + entry.expiry_basis }));
+      if (entry.verification && entry.verification.recheck_due) {
+        timing.push(el("li", {
+          class: "recheck-note",
+          text: "Dataset re-check scheduled by " + fmtDate(entry.verification.recheck_due)
+            + " \u2014 a project scheduling policy (expiry minus 3 days), not an issuer deadline."
+        }));
+      }
       blocks.push(el("div", { class: "block" }, [el("h4", { text: "Dates" }), el("ul", {}, timing)]));
     }
 
@@ -718,8 +725,8 @@
 
       "<h3>Next session \u2014 in priority order</h3>" +
       "<ol>" +
-      "<li><strong>Re-harvest the manufacturer coupon blocks monthly.</strong> All 36 P&amp;G brandSAVER coupons expire 26\u201327 September 2026 and the Kellanova printables carry no published expiry. Re-read <code>pgbrandsaver.com/coupons/</code> (\u201cSearch 112 Digital Coupons\u201d \u2014 only 36 were transcribed; harvesting the rest of the list is the single biggest expansion available), <code>kellanovaus.com/us/en/coupons.html</code> and the Coupons.com printable index, then regenerate via <code>scripts/generate_bulk_entries.py</code>. Remaining hubs to sweep on the same pattern: Unilever, Nestl\u00e9/Purina, Kimberly-Clark, General Mills, Campbell\u00b7s, Post, Hershey, Mars, Mondelez.</li>" +
-      "<li><strong>Resolve the Colgate contradiction.</strong> <code>colgate.com/en-us/special-offers</code> states \u201cCoupons Temporarily Unavailable\u201d while search results show a Colgate microsite (<code>smiles.colgate.com</code>) advertising printable coupons. Fetch it directly: if live coupons are published there, they are level-A entries; if not, the policy note stands and aggregator \u201cColgate code\u201d listings are confirmed fabricated.</li>" +
+      "<li><strong>Finish the P&amp;G full-list harvest; re-harvest the manufacturer blocks monthly.</strong> All 36 P&amp;G brandSAVER coupons expire 26\u201327 September 2026 and the Kellanova printables carry no published expiry. Pass 4 (2026-09-22) re-read 22 of the 36 P&amp;G coupons against a fresh fetch of <code>pgbrandsaver.com/coupons/</code> with zero drift, and re-verified the Kellanova page whole \u2014 its \u201c8 coupons today, up to $7.00\u201d headline is now pinned by a test \u2014 but the page\u2019s other ~76 advertised coupons remain untranscribed: the retriever failed on the remaining chunks, and nothing was invented to fill the gap. Re-run <code>scripts/generate_bulk_entries.py</code> against a full read, then sweep the remaining hubs on the same pattern: Unilever, Nestl\u00e9/Purina, Kimberly-Clark, General Mills, Campbell\u00b7s, Post, Hershey, Mars, Mondelez.</li>" +
+      "<li><strong>Watch the Colgate contradiction; the code ring is now documented.</strong> <code>colgate.com/en-us/special-offers</code> (fetched in full twice on 2026-09-22, unchanged) states \u201cCoupons Temporarily Unavailable\u201d while a Colgate microsite (<code>smiles.colgate.com</code>) that once advertised printables has now failed every retrieval \u2014 four fetches across two passes, and no search result at all on the latest pass. Pass 4 recorded the circulating third-party \u201cColgate promo code\u201d ring as <code>excl-colgate-aggregator-promo-codes</code>; if the issuer\u2019s promised \u201cupdated offers\u201d ever appear, they become level-A entries the way Kellanova\u2019s did.</li>" +
       "<li><strong>Add a headless-browser verification path.</strong> <code>scripts/verify_links.py</code> currently does plain HTTP. A Playwright-based mode would unlock Raley&rsquo;s, CVS, Pizza Hut, KFC, Papa Johns and Domino&rsquo;s offers pages, converting several level-B program entries into level-A offer entries.</li>" +
       "<li><strong>Verify Lucky Supermarkets, Save Mart, Smart &amp; Final, Food 4 Less and the ethnic grocers.</strong> Lucky, 99 Ranch, H Mart, Mitsuwa and Nijiya all have dense Bay Area store networks and none is verified yet. Lucky&rsquo;s <code>foru-guest.html</code> path 404s, so its real coupon program needs to be found from <code>luckysupermarkets.com</code> itself; Save Mart&rsquo;s and Smart &amp; Final&rsquo;s store-circular programs need the same anonymous fetch attempt and honest level-B treatment.</li>" +
       "<li><strong>Enumerate Bay Area store addresses.</strong> Chain entries currently link to official store locators instead of listing addresses, because locator pages are JavaScript-driven. A per-chain address list would let the site show a map and a &ldquo;near me&rdquo; filter.</li>" +

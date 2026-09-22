@@ -97,7 +97,8 @@
         "Domain is a P&G-controlled promotion site and the page carries '©2026 P&G'",
         "Dates cross-checked against today's date (2026-09-22) — purchase window found to be CLOSED",
         "Cross-referenced with Costco's own Instant Savings book cycle, which ran 8/24/26–9/20/26"
-      ]
+      ],
+      "recheck_due": "2026-10-28"
     },
     "flags": [
       {
