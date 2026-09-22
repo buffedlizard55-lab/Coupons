@@ -104,7 +104,7 @@ For each candidate offer:
 
 ## 5. Flag taxonomy
 
-223 flags across the dataset: **13 critical, 135 warning, 75 info**.
+224 flags across the dataset: **13 critical, 136 warning, 75 info**.
 
 | Severity | Meaning | Examples in this dataset |
 | --- | --- | --- |

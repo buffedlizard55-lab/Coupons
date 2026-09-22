@@ -2,7 +2,7 @@
 
 **Verification date: 2026-09-22** (all sources accessed on this date; `accessed` is recorded per
 citation in the data).
-**Result: 128 verified offers · 9 documented rejections · 141 citations · 30 domains · 223 flags.**
+**Result: 128 verified offers · 9 documented rejections · 141 citations · 30 domains · 224 flags.**
 
 This log records what was actually retrieved, what came back, what was rejected and why. It
 exists so a reviewer can audit the work without repeating it, and so that a future pass can tell
@@ -219,6 +219,95 @@ Research, data construction, site, tests, CI and documentation, as described abo
 two bulk shards, build script, static site with six views, 167-URL link checker, 36 data-integrity
 tests, 85 render assertions, two GitHub Actions workflows, five documents and this log.
 
-### Pass 2 — bug, requirement and edge-case review (see below)
+### Pass 2 — bug, requirement and edge-case review (complete)
 
-### Pass 3 — full re-check against the original request (see below)
+Reviewed the Pass-1 output line by line against the brief and against the data itself. Ten
+defects found and fixed:
+
+1. **The value schema was not uniform.** 92 entries stored `{amount, currency, kind}` and 11
+   stored `{amount, unit, kind}`, so the site could not label or sort values without guessing.
+   All 103 value objects were normalised to `{amount, unit, currency, kind}`, the schema was
+   documented in `data/meta.json → value_schema`, the generator was taught to emit it, and four
+   tests now enforce it. Edge case found while writing those tests: Starbucks Free Mod Mondays is
+   a `free_item` carrying a **$2 cap**, so the naive rule "free means zero" was refined to "a
+   non-zero `free_item` amount must appear verbatim in `offer_text` as the issuer's own cap".
+2. **14 entries carried a single verification check.** Each was expanded to two or three specific
+   and true checks — what was compared, what was cross-referenced, and what was deliberately
+   *not* asserted — and the suite now requires at least two.
+3. **The Costco entry asserted a policy nobody had verified.** A flag claimed "Costco does not
+   accept manufacturer coupons at all", which came from model knowledge rather than a fetched
+   source. Removed; the entry now verifies program mechanics only and says explicitly that the
+   third-party-coupon question was not verified.
+4. **The Bank of America Museums on Us entry implied an unfetched source.** Its `publisher` named
+   `about.bankofamerica.com`, which was never retrieved. Publisher, checks and a new
+   `sponsor-page-not-retrieved` warning now state that the mechanics come from FAMSF's
+   participating-venue page and that other venues may apply different rules.
+5. **Seven entries sourced from search snippets did not disclose it.** Added the
+   `retrieval-via-search-snippet` warning to each, plus a test requiring that disclosure whenever
+   `web_search` is the only retrieval method — so no entry can imply a direct fetch it did not do.
+6. **`pages.yml` would have failed on every push.** Pages on this repository is configured
+   "Deploy from a branch" (`main`, `/`) and the integration token cannot change it (403 on
+   POST/PUT `/pages`). The workflow now detects `build_type` at run time: under Actions mode it
+   uploads and deploys `_site`; under branch mode it explains that GitHub serves the committed
+   root files. A permanently red workflow for a site that publishes correctly was the failure
+   mode avoided here.
+7. **Filter chips duplicated on rebuild.** `buildFilters()` appended without clearing its
+   containers, so every filter click doubled the chip list. Fixed.
+8. **An address was about to be completed from memory.** Rainbow Grocery's retrieved contact page
+   gave city, ZIP and phone only. Rather than supplying the street address, the gap is flagged
+   `address-incomplete`.
+9. **Render edge cases were untested.** Added `tests/dom_shim.js` and `tests/test_site_render.js`,
+   which run the real front-end against the real dataset with the clock **pinned to 2026-10-05**
+   (after the verification date) so expiry logic is exercised on real entries: 85 assertions
+   covering default filters, `Expired` / `Window closed` / `Not redeemable yet` labelling, chip
+   toggling, flagged-only and no-spend-only filters, search hits and misses, the empty state, all
+   five sort orders, all six views, flag/exclusion/citation counts checked against the data, and
+   deep links lifting the filters that would hide their target. This is what found defects 7 and
+   the false positive where the legitimate flag code `eligibility-term-undefined` tripped an
+   "undefined value" assertion.
+10. **Reproducibility confirmed.** `scripts/generate_bulk_entries.py` is byte-for-byte
+    deterministic; CI re-runs it and fails if the committed shards drift.
+
+### Pass 3 — full re-check against the original request (complete)
+
+Requirement-by-requirement audit, with the artifact that proves each line.
+
+| # | Original requirement | Status | Evidence |
+| --- | --- | --- | --- |
+| 1 | Build a coupon site in this repository | ✅ | `index.html`, `assets/`, live at https://buffedlizard55-lab.github.io/Coupons/ |
+| 2 | From official verified public sources | ✅ | 141 citations over 24 official issuer domains; the suite fails the build if an aggregator or social domain sources an offer |
+| 3 | …such as Krazy Coupon Lady, Reddit, social-media searches | ✅ with a documented boundary | KCL used only as a level-C policy note (2026 insert landscape); Reddit used for leads only — one lead promoted after official verification (`getpgoffer.com`), one rejected (Costco cycle dates); Facebook, Instagram and TikTok are not retrievable anonymously, so none is cited — see `policy-social-media-sourcing` |
+| 4 | Only verified official coupons; no scams or malware | ✅ | 9 documented rejections including the Trader Joe's phishing vector; a dedicated scam-watch view; zero promo-code domains cited for an available offer |
+| 5 | Verify the coupons are true and not expired | ✅ | every published date compared against 2026-09-22; the site recomputes status from the visitor's clock. Audit result: **0** entries with `expires` in the past, **1** closed purchase window (flagged, hidden by default), **1** benefit the issuer says is not live (flagged, hidden by default) |
+| 6 | Work line by line, no hallucinations | ✅ | 128 entries × ≥2 specific checks; `offer_text_is_verbatim` on every entry; `no_hallucination_policy` in `data/meta.json`; three Pass-2 removals of unverified assertions (Costco policy, Bank of America source, Rainbow address) |
+| 7 | Flag irregularities | ✅ | 224 flags (13 critical, 136 warning, 75 info) across 105 distinct codes, all rendered on cards and in the Irregularities view |
+| 8 | Organise into researched categories (no-spend, rebate, BOGO…) | ✅ | 13 categories and 15 deal types derived from the research rather than a generic taxonomy |
+| 9 | Expand the categories through own research | ✅ | Discover & Go library passes, Museums For All, Blue Star, BofA Museums on Us, an FSA/HSA payment-method change, a transit-triggered museum discount, a reusable-container credit, ASTC Passport reciprocity — none of these appear in standard coupon-site taxonomies |
+| 10 | Usable in the SF Bay Area with physical redemption locations | ✅ | every entry has a `bay_area` determination; audit found **0** entries without a venue, store list, official locator or explanatory note; the nine-county definition is FAMSF's published list |
+| 11 | Provide links for manual review | ✅ | Sources view lists all 141 citations with the evidence passage read; `docs/SOURCES.md` is generated from the data; `scripts/verify_links.py` re-checks all 167 URLs |
+| 12 | No manual input from the user | ✅ | research, transcription, coding, testing, publishing and merging were all performed by the agent; no clarification was requested at any point |
+| 13 | GitHub Page with a clean, simple, organised, easy-to-read UI | ✅ | six views, filters, search, five sorts, status badges, collapsible evidence, dark mode, `prefers-reduced-motion`, print styles, skip link, `aria-live` result count |
+| 14 | Official verified source links on the page | ✅ | every card ends with its citations; a render test asserts every visible card links to at least one official source |
+| 15 | Create a pull request and merge it to main | ✅ | PR #1 merged as `0da9132`; the Pass-3 corrections ship in PR #2 |
+| 16 | Suggestions for remaining work and limitations | ✅ | `docs/LIMITATIONS.md` (12 sections), `docs/ROADMAP.md` (10 priorities, backlog, maintenance cadence, definition of done) and the site's Limits & next work view |
+| 17 | Multi-pass execution; do not stop after Pass 1 | ✅ | this log |
+
+**Pass 3 defects found and fixed**
+
+- **Documentation drift.** README, METHODOLOGY, LIMITATIONS, ROADMAP and this log all still said
+  the pre-Pass-2 totals (223 overall, 135 at warning severity) after Pass 2 added flags.
+  Corrected to **224 flags (13 critical, 136 warning, 75 info)** in all five
+  documents, and a new `TestDocsMatchData` class now fails the build if any document's flag
+  totals, README headline counts, README category table, METHODOLOGY level table disagree with
+  the data — or if a document references a repository path that does not exist, or omits one of
+  the nine rejections. `docs/ROADMAP.md` is exempt from the path check by design, because it
+  names files that do not exist yet.
+- **Published-site verification.** The live Pages URL was fetched after the merge and confirmed
+  to serve `index.html`, `assets/css/styles.css`, `assets/js/app.js`, `assets/data/coupons.js`
+  and `data/coupons.json` (all HTTP 200), with statuses computed correctly against the current
+  date (e.g. "Expires soon · Expires in 6 days (Sep 26, 2026)").
+
+**Gaps carried forward deliberately** (unchanged by Pass 3, all in `docs/ROADMAP.md`): the
+California Academy of Sciences free-day question, Lucky and the ethnic grocers, the six merchants
+whose pages are unreadable without a headless browser, social-only offers, and re-harvesting the
+P&G block whose coupons expired on 26–27 September 2026.

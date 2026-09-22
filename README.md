@@ -13,7 +13,7 @@ from an aggregator, a cashback portal, a promo-code site, a listicle or a social
 | Rejected / scam-watch claims documented | **9** |
 | Citations | **141** across **30** domains |
 | Verification levels | A: 115 · B: 11 · C: 2 |
-| Irregularities flagged | **223** (13 critical, 135 warning, 75 info) |
+| Irregularities flagged | **224** (13 critical, 136 warning, 75 info) |
 | All sources checked on | **2026-09-22** |
 
 ---
@@ -75,7 +75,7 @@ address list.
 - **Browse offers** — filter by category, deal type, verification level and status; search
   across brands, offer text, addresses and source domains. Expired and not-yet-redeemable
   offers are hidden by default and can be switched back on.
-- **Irregularities** — all 223 flags grouped by severity, each linking back to the offer.
+- **Irregularities** — all 224 flags grouped by severity, each linking back to the offer.
 - **Rejected & scam watch** — the nine claims that were refused, with the reasoning.
 - **Sources** — every citation, with the evidence passage that was read from it.
 - **How this was verified** — verification levels, retrieval methods, flag severities, the

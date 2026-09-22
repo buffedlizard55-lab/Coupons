@@ -5,7 +5,7 @@ looks like — including the evidence that must be captured, because an entry wi
 cannot be merged.
 
 Current state: **128 verified offers, 9 documented rejections, 141 citations across 30 domains,
-223 flags**, all verified 2026-09-22.
+224 flags**, all verified 2026-09-22.
 
 ---
 
