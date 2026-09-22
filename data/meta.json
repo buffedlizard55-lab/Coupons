@@ -25,7 +25,7 @@
       },
       {
         "date": "2026-09-22",
-        "change": "Pass 4 (same day, later): manufacturer re-verification (P&G 26/36 lines re-read with zero drift; Kellanova page re-fetched complete and the issuer's '8 coupons, up to $7.00' headline cross-check automated as a test; KV cards re-tagged as assembled quotes per methodology), Colgate follow-up (main page re-fetched; microsite failed again; aggregator code ring documented as a rejection), the Pop-Tarts rewards earning ladder added verbatim from the issuer's terms, and verification.recheck_due added to every dated record under the new recheck_policy."
+        "change": "Pass 4 (same day, later): manufacturer re-verification (P&G 25 offer lines covering 22 of the 36 transcribed coupons re-read with zero drift, the pass-3 count of 26 lines having been corrected as an overcount; Kellanova page re-fetched complete and the issuer's '8 coupons, up to $7.00' headline cross-check automated as a test; KV cards re-tagged as assembled quotes per methodology), Colgate follow-up (main page re-fetched; microsite failed again; aggregator code ring documented as a rejection), the Pop-Tarts rewards earning ladder added verbatim from the issuer's terms, and verification.recheck_due added to every dated record under the new recheck_policy."
       }
     ]
   },
