@@ -72,8 +72,11 @@ jobs:
 
       - name: Re-check every cited URL
         id: links
-        continue-on-error: true
+        # No continue-on-error: without it the step's `--strict` exit code is
+        # swallowed and strict dispatches could never go red. Non-strict runs are
+        # unaffected because verify_links.py exits 0 unless --strict is passed.
         run: |
+          set -o pipefail
           python3 scripts/verify_links.py \
             --workers 4 \
             --timeout 30 \
