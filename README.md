@@ -13,11 +13,11 @@ aggregator, a cashback portal, a promo-code site, a listicle or a social-media p
 
 | | |
 | --- | --- |
-| Verified offers | **185** |
-| Rejected / scam-watch claims documented | **18** |
-| Citations | **204** across **44** domains |
-| Verification levels | A: 169 · B: 14 · C: 2 |
-| Irregularities flagged | **517** (20 critical, 432 warning, 65 info) |
+| Verified offers | **227** |
+| Rejected / scam-watch claims documented | **20** |
+| Citations | **265** across **72** domains |
+| Verification levels | A: 190 · B: 34 · C: 3 |
+| Irregularities flagged | **612** (20 critical, 497 warning, 96 info) |
 | All sources checked on | **2026-09-22** |
 
 ---
@@ -27,12 +27,13 @@ aggregator, a cashback portal, a promo-code site, a listicle or a social-media p
 Most coupon sites are affiliate businesses. They republish codes from anywhere, keep expired
 offers live because expired offers still earn clicks, and mix genuine manufacturer coupons with
 promo codes that were never issued by anybody. The result is that a shopper cannot tell a real
-$1.00-off Crest coupon from a fabricated "85% off Smart & Final" code page — among its 18
-documented rejections this repository records **five fabricated-code rings** (Round Table Pizza,
-99 Ranch Market, General Mills, Raley's/Smart & Final, Colgate), a family of stale Kellanova
-prize-game terms still served on the official domain, a Trader Joe's phishing vector, and two
-manufacturer domains (boxtops.com, realsavings.com) that have drifted to a rock band's tour site
-and a parked-ad shell.
+$1.00-off Crest coupon from a fabricated "85% off Smart & Final" code page — among its 20
+documented rejections this repository records **six fabricated-code rings** (Round Table Pizza,
+99 Ranch Market, General Mills, Raley's/Smart & Final, Colgate, Sprouts), a family of stale
+Kellanova prize-game terms still served on the official domain, coupon codes for **JOANN**, a
+chain that liquidated every store in May 2025 and cannot honour anything, a Trader Joe's phishing
+vector, and two manufacturer domains (boxtops.com, realsavings.com) that have drifted to a rock
+band's tour site and a parked-ad shell.
 
 This project takes the opposite position:
 
@@ -46,7 +47,7 @@ This project takes the opposite position:
    pages (Colgate's two coupon pages disagree), closed purchase windows, expired offers,
    benefits the issuer says are not live yet, and sources that were only partially retrievable
    are all flagged on the card itself.
-5. **Rejections are published too.** Eighteen claims that circulate widely online are documented
+5. **Rejections are published too.** Twenty claims that circulate widely online are documented
    with the reason they were rejected and the evidence that would change the verdict.
 6. **Every line is checkable by hand.** Each citation stores the URL, the publisher, the page
    title, the retrieval method, the date it was read, and the verbatim passage that was read.
@@ -58,18 +59,22 @@ Categories are the ones the research actually produced, not a generic coupon-sit
 | Category | Offers | Notes |
 | --- | --- | --- |
 | Manufacturer digital coupons | 113 | P&G brandSAVER 112 coupons (full harvest: Crest, Tide, Olay, Always, Bounce, Cascade, Downy, Gain, Gillette, Old Spice, Oral-B, Swiffer… $0.75–$10.00, via Coupon24 at CVS) + Kellanova $1-off-two Barcode Buck$ |
-| Restaurant & quick-service loyalty | 16 | McDonald's, Starbucks, Dunkin', Chipotle, Jimmy John's, Baskin-Robbins, Subway — official rewards terms |
+| No-spend & standing perks | 23 | App sign-up freebies and free-to-obtain product perks (free McNuggets, free scoop, Mollie's weekly free item, IKEA Family free coffee/tea and $20 first-shop QR offer, Big 5 E-Team 10%, Grocery Outlet WOW $3-off-$25, Kohl's Senior-Wednesday/Military-Monday 15%) |
+| Restaurant & quick-service loyalty | 22 | McDonald's, Starbucks, Dunkin', Chipotle, Jimmy John's, Baskin-Robbins, Subway, Taco Bell, Domino's, Pizza Hut, Peet's Peetnik Rewards — official rewards terms |
 | Bay Area independent grocers & co-ops | 14 | Rainbow Grocery (10% seniors, volume, case, cheese), Mollie Stone's Rewards (1–3% rebate), 4 Items on the 4th (40% off), Sandwich/Salad/Soup clubs, weekly free item |
 | Printable manufacturer coupons | 13 | Coupons.com printables + 8 Kellanova printables read directly from Kellanova's own coupon page |
 | BOGO & multi-buy | 13 | "OFF TWO"/"any TWO" volume offers from P&G (Olay, Cascade), Kellanova and the new Kellanova $1-off-two |
-| No-spend & standing perks | 12 | App sign-up freebies and free-to-obtain product perks (free McNuggets, free scoop, senior discount, Mollie's weekly free item, sandwich clubs) |
-| Rebates & cash back | 7 | P&G Back to School rebates ($25/$15/$5 — 3 tiers), P&G × Costco mail-in rebate, Ibotta, Checkout 51 |
-| Policy notes & scam watch | 7 | Trader Joe's no-coupon policy, 2026 insert landscape, link-rot log, social-media sourcing, Colgate suspension, P&G retailer-acceptance correction |
-| Grocery store coupon programs | 7 | Safeway / Andronico's for U, Raley's Something Extra Dollars, Save Mart Rewards, Smart & Final digital coupons, Albertsons banners |
+| Grocery store coupon programs | 11 | Safeway / Andronico's for U, Raley's, Save Mart, Smart & Final, Albertsons, Whole Foods Prime (extra 10%, Tue/Fri Days of Deals), Sprouts digital coupons, Grocery Outlet WOW |
+| Policy notes & scam watch | 10 | Trader Joe's, 2026 insert landscape, link-rot log, social-media sourcing, Colgate suspension, P&G retailer acceptance, Dollar Tree coupon-acceptance rules, Grocery Outlet coupon policy, Hobby Lobby coupon sunset |
+| Big-box & mass retail loyalty | 10 | Target Circle, 7-Eleven, IKEA Family (member prices, dated 10/12 offers, student 15%), Kohl's Rewards 5% + Kohl's Cash earn event |
+| Home improvement, hardware & auto | 9 | Harbor Freight coupon hub (3 dated in-store coupons + paid Inside Track Club), Ace Rewards, Lowe's MyLowe's, AutoZone $20/5-credits, O'Reilly O'Rewards |
+| Rebates & cash back | 8 | P&G Back to School rebates ($25/$15/$5 — 3 tiers), P&G × Costco mail-in rebate, Ibotta, Checkout 51, Mollie Stone's $20 signup bonus |
 | Drugstore & pharmacy | 7 | Walgreens, CVS ExtraCare & ExtraCare Plus 20%-off, GoodRx prescription pricing |
-| Big-box & mass retail loyalty | 2 | Target Circle, 7-Eleven 7REWARDS |
+| Sporting goods & outdoor | 3 | REI Co-op ($30 lifetime, annual ~10% back, $30 new-member bonus card through 11/12/26), Big 5 E-Team |
+| Pet supplies | 3 | Petco Perks Core (167 pts = $5) and paid Premier 15%-off tiers, PetSmart Treats (10 pts/$1, $2 per 1,000 pts) |
+| Office, craft & hobby | 3 | Staples Easy Rewards (renamed program, 200 pts = $1), Michaels 3%/6% back, Hobby Lobby standing 40%-off-marked-price departments |
+| Receipt-scan rewards | 2 | Pop-Tarts Crazy Good Rewards (Kellanova), Fetch |
 | Warehouse club instant savings | 1 | Costco (program mechanics only) |
-| Receipt-scan rewards | 1 | Pop-Tarts Crazy Good Rewards (Kellanova) |
 
 Deal types recorded: `$ off`, `% off`, `BOGO / multi-buy`, `free item`, `cash back`,
 `rebate / gift card`, `points reward`, `member price`, `discounted price`, `rewards credit`,
@@ -86,8 +91,8 @@ redemption was itself grounds for rejection this pass (see `excl-rkt-squishmallo
 - **Browse offers** — filter by category, deal type, verification level and status; search
   across brands, offer text, addresses and source domains. Expired and not-yet-redeemable
   offers are hidden by default and can be switched back on.
-- **Irregularities** — all 517 flags grouped by severity, each linking back to the offer.
-- **Rejected & scam watch** — the eighteen claims that were refused, with the reasoning.
+- **Irregularities** — all 613 flags grouped by severity, each linking back to the offer.
+- **Rejected & scam watch** — the twenty claims that were refused, with the reasoning.
 - **Sources** — every citation, with the evidence passage that was read from it.
 - **How this was verified** — verification levels, retrieval methods, flag severities, the
   nine-county Bay Area definition, and how to reproduce the build.
@@ -111,10 +116,11 @@ assets/css/styles.css          styling (no frameworks, no CDN, no build step)
 assets/js/app.js               front-end: filtering, sorting, status, routing
 assets/data/coupons.js         generated dataset consumed by the front-end
 data/meta.json                 taxonomy, verification policy, value schema, flag severities
-data/entries/01..15-*.json     the curated shards — every offer string lives here
+data/entries/01..17-*.json     the curated shards — every offer string lives here
 data/coupons.json              generated merged dataset (for reuse by other tools)
 archive/rescoped-2026-09-22/   the museum/admission shards removed when scope became products-only
 scripts/generate_bulk_entries.py  regenerates the P&G shard from its transcription
+scripts/generate_pass6_entries.py regenerates the pass-6 expansion shard from its transcription
 scripts/build_site.py          validates shards, emits the dataset, the site payload and _site/
 scripts/verify_links.py        re-fetches every citation and reports what still resolves (CI-only)
 tests/test_data.py             integrity tests (schema, sourcing rules, Bay Area, values, docs)
@@ -132,7 +138,7 @@ docs/VERIFICATION-LOG.md       what was checked, when, and what failed
 
 ```bash
 python3 scripts/build_site.py            # validate shards, regenerate data + site payload + docs/SOURCES.md
-python3 -m unittest discover -s tests    # 50 tests: data integrity + site render
+python3 -m unittest discover -s tests    # 56 tests: data integrity + site render
 python3 scripts/verify_links.py          # re-check citations over HTTP (needs egress; runs weekly in CI)
 python3 -m http.server 8000              # view the site locally at http://localhost:8000
 ```
@@ -163,7 +169,7 @@ so the site publishes from the committed root files (`index.html`, `assets/`, `d
 `.nojekyll`) as soon as a change lands on `main`. `.nojekyll` is committed deliberately so GitHub
 serves the files as-is instead of running them through Jekyll.
 
-`.github/workflows/pages.yml` validates the dataset, runs all 50 tests, proves the P&G shard is
+`.github/workflows/pages.yml` validates the dataset, runs all 56 tests, proves the P&G shard is
 reproducible and builds the site on every push and pull request. It also detects the repository's
 Pages mode: if Pages is ever switched to **GitHub Actions**, the same workflow uploads `_site/` as
 the Pages artifact and deploys it, with no further changes needed. `.github/workflows/verify.yml`

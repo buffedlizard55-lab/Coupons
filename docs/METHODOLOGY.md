@@ -43,9 +43,9 @@ Recorded on every entry as `verification.level`.
 
 | Level | Meaning | Count |
 | --- | --- | --- |
-| **A** | Offer text, value and expiry were read verbatim from the issuer's own official page on the verification date. | 169 |
-| **B** | The program or policy was confirmed on the issuer's official page, but the specific rotating offers behind it require an app, an account or an in-store visit and could not be read anonymously. No individual offer is asserted. | 14 |
-| **C** | Only third-party evidence was found. Kept **only** in `10-excluded-unverified.json` and `11-policy-notes.json`, never presented as a usable coupon. | 2 |
+| **A** | Offer text, value and expiry were read verbatim from the issuer's own official page on the verification date. | 190 |
+| **B** | The program or policy was confirmed on the issuer's official page, but the specific rotating offers behind it require an app, an account or an in-store visit and could not be read anonymously. No individual offer is asserted. | 34 |
+| **C** | Only third-party evidence was found. Kept **only** in `10-excluded-unverified.json` and `11-policy-notes.json`, never presented as a usable coupon. | 3 |
 
 Level B exists because pretending otherwise would be a hallucination of a different kind:
 Safeway for U, Target Circle, Costco Instant Savings and the quick-service restaurant apps all
@@ -58,7 +58,7 @@ The test suite additionally requires that:
 - a level-B entry states in its own checks or flags *why* the offers could not be enumerated;
 - an entry whose only retrieval method was a search-engine snippet of the issuer's page carries
   the flag `retrieval-via-search-snippet`, so it never implies a direct fetch it did not do
-  (17 entries disclose this).
+  (35 entries disclose this).
 
 ## 3. Retrieval methods
 
@@ -104,7 +104,7 @@ For each candidate offer:
 
 ## 5. Flag taxonomy
 
-517 flags across the dataset: **20 critical, 432 warning, 65 info**.
+613 flags across the dataset: **20 critical, 497 warning, 96 info**.
 
 | Severity | Meaning | Examples in this dataset |
 | --- | --- | --- |
@@ -176,7 +176,7 @@ shards no longer match, so the bulk data cannot silently drift from its transcri
 ```bash
 python3 scripts/build_site.py            # validate → data/coupons.json, assets/data/coupons.js, docs/SOURCES.md, _site/
 python3 scripts/build_site.py --check    # fail if generated files are stale
-python3 -m unittest discover -s tests    # 50 tests
+python3 -m unittest discover -s tests    # 56 tests
 python3 scripts/verify_links.py          # re-fetch every citation (80 unique URLs) → reports/link-check.json
 ```
 
@@ -201,5 +201,5 @@ documented link-rot log stops resolving.
   locator is linked instead.
 - No attempt was made to reconcile two official pages that disagree; both are quoted and the
   conflict is flagged.
-- No rejected claim was quietly deleted. All eighteen remain published with their reasoning, because
+- No rejected claim was quietly deleted. All twenty remain published with their reasoning, because
   a shopper who has seen the claim needs to find the rebuttal.

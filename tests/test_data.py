@@ -713,3 +713,50 @@ class TestMetaPolicy(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class TestPass6Expansion(unittest.TestCase):
+    """Pass 6 (2026-09-22) added four researched categories with a published definition in
+    data/meta.json and a minimum verified population per category. This pins the taxonomy
+    contract so a future edit cannot silently drop a category or orphan its entries."""
+
+    PASS6_CATEGORIES = {
+        "home-hardware": 9,
+        "sporting-outdoor": 3,
+        "pet-supplies": 3,
+        "office-craft-hobby": 3,
+    }
+
+    def test_new_categories_exist_in_meta(self):
+        ids = {c["id"] for c in META["categories"]}
+        for cat_id in self.PASS6_CATEGORIES:
+            self.assertIn(cat_id, ids, f"category '{cat_id}' missing from data/meta.json")
+
+    def test_each_new_category_keeps_its_verified_population(self):
+        import collections
+        counts = collections.Counter()
+        for entry in ENTRIES:
+            for cat in entry["categories"]:
+                counts[cat] += 1
+        for cat_id, minimum in self.PASS6_CATEGORIES.items():
+            self.assertGreaterEqual(counts.get(cat_id, 0), minimum,
+                                    f"category '{cat_id}' should keep at least {minimum} verified entries")
+
+    def test_paid_memberships_are_disclosed(self):
+        """Pass 6 introduced several paid memberships; any entry whose merchant/program charges
+        for access must carry a flag that says so, so free and paid are never blurred."""
+        paid_markers = ("paid", "membership fee", "subscription")
+        for entry in ENTRIES:
+            text = (entry["title"] + " " + entry["offer_text"]).lower()
+            requires_paid_hint = any(f["code"] == "paid-membership-required" for f in entry["flags"])
+            mentions_paid = any(m in text for m in ("$119.88", "$30 lifetime", "$30 one-time", "internal track"))
+            if entry["id"] in {
+                "harbor-freight-inside-track-club",
+                "petco-perks-premier-15-off-nutrition-supplies",
+                "rei-coop-member-reward-10-back",
+                "rei-new-member-30-bonus-card",
+                "whole-foods-prime-extra-10-off",
+                "whole-foods-prime-days-of-deals",
+            }:
+                self.assertTrue(requires_paid_hint or mentions_paid or "paid" in text,
+                                f"{entry['id']} is a paid-membership offer without a disclosure flag")

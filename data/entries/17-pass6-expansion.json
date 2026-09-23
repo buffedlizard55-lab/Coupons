@@ -1,0 +1,2556 @@
+[
+ {
+  "id": "sprouts-digital-coupons-program",
+  "title": "Sprouts digital coupons — clip in-app offers and scan the app barcode at checkout",
+  "merchant": "Sprouts Farmers Market",
+  "publisher": "Sprouts Farmers Market",
+  "categories": [
+   "grocery-loyalty"
+  ],
+  "deal_types": [
+   "price_discount",
+   "promo_code"
+  ],
+  "value": null,
+  "offer_text": "Save more than $100 in savings each month with exclusive promotions and digital coupons. Visit shop.sprouts.com to browse in-store deals and clip coupons to your account; in-store shoppers scan the barcode in the Sprouts app at checkout.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program; the issuer publishes no end date for the digital-coupon channel.",
+  "requirements": [
+   "Free Sprouts account (app or shop.sprouts.com)"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Sprouts operates stores across the nine-county Bay Area; the official site header carries a store finder. Digital coupons are clipped to the account and applied by scanning the Sprouts app barcode at the register.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.sprouts.com/faqs/how-do-i-redeem-digital-coupons/",
+    "title": "How do I redeem digital coupons? — Sprouts FAQs",
+    "publisher": "Sprouts Farmers Market",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"more than $100 in savings each month with exclusive promotions and digital coupons\"; offers are clipped at shop.sprouts.com or in the app's Coupons tab; \"In-store\" shoppers \"scan\" the \"Sprouts app barcode\" at checkout; clipped offers auto-apply online."
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Found the issuer's own FAQ describing the coupon flow (clip in the app/on shop.sprouts.com, scan the app barcode at checkout)",
+    "Confirmed the channel is coupons clipped to an account — the issuer does not publish printable codes, which is why third-party 'Sprouts promo codes' were rejected (see excl-sprouts-promo-code-listings)",
+    "Individual coupon values are account-level and rotate; the FAQ itself gives the aggregate claim of over $100 in savings per month, so no single offer value is asserted"
+   ]
+  },
+  "flags": [
+   {
+    "code": "rotating-offers-not-enumerated",
+    "severity": "warning",
+    "detail": "Individual digital coupons are generated per account and rotate; only the program mechanics, not the current coupon list, could be read anonymously."
+   },
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Evidence comes from a search-engine snippet of the issuer's official FAQ page (sprouts.com); the passage was not re-read on the rendered page itself."
+   }
+  ]
+ },
+ {
+  "id": "whole-foods-prime-extra-10-off",
+  "title": "Whole Foods Market — extra 10% off storewide sale prices for Prime members",
+  "merchant": "Whole Foods Market",
+  "publisher": "Whole Foods Market",
+  "categories": [
+   "grocery-loyalty"
+  ],
+  "deal_types": [
+   "percent_off",
+   "member_price"
+  ],
+  "value": {
+   "amount": 10.0,
+   "unit": "percent",
+   "currency": null,
+   "kind": "percent_off"
+  },
+  "offer_text": "Prime members can scan their Whole Foods Market or Amazon app and score an extra 10% off storewide sales.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Standing benefit advertised on the issuer's /amazon page; no end date is published.",
+  "requirements": [
+   "Amazon Prime membership (paid)",
+   "Whole Foods Market app or Amazon app"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Whole Foods Market operates stores across the nine-county Bay Area; the official homepage carries the 'Find a Store' control (the /stores path redirects to the homepage, which hosts the store search).",
+   "physical_locations": null,
+   "locator_url": "https://www.wholefoodsmarket.com/"
+  },
+  "sources": [
+   {
+    "url": "https://www.wholefoodsmarket.com/amazon",
+    "title": "Whole Foods Market — In-Store Deals, Member Discounts, and More with Amazon",
+    "publisher": "Whole Foods Market (Amazon)",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Prime members can scan their Whole Foods Market or Amazon app and score an extra 10% off storewide sales.¹ Plus, scan for Prime member deals: special discounts on seasonal favorites throughout the year, chosen for you. ... ¹Excludes alcohol and gift cards.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Read the issuer's /amazon page directly (twice in pass 6) and transcribed the perk sentence, the 'Plus, scan for Prime member deals' continuation and its footnote exclusions",
+    "Confirmed the discount applies to storewide SALE prices (stacked on sale prices), not everyday prices",
+    "Cross-checked against the homepage, which shows the same Prime marked-price pattern (e.g. 'with Prime' tiles dated 'Through 9/22')"
+   ]
+  },
+  "flags": [
+   {
+    "code": "paid-membership-required",
+    "severity": "warning",
+    "detail": "The extra 10% requires an Amazon Prime membership, which is a paid subscription; the discount cannot be had for free."
+   },
+   {
+    "code": "category-exclusions",
+    "severity": "info",
+    "detail": "Footnote 1 excludes alcohol and gift cards from the extra 10% benefit."
+   }
+  ]
+ },
+ {
+  "id": "whole-foods-prime-days-of-deals",
+  "title": "Whole Foods Market — Prime Days of Deals every Tuesday and Friday (valid through 10/6/2026)",
+  "merchant": "Whole Foods Market",
+  "publisher": "Whole Foods Market",
+  "categories": [
+   "grocery-loyalty"
+  ],
+  "deal_types": [
+   "member_price",
+   "price_discount"
+  ],
+  "value": null,
+  "offer_text": "Save big every Tuesday and Friday. Prime members: Save on easy weeknight meals like rotisserie chicken, packaged soup and ground beef every Tuesday, plus end-of-week favorites like sushi, oysters and pizza every Friday. Valid 4/29 – 10/6/26. Must identify as a Prime member to receive Prime price. Restrictions apply.",
+  "offer_text_is_verbatim": true,
+  "expires": "2026-10-06",
+  "expiry_basis": "The issuer's own Days of Deals section states 'Valid 4/29 – 10/6/26' on both the /amazon page and the homepage banner.",
+  "requirements": [
+   "Amazon Prime membership (paid)",
+   "Shop on the correct weekday (Tuesday or Friday)"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Whole Foods Market operates stores across the nine-county Bay Area; 'Find a Store' control on the official homepage.",
+   "physical_locations": null,
+   "locator_url": "https://www.wholefoodsmarket.com/"
+  },
+  "sources": [
+   {
+    "url": "https://www.wholefoodsmarket.com/",
+    "title": "Whole Foods Market: Shop Groceries & Weekly Sales",
+    "publisher": "Whole Foods Market (Amazon)",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Save big every Tuesday and Friday. Twice a week, dig into savings on grocery go-tos. Every Tuesday, save on easy weeknight meals like rotisserie chicken and soup. On Fridays, save on weekend favorites like pizza, sushi and oysters. ... Valid 4/29 –10/6/26. Must identify as a Prime member to receive Prime price. Restrictions apply.\""
+   },
+   {
+    "url": "https://www.wholefoodsmarket.com/amazon",
+    "title": "Amazon & Prime Benefits | Whole Foods Market",
+    "publisher": "Whole Foods Market (Amazon)",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Save big every Tuesday and Friday. Prime members: Save on easy weeknight meals like rotisserie chicken, packaged soup and ground beef every Tuesday, plus end-of-week favorites like sushi, oysters and pizza every Friday. ... Valid 4/29 – 10/6/26. Must identify as a Prime member to receive Prime price. Restrictions apply.\" (Same page confirms the extra-10% section and its footnote ¹Excludes alcohol and gift cards.)"
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Both the homepage banner and the /amazon page publish the identical validity window 'Valid 4/29 – 10/6/26'; compared the two directly (re-fetched /amazon in pass 6 for the exact item lists)",
+    "Transcribed the listed Tuesday (rotisserie chicken, packaged soup, ground beef) and Friday (sushi, oysters, pizza) item families; per-item prices are shown only in the app/flyer, so no dollar value is asserted"
+   ],
+   "recheck_due": "2026-10-03"
+  },
+  "flags": [
+   {
+    "code": "paid-membership-required",
+    "severity": "warning",
+    "detail": "Prime price requires identifying as a Prime member, a paid Amazon subscription the banner itself names."
+   },
+   {
+    "code": "prices-not-enumerated",
+    "severity": "warning",
+    "detail": "The issuer publishes the item families but per-item prices live in the app and weekly sales flyer; no numbered price could be read anonymously."
+   }
+  ]
+ },
+ {
+  "id": "ikea-family-free-coffee-tea",
+  "title": "IKEA Family — free coffee or hot tea on every visit",
+  "merchant": "IKEA",
+  "publisher": "IKEA",
+  "categories": [
+   "no-spend-free"
+  ],
+  "deal_types": [
+   "free_item"
+  ],
+  "value": null,
+  "offer_text": "Enjoy a free coffee or hot tea on us every time you visit our store and show your IKEA Family card.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Ongoing member benefit stated on the issuer's IKEA Family page; no end date published.",
+  "requirements": [
+   "Free IKEA Family membership"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Bay Area locations per the issuer's own store list: IKEA East Palo Alto and IKEA Emeryville (full stores), IKEA San Francisco (small store), plus Plan & order points in Colma and Pleasanton.",
+   "physical_locations": [
+    "IKEA East Palo Alto",
+    "IKEA Emeryville",
+    "IKEA San Francisco (small store)",
+    "IKEA Colma (Plan & order point)",
+    "IKEA Pleasanton (Plan & order point)"
+   ],
+   "locator_url": "https://www.ikea.com/us/en/stores/"
+  },
+  "sources": [
+   {
+    "url": "https://www.ikea.com/us/en/ikea-family/",
+    "title": "IKEA Family — IKEA",
+    "publisher": "IKEA",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Enjoy a free coffee or hot tea on us every time you visit our store and show your IKEA Family card.\" Joining is free (\"Sign up online or get started at one of our digital kiosks in-store... It's always free to join\")."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Read the benefit sentence on the issuer's IKEA Family program page directly",
+    "Confirmed the page states no purchase requirement for the coffee/tea benefit and confirms membership itself is free",
+    "Cross-checked the issuer's official store list: East Palo Alto and Emeryville are inside the nine-county Bay Area (San Mateo and Alameda counties)"
+   ]
+  },
+  "flags": [
+   {
+    "code": "membership-required",
+    "severity": "info",
+    "detail": "A free IKEA Family account is required; the card (digital in the IKEA app) must be shown at the register/coffee station."
+   },
+   {
+    "code": "smaller-formats-may-not-participate",
+    "severity": "warning",
+    "detail": "The issuer's own store list labels the SF location a 'Small store' and Colma/Pleasanton 'Plan & order points'; these formats may not serve beverages — confirm locally."
+   }
+  ]
+ },
+ {
+  "id": "ikea-family-new-member-20-off-first-instore",
+  "title": "IKEA Family — $20 off your first in-store purchase (new members, QR code)",
+  "merchant": "IKEA",
+  "publisher": "IKEA",
+  "categories": [
+   "no-spend-free",
+   "big-box-loyalty"
+  ],
+  "deal_types": [
+   "dollar_off"
+  ],
+  "value": {
+   "amount": 20.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "dollar_off"
+  },
+  "offer_text": "From $20 off your first in-store purchase. $20 off your first in-store purchase offer is valid for new IKEA Family members only and is a limited time offer. IKEA will send a QR code to new IKEA Family members... within 48 hours after validating email address... The reward is valid for 90 days from date of issue. Some restrictions apply.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "The web offer has no global end date; the issuer labels it a 'limited time offer'. The personal QR code is valid 90 days from issue.",
+  "requirements": [
+   "New IKEA Family registration",
+   "Validate the email address; QR arrives by email within 48 hours",
+   "Redeem in-store within 90 days of issue"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Redemption is explicitly IN-STORE (Bay Area: IKEA East Palo Alto, IKEA Emeryville, IKEA San Francisco small store) — the QR is for a first in-store purchase.",
+   "physical_locations": [
+    "IKEA East Palo Alto",
+    "IKEA Emeryville",
+    "IKEA San Francisco (small store)"
+   ],
+   "locator_url": "https://www.ikea.com/us/en/stores/"
+  },
+  "sources": [
+   {
+    "url": "https://www.ikea.com/us/en/ikea-family/",
+    "title": "IKEA Family — IKEA",
+    "publisher": "IKEA",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"From $20 off your first in-store purchase.† $20 off your first in-store purchase offer is valid for new IKEA Family members only and is a limited time offer. IKEA will send a QR code to new IKEA Family members that can be used for a first transaction in-store within 48 hours after validating email address... The reward is valid for 90 days from date of issue. Some restrictions apply.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Transcribed the headline and the full daggered terms from the issuer's IKEA Family page on the verification date",
+    "Confirmed redemption is for a first IN-STORE purchase, which satisfies the project's physical-redemption requirement"
+   ]
+  },
+  "flags": [
+   {
+    "code": "new-accounts-only",
+    "severity": "warning",
+    "detail": "Valid for new IKEA Family members only; existing members are excluded by the issuer's own terms."
+   },
+   {
+    "code": "limited-time-offer-no-end-date",
+    "severity": "warning",
+    "detail": "IKEA itself calls this a 'limited time offer' but publishes no end date, so it can be withdrawn without notice; 'From' wording also allows lower values."
+   },
+   {
+    "code": "restrictions-not-enumerated",
+    "severity": "info",
+    "detail": "Terms say 'Some restrictions apply' without listing them on the program page; the fine print may exclude certain products or minimums."
+   }
+  ]
+ },
+ {
+  "id": "ikea-family-offers-program",
+  "title": "IKEA Family member prices — rotating monthly member offers",
+  "merchant": "IKEA",
+  "publisher": "IKEA",
+  "categories": [
+   "big-box-loyalty"
+  ],
+  "deal_types": [
+   "member_price"
+  ],
+  "value": null,
+  "offer_text": "Explore the exclusive IKEA Family member discounts reserved for you as an IKEA Family member. These special offers on a selection of products are our way of saying, Tack! (Thanks) for being part of the family.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Standing member-offer channel; individual offers rotate in dated cycles (a 2026-09-17 to 2026-10-12 cycle was live at verification).",
+  "requirements": [
+   "Free IKEA Family membership"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Member prices are marked in-store at IKEA East Palo Alto and IKEA Emeryville (Bay Area full stores) and online.",
+   "physical_locations": [
+    "IKEA East Palo Alto",
+    "IKEA Emeryville",
+    "IKEA San Francisco (small store)"
+   ],
+   "locator_url": "https://www.ikea.com/us/en/stores/"
+  },
+  "sources": [
+   {
+    "url": "https://www.ikea.com/us/en/offers/family-offers/",
+    "title": "IKEA Family — IKEA",
+    "publisher": "IKEA",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Explore the exclusive IKEA Family member discounts reserved for you as an IKEA Family member. These special offers on a selection of products are our way of saying, Tack!\" At verification the page held 89 items in six dated offers (e.g. 15% off all LILLESÄTER sofas, 25% off select mirrors in-store only, both 'thru 10/12')."
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Read the official family-offers page: six dated offer groups were live, all 'thru 10/12' (2026-10-12)",
+    "Confirmed the offers require only the free IKEA Family membership",
+    "One dated offer (15% off all LILLESÄTER sofas & accent chairs) was transcribed fully with its product-card validity dates and added as its own entry"
+   ]
+  },
+  "flags": [
+   {
+    "code": "rotating-offers-not-enumerated",
+    "severity": "warning",
+    "detail": "The full current catalogue (89 discounted items at verification) rotates monthly; only the headline groups and one full example are transcribed, not all 89."
+   }
+  ]
+ },
+ {
+  "id": "ikea-family-lillesater-15-off",
+  "title": "IKEA Family — 15% off all LILLESÄTER sofas & accent chairs (through 10/12/2026)",
+  "merchant": "IKEA",
+  "publisher": "IKEA",
+  "categories": [
+   "big-box-loyalty"
+  ],
+  "deal_types": [
+   "member_price",
+   "percent_off"
+  ],
+  "value": {
+   "amount": 15.0,
+   "unit": "percent",
+   "currency": null,
+   "kind": "member_price"
+  },
+  "offer_text": "15% off all LILLESÄTER sofas & accent chairs thru 10/12. Example card: LILLESÄTER Sofa, Axvall off-white — IKEA Family price $849.00, 15% off, save $150.00, regular price $999.00. Price valid Sep 17, 2026 - Oct 12, 2026 or while supply lasts.",
+  "offer_text_is_verbatim": false,
+  "expires": "2026-10-12",
+  "expiry_basis": "Issuer's product card states 'Price valid Sep 17, 2026 - Oct 12, 2026 or while supply lasts' and the banner says 'thru 10/12'.",
+  "requirements": [
+   "Free IKEA Family membership"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Valid online and in-store at Bay Area IKEAs (East Palo Alto, Emeryville, SF small store) with the Family card.",
+   "physical_locations": [
+    "IKEA East Palo Alto",
+    "IKEA Emeryville",
+    "IKEA San Francisco (small store)"
+   ],
+   "locator_url": "https://www.ikea.com/us/en/stores/"
+  },
+  "sources": [
+   {
+    "url": "https://www.ikea.com/us/en/offers/family-offers/",
+    "title": "IKEA Family — IKEA",
+    "publisher": "IKEA",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Banner: \"15% off all LILLESÄTER sofas & accent chairs thru 10/12\". Product card: \"IKEA Family price ... $849.00 ... 15% off, save $150.00 Regular price $999.00 ... Price valid Sep 17, 2026 - Oct 12, 2026 or while supply lasts\". Sibling banners in the same cycle: 15% off select STOCKHOLM sofas, 10% off select kitchen islands, 20% off select baby cribs/kids beds/mattresses, 20% off select KUSTFYR Halloween collection, 25% off select mirrors in-store only — all 'thru 10/12'."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Compared the banner's 'thru 10/12' with the product card's printed window Sep 17 – Oct 12, 2026: consistent",
+    "Transcribed the first product card exactly (family price, savings, regular price) so reviewers can spot-check"
+   ],
+   "recheck_due": "2026-10-09"
+  },
+  "flags": [
+   {
+    "code": "while-supplies-lasts",
+    "severity": "warning",
+    "detail": "The printed window ends 'or while supply lasts', so stock can end the offer earlier than 2026-10-12."
+   },
+   {
+    "code": "offer-text-assembled",
+    "severity": "info",
+    "detail": "Offer text is assembled from the banner line and the first product card on the same page; both parts are quoted verbatim in the evidence."
+   }
+  ]
+ },
+ {
+  "id": "ikea-family-student-15-coupon",
+  "title": "IKEA Family — verified students get a one-time 15% off coupon (offer ends 9/30/2026)",
+  "merchant": "IKEA",
+  "publisher": "IKEA",
+  "categories": [
+   "big-box-loyalty",
+   "no-spend-free"
+  ],
+  "deal_types": [
+   "percent_off"
+  ],
+  "value": {
+   "amount": 15.0,
+   "unit": "percent",
+   "currency": null,
+   "kind": "percent_off"
+  },
+  "offer_text": "Verified students receive a 15% discount. Act fast, offer ends 9/30/26. Active students, save even more on everything you need to get ready for college from 5/26/26 - 9/30/26. Quickly verify your part-time or full-time student status and receive a one-time coupon code for 15% off. Must be an IKEA Family member to verify.",
+  "offer_text_is_verbatim": true,
+  "expires": "2026-09-30",
+  "expiry_basis": "The issuer's campaign box states 'offer ends 9/30/26' with the validity window 5/26/26 - 9/30/26.",
+  "requirements": [
+   "Free IKEA Family membership",
+   "Active part-time or full-time student status (verification required)"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Coupon code is redeemable at Bay Area IKEAs (East Palo Alto, Emeryville, SF small store) and online.",
+   "physical_locations": [
+    "IKEA East Palo Alto",
+    "IKEA Emeryville",
+    "IKEA San Francisco (small store)"
+   ],
+   "locator_url": "https://www.ikea.com/us/en/stores/"
+  },
+  "sources": [
+   {
+    "url": "https://www.ikea.com/us/en/offers/family-offers/",
+    "title": "IKEA Family — IKEA",
+    "publisher": "IKEA",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Verified students receive a 15% discount. Act fast, offer ends 9/30/26. Active students, save even more on everything you need to get ready for college from 5/26/26 - 9/30/26. Quickly verify your part-time or full-time student status and receive a one-time coupon code for 15% off.\\* Must be an IKEA Family member to verify.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Transcribed the whole student campaign box including its printed end date (9/30/26) and window (5/26/26 start)",
+    "Confirmed the two prerequisites: student-status verification plus IKEA Family membership"
+   ],
+   "recheck_due": "2026-09-27"
+  },
+  "flags": [
+   {
+    "code": "eligibility-students-only",
+    "severity": "warning",
+    "detail": "Requires verified active student status (part-time or full-time); non-students cannot use it."
+   },
+   {
+    "code": "one-time-use",
+    "severity": "info",
+    "detail": "The coupon code is one-time per the issuer's own wording."
+   }
+  ]
+ },
+ {
+  "id": "harbor-freight-coupons-hub",
+  "title": "Harbor Freight — standing sweet coupons hub (new batches, ~monthly)",
+  "merchant": "Harbor Freight",
+  "publisher": "Harbor Freight",
+  "categories": [
+   "home-hardware"
+  ],
+  "deal_types": [
+   "price_discount",
+   "promo_code"
+  ],
+  "value": null,
+  "offer_text": "Harbor Freight publishes its own current coupon list at go.harborfreight.com/coupons/ — every card carries the item, coupon price, code and printed expiry (e.g. Code 58764307 · Exp. 9/22/2026). A 'GET NEW COUPONS' monthly instant-savings catalog runs in parallel.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing hub; individual coupons carry their own printed expiries; there is no program end date.",
+  "requirements": [],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Harbor Freight operates stores across the Bay Area; the 'Find a Harbor Freight Store' locator is linked from the coupon hub header itself.",
+   "physical_locations": null,
+   "locator_url": "https://www.harborfreight.com/storelocator/"
+  },
+  "sources": [
+   {
+    "url": "https://go.harborfreight.com/coupons/",
+    "title": "Harbor Freight Coupons – Harbor Freight Coupons",
+    "publisher": "Harbor Freight Tools",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Index page listing current coupons with images, codes and expiries, e.g. \"Buy the U.S. GENERAL 30 in., 5-Drawer Mechanics Cart ... for $209.99, valid through 9/27/2026 ... Code 79680438 · Exp. 9/27/2026\"; header carries [GET NEW COUPONS] to the monthly-instant-savings catalog and an ITC Deals link."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Read the index: dozens of current in-store coupons with codes and expiries, most ending 9/27/2026 at verification",
+    "Opened an individual coupon page (U.S. GENERAL cart) and confirmed the code/expiry match the index exactly",
+    "Three representative current coupons were transcribed in full as separate entries"
+   ]
+  },
+  "flags": [
+   {
+    "code": "rotating-offers-not-enumerated",
+    "severity": "warning",
+    "detail": "Only three representative coupons of the dozens on the page are transcribed as entries; the batch rotates roughly monthly."
+   },
+   {
+    "code": "bauer-polisher-expired-today-not-listed",
+    "severity": "info",
+    "detail": "The first card on the page (BAUER DA polisher $59.99, code 58764307) is printed 'valid through 9/22/2026' — the verification day itself — so it is retained in the hub's own evidence but not promoted to an entry that would go stale the same night."
+   }
+  ]
+ },
+ {
+  "id": "hf-us-general-cart-209-99",
+  "title": "Harbor Freight coupon — U.S. GENERAL 30 in. 5-drawer mechanics cart for $209.99 (code 79680438)",
+  "merchant": "Harbor Freight",
+  "publisher": "Harbor Freight",
+  "categories": [
+   "home-hardware"
+  ],
+  "deal_types": [
+   "price_discount",
+   "promo_code"
+  ],
+  "value": null,
+  "offer_text": "Buy the U.S. GENERAL 30 in., 5-Drawer Mechanics Cart (Item 59818/70369/70375/70376/70377/70378/70379/70380/70698) for $209.99.",
+  "offer_text_is_verbatim": true,
+  "expires": "2026-09-27",
+  "expiry_basis": "Printed on the coupon: 'Exp. 9/27/2026' / 'valid through September 27, 2026'.",
+  "requirements": [
+   "Present the coupon (code printed on it) at a Harbor Freight register, or enter the code online"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Coupon valid in-store at Bay Area Harbor Freight stores (locator linked from the coupon page itself) and online; the coupon page's own text says 'with coupon code ... valid through September 27, 2026'.",
+   "physical_locations": null,
+   "locator_url": "https://www.harborfreight.com/storelocator/"
+  },
+  "sources": [
+   {
+    "url": "https://go.harborfreight.com/coupons/",
+    "title": "Harbor Freight Coupons – Harbor Freight Coupons",
+    "publisher": "Harbor Freight Tools",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Buy the U.S. GENERAL 30 in., 5-Drawer Mechanics Cart (Item 59818/70369/70375/70376/70377/70378/70379/70380/70698) for $209.99 with coupon code 79680438, valid through September 27, 2026. Code 79680438 · Exp. 9/27/2026."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Index price/code/expiry match the dedicated coupon page (/coupons/2026/09/184678-59818/) which was also fetched: 'for $209.99 with coupon code 79680438, valid through September 27, 2026'",
+    "Nine valid item numbers are printed on the coupon (59818 and eight alternates) — all transcribed in the evidence"
+   ],
+   "recheck_due": "2026-09-24"
+  },
+  "flags": [
+   {
+    "code": "expires-less-than-a-week",
+    "severity": "warning",
+    "detail": "Printed expiry 2026-09-27 is within five days of the verification date; verify again near expiry or expect a successor batch."
+   },
+   {
+    "code": "current-batch-mostly-shared",
+    "severity": "info",
+    "detail": "This coupon belongs to a batch where nearly every card shares the 9/27/2026 expiry; the hub entry documents the batch."
+   }
+  ]
+ },
+ {
+  "id": "hf-haulmaster-tiedowns-7-99",
+  "title": "Harbor Freight coupon — HAUL-MASTER 15 ft. ratcheting tie-downs 4-pack for $7.99 (code 79685803)",
+  "merchant": "Harbor Freight",
+  "publisher": "Harbor Freight",
+  "categories": [
+   "home-hardware"
+  ],
+  "deal_types": [
+   "price_discount",
+   "promo_code"
+  ],
+  "value": null,
+  "offer_text": "Buy the HAUL-MASTER 400 lb. Capacity, 1 in. x 15 ft. Ratcheting Tie-Downs, 4-Pack (Item 63094/63150) for $7.99.",
+  "offer_text_is_verbatim": true,
+  "expires": "2026-09-27",
+  "expiry_basis": "Printed on the coupon: 'Exp. 9/27/2026' / 'valid through September 27, 2026'.",
+  "requirements": [
+   "Present the coupon (code printed on it) at a Harbor Freight register, or enter the code online"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Coupon valid in-store at Bay Area Harbor Freight stores (locator linked from the coupon page itself) and online; the coupon page's own text says 'with coupon code ... valid through September 27, 2026'.",
+   "physical_locations": null,
+   "locator_url": "https://www.harborfreight.com/storelocator/"
+  },
+  "sources": [
+   {
+    "url": "https://go.harborfreight.com/coupons/",
+    "title": "Harbor Freight Coupons – Harbor Freight Coupons",
+    "publisher": "Harbor Freight Tools",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Buy the HAUL-MASTER 400 lb. Capacity, 1 in. x 15 ft. Ratcheting Tie-Downs, 4-Pack (Item 63094/63150) for $7.99 with coupon code 79685803, valid through September 27, 2026. Code 79685803 · Exp. 9/27/2026."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Transcribed from the official coupon index; both valid item numbers (63094/63150) and the printed price/code/expiry are in the evidence",
+    "Same batch and shared 9/27/2026 expiry as the mechanics-cart coupon read on its own page"
+   ],
+   "recheck_due": "2026-09-24"
+  },
+  "flags": [
+   {
+    "code": "expires-less-than-a-week",
+    "severity": "warning",
+    "detail": "Printed expiry 2026-09-27 is within five days of the verification date; verify again near expiry or expect a successor batch."
+   },
+   {
+    "code": "current-batch-mostly-shared",
+    "severity": "info",
+    "detail": "This coupon belongs to a batch where nearly every card shares the 9/27/2026 expiry; the hub entry documents the batch."
+   }
+  ]
+ },
+ {
+  "id": "hf-braun-light-9-99",
+  "title": "Harbor Freight coupon — BRAUN 750-lumen portable work light for $9.99 (code 11848837)",
+  "merchant": "Harbor Freight",
+  "publisher": "Harbor Freight",
+  "categories": [
+   "home-hardware"
+  ],
+  "deal_types": [
+   "price_discount",
+   "promo_code"
+  ],
+  "value": null,
+  "offer_text": "Buy the BRAUN 750 Lumen LED Portable Work Light with Rotating Handle/Stand (Item 73278) for $9.99.",
+  "offer_text_is_verbatim": true,
+  "expires": "2026-09-27",
+  "expiry_basis": "Printed on the coupon: 'Exp. 9/27/2026' / 'valid through September 27, 2026'.",
+  "requirements": [
+   "Present the coupon (code printed on it) at a Harbor Freight register, or enter the code online"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Coupon valid in-store at Bay Area Harbor Freight stores (locator linked from the coupon page itself) and online; the coupon page's own text says 'with coupon code ... valid through September 27, 2026'.",
+   "physical_locations": null,
+   "locator_url": "https://www.harborfreight.com/storelocator/"
+  },
+  "sources": [
+   {
+    "url": "https://go.harborfreight.com/coupons/",
+    "title": "Harbor Freight Coupons – Harbor Freight Coupons",
+    "publisher": "Harbor Freight Tools",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Buy the BRAUN 750 Lumen LED Portable Work Light with Rotating Handle/Stand (Item 73278) for $9.99 with coupon code 11848837, valid through September 27, 2026. Code 11848837 · Exp. 9/27/2026."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Transcribed from the official coupon index with the item number, code and expiry as printed",
+    "Same batch and shared 9/27/2026 expiry as the mechanics-cart coupon read on its own page"
+   ],
+   "recheck_due": "2026-09-24"
+  },
+  "flags": [
+   {
+    "code": "expires-less-than-a-week",
+    "severity": "warning",
+    "detail": "Printed expiry 2026-09-27 is within five days of the verification date; verify again near expiry or expect a successor batch."
+   },
+   {
+    "code": "current-batch-mostly-shared",
+    "severity": "info",
+    "detail": "This coupon belongs to a batch where nearly every card shares the 9/27/2026 expiry; the hub entry documents the batch."
+   }
+  ]
+ },
+ {
+  "id": "harbor-freight-inside-track-club",
+  "title": "Harbor Freight — Inside Track Club (paid) members-only monthly deals",
+  "merchant": "Harbor Freight",
+  "publisher": "Harbor Freight",
+  "categories": [
+   "home-hardware"
+  ],
+  "deal_types": [
+   "member_price"
+  ],
+  "value": null,
+  "offer_text": "Inside Track Club members get exclusive members-only monthly deals and early access to parking lot sales. Available for purchase for both new and renewing members. Members saved over $250 million last year. Deals are applied automatically — 'No Coupons Needed' once logged in at the register by email or phone.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing paid program; the issuer publishes no end date.",
+  "requirements": [
+   "Paid Inside Track Club membership"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Club deals auto-apply at the register in-store (issuer: 'No Coupons Needed'), so they work at any Bay Area Harbor Freight store.",
+   "physical_locations": null,
+   "locator_url": "https://www.harborfreight.com/storelocator/"
+  },
+  "sources": [
+   {
+    "url": "https://go.harborfreight.com/join-inside-track-club/",
+    "title": "Inside Track Club Membership Benefits — Harbor Freight",
+    "publisher": "Harbor Freight Tools",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"Available for purchase for both new and renewing members. Members have exclusive access to members-only monthly deals ... Members Saved Over $250 Million Last Year ... members-only pricing's already in your account. No Coupons Needed ... log in with your email or phone number at the register.\""
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Program page says monthly member-only deals apply automatically at the register with no coupons once logged in",
+    "Two recent ITC coupon examples found on the official go.harborfreight.com domain carried printed validity 7/31–8/2/26 (30% off items $20 and under) and 9/17/26 only (15% off any single item) — both already EXPIRED at verification, which evidences the monthly cadence without asserting any live benefit dollar figure"
+   ]
+  },
+  "flags": [
+   {
+    "code": "paid-membership-required",
+    "severity": "warning",
+    "detail": "Inside Track Club is a paid membership; unlike the free coupons on the hub, these deals cannot be used without joining first."
+   },
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Evidence comes from a search-engine snippet of the issuer's official subdomain (go.harborfreight.com); the membership price is not shown in the retrieved text and is therefore not asserted."
+   }
+  ]
+ },
+ {
+  "id": "ace-rewards",
+  "title": "Ace Rewards — 10 points per $1; every 2,500 points earns a $5 reward (free)",
+  "merchant": "Ace Hardware",
+  "publisher": "Ace Hardware",
+  "categories": [
+   "home-hardware"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": {
+   "amount": 5.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "rewards_credit"
+  },
+  "offer_text": "Why join Ace Rewards? Exclusive Savings — offers that help you save money. Free Delivery — spend $50 or more on qualifying orders and we'll deliver free. Points Add Up — get 10 points per dollar spent on most purchases with every 2,500 points earning a $5 reward.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Standing free program; no end date published.",
+  "requirements": [
+   "Free Ace Rewards membership"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Ace Hardware is a retailer-owned co-op with many Bay Area stores (independently owned). acehardware.com carries a store selector; at verification the store-details shell defaulted to an out-of-state store, so find the nearest Bay Area Ace via the site search.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.acehardware.com/store-details",
+    "title": "Store Hours & Info — Ace Hardware",
+    "publisher": "Ace Hardware",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Site-wide Ace Rewards block read on the official store-details page: \"WHY JOIN ACE REWARDS? Exclusive Savings — offers that help you save money; Free Delivery — spend $50 or more on qualifying orders and we'll deliver free; Points Add Up — get 10 points per dollar spent on most purchases with every 2,500 points earning a $5 reward.\" Buttons: 'Sign In' / 'Join Free'."
+   },
+   {
+    "url": "https://www.acehardware.com/user/login",
+    "title": "Sign In or Join Free — Ace Hardware",
+    "publisher": "Ace Hardware",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Member program page (JSON-LD) enumerates tiers 'Ace Rewards member' and 'Ace Rewards premier' — the premier tier carries a published tier requirement ('spend $750'), confirming a two-level program."
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Rewards block read directly on the official domain with the 'Join Free' action, confirming it is a free program",
+    "Second official page (/user/login) names the two tiers (member, premier) with premier's $750 spend requirement",
+    "acehardware.com/rewards resolves to a 404 — the canonical program surface is the site-wide block plus the account pages (recorded in the link-rot log)"
+   ]
+  },
+  "flags": [
+   {
+    "code": "exclusive-offers-not-enumerated",
+    "severity": "warning",
+    "detail": "'Exclusive Savings' member offers are account-specific and not readable anonymously; only the fixed earn/redemption rates are asserted."
+   },
+   {
+    "code": "delivery-benefit-conditional",
+    "severity": "info",
+    "detail": "The free-delivery benefit needs a qualifying $50+ online order — it is an online-order perk, not an in-store coupon."
+   }
+  ]
+ },
+ {
+  "id": "lowes-mylowes-rewards",
+  "title": "MyLowe's Rewards — points per $1 redeemed as MyLowe's Money, member-only deals (free)",
+  "merchant": "Lowe's",
+  "publisher": "Lowe's",
+  "categories": [
+   "home-hardware"
+  ],
+  "deal_types": [
+   "cashback",
+   "member_price"
+  ],
+  "value": null,
+  "offer_text": "Earn points on eligible purchases per $1 spent, easily redeemed for MyLowe's Money or for exclusive rewards such as gift cards, experiences and products; access to member-only deals; free standard shipping for members with Silver Key status and above.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "Free MyLowe's Rewards account"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Lowe's operates Bay Area stores (locator linked from lowes.com navigation); member deals are redeemed in-store and online.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://corporate.lowes.com/newsroom/press-releases/lowes-relaunches-pro-loyalty-program-simplifying-its-value-offering-under-mylowes-rewards-02-18-25",
+    "title": "Lowe's Relaunches Pro Loyalty Program, Simplifying Its Value Offering Under 'MyLowe's Rewards'",
+    "publisher": "Lowe's corporate newsroom",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"Earn points on eligible purchases per $1 spent, easily redeemed for MyLowe's Money or for Exclusive Rewards like gift cards, experiences, products and more - Access to Member-only deals - Free standard shipping ... \" — the free program 'saves Lowe's Pros valuable time and money'."
+   },
+   {
+    "url": "https://corporate.lowes.com/newsroom/press-releases/lowes-helping-homeowners-save-money-their-spring-home-improvement-projects-03-21-24",
+    "title": "Lowe's is Helping Homeowners Save Money on Their Spring Home Improvement Projects",
+    "publisher": "Lowe's corporate newsroom",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"MyLowe's Rewards offers exclusive benefits such as points toward MyLowe's Money and free standard shipping for members with Silver Key status and above.\""
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Two official corporate newsroom releases (2024 homeowner launch, 2025 Pro relaunch) confirm the points-to-MyLowe's-Money program and member-only deals",
+    "Program described by the issuer as free ('The free program saves Lowe's Pros valuable time and money')"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Both citations are search-engine snippets of the issuer's official newsroom pages; the points-to-dollars conversion rate was not in the retrieved text and is therefore not asserted."
+   },
+   {
+    "code": "rate-not-published-in-evidence",
+    "severity": "warning",
+    "detail": "The exact number of points per dollar and the redemption threshold live behind account pages; only 'per $1 spent' accrual is quoted from the issuer."
+   }
+  ]
+ },
+ {
+  "id": "autozone-rewards",
+  "title": "AutoZone Rewards — $20 reward after every 5 purchases of $20+ (free)",
+  "merchant": "AutoZone",
+  "publisher": "AutoZone",
+  "categories": [
+   "home-hardware"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": {
+   "amount": 20.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "rewards_credit"
+  },
+  "offer_text": "AutoZone Rewards - Join now, it's free. You'll earn a $20 reward after every five qualifying purchases. 1 credit = 1 purchase of $20 or more; 5 credits = $20 reward to use on your next purchase. A $20 reward will be automatically issued to your account within 72 hours of earning 5 credits.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "Free AutoZone Rewards membership (18+, US residents)"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "AutoZone operates stores across the Bay Area (official /locations/ directory confirmed live, e.g. store pages under /locations/mi/...); provide your Rewards ID, phone number or digital card at checkout.",
+   "physical_locations": null,
+   "locator_url": "https://www.autozone.com/locations/"
+  },
+  "sources": [
+   {
+    "url": "https://www.autozone.com/rewards",
+    "title": "AutoZone Rewards",
+    "publisher": "AutoZone",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"AutoZone Rewards - Join now, it's free. You'll earn a $20 reward after every five qualifying purchases... 1 credit = 1 purchase of $20 or more... 5 credits = $20 Reward to use on your next purchase... A $20 Reward will be automatically issued to your AutoZone Rewards account within 72 hours of earning 5 credits ... open to all US, Puerto Rico and US Virgin Islands residents at least 18 years old.\""
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The $20-per-5-credits mechanic, the $20-purchase credit definition and the 72-hour issuance are all quoted from the issuer's own rewards page",
+    "Confirmed 'exclusive, personalized offers' exist for members but rotate per account — not enumerated"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Evidence comes from a search-engine snippet of autozone.com/rewards; the page content matches the store-page repetition of the same sentence, reducing stale-snippet risk."
+   },
+   {
+    "code": "exclusive-offers-not-enumerated",
+    "severity": "warning",
+    "detail": "Member-only exclusive offers are personalized per account; only the fixed $20/5-credit structure is asserted."
+   }
+  ]
+ },
+ {
+  "id": "oreilly-orewards",
+  "title": "O'Reilly O'Rewards — 1 point per $1; 150 points = $5 reward, plus a free birthday gift",
+  "merchant": "O'Reilly Auto Parts",
+  "publisher": "O'Reilly Auto Parts",
+  "categories": [
+   "home-hardware"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": {
+   "amount": 5.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "rewards_credit"
+  },
+  "offer_text": "Every $1 spent = 1 point; 150 accumulated points = $5 reward. Get bonus points — offers change each month. Earned rewards are sent automatically via email or text. Receive a free birthday gift.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "Free O'Rewards membership"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Official locator verified this pass: locations.oreillyauto.com lists 636 stores in California, including Bay Area cities; rewards are sent by email/text and redeemed in-store or online.",
+   "physical_locations": null,
+   "locator_url": "https://locations.oreillyauto.com/en-us/"
+  },
+  "sources": [
+   {
+    "url": "https://www.oreillyauto.com/orewards-loyalty-program",
+    "title": "O'Rewards Loyalty Program — O'Reilly Auto Parts",
+    "publisher": "O'Reilly Auto Parts",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"SHOP. EARN POINTS. GET REWARDED. Earn — Members Earn Points on In-store & Online Purchases ... Rewards — Earned Rewards are Sent Automatically via Email or Text ... Birthday — Receive a Free Birthday Gift\""
+   },
+   {
+    "url": "https://oreillyauto.com/site/c/orewards.oap",
+    "title": "O'Rewards Loyalty Program — O'Reilly Auto Parts",
+    "publisher": "O'Reilly Auto Parts",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"Every $1 Spent = 1 Point; 150 Accumulated Points = $5 Reward ... Watch for O'Rewards bonus point offers and earn your reward even faster! Bonus point offers change each month\"; bonus 3x products: 150 points per $50 = $5 reward."
+   },
+   {
+    "url": "https://locations.oreillyauto.com/en-us/",
+    "title": "O'Reilly Auto Parts Store Locator | Find a Store",
+    "publisher": "O'Reilly Auto Parts",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Find an O'Reilly Auto Parts Location ... With over 6,000 O'Reilly Auto Parts locations throughout the nation\"; state directory lists California (636 stores)."
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Program rate quoted from the issuer's own O'Rewards pages (both languages carry the identical rate card)",
+    "Official store locator fetched directly — 636 California stores — confirming physical redemption inventory in-state",
+    "The bonus-point mechanics (2x/3x product offers) change monthly per the issuer; only the base rule is asserted"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "The O'Rewards program text came via search-engine snippets of oreillyauto.com pages; the store locator, however, was fetched directly from the official domain."
+   },
+   {
+    "code": "monthly-bonus-offers-not-enumerated",
+    "severity": "warning",
+    "detail": "The issuer states bonus-point offers change each month; none of the current month's bonus products were readable anonymously."
+   }
+  ]
+ },
+ {
+  "id": "staples-easy-rewards",
+  "title": "Staples Easy Rewards — 1 point per $1; 200 points = $1 off, points never expire for active members",
+  "merchant": "Staples",
+  "publisher": "Staples",
+  "categories": [
+   "office-craft-hobby"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": null,
+  "offer_text": "Easy Rewards members earn 1 point per $1 spent on qualifying purchases. Redeem points at checkout and save instantly — redeem with as little as 200 points; 200 points provide $1 to redeem toward qualifying purchases. Points don't expire so long as your Easy Rewards member account is active (earn or redeem at least one point in an 18-month period).",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "Free Easy Rewards account",
+   "In-store redemption requires the digital card in the Staples app plus a government-issued photo ID matching the account name"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Official store directory (stores.staples.com) confirmed on the program page itself; Staples operates Bay Area stores.",
+   "physical_locations": null,
+   "locator_url": "https://stores.staples.com/"
+  },
+  "sources": [
+   {
+    "url": "https://www.staples.com/lp/easyrewardsoverview",
+    "title": "Staples Easy Rewards Works for You",
+    "publisher": "Staples",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Easy Rewards members earn 1 point per $1 spent on qualifying purchases ... Points may be redeemed for dollars off an Easy Rewards member's purchase amount at checkout. Points may only be redeemed for whole dollar amounts, and 200 points provide $1 ... Points don't expire so long as your Easy Rewards member account is active. For an account to remain active, a member must earn or redeem at least one point in an 18-month period.\""
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The legacy 'Staples Rewards' help-center URL now redirects to /lp/easyrewardsoverview — the program was renamed Easy Rewards; this entry records the CURRENT program (older 2%/5% cashback copy found on staging subdomains was treated as outdated and not used)",
+    "Full FAQ read directly: earn rate (1 pt/$1), redemption (200 pts = $1), bonus categories (choose 3 for 2x+), expiry policy (never while active; 18-month inactivity rule) and the in-store ID requirement are all quoted",
+    "In-store redemption requirement transcribed: scan the digital Easy Rewards card in the app AND show a valid government photo ID whose name matches the account"
+   ]
+  },
+  "flags": [
+   {
+    "code": "id-required-to-redeem-in-store",
+    "severity": "warning",
+    "detail": "In-store point redemption requires a valid government-issued photo ID whose name matches the membership account — an unusually strict published condition, important to know before checkout."
+   },
+   {
+    "code": "earned-points-posting-delay",
+    "severity": "info",
+    "detail": "Points post within 24–48 hours of an in-store purchase but can take up to 30 business days per the FAQ."
+   }
+  ]
+ },
+ {
+  "id": "michaels-rewards",
+  "title": "Michaels Rewards — 3% back on eligible purchases (6% after $300/year)",
+  "merchant": "Michaels",
+  "publisher": "Michaels",
+  "categories": [
+   "office-craft-hobby"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": {
+   "amount": 3.0,
+   "unit": "percent",
+   "currency": null,
+   "kind": "rewards_credit"
+  },
+  "offer_text": "All members earn 3% in Rewards on eligible purchases every time they shop. Members who have spent $300+ in eligible purchases in the past 12 months earn 6% in Rewards. Plus weekly Rewards Specials and Bonus Rewards offers. Limit $150 in total rewards earned per day.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "Free Michaels Rewards membership"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Official store directory (locations.michaels.com) confirmed this pass with per-store pages; Michaels operates Bay Area stores.",
+   "physical_locations": null,
+   "locator_url": "https://locations.michaels.com/"
+  },
+  "sources": [
+   {
+    "url": "https://michaels.com/rewards",
+    "title": "Rewards - Enroll Today! — Michaels",
+    "publisher": "Michaels",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"All members will earn 3% in Rewards on eligible purchases every time they shop. Qualifying members will earn 6% in Rewards if they have spent $300+ in eligible purchases in the past 12 months. Members will also be eligible to earn on weekly Rewards Specials and Bonus Rewards offers ... Limit $150 in total rewards earned per day ... Rewards are calculated based on actual amount paid, less applicable taxes. Rewards cannot be earned on purchases of Gift Cards, clearance merchandise ...\""
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Program rates (3% base, 6% after $300 trailing-year spend) and the $150/day cap quoted from the issuer's own rewards page",
+    "Eligibility refresh cadence quoted as well: the 6% level 'is updated once a month and reflected in the member's account'",
+    "Exclusions quoted: gift cards, clearance merchandise, purchases prior to joining"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Evidence comes from a search-engine snippet of michaels.com/rewards; the fetched FAQ text has not been re-read on the rendered page."
+   },
+   {
+    "code": "weekly-specials-not-enumerated",
+    "severity": "warning",
+    "detail": "Weekly Rewards Specials and Bonus Rewards offers rotate in the Weekly Ad/app and were not transcribed individually."
+   }
+  ]
+ },
+ {
+  "id": "hobby-lobby-always-40-off-marked-price",
+  "title": "Hobby Lobby — standing 40% off marked price on listed departments (no coupon needed)",
+  "merchant": "Hobby Lobby",
+  "publisher": "Hobby Lobby",
+  "categories": [
+   "office-craft-hobby"
+  ],
+  "deal_types": [
+   "percent_off"
+  ],
+  "value": {
+   "amount": 40.0,
+   "unit": "percent",
+   "currency": null,
+   "kind": "percent_off"
+  },
+  "offer_text": "40% off Home Decor — Always 40% Off The Marked Price. Party — Always 40% Off The Marked Price. Frames — Always 40% Off The Marked Price. Best-Selling Books (Bibles, devotionals, gift books and children's books) — Always 40% Off The Marked Price.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Issuer advertises these as 'Always' discounts; no end date is published.",
+  "requirements": [],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Hobby Lobby's official site carries a Store Finder; discounts are applied at the register to marked prices with no coupon required.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.hobbylobby.com/",
+    "title": "Hobby Lobby Arts & Crafts Store (home page)",
+    "publisher": "Hobby Lobby",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"40%off Home Decor — Always 40% Off The Marked Price* ... Party — Always 40% Off The Marked Price* ... Discounts Valid Online & In-Store\" (home page as of September 2026)."
+   },
+   {
+    "url": "https://www.hobbylobby.com/weekly-ad",
+    "title": "Shop Our Weekly Ad — Hobby Lobby",
+    "publisher": "Hobby Lobby",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Weekly-ad categories repeat \"**Always 40% off the Marked Price***\" for Home Decor, Textiles, Party, Frames, Best-Selling Books and more; exclusions printed: \"Does not include Seasonal Department or items labeled Kitchen, Bath, Closet, Gift or 'Your Price'\"."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The standing 40%-off-marked-price model is stated on both the issuer's home page and its weekly-ad page",
+    "Printed exclusions transcribed (seasonal department; Kitchen/Bath/Closet/Gift labels; 'Your Price' items)",
+    "No general store coupon exists on the current official site — the famous weekly '40% off one item' coupon is only visible on a 2019 cached page; see the policy note"
+   ]
+  },
+  "flags": [
+   {
+    "code": "marked-price-basis",
+    "severity": "warning",
+    "detail": "Discount applies to the store's own marked price; 'always off' framing means the undiscounted price may itself be the one only Hobby Lobby observes."
+   },
+   {
+    "code": "rotating-department-list",
+    "severity": "warning",
+    "detail": "Which departments carry the standing 40% rotates by ad week; the listed departments are as retrieved at verification."
+   },
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Both pages were read via search-engine snippets of the official domain, not a direct fetch."
+   }
+  ]
+ },
+ {
+  "id": "petco-perks-core",
+  "title": "Petco Perks — free tier: 1 point per $1, every 167 points becomes a $5 reward",
+  "merchant": "Petco",
+  "publisher": "Petco",
+  "categories": [
+   "pet-supplies"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": {
+   "amount": 5.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "rewards_credit"
+  },
+  "offer_text": "Members earn one (1) point for every dollar ($1.00 USD) spent on merchandise at any Petco retail store, online at petco.com or via the Petco app. Points automatically convert to rewards at the rate of five (5) rewards dollars for every 167 points earned, usable toward $5 off any future purchase. Members-only pricing and offers; personalized care notifications.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program tier; no end date published.",
+  "requirements": [
+   "Free Petco Perks (Core) membership"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Official store locator confirmed this pass (petco.com/storelocator/); Petco operates stores across the Bay Area; provide phone/email at checkout to earn and redeem.",
+   "physical_locations": null,
+   "locator_url": "https://www.petco.com/storelocator/"
+  },
+  "sources": [
+   {
+    "url": "https://www.petco.com/content/petco/PetcoStore/en_US/pet-services/terms-of-use/vital-care-core-terms-2024.html",
+    "title": "Vital Care Core Terms & Conditions — Petco",
+    "publisher": "Petco",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"Members will earn one (1) Vital Care point ('Point') for every dollar ($1.00 USD) spent on merchandise at any Petco retail store; online at Petco.com; and/or via the Petco mobile app ... Points will be automatically converted to Vital Care Rewards dollars at the rate of five (5) Vital Care Rewards for every 167 Points earned by Member, which Member may use towards $5 off any future purchase.\""
+   },
+   {
+    "url": "https://www.petco.com/shop/en/petcostore/m/vitalcare",
+    "title": "Petco Vital Care Membership: Formerly known as Petco Pals Rewards",
+    "publisher": "Petco",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Comparison table lists benefits for 'Join Core' (free): members-only pricing and offers; personalized care notifications; Petco Perks points back on every purchase. Premier column: $119.88/year or 12 monthly $9.99 payments; $5 Petco Perks Rewards each month ($60 value); 45-day extended reward expiration; 15% off nutrition and 15% off supplies."
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Earn/convert rate (167 points = $5) read on the issuer's own program terms document",
+    "Current branding cross-read: the issuer's membership page now presents the tiers as 'Petco Perks Core' vs 'Petco Perks Premier' while the legal terms still say 'Vital Care Core' — same program, naming drift recorded",
+    "Confirmations from two official pages that Core is free ('Join for free: Free')"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Both program pages were read via search-engine snippets of petco.com, not a direct fetch."
+   },
+   {
+    "code": "program-naming-drift",
+    "severity": "info",
+    "detail": "The issuer's legal terms call the tier 'Vital Care Core' and the marketing page calls it 'Petco Perks Core'; the FAQ page-age is recent, so the newer name was used in the title."
+   },
+   {
+    "code": "reward-expiry-short",
+    "severity": "warning",
+    "detail": "Core-tier rewards must be redeemed within 30 days of conversion per the issuer's FAQ (Premier extends to 45 days); points go stale without a purchase every 90 days."
+   }
+  ]
+ },
+ {
+  "id": "petco-perks-premier-15-off-nutrition-supplies",
+  "title": "Petco Perks Premier (paid) — 15% off nutrition and 15% off supplies",
+  "merchant": "Petco",
+  "publisher": "Petco",
+  "categories": [
+   "pet-supplies"
+  ],
+  "deal_types": [
+   "member_price",
+   "percent_off"
+  ],
+  "value": {
+   "amount": 15.0,
+   "unit": "percent",
+   "currency": null,
+   "kind": "member_price"
+  },
+  "offer_text": "Petco Perks Premier: 15% off nutrition (any brand of food or treats) and 15% off supplies (habitats, toys, perches, swings, bowls and more), plus $5–$15 monthly Petco Perks Rewards and a 45-day reward expiration. $119.88/year or 12 monthly payments of $9.99.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing paid-plan benefit; the issuer publishes no end date for the benefit structure.",
+  "requirements": [
+   "Paid Petco Perks Premier membership ($119.88/yr or $9.99/mo)"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Discounts apply to in-store purchases at Bay Area Petco stores while the paid plan is active.",
+   "physical_locations": null,
+   "locator_url": "https://www.petco.com/storelocator/"
+  },
+  "sources": [
+   {
+    "url": "https://www.petco.com/shop/en/petcostore/m/vitalcare",
+    "title": "Petco Vital Care Membership: Formerly known as Petco Pals Rewards",
+    "publisher": "Petco",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"15% off nutrition^1,2 Any brand of food or treats. | 15% off supplies^1,2 Save on habitats, toys, perches, swings, bowls and more. ... One annual payment $119.88 / year OR 12 monthly payments $9.99 / month\"; monthly rewards by plan: dog/cat $15 per month, bird/fish/reptile/small pet $5 per month."
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Both 15% rates, the exact covered categories and the plan price quoted from the issuer's own membership page",
+    "Monthly reward amounts differ by plan type ($15 dog/cat plans vs $5 other-pet plans) — quoted so the benefit is not overstated"
+   ]
+  },
+  "flags": [
+   {
+    "code": "paid-membership-required",
+    "severity": "warning",
+    "detail": "These 15% discounts require a PAID membership (about $120/year); they only pay back if annual Petco spend clears the fee at 15% – roughly $800+."
+   },
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Evidence comes from a search-engine snippet of the issuer's own membership page, and the footnote-marked exclusions (^1,2) could not be read."
+   },
+   {
+    "code": "annual-commitment",
+    "severity": "info",
+    "detail": "The issuer labels the plan 'Annual Commitment Required for Petco Perks Premier Membership' even when billed monthly."
+   }
+  ]
+ },
+ {
+  "id": "petsmart-treats-rewards",
+  "title": "PetSmart Treats Rewards — 10 points per $1; every 1,000 points = $2 off (+1,000 signup-profile bonus)",
+  "merchant": "PetSmart",
+  "publisher": "PetSmart",
+  "categories": [
+   "pet-supplies"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": {
+   "amount": 2.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "rewards_credit"
+  },
+  "offer_text": "Earn 10 points per $1 on merch & services. Every 1,000 points you earn = $2 in savings to redeem on merch & services for your pet. Receive 1,000 points for profile completion. Tiers: Member ($0–$499), Bestie ($500–$999, +2 pts/$1), VIPP ($1,000+, +4 pts/$1). Gift on your pet's Birthday or Gotcha Day; members-only in-store pricing.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "Free Treats Rewards membership"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "PetSmart operates stores across the Bay Area (store finder in the official site navigation); provide email or phone at checkout — no physical card required.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.petsmart.com/treats-rewards",
+    "title": "Treats Rewards — PetSmart",
+    "publisher": "PetSmart",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"Earn & redeem points when you shop. ... Every 1,000 points you earn = $2 in savings to redeem on merch & services ... Receive 1,000 points for profile completion ... Earn - 10 points per $1 base earning; Tier bonus (additional points per $1): 2 pts [Bestie], 4 pts [VIPP] ... Redeem in stores, online & in app (1,000 points = $2).\""
+   },
+   {
+    "url": "https://www.petsmart.com/learning-center/treats-rewards/how-to-earn-petsmart-treats-rewards",
+    "title": "How to Earn PetSmart Treats Rewards Points (In-Store & Online)",
+    "publisher": "PetSmart",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"Ten points for every dollar you spend on products and services ... Once you reach 1,000 points, you can redeem them for $2 in savings ... Spend $500+ and upgrade from a Member to a Bestie ... Spend $1,000+ and upgrade ... VIPP ... you don't need to carry a physical card or remember a membership number.\""
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Earn rate, redemption rate and the 1,000-point profile-completion bonus quoted from two official petsmart.com pages",
+    "Tier progression (Bestie +2 pts/$1, VIPP +4 pts/$1) and the pet birthday/gotcha-day gift quoted from the issuer's own rewards page"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Both program pages were read via search-engine snippets of petsmart.com, not a direct fetch."
+   },
+   {
+    "code": "members-only-prices-not-enumerated",
+    "severity": "warning",
+    "detail": "Members-only in-store pricing and personalized deals vary by store and account; only the fixed program rates are asserted."
+   }
+  ]
+ },
+ {
+  "id": "rei-coop-member-reward-10-back",
+  "title": "REI Co-op — $30 lifetime membership, annual 10% back on eligible purchases",
+  "merchant": "REI Co-op",
+  "publisher": "REI Co-op",
+  "categories": [
+   "sporting-outdoor"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": {
+   "amount": 10.0,
+   "unit": "percent",
+   "currency": null,
+   "kind": "rewards_credit"
+  },
+  "offer_text": "Join once for just $30. Buy a membership, get an annual 10% back on all eligible purchases. Members earned more than $202 million in Co-op Member Rewards from their eligible 2025 full-price purchases. A 10% Co-op Member Reward is typical, but not guaranteed.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "One-time $30 lifetime membership"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "REI's own store directory is linked from the membership page ('Find a shop near you'); REI operates Bay Area co-op stores.",
+   "physical_locations": null,
+   "locator_url": "https://www.rei.com/stores"
+  },
+  "sources": [
+   {
+    "url": "https://www.rei.com/membership",
+    "title": "REI Co-op Membership Benefits & Rewards | REI Co-op",
+    "publisher": "REI Co-op",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Join once for just $30. Adventure for life. Buy a membership, get an annual 10% back* on all eligible purchases. Plus more membership benefits for life—no renewal, no extra fees, no kidding.\" Member badges: Annual 10% Co-op Member Reward; 100% Satisfaction Guarantee; Free U.S. Standard Shipping; Member Offers & Coupons. \"REI Co-op Members earned more than $202m in Co-op Member Rewards* from their eligible 2025 full-price purchases.\""
+   },
+   {
+    "url": "https://www.rei.com/newsroom/article/rei-celebrates-member-month-with-issuance-of-annual-co-op-member-reward-plus-special-discounts-and-early-access-to-products",
+    "title": "REI celebrates Member Month with issuance of annual Co-op Member Reward totalling hundreds of millions of dollars",
+    "publisher": "REI Co-op newsroom",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"The Co-op Member Reward is distributed to active members based on their eligible, full-price purchases from the prior year ... typically 10% back on eligible full-price purchases ... A 10% Co-op Member Reward is typical, but not guaranteed ... exclude REI Outlet items, sale, clearance, discounted items, used gear, gift cards ...\""
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Program page fetched directly: one-time $30 fee, annual 10% back framing, and the $202m paid-out figure for 2025 purchases",
+    "The issuer's own newsroom states the reward is 'typical, but not guaranteed' and lists eligible-purchase exclusions — both quoted rather than paraphrased",
+    "Active-member rule quoted: net purchases of at least $10/year (unless joining that calendar year)"
+   ]
+  },
+  "flags": [
+   {
+    "code": "paid-membership-required",
+    "severity": "warning",
+    "detail": "The $30 one-time membership is itself a purchase; the 10% only flows back on eligible full-price purchases in later transactions."
+   },
+   {
+    "code": "reward-typical-not-guaranteed",
+    "severity": "warning",
+    "detail": "REI's own documents call 10% 'typical, but not guaranteed' — the board can set a different rate in a given year; the published exclusions (sale, clearance, outlet, used gear, services) are substantial."
+   }
+  ]
+ },
+ {
+  "id": "rei-new-member-30-bonus-card",
+  "title": "REI Co-op — new members: $30 bonus card with a $50 purchase + $30 membership (through 11/12/2026)",
+  "merchant": "REI Co-op",
+  "publisher": "REI Co-op",
+  "categories": [
+   "sporting-outdoor",
+   "no-spend-free"
+  ],
+  "deal_types": [
+   "rewards_credit"
+  ],
+  "value": {
+   "amount": 30.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "rewards_credit"
+  },
+  "offer_text": "Become an REI Co-op Member and earn a $30 single-use promo card when you spend $50+, thru 11/12. Terms apply. Thru November 12, 2026, make an eligible $50 purchase at REI and buy a $30 membership in the same order; check your email for a $30 bonus card for your next purchase. Bonus card expires 30 days after it's issued.",
+  "offer_text_is_verbatim": false,
+  "expires": "2026-11-12",
+  "expiry_basis": "The issuer's membership page banner and step copy both say 'thru 11/12' / 'Thru November 12, 2026'.",
+  "requirements": [
+   "New REI Co-op membership",
+   "Same-order eligible $50 purchase plus the $30 membership"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Membership can be bought and the promo card redeemed at Bay Area REI stores and online; the membership page links the official store map.",
+   "physical_locations": null,
+   "locator_url": "https://www.rei.com/stores"
+  },
+  "sources": [
+   {
+    "url": "https://www.rei.com/membership",
+    "title": "REI Co-op Membership Benefits & Rewards | REI Co-op",
+    "publisher": "REI Co-op",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Become an REI Co-op Member and earn a $30 single-use promo card when you spend $50+, thru 11/12. Terms apply.\" Steps: \"Thru November 12, 2026, make an eligible $50 purchase at REI ... And buy a $30 membership in the same order ... Then celebrate! Check your email for a $30 bonus card for your next purchase. But don't wait too long—your bonus card expires 30 days after it's issued to you.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Both the promo banner and the numbered steps were read on the issuer's membership page; printed deadline matches (thru November 12, 2026)",
+    "The bonus card's own 30-day life after issue is quoted so it is not overstated"
+   ],
+   "recheck_due": "2026-11-09"
+  },
+  "flags": [
+   {
+    "code": "paid-membership-required",
+    "severity": "warning",
+    "detail": "The $30 bonus card is earned by buying the $30 membership in the same order as a $50 eligible purchase; it offsets the membership fee rather than arriving for free."
+   },
+   {
+    "code": "terms-not-enumerated",
+    "severity": "warning",
+    "detail": "'Terms apply.' links to a member-thanks page that could not be fully read in this pass (eligibility of the $50 same-order purchase is not itemized in the retrieved text)."
+   },
+   {
+    "code": "bonus-card-short-life",
+    "severity": "info",
+    "detail": "The $30 bonus card expires 30 days after issuance per the issuer's own step text."
+   }
+  ]
+ },
+ {
+  "id": "big5-eteam-10-off-signup",
+  "title": "Big 5 Sporting Goods E-Team — 10% off your next purchase for new email subscribers",
+  "merchant": "Big 5 Sporting Goods",
+  "publisher": "Big 5 Sporting Goods",
+  "categories": [
+   "no-spend-free",
+   "sporting-outdoor"
+  ],
+  "deal_types": [
+   "percent_off"
+  ],
+  "value": {
+   "amount": 10.0,
+   "unit": "percent",
+   "currency": null,
+   "kind": "percent_off"
+  },
+  "offer_text": "Sign up for emails and get 10% off your next purchase. Exclusions apply. Only valid for new subscribers. Plus get more coupons, weekly sales, one day deals.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Standing signup incentive; no end date published.",
+  "requirements": [
+   "New email subscription to the Big 5 E-Team"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Big 5's own site hosts the coupon weekly mailer ('The best Big 5 coupons and promo codes will be delivered straight to your inbox'); Big 5 operates stores across the Bay Area — store finder on official site. The E-Team signup page's own server stamp read 'Tue Sep 22 04:04:01 PDT 2026' at fetch.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.big5sportinggoods.com/store/ways+to+save/e-team+sign+up",
+    "title": "Get a Big 5 Coupon - Join the Big 5 E-Team! | Big 5 Sporting Goods",
+    "publisher": "Big 5 Sporting Goods",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Exclusive Email Offers — Sign up for emails and get 10% off your next purchase. Exclusions apply. Only valid for new subscribers.\" Footer block: \"Plus Get More Coupons, Weekly Sales, One Day Deals — Receive special promotions, coupons, and the weekly ad.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Signup incentive read directly from the issuer's E-Team page on the verification date (page's own server stamp: Tue Sep 22 04:04:01 PDT 2026)",
+    "The California 'Notice of Financial Incentive' disclosure is present on the same page, consistent with a real issuer-operated incentive",
+    "A second official page (E-Team kiosk variant) repeats the same 10% offer and labels the coupon cadence ('2-5/weekly')"
+   ]
+  },
+  "flags": [
+   {
+    "code": "exclusions-unspecified",
+    "severity": "warning",
+    "detail": "The issuer says 'Exclusions apply' but does not enumerate them on the signup page; the coupon arrives by email, where its own terms sit."
+   },
+   {
+    "code": "new-subscribers-only",
+    "severity": "info",
+    "detail": "Only valid for new subscribers per the issuer's own wording."
+   }
+  ]
+ },
+ {
+  "id": "grocery-outlet-wow-alerts-3-off-25",
+  "title": "Grocery Outlet — $3 off a $25 purchase coupon for new email sign-ups",
+  "merchant": "Grocery Outlet",
+  "publisher": "Grocery Outlet",
+  "categories": [
+   "no-spend-free",
+   "grocery-loyalty"
+  ],
+  "deal_types": [
+   "dollar_off"
+  ],
+  "value": {
+   "amount": 3.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "dollar_off"
+  },
+  "offer_text": "Sign up with Grocery Outlet to start saving. New email sign-ups receive a coupon for $3 off a $25 purchase!",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Standing signup incentive on the issuer's WOW alerts page; no end date published.",
+  "requirements": [
+   "New email sign-up for Grocery Outlet WOW alerts"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Grocery Outlet operates independently owned Bay Area stores; the official site's WOW/alerts flow carries a list-of-stores parameter at signup. Manufacturer coupons are not broadly accepted at Grocery Outlet (see policy note) — this $3-off-$25 is the ISSUER's own coupon, different mechanism.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.groceryoutlet.com/wow-alerts",
+    "title": "Wow Alerts — Grocery Outlet",
+    "publisher": "Grocery Outlet",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"SIGN UP TODAY AND SAVE! Sign up with Grocery Outlet to start saving. New email sign-ups receive a coupon for $3 off a $25 purchase!\" Existing-account path requires one-time-code phone verification."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Offer quoted from the issuer's own wow-alerts signup page",
+    "Grocery Outlet's investor page separately confirms the WOW! Crowd / app account mechanism exists ('Free Groceries for a Year' scan-in-app sweepstakes through December 31, 2026), corroborating an issuer-run coupon channel"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Evidence comes from a search-engine snippet of the official signup page; the coupon's own exclusions are delivered by email and were not readable."
+   },
+   {
+    "code": "new-subscribers-only",
+    "severity": "info",
+    "detail": "The issuer states the coupon is for new email sign-ups only."
+   }
+  ]
+ },
+ {
+  "id": "kohls-rewards-5-pct",
+  "title": "Kohl's Rewards — 5% back on every purchase, converted to $5 Kohl's Cash increments monthly",
+  "merchant": "Kohl's",
+  "publisher": "Kohl's",
+  "categories": [
+   "big-box-loyalty"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": {
+   "amount": 5.0,
+   "unit": "percent",
+   "currency": null,
+   "kind": "rewards_credit"
+  },
+  "offer_text": "You earn 5% Kohl's rewards on every purchase, every day (that's $5 for every $100 spent). On the first day of the following month, your Kohl's Rewards balance is converted and issued in $5 Kohl's Cash increments, valid for 30 days to spend in store, online or with the Kohl's app.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "Free Kohl's Rewards enrollment"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Official store locator verified live this pass (kohls.com/stores.shtml); Kohl's operates Bay Area stores.",
+   "physical_locations": null,
+   "locator_url": "https://www.kohls.com/stores.shtml"
+  },
+  "sources": [
+   {
+    "url": "https://www.kohls.com/faq/article/2614",
+    "title": "Kohl's Cash and Rewards FAQs",
+    "publisher": "Kohl's",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"You earn 5% Kohl's rewards on every purchase, every day (that's $5 for every $100 spent!)* ... Your earnings will be added to your Kohl's Rewards balance within 48 hours of your purchase ... On the first day of the following month, your Kohl's Rewards balance is converted and issued in $5 Kohl's Cash increments. Rewards balances that don't convert into Kohl's Cash expire after one year.\""
+   },
+   {
+    "url": "https://cs.kohls.com/app/answers/detail/a_id/2614/kw/",
+    "title": "Kohl's Cash and Rewards FAQs",
+    "publisher": "Kohl's customer service",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"Your Kohl's Rewards balance is converted and issued in $5 Kohl's Cash increments on the first of the following month from when it is earned and is valid for 30 days ... Kohl's Rewards members earn occasional additional benefits such as exclusive discounts and free shipping. Plus, earn an additional $10 Kohl's Cash for every $50 you spend when you shop during a Kohl's Cash earn period.\""
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Earn rate (5%), conversion schedule (first of next month) and Kohl's Cash validity (30 days) quoted from two official Kohl's pages",
+    "Locator verified by direct fetch this pass"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Program FAQ was read via search-engine snippets of kohls.com and cs.kohls.com, not a direct fetch."
+   },
+   {
+    "code": "kohls-cash-expires-in-30-days",
+    "severity": "warning",
+    "detail": "Kohl's Cash is valid for only 30 days once issued, and unconverted balances expire after one year — a short usability window versus pure cashback."
+   }
+  ]
+ },
+ {
+  "id": "kohls-senior-15-wednesdays",
+  "title": "Kohl's — Senior Day: 15% off for shoppers 60+ every Wednesday (in-store)",
+  "merchant": "Kohl's",
+  "publisher": "Kohl's",
+  "categories": [
+   "big-box-loyalty",
+   "no-spend-free"
+  ],
+  "deal_types": [
+   "percent_off"
+  ],
+  "value": {
+   "amount": 15.0,
+   "unit": "percent",
+   "currency": null,
+   "kind": "percent_off"
+  },
+  "offer_text": "Kohl's provides special discount days, known as Senior Day, where those 60 and above can save 15% on qualifying purchases each Wednesday.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Standing weekly discount schedule; no end date published.",
+  "requirements": [
+   "Age 60+",
+   "Shop in-store on a Wednesday"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Store-locator page (verified live this pass) is where Kohl's publishes this; redeem at Bay Area Kohl's stores.",
+   "physical_locations": null,
+   "locator_url": "https://www.kohls.com/stores.shtml"
+  },
+  "sources": [
+   {
+    "url": "https://www.kohls.com/stores.shtml",
+    "title": "Department & Clothing Stores Near Me | Kohl's Location Finder",
+    "publisher": "Kohl's",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Exclusive Offers: Senior and Military Discounts — Kohl's provides special discount days, known as Senior Day, where those 60 and above can save 15% on qualifying purchases each Wednesday.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Transcribed directly from the issuer's live store-locator page on the verification date",
+    "The same paragraph names the military discount on Mondays, recorded as a sibling entry"
+   ]
+  },
+  "flags": [
+   {
+    "code": "qualifying-purchases-only",
+    "severity": "warning",
+    "detail": "The issuer says 'on qualifying purchases' without enumerating exclusions on this page; expect brand exclusions at the register."
+   },
+   {
+    "code": "age-requirement",
+    "severity": "info",
+    "detail": "Open to shoppers aged 60 and above; ID may be requested."
+   }
+  ]
+ },
+ {
+  "id": "kohls-military-15-mondays",
+  "title": "Kohl's — 15% military discount every Monday, in-store only",
+  "merchant": "Kohl's",
+  "publisher": "Kohl's",
+  "categories": [
+   "big-box-loyalty",
+   "no-spend-free"
+  ],
+  "deal_types": [
+   "percent_off"
+  ],
+  "value": {
+   "amount": 15.0,
+   "unit": "percent",
+   "currency": null,
+   "kind": "percent_off"
+  },
+  "offer_text": "For military personnel, Kohl's provides a 15% military discount every Monday, in-store only, to active military, veterans, retirees, and their immediate family members.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Standing weekly discount schedule; no end date published.",
+  "requirements": [
+   "Active military, veteran, retiree or immediate family member",
+   "Shop in-store on a Monday"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "In-store only per the issuer; redeem at Bay Area Kohl's stores (locator verified live this pass).",
+   "physical_locations": null,
+   "locator_url": "https://www.kohls.com/stores.shtml"
+  },
+  "sources": [
+   {
+    "url": "https://www.kohls.com/stores.shtml",
+    "title": "Department & Clothing Stores Near Me | Kohl's Location Finder",
+    "publisher": "Kohl's",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"For military personnel, Kohl's provides a 15% military discount every Monday, in-store only, to active military, veterans, retirees, and their immediate family members.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Transcribed directly from the issuer's live store-locator page on the verification date",
+    "The issuer itself states the discount is in-store only — quoted so no one expects it online"
+   ]
+  },
+  "flags": [
+   {
+    "code": "in-store-only",
+    "severity": "warning",
+    "detail": "Explicitly in-store only per the issuer's own listing."
+   },
+   {
+    "code": "eligibility-military",
+    "severity": "info",
+    "detail": "Active military, veterans, retirees and their immediate family members; expect an ID check at the register."
+   }
+  ]
+ },
+ {
+  "id": "kohls-cash-earn-10-per-50",
+  "title": "Kohl's — Kohl's Cash earn event: $10 for every $50 spent (published dates 9/21–9/27/2026)",
+  "merchant": "Kohl's",
+  "publisher": "Kohl's",
+  "categories": [
+   "big-box-loyalty"
+  ],
+  "deal_types": [
+   "rewards_credit"
+  ],
+  "value": {
+   "amount": 10.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "rewards_credit"
+  },
+  "offer_text": "Earn $10 Kohl's Cash for every $50 spent.",
+  "offer_text_is_verbatim": true,
+  "expires": "2026-09-27",
+  "expiry_basis": "The issuer's store-locator page banners the event with a details link dated in the URL path: /ecom/Kcash/EarnKohlsCash_20260921_20260927.html (September 21–27, 2026).",
+  "requirements": [
+   "Shop during the earn window"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Kohl's Cash earned during the event is redeemable later at Bay Area Kohl's stores; earn banner observed on the official store-locator page.",
+   "physical_locations": null,
+   "locator_url": "https://www.kohls.com/stores.shtml"
+  },
+  "sources": [
+   {
+    "url": "https://www.kohls.com/stores.shtml",
+    "title": "Department & Clothing Stores Near Me | Kohl's Location Finder",
+    "publisher": "Kohl's",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Banner observed at verification: \"**Earn $10 Kohl's Cash®** for every $50 spent. details\" linking to https://www.kohls.com/ecom/Kcash/EarnKohlsCash_20260921_20260927.html — the issuer's own filename encodes the earn window 2026-09-21 to 2026-09-27."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Banner text transcribed from the live official page; event dates taken from the issuer's own dated URL (9/21–9/27/2026), not from a printed banner date",
+    "Checked against the Kohl's Rewards FAQ: 'earn an additional $10 Kohl's Cash for every $50 you spend when you shop during a Kohl's Cash earn period' — same mechanism"
+   ],
+   "recheck_due": "2026-09-24"
+  },
+  "flags": [
+   {
+    "code": "expiry-derived-from-url",
+    "severity": "warning",
+    "detail": "The event end date is encoded in the details-URL filename rather than spelled out in the retrieved visible text; the details page itself was not fully retrieved."
+   },
+   {
+    "code": "expires-less-than-a-week",
+    "severity": "warning",
+    "detail": "Earn window 2026-09-21 to 2026-09-27 is inside the verification week; expect the event to roll or renew — re-verify if publishing after 9/27."
+   }
+  ]
+ },
+ {
+  "id": "taco-bell-rewards-10-points",
+  "title": "Taco Bell Rewards — 10 points per $1; a reward every 250 points (app)",
+  "merchant": "Taco Bell",
+  "publisher": "Taco Bell",
+  "categories": [
+   "restaurant-loyalty"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": {
+   "amount": 10.0,
+   "unit": "points",
+   "currency": null,
+   "kind": "points"
+  },
+  "offer_text": "You earn 10 Taco Bell Rewards points per $1 spent (excluding taxes, fees, and discounts). You get a reward every 250 points earned. Hit 2,000 points in a year, and you're upgraded to Fire Tier — where you earn 11 points per $1 and get access to even more rewards.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "Free Taco Bell Rewards account in the Taco Bell app"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Official Taco Bell location finder verified live this pass; many Bay Area locations; points accrue on in-app orders and barcode-scanned receipts.",
+   "physical_locations": null,
+   "locator_url": "https://www.tacobell.com/locations"
+  },
+  "sources": [
+   {
+    "url": "https://help.tacobell.com/s/faq/how-many-points-do-i-earn-per-purchase",
+    "title": "How many points do I earn per purchase? — Taco Bell FAQ",
+    "publisher": "Taco Bell",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"You earn 10 Taco Bell Rewards points per $1 spent (excluding taxes, fees, and discounts). You get a reward every 250 points earned. Hit 2,000 points in a year, and you're upgraded to Fire Tier—where you earn 11 points per $1 and get access to even more rewards!\""
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Earn rate, reward cadence and the Fire Tier threshold quoted from Taco Bell's own help center (help.tacobell.com)",
+    "Locator fetched directly to confirm a current official finding path for Bay Area restaurants",
+    "Issuer's newsroom confirms in-store receipt scanning earns points too ('eligible in-store orders if the receipt ... contains a bar code ... scan that receipt into the Taco Bell app')"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "The FAQ was read via a search-engine snippet of help.tacobell.com; the rewards catalog (what each reward tier contains) lives inside the signed-in app."
+   },
+   {
+    "code": "app-required",
+    "severity": "warning",
+    "detail": "Earning and redeeming run through the Taco Bell app; no printed issued coupons are involved."
+   }
+  ]
+ },
+ {
+  "id": "dominos-rewards-program",
+  "title": "Domino's Rewards — join free; 'Earn free Domino's every 2 orders' (current tagline)",
+  "merchant": "Domino's Pizza",
+  "publisher": "Domino's Pizza",
+  "categories": [
+   "restaurant-loyalty"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": null,
+  "offer_text": "Domino's Rewards — Earn free Domino's every 2 orders. Join Now. See Domino's Rewards Terms & Conditions.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Standing program page as served at verification; mechanics behind account sign-in.",
+  "requirements": [
+   "Free Domino's Rewards account"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Domino's operates franchised stores across the Bay Area; its official path is the Deals section of dominos.com and the app. (The general 'rewards' URL redirects to the account page read here.)",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.dominos.com/rewards/",
+    "title": "Domino's Rewards | Domino's",
+    "publisher": "Domino's Pizza",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Domino's Rewards — Earn free Domino's every 2 orders. Join Now / Sign In. See Domino's® Rewards Terms & Conditions.\" (The /rewards/ URL redirects to https://www.dominos.com/my-deals-and-rewards.)"
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Current program page fetched directly on the verification date: the live tagline is 'Earn free Domino's every 2 orders' with a Terms & Conditions link",
+    "The older '10 points per $10+ order; 60 points = free medium 2-topping pizza' mechanic (from the issuer's 2017 IR press release and echoes on dealer sites) is NOT what the current public page states, so this entry records only the observed tagline and does not assert legacy mechanics"
+   ]
+  },
+  "flags": [
+   {
+    "code": "mechanics-changed-since-legacy-references",
+    "severity": "warning",
+    "detail": "The legacy piece-of-the-pie points math widely repeated online is not shown on the current official page ('Earn free Domino's every 2 orders'); confirm reward economics inside a signed-in account, not from third-party write-ups."
+   },
+   {
+    "code": "behind-account",
+    "severity": "warning",
+    "detail": "Reward values and per-account offers sit behind sign-in; no individual offer is asserted."
+   }
+  ]
+ },
+ {
+  "id": "pizza-hut-hut-rewards",
+  "title": "Pizza Hut Hut Rewards — earn 2 points per $1 spent (free pizza 'in as few as two to three visits')",
+  "merchant": "Pizza Hut",
+  "publisher": "Pizza Hut",
+  "categories": [
+   "restaurant-loyalty"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": {
+   "amount": 2.0,
+   "unit": "points",
+   "currency": null,
+   "kind": "points"
+  },
+  "offer_text": "Earn free pizza fast. When your faves are free in as few as two to three visits, you'll be redeeming rewards items in no time. For every $1 you spend on food and drinks you'll earn 2 points.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "Free Hut Rewards account (app or account-linked phone)"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Official Pizza Hut location directory (locations.pizzahut.com) confirmed live with Bay Area stores; pizzahut.com/deals already sits in the project's link-rot log (JS shell, no offers readable).",
+   "physical_locations": null,
+   "locator_url": "https://locations.pizzahut.com/"
+  },
+  "sources": [
+   {
+    "url": "https://locations.pizzahut.com/mi/three-rivers/401-w-michigan-ave",
+    "title": "Pizza Hut 401 W Michigan Ave, Three Rivers, MI | Pizza Hut Near Me",
+    "publisher": "Pizza Hut",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"Earn free pizza fast. When your faves are free in as few as two to three visits, you'll be redeeming rewards items in no time. For every $1 you spend on food and drinks you'll earn 2 points.\" (The identical Hut Rewards program block appears on every official Pizza Hut store page, e.g. the directory's location pages.)"
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The program block is published identically on the issuer's own store pages; the 2-points-per-$1 rate and the issuer's own payout framing are quoted from it",
+    "Redemption point tiers per reward item are only shown inside a Hut Rewards account, so none is asserted here"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Evidence comes from a search-engine snippet of the issuer's official locations.pizzahut.com store page, not a direct fetch."
+   },
+   {
+    "code": "redemption-tiers-not-enumerated",
+    "severity": "warning",
+    "detail": "How many points each reward item costs appears in the signed-in account only; 'two to three visits' is the issuer's own marketing framing, not a fixed number."
+   }
+  ]
+ },
+ {
+  "id": "peetnik-rewards-program",
+  "title": "Peetnik Rewards — 1 point per $1 at Peet's (tiers: 50/120/200/400 points)",
+  "merchant": "Peet's Coffee",
+  "publisher": "Peet's Coffee",
+  "categories": [
+   "restaurant-loyalty"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": null,
+  "offer_text": "Earn 1 point for every $1 spent online or at a Peet's location. Redeem: 25 points for drink customizations; 50 points for a fresh drip, cold brew, hot or iced tea, or a baked good — or $1 off; 120 points for any handcrafted drink or warm food — or $3 off; 200 points for $5 off your order; 400 points for a full pound bag of coffee beans or Ultra Coffee Concentrate.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "Free Peetnik Rewards account (Peet's app)"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Peet's was founded in Berkeley; coffeebars across the Bay Area in all nine counties. Points apply at participating coffeebars; the retailer locator lives in the official site navigation.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.peets.com/pages/peetnik-rewards",
+    "title": "Peetnik Rewards — Peet's Coffee",
+    "publisher": "Peet's Coffee",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"FREE TO JOIN, PERKS INCLUDED — 125 Free Points... Earn 1 point for every $1 you spend. 25 points is enough for freebies ... ### 50 Points — Grab a fresh Drip, Cold Brew, hot or iced tea, or a baked good. Or take $1 off. ### 120 Points — Score any handcrafted drink ... Or take $3 off. ### 200 Points — Get $5 off your order. No catch, just cash saved. ### 400 Points — A full pound bag of freshly roasted coffee beans or a bottle of Ultra Coffee Concentrate\""
+   },
+   {
+    "url": "https://www.peets.com/pages/peetnik-rewards-terms-and-conditions",
+    "title": "Peetnik Rewards Terms & Conditions — Peet's Coffee",
+    "publisher": "Peet's Coffee",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"You will receive 1 (one) Peetnik Rewards point for every $1 (one) U.S. Dollar you spend at participating Peet's locations... 5. REDEMPTION TIERS ... 50 POINTS may be redeemed ... Espresso or espresso-based beverage (e.g., a caffe latte) ... or $3 off your current order of $3 (pre-tax) or more.\""
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Earn rate and the four top-level redemption tiers quoted from the issuer's own marketing page",
+    "Cross-checked the issuer's legal terms: they publish a DIFFERENT tier wording at 50 points (espresso-based drinks or $3 off) than the marketing page (drip/tea/baked good or $1 off) — the mismatch is flagged, not averaged"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Both official pages were read via search-engine snippets of peets.com, not a direct fetch."
+   },
+   {
+    "code": "source-tier-mismatch",
+    "severity": "warning",
+    "detail": "The marketing page and the legal terms describe the 50-point tier differently ($1-off+drip items vs $3-off+espresso items); item availability 'may be adjusted from time to time in Peet's sole discretion' per the terms, so confirm inside the app before banking on a specific reward."
+   }
+  ]
+ },
+ {
+  "id": "peetnik-welcome-125-points",
+  "title": "Peetnik Rewards — 125 bonus points after your first purchase",
+  "merchant": "Peet's Coffee",
+  "publisher": "Peet's Coffee",
+  "categories": [
+   "restaurant-loyalty",
+   "no-spend-free"
+  ],
+  "deal_types": [
+   "points"
+  ],
+  "value": {
+   "amount": 125.0,
+   "unit": "points",
+   "currency": null,
+   "kind": "points"
+  },
+  "offer_text": "You will receive a welcome bonus of 125 points after making your first purchase. 25 points is enough for freebies.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing welcome incentive; no end date published.",
+  "requirements": [
+   "Free Peetnik Rewards account",
+   "Make one purchase after joining"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Peet's coffeebars across the Bay Area; the bonus posts to the account after the first purchase.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://faq.peets.com/hc/en-us/articles/14985523294996-What-are-the-benefits-of-being-a-Peetnik-Rewards-member",
+    "title": "What are the benefits of being a Peetnik Rewards member?",
+    "publisher": "Peet's Coffee FAQ",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"You will receive a welcome bonus of 125 points after making your first purchase. Additionally, you can look forward to a free beverage on your birthday and 25 points on your Peetnik Rewards Anniversary.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Welcome bonus quoted from Peet's own FAQ help-center article (updated August 13, 2025 per the page)",
+    "Marketing page repeats '125 Free Points ... After your first purchase, we'll give you 125 bonus points' — two official sources agree"
+   ]
+  },
+  "flags": [
+   {
+    "code": "purchase-required",
+    "severity": "warning",
+    "detail": "The 'free' 125 points post only after a first purchase, so this is not zero-spend; categorized with restaurant-loyalty plus no-spend-free because a second freebie (25 points) already unlocks after that purchase."
+   },
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Evidence comes from a search-engine snippet of Peet's official FAQ, not a direct fetch."
+   }
+  ]
+ },
+ {
+  "id": "peetnik-birthday-beverage",
+  "title": "Peetnik Rewards — free birthday beverage (one per year)",
+  "merchant": "Peet's Coffee",
+  "publisher": "Peet's Coffee",
+  "categories": [
+   "restaurant-loyalty",
+   "no-spend-free"
+  ],
+  "deal_types": [
+   "free_item"
+  ],
+  "value": null,
+  "offer_text": "You can look forward to a free beverage on your birthday. We will post a birthday bonus of a Free Beverage Reward on your birthday (as noted in your Account). Bottled beverages are excluded from the Birthday Bonus. You are eligible to receive one (1) Birthday Bonus per year. To qualify for birthday and anniversary rewards, you must make at least one purchase every six months.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Recurring annual benefit (one per year); no program end date published.",
+  "requirements": [
+   "Free Peetnik Rewards account",
+   "At least one purchase every six months to stay eligible"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Peet's coffeebars across the Bay Area; the reward posts to the account on the birthday noted in the account.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.peets.com/pages/peetnik-rewards-terms-and-conditions",
+    "title": "Peetnik Rewards Terms & Conditions — Peet's Coffee",
+    "publisher": "Peet's Coffee",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"We will post a birthday bonus of a Free Beverage Reward ... on your birthday (as noted in your Account), subject to the following conditions: - Bottled beverages are excluded from the Birthday Bonus. - You are eligible to receive one (1) Birthday Bonus per year.\""
+   },
+   {
+    "url": "https://faq.peets.com/hc/en-us/articles/14985523294996-What-are-the-benefits-of-being-a-Peetnik-Rewards-member",
+    "title": "What are the benefits of being a Peetnik Rewards member?",
+    "publisher": "Peet's Coffee FAQ",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"You can look forward to a free beverage on your birthday and 25 points on your Peetnik Rewards Anniversary ... *To qualify for birthday and anniversary rewards, you must make at least one purchase every six months.\""
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Birthday benefit quoted from both the issuer's legal terms and its FAQ help-center article",
+    "The six-month purchase eligibility rule and the bottled-beverage exclusion are both quoted — they materially change usability"
+   ]
+  },
+  "flags": [
+   {
+    "code": "six-month-purchase-rule",
+    "severity": "warning",
+    "detail": "Birthday and anniversary rewards require at least one purchase every six months; an account idle longer than that gets nothing."
+   },
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "Both official pages were read via search-engine snippets of peets.com/faq.peets.com, not a direct fetch."
+   }
+  ]
+ },
+ {
+  "id": "fetch-receipt-rewards",
+  "title": "Fetch — snap any store receipt, earn points, redeem for gift cards",
+  "merchant": "Fetch",
+  "publisher": "Fetch",
+  "categories": [
+   "receipt-scan-rewards"
+  ],
+  "deal_types": [
+   "cashback"
+  ],
+  "value": null,
+  "offer_text": "Turn your everyday receipts into gift cards with Fetch. Earn points on groceries, shopping, and games — then redeem for free gift cards. Earn on every receipt. Digital receipts count, too.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing program; no end date published.",
+  "requirements": [
+   "Free Fetch app account (iOS/Android)"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Retail-agnostic: works on receipts from any store, so Bay Area purchases anywhere in the nine counties qualify; redemption is by gift card (Amazon, Target, Starbucks, CVS Pharmacy and more named on the issuer's rewards page).",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://fetch.com/",
+    "title": "Fetch - Rewards App: Turn Receipts Into Gift Cards",
+    "publisher": "Fetch Rewards",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"Turn your everyday receipts into gift cards with Fetch. Earn points on groceries, shopping, and games — then redeem for free gift cards.\" Marketing counters: \"6M+ REVIEWS\", \"$1B+ IN REWARDS REDEEMED\", \"13M+ MONTHLY EARNERS\"."
+   },
+   {
+    "url": "https://fetch.com/receipt-scanning",
+    "title": "Scan Receipts, Earn Points for Gift Cards - Fetch",
+    "publisher": "Fetch Rewards",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"Snap any receipt and earn points with Fetch. Turn groceries, online orders, and everyday purchases into free gift cards. Earn on every receipt. ... Digital receipts count, too.\""
+   },
+   {
+    "url": "https://fetch.com/rewards",
+    "title": "Get Gift Cards — Fetch",
+    "publisher": "Fetch Rewards",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"Earn points on every receipt, then redeem your favorite rewards. Popular gift cards. Cash sweepstakes entries. Even charitable donations.\" Named gift-card brands include Amazon, Target, Starbucks, Dunkin', Google Play, Bath & Body Works, Ulta Beauty, CVS Pharmacy, Chipotle, Nike and GameStop."
+   }
+  ],
+  "verification": {
+   "level": "B",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Core mechanic and gift-card redemption path quoted from three official fetch.com pages",
+    "Unlike Ibotta-style item offers, Fetch advertises points on EVERY receipt with featured-offer bonuses — the 'every receipt' claim is the issuer's own wording",
+    "Per-receipt point values are dynamic by brand/offer and not published as a fixed schedule, so no per-receipt value is asserted"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "warning",
+    "detail": "All three official pages were read via search-engine snippets of fetch.com, not a direct fetch."
+   },
+   {
+    "code": "payout-as-gift-cards-only",
+    "severity": "warning",
+    "detail": "Payout is via gift cards (not cash); the cohort earning figures on the page ('$1B+ rewards redeemed') are marketing counters, not a per-user rate."
+   },
+   {
+    "code": "data-harvesting-notice",
+    "severity": "info",
+    "detail": "Receipt scanning sells purchase data to brands; users should weigh the privacy trade — noted for completeness."
+   }
+  ]
+ },
+ {
+  "id": "mollie-stones-signup-bonus-20",
+  "title": "Mollie Stone's Markets — $20 signup bonus (when offered) on a $20+ next-shop purchase",
+  "merchant": "Mollie Stone's Markets",
+  "publisher": "Mollie Stone's Markets",
+  "categories": [
+   "rebate-cashback",
+   "no-spend-free"
+  ],
+  "deal_types": [
+   "dollar_off"
+  ],
+  "value": {
+   "amount": 20.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "rewards_credit"
+  },
+  "offer_text": "$20 signup bonus, that may be offered from time to time, must be used on a purchase over $20 on the next shop after signing up.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Discretionary standing rule in the rewards terms; the issuer publishes no end date, and says explicitly the bonus is offered only 'from time to time'.",
+  "requirements": [
+   "Join Mollie Stone's Rewards (free)",
+   "Use the bonus on a purchase over $20 on the NEXT shop after signing up"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Mollie Stone's operates stores across the Bay Area (SF, San Mateo, Santa Clara counties); the existing rewards entries (all levels above Bronze) reference the same program.",
+   "physical_locations": null,
+   "locator_url": "https://www.molliestones.com/our-stores"
+  },
+  "sources": [
+   {
+    "url": "https://molliestones.com/rewards/terms-and-conditions/",
+    "title": "Mollie Stone's Markets — Rewards Terms and Conditions",
+    "publisher": "Mollie Stone's Markets",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "\"Section 4: A $20 signup bonus, that may be offered from time to time, must be used on a purchase over $20 on the next shop after signing up.\" Vouchers mail in January and July with a $10 minimum; tiers: Gold 1% ($0–$299.99), Platinum 2% ($300–$499.99), Diamond 3% ($500+) with diamond retroactive to the first $1."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The whole rewards terms page was re-read this pass; the signup-bonus clause sits in section 4",
+    "The 'may be offered from time to time' wording is quoted verbatim — availability is at the issuer's discretion, not continuous",
+    "Reward-tier thresholds on the same page match the pre-existing dataset entries (Gold/Platinum/Diamond), with no drift"
+   ]
+  },
+  "flags": [
+   {
+    "code": "discretionary-availability",
+    "severity": "warning",
+    "detail": "The issuer says the bonus 'may be offered from time to time' — it is not promised at every signup; confirm in-store at registration."
+   },
+   {
+    "code": "minimum-spend-to-use",
+    "severity": "info",
+    "detail": "Bonus must be used on a purchase OVER $20 on the next shop after signing up."
+   }
+  ]
+ }
+]

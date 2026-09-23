@@ -1,650 +1,690 @@
 [
-  {
-    "title": "$1.00 off any ONE Special K® Protein Meal Bars or Pastry Crisps",
-    "merchant": "Special K® (Kellanova)",
-    "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-    "categories": [
-      "manufacturer-printable"
-    ],
-    "deal_types": [
-      "dollar_off"
-    ],
-    "value": {
-      "amount": 1.0,
-      "unit": "currency",
-      "currency": "USD",
-      "kind": "dollar_off"
-    },
-    "offer_text": "SAVE $1.00 — Special K® — on any ONE Special K® Protein Meal Bars or Special K® Pastry Crisps",
-    "offer_text_is_verbatim": false,
-    "verbatim_source_text": "SAVE $1.00\nSpecial K®\non any ONE Special K® Protein Meal Bars or Special K® Pastry Crisps",
-    "expires": null,
-    "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
-    "requirements": [
-      "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
-      "Buy the exact items named in the coupon copy",
-      "Present the printed barcode at a retailer that accepts manufacturer coupons"
-    ],
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
-      "physical_locations": null,
-      "locator_url": null
-    },
-    "sources": [
-      {
-        "url": "https://www.kellanovaus.com/us/en/coupons.html",
-        "title": "Kellanova US | Coupons",
-        "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-        "accessed": "2026-09-22",
-        "method": "fetch_page",
-        "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE $1.00 — Special K® — on any ONE Special K® Protein Meal Bars or Special K® Pastry Crisps\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
-        "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
-        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
-      ]
-    },
-    "flags": [
-      {
-        "code": "expiry-not-published",
-        "severity": "warning",
-        "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
-      },
-      {
-        "code": "platform-powered",
-        "severity": "info",
-        "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
-      },
-      {
-        "code": "coupon-grid-not-re-readable",
-        "severity": "warning",
-        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
-      }
-    ],
-    "tags": [
-      "cereal",
-      "snacks",
-      "printable",
-      "kellanova",
-      "kellogg"
-    ],
-    "id": "kv-specialk-1"
+ {
+  "title": "$1.00 off any ONE Special K® Protein Meal Bars or Pastry Crisps",
+  "merchant": "Special K® (Kellanova)",
+  "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+  "categories": [
+   "manufacturer-printable"
+  ],
+  "deal_types": [
+   "dollar_off"
+  ],
+  "value": {
+   "amount": 1.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "dollar_off"
   },
-  {
-    "title": "$1.25 off any TWO Town House®, Club® and/or Cheez-It® Baked Snack Crackers",
-    "merchant": "KELLANOVA (Town House / Club / Cheez-It) (Kellanova)",
-    "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-    "categories": [
-      "manufacturer-printable",
-      "bogo-multi-buy"
-    ],
-    "deal_types": [
-      "dollar_off",
-      "volume_discount"
-    ],
-    "value": {
-      "amount": 1.25,
-      "unit": "currency",
-      "currency": "USD",
-      "kind": "dollar_off"
-    },
-    "offer_text": "SAVE $1.25 — KELLANOVA — on any TWO Town House®, Club® and/or Cheez-It® Baked Snack Crackers",
-    "offer_text_is_verbatim": false,
-    "verbatim_source_text": "SAVE $1.25\nKELLANOVA\non any TWO Town House®, Club® and/or Cheez-It® Baked Snack Crackers",
-    "expires": null,
-    "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
-    "requirements": [
-      "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
-      "Buy the exact items named in the coupon copy",
-      "Present the printed barcode at a retailer that accepts manufacturer coupons"
-    ],
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
-      "physical_locations": null,
-      "locator_url": null
-    },
-    "sources": [
-      {
-        "url": "https://www.kellanovaus.com/us/en/coupons.html",
-        "title": "Kellanova US | Coupons",
-        "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-        "accessed": "2026-09-22",
-        "method": "fetch_page",
-        "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE $1.25 — KELLANOVA — on any TWO Town House®, Club® and/or Cheez-It® Baked Snack Crackers\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
-        "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
-        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
-      ]
-    },
-    "flags": [
-      {
-        "code": "expiry-not-published",
-        "severity": "warning",
-        "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
-      },
-      {
-        "code": "platform-powered",
-        "severity": "info",
-        "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
-      },
-      {
-        "code": "coupon-grid-not-re-readable",
-        "severity": "warning",
-        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
-      }
-    ],
-    "tags": [
-      "cereal",
-      "snacks",
-      "printable",
-      "kellanova",
-      "kellogg"
-    ],
-    "id": "kv-kellanova-2for125"
+  "offer_text": "SAVE $1.00 — Special K® — on any ONE Special K® Protein Meal Bars or Special K® Pastry Crisps",
+  "offer_text_is_verbatim": false,
+  "verbatim_source_text": "SAVE $1.00\nSpecial K®\non any ONE Special K® Protein Meal Bars or Special K® Pastry Crisps",
+  "expires": null,
+  "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
+  "requirements": [
+   "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
+   "Buy the exact items named in the coupon copy",
+   "Present the printed barcode at a retailer that accepts manufacturer coupons"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
+   "physical_locations": null,
+   "locator_url": null
   },
-  {
-    "title": "$1.00 off any TWO Kellogg's® Eggo® Products",
-    "merchant": "Kellogg's® Eggo® (Kellanova)",
+  "sources": [
+   {
+    "url": "https://www.kellanovaus.com/us/en/coupons.html",
+    "title": "Kellanova US | Coupons",
     "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-    "categories": [
-      "manufacturer-printable",
-      "bogo-multi-buy"
-    ],
-    "deal_types": [
-      "dollar_off",
-      "volume_discount"
-    ],
-    "value": {
-      "amount": 1.0,
-      "unit": "currency",
-      "currency": "USD",
-      "kind": "dollar_off"
-    },
-    "offer_text": "SAVE $1.00 — Eggo® — on any TWO Kellogg's® Eggo® Products",
-    "offer_text_is_verbatim": false,
-    "verbatim_source_text": "SAVE $1.00\nEggo®\non any TWO Kellogg's® Eggo® Products",
-    "expires": null,
-    "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
-    "requirements": [
-      "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
-      "Buy the exact items named in the coupon copy",
-      "Present the printed barcode at a retailer that accepts manufacturer coupons"
-    ],
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
-      "physical_locations": null,
-      "locator_url": null
-    },
-    "sources": [
-      {
-        "url": "https://www.kellanovaus.com/us/en/coupons.html",
-        "title": "Kellanova US | Coupons",
-        "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-        "accessed": "2026-09-22",
-        "method": "fetch_page",
-        "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE $1.00 — Eggo® — on any TWO Kellogg's® Eggo® Products\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
-        "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
-        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
-      ]
-    },
-    "flags": [
-      {
-        "code": "expiry-not-published",
-        "severity": "warning",
-        "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
-      },
-      {
-        "code": "platform-powered",
-        "severity": "info",
-        "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
-      },
-      {
-        "code": "coupon-grid-not-re-readable",
-        "severity": "warning",
-        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
-      }
-    ],
-    "tags": [
-      "cereal",
-      "snacks",
-      "printable",
-      "kellanova",
-      "kellogg"
-    ],
-    "id": "kv-eggo-2for1"
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE $1.00 — Special K® — on any ONE Special K® Protein Meal Bars or Special K® Pastry Crisps\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
+    "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
+    "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+    "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+    "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
+   ]
   },
-  {
-    "title": "75¢ off any TWO Pringles® and/or Pringles® Mingles™",
-    "merchant": "Pringles® (Kellanova)",
-    "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-    "categories": [
-      "manufacturer-printable",
-      "bogo-multi-buy"
-    ],
-    "deal_types": [
-      "dollar_off",
-      "volume_discount"
-    ],
-    "value": {
-      "amount": 0.75,
-      "unit": "currency",
-      "currency": "USD",
-      "kind": "dollar_off"
-    },
-    "offer_text": "SAVE 75¢ — Pringles® Products — on any TWO Pringles® and/or Pringles® Mingles™",
-    "offer_text_is_verbatim": false,
-    "verbatim_source_text": "SAVE 75¢\nPringles® Products\non any TWO Pringles® and/or Pringles® Mingles™",
-    "expires": null,
-    "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
-    "requirements": [
-      "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
-      "Buy the exact items named in the coupon copy",
-      "Present the printed barcode at a retailer that accepts manufacturer coupons"
-    ],
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
-      "physical_locations": null,
-      "locator_url": null
-    },
-    "sources": [
-      {
-        "url": "https://www.kellanovaus.com/us/en/coupons.html",
-        "title": "Kellanova US | Coupons",
-        "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-        "accessed": "2026-09-22",
-        "method": "fetch_page",
-        "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE 75¢ — Pringles® Products — on any TWO Pringles® and/or Pringles® Mingles™\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
-        "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
-        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
-      ]
-    },
-    "flags": [
-      {
-        "code": "expiry-not-published",
-        "severity": "warning",
-        "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
-      },
-      {
-        "code": "platform-powered",
-        "severity": "info",
-        "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
-      },
-      {
-        "code": "coupon-grid-not-re-readable",
-        "severity": "warning",
-        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
-      }
-    ],
-    "tags": [
-      "cereal",
-      "snacks",
-      "printable",
-      "kellanova",
-      "kellogg"
-    ],
-    "id": "kv-pringles-2for75"
+  "flags": [
+   {
+    "code": "expiry-not-published",
+    "severity": "warning",
+    "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
+   },
+   {
+    "code": "platform-powered",
+    "severity": "info",
+    "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+   },
+   {
+    "code": "coupon-grid-not-re-readable",
+    "severity": "warning",
+    "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing. PASS 6 UPDATE (same date, later): the same URL served the fully rendered grid again with all 8 coupons and the headline 'We have 8 coupons today, up to $7.00 in savings' intact, so the pass-5 observation was an intermittent client-rendering failure, not an issuer retraction; the flag stays as a warning that the page can be un-populated to plain fetches."
+   },
+   {
+    "code": "issuer-ownership-change",
+    "severity": "info",
+    "detail": "Kellanova's coupon page itself now carries the banner 'Mars Completes Acquisition of Kellanova' (read on the page this pass). Program branding and the Quotient-powered coupon flow were unchanged at verification; future passes should expect 'Kellogg's Family Rewards'-era naming to move to Mars branding."
+   }
+  ],
+  "tags": [
+   "cereal",
+   "snacks",
+   "printable",
+   "kellanova",
+   "kellogg"
+  ],
+  "id": "kv-specialk-1"
+ },
+ {
+  "title": "$1.25 off any TWO Town House®, Club® and/or Cheez-It® Baked Snack Crackers",
+  "merchant": "KELLANOVA (Town House / Club / Cheez-It) (Kellanova)",
+  "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+  "categories": [
+   "manufacturer-printable",
+   "bogo-multi-buy"
+  ],
+  "deal_types": [
+   "dollar_off",
+   "volume_discount"
+  ],
+  "value": {
+   "amount": 1.25,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "dollar_off"
   },
-  {
-    "title": "50¢ off any ONE Rice Krispies Treats® Crispy Marshmallow Squares",
-    "merchant": "Rice Krispies Treats® (Kellanova)",
-    "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-    "categories": [
-      "manufacturer-printable"
-    ],
-    "deal_types": [
-      "dollar_off"
-    ],
-    "value": {
-      "amount": 0.5,
-      "unit": "currency",
-      "currency": "USD",
-      "kind": "dollar_off"
-    },
-    "offer_text": "SAVE 50¢ — Rice Krispies Treats® — on any ONE Rice Krispies Treats® Crispy Marshmallow Squares",
-    "offer_text_is_verbatim": false,
-    "verbatim_source_text": "SAVE 50¢\nRice Krispies Treats®\non any ONE Rice Krispies Treats® Crispy Marshmallow Squares",
-    "expires": null,
-    "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
-    "requirements": [
-      "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
-      "Buy the exact items named in the coupon copy",
-      "Present the printed barcode at a retailer that accepts manufacturer coupons"
-    ],
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
-      "physical_locations": null,
-      "locator_url": null
-    },
-    "sources": [
-      {
-        "url": "https://www.kellanovaus.com/us/en/coupons.html",
-        "title": "Kellanova US | Coupons",
-        "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-        "accessed": "2026-09-22",
-        "method": "fetch_page",
-        "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE 50¢ — Rice Krispies Treats® — on any ONE Rice Krispies Treats® Crispy Marshmallow Squares\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
-        "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
-        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
-      ]
-    },
-    "flags": [
-      {
-        "code": "expiry-not-published",
-        "severity": "warning",
-        "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
-      },
-      {
-        "code": "platform-powered",
-        "severity": "info",
-        "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
-      },
-      {
-        "code": "coupon-grid-not-re-readable",
-        "severity": "warning",
-        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
-      }
-    ],
-    "tags": [
-      "cereal",
-      "snacks",
-      "printable",
-      "kellanova",
-      "kellogg"
-    ],
-    "id": "kv-rkt-50"
+  "offer_text": "SAVE $1.25 — KELLANOVA — on any TWO Town House®, Club® and/or Cheez-It® Baked Snack Crackers",
+  "offer_text_is_verbatim": false,
+  "verbatim_source_text": "SAVE $1.25\nKELLANOVA\non any TWO Town House®, Club® and/or Cheez-It® Baked Snack Crackers",
+  "expires": null,
+  "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
+  "requirements": [
+   "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
+   "Buy the exact items named in the coupon copy",
+   "Present the printed barcode at a retailer that accepts manufacturer coupons"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
+   "physical_locations": null,
+   "locator_url": null
   },
-  {
-    "title": "50¢ off any ONE Kellogg's® Nutri-Grain® Product",
-    "merchant": "Kellogg's® Nutri-Grain® (Kellanova)",
+  "sources": [
+   {
+    "url": "https://www.kellanovaus.com/us/en/coupons.html",
+    "title": "Kellanova US | Coupons",
     "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-    "categories": [
-      "manufacturer-printable"
-    ],
-    "deal_types": [
-      "dollar_off"
-    ],
-    "value": {
-      "amount": 0.5,
-      "unit": "currency",
-      "currency": "USD",
-      "kind": "dollar_off"
-    },
-    "offer_text": "SAVE 50¢ — Nutri-Grain® — on any ONE Kellogg's® Nutri-Grain® Product",
-    "offer_text_is_verbatim": false,
-    "verbatim_source_text": "SAVE 50¢\nNutri-Grain®\non any ONE Kellogg's® Nutri-Grain® Product",
-    "expires": null,
-    "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
-    "requirements": [
-      "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
-      "Buy the exact items named in the coupon copy",
-      "Present the printed barcode at a retailer that accepts manufacturer coupons"
-    ],
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
-      "physical_locations": null,
-      "locator_url": null
-    },
-    "sources": [
-      {
-        "url": "https://www.kellanovaus.com/us/en/coupons.html",
-        "title": "Kellanova US | Coupons",
-        "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-        "accessed": "2026-09-22",
-        "method": "fetch_page",
-        "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE 50¢ — Nutri-Grain® — on any ONE Kellogg's® Nutri-Grain® Product\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
-        "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
-        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
-      ]
-    },
-    "flags": [
-      {
-        "code": "expiry-not-published",
-        "severity": "warning",
-        "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
-      },
-      {
-        "code": "platform-powered",
-        "severity": "info",
-        "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
-      },
-      {
-        "code": "coupon-grid-not-re-readable",
-        "severity": "warning",
-        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
-      }
-    ],
-    "tags": [
-      "cereal",
-      "snacks",
-      "printable",
-      "kellanova",
-      "kellogg"
-    ],
-    "id": "kv-nutrigain-50"
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE $1.25 — KELLANOVA — on any TWO Town House®, Club® and/or Cheez-It® Baked Snack Crackers\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
+    "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
+    "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+    "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+    "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
+   ]
   },
-  {
-    "title": "$1.00 off any ONE MorningStar Farms® Plant-Based Product",
-    "merchant": "MorningStar Farms® (Kellanova)",
-    "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-    "categories": [
-      "manufacturer-printable"
-    ],
-    "deal_types": [
-      "dollar_off"
-    ],
-    "value": {
-      "amount": 1.0,
-      "unit": "currency",
-      "currency": "USD",
-      "kind": "dollar_off"
-    },
-    "offer_text": "SAVE $1.00 — MorningStar Farms® — on any ONE MorningStar Farms® Plant-Based Product",
-    "offer_text_is_verbatim": false,
-    "verbatim_source_text": "SAVE $1.00\nMorningStar Farms®\non any ONE MorningStar Farms® Plant-Based Product",
-    "expires": null,
-    "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
-    "requirements": [
-      "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
-      "Buy the exact items named in the coupon copy",
-      "Present the printed barcode at a retailer that accepts manufacturer coupons"
-    ],
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
-      "physical_locations": null,
-      "locator_url": null
-    },
-    "sources": [
-      {
-        "url": "https://www.kellanovaus.com/us/en/coupons.html",
-        "title": "Kellanova US | Coupons",
-        "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-        "accessed": "2026-09-22",
-        "method": "fetch_page",
-        "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE $1.00 — MorningStar Farms® — on any ONE MorningStar Farms® Plant-Based Product\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
-        "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
-        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
-      ]
-    },
-    "flags": [
-      {
-        "code": "expiry-not-published",
-        "severity": "warning",
-        "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
-      },
-      {
-        "code": "platform-powered",
-        "severity": "info",
-        "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
-      },
-      {
-        "code": "coupon-grid-not-re-readable",
-        "severity": "warning",
-        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
-      }
-    ],
-    "tags": [
-      "cereal",
-      "snacks",
-      "printable",
-      "kellanova",
-      "kellogg"
-    ],
-    "id": "kv-morningstar-1"
+  "flags": [
+   {
+    "code": "expiry-not-published",
+    "severity": "warning",
+    "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
+   },
+   {
+    "code": "platform-powered",
+    "severity": "info",
+    "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+   },
+   {
+    "code": "coupon-grid-not-re-readable",
+    "severity": "warning",
+    "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing. PASS 6 UPDATE (same date, later): the same URL served the fully rendered grid again with all 8 coupons and the headline 'We have 8 coupons today, up to $7.00 in savings' intact, so the pass-5 observation was an intermittent client-rendering failure, not an issuer retraction; the flag stays as a warning that the page can be un-populated to plain fetches."
+   },
+   {
+    "code": "issuer-ownership-change",
+    "severity": "info",
+    "detail": "Kellanova's coupon page itself now carries the banner 'Mars Completes Acquisition of Kellanova' (read on the page this pass). Program branding and the Quotient-powered coupon flow were unchanged at verification; future passes should expect 'Kellogg's Family Rewards'-era naming to move to Mars branding."
+   }
+  ],
+  "tags": [
+   "cereal",
+   "snacks",
+   "printable",
+   "kellanova",
+   "kellogg"
+  ],
+  "id": "kv-kellanova-2for125"
+ },
+ {
+  "title": "$1.00 off any TWO Kellogg's® Eggo® Products",
+  "merchant": "Kellogg's® Eggo® (Kellanova)",
+  "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+  "categories": [
+   "manufacturer-printable",
+   "bogo-multi-buy"
+  ],
+  "deal_types": [
+   "dollar_off",
+   "volume_discount"
+  ],
+  "value": {
+   "amount": 1.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "dollar_off"
   },
-  {
-    "title": "$1.00 off any TWO Pop-Tarts® Toaster Pastries and/or Bites",
-    "merchant": "Pop-Tarts® (Kellanova)",
+  "offer_text": "SAVE $1.00 — Eggo® — on any TWO Kellogg's® Eggo® Products",
+  "offer_text_is_verbatim": false,
+  "verbatim_source_text": "SAVE $1.00\nEggo®\non any TWO Kellogg's® Eggo® Products",
+  "expires": null,
+  "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
+  "requirements": [
+   "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
+   "Buy the exact items named in the coupon copy",
+   "Present the printed barcode at a retailer that accepts manufacturer coupons"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.kellanovaus.com/us/en/coupons.html",
+    "title": "Kellanova US | Coupons",
     "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-    "categories": [
-      "manufacturer-printable",
-      "bogo-multi-buy"
-    ],
-    "deal_types": [
-      "dollar_off",
-      "volume_discount"
-    ],
-    "value": {
-      "amount": 1.0,
-      "unit": "currency",
-      "currency": "USD",
-      "kind": "dollar_off"
-    },
-    "offer_text": "SAVE $1.00 — Pop-Tarts® — on any TWO Pop-Tarts® Toaster Pastries and/or Bites",
-    "offer_text_is_verbatim": false,
-    "verbatim_source_text": "SAVE $1.00\nPop-Tarts®\non any TWO Pop-Tarts® Toaster Pastries and/or Bites",
-    "expires": null,
-    "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
-    "requirements": [
-      "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
-      "Buy the exact items named in the coupon copy",
-      "Present the printed barcode at a retailer that accepts manufacturer coupons"
-    ],
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
-      "physical_locations": null,
-      "locator_url": null
-    },
-    "sources": [
-      {
-        "url": "https://www.kellanovaus.com/us/en/coupons.html",
-        "title": "Kellanova US | Coupons",
-        "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
-        "accessed": "2026-09-22",
-        "method": "fetch_page",
-        "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE $1.00 — Pop-Tarts® — on any TWO Pop-Tarts® Toaster Pastries and/or Bites\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
-        "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
-        "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
-        "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
-        "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
-      ]
-    },
-    "flags": [
-      {
-        "code": "expiry-not-published",
-        "severity": "warning",
-        "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
-      },
-      {
-        "code": "platform-powered",
-        "severity": "info",
-        "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
-      },
-      {
-        "code": "coupon-grid-not-re-readable",
-        "severity": "warning",
-        "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing."
-      }
-    ],
-    "tags": [
-      "cereal",
-      "snacks",
-      "printable",
-      "kellanova",
-      "kellogg"
-    ],
-    "id": "kv-poptarts-2for1"
-  }
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE $1.00 — Eggo® — on any TWO Kellogg's® Eggo® Products\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
+    "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
+    "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+    "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+    "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
+   ]
+  },
+  "flags": [
+   {
+    "code": "expiry-not-published",
+    "severity": "warning",
+    "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
+   },
+   {
+    "code": "platform-powered",
+    "severity": "info",
+    "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+   },
+   {
+    "code": "coupon-grid-not-re-readable",
+    "severity": "warning",
+    "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing. PASS 6 UPDATE (same date, later): the same URL served the fully rendered grid again with all 8 coupons and the headline 'We have 8 coupons today, up to $7.00 in savings' intact, so the pass-5 observation was an intermittent client-rendering failure, not an issuer retraction; the flag stays as a warning that the page can be un-populated to plain fetches."
+   },
+   {
+    "code": "issuer-ownership-change",
+    "severity": "info",
+    "detail": "Kellanova's coupon page itself now carries the banner 'Mars Completes Acquisition of Kellanova' (read on the page this pass). Program branding and the Quotient-powered coupon flow were unchanged at verification; future passes should expect 'Kellogg's Family Rewards'-era naming to move to Mars branding."
+   }
+  ],
+  "tags": [
+   "cereal",
+   "snacks",
+   "printable",
+   "kellanova",
+   "kellogg"
+  ],
+  "id": "kv-eggo-2for1"
+ },
+ {
+  "title": "75¢ off any TWO Pringles® and/or Pringles® Mingles™",
+  "merchant": "Pringles® (Kellanova)",
+  "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+  "categories": [
+   "manufacturer-printable",
+   "bogo-multi-buy"
+  ],
+  "deal_types": [
+   "dollar_off",
+   "volume_discount"
+  ],
+  "value": {
+   "amount": 0.75,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "dollar_off"
+  },
+  "offer_text": "SAVE 75¢ — Pringles® Products — on any TWO Pringles® and/or Pringles® Mingles™",
+  "offer_text_is_verbatim": false,
+  "verbatim_source_text": "SAVE 75¢\nPringles® Products\non any TWO Pringles® and/or Pringles® Mingles™",
+  "expires": null,
+  "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
+  "requirements": [
+   "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
+   "Buy the exact items named in the coupon copy",
+   "Present the printed barcode at a retailer that accepts manufacturer coupons"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.kellanovaus.com/us/en/coupons.html",
+    "title": "Kellanova US | Coupons",
+    "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE 75¢ — Pringles® Products — on any TWO Pringles® and/or Pringles® Mingles™\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
+    "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
+    "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+    "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+    "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
+   ]
+  },
+  "flags": [
+   {
+    "code": "expiry-not-published",
+    "severity": "warning",
+    "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
+   },
+   {
+    "code": "platform-powered",
+    "severity": "info",
+    "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+   },
+   {
+    "code": "coupon-grid-not-re-readable",
+    "severity": "warning",
+    "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing. PASS 6 UPDATE (same date, later): the same URL served the fully rendered grid again with all 8 coupons and the headline 'We have 8 coupons today, up to $7.00 in savings' intact, so the pass-5 observation was an intermittent client-rendering failure, not an issuer retraction; the flag stays as a warning that the page can be un-populated to plain fetches."
+   },
+   {
+    "code": "issuer-ownership-change",
+    "severity": "info",
+    "detail": "Kellanova's coupon page itself now carries the banner 'Mars Completes Acquisition of Kellanova' (read on the page this pass). Program branding and the Quotient-powered coupon flow were unchanged at verification; future passes should expect 'Kellogg's Family Rewards'-era naming to move to Mars branding."
+   }
+  ],
+  "tags": [
+   "cereal",
+   "snacks",
+   "printable",
+   "kellanova",
+   "kellogg"
+  ],
+  "id": "kv-pringles-2for75"
+ },
+ {
+  "title": "50¢ off any ONE Rice Krispies Treats® Crispy Marshmallow Squares",
+  "merchant": "Rice Krispies Treats® (Kellanova)",
+  "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+  "categories": [
+   "manufacturer-printable"
+  ],
+  "deal_types": [
+   "dollar_off"
+  ],
+  "value": {
+   "amount": 0.5,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "dollar_off"
+  },
+  "offer_text": "SAVE 50¢ — Rice Krispies Treats® — on any ONE Rice Krispies Treats® Crispy Marshmallow Squares",
+  "offer_text_is_verbatim": false,
+  "verbatim_source_text": "SAVE 50¢\nRice Krispies Treats®\non any ONE Rice Krispies Treats® Crispy Marshmallow Squares",
+  "expires": null,
+  "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
+  "requirements": [
+   "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
+   "Buy the exact items named in the coupon copy",
+   "Present the printed barcode at a retailer that accepts manufacturer coupons"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.kellanovaus.com/us/en/coupons.html",
+    "title": "Kellanova US | Coupons",
+    "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE 50¢ — Rice Krispies Treats® — on any ONE Rice Krispies Treats® Crispy Marshmallow Squares\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
+    "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
+    "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+    "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+    "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
+   ]
+  },
+  "flags": [
+   {
+    "code": "expiry-not-published",
+    "severity": "warning",
+    "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
+   },
+   {
+    "code": "platform-powered",
+    "severity": "info",
+    "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+   },
+   {
+    "code": "coupon-grid-not-re-readable",
+    "severity": "warning",
+    "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing. PASS 6 UPDATE (same date, later): the same URL served the fully rendered grid again with all 8 coupons and the headline 'We have 8 coupons today, up to $7.00 in savings' intact, so the pass-5 observation was an intermittent client-rendering failure, not an issuer retraction; the flag stays as a warning that the page can be un-populated to plain fetches."
+   },
+   {
+    "code": "issuer-ownership-change",
+    "severity": "info",
+    "detail": "Kellanova's coupon page itself now carries the banner 'Mars Completes Acquisition of Kellanova' (read on the page this pass). Program branding and the Quotient-powered coupon flow were unchanged at verification; future passes should expect 'Kellogg's Family Rewards'-era naming to move to Mars branding."
+   }
+  ],
+  "tags": [
+   "cereal",
+   "snacks",
+   "printable",
+   "kellanova",
+   "kellogg"
+  ],
+  "id": "kv-rkt-50"
+ },
+ {
+  "title": "50¢ off any ONE Kellogg's® Nutri-Grain® Product",
+  "merchant": "Kellogg's® Nutri-Grain® (Kellanova)",
+  "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+  "categories": [
+   "manufacturer-printable"
+  ],
+  "deal_types": [
+   "dollar_off"
+  ],
+  "value": {
+   "amount": 0.5,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "dollar_off"
+  },
+  "offer_text": "SAVE 50¢ — Nutri-Grain® — on any ONE Kellogg's® Nutri-Grain® Product",
+  "offer_text_is_verbatim": false,
+  "verbatim_source_text": "SAVE 50¢\nNutri-Grain®\non any ONE Kellogg's® Nutri-Grain® Product",
+  "expires": null,
+  "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
+  "requirements": [
+   "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
+   "Buy the exact items named in the coupon copy",
+   "Present the printed barcode at a retailer that accepts manufacturer coupons"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.kellanovaus.com/us/en/coupons.html",
+    "title": "Kellanova US | Coupons",
+    "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE 50¢ — Nutri-Grain® — on any ONE Kellogg's® Nutri-Grain® Product\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
+    "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
+    "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+    "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+    "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
+   ]
+  },
+  "flags": [
+   {
+    "code": "expiry-not-published",
+    "severity": "warning",
+    "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
+   },
+   {
+    "code": "platform-powered",
+    "severity": "info",
+    "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+   },
+   {
+    "code": "coupon-grid-not-re-readable",
+    "severity": "warning",
+    "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing. PASS 6 UPDATE (same date, later): the same URL served the fully rendered grid again with all 8 coupons and the headline 'We have 8 coupons today, up to $7.00 in savings' intact, so the pass-5 observation was an intermittent client-rendering failure, not an issuer retraction; the flag stays as a warning that the page can be un-populated to plain fetches."
+   },
+   {
+    "code": "issuer-ownership-change",
+    "severity": "info",
+    "detail": "Kellanova's coupon page itself now carries the banner 'Mars Completes Acquisition of Kellanova' (read on the page this pass). Program branding and the Quotient-powered coupon flow were unchanged at verification; future passes should expect 'Kellogg's Family Rewards'-era naming to move to Mars branding."
+   }
+  ],
+  "tags": [
+   "cereal",
+   "snacks",
+   "printable",
+   "kellanova",
+   "kellogg"
+  ],
+  "id": "kv-nutrigain-50"
+ },
+ {
+  "title": "$1.00 off any ONE MorningStar Farms® Plant-Based Product",
+  "merchant": "MorningStar Farms® (Kellanova)",
+  "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+  "categories": [
+   "manufacturer-printable"
+  ],
+  "deal_types": [
+   "dollar_off"
+  ],
+  "value": {
+   "amount": 1.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "dollar_off"
+  },
+  "offer_text": "SAVE $1.00 — MorningStar Farms® — on any ONE MorningStar Farms® Plant-Based Product",
+  "offer_text_is_verbatim": false,
+  "verbatim_source_text": "SAVE $1.00\nMorningStar Farms®\non any ONE MorningStar Farms® Plant-Based Product",
+  "expires": null,
+  "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
+  "requirements": [
+   "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
+   "Buy the exact items named in the coupon copy",
+   "Present the printed barcode at a retailer that accepts manufacturer coupons"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.kellanovaus.com/us/en/coupons.html",
+    "title": "Kellanova US | Coupons",
+    "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE $1.00 — MorningStar Farms® — on any ONE MorningStar Farms® Plant-Based Product\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
+    "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
+    "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+    "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+    "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
+   ]
+  },
+  "flags": [
+   {
+    "code": "expiry-not-published",
+    "severity": "warning",
+    "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
+   },
+   {
+    "code": "platform-powered",
+    "severity": "info",
+    "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+   },
+   {
+    "code": "coupon-grid-not-re-readable",
+    "severity": "warning",
+    "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing. PASS 6 UPDATE (same date, later): the same URL served the fully rendered grid again with all 8 coupons and the headline 'We have 8 coupons today, up to $7.00 in savings' intact, so the pass-5 observation was an intermittent client-rendering failure, not an issuer retraction; the flag stays as a warning that the page can be un-populated to plain fetches."
+   },
+   {
+    "code": "issuer-ownership-change",
+    "severity": "info",
+    "detail": "Kellanova's coupon page itself now carries the banner 'Mars Completes Acquisition of Kellanova' (read on the page this pass). Program branding and the Quotient-powered coupon flow were unchanged at verification; future passes should expect 'Kellogg's Family Rewards'-era naming to move to Mars branding."
+   }
+  ],
+  "tags": [
+   "cereal",
+   "snacks",
+   "printable",
+   "kellanova",
+   "kellogg"
+  ],
+  "id": "kv-morningstar-1"
+ },
+ {
+  "title": "$1.00 off any TWO Pop-Tarts® Toaster Pastries and/or Bites",
+  "merchant": "Pop-Tarts® (Kellanova)",
+  "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+  "categories": [
+   "manufacturer-printable",
+   "bogo-multi-buy"
+  ],
+  "deal_types": [
+   "dollar_off",
+   "volume_discount"
+  ],
+  "value": {
+   "amount": 1.0,
+   "unit": "currency",
+   "currency": "USD",
+   "kind": "dollar_off"
+  },
+  "offer_text": "SAVE $1.00 — Pop-Tarts® — on any TWO Pop-Tarts® Toaster Pastries and/or Bites",
+  "offer_text_is_verbatim": false,
+  "verbatim_source_text": "SAVE $1.00\nPop-Tarts®\non any TWO Pop-Tarts® Toaster Pastries and/or Bites",
+  "expires": null,
+  "expiry_basis": "No expiry date is printed on the issuer's coupon page. Printables of this kind normally carry the expiry on the printed coupon itself; the page publishes none.",
+  "requirements": [
+   "Clip on kellanovaus.com/us/en/coupons.html and print at home (limit 20 per print cycle per the page)",
+   "Buy the exact items named in the coupon copy",
+   "Present the printed barcode at a retailer that accepts manufacturer coupons"
+  ],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Manufacturer coupon accepted at any physical U.S. retailer that takes manufacturer coupons, which in the Bay Area includes Safeway, Andronico's, Raley's, Bel Air, Nob Hill Foods, CVS and Walgreens stores. The issuer does not publish a store list; whether a printed coupon scans at a given register is controlled by that retailer's coupon policy.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.kellanovaus.com/us/en/coupons.html",
+    "title": "Kellanova US | Coupons",
+    "publisher": "Kellanova (kellanovaus.com — official Kellanova consumer domain; kelloggsfamilyrewards.com redirects here)",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Page heading: \"We have 8 coupons today, up to $7.00 in savings\". Coupon card read verbatim: \"SAVE $1.00 — Pop-Tarts® — on any TWO Pop-Tarts® Toaster Pastries and/or Bites\". Issuer's intro: \"Our coupons are powered by Quotient.com.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "The three card lines (save amount, brand, qualifying-items copy) were transcribed verbatim in page order and joined with em dashes into offer_text; the raw lines are reproduced in verbatim_source_text",
+    "The eight transcribed coupons sum to exactly $7.00 (1.00+1.25+1.00+0.75+0.50+0.50+1.00+1.00), matching the page's own headline \"up to $7.00 in savings\" — evidence the transcription is complete and contains no extras",
+    "Domain confirmed as the destination of the legacy kelloggsfamilyrewards.com official URL (redirect observed on the verification date)",
+    "Pass 4 re-fetched the whole page on 2026-09-22: all eight cards re-read line by line against this transcription, and the page still printed \"We have 8 coupons today, up to $7.00 in savings\" — zero drift",
+    "Pass-5 re-fetch of the same official URL returned the coupon grid unpopulated (client-rendered); recorded as a flag rather than treated as a retraction of the earlier same-day read"
+   ]
+  },
+  "flags": [
+   {
+    "code": "expiry-not-published",
+    "severity": "warning",
+    "detail": "The issuer's coupon page shows no expiry dates. The printed coupon may carry its own deadline that the anonymous page view does not expose; confirm on the printout before shopping."
+   },
+   {
+    "code": "platform-powered",
+    "severity": "info",
+    "detail": "The page states \"Our coupons are powered by Quotient.com\", so clipping, print limits and the printed barcode are served by Kellanova's authorised print platform, not by a third-party coupon site."
+   },
+   {
+    "code": "coupon-grid-not-re-readable",
+    "severity": "warning",
+    "detail": "Pass-5 re-check (2026-09-22, later the same day): https://www.kellanovaus.com/us/en/coupons.html was fetched live again and this time served its coupon grid unpopulated. The completeness headline came back with both dynamic tokens unresolved — printed as repeated-letter stand-ins where the coupon count and the savings total belong — and the print control read \"PRINT COUPONS0\". The grid is populated client-side (\"Our coupons are powered by Quotient.com\"), so a plain HTTP fetch does not always receive the coupon cards. This entry's offer text, value and evidence were read from the SAME official URL earlier on 2026-09-22 when the grid did render (headline: 8 coupons, up to $7.00 in savings) and are unchanged; what could not be re-confirmed on the pass-5 fetch is the current count, not the coupon itself. Re-verify before printing. PASS 6 UPDATE (same date, later): the same URL served the fully rendered grid again with all 8 coupons and the headline 'We have 8 coupons today, up to $7.00 in savings' intact, so the pass-5 observation was an intermittent client-rendering failure, not an issuer retraction; the flag stays as a warning that the page can be un-populated to plain fetches."
+   },
+   {
+    "code": "issuer-ownership-change",
+    "severity": "info",
+    "detail": "Kellanova's coupon page itself now carries the banner 'Mars Completes Acquisition of Kellanova' (read on the page this pass). Program branding and the Quotient-powered coupon flow were unchanged at verification; future passes should expect 'Kellogg's Family Rewards'-era naming to move to Mars branding."
+   }
+  ],
+  "tags": [
+   "cereal",
+   "snacks",
+   "printable",
+   "kellanova",
+   "kellogg"
+  ],
+  "id": "kv-poptarts-2for1"
+ }
 ]
