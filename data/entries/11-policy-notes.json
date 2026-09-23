@@ -1,604 +1,835 @@
 [
-  {
-    "id": "policy-trader-joes-no-coupons",
-    "title": "Trader Joe's coupon policy: the chain issues no coupons of its own",
-    "merchant": "Trader Joe's",
-    "publisher": "Trader Joe's (quoted via third-party reporting; the retailer's own page was not retrieved in this pass)",
-    "categories": [
-      "policy-debunk"
-    ],
-    "deal_types": [
-      "policy"
-    ],
-    "value": null,
-    "offer_text": "\"We have low prices, every day. NO coupons. NO membership cards. NO discounts. NO glitzy promotions or couponing wars at our stores. We offer the best everyday values, every day.\" Separately, a Trader Joe's public relations manager (Nakia Rohde) is quoted as saying: \"We do not offer Trader Joe's coupons. We stay focused on providing the best everyday values, every day. However, we do accept manufacturer's coupons for other brand's products we carry.\"",
-    "offer_text_is_verbatim": true,
-    "expires": null,
-    "expiry_basis": "Standing retailer policy.",
-    "requirements": [],
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Trader Joe's operates many stores across the nine Bay Area counties. The practical consequence for Bay Area shoppers: do not look for Trader Joe's coupons, but a manufacturer coupon for a name-brand item the store carries may be honoured at the register.",
-      "physical_locations": null,
-      "locator_url": "https://www.traderjoes.com/home/stores"
-    },
-    "sources": [
-      {
-        "url": "https://www.chowhound.com/1681978/trader-joes-secrets-list/",
-        "title": "Trader Joe's Secrets You Wish You Knew Sooner",
-        "publisher": "Chowhound (third party, quoting traderjoes.com)",
-        "accessed": "2026-09-22",
-        "method": "web_search",
-        "evidence": "Quotes the retailer's website statement and the PR manager's email about accepting manufacturer coupons."
-      },
-      {
-        "url": "https://www.mashed.com/1424595/does-trader-joes-accept-coupons/",
-        "title": "Does Trader Joe's Ever Accept Coupons?",
-        "publisher": "Mashed (third party)",
-        "accessed": "2026-09-22",
-        "method": "web_search",
-        "evidence": "Independently quotes the same PR email: 'We do not offer Trader Joe's coupons ... However, we do accept manufacturer's coupons for other brand's products we carry.'"
-      }
-    ],
-    "verification": {
-      "level": "C",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "Two independent third-party reports quote the same retailer statement and the same PR email",
-        "The retailer's own page was NOT retrieved, so the wording could have changed since publication",
-        "Recorded as a policy note, never as an available coupon"
-      ]
-    },
-    "flags": [
-      {
-        "code": "official-page-not-retrieved",
-        "severity": "warning",
-        "detail": "traderjoes.com was not fetched in this pass. The policy is quoted from third-party reporting of the retailer's own statement. Verify on traderjoes.com before relying on the manufacturer-coupon acceptance detail, since store-level practice can vary."
-      },
-      {
-        "code": "scam-vector",
-        "severity": "critical",
-        "detail": "Because Trader Joe's issues no coupons, ANY site, Facebook post or Instagram story offering Trader Joe's coupons, circulars or gift cards is not official. See the excluded list for the retailer's disowning statement."
-      }
-    ],
-    "tags": [
-      "policy",
-      "grocery",
-      "bay-area",
-      "scam-watch"
-    ]
+ {
+  "id": "policy-trader-joes-no-coupons",
+  "title": "Trader Joe's coupon policy: the chain issues no coupons of its own",
+  "merchant": "Trader Joe's",
+  "publisher": "Trader Joe's (quoted via third-party reporting; the retailer's own page was not retrieved in this pass)",
+  "categories": [
+   "policy-debunk"
+  ],
+  "deal_types": [
+   "policy"
+  ],
+  "value": null,
+  "offer_text": "\"We have low prices, every day. NO coupons. NO membership cards. NO discounts. NO glitzy promotions or couponing wars at our stores. We offer the best everyday values, every day.\" Separately, a Trader Joe's public relations manager (Nakia Rohde) is quoted as saying: \"We do not offer Trader Joe's coupons. We stay focused on providing the best everyday values, every day. However, we do accept manufacturer's coupons for other brand's products we carry.\"",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Standing retailer policy.",
+  "requirements": [],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Trader Joe's operates many stores across the nine Bay Area counties. The practical consequence for Bay Area shoppers: do not look for Trader Joe's coupons, but a manufacturer coupon for a name-brand item the store carries may be honoured at the register.",
+   "physical_locations": null,
+   "locator_url": "https://www.traderjoes.com/home/stores"
   },
-  {
-    "id": "policy-sunday-insert-landscape-2026",
-    "title": "2026 Sunday newspaper coupon insert landscape (what still exists)",
-    "merchant": "Save (formerly RedPlum / RetailMeNot Everyday), Unilever Super Saver, P&G, SmartSource (discontinued)",
-    "publisher": "The Krazy Coupon Lady (coupon media, not an issuer)",
-    "categories": [
-      "policy-debunk"
-    ],
-    "deal_types": [
-      "policy"
-    ],
-    "value": null,
-    "offer_text": "\"Save (formerly RetailMeNot Everyday and Red Plum) and less often, Unilever Super Saver are the different inserts that come out on a regular basis, although the number of inserts issued each week varies.\" — \"The P&G coupon insert was officially gone, but it came back in 2025.\" In 2023 the popular P&G coupon insert ended its distribution. Their last coupon booklet was on Jan. 1, 2023. But then it came back in 2025! — \"The SmartSource insert was officially gone in June 2025.\" We last saw a SmartSource coupon insert in March 2025, and as of June 2025, those coupons were gone for good. — \"For years, we could get a full-year preview of upcoming coupon inserts, but in 2026, we no longer have a complete list.\"",
-    "offer_text_is_verbatim": true,
-    "expires": null,
-    "expiry_basis": "Reporting as published; KCL states it updates the post weekly as new information arrives.",
-    "published_2026_insert_dates": [
-      {
-        "date": "2026-01-04",
-        "insert": "Save"
-      },
-      {
-        "date": "2026-03-01",
-        "insert": "Save"
-      },
-      {
-        "date": "2026-01-11",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-01-18",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-01-25",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-02-01",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-02-08",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-02-15",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-02-22",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-03-08",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-03-15",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-03-22",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-03-29",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-04-05",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-04-12",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-04-19",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-04-26",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-05-03",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-05-10",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-05-17",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-05-24",
-        "insert": "No Inserts"
-      },
-      {
-        "date": "2026-05-31",
-        "insert": "No Inserts"
-      }
-    ],
-    "requirements": [],
-    "bay_area": {
-      "available": true,
-      "confidence": "medium",
-      "note": "Sunday paper inserts are distributed regionally, so Bay Area availability depends on the local paper. The source notes Dollar Tree often carries the Sunday newspaper for $1.25 and Walmart carries it all week for at least $2, which are the cheapest physical acquisition routes in the Bay Area.",
-      "physical_locations": null,
-      "locator_url": "https://thekrazycouponlady.com/tips/money/coupon-insert-schedule"
-    },
-    "sources": [
-      {
-        "url": "https://thekrazycouponlady.com/tips/money/coupon-insert-schedule",
-        "title": "Sunday Coupon Insert Schedule 2026 - The Krazy Coupon Lady",
-        "publisher": "The Krazy Coupon Lady",
-        "accessed": "2026-09-22",
-        "method": "fetch_page",
-        "evidence": "Insert-landscape paragraphs and the month-by-month 2026 schedule read verbatim from the page, including the SmartSource discontinuation and the statement that a complete 2026 list no longer exists."
-      },
-      {
-        "url": "https://moneypantry.com/grocery-coupon-sites/",
-        "title": "Free Printable Grocery Coupons: 49 Best Sites to Print Manufacturer & Store Coupons",
-        "publisher": "MoneyPantry (third party)",
-        "accessed": "2026-09-22",
-        "method": "web_search",
-        "evidence": "Corroborates the SmartSource shutdown and adds: 'Update: Unfortunately SmartSource has pulled the plug on printable coupons and the site itself is now a part of Checkout51.' Also documents that FreeCoupons.com, CoolSavings, PPGazette and Mambo Sprouts are no longer in business or changed direction."
-      }
-    ],
-    "verification": {
-      "level": "C",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "Two independent coupon-media sources agree that SmartSource printables and inserts are gone",
-        "Neither source is the issuer, so the insert schedule is recorded as reporting rather than as an authoritative calendar",
-        "Recorded because many coupon sites and aggregators still advertise SmartSource as a live source"
-      ]
-    },
-    "flags": [
-      {
-        "code": "source-not-an-issuer",
-        "severity": "warning",
-        "detail": "The Krazy Coupon Lady is coupon media with affiliate and sponsored content (it discloses this on the page). It is used here only to establish which coupon channels still exist, never as the source of an offer."
-      },
-      {
-        "code": "schedule-incomplete",
-        "severity": "warning",
-        "detail": "The publisher itself states that for 2026 'we no longer have a complete list' and that all dates are subject to change. The list above stops at May 2026 because that is where the retrieved content ended; June–December 2026 dates were not read."
-      },
-      {
-        "code": "stale-source-directories",
-        "severity": "critical",
-        "detail": "Directories of 'best coupon sites' still list SmartSource.com, FreeCoupons.com, CoolSavings, PPGazette and Mambo Sprouts as sources. Several are out of business or redirected. Any list built from those directories without checking each domain will contain dead or fraudulent sources."
-      }
-    ],
-    "tags": [
-      "policy",
-      "newspaper-inserts",
-      "source-landscape"
-    ]
+  "sources": [
+   {
+    "url": "https://www.chowhound.com/1681978/trader-joes-secrets-list/",
+    "title": "Trader Joe's Secrets You Wish You Knew Sooner",
+    "publisher": "Chowhound (third party, quoting traderjoes.com)",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Quotes the retailer's website statement and the PR manager's email about accepting manufacturer coupons."
+   },
+   {
+    "url": "https://www.mashed.com/1424595/does-trader-joes-accept-coupons/",
+    "title": "Does Trader Joe's Ever Accept Coupons?",
+    "publisher": "Mashed (third party)",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Independently quotes the same PR email: 'We do not offer Trader Joe's coupons ... However, we do accept manufacturer's coupons for other brand's products we carry.'"
+   }
+  ],
+  "verification": {
+   "level": "C",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Two independent third-party reports quote the same retailer statement and the same PR email",
+    "The retailer's own page was NOT retrieved, so the wording could have changed since publication",
+    "Recorded as a policy note, never as an available coupon"
+   ]
   },
-  {
-    "id": "policy-link-rot-observed-2026-09-22",
-    "title": "Official URLs that failed during this verification pass (link-rot log)",
-    "merchant": "Multiple",
-    "publisher": "This project",
-    "categories": [
-      "policy-debunk"
-    ],
-    "deal_types": [
-      "policy"
-    ],
-    "value": null,
-    "offer_text": "Official-source URLs that returned an error page, a parked-domain shell, or an unrelated site when retrieved during the two verification passes of 2026-09-22, recorded so that no future contributor treats them as working citations. Pass 5 (2026-09-22, later): re-checked three of the logged items. clorox.com/coupons/ still returns Clorox's own \"Well, this is embarrassing. We can't find the page you're looking for.\" (third consecutive pass); colgate.com/en-us/special-offers still says \"Coupons Temporarily Unavailable\" (third consecutive full fetch, identical text); and kellanovaus.com/us/en/coupons.html now returns its coupon grid unpopulated to a plain fetch, with the completeness headline's two dynamic tokens unresolved and the print control reading \"PRINT COUPONS0\" — a client-rendered page that intermittently serves no offer text, which is a NEW failure mode for this dataset (previously logged only for raleys.com and pizzahut.com/deals). Two further retrieval attempts in this pass failed inside the fetch proxy itself (signed-URL signature errors on smiles.colgate.com and on chunk continuations of pgbrandsaver.com), which are recorded as retrieval failures rather than as statements about those sites.",
-    "offer_text_is_verbatim": false,
-    "expires": null,
-    "expiry_basis": "Point-in-time observation.",
-    "broken_urls": [
-      {
-        "url": "https://www.safeway.com/foru/coupons.html",
-        "result": "Safeway 404 page: 'Oops! Looks like this page is out of season.'",
-        "working_replacement": "https://www.safeway.com/foru-guest.html"
-      },
-      {
-        "url": "https://www.coupons.com/printable-grocery-coupons",
-        "result": "Coupons.com 404 page: 'Oops! Something went wrong. We can't find the page you're looking for.'",
-        "working_replacement": "https://www.coupons.com/ (use the 'View all Printable Coupons' link)"
-      },
-      {
-        "url": "https://www.coupons.com/printables",
-        "result": "Coupons.com 404 page",
-        "working_replacement": "https://www.coupons.com/"
-      },
-      {
-        "url": "https://www.costco.com/coupons.html",
-        "result": "Costco 'Page Not Found!'",
-        "working_replacement": "Costco app → Warehouse tab, or the in-warehouse Instant Savings book"
-      },
-      {
-        "url": "https://www.costco.com/online-offers.html",
-        "result": "Costco 'Page Not Found!' (also fails with ?EXTID=memberOnlySavings_header)",
-        "working_replacement": "Costco app → Warehouse tab"
-      },
-      {
-        "url": "https://www.calacademy.org/neighborhood-free-sundays",
-        "result": "California Academy of Sciences 404: 'Someone pulled the plug on this page!'",
-        "working_replacement": "https://www.calacademy.org/plan-your-visit (to be verified)"
-      },
-      {
-        "url": "https://molliestones.com/stores/",
-        "result": "Mollie Stone's 'Page not found'",
-        "working_replacement": "https://www.molliestones.com/ (store list not located)"
-      },
-      {
-        "url": "https://luckysupermarkets.com/foru-guest.html",
-        "result": "Lucky's own '404 Not Found' shell",
-        "working_replacement": "unknown — Lucky's coupon program remains unverified"
-      },
-      {
-        "url": "https://www.pizzahut.com/deals",
-        "result": "HTTP OK but client-side rendered: only the empty-cart and cookie-consent markup is returned, no offers",
-        "working_replacement": "Pizza Hut app or Hut Rewards account"
-      },
-      {
-        "url": "https://www.dominos.com/en/pages/order/coupons/",
-        "result": "Redirected to a Domino's 404 ('Not found')",
-        "working_replacement": "https://www.dominos.com/ → Deals"
-      },
-      {
-        "url": "https://www.papajohns.com/order/coupons",
-        "result": "Papa Johns 404: 'LOOKS LIKE SOMEONE TOOK THE LAST SLICE'",
-        "working_replacement": "https://www.papajohns.com/ → Deals"
-      },
-      {
-        "url": "https://www.kfc.com/deals",
-        "result": "KFC 404: 'There's no fried chicken on this page…'",
-        "working_replacement": "https://www.kfc.com/ → Deals (requires a store selection)"
-      },
-      {
-        "url": "https://www.raleys.com/",
-        "result": "HTTP OK but JavaScript shell only; retrieved content is just 'Raley's Home Page'",
-        "working_replacement": "Raley's app or the weekly digital ad PDF on the Fieldera content host"
-      },
-      {
-        "url": "https://www.cvs.com/extracare",
-        "result": "Redirected to /extracare/home and returned only an anti-bot interstitial ('One moment to bring them')",
-        "working_replacement": "https://www.cvs.com/extracare-cvs/rxrewards/program-rules/ and https://www.cvs.com/retail/help/help-subtopic-extracare-rewards"
-      },
-      {
-        "url": "https://www.clorox.com/coupons/",
-        "result": "Clorox 404 page: 'Well, this is embarrassing. We can't find the page you're looking for.'",
-        "working_replacement": "None found — product-page FAQs still tell shoppers to 'Check the Coupons page'; treat Clorox manufacturer coupons as not currently published (the site's own home page shows no coupons entry point on 2026-09-22)."
-      },
-      {
-        "url": "https://www.kelloggsfamilyrewards.com/en_US/home.html",
-        "result": "Redirects to the new corporate consumer site rather than 404",
-        "working_replacement": "https://www.kellanovaus.com/us/en/coupons.html (and /us/en/promotions.html) — the same program content now lives under Kellanova's official domain; old bookmarks still work."
-      },
-      {
-        "url": "https://www.realsavings.com/",
-        "result": "Parked-domain ad shell (yfdabv11.com / rapidresultsearch.com)",
-        "working_replacement": "None — Campbell's coupon hub no longer exists on that domain; see excl-realsavings-domain-drift."
-      },
-      {
-        "url": "https://boxtops.com/",
-        "result": "Now the website of the band 'The Box Tops'",
-        "working_replacement": "See excl-boxtops-domain-drift — do not cite this domain for General Mills' Box Tops for Education."
-      }
-    ],
-    "requirements": [],
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Maintenance record; not a consumer offer.",
-      "physical_locations": null,
-      "locator_url": null
-    },
-    "sources": [
-      {
-        "url": "https://github.com/buffedlizard55-lab/Coupons/blob/main/docs/VERIFICATION-LOG.md",
-        "title": "Verification log for this project",
-        "publisher": "This repository",
-        "accessed": "2026-09-22",
-        "method": "official_document",
-        "evidence": "Each URL above was retrieved during the 2026-09-22 research pass and the observed result is quoted from the returned page."
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "Every URL listed here was actually retrieved on the verification date and the failure mode observed directly",
-        "Each failure is paired with either a working replacement or an explicit 'unknown'",
-        "No URL is listed as broken unless it was fetched",
-        "Pass-5 re-check: Clorox coupons URL still 404, Colgate suspension text unchanged, Kellanova coupon grid newly observed serving unpopulated (client-rendered) content; each re-check appended to this log rather than replacing the earlier observation"
-      ]
-    },
-    "flags": [
-      {
-        "code": "point-in-time-log",
-        "severity": "info",
-        "detail": "This is an observation log, not an offer. Pass 2 (morning) and pass 3 (afternoon, product-only re-scope) appended to it; the 'result' wording quotes what each site actually served."
-      }
-    ],
-    "tags": [
-      "maintenance",
-      "link-rot",
-      "quality-control"
-    ]
+  "flags": [
+   {
+    "code": "official-page-not-retrieved",
+    "severity": "warning",
+    "detail": "traderjoes.com was not fetched in this pass. The policy is quoted from third-party reporting of the retailer's own statement. Verify on traderjoes.com before relying on the manufacturer-coupon acceptance detail, since store-level practice can vary."
+   },
+   {
+    "code": "scam-vector",
+    "severity": "critical",
+    "detail": "Because Trader Joe's issues no coupons, ANY site, Facebook post or Instagram story offering Trader Joe's coupons, circulars or gift cards is not official. See the excluded list for the retailer's disowning statement."
+   }
+  ],
+  "tags": [
+   "policy",
+   "grocery",
+   "bay-area",
+   "scam-watch"
+  ]
+ },
+ {
+  "id": "policy-sunday-insert-landscape-2026",
+  "title": "2026 Sunday newspaper coupon insert landscape (what still exists)",
+  "merchant": "Save (formerly RedPlum / RetailMeNot Everyday), Unilever Super Saver, P&G, SmartSource (discontinued)",
+  "publisher": "The Krazy Coupon Lady (coupon media, not an issuer)",
+  "categories": [
+   "policy-debunk"
+  ],
+  "deal_types": [
+   "policy"
+  ],
+  "value": null,
+  "offer_text": "\"Save (formerly RetailMeNot Everyday and Red Plum) and less often, Unilever Super Saver are the different inserts that come out on a regular basis, although the number of inserts issued each week varies.\" — \"The P&G coupon insert was officially gone, but it came back in 2025.\" In 2023 the popular P&G coupon insert ended its distribution. Their last coupon booklet was on Jan. 1, 2023. But then it came back in 2025! — \"The SmartSource insert was officially gone in June 2025.\" We last saw a SmartSource coupon insert in March 2025, and as of June 2025, those coupons were gone for good. — \"For years, we could get a full-year preview of upcoming coupon inserts, but in 2026, we no longer have a complete list.\"",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Reporting as published; KCL states it updates the post weekly as new information arrives.",
+  "published_2026_insert_dates": [
+   {
+    "date": "2026-01-04",
+    "insert": "Save"
+   },
+   {
+    "date": "2026-03-01",
+    "insert": "Save"
+   },
+   {
+    "date": "2026-01-11",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-01-18",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-01-25",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-02-01",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-02-08",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-02-15",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-02-22",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-03-08",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-03-15",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-03-22",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-03-29",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-04-05",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-04-12",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-04-19",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-04-26",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-05-03",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-05-10",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-05-17",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-05-24",
+    "insert": "No Inserts"
+   },
+   {
+    "date": "2026-05-31",
+    "insert": "No Inserts"
+   }
+  ],
+  "requirements": [],
+  "bay_area": {
+   "available": true,
+   "confidence": "medium",
+   "note": "Sunday paper inserts are distributed regionally, so Bay Area availability depends on the local paper. The source notes Dollar Tree often carries the Sunday newspaper for $1.25 and Walmart carries it all week for at least $2, which are the cheapest physical acquisition routes in the Bay Area.",
+   "physical_locations": null,
+   "locator_url": "https://thekrazycouponlady.com/tips/money/coupon-insert-schedule"
   },
-  {
-    "id": "policy-social-media-sourcing",
-    "title": "How social media was used in this research pass (and why no offer is sourced from it)",
-    "merchant": "Facebook, Instagram, Reddit",
-    "publisher": "This project",
-    "categories": [
-      "policy-debunk"
-    ],
-    "deal_types": [
-      "policy"
-    ],
-    "value": null,
-    "offer_text": "Method note: social platforms were searched for leads only. No offer in this dataset cites Facebook, Instagram, Reddit, TikTok or any other social platform as its source of truth.",
-    "offer_text_is_verbatim": false,
-    "expires": null,
-    "expiry_basis": "Method statement.",
-    "requirements": [],
-    "findings": {
-      "facebook_instagram": "Brand coupon posts on Facebook and Instagram sit behind authentication walls and are not retrievable by an anonymous crawler, so no Facebook or Instagram post could be read and therefore none is cited. Where a brand runs a social-only offer, the only defensible citation is the brand's own website or app, which is what this dataset uses.",
-      "reddit": "Reddit was used strictly as a lead generator. The only substantive lead taken from it was the Costco Instant Savings book cycle dates, which are recorded in the excluded list as plausible-but-unofficial and are NOT used to date any offer. Reddit threads also surfaced the getpgoffer.com P&G/Costco rebate, which was then verified directly on the official P&G microsite and IS included.",
-      "tiktok": "A TikTok embed appeared in retrieved content from a coupon-media page. No TikTok content was read or cited."
-    },
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Method note.",
-      "physical_locations": null,
-      "locator_url": null
-    },
-    "sources": [
-      {
-        "url": "https://www.reddit.com/r/Costco/",
-        "title": "r/Costco",
-        "publisher": "Reddit (community)",
-        "accessed": "2026-09-22",
-        "method": "web_search",
-        "evidence": "Used to locate the getpgoffer.com rebate lead and the Instant Savings cycle dates. Both leads were then checked: getpgoffer.com was verified as official P&G and included; the cycle dates could not be verified against Costco and were excluded."
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "Confirmed that no entry in data/entries cites a social platform as its only source",
-        "Every social-media-derived lead is either verified against an official domain or recorded in the excluded list"
-      ]
-    },
-    "flags": [
-      {
-        "code": "coverage-gap",
-        "severity": "warning",
-        "detail": "Because Facebook and Instagram cannot be crawled anonymously, genuinely social-only offers (e.g. a Bay Area restaurant's Instagram-only happy-hour code) are invisible to this dataset. Closing this gap needs either an authenticated session or a manual review workflow — both are listed in ROADMAP.md."
-      },
-      {
-        "code": "scam-density",
-        "severity": "critical",
-        "detail": "Social platforms are the dominant distribution channel for fake coupons and gift-card giveaways (Trader Joe's, Costco, Kroger and similar). Treating a social post as a source would import that risk directly, which is why the rule is: leads yes, citations no."
-      }
-    ],
-    "tags": [
-      "methodology",
-      "social-media",
-      "scam-watch"
-    ]
+  "sources": [
+   {
+    "url": "https://thekrazycouponlady.com/tips/money/coupon-insert-schedule",
+    "title": "Sunday Coupon Insert Schedule 2026 - The Krazy Coupon Lady",
+    "publisher": "The Krazy Coupon Lady",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Insert-landscape paragraphs and the month-by-month 2026 schedule read verbatim from the page, including the SmartSource discontinuation and the statement that a complete 2026 list no longer exists."
+   },
+   {
+    "url": "https://moneypantry.com/grocery-coupon-sites/",
+    "title": "Free Printable Grocery Coupons: 49 Best Sites to Print Manufacturer & Store Coupons",
+    "publisher": "MoneyPantry (third party)",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Corroborates the SmartSource shutdown and adds: 'Update: Unfortunately SmartSource has pulled the plug on printable coupons and the site itself is now a part of Checkout51.' Also documents that FreeCoupons.com, CoolSavings, PPGazette and Mambo Sprouts are no longer in business or changed direction."
+   }
+  ],
+  "verification": {
+   "level": "C",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Two independent coupon-media sources agree that SmartSource printables and inserts are gone",
+    "Neither source is the issuer, so the insert schedule is recorded as reporting rather than as an authoritative calendar",
+    "Recorded because many coupon sites and aggregators still advertise SmartSource as a live source"
+   ]
   },
-  {
-    "id": "policy-colgate-coupons-suspended",
-    "title": "Colgate: official site states coupons are temporarily unavailable (while a Colgate microsite advertises printables)",
-    "merchant": "Colgate-Palmolive",
-    "publisher": "Colgate (colgate.com) — official",
-    "categories": [
-      "policy-debunk"
-    ],
-    "deal_types": [
-      "policy"
-    ],
-    "value": null,
-    "offer_text": "\"Special Offers — Coupons Temporarily Unavailable. We're updating our online coupon experience. During this time, coupons are unavailable on our website. Thank you for your patience as we work behind the scenes. Please check back soon for updated offers.\" — fetched live 2026-09-22 (full page, single chunk, nothing truncated). The same day, a search index showed smiles.colgate.com/page/content/special-offers titled \"Colgate® Coupons, Printable Coupons\" promising \"Print coupons for your favorite Colgate® oral care products\"; a direct fetch of that microsite failed twice on the verification date, so the contradiction is recorded rather than resolved. Pass 4 (2026-09-22, later): the main page was re-fetched and printed the identical text; the microsite failed again on both the offers path and the domain root, and a pass-4 search for the microsite returned no result from smiles.colgate.com at all — its coupon advertisement now stands on the pass-1 snippet only. Pass 5 (2026-09-22, later still): the main page was fetched a third time and printed the identical text again — \"Coupons Temporarily Unavailable / We're updating our online coupon experience. / During this time, coupons are unavailable on our website. / Thank you for your patience as we work behind the scenes. / Please check back soon for updated offers.\" A fifth retrieval attempt on smiles.colgate.com failed in this pass too (the retrieval proxy returned a signature error rather than page content, which is a retrieval failure, not evidence about the site), and a targeted search for the microsite returned only colgate.com's \"Coupons Temporarily Unavailable\" page. The contradiction is therefore still unresolved after five attempts across three passes, and the main site's suspension notice remains the only actively served official Colgate coupon text.",
-    "offer_text_is_verbatim": true,
-    "expires": null,
-    "expiry_basis": "Point-in-time state of the issuer's page.",
-    "requirements": [],
-    "bay_area": {
-      "available": true,
-      "confidence": "high",
-      "note": "Applies nationally, including all Bay Area retailers that would honour Colgate manufacturer coupons.",
-      "physical_locations": null,
-      "locator_url": null
-    },
-    "sources": [
-      {
-        "url": "https://www.colgate.com/en-us/special-offers",
-        "title": "Special Offers | Colgate®",
-        "publisher": "Colgate-Palmolive (colgate.com — official)",
-        "accessed": "2026-09-22",
-        "method": "fetch_page",
-        "evidence": "Full page retrieved live on 2026-09-22 and again in pass 4 the same day — identical body text both times, quoted verbatim in offer_text, including 'Coupons Temporarily Unavailable' and 'Please check back soon for updated offers'. Pass 5 (2026-09-22): third full live fetch of this URL; body text byte-identical to passes 1 and 4, including the heading \"Coupons Temporarily Unavailable\" and the closing \"Please check back soon for updated offers\"."
-      },
-      {
-        "url": "https://smiles.colgate.com/page/content/special-offers",
-        "title": "Colgate® Coupons, Printable Coupons",
-        "publisher": "Colgate-Palmolive microsite (smiles.colgate.com)",
-        "accessed": "2026-09-22",
-        "method": "web_search",
-        "evidence": "Search snippet only: \"Print coupons for your favorite Colgate® oral care products. Find coupons for toothpastes, teeth whitening products, and much more.\" Live fetch failed on 2026-09-22 (proxy error), and an older colgate.com result (Step2.vsp form) references a 2009 'spend $15 / free travel bag' mail-in — a relic, not a current offer. Pass 4 (same date): two further direct fetches failed (the offers path and the domain root), and a targeted search for \"smiles.colgate.com special offers\" returned no organic result from that domain — only aggregator 'Colgate promo code' pages and an India-market Smiles Club terms page. Pass 5 (same date): a fifth retrieval attempt on this microsite failed (proxy signature error, i.e. no page content obtained), and a pass-5 search for Colgate coupons returned only the main-site suspension page — no organic result from smiles.colgate.com. The microsite's printable-coupon claim still rests on the pass-1 snippet alone."
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "Main-site statement retrieved live and quoted verbatim",
-        "Contradicting microsite snippet recorded with its failed-retrieval note rather than silently dropped",
-        "Old 2009-form search result recognised as link-rot, not an offer",
-        "Pass 4 re-verification (2026-09-22): main page re-fetched — byte-identical statement; microsite unreachable via two further fetch attempts and absent from that day's search results, so the 'temporarily unavailable' statement remains the only actively served official text",
-        "Pass-5 re-fetch of the main page confirmed identical text; fifth microsite retrieval attempt failed and is recorded as a retrieval failure, not as evidence that the microsite is gone"
-      ]
-    },
-    "flags": [
-      {
-        "code": "source-page-inconsistency",
-        "severity": "critical",
-        "detail": "Two Colgate-operated pages disagree on whether online coupons exist. The main site's 'temporarily unavailable' statement has now been read in full twice on 2026-09-22 (passes 3 and 4); the contradicting microsite has failed four direct fetches across those passes and produced no search result in pass 4. Until smiles.colgate.com is retrievable and its coupons printed, treat 'Colgate coupons' as NOT AVAILABLE — and see the documented third-party 'Colgate promo code' ring (excl-colgate-aggregator-promo-codes), which stands on neither page."
-      },
-      {
-        "code": "retrieval-via-search-snippet",
-        "severity": "info",
-        "detail": "The contradicting page is evidenced only by a search snippet because two live fetches failed on the verification date."
-      }
-    ],
-    "tags": [
-      "colgate",
-      "policy",
-      "contradiction"
-    ]
+  "flags": [
+   {
+    "code": "source-not-an-issuer",
+    "severity": "warning",
+    "detail": "The Krazy Coupon Lady is coupon media with affiliate and sponsored content (it discloses this on the page). It is used here only to establish which coupon channels still exist, never as the source of an offer."
+   },
+   {
+    "code": "schedule-incomplete",
+    "severity": "warning",
+    "detail": "The publisher itself states that for 2026 'we no longer have a complete list' and that all dates are subject to change. The list above stops at May 2026 because that is where the retrieved content ended; June–December 2026 dates were not read."
+   },
+   {
+    "code": "stale-source-directories",
+    "severity": "critical",
+    "detail": "Directories of 'best coupon sites' still list SmartSource.com, FreeCoupons.com, CoolSavings, PPGazette and Mambo Sprouts as sources. Several are out of business or redirected. Any list built from those directories without checking each domain will contain dead or fraudulent sources."
+   }
+  ],
+  "tags": [
+   "policy",
+   "newspaper-inserts",
+   "source-landscape"
+  ]
+ },
+ {
+  "id": "policy-link-rot-observed-2026-09-22",
+  "title": "Official URLs that failed during this verification pass (link-rot log)",
+  "merchant": "Multiple",
+  "publisher": "This project",
+  "categories": [
+   "policy-debunk"
+  ],
+  "deal_types": [
+   "policy"
+  ],
+  "value": null,
+  "offer_text": "Official-source URLs that returned an error page, a parked-domain shell, or an unrelated site when retrieved during the two verification passes of 2026-09-22, recorded so that no future contributor treats them as working citations. Pass 5 (2026-09-22, later): re-checked three of the logged items. clorox.com/coupons/ still returns Clorox's own \"Well, this is embarrassing. We can't find the page you're looking for.\" (third consecutive pass); colgate.com/en-us/special-offers still says \"Coupons Temporarily Unavailable\" (third consecutive full fetch, identical text); and kellanovaus.com/us/en/coupons.html now returns its coupon grid unpopulated to a plain fetch, with the completeness headline's two dynamic tokens unresolved and the print control reading \"PRINT COUPONS0\" — a client-rendered page that intermittently serves no offer text, which is a NEW failure mode for this dataset (previously logged only for raleys.com and pizzahut.com/deals). Two further retrieval attempts in this pass failed inside the fetch proxy itself (signed-URL signature errors on smiles.colgate.com and on chunk continuations of pgbrandsaver.com), which are recorded as retrieval failures rather than as statements about those sites. PASS 6 (same date, later): six more official URLs failed during the expansion sweep. sprouts.com/savings-center/ 404s (the savings content actually lives at shop.sprouts.com); acehardware.com/rewards 404s (the real Ace Rewards surface is the site-wide block on acehardware.com plus the /user/login page); harborfreight.com/inside-track-club.html 404s (the club page lives on the go.harborfreight.com subdomain); groceryoutlet.com/faqs returns a CAPTCHA-gated shell with a junk body; instagram.com/target returns HTTP 403 to anonymous fetches (as expected for Meta properties); and kohls.com/stores.shtml redirects to kohls.com/stores (kept as the cited form since the redirect is issuer-controlled). All are added to broken_urls with working replacements where one exists.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Point-in-time observation.",
+  "broken_urls": [
+   {
+    "url": "https://www.safeway.com/foru/coupons.html",
+    "result": "Safeway 404 page: 'Oops! Looks like this page is out of season.'",
+    "working_replacement": "https://www.safeway.com/foru-guest.html"
+   },
+   {
+    "url": "https://www.coupons.com/printable-grocery-coupons",
+    "result": "Coupons.com 404 page: 'Oops! Something went wrong. We can't find the page you're looking for.'",
+    "working_replacement": "https://www.coupons.com/ (use the 'View all Printable Coupons' link)"
+   },
+   {
+    "url": "https://www.coupons.com/printables",
+    "result": "Coupons.com 404 page",
+    "working_replacement": "https://www.coupons.com/"
+   },
+   {
+    "url": "https://www.costco.com/coupons.html",
+    "result": "Costco 'Page Not Found!'",
+    "working_replacement": "Costco app → Warehouse tab, or the in-warehouse Instant Savings book"
+   },
+   {
+    "url": "https://www.costco.com/online-offers.html",
+    "result": "Costco 'Page Not Found!' (also fails with ?EXTID=memberOnlySavings_header)",
+    "working_replacement": "Costco app → Warehouse tab"
+   },
+   {
+    "url": "https://www.calacademy.org/neighborhood-free-sundays",
+    "result": "California Academy of Sciences 404: 'Someone pulled the plug on this page!'",
+    "working_replacement": "https://www.calacademy.org/plan-your-visit (to be verified)"
+   },
+   {
+    "url": "https://molliestones.com/stores/",
+    "result": "Mollie Stone's 'Page not found'",
+    "working_replacement": "https://www.molliestones.com/ (store list not located)"
+   },
+   {
+    "url": "https://luckysupermarkets.com/foru-guest.html",
+    "result": "Lucky's own '404 Not Found' shell",
+    "working_replacement": "unknown — Lucky's coupon program remains unverified"
+   },
+   {
+    "url": "https://www.pizzahut.com/deals",
+    "result": "HTTP OK but client-side rendered: only the empty-cart and cookie-consent markup is returned, no offers",
+    "working_replacement": "Pizza Hut app or Hut Rewards account"
+   },
+   {
+    "url": "https://www.dominos.com/en/pages/order/coupons/",
+    "result": "Redirected to a Domino's 404 ('Not found')",
+    "working_replacement": "https://www.dominos.com/ → Deals"
+   },
+   {
+    "url": "https://www.papajohns.com/order/coupons",
+    "result": "Papa Johns 404: 'LOOKS LIKE SOMEONE TOOK THE LAST SLICE'",
+    "working_replacement": "https://www.papajohns.com/ → Deals"
+   },
+   {
+    "url": "https://www.kfc.com/deals",
+    "result": "KFC 404: 'There's no fried chicken on this page…'",
+    "working_replacement": "https://www.kfc.com/ → Deals (requires a store selection)"
+   },
+   {
+    "url": "https://www.raleys.com/",
+    "result": "HTTP OK but JavaScript shell only; retrieved content is just 'Raley's Home Page'",
+    "working_replacement": "Raley's app or the weekly digital ad PDF on the Fieldera content host"
+   },
+   {
+    "url": "https://www.cvs.com/extracare",
+    "result": "Redirected to /extracare/home and returned only an anti-bot interstitial ('One moment to bring them')",
+    "working_replacement": "https://www.cvs.com/extracare-cvs/rxrewards/program-rules/ and https://www.cvs.com/retail/help/help-subtopic-extracare-rewards"
+   },
+   {
+    "url": "https://www.clorox.com/coupons/",
+    "result": "Clorox 404 page: 'Well, this is embarrassing. We can't find the page you're looking for.'",
+    "working_replacement": "None found — product-page FAQs still tell shoppers to 'Check the Coupons page'; treat Clorox manufacturer coupons as not currently published (the site's own home page shows no coupons entry point on 2026-09-22)."
+   },
+   {
+    "url": "https://www.kelloggsfamilyrewards.com/en_US/home.html",
+    "result": "Redirects to the new corporate consumer site rather than 404",
+    "working_replacement": "https://www.kellanovaus.com/us/en/coupons.html (and /us/en/promotions.html) — the same program content now lives under Kellanova's official domain; old bookmarks still work."
+   },
+   {
+    "url": "https://www.realsavings.com/",
+    "result": "Parked-domain ad shell (yfdabv11.com / rapidresultsearch.com)",
+    "working_replacement": "None — Campbell's coupon hub no longer exists on that domain; see excl-realsavings-domain-drift."
+   },
+   {
+    "url": "https://boxtops.com/",
+    "result": "Now the website of the band 'The Box Tops'",
+    "working_replacement": "See excl-boxtops-domain-drift — do not cite this domain for General Mills' Box Tops for Education."
+   },
+   {
+    "url": "https://www.sprouts.com/savings-center/",
+    "result": "Sprouts 404 (pass 6)",
+    "working_replacement": "https://shop.sprouts.com/ (in-store deals) and https://www.sprouts.com/faqs/how-do-i-redeem-digital-coupons/"
+   },
+   {
+    "url": "https://www.acehardware.com/rewards",
+    "result": "Ace Hardware 404 (pass 6)",
+    "working_replacement": "site-wide Ace Rewards block on https://www.acehardware.com/ pages plus https://www.acehardware.com/user/login"
+   },
+   {
+    "url": "https://www.harborfreight.com/inside-track-club.html",
+    "result": "Harbor Freight 404 (pass 6)",
+    "working_replacement": "https://go.harborfreight.com/join-inside-track-club/ and https://go.harborfreight.com/coupons/"
+   },
+   {
+    "url": "https://www.groceryoutlet.com/faqs",
+    "result": "CAPTCHA-gated shell with junk body (pass 6)",
+    "working_replacement": "https://www.groceryoutlet.com/wow-alerts"
+   },
+   {
+    "url": "https://www.instagram.com/target/",
+    "result": "HTTP 403 to anonymous fetch (pass 6 re-test; expected Meta auth wall)",
+    "working_replacement": "https://www.target.com/circle/ (official program surface — social leads verified on the issuer's site instead)"
+   },
+   {
+    "url": "https://www.kohls.com/stores.shtml",
+    "result": "Issuer-controlled redirect to https://www.kohls.com/stores (pass 6; recorded so the citation is not treated as rot)",
+    "working_replacement": "https://www.kohls.com/stores"
+   }
+  ],
+  "requirements": [],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Maintenance record; not a consumer offer.",
+   "physical_locations": null,
+   "locator_url": null
   },
-  {
-    "id": "policy-pg-brandsaver-retailer-acceptance",
-    "title": "P&G brandSAVER publishes its own retailer acceptance list — eight retailers, of which only CVS was confirmed in the Bay Area",
-    "merchant": "Procter & Gamble",
-    "publisher": "Procter & Gamble (pgbrandsaver.com) — official",
-    "categories": [
-      "policy-debunk"
-    ],
-    "deal_types": [
-      "policy"
-    ],
-    "value": null,
-    "offer_text": "The issuer's coupon page answers the question directly: \"Which retailers accept brandSAVER™ coupons? brandSAVER™ coupons are accepted at the following retailers–and we're working on adding more! CVS / Discount Drug Mart / Dorothy Lane Market / Food Depot / Hartig Drug Stores / Lagree's Food Stores / Other Avenues Coop / Western Drug Store\". The same page publishes the redemption flow: \"1 Create a P&G brandSAVER™ Account / 2 Download Coupon24 and set up a Coupon24 account. / 3 Link your Coupon24 account to your brandSAVER™ account. / 4 Send your brandSAVER™ coupons to the Coupon24 app. / 5 Use your app to scan your digital coupons at checkout. Voilà!\", and states \"brandSAVER™ digital coupons are accessible to all P&G brandSAVER™ members and once selected, are sent to the Coupons24 app to be used at participating retailers. Just scan the QR code when you're checking out to start saving in-store!\" On the phone requirement: \"For security reasons, brandSAVER™ coupons can only be accessed through one verified phone number per account.\"",
-    "offer_text_is_verbatim": true,
-    "expires": null,
-    "expiry_basis": "Point-in-time state of the issuer's page, read on 2026-09-22.",
-    "requirements": [],
-    "bay_area": {
-      "available": true,
-      "confidence": "medium",
-      "note": "Applies to every P&G brandSAVER digital coupon in this dataset (112 entries as of pass 5). Of the eight retailers the issuer names, CVS is the one whose Bay Area store presence this project has already verified elsewhere in the dataset; the other seven could not be confirmed as operating inside the nine-county Bay Area during this pass and no Bay Area presence is asserted for them. A Bay Area shopper without a CVS nearby may have no in-range redemption point for these coupons at all.",
-      "physical_locations": null,
-      "locator_url": "https://www.cvs.com/store-locator"
-    },
-    "sources": [
-      {
-        "url": "https://pgbrandsaver.com/coupons/",
-        "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
-        "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
-        "accessed": "2026-09-22",
-        "method": "fetch_page",
-        "evidence": "The \"Frequently asked questions\" and \"How to use\" sections were retrieved live in pass 5 (the same fetch cycle that harvested all 112 coupon rows). Quoted verbatim in offer_text: the eight-retailer acceptance list, the five-step Coupon24 flow including \"Use your app to scan your digital coupons at checkout. Voilà!\", the \"Just scan the QR code when you're checking out to start saving in-store!\" sentence, and the one-verified-phone-number-per-account rule. The page also states \"What are brandSAVER™ coupons? brandSAVER™ digital coupons are accessible to all P&G brandSAVER™ members and once selected, are sent to the Coupons24 app to be used at participating retailers.\""
-      },
-      {
-        "url": "https://pg-lex.my.salesforce-sites.com/CarehubStandalone/articles/en_US/FAQ/How-can-I-get-coupons",
-        "title": "How can I get coupons?",
-        "publisher": "Procter & Gamble consumer care hub (pg-lex.my.salesforce-sites.com — P&G-operated help site)",
-        "accessed": "2026-09-22",
-        "method": "web_search",
-        "evidence": "Retrieved as a search result from P&G's own care hub: \"For the digital brandSAVER coupons, follow these steps: Browse the available coupons on the P&G brandSAVER site. Download Coupon24 and set up a Coupon24 account. Enjoy savings with digital brandSAVER coupons! Send your brandSAVER coupons to the Coupon24 app. *Note: there is a 20 coupon limit. Once a coupon is chosen to 'put in the basket' a pop up appears and states: 'Add up to 20 coupons to your basket, go to your basket and send to your Coupon24 app!'\" The 20-coupon basket cap is therefore the issuer's own stated limit, not an assumption."
-      }
-    ],
-    "verification": {
-      "level": "A",
-      "verified_at": "2026-09-22",
-      "checks": [
-        "Retailer acceptance list read verbatim from the issuer's own FAQ, in the same fetch cycle as the 112 coupon rows",
-        "Five-step redemption flow read verbatim from the same page (the 'How to use' section)",
-        "Basket cap corroborated on a second P&G-operated property (its consumer care hub)",
-        "The earlier, broader retailer claim in this dataset was located, compared against the issuer's list and corrected rather than left in place",
-        "No retailer was added to the list from memory, from a store's own site, or from a coupon aggregator"
-      ]
-    },
-    "flags": [
-      {
-        "code": "retailer-acceptance-narrower-than-assumed",
-        "severity": "critical",
-        "detail": "Correction made in pass 5 (2026-09-22). Passes 1-4 recorded on all 36 then-existing P&G entries that these coupons are redeemable \"at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores\". The issuer's own published acceptance list contains none of Safeway, Lucky, Andronico's, Walgreens, Target or Walmart — only CVS overlaps. The unsupported claim was removed, confidence on every P&G entry was lowered from high to medium, the locator on every P&G entry was repointed from a Safeway locator to a CVS locator, and each entry now carries a retailer-list-published warning naming all eight retailers. The 112 coupons themselves are unaffected: their text, values and printed expiries were all read from the same official page and re-confirmed in pass 5."
-      },
-      {
-        "code": "platform-required",
-        "severity": "warning",
-        "detail": "Redemption runs through a third-party app: the issuer's steps require downloading Coupon24, creating a Coupon24 account, linking it to the brandSAVER account and scanning a QR code at checkout. A shopper without a smartphone, or whose store's lanes do not support the scan, cannot use these coupons even where the retailer participates."
-      },
-      {
-        "code": "basket-limit-20",
-        "severity": "info",
-        "detail": "P&G's care hub states there is a 20-coupon limit per basket (\"Add up to 20 coupons to your basket, go to your basket and send to your Coupon24 app!\"). With 112 coupons published on the page at the verification date, a single trip cannot carry the whole slate."
-      },
-      {
-        "code": "phone-number-required",
-        "severity": "info",
-        "detail": "\"For security reasons, brandSAVER™ coupons can only be accessed through one verified phone number per account.\" The issuer also discloses that using the service consents to collection of consumer health data under the P&G Consumer Health Data Privacy Policy, with withdrawal available through P&G's Consumer Health Data Preference Center."
-      }
-    ],
-    "tags": [
-      "policy",
-      "manufacturer",
-      "p-and-g",
-      "correction",
-      "bay-area"
-    ]
-  }
+  "sources": [
+   {
+    "url": "https://github.com/buffedlizard55-lab/Coupons/blob/main/docs/VERIFICATION-LOG.md",
+    "title": "Verification log for this project",
+    "publisher": "This repository",
+    "accessed": "2026-09-22",
+    "method": "official_document",
+    "evidence": "Each URL above was retrieved during the 2026-09-22 research pass and the observed result is quoted from the returned page."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Every URL listed here was actually retrieved on the verification date and the failure mode observed directly",
+    "Each failure is paired with either a working replacement or an explicit 'unknown'",
+    "No URL is listed as broken unless it was fetched",
+    "Pass-5 re-check: Clorox coupons URL still 404, Colgate suspension text unchanged, Kellanova coupon grid newly observed serving unpopulated (client-rendered) content; each re-check appended to this log rather than replacing the earlier observation"
+   ]
+  },
+  "flags": [
+   {
+    "code": "point-in-time-log",
+    "severity": "info",
+    "detail": "This is an observation log, not an offer. Pass 2 (morning) and pass 3 (afternoon, product-only re-scope) appended to it; the 'result' wording quotes what each site actually served."
+   }
+  ],
+  "tags": [
+   "maintenance",
+   "link-rot",
+   "quality-control"
+  ]
+ },
+ {
+  "id": "policy-social-media-sourcing",
+  "title": "How social media was used in this research pass (and why no offer is sourced from it)",
+  "merchant": "Facebook, Instagram, Reddit",
+  "publisher": "This project",
+  "categories": [
+   "policy-debunk"
+  ],
+  "deal_types": [
+   "policy"
+  ],
+  "value": null,
+  "offer_text": "Method note: social platforms were searched for leads only. No offer in this dataset cites Facebook, Instagram, Reddit, TikTok or any other social platform as its source of truth.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Method statement.",
+  "requirements": [],
+  "findings": {
+   "facebook_instagram": "Brand coupon posts on Facebook and Instagram sit behind authentication walls and are not retrievable by an anonymous crawler, so no Facebook or Instagram post could be read and therefore none is cited. Re-tested in pass 6 (2026-09-22): an anonymous fetch of https://www.instagram.com/target/ returned HTTP 403 — the wall is confirmed live, not assumed. Where a brand runs a social-only offer, the only defensible citation is the brand's own website or app, which is what this dataset uses.",
+   "reddit": "Reddit was used strictly as a lead generator. The only substantive lead taken from it was the Costco Instant Savings book cycle dates, which are recorded in the excluded list as plausible-but-unofficial and are NOT used to date any offer. Reddit threads also surfaced the getpgoffer.com P&G/Costco rebate, which was then verified directly on the official P&G microsite and IS included.",
+   "tiktok": "A TikTok embed appeared in retrieved content from a coupon-media page. No TikTok content was read or cited."
+  },
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Method note.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.reddit.com/r/Costco/",
+    "title": "r/Costco",
+    "publisher": "Reddit (community)",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Used to locate the getpgoffer.com rebate lead and the Instant Savings cycle dates. Both leads were then checked: getpgoffer.com was verified as official P&G and included; the cycle dates could not be verified against Costco and were excluded."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Confirmed that no entry in data/entries cites a social platform as its only source",
+    "Every social-media-derived lead is either verified against an official domain or recorded in the excluded list",
+    "Pass 6 re-test: anonymous fetch of instagram.com/target returned HTTP 403, confirming zero anonymous readability persists"
+   ]
+  },
+  "flags": [
+   {
+    "code": "coverage-gap",
+    "severity": "warning",
+    "detail": "Because Facebook and Instagram cannot be crawled anonymously, genuinely social-only offers (e.g. a Bay Area restaurant's Instagram-only happy-hour code) are invisible to this dataset. Closing this gap needs either an authenticated session or a manual review workflow — both are listed in ROADMAP.md."
+   },
+   {
+    "code": "scam-density",
+    "severity": "critical",
+    "detail": "Social platforms are the dominant distribution channel for fake coupons and gift-card giveaways (Trader Joe's, Costco, Kroger and similar). Treating a social post as a source would import that risk directly, which is why the rule is: leads yes, citations no."
+   }
+  ],
+  "tags": [
+   "methodology",
+   "social-media",
+   "scam-watch"
+  ]
+ },
+ {
+  "id": "policy-colgate-coupons-suspended",
+  "title": "Colgate: official site states coupons are temporarily unavailable (while a Colgate microsite advertises printables)",
+  "merchant": "Colgate-Palmolive",
+  "publisher": "Colgate (colgate.com) — official",
+  "categories": [
+   "policy-debunk"
+  ],
+  "deal_types": [
+   "policy"
+  ],
+  "value": null,
+  "offer_text": "\"Special Offers — Coupons Temporarily Unavailable. We're updating our online coupon experience. During this time, coupons are unavailable on our website. Thank you for your patience as we work behind the scenes. Please check back soon for updated offers.\" — fetched live 2026-09-22 (full page, single chunk, nothing truncated). The same day, a search index showed smiles.colgate.com/page/content/special-offers titled \"Colgate® Coupons, Printable Coupons\" promising \"Print coupons for your favorite Colgate® oral care products\"; a direct fetch of that microsite failed twice on the verification date, so the contradiction is recorded rather than resolved. Pass 4 (2026-09-22, later): the main page was re-fetched and printed the identical text; the microsite failed again on both the offers path and the domain root, and a pass-4 search for the microsite returned no result from smiles.colgate.com at all — its coupon advertisement now stands on the pass-1 snippet only. Pass 5 (2026-09-22, later still): the main page was fetched a third time and printed the identical text again — \"Coupons Temporarily Unavailable / We're updating our online coupon experience. / During this time, coupons are unavailable on our website. / Thank you for your patience as we work behind the scenes. / Please check back soon for updated offers.\" A fifth retrieval attempt on smiles.colgate.com failed in this pass too (the retrieval proxy returned a signature error rather than page content, which is a retrieval failure, not evidence about the site), and a targeted search for the microsite returned only colgate.com's \"Coupons Temporarily Unavailable\" page. The contradiction is therefore still unresolved after five attempts across three passes, and the main site's suspension notice remains the only actively served official Colgate coupon text.",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Point-in-time state of the issuer's page.",
+  "requirements": [],
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Applies nationally, including all Bay Area retailers that would honour Colgate manufacturer coupons.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.colgate.com/en-us/special-offers",
+    "title": "Special Offers | Colgate®",
+    "publisher": "Colgate-Palmolive (colgate.com — official)",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "Full page retrieved live on 2026-09-22 and again in pass 4 the same day — identical body text both times, quoted verbatim in offer_text, including 'Coupons Temporarily Unavailable' and 'Please check back soon for updated offers'. Pass 5 (2026-09-22): third full live fetch of this URL; body text byte-identical to passes 1 and 4, including the heading \"Coupons Temporarily Unavailable\" and the closing \"Please check back soon for updated offers\"."
+   },
+   {
+    "url": "https://smiles.colgate.com/page/content/special-offers",
+    "title": "Colgate® Coupons, Printable Coupons",
+    "publisher": "Colgate-Palmolive microsite (smiles.colgate.com)",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Search snippet only: \"Print coupons for your favorite Colgate® oral care products. Find coupons for toothpastes, teeth whitening products, and much more.\" Live fetch failed on 2026-09-22 (proxy error), and an older colgate.com result (Step2.vsp form) references a 2009 'spend $15 / free travel bag' mail-in — a relic, not a current offer. Pass 4 (same date): two further direct fetches failed (the offers path and the domain root), and a targeted search for \"smiles.colgate.com special offers\" returned no organic result from that domain — only aggregator 'Colgate promo code' pages and an India-market Smiles Club terms page. Pass 5 (same date): a fifth retrieval attempt on this microsite failed (proxy signature error, i.e. no page content obtained), and a pass-5 search for Colgate coupons returned only the main-site suspension page — no organic result from smiles.colgate.com. The microsite's printable-coupon claim still rests on the pass-1 snippet alone."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Main-site statement retrieved live and quoted verbatim",
+    "Contradicting microsite snippet recorded with its failed-retrieval note rather than silently dropped",
+    "Old 2009-form search result recognised as link-rot, not an offer",
+    "Pass 4 re-verification (2026-09-22): main page re-fetched — byte-identical statement; microsite unreachable via two further fetch attempts and absent from that day's search results, so the 'temporarily unavailable' statement remains the only actively served official text",
+    "Pass-5 re-fetch of the main page confirmed identical text; fifth microsite retrieval attempt failed and is recorded as a retrieval failure, not as evidence that the microsite is gone"
+   ]
+  },
+  "flags": [
+   {
+    "code": "source-page-inconsistency",
+    "severity": "critical",
+    "detail": "Two Colgate-operated pages disagree on whether online coupons exist. The main site's 'temporarily unavailable' statement has now been read in full twice on 2026-09-22 (passes 3 and 4); the contradicting microsite has failed four direct fetches across those passes and produced no search result in pass 4. Until smiles.colgate.com is retrievable and its coupons printed, treat 'Colgate coupons' as NOT AVAILABLE — and see the documented third-party 'Colgate promo code' ring (excl-colgate-aggregator-promo-codes), which stands on neither page."
+   },
+   {
+    "code": "retrieval-via-search-snippet",
+    "severity": "info",
+    "detail": "The contradicting page is evidenced only by a search snippet because two live fetches failed on the verification date."
+   }
+  ],
+  "tags": [
+   "colgate",
+   "policy",
+   "contradiction"
+  ]
+ },
+ {
+  "id": "policy-pg-brandsaver-retailer-acceptance",
+  "title": "P&G brandSAVER publishes its own retailer acceptance list — eight retailers, of which only CVS was confirmed in the Bay Area",
+  "merchant": "Procter & Gamble",
+  "publisher": "Procter & Gamble (pgbrandsaver.com) — official",
+  "categories": [
+   "policy-debunk"
+  ],
+  "deal_types": [
+   "policy"
+  ],
+  "value": null,
+  "offer_text": "The issuer's coupon page answers the question directly: \"Which retailers accept brandSAVER™ coupons? brandSAVER™ coupons are accepted at the following retailers–and we're working on adding more! CVS / Discount Drug Mart / Dorothy Lane Market / Food Depot / Hartig Drug Stores / Lagree's Food Stores / Other Avenues Coop / Western Drug Store\". The same page publishes the redemption flow: \"1 Create a P&G brandSAVER™ Account / 2 Download Coupon24 and set up a Coupon24 account. / 3 Link your Coupon24 account to your brandSAVER™ account. / 4 Send your brandSAVER™ coupons to the Coupon24 app. / 5 Use your app to scan your digital coupons at checkout. Voilà!\", and states \"brandSAVER™ digital coupons are accessible to all P&G brandSAVER™ members and once selected, are sent to the Coupons24 app to be used at participating retailers. Just scan the QR code when you're checking out to start saving in-store!\" On the phone requirement: \"For security reasons, brandSAVER™ coupons can only be accessed through one verified phone number per account.\"",
+  "offer_text_is_verbatim": true,
+  "expires": null,
+  "expiry_basis": "Point-in-time state of the issuer's page, read on 2026-09-22.",
+  "requirements": [],
+  "bay_area": {
+   "available": true,
+   "confidence": "medium",
+   "note": "Applies to every P&G brandSAVER digital coupon in this dataset (112 entries as of pass 5). Of the eight retailers the issuer names, CVS is the one whose Bay Area store presence this project has already verified elsewhere in the dataset; the other seven could not be confirmed as operating inside the nine-county Bay Area during this pass and no Bay Area presence is asserted for them. A Bay Area shopper without a CVS nearby may have no in-range redemption point for these coupons at all.",
+   "physical_locations": null,
+   "locator_url": "https://www.cvs.com/store-locator"
+  },
+  "sources": [
+   {
+    "url": "https://pgbrandsaver.com/coupons/",
+    "title": "Save $100s on brands you love with our digital coupons | P&G brandSAVER™",
+    "publisher": "Procter & Gamble (pgbrandsaver.com — official brand domain)",
+    "accessed": "2026-09-22",
+    "method": "fetch_page",
+    "evidence": "The \"Frequently asked questions\" and \"How to use\" sections were retrieved live in pass 5 (the same fetch cycle that harvested all 112 coupon rows). Quoted verbatim in offer_text: the eight-retailer acceptance list, the five-step Coupon24 flow including \"Use your app to scan your digital coupons at checkout. Voilà!\", the \"Just scan the QR code when you're checking out to start saving in-store!\" sentence, and the one-verified-phone-number-per-account rule. The page also states \"What are brandSAVER™ coupons? brandSAVER™ digital coupons are accessible to all P&G brandSAVER™ members and once selected, are sent to the Coupons24 app to be used at participating retailers.\""
+   },
+   {
+    "url": "https://pg-lex.my.salesforce-sites.com/CarehubStandalone/articles/en_US/FAQ/How-can-I-get-coupons",
+    "title": "How can I get coupons?",
+    "publisher": "Procter & Gamble consumer care hub (pg-lex.my.salesforce-sites.com — P&G-operated help site)",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Retrieved as a search result from P&G's own care hub: \"For the digital brandSAVER coupons, follow these steps: Browse the available coupons on the P&G brandSAVER site. Download Coupon24 and set up a Coupon24 account. Enjoy savings with digital brandSAVER coupons! Send your brandSAVER coupons to the Coupon24 app. *Note: there is a 20 coupon limit. Once a coupon is chosen to 'put in the basket' a pop up appears and states: 'Add up to 20 coupons to your basket, go to your basket and send to your Coupon24 app!'\" The 20-coupon basket cap is therefore the issuer's own stated limit, not an assumption."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Retailer acceptance list read verbatim from the issuer's own FAQ, in the same fetch cycle as the 112 coupon rows",
+    "Five-step redemption flow read verbatim from the same page (the 'How to use' section)",
+    "Basket cap corroborated on a second P&G-operated property (its consumer care hub)",
+    "The earlier, broader retailer claim in this dataset was located, compared against the issuer's list and corrected rather than left in place",
+    "No retailer was added to the list from memory, from a store's own site, or from a coupon aggregator"
+   ]
+  },
+  "flags": [
+   {
+    "code": "retailer-acceptance-narrower-than-assumed",
+    "severity": "critical",
+    "detail": "Correction made in pass 5 (2026-09-22). Passes 1-4 recorded on all 36 then-existing P&G entries that these coupons are redeemable \"at participating U.S. retailers that accept P&G brandSAVER digital coupons, which include Bay Area Safeway, Lucky, Andronico's Community Markets, CVS, Walgreens, Target and Walmart stores\". The issuer's own published acceptance list contains none of Safeway, Lucky, Andronico's, Walgreens, Target or Walmart — only CVS overlaps. The unsupported claim was removed, confidence on every P&G entry was lowered from high to medium, the locator on every P&G entry was repointed from a Safeway locator to a CVS locator, and each entry now carries a retailer-list-published warning naming all eight retailers. The 112 coupons themselves are unaffected: their text, values and printed expiries were all read from the same official page and re-confirmed in pass 5."
+   },
+   {
+    "code": "platform-required",
+    "severity": "warning",
+    "detail": "Redemption runs through a third-party app: the issuer's steps require downloading Coupon24, creating a Coupon24 account, linking it to the brandSAVER account and scanning a QR code at checkout. A shopper without a smartphone, or whose store's lanes do not support the scan, cannot use these coupons even where the retailer participates."
+   },
+   {
+    "code": "basket-limit-20",
+    "severity": "info",
+    "detail": "P&G's care hub states there is a 20-coupon limit per basket (\"Add up to 20 coupons to your basket, go to your basket and send to your Coupon24 app!\"). With 112 coupons published on the page at the verification date, a single trip cannot carry the whole slate."
+   },
+   {
+    "code": "phone-number-required",
+    "severity": "info",
+    "detail": "\"For security reasons, brandSAVER™ coupons can only be accessed through one verified phone number per account.\" The issuer also discloses that using the service consents to collection of consumer health data under the P&G Consumer Health Data Privacy Policy, with withdrawal available through P&G's Consumer Health Data Preference Center."
+   }
+  ],
+  "tags": [
+   "policy",
+   "manufacturer",
+   "p-and-g",
+   "correction",
+   "bay-area"
+  ]
+ },
+ {
+  "id": "policy-dollar-tree-coupon-acceptance",
+  "title": "Dollar Tree accepts manufacturer coupons in-store — rules that matter at the register (published policy)",
+  "merchant": "Dollar Tree",
+  "publisher": "This project",
+  "categories": [
+   "policy-debunk"
+  ],
+  "deal_types": [
+   "policy"
+  ],
+  "value": null,
+  "offer_text": "In-Store Coupon Acceptance Policy (official): accepts manufacturer coupons only (no competitor coupons); one coupon per item; up to four identical coupons per customer per day; up to two internet-printed coupons per customer per day (must have a valid expiry and a remit address); no photocopies; no cash back on overage (value reduced to item price); 'free item' coupons only accepted for buy-one-get-one styles with a purchase requirement; tax paid by the customer.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Standing published policy; no end date.",
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Why it matters: Dollar Tree sells many items above $1.25 now, and its stores accept the manufacturers' coupons indexed in this dataset (P&G, Kellanova, Coupons.com printables) subject to these rules — a real redemption outlet across the nine-county area (official store-directory pages confirm coupon acceptance per store).",
+   "physical_locations": null,
+   "locator_url": "https://locations.dollartree.com/"
+  },
+  "sources": [
+   {
+    "url": "https://www.dollartree.com/value-seekers-blog-terms-and-conditions",
+    "title": "Terms and Conditions — In-Store Coupon Acceptance Policy",
+    "publisher": "Dollar Tree",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"We accept Manufacturer Coupons only. We do not accept retail-specific coupons... We accept up to four of the same Manufacturer Coupons per customer per day... We accept up to two Internet Coupons per customer per day... We will not give cash back if the face value of a Manufacturer Coupon is greater than the purchase price of the Item... Manufacturer Coupons for free Items are only accepted if a purchase is required to get one free.\""
+   },
+   {
+    "url": "https://locations.dollartree.com/ca/",
+    "title": "Dollar Tree stores — California directory",
+    "publisher": "Dollar Tree",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Each official store page carries the FAQ: \"Yes, we accept coupons in our stores. Please visit our Terms & Conditions page to view our In-Store Coupon Acceptance Policy. At this time, we cannot accept coupons online.\""
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Full coupon-acceptance rule set read from the issuer's own Terms & Conditions document",
+    "Cross-confirmed on the issuer's official per-store directory pages, which repeat acceptance and the no-online-redemption rule",
+    "Rules transcribed as a summary here; the governing text is the linked T&C page"
+   ]
+  },
+  "flags": [
+   {
+    "code": "expiry-of-policy-unpublished",
+    "severity": "info",
+    "detail": "Dollar Tree publishes no version date on the coupon policy; treat the current T&C page as authoritative and re-check before relying on edge rules (internet-coupon caps)."
+   }
+  ]
+ },
+ {
+  "id": "policy-grocery-outlet-manufacturer-coupons",
+  "title": "Grocery Outlet and manufacturer coupons — what could and couldn't be verified",
+  "merchant": "Grocery Outlet",
+  "publisher": "This project",
+  "categories": [
+   "policy-debunk"
+  ],
+  "deal_types": [
+   "policy"
+  ],
+  "value": null,
+  "offer_text": "Level-C policy note: Grocery Outlet publishes no manufacturer-coupon acceptance policy on its official site (groceryoutlet.com/faqs returns a CAPTCHA-gated shell; no policy text). Third-party sources consistently report the chain does NOT accept manufacturer coupons — an r/GroceryOutlet thread citing a store owner, The Krazy Coupon Lady's store guide, and a third-party deals blog all state the opportunistic-buy inventory model blocks coupon redemption because reimbursement can't be processed. Grocery Outlet DOES run its own issuer coupons (WOW alerts $3-off-$25 signup offer, in the dataset as its own entry) — do not confuse the two.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Observation recorded at verification time.",
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Grocery Outlet has dozens of Bay Area stores (it is Emeryville-headquartered); shoppers should assume manufacturer coupons from this dataset will NOT scan there and plan redemptions at the chains listed on those coupons instead.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.groceryoutlet.com/wow-alerts",
+    "title": "Wow Alerts — Grocery Outlet (official)",
+    "publisher": "Grocery Outlet",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "\"New email sign-ups receive a coupon for $3 off a $25 purchase!\" — proves the issuer runs its own store coupons even though no manufacturer-coupon policy page could be located on the official domain."
+   },
+   {
+    "url": "https://www.reddit.com/r/GroceryOutlet/comments/y94zym/does_grocery_outlet_accept_coupons/",
+    "title": "Does Grocery Outlet accept coupons? — r/GroceryOutlet",
+    "publisher": "Reddit (community; includes a user identifying as a GO owner)",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Thread answer attributed to a store owner: Grocery Outlet does not accept manufacturer coupons; the opportunistic-buy model prevents redemption. NOT official evidence — recorded as the strongest third-party signal."
+   },
+   {
+    "url": "https://thekrazycouponlady.com/tips/store-hacks/grocery-outlet",
+    "title": "Grocery Outlet store guide",
+    "publisher": "The Krazy Coupon Lady (third party)",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Store guide notes Grocery Outlet does not accept manufacturer coupons while WOW email alerts occasionally carry store coupons like $5 off — consistent with the issuer's own $3-off-$25 signup page."
+   }
+  ],
+  "verification": {
+   "level": "C",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Searched the official domain for a coupon policy page and found none readable (faqs path CAPTCHA-gated with junk body)",
+    "Three independent third-party sources agree on non-acceptance; recorded as level C because the issuer itself could not be quoted",
+    "The issuer's OWN coupon channel (WOW alerts) is verified separately and indexed as an entry, so this note must not be read as 'no GO coupons exist'"
+   ]
+  },
+  "flags": [
+   {
+    "code": "third-party-evidence-only",
+    "severity": "warning",
+    "detail": "Non-acceptance is supported only by third-party sources (including a self-identified store owner on Reddit); Grocery Outlet's official site could not be quoted either way."
+   },
+   {
+    "code": "store-by-store-variance-possible",
+    "severity": "info",
+    "detail": "Grocery Outlet stores are independently owned and operated; acceptance can vary by location even where a pattern is reported."
+   }
+  ]
+ },
+ {
+  "id": "policy-hobby-lobby-weekly-coupon-sunset",
+  "title": "Hobby Lobby's famous '40% off one item' coupon is sunset — today's model is standing 40%-off departments",
+  "merchant": "Hobby Lobby",
+  "publisher": "This project",
+  "categories": [
+   "policy-debunk"
+  ],
+  "deal_types": [
+   "policy"
+  ],
+  "value": null,
+  "offer_text": "Scam-watch/policy note: coupon sites still list a Hobby Lobby '40% off one regular-priced item' weekly coupon. The issuer's current site offers no such coupon, and hasn't for years — a 2019 cached copy of hobbylobby.com is the most recent official evidence of that coupon's existence. Instead, Hobby Lobby now runs standing department pricing: Home Decor, Party, Frames, Books and more are 'Always 40% Off The Marked Price' (with rotating weekly-ad categories), so '40% off one item' would be strictly worse than the current model on most baskets. Treat circulating weekly 40%-off-one-item coupons as stale.",
+  "offer_text_is_verbatim": false,
+  "expires": null,
+  "expiry_basis": "Observation recorded at verification time.",
+  "bay_area": {
+   "available": true,
+   "confidence": "high",
+   "note": "Hobby Lobby operates stores serving the Bay Area (Store Finder on the official site); the standing department discounts apply automatically at the register.",
+   "physical_locations": null,
+   "locator_url": null
+  },
+  "sources": [
+   {
+    "url": "https://www.hobbylobby.com/",
+    "title": "Hobby Lobby Arts & Crafts Store (home page)",
+    "publisher": "Hobby Lobby",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Current home page shows standing pricing: \"40%off Home Decor — Always 40% Off The Marked Price* ... Party ... Always 40% Off The Marked Price* ... Discounts Valid Online & In-Store\" — no single-item weekly coupon anywhere on the landing surface."
+   },
+   {
+    "url": "https://www.hobbylobby.com/weekly-ad",
+    "title": "Shop Our Weekly Ad — Hobby Lobby",
+    "publisher": "Hobby Lobby",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "Weekly-ad page repeats \"**Always 40% off the Marked Price***\" across departments with printed exclusions ('Seasonal Department', items labeled Kitchen, Bath, Closet, Gift or 'Your Price') — again with no general-item coupon."
+   },
+   {
+    "url": "https://www.hobbylobby.com/?dept=20&jobid=143&menu=2",
+    "title": "Hobby Lobby (cached copy from April 2019)",
+    "publisher": "Hobby Lobby (historical cache of the official page)",
+    "accessed": "2026-09-22",
+    "method": "web_search",
+    "evidence": "The 2019 cached page shows the discontinued coupon: \"40% off one item at regular price — Get Coupon ... Limit one coupon per customer per day ... Offer is not valid with any other coupon, discount or previous purchase.\" This is the last official evidence of the coupon; current pages no longer carry it."
+   }
+  ],
+  "verification": {
+   "level": "A",
+   "verified_at": "2026-09-22",
+   "checks": [
+    "Both current official pages (home + weekly ad) carry only standing department pricing and no single-item coupon",
+    "The discontinued coupon's exact 2019 wording retrieved from a cached copy of the SAME official domain, documenting the before/after",
+    "Discontinuation is an inference from the issuer's own current pages plus the dated cache — flagged as inference, not presented as an issuer announcement"
+   ]
+  },
+  "flags": [
+   {
+    "code": "inference-from-absence",
+    "severity": "warning",
+    "detail": "Hobby Lobby never published a 'we discontinued the coupon' notice in the pages retrieved; the sunset is inferred from consistent absence on the issuer's current pages since (at latest) 2021-era advocacy write-ups, anchored to the 2019 cached official page showing its former presence."
+   },
+   {
+    "code": "standing-discount-is-not-a-coupon",
+    "severity": "info",
+    "detail": "'Always 40% off the marked price' is shelf pricing by department, not a coupon; comparisons to old coupon value should note the marked-price basis."
+   }
+  ]
+ }
 ]

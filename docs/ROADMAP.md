@@ -4,8 +4,8 @@ Next work, in priority order. Each item states what to do, why it matters, and w
 looks like — including the evidence that must be captured, because an entry without a citation
 cannot be merged.
 
-Current state after **pass 5 (2026-09-22)**: **185 verified product offers, 18 documented
-rejections, 204 citations across 44 domains, 517 flags (20 critical, 432 warning, 65 info)**, every line re-checked this date. Scope:
+Current state after **pass 6 (2026-09-22)**: **227 verified product offers, 20 documented
+rejections, 265 citations across 72 domains, 612 flags (20 critical, 497 warning, 96 info)**, every line re-checked this date. Scope:
 **product coupons only** — no events, museums or venue admission (see
 `archive/rescoped-2026-09-22/`).
 
@@ -145,6 +145,31 @@ weekly cadence, and honest `source-outdated` flags when the PDF is stale.
 - ✅ Done (pass 5): new flag codes introduced for what passes 5 taught us: `retailer-list-published`, `retailer-acceptance-narrower-than-assumed`, `coupon-grid-not-re-readable`, `one-reward-per-household`, `terms-internal-count-mismatch`, `retailer-participation-unverified`, `recurring-one-day-sale`, `item-level-offers-in-images`, etc.
 - ✅ Done (pass 5): Clorox hub re-checked a third time (still 404) and its Gift of Clean verified as sold-out SERVICE — rejected, not silently dropped.
 - A `rescoped` note type so archived taxonomies stay documented without staying in the build.
+- ✅ Done (pass 6): four new researched categories (home improvement/hardware/auto, sporting goods
+  & outdoor, pet supplies, office/craft/hobby) with 39 verified offers; disclosure of paid
+  membership enforced by `TestPass6Expansion`.
+
+## Priority 11 — pass-6 follow-ups and next-session targets
+
+**Re-harvest watch (dated material verified in pass 6):**
+1. **Harbor Freight coupon batch (expiry 9/27/2026):** the hub cycles roughly monthly — harvest the
+   October batch at go.harborfreight.com/coupons/ the same way (index + one detail page cross-check),
+   replacing the three transcribed coupons and their recheck dates.
+2. **Kohl's Cash earn banner (9/21–9/27/2026 window):** weekly cadence; re-read the banner's dated
+   details URL and either update or let the card expire (site auto-retires it 2026-09-28).
+3. **IKEA Family offer cycle (thru 10/12/2026):** re-read /us/en/offers/family-offers/ after 10/12
+   for the next six-group cycle; the student 15% box ends 9/30/26 — check whether it renews.
+4. **Whole Foods Days of Deals (valid through 10/6/2026):** re-read the /amazon page for the
+   successor window; the extra-10% Prime perk itself is standing.
+5. **REI new-member $30 bonus card (thru 11/12/2026):** watch for extension around Black Friday.
+
+**Retrieval upgrades for pass-6 snippet-level records:** fetch the canonical program pages directly
+(headless) for Ace Rewards (canonical page behind /user/login), Petco Perks, PetSmart Treats,
+Michaels Rewards, Taco Bell Rewards terms, Fetch terms, Grocery Outlet /faqs (CAPTCHA body), so the
+35 `retrieval-via-search-snippet` disclosures can shrink. Lucky's for U remains unverified (own 404);
+Home Depot, Tractor Supply, Sephora, Ulta, Best Buy, JCPenney, Bed Bath/BuyBuy, DSW and Bay Area
+mall-based chains are untested territory for the same official-first sweep. CVS remains the
+headless priority from Priority 3.
 
 ## Maintenance cadence
 
@@ -153,6 +178,8 @@ weekly cadence, and honest `source-outdated` flags when the PDF is stale.
 | Citation link check + recheck-due report | Weekly (CI) | `scripts/verify_links.py` via `verify.yml` |
 | P&G + Kellanova + Coupons.com re-harvest | Monthly (or when flags say `expires-imminently`) | generator + CI |
 | Restaurant/sign-up program terms | Quarterly | manual pass, same rules |
+| Retail loyalty rate cards (Ace, Lowe's, AutoZone, O'Reilly, Petco, PetSmart, Michaels, Staples, REI, Kohl's) | Quarterly | manual pass, same rules |
+| Dated campaign blocks (Harbor Freight batch, Kohl's Cash banner, IKEA cycles, WFM Days of Deals) | On their printed end dates (tracked by `recheck_due`) | `verify.yml` recheck report + manual re-read |
 | Taxonomy review | When a category changes (e.g. this re-scope) | `data/meta.json` + tests |
 
 ## Definition of done for the project overall

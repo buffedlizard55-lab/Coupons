@@ -2,7 +2,7 @@
   "dataset": {
     "name": "Verified Official Product Coupons & Rebates — San Francisco Bay Area",
     "slug": "coupons",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "compiled_at": "2026-09-22",
     "recheck_policy": "verification.recheck_due is a project scheduling date, never an issuer claim. Every entry with a published expiry carries recheck_due = the printed expiry minus a 3-day safety margin, so the weekly CI job can flag the record for re-verification BEFORE it goes stale. Entries with no published expiry follow the monthly re-harvest cadence instead and deliberately carry no recheck_due, because inventing one for an 'Ongoing' offer would be exactly the kind of fabricated deadline this project forbids.",
     "timezone_note": "All dates are ISO-8601 (YYYY-MM-DD). 'compiled_at' is the date every line in this dataset was checked against its cited source.",
@@ -30,6 +30,10 @@
       {
         "date": "2026-09-22",
         "change": "Pass 5 (same day, later): full P&G harvest completed — all 10 chunks of pgbrandsaver.com/coupons/ retrieved live, 112 rows transcribed (exactly the page's advertised 'Search 112 Digital Coupons' headline, pinned by TestPgHarvestCompleteness), seven expiry contradictions documented (Crest x3, Tampax/Always x1, Olay x3 at 9/26 vs 9/27 and 9/27 vs 9/28), retailer acceptance list corrected from the issuer's own FAQ (eight retailers: CVS, Discount Drug Mart, Dorothy Lane Market, Food Depot, Hartig Drug Stores, Lagree's Food Stores, Other Avenues Coop, Western Drug Store — only CVS Bay Area-confirmed, so confidence lowered to medium and policy-pg-brandsaver-retailer-acceptance records the correction), front-end daysUntil bug fixed (T23:59:59+Math.round made yesterday round to 0), P&G Back to School rebates verified (three tiers $25/$15/$5, purchase window Jul 1–Sep 30 2026, submission due Oct 14 2026, tier-1 wording contradiction $50 vs $75 flagged), Kellanova $1-off-two Barcode Buck$ verified (expires 9/30/26, participating-retailer list behind emailed link), Kellanova coupon grid regression observed (client-rendered via Quotient.com, headline tokens unresolved, flagged coupon-grid-not-re-readable), Mollie Stone's 4-Items-on-the-4th verified (40% off, in-store one day only, next instance Sunday Oct 4 2026) plus Sandwich/Salad/Soup clubs and weekly free item, and Clorox Gift of Clean rejected as sold-out SERVICE with clorox.com/coupons/ still 404 (third pass)."
+      },
+      {
+        "date": "2026-09-22",
+        "change": "Pass 6 (same day, later): category expansion — four new researched categories (home improvement/hardware/auto, sporting goods & outdoor, pet supplies, office/craft/hobby) and 39 new verified offers: IKEA Family (free coffee/tea, $20 new-member in-store QR offer, member-price program, dated 10/12 cycle examples, student 15% through 9/30/26), Whole Foods Prime (extra 10% off sales, Tuesday/Friday Days of Deals through 10/6/26), Sprouts digital coupons FAQ, Grocery Outlet WOW $3-off-$25 signup, Harbor Freight coupon hub with three dated 9/27 coupons plus the paid Inside Track Club, Ace/Lowe's/AutoZone/O'Reilly rewards rates, Staples Easy Rewards (program renamed; legacy help-center URL redirects), Michaels 3%/6%, Hobby Lobby standing 40%-off-marked-price (weekly single-item coupon documented as sunset), Petco Perks Core/Premier and PetSmart Treats rates, REI $30 lifetime 10%-back plus dated $30 new-member bonus card (through 11/12/26), Big 5 E-Team 10% signup, Kohl's Rewards 5% plus verbatim 15% Senior-Wednesday/Military-Monday discounts and a 9/21-9/27 Kohl's Cash earn event, Taco Bell/Domino's/Pizza Hut/Peet's programs (Domino's current 'free every 2 orders' tagline vs legacy points math flagged), Fetch, and Mollie Stone's $20 signup bonus found in its own rewards terms. Kellanova grid re-readable in pass 6 (pass-5 regression resolved; Mars-acquisition banner noted). Rejections: JOANN liquidated (all 790+ stores closed 2025-05-30), Sprouts aggregator promo-code ring. New policy notes: Dollar Tree manufacturer-coupon acceptance rules, Grocery Outlet coupon acceptance (third-party evidence only), Hobby Lobby coupon sunset. Instagram anonymous fetch re-tested: HTTP 403."
       }
     ]
   },
@@ -136,6 +140,34 @@
       "short": "Scan & earn",
       "description": "Manufacturer programs where you buy in a store, upload the receipt, and the issuer pays out points, cash or a gift card afterwards. Redeemed via the issuer's own app or site; shopping happens at a physical store.",
       "sort": 85
+    },
+    {
+      "id": "home-hardware",
+      "name": "Home improvement, hardware & auto",
+      "short": "Home & hardware",
+      "description": "Loyalty programs and issuer-published coupons at home-improvement, hardware and auto-parts chains (Harbor Freight, Ace, Lowe's, AutoZone, O'Reilly). All entries quote terms from the issuer's own site and redeem in Bay Area stores.",
+      "sort": 112
+    },
+    {
+      "id": "sporting-outdoor",
+      "name": "Sporting goods & outdoor",
+      "short": "Sporting & outdoor",
+      "description": "Membership and coupon programs at sporting-goods and outdoor retailers (REI Co-op, Big 5). Paid and lifetime membership mechanics are flagged so the cost of entry is visible.",
+      "sort": 114
+    },
+    {
+      "id": "pet-supplies",
+      "name": "Pet supplies",
+      "short": "Pet",
+      "description": "Points and reward programs at national pet retailers with Bay Area stores (Petco, PetSmart), including paid-tier mechanics flagged for what they actually cost.",
+      "sort": 116
+    },
+    {
+      "id": "office-craft-hobby",
+      "name": "Office, craft & hobby",
+      "short": "Office & craft",
+      "description": "Rewards programs and standing in-store discounts at office-supply, crafts and hobby retailers (Staples, Michaels, Hobby Lobby), with current-program naming recorded when an issuer rebranded.",
+      "sort": 118
     }
   ],
   "deal_types": [

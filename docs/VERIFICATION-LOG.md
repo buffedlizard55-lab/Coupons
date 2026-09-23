@@ -2,8 +2,10 @@
 
 **Verification date: 2026-09-22** (all sources accessed on this date; `accessed` is recorded per
 citation in the data).
-**Result after pass 5 (2026-09-22, same day): 185 verified offers · 18 documented rejections · 204 citations ·
-44 domains · 517 flags (A: 169 · B: 14 · C: 2).**
+**Result after pass 6 (2026-09-22, same day): 227 verified offers · 20 documented rejections · 265 citations ·
+72 domains · 613 flags (A: 190 · B: 34 · C: 3).**
+Result after pass 5 (2026-09-22, same day): 185 verified offers · 18 documented rejections · 204 citations ·
+44 domains · 517 flags (A: 169 · B: 14 · C: 2).
 **Result after pass 4 (2026-09-22, same day): 101 verified offers · 17 documented rejections · 113 citations ·
 41 domains · 208 flags (A: 85 · B: 14 · C: 2).**
 (Pass 3 had reached 101 offers · 15 rejections · 112 citations · 41 domains · 207 total flags (A: 85 · B: 14 · C: 2).)
@@ -79,6 +81,9 @@ insufficient, the entry says so — see §4 and the `retrieval-via-search-snippe
 | `www.chowhound.com`, `www.mashed.com` | Two independent reports quoting Trader Joe's own statement and a PR email: no Trader Joe's coupons, manufacturer coupons accepted for other brands. Level C because `traderjoes.com` was not retrieved in this pass |
 | `www.reddit.com` | Lead generation only: the `getpgoffer.com` rebate (verified and included) and Costco Instant Savings cycle dates (not verifiable on Costco → excluded) |
 | promo-code aggregators (simplycodes, couponcabin, valuecom, coupons4u and similar) | Read only to document what is circulating for Round Table Pizza and 99 Ranch Market; every code found there was rejected |
+| `dealspotr.com`, `goodsearch.com` (pass 6) | Circulating Sprouts 'promo codes' (VENGO20, CLARKGO20, 25FREEOCT, AUG25FREE, PC10OFF35, CARGO20…) — rejected as fabricated; the issuer's own FAQ documents app-clipped digital coupons instead |
+| `www.npr.org`, `en.wikipedia.org`, `www.goodhousekeeping.com` (pass 6) | JOANN liquidation evidence: all ~790 stores permanently closed by 2025-05-30, assets/IP sold (Michaels acquired IP and private labels, website-only successor); any circulating 'JOANN coupon' is dead-brand bait |
+| `www.reddit.com/r/GroceryOutlet`, `thekrazycouponlady.com` (pass 6) | Grocery Outlet coupon acceptance: three third parties (incl. a self-identified store owner) agree manufacturer coupons are not accepted — recorded as a level-C policy note because the issuer's own site has no readable policy (its OWN $3-off-$25 WOW coupon is separately verified and indexed) |
 
 ## 4. Dead ends — what could not be read
 
@@ -98,6 +103,11 @@ renders in full, so that nobody treats them as working citations.
 | `papajohns.com/order/coupons` | "LOOKS LIKE SOMEONE TOOK THE LAST SLICE" | `papajohns.com` → Deals (client-rendered) |
 | `kfc.com/deals` | "There's no fried chicken on this page…" | `kfc.com` → Deals (requires a store selection) |
 | `dominos.com/en/pages/order/coupons/` | Domino's "Not found" | `dominos.com` → Deals |
+| `sprouts.com/savings-center/` (pass 6) | Sprouts 404 | `shop.sprouts.com` in-store deals + official FAQ |
+| `acehardware.com/rewards` (pass 6) | Ace Hardware 404 | site-wide Ace Rewards block + `/user/login` |
+| `harborfreight.com/inside-track-club.html` (pass 6) | Harbor Freight 404 | `go.harborfreight.com/join-inside-track-club/` |
+| `groceryoutlet.com/faqs` (pass 6) | CAPTCHA-gated shell, junk body | `groceryoutlet.com/wow-alerts` |
+| `instagram.com/target/` (pass 6 re-test) | HTTP 403 anonymous | `target.com/circle/` — social leads verified on issuer sites instead |
 
 **Retrieved but not machine-readable:**
 
@@ -182,7 +192,7 @@ Not critical, but each one changes how an offer should be used. All are on the c
   domains rather than direct fetches and each carries `retrieval-via-search-snippet` (one added in
   pass 4: the Pop-Tarts rewards terms citation).
 
-## 6. Rejections (18)
+## 6. Rejections (20)
 
 Full records, with URLs checked and evidence, live in `data/entries/10-excluded-unverified.json`
 and on the site's **Rejected & scam watch** view.
@@ -207,6 +217,8 @@ and on the site's **Rejected & scam watch** view.
 | `excl-colgate-aggregator-promo-codes` | Colgate (shop.colgate.com codes) | REJECTED (pass 4) | Five code farms (orangeoffer, DontPayFull, TenereTeam, coupons.com code pages, plus an India-market terms page as the only real "Smiles" offer) all apply recycled codes to an online store while Colgate's own U.S. coupon page — fetched twice — says coupons are unavailable |
 | `excl-kellanova-legacy-scratch-off-games` | Kellanova (Cheez-It/RKT/Pop-Tarts rewards games) | REJECTED (pass 4) | Terms pages still served on the official domain carry their own disqualification: Barcode Buck$ "expire on 12/31/24", Pop-Tarts game plays "must be completed by … 9/2/26", and that game's prize redeems only at shop.poptarts.com (online-only) |
 | `excl-clorox-gift-of-clean-sold-out` | Clorox | REJECTED (pass 5) | Gift of Clean page says sold out, reward is a 2-hour cleaning SERVICE (out of scope for product-only dataset), and clorox.com/coupons/ still 404s — third consecutive pass |
+| `excl-joann-closed-liquidated` | JOANN Fabrics and Crafts | REJECTED (pass 6) | The issuer no longer exists: every store closed permanently by 2025-05-30 after auction to GA Group; joann.com stopped operating as a retailer (Michaels bought IP/labels only) — circulating 'JOANN coupons' are dead-brand content-farm bait |
+| `excl-sprouts-promo-code-listings` | Sprouts Farmers Market | REJECTED (pass 6) | dealspotr/goodsearch 'codes' (VENGO25-style, month-stamped AUG25FREE/25FREEOCT…) contradict the issuer's published channel — Sprouts' own FAQ documents app-clipped digital coupons scanned at checkout, no promo codes |
 
 ## 7. Pass log
 
@@ -476,3 +488,21 @@ Owner instruction for this pass: same as pass 4 — keep expanding line by line,
 
 **Counts after this pass:** 185 offers (112 P&G + 1 Kellanova Barcode Buck$ + 3 P&G rebates + 3 Mollie Stone's + 66 retained) · 18 rejections · 204 citations · 44 domains · 517 flags (20 critical, 432 warning, 65 info) · 56 unique cited URLs · 51 tests (new TestPgHarvestCompleteness added). Verified 2026-09-22 (passes 1–5).
 
+
+### Pass 6 — category expansion sweep: home/hardware/auto, pet, office/craft, sporting/outdoor, department stores, QSR-4, IKEA, Whole Foods, Sprouts, Kohl's (complete, 2026-09-22)
+
+Owner instruction for this pass: same as passes 4–5 — work line by line, keep verifying on official sources only, expand into MORE coupon categories, fix anything found, PR + merge, multiple passes (this is pass 1 of today's three-pass instruction, implemented as the sixth numbered pass overall).
+
+**Retrieval health:** 20 official pages fetched live (~30 content chunks; IKEA family + offers + stores, Whole Foods /amazon fetched twice + homepage, Harbor Freight coupon index + one detail page, Ace store-details Rewards block, Big 5 E-Team (server-stamped Tue Sep 22 04:04:01 PDT 2026), Kohl's store locator, Staples Easy Rewards (legacy URL redirect captured), REI /membership, O'Reilly official store locator (636 CA stores), Domino's current rewards page, Taco Bell locations, Mollie Stone's full rewards T&C re-read, Kellanova coupon hub re-read — pass-5 grid regression resolved, 'Mars Completes Acquisition of Kellanova' banner newly present, plus the P&G, Kellanova, Rainbow and Coupons.com spot re-reads that opened the pass). Official-domain search snippets were used for pages that resist plain fetch or where a snippet carries the governing sentence verbatim — all 35 snippet-only entries disclose `retrieval-via-search-snippet` on the card. Six new official 404s/403s logged in the link-rot note (sprouts savings-center, ace /rewards, harborfreight ITC .html, groceryoutlet /faqs CAPTCHA body, instagram.com 403 re-test, kohls stores.shtml redirect noted as issuer-controlled).
+
+**Four new categories:** `home-hardware` (9 entries), `sporting-outdoor` (3), `pet-supplies` (3), `office-craft-hobby` (3) — taxonomy v1.3.0 in `data/meta.json`. The category set now also covers IKEA Family member prices, Whole Foods Prime perks, Sprouts digital coupons, Grocery Outlet's own coupon and Kohl's standing discounts, added to existing categories.
+
+**39 new verified offers** (shard `17-pass6-expansion.json`, generated reproducibly by `scripts/generate_pass6_entries.py`): highlights — IKEA Family free coffee/tea every visit and the $20-off-first-in-store-purchase QR offer (90-day personal validity, in-store only, 'limited time offer' wording with no end date → flagged), a full dated IKEA Family offer cycle (15% LILLESÄTER etc, 'thru 10/12', 'while supply lasts'), Whole Foods extra-10%-with-Prime (alcohol/gift-card footnote) and Days of Deals printed window 'Valid 4/29 – 10/6/26', three dated Harbor Freight in-store coupons (codes and 9/27/2026 expiries transcribed, hub documents the batch), the PAID Inside Track Club, rewards rate cards for Ace (2,500 pts = $5), AutoZone ($20 per 5 credits), O'Reilly (150 pts = $5 + birthday gift), Petco Core (167 pts = $5) and paid Premier (15% nutrition/supplies, $119.88/yr — payback math flagged), PetSmart (1,000 pts = $2 + tiers), Michaels (3%/6%, $150/day cap), Staples Easy Rewards (program RENAMED from 'Staples Rewards'; legacy help-center URL now redirects — the older 2%/5% copy on staging subdomains was treated as outdated, not merged), Hobby Lobby standing 'Always 40% off the marked price' (weekly single-item coupon documented as sunset in a policy note), REI $30 lifetime + 'typical not guaranteed' 10% quote-and-flag plus a live dated new-member $30 bonus card (thru 11/12/2026), Big 5 10% E-Team signup, Kohl's 5% rewards plus two verbatim standing store discounts (Senior Day 15% Wednesdays 60+, Military 15% Mondays in-store) and a live Kohl's Cash earn banner whose dated URL encodes 9/21–9/27/2026, Taco Bell (10 pts/$1, reward/250), Domino's (current 'Earn free Domino's every 2 orders' tagline — legacy points math NOT on the current page, flagged), Pizza Hut (2 pts/$1), Peet's Peetnik Rewards (four tiers transcribed; marketing-vs-terms 50-pt-tier mismatch flagged; 125 welcome pts; birthday beverage with six-month purchase rule quoted), Fetch (every-receipt model; gift-card-only payout + privacy trade flagged), and Mollie Stone's $20 signup bonus found in §4 of its own rewards terms ('may be offered from time to time' — discretionary-availability flag).
+
+**Two new rejections:** `excl-joann-closed-liquidated` (dead brand — all stores closed 2025-05-30, every circulating 'JOANN coupon' is unverifiable-by-extinction) and `excl-sprouts-promo-code-listings` (fabricated promo-code ring on dealspotr/goodsearch contradicting the issuer's own FAQ channel).
+
+**Three new policy notes:** `policy-dollar-tree-coupon-acceptance` (official rules: 4 identical/day, 2 internet/day, no overage, BOGO-free-item rule), `policy-grocery-outlet-manufacturer-coupons` (level C — third-party-only non-acceptance evidence, while the issuer's own $3-off-$25 coupon is separately verified), `policy-hobby-lobby-weekly-coupon-sunset` (level A pages + 2019 official-domain cache; 'inference from absence' flagged).
+
+**Corrections/updates to existing records:** all 8 Kellanova kv-* entries — pass-5 `coupon-grid-not-re-readable` flag extended with the pass-6 re-read that rendered the full grid again (regression = intermittent client-rendering, not retraction) and new info flag `issuer-ownership-change` (Mars acquisition banner on the issuer's own page); `policy-social-media-sourcing` now quotes the HTTP 403 Instagram re-test; `policy-link-rot-observed-2026-09-22` gained the six pass-6 failures; Mollie Stone's T&C tiers cross-checked against existing entries (no drift).
+
+**Counts after this pass:** 227 offers (185 prior + 39 expansions + 3 new policy notes) · **20 rejections** · **265 citations** across **72 domains** · **613 flags** (20 critical, 497 warning, 96 info) · 139 unique cited URLs · 56 tests (new TestPass6Expansion added). Verified 2026-09-22 (passes 1–6).

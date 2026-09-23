@@ -38,6 +38,13 @@ generated per account, per store or per app session, so no anonymous reader can 
 | **Save Mart / Smart & Final digital coupons** | Coupon galleries are account-gated; the official FAQs establish the mechanics, not the current clip list |
 | **McDonald's, Starbucks, Denny's, Dunkin', Chipotle, Jimmy John's, Baskin-Robbins, Subway** | Rewards are official and their sign-up/birthday terms are quoted verbatim, but in-app rotating offers (BoothBucks multipliers, bonus-Star days, Freepotle drops) are personalised and short-window |
 | **Walgreens / CVS** | ExtraCare and myWalgreens offers are account-linked; CVS's public pages were additionally behind an anti-bot interstitial (its ExtraCare Plus 20%-off benefit is on the overview page and is recorded) |
+| **Sprouts digital coupons** (pass 6) | Clipped per account and scanned at checkout; the FAQ gives mechanics and an aggregate "$100+/month" figure, not a coupon list |
+| **Harbor Freight Inside Track Club** (pass 6) | Paid membership with monthly auto-applied deals; only the program page and the (free) public coupon hub were readable — the current member deal list is not |
+| **Ace Rewards, Lowe's MyLowe's, Michaels Rewards, PetSmart Treats, Petco Perks** (pass 6) | Fixed earn/redeem rates verified from official pages; the members-only/'exclusive offers' attached to each rotate per account |
+| **Kohl's Cash conversion** (pass 6) | The standing 5% and the weekly discounts are published and verified; Kohl's Cash earn events rotate weekly (a 9/21–9/27/2026 window was live) and event pages are short-lived |
+| **Taco Bell, Domino's, Pizza Hut** (pass 6) | Earn rates quoted from official FAQ/store pages; reward catalogues and per-account offers sit in the signed-in apps. Domino's current public page says 'Earn free Domino's every 2 orders' — the legacy points math widely quoted online is not on it, so it is flagged rather than repeated |
+| **Fetch** (pass 6) | Program mechanics published and verified; per-receipt point values are dynamic |
+| **IKEA Family member offers** (pass 6) | The offers page is public — six dated groups were read fully — but it carries 89 discounted items that rotate monthly; only the headline groups and one full example are transcribed |
 | **Ibotta / Checkout 51** | Both are receipt-scan platforms whose value is real but per-user; only the published platform mechanics are verified |
 
 Consequence: for these merchants the dataset tells you **the program is legitimate and how it
@@ -53,7 +60,12 @@ site renders in full):
   `coupons.com/printables`, `costco.com/coupons.html`, `costco.com/online-offers.html`,
   `molliestones.com/stores/`, `luckysupermarkets.com/foru-guest.html`, `papajohns.com/order/coupons`,
   `kfc.com/deals`, `dominos.com/en/pages/order/coupons/`, `clorox.com/coupons/` (while Clorox
-  product FAQs still tell shoppers to "check the Coupons page")
+  product FAQs still tell shoppers to "check the Coupons page"), and from pass 6:
+  `sprouts.com/savings-center/`, `acehardware.com/rewards`,
+  `harborfreight.com/inside-track-club.html` (all three have working canonical replacements,
+  recorded in the link-rot entry)
+- **CAPTCHA-gated shell with junk body (pass 6):** `groceryoutlet.com/faqs`
+- **Issuer-controlled redirect worth recording (pass 6):** `kohls.com/stores.shtml` → `kohls.com/stores`
 - **JavaScript shell only (no offer text in the HTML):** `raleys.com`, `pizzahut.com/deals`
 - **Anti-bot interstitial:** `cvs.com/extracare`
 - **Live fetch failures in passes 3 and 4 (four attempts, all failed):** `smiles.colgate.com/page/content/special-offers`
@@ -63,15 +75,19 @@ site renders in full):
 - **Domain drift — former official URLs now serve other people:** `boxtops.com` (a rock band's
   tour site), `realsavings.com` (a parked-ad shell)
 
-Consequence: several large Bay Area merchants — Lucky, Pizza Hut, Domino's, Papa Johns, KFC —
-have **no verified entry at all**, not even a level-B program note, because nothing could be
-read. That is a coverage hole caused by retrieval, not by choice. A headless-browser
-verification path (`docs/ROADMAP.md` item 3) is the fix.
+Consequence: several large Bay Area merchants — Lucky, Papa Johns, KFC (Pizza Hut and Domino's
+gained pass-6 program entries from official store-page/redirect surfaces, though their deal
+galleries remain unreadable) — still have **no verified item-level entry at all**, because
+nothing could be read. That is a coverage hole caused by retrieval, not by choice. A
+headless-browser verification path (`docs/ROADMAP.md` item 3) is the fix.
 
 ## 4. Facebook and Instagram could not be searched
 
 The original brief asked for social-media research. Both platforms require authentication, so no
-post could be retrieved, read or cited; the same applies to TikTok. Social platforms were used
+post could be retrieved, read or cited; the same applies to TikTok. Pass 6 re-tested this with a
+live anonymous fetch of `instagram.com/target/`, which returned **HTTP 403** — the auth wall is
+an observed fact, not an assumption, and it is recorded in `policy-social-media-sourcing` and the
+link-rot log. Social platforms were used
 **only** as lead generators, and both Reddit leads produced were then verified on an official
 domain or rejected:
 
@@ -155,6 +171,12 @@ Cases found and flagged rather than resolved:
   discontinue benefits (`stars-no-cash-value`, `issuer-may-suspend`, `arbitration-clause`).
 - **Checkout 51 / Ibotta** cash-back amounts are per-user and per-week; only platform mechanics
   are quoted.
+- **Paid memberships are flagged, not folded into 'free' language** (emphasised by pass 6):
+  Amazon Prime (Whole Foods), Harbor Freight's Inside Track Club, Petco Perks Premier
+  ($119.88/year — the 15% discounts only pay back above roughly $800/year of covered spend) and
+  REI's one-time $30 lifetime membership (with REI's own 'typical, but not guaranteed'
+  qualification on the 10% figure). Each card carries `paid-membership-required`, and a test
+  asserts the disclosure.
 
 ## 10. Partial captures are disclosed, not filled in
 
